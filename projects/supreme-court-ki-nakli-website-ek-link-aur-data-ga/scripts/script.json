@@ -1,0 +1,325 @@
+{
+  "title": "Supreme Court fake website: Link check kaise karein?",
+  "topic": "Supreme Court ki nakli website: ek link aur data gaya",
+  "theme": "crimson",
+  "scenes": [
+    {
+      "on_screen": "Supreme Court ki nakli website: ek link aur data gaya",
+      "beats": [
+        {
+          "say": "Socho, aap Supreme Court ki nakli website par ghus gaye. Link scigovinjudicial.com hai, asli website sirf sci.gov.in hai.",
+          "visual": {
+            "type": "title"
+          },
+          "mood": "think",
+          "pop": "Check domain",
+          "say_hi": "सोचो, आप सुप्रीम कोर्ट की नकली वेबसाइट पर गुस्सा गए। लिंक scigovinjudicial.com है, असली वेबसाइट सिर्फ sci.gov.in है।"
+        },
+        {
+          "say": "Phishing karte waqt data lete hain. Link check karo: hover karke dekho, domain .gov.in ho to safe.",
+          "visual": {
+            "type": "kinetic",
+            "text": "Hover karke dekho",
+            "highlight": ".gov.in"
+          },
+          "mood": "warn",
+          "pop": "Safe domain",
+          "say_hi": "फिशिंग करते समय डेटा लेते हैं। लिंक चेक करो: हॉवर करके देखो, डोमेन .gov.in हो तो सुरक्षित।"
+        },
+        {
+          "say": "Galti se details daal di to immediately password change karein aur bank ko batao.",
+          "visual": {
+            "type": "host",
+            "text": "Galti se details daal di to immediately password change karein aur bank ko batao."
+          },
+          "mood": "explain",
+          "pop": "Change password",
+          "say_hi": "गलती से डिटेल्स डाल दी तो तुरंत पासवर्ड बदल करें और बैंक को बताओ।"
+        },
+        {
+          "say": "Scam ke zariye data steal karne wale hote hain.",
+          "visual": {
+            "type": "warning",
+            "text": "Data steal karne wale hote hain"
+          },
+          "mood": "shock",
+          "pop": "Scam",
+          "say_hi": "स्केम के ज़रिए डाटा स्टील करने वाले होते हैं।"
+        }
+      ],
+      "narration_hi": "सोचो, आप सुप्रीम कोर्ट की नकली वेबसाइट पर गुस्सा गए। लिंक scigovinjudicial.com है, असली वेबसाइट सिर्फ sci.gov.in है। फिशिंग करते समय डेटा लेते हैं। लिंक चेक करो: हॉवर करके देखो, डोमेन .gov.in हो तो सुरक्षित। गलती से डिटेल्स डाल दी तो तुरंत पासवर्ड बदल करें और बैंक को बताओ। स्केम के ज़रिए डाटा स्टील करने वाले होते हैं।"
+    },
+    {
+      "on_screen": "Aaj in sawaalon ke jawab",
+      "beats": [
+        {
+          "say": "Is video mein 3 sawaalon ke jawab milenge. Ye scam hota kaise hai? Isko pehchanein aur bachein kaise? Agar fas gaye to kya karein?",
+          "visual": {
+            "type": "steps",
+            "items": [
+              "Ye scam hota kaise hai?",
+              "Isko pehchanein aur bachein kaise?",
+              "Agar fas gaye to kya karein?"
+            ]
+          },
+          "mood": "explain",
+          "say_hi": "इस वीडियो में तीन सवालों के जवाब मिलेंगे। ये स्कैम होता कैसे है? इसको पहचानें और बचें कैसे? अगर फँस गए तो क्या करें?"
+        }
+      ],
+      "narration_hi": "इस वीडियो में तीन सवालों के जवाब मिलेंगे। ये स्कैम होता कैसे है? इसको पहचानें और बचें कैसे? अगर फँस गए तो क्या करें?"
+    },
+    {
+      "on_screen": "Ye scam hota kaise hai?",
+      "beats": [
+        {
+          "say": "Chaliye, pehle sawaal se shuru karte hain. Ye scam hota kaise hai?",
+          "visual": {
+            "type": "chapter",
+            "part": 1,
+            "total": 3
+          },
+          "mood": "think",
+          "say_hi": "चलिए, पहले सवाल से शुरू करते हैं। ये स्कैम होता कैसे है?"
+        }
+      ],
+      "narration_hi": "चलिए, पहले सवाल से शुरू करते हैं। ये स्कैम होता कैसे है?"
+    },
+    {
+      "on_screen": "Phishing Website Scam",
+      "beats": [
+        {
+          "say": "Scam kaise hota hai? Phishing website par login details lete hain. Link check nahi kiya to data chha lena.",
+          "visual": {
+            "type": "host",
+            "text": "Scam kaise hota hai? Phishing website par login details lete hain. Link check nahi kiya to data chha lena."
+          },
+          "mood": "explain",
+          "pop": "Phishing",
+          "say_hi": "स्केम कैसे होता है? फिशिंग वेबसाइट पर लॉगिन डिटेल्स लेते हैं। लिंक चेक नहीं किया तो डाटा छाँ लेना।"
+        },
+        {
+          "say": "Galti se password daal di to cybercriminals unko use karke fraud karte hain.",
+          "visual": {
+            "type": "warning",
+            "text": "Password daal di to cybercriminals use karke fraud karte hain."
+          },
+          "mood": "warn",
+          "pop": "Fraud",
+          "say_hi": "गलती से पासवर्ड डाल दिया तो साइबर क्राइमिनल्स उनको उपयोग करके फ्रॉड करते हैं।"
+        },
+        {
+          "say": "Isme URL verify nahi kiya to fake website par ghus gaye. Data lete hain aur financial loss ho sakti hai.",
+          "visual": {
+            "type": "compare",
+            "left_title": "Asli",
+            "left": [
+              "sci.gov.in"
+            ],
+            "right_title": "Fake",
+            "right": [
+              "scigovinjudicial.com"
+            ]
+          },
+          "mood": "think",
+          "pop": "URL Check",
+          "say_hi": "इमें यूआरएल वेरिफाई नहीं किया तो फ़ेक वेबसाइट पर गुस्सा गए। डेटा लेते हैं और फिनैन्शल लॉस हो सकती है।"
+        },
+        {
+          "say": "Isliye link check karna jaruri hai.",
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              {
+                "icon": "hacker",
+                "label": "Data Leke Jaate Hain"
+              },
+              {
+                "icon": "bank",
+                "label": "Financial Loss Ho Sakti Hai"
+              },
+              {
+                "icon": "warning",
+                "label": "Link Check Karna Jaruri Hai"
+              }
+            ]
+          },
+          "mood": "explain",
+          "pop": "Verify Link",
+          "say_hi": "इसलिए लिंक चेक करना जरूरी है।"
+        }
+      ],
+      "narration_hi": "स्केम कैसे होता है? फिशिंग वेबसाइट पर लॉगिन डिटेल्स लेते हैं। लिंक चेक नहीं किया तो डाटा छाँ लेना। गलती से पासवर्ड डाल दिया तो साइबर क्राइमिनल्स उनको उपयोग करके फ्रॉड करते हैं। इमें यूआरएल वेरिफाई नहीं किया तो फ़ेक वेबसाइट पर गुस्सा गए। डेटा लेते हैं और फिनैन्शल लॉस हो सकती है। इसलिए लिंक चेक करना जरूरी है।"
+    },
+    {
+      "on_screen": "Isko pehchanein aur bachein kaise?",
+      "beats": [
+        {
+          "say": "To ye tha scam ka poora khel. Ab agla sawaal. Isko pehchanein aur bachein kaise?",
+          "visual": {
+            "type": "chapter",
+            "part": 2,
+            "total": 3
+          },
+          "mood": "think",
+          "say_hi": "तो ये था स्कैम का पूरा खेल। अब अगला सवाल। इसको पहचानें और बचें कैसे?"
+        }
+      ],
+      "narration_hi": "तो ये था स्कैम का पूरा खेल। अब अगला सवाल। इसको पहचानें और बचें कैसे?"
+    },
+    {
+      "on_screen": "URL hover karke dekho",
+      "beats": [
+        {
+          "say": "Kaise pehchane? URL check karo: hover karke dekho. Domain .gov.in ho to safe.",
+          "visual": {
+            "type": "compare",
+            "left_title": "Asli",
+            "left": [
+              "sci.gov.in"
+            ],
+            "right_title": "Fake",
+            "right": [
+              "scigovinjudicial.com"
+            ]
+          },
+          "mood": "warn",
+          "pop": "gov.in",
+          "say_hi": "कैसे पहचानें? यूआरएल चेक करो: हॉवर करके देखो। डोमेन .gov.in हो तो सुरक्षित।"
+        },
+        {
+          "say": "Grammer errors, suspicious links hote hain. Bank ko batao. Isliye link check nahi kiya to fake website par ghus gaye.",
+          "visual": {
+            "type": "warning",
+            "text": "suspicious links"
+          },
+          "mood": "shock",
+          "pop": "bank alert",
+          "say_hi": "ग्रामर गलतियाँ, संदेहजनक लिंक होते हैं। बैंक को बताओ। इसलिए लिंक चेक नहीं किया तो फ़ेक वेबसाइट पर गुस्सा गए।"
+        },
+        {
+          "say": "Data lete hain aur financial loss ho sakti hai.",
+          "visual": {},
+          "mood": "think",
+          "pop": "data leak",
+          "say_hi": "डेटा लेते हैं और फिनैन्शल लॉस हो सकती है।"
+        }
+      ],
+      "narration_hi": "कैसे पहचानें? यूआरएल चेक करो: हॉवर करके देखो। डोमेन .gov.in हो तो सुरक्षित। ग्रामर गलतियाँ, संदेहजनक लिंक होते हैं। बैंक को बताओ। इसलिए लिंक चेक नहीं किया तो फ़ेक वेबसाइट पर गुस्सा गए। डेटा लेते हैं और फिनैन्शल लॉस हो सकती है।"
+    },
+    {
+      "on_screen": "Agar fas gaye to kya karein?",
+      "beats": [
+        {
+          "say": "To ab aap iske nishan pehchante hain. Ab aakhri aur sabse kaam ka sawaal. Agar fas gaye to kya karein?",
+          "visual": {
+            "type": "chapter",
+            "part": 3,
+            "total": 3
+          },
+          "mood": "think",
+          "say_hi": "तो अब आप इसके निशान पहचानते हैं। अब आखिरी और सबसे काम का सवाल। अगर फँस गए तो क्या करें?"
+        }
+      ],
+      "narration_hi": "तो अब आप इसके निशान पहचानते हैं। अब आखिरी और सबसे काम का सवाल। अगर फँस गए तो क्या करें?"
+    },
+    {
+      "on_screen": "Galti se data daal diye? Act fast!",
+      "beats": [
+        {
+          "say": "Lekin agar fas gaye to immediately password change karein. Galti se details daal di to bank ko batao.",
+          "visual": {
+            "type": "host",
+            "text": "Password change karein, bank ko batao"
+          },
+          "mood": "warn",
+          "pop": "Change password",
+          "say_hi": "लेकिन अगर फस गए तो तुरंत पासवर्ड बदल करे। गलती से डिटेल्स डाल दी तो बैंक को बताओ।"
+        },
+        {
+          "say": "Phishing scam se bachne ke liye URL check karo, hover karke dekho.",
+          "visual": {
+            "type": "kinetic",
+            "text": "URL check karke dekho",
+            "highlight": "URL"
+          },
+          "mood": "think",
+          "pop": "Check URL",
+          "say_hi": "फिशिंग स्केम से बचने के लिए यूआरएल चेक करो, हओवर करके देखो।"
+        },
+        {
+          "say": "Domain .gov.in ho to safe. Isliye link check nahi kiya to fake website par ghus gaye.",
+          "visual": {
+            "type": "icon",
+            "icon": "shield",
+            "text": "Domain .gov.in safe hai"
+          },
+          "mood": "explain",
+          "pop": "Safe domain",
+          "say_hi": "डोमेन .gov.in हो तो सुरक्षित। इसलिए लिंक चेक नहीं किया तो फ़ेक वेबसाइट पर गुस्सा गए।"
+        },
+        {
+          "say": "Financial loss ho sakti hai. To phir data nahi daalna, password change karo aur bank ko batao.",
+          "visual": {},
+          "mood": "warn",
+          "pop": "Avoid loss",
+          "say_hi": "आर्थिक हानि हो सकती है। तो फिर डेटा नहीं डालना, पासवर्ड बदल करो और बैंक को बताओ।"
+        }
+      ],
+      "narration_hi": "लेकिन अगर फस गए तो तुरंत पासवर्ड बदल करे। गलती से डिटेल्स डाल दी तो बैंक को बताओ। फिशिंग स्केम से बचने के लिए यूआरएल चेक करो, हओवर करके देखो। डोमेन .gov.in हो तो सुरक्षित। इसलिए लिंक चेक नहीं किया तो फ़ेक वेबसाइट पर गुस्सा गए। आर्थिक हानि हो सकती है। तो फिर डेटा नहीं डालना, पासवर्ड बदल करो और बैंक को बताओ।"
+    },
+    {
+      "on_screen": "Phishing scam ke 3 saal baad bhi",
+      "beats": [
+        {
+          "say": "URL verify karein, .gov.in check karo. Phishing ke zariye sensitive info lete hain.",
+          "visual": {
+            "type": "host",
+            "text": "URL verify karein, .gov.in check karo. Phishing ke zariye sensitive info lete hain."
+          },
+          "mood": "warn",
+          "pop": "Verify URL",
+          "say_hi": "URL वेरिफाई करें, .gov.in चेक करें। Phishing के जरिए sensitive info लेते हैं।"
+        },
+        {
+          "say": "Aapne kya karte hain? Data nahi daaliye, password change karo.",
+          "visual": {
+            "type": "steps",
+            "items": [
+              "Data nahi daaliye",
+              "Password change karo"
+            ]
+          },
+          "mood": "explain",
+          "pop": "Secure",
+          "say_hi": "आपने क्या करते हैं? डेटा नहीं दालिए, पासवर्ड चेंज करो।"
+        }
+      ],
+      "narration_hi": "आपने क्या करते हैं? डेटा नहीं दालिए, पासवर्ड चेंज करो।"
+    },
+    {
+      "on_screen": "Ye yaad rakhna",
+      "beats": [
+        {
+          "say": "Aur agar aapke ya kisi apne ke saath aisa ho jaye, to turant 1930 par call kijiye, aur cybercrime.gov.in par complaint kijiye.",
+          "visual": {
+            "type": "stat",
+            "value": "1930",
+            "label": "Cybercrime helpline | cybercrime.gov.in"
+          },
+          "mood": "warn",
+          "say_hi": "और अगर आपके या किसी अपने के साथ ऐसा हो जाए, तो तुरंत 1930 पर कॉल कीजिए, और cybercrime.gov.in पर शिकायत कीजिए।"
+        },
+        {
+          "say": "Comment mein batao, kya aapke paas kabhi aisa kuch aaya hai? Aur aisi hi baatein jaanne ke liye Snack Code ko subscribe kar lo.",
+          "visual": {
+            "type": "host",
+            "text": "Comment karo aur subscribe karo"
+          },
+          "mood": "happy",
+          "say_hi": "कमेंट में बताओ, क्या आपके पास कभी ऐसा कुछ आया है? और ऐसी ही बातें जानने के लिए स्नैक कोड को सब्सक्राइब कर लो।"
+        }
+      ],
+      "narration_hi": "और अगर आपके या किसी अपने के साथ ऐसा हो जाए, तो तुरंत 1930 पर कॉल कीजिए, और cybercrime.gov.in पर शिकायत कीजिए। कमेंट में बताओ, क्या आपके पास कभी ऐसा कुछ आया है? और ऐसी ही बातें जानने के लिए स्नैक कोड को सब्सक्राइब कर लो।"
+    }
+  ]
+}

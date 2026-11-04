@@ -1,0 +1,85 @@
+{
+  "title": "24 ghante internet band ho jaye to UPI, hospitals aur economy ka kya hoga?",
+  "hook": "Agar internet 24 ghante band ho jaye to UPI, hospitals aur economy par kya asar padega? Is video mein in 3 sawalon ke jawab, real examples ke saath.\n\nAisi hi tech baatein aasan bhasha mein jaanne ke liye Snack Code ko subscribe karein.",
+  "description": "\n\nSources:\n- https://cybersecuritynews.com/upi-down/\n- https://www.orfonline.org/expert-speak/upi-at-scale-outages-and-the-push-for-resilient-systems\n- https://www.newindianexpress.com/business/2026/Feb/10/upi-goes-dark-bringing-indias-digital-payments-to-a-sudden-halt\n- https://pulse.internetsociety.org/blog/the-human-cost-of-internet-shutdowns-in-india\n- https://www.taylortailored.co.uk/science-technology-1/what-would-happen-if-the-entire-internet-went-down-for-24-hours\n- https://indianexpress.com/article/cities/delhi/mobile-internet-blackout-4-km-radius-central-delhi-10-pm-tonight-10914440/\n- https://www.thehindu.com/news/national/centre-seeks-states-help-as-cjp-prepares-to-go-ahead-with-protest-major-curbs-in-delhi/article71565420.ece\n- https://www.tbsnews.net/world/south-asia/cjp-delhi-protest-internet-shutdown-metro-curbs-train-cancellations-23000-cops",
+  "hashtags": [
+    "#InternetShutdown",
+    "#UPI",
+    "#SnackCode"
+  ],
+  "tags": [
+    "internet band ho jaye",
+    "internet shutdown",
+    "internet shutdown india",
+    "UPI down",
+    "UPI transactions",
+    "digital economy",
+    "offline payments",
+    "agar internet band ho jaye",
+    "Snack Code"
+  ],
+  "pinned_comment": "Agar kal 24 ghante internet band ho jaye, to aapka sabse zaroori kaam kaun sa atak jayega? Comment mein batao.",
+  "chapter_names": {
+    "1": "UPI ka kya hoga?",
+    "2": "Hospital aur emergency services",
+    "3": "Economy par asar"
+  },
+  "thumbnails": [
+    {
+      "layout": "wifi",
+      "lines": [
+        {
+          "text": "INTERNET",
+          "colour": "white",
+          "size": 160
+        },
+        {
+          "text": "BAND?",
+          "colour": "yellow",
+          "size": 190
+        }
+      ],
+      "badge": "24 GHANTE",
+      "top": 110
+    },
+    {
+      "layout": "phone",
+      "phone_label": "UPI",
+      "phone_status": "FAILED",
+      "lines": [
+        {
+          "text": "24 GHANTE",
+          "colour": "yellow",
+          "size": 150
+        },
+        {
+          "text": "NO INTERNET",
+          "colour": "white",
+          "size": 120
+        }
+      ],
+      "badge": "PHIR KYA HOGA?",
+      "badge_fill": "red",
+      "top": 165
+    },
+    {
+      "layout": "byte",
+      "glow": "orange",
+      "lines": [
+        {
+          "text": "INTERNET",
+          "colour": "white",
+          "size": 150
+        },
+        {
+          "text": "BAND!",
+          "colour": "red",
+          "size": 200
+        }
+      ],
+      "badge": "24 GHANTE KE LIYE?",
+      "badge_fill": "yellow",
+      "top": 95
+    }
+  ]
+}

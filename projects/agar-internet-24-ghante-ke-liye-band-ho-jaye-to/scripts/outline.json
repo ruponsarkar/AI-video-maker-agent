@@ -1,0 +1,127 @@
+[
+  {
+    "on_screen": "Socho, aap raat ko phone dekh rahe ho... abhi to kuch nahi hua. Lekin agar internet 24 ghante ke liye band ho jaye? Kya hoga?",
+    "goal": "Kahani shuru karna aur viewer ko curiosity leke chalana",
+    "visuals": [
+      "host",
+      "phone_call",
+      "warning"
+    ]
+  },
+  {
+    "on_screen": "Aapka phone, UPI, bank account, hospital services, train tickets — sab internet par chalte hain. Agar internet band ho jaye to kya hoga?",
+    "goal": "Kahani ko real-life context me leke aage badhna",
+    "visuals": [
+      "kinetic",
+      "compare",
+      "flow"
+    ],
+    "roadmap": [
+      "Agar internet 24 ghante band ho jaye to UPI transactions kya hongi?",
+      "Agar internet band ho jaye, to hospital aur emergency services kya hongi?",
+      "Agar internet 24 ghante band ho jaye, to economy par kya asar padata hai?"
+    ]
+  },
+  {
+    "kind": "part",
+    "part": 1,
+    "total": 3,
+    "on_screen": "Agar internet 24 ghante band ho jaye to UPI transactions kya hongi?",
+    "recap": ""
+  },
+  {
+    "on_screen": "Raat ko aapka phone dekh rahe ho. Abhi to kuch nahi hua, lekin agar internet band ho jaye... to kya hoga?",
+    "goal": "Viewer ko curiosity leke chalana",
+    "visuals": [
+      "host",
+      "phone_call",
+      "warning"
+    ]
+  },
+  {
+    "on_screen": "2025 me UPI ke services 4 ghante tak disrupt hui thi. Users ne transaction decline aur delays report kiye.",
+    "goal": "Real example se kahani ko jodna",
+    "visuals": [
+      "stat",
+      "warning"
+    ]
+  },
+  {
+    "on_screen": "UPI ke 85% transactions digital hoti hai, lekin agar internet band ho jaye to offline payments hi chal sakte hain.",
+    "goal": "Kahani ko ek kadam aage badhna",
+    "visuals": [
+      "compare",
+      "steps"
+    ]
+  },
+  {
+    "kind": "part",
+    "part": 2,
+    "total": 3,
+    "on_screen": "Agar internet band ho jaye, to hospital aur emergency services kya hongi?",
+    "recap": "To ye tha ... UPI ke transactions ruk jaate hain, lekin offline payments possible hai."
+  },
+  {
+    "on_screen": "Raat ko aapka phone dekh rahe ho. Abhi to kuch nahi hua, lekin agar internet band ho jaye... to kya hoga?",
+    "goal": "Kahani shuru ke scene se repeat karna",
+    "visuals": [
+      "host",
+      "phone_call",
+      "warning"
+    ]
+  },
+  {
+    "on_screen": "2019 me Jammu & Kashmir mein internet 24 ghante band kiya gaya. Hospitals ko emergency services karene mein problem ho sakti hai.",
+    "goal": "Real example se kahani ko jodna",
+    "visuals": [
+      "stat",
+      "warning"
+    ]
+  },
+  {
+    "on_screen": "Internet shutdown ke dino mele, hospitals ko emergency care aur online appointments ka saamna karna padata hai.",
+    "goal": "Kahani ko ek kadam aage badhna",
+    "visuals": [
+      "compare",
+      "flow"
+    ]
+  },
+  {
+    "kind": "part",
+    "part": 3,
+    "total": 3,
+    "on_screen": "Agar internet 24 ghante band ho jaye, to economy par kya asar padata hai?",
+    "recap": "To ye tha ... hospitals me treatment ke liye information missing hoti hai."
+  },
+  {
+    "on_screen": "Raat ko aapka phone dekh rahe ho. Abhi to kuch nahi hua, lekin agar internet band ho jaye... to kya hoga?",
+    "goal": "Kahani shuru ke scene se repeat karna",
+    "visuals": [
+      "host",
+      "phone_call",
+      "warning"
+    ]
+  },
+  {
+    "on_screen": "February 2026 me UPI ke liye widespread disruption hua, Google Pay, PhonePe, Paytm me transactions fail ho gaye.",
+    "goal": "Real example se kahani ko jodna",
+    "visuals": [
+      "stat",
+      "warning"
+    ]
+  },
+  {
+    "on_screen": "Small businesses ko kafi loss hota hai, UPI se payment nahi ho paya to cash nahi lagaya ja saka.",
+    "goal": "Kahani ko ek kadam aage badhna",
+    "visuals": [
+      "compare",
+      "flow"
+    ]
+  },
+  {
+    "on_screen": "Internet shutdown ke dino mele, economy, health aur daily life par big impact ho sakta hai. Aapko bhi ek safe, secure aur responsible digital citizen banne ka maan yaa ja sakte hain.",
+    "goal": "Kahani ko 1-2 line mein yaad karna",
+    "visuals": [],
+    "ending": true
+  }
+]

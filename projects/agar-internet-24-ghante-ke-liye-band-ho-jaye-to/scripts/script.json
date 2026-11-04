@@ -1,0 +1,603 @@
+{
+  "title": "24 ghante internet band ho jaye to UPI, hospitals aur economy kaise affect honge?",
+  "topic": "Agar internet 24 ghante ke liye band ho jaye to?",
+  "scenes": [
+    {
+      "on_screen": "Agar internet 24 ghante ke liye band ho jaye to?",
+      "beats": [
+        {
+          "say": "Socho, aap ke internet 24 ghante band ho jaye. Aapka mobile nahi chalega, bank account nahi dekh payenge, hospital me pata nahi lagega ki apne wala kya kar raha hai.",
+          "visual": {
+            "type": "title"
+          },
+          "mood": "think",
+          "pop": "no phone",
+          "say_hi": "सोचो, आप के इंटरनेट 24 घंटे बंद हो जाए। आपका मोबाइल नहीं चलेगा, बैंक खाता नहीं देख पाएंगे, हॉस्पिटल में पता नहीं लगेगा कि आपके वाला क्या कर रहा है।"
+        },
+        {
+          "say": "Lekin iske baad kuch to chal raha hoga. UPI transactions ruk jayengi, train tickets book nahi ho sakte, offices work process par effect padenge.",
+          "visual": {
+            "type": "compare",
+            "left_title": "Asli",
+            "left": [
+              "UPI ruk",
+              "train tickets nahi"
+            ],
+            "right_title": "Fake",
+            "right": [
+              "bank account dekh paye"
+            ]
+          },
+          "mood": "explain",
+          "pop": "impact",
+          "say_hi": "लेकिन इसके बाद कुछ तो चल रहा है। युपीआई ट्रांजैक्शन रुक जाएंगे, ट्रेन टिकट बुक नहीं हो सकते, ऑफिसेज वर्क प्रोसेस पर इफ़ेक्ट पड़ेंगे।"
+        },
+        {
+          "say": "To phir aapko cash lagana padega, ya mobile number se help lena padega.",
+          "visual": {
+            "type": "steps",
+            "items": [
+              "cash lagana padega",
+              "mobile number se help lena padega",
+              "social media par report kiya"
+            ]
+          },
+          "mood": "warn",
+          "pop": "cash only",
+          "say_hi": "तो फिर आपको कैश लगाना पड़ेगा, या मोबाइल नंबर से हेल्प लेना पड़ेगा।"
+        },
+        {
+          "say": "Isi liye real examples me bhi people ne cash use kiya, aur social media par problem report kiya.",
+          "visual": {
+            "type": "icon",
+            "icon": "warning",
+            "text": "internet band nahi karna"
+          },
+          "mood": "shock",
+          "pop": "danger",
+          "say_hi": "इसीलिए रियल उदाहरण में भी लोगने कैश उपयोग किया, और सोशल मीडिया पर प्रॉब्लम रिपोर्ट की।"
+        }
+      ],
+      "narration_hi": "सोचो, आप के इंटरनेट 24 घंटे बंद हो जाए। आपका मोबाइल नहीं चलेगा, बैंक खाता नहीं देख पाएंगे, हॉस्पिटल में पता नहीं लगेगा कि आपके वाला क्या कर रहा है। लेकिन इसके बाद कुछ तो चल रहा है। युपीआई ट्रांजैक्शन रुक जाएंगे, ट्रेन टिकट बुक नहीं हो सकते, ऑफिसेज वर्क प्रोसेस पर इफ़ेक्ट पड़ेंगे। तो फिर आपको कैश लगाना पड़ेगा, या मोबाइल नंबर से हेल्प लेना पड़ेगा। इसीलिए रियल उदाहरण में भी लोगने कैश उपयोग किया, और सोशल मीडिया पर प्रॉब्लम रिपोर्ट की।"
+    },
+    {
+      "on_screen": "Digital Economy Ka Intezar",
+      "beats": [
+        {
+          "say": "Yahin se digital economy ke importance ka intezar ho raha hai.",
+          "visual": {
+            "type": "host",
+            "text": "Internet band hoga to sab services ruk jayenge"
+          },
+          "mood": "think",
+          "pop": "services stop",
+          "say_hi": "यहीं से डिजिटल अर्थव्यवस्था के महत्व का इंतजार हो रहा है।"
+        }
+      ],
+      "narration_hi": "यहीं से डिजिटल अर्थव्यवस्था के महत्व का इंतजार हो रहा है।"
+    },
+    {
+      "on_screen": "Aaj in sawaalon ke jawab",
+      "beats": [
+        {
+          "say": "Is video mein 3 sawaalon ke jawab milenge. Agar internet 24 ghante band ho jaye to UPI transactions kya hongi? Agar internet band ho jaye, to hospital aur emergency services kya hongi? Agar internet 24 ghante band ho jaye, to economy par kya asar padata hai?",
+          "visual": {
+            "type": "steps",
+            "items": [
+              "Agar internet 24 ghante band ho jaye to UPI transactions kya hongi?",
+              "Agar internet band ho jaye, to hospital aur emergency services kya hongi?",
+              "Agar internet 24 ghante band ho jaye, to economy par kya asar padata hai?"
+            ]
+          },
+          "mood": "explain",
+          "say_hi": "इस वीडियो में तीन सवालों के जवाब मिलेंगे। अगर इंटरनेट 24 घंटे बंद हो जाए तो UPI ट्रांजैक्शन क्या होंगी? अगर इंटरनेट बँद हो जाए, तो हॉस्पिटल और एमरजेंसी सेवाएँ क्या होंगी? अगर इंटरनेट 24 घंटे बंद हो जाए, तो अर्थव्यवस्था पर कैसा असर पड़ता है?"
+        }
+      ],
+      "narration_hi": "इस वीडियो में तीन सवालों के जवाब मिलेंगे। अगर इंटरनेट 24 घंटे बंद हो जाए तो UPI ट्रांजैक्शन क्या होंगी? अगर इंटरनेट बँद हो जाए, तो हॉस्पिटल और एमरजेंसी सेवाएँ क्या होंगी? अगर इंटरनेट 24 घंटे बंद हो जाए, तो अर्थव्यवस्था पर कैसा असर पड़ता है?"
+    },
+    {
+      "on_screen": "Agar internet 24 ghante band ho jaye to UPI transactions kya hongi?",
+      "beats": [
+        {
+          "say": "Chaliye, pehle sawaal se shuru karte hain. Agar internet 24 ghante band ho jaye to UPI transactions kya hongi?",
+          "visual": {
+            "type": "chapter",
+            "part": 1,
+            "total": 3
+          },
+          "mood": "think",
+          "say_hi": "चलिए, पहले सवाल से शुरू करते हैं। अगर इंटरनेट 24 घंटे बंद हो जाए तो UPI ट्रांजैक्शन क्या होंगी?"
+        }
+      ],
+      "narration_hi": "चलिए, पहले सवाल से शुरू करते हैं। अगर इंटरनेट 24 घंटे बंद हो जाए तो UPI ट्रांजैक्शन क्या होंगी?"
+    },
+    {
+      "on_screen": "Raat ke phone par internet band",
+      "beats": [
+        {
+          "say": "Lekin internet band ho jaye to UPI transactions ruk jayengi. Iska real example 2025 me hai, jab UPI services disrupt hui thi.",
+          "visual": {
+            "type": "stat",
+            "value": "2025%",
+            "label": "UPI services disrupt"
+          },
+          "mood": "warn",
+          "pop": "UPI down",
+          "say_hi": "लेकिन इंटरनेट बँद हो जाए तो UPI ट्रांजैक्शन रुक जाएंगी। इसका रियल उदाहरण 2025 में है, जब UPI सेवाएँ डिस्क्रीप्ट हुई थी।"
+        },
+        {
+          "say": "Users ne failed transactions aur delays report kiye. Social media par #UPIDown hashtag trend kar raha tha.",
+          "visual": {
+            "type": "phone_sms",
+            "sender": "VM-ALERT",
+            "message": "#UPIDown trend kar raha"
+          },
+          "mood": "shock",
+          "pop": "social media",
+          "say_hi": "उपयोगकर्ताओं ने विफल लेन-देन और देरी की रिपोर्ट की। सोशल मीडिया पर #UPIDown हैशटैग ट्रेंड कर रहा था।"
+        },
+        {
+          "say": "Lekin iske baad kuch to chal raha hoga. Small businesses ko loss ho raha tha, cash nahi lagaya ja saka.",
+          "visual": {
+            "type": "compare",
+            "left_title": "Asli",
+            "left": [
+              "cash lagaya"
+            ],
+            "right_title": "Fake",
+            "right": [
+              "UPI chal rahi"
+            ]
+          },
+          "mood": "think",
+          "pop": "loss ho raha",
+          "say_hi": "लेकिन इसके बाद कुछ तो चल रहा है। छोटे व्यवसायों को नुकसान हो रहा था, कैश नहीं लगाया जा सका।"
+        },
+        {
+          "say": "Consumers ne UPI system ka reliability chitragat karne ki maaang ki hai.",
+          "visual": {
+            "type": "host",
+            "text": "Consumers ne reliability chitragat karne ki maaang ki hai"
+          },
+          "mood": "explain",
+          "pop": "reliability",
+          "say_hi": "उपभोक्ता ने UPI सिस्टम का रेलियबिलिटी चित्रगत करने की मांग की है।"
+        }
+      ],
+      "narration_hi": "लेकिन इंटरनेट बँद हो जाए तो UPI ट्रांजैक्शन रुक जाएंगी। इसका रियल उदाहरण 2025 में है, जब UPI सेवाएँ डिस्क्रीप्ट हुई थी। लेकिन इसके बाद कुछ तो चल रहा है। छोटे व्यवसायों को नुकसान हो रहा था, कैश नहीं लगाया जा सका। उपभोक्ता ने UPI सिस्टम का रेलियबिलिटी चित्रगत करने की मांग की है।"
+    },
+    {
+      "on_screen": "UPI Disruption in 2025",
+      "beats": [
+        {
+          "say": "High transaction volumes aur server capacity ke durn pressure aayi thi. PwC report ke according India global digital transaction ke 46% hain.",
+          "visual": {
+            "type": "stat",
+            "value": "46%",
+            "label": "Global Digital Txn"
+          },
+          "mood": "explain",
+          "pop": "PwC",
+          "say_hi": "उच्च ट्रांज़ैक्शन वॉल्यूम और सर्वर कैपेसिटी के दौरान प्रेशर आई थी। पीसीसी रिपोर्ट के अनुसार भारत वैश्विक डिजिटल ट्रांजेक्शन के 46% हैं।"
+        },
+        {
+          "say": "UPI ke frequent outages ne public trust mein doubt create kiya hai.",
+          "visual": {
+            "type": "warning",
+            "text": "Trust Eroded"
+          },
+          "mood": "shock",
+          "pop": "Outages",
+          "say_hi": "युपीआई के फ्रिक्वेंट आउटेज़ ने पब्लिक ट्रस्ट में डॉउट सृष्टि की है।"
+        },
+        {
+          "say": "Government ne small vendors ko BHIM app par adopt karna ke liye INR 1,500 crore incentive de rakha hai.",
+          "visual": {
+            "type": "host",
+            "text": "Govt gives 1,500 cr incentive"
+          },
+          "mood": "think",
+          "pop": "BHIM",
+          "say_hi": "सरकार ने सूचीबद्ध विक्रेता को BHIM ऐप पर अDOPT करने के लिए INR 1,500 करोड़ इन्सेंटिव देकर रखा है।"
+        },
+        {
+          "say": "Lekin UPI ke system mei instant backup options nahi hain, jo risks ko badhate hain.",
+          "visual": {
+            "type": "icon",
+            "icon": "warning",
+            "text": "No Backup Risks"
+          },
+          "mood": "warn",
+          "pop": "System",
+          "say_hi": "लेकिन UPI के सिस्टम में इंस्टैंट बैकअप ऑप्शन नहीं है, जो रिस्क को बढ़ाते है।"
+        }
+      ],
+      "narration_hi": "उच्च ट्रांज़ैक्शन वॉल्यूम और सर्वर कैपेसिटी के दौरान प्रेशर आई थी। पीसीसी रिपोर्ट के अनुसार भारत वैश्विक डिजिटल ट्रांजेक्शन के 46% हैं। युपीआई के फ्रिक्वेंट आउटेज़ ने पब्लिक ट्रस्ट में डॉउट सृष्टि की है। सरकार ने सूचीबद्ध विक्रेता को BHIM ऐप पर अDOPT करने के लिए INR 1,500 करोड़ इन्सेंटिव देकर रखा है। लेकिन UPI के सिस्टम में इंस्टैंट बैकअप ऑप्शन नहीं है, जो रिस्क को बढ़ाते है।"
+    },
+    {
+      "on_screen": "Internet Band Ho Jaye",
+      "beats": [
+        {
+          "say": "Is video mein aapko pata lagega ki internet shutdown ka real impact kya hota hai.",
+          "visual": {
+            "type": "stat",
+            "value": "85%",
+            "label": "UPI Transactions"
+          },
+          "mood": "explain",
+          "pop": "85% Digital",
+          "say_hi": "इस वीडियो में आपको पता लगेगा कि इंटरनेट शुड़डाउन का रियल इम्पैक्ट क्या होता है।"
+        },
+        {
+          "say": "Isi liye real examples me bhi people ne cash use kiya.",
+          "visual": {
+            "type": "host",
+            "text": "Internet shutdown ke impact ko samajhne ka sahi tarika hai."
+          },
+          "mood": "think",
+          "pop": "Real Impact",
+          "say_hi": "इसी लिए रियल उदाहरण में भी लोगने कैश उपयोग किया।"
+        }
+      ],
+      "narration_hi": "इस वीडियो में आपको पता लगेगा कि इंटरनेट शुड़डाउन का रियल इम्पैक्ट क्या होता है। इसी लिए रियल उदाहरण में भी लोगने कैश उपयोग किया।"
+    },
+    {
+      "on_screen": "Agar internet band ho jaye, to hospital aur emergency services kya hongi?",
+      "beats": [
+        {
+          "say": "To ye tha ... UPI ke transactions ruk jaate hain, lekin offline payments possible hai. Ab agla sawaal. Agar internet band ho jaye, to hospital aur emergency services kya hongi?",
+          "visual": {
+            "type": "chapter",
+            "part": 2,
+            "total": 3
+          },
+          "mood": "think",
+          "say_hi": "तो ये था ... युपीआई के ट्रांज़ैक्शन रुक जाते हैं, लेकिन ऑफलाइन पेमेंट्स संभव है। अब अगला सवाल। अगर इंटरनेट बँद हो जाए, तो हॉस्पिटल और एमरजेंसी सेवाएँ क्या होंगी?"
+        }
+      ],
+      "narration_hi": "तो ये था ... युपीआई के ट्रांज़ैक्शन रुक जाते हैं, लेकिन ऑफलाइन पेमेंट्स संभव है। अब अगला सवाल। अगर इंटरनेट बँद हो जाए, तो हॉस्पिटल और एमरजेंसी सेवाएँ क्या होंगी?"
+    },
+    {
+      "on_screen": "Raat ko phone dekh raha hai",
+      "beats": [
+        {
+          "say": "Lekin internet band ho jaye to hospital aur emergency services bhi affected ho sakti hain.",
+          "visual": {
+            "type": "kinetic",
+            "text": "Internet band ho jaye to...",
+            "highlight": "emergency services"
+          },
+          "mood": "warn",
+          "pop": "danger",
+          "say_hi": "लेकिन इंटरनेट बैंड हो जाए तो हॉस्पिटल और एमरजेंसी सर्विसेज भी अफेक्ट हो सकती है।"
+        },
+        {
+          "say": "Real example 2019 mein Jammu and Kashmir me internet 24 ghante band kar diya gaya tha.",
+          "visual": {
+            "type": "stat",
+            "value": "24",
+            "label": "ghante internet band"
+          },
+          "mood": "explain",
+          "pop": "example",
+          "say_hi": "रियल उदाहरण 2019 में जम्मू और कश्मीर में इंटरनेट 24 घंटे बंद कर दिया गया था।"
+        },
+        {
+          "say": "Doctors aur equipment chal rahe lekin patient treatment ke liye information missing ho sakti thi.",
+          "visual": {
+            "type": "compare",
+            "left_title": "Asli",
+            "left": [
+              "Doctors chal rahe"
+            ],
+            "right_title": "Fake",
+            "right": [
+              "Treatment missing"
+            ]
+          },
+          "mood": "think",
+          "pop": "impact",
+          "say_hi": "डॉक्टर्स और इक्विपमेंट चल रहे हैं लेकिन पेशेंट ट्रीटमेंट के लिए जानकारी मिसिंग हो सकती थी।"
+        },
+        {
+          "say": "Users ne service provider not available error dekhke cash ya cards use kiya.",
+          "visual": {
+            "type": "icon",
+            "icon": "warning",
+            "text": "Service provider error"
+          },
+          "mood": "shock",
+          "pop": "cash cards",
+          "say_hi": "उपयोगकर्ता सेवा प्रदाता उपलब्ध नहीं है के त्रुटि देखकर कैश या कार्ड उपयोग किया।"
+        }
+      ],
+      "narration_hi": "लेकिन इंटरनेट बैंड हो जाए तो हॉस्पिटल और एमरजेंसी सर्विसेज भी अफेक्ट हो सकती है। रियल उदाहरण 2019 में जम्मू और कश्मीर में इंटरनेट 24 घंटे बंद कर दिया गया था। डॉक्टर्स और इक्विपमेंट चल रहे हैं लेकिन पेशेंट ट्रीटमेंट के लिए जानकारी मिसिंग हो सकती थी। उपयोगकर्ता सेवा प्रदाता उपलब्ध नहीं है के त्रुटि देखकर कैश या कार्ड उपयोग किया।"
+    },
+    {
+      "on_screen": "Internet Shutdown Impact",
+      "beats": [
+        {
+          "say": "Delhi, Mumbai, Chennai, Kolkata, Hyderabad, Bengaluru me problem report hogi. UPI transactions ruk jaate hain, lekin offline payments possible hai.",
+          "visual": {
+            "type": "kinetic",
+            "text": "Delhi Mumbai Chennai Kolkata Hyderabad Bengaluru",
+            "highlight": "UPI"
+          },
+          "mood": "explain",
+          "pop": "UPI",
+          "say_hi": "दिल्ली, मुम्बई, चेन्नई, कोलकाता, हैदराबाद, बेंगलुरु में प्रॉब्लम रिपोर्ट होगी। युपीआई ट्रांजेक्शन रूक जाते हैं, लेकिन ऑफलाइन पेमेंट्स संभव है।"
+        },
+        {
+          "say": "Lekin hospital mein real-time data ke liye internet zaroori hai. 2025 mein Prayagraj mein stampede ke duraan internet band kar diya gaya tha.",
+          "visual": {
+            "type": "host",
+            "text": "Hospitals need real-time data for emergencies"
+          },
+          "mood": "warn",
+          "pop": "emergency",
+          "say_hi": "लेकिन हॉस्पिटल में रियल-टाइम डेटा के लिए इंटरनेट ज़रूरी है। 2025 में प्रयागराज में स्टैम्पेड के दौरान इंटरनेट बंद कर दिया गया था।"
+        },
+        {
+          "say": "Government ke according, internet suspension sirf public emergency ya safety ke liye ho sakti hai.",
+          "visual": {
+            "type": "stat",
+            "value": "2025",
+            "label": "Prayagraj stampede"
+          },
+          "mood": "think",
+          "pop": "stampede",
+          "say_hi": "सरकार के अनुसार, इंटरनेट सस्पेंशन केवल पब्लिक एमरजेंसी या सेफ़त के लिए हो सकती है।"
+        },
+        {
+          "say": "Internet shutdown ke duraan economic activity aur public safety par bhi negative impact ho sakti hai.",
+          "visual": {
+            "type": "warning",
+            "text": "Economic & safety impact"
+          },
+          "mood": "shock",
+          "pop": "impact",
+          "say_hi": "इंटरनेट शुड़ौन के दौरान आर्थिक गतिविधि और सार्वजनिक सुरक्षा पर भी नकारात्मक प्रभाव हो सकता है।"
+        }
+      ],
+      "narration_hi": "दिल्ली, मुम्बई, चेन्नई, कोलकाता, हैदराबाद, बेंगलुरु में प्रॉब्लम रिपोर्ट होगी। युपीआई ट्रांजेक्शन रूक जाते हैं, लेकिन ऑफलाइन पेमेंट्स संभव है। लेकिन हॉस्पिटल में रियल-टाइम डेटा के लिए इंटरनेट ज़रूरी है। 2025 में प्रयागराज में स्टैम्पेड के दौरान इंटरनेट बंद कर दिया गया था। सरकार के अनुसार, इंटरनेट सस्पेंशन केवल पब्लिक एमरजेंसी या सेफ़त के लिए हो सकती है। इंटरनेट शुड़ौन के दौरान आर्थिक गतिविधि और सार्वजनिक सुरक्षा पर भी नकारात्मक प्रभाव हो सकता है।"
+    },
+    {
+      "on_screen": "Internet shutdown mele",
+      "beats": [
+        {
+          "say": "Real example me people ne social media par aadhaar card aur mobile number ki help se communication karte dekha.",
+          "visual": {
+            "type": "compare",
+            "left_title": "Real",
+            "left": [
+              "aadhaar card",
+              "mobile number"
+            ],
+            "right_title": "Fake",
+            "right": [
+              "social media"
+            ]
+          },
+          "mood": "explain",
+          "pop": "real vs fake",
+          "say_hi": "रियल उदाहरण में लोगों ने सोशल मीडिया पर आधार कार्ड और मोबाइल नंबर की खबर से संचार करते देखा।"
+        },
+        {
+          "say": "Hospital ko emergency services karene mein problem ho sakti thi. To phir ...",
+          "visual": {
+            "type": "warning",
+            "text": "emergency services stop"
+          },
+          "mood": "shock",
+          "pop": "stop",
+          "say_hi": "हॉस्पिटल को एमरजेंसी सर्विसेज करने में प्रॉब्लम हो सकती थी। तो फिर ..."
+        },
+        {
+          "say": "hospital aur emergency services bhi affected hote hain, lekin offline procedures chalay jaa sakte hain.",
+          "visual": {
+            "type": "host",
+            "text": "offline procedures chalay jaa sakte hain"
+          },
+          "mood": "think",
+          "pop": "offline",
+          "say_hi": "हॉस्पिटल और एमरजेंसी सर्विसेज भी अफेक्ट होते हैं, लेकिन ऑफलाइन प्रोसीजर कालय जा सकते हैं।"
+        }
+      ],
+      "narration_hi": "रियल उदाहरण में लोगों ने सोशल मीडिया पर आधार कार्ड और मोबाइल नंबर की खबर से संचार करते देखा। हॉस्पिटल को एमरजेंसी सर्विसेज करने में प्रॉब्लम हो सकती थी। तो फिर ... हॉस्पिटल और एमरजेंसी सर्विसेज भी अफेक्ट होते हैं, लेकिन ऑफलाइन प्रोसीजर कालय जा सकते हैं।"
+    },
+    {
+      "on_screen": "Agar internet 24 ghante band ho jaye, to economy par kya asar padata hai?",
+      "beats": [
+        {
+          "say": "To ye tha ... hospitals me treatment ke liye information missing hoti hai. Ab aakhri aur sabse kaam ka sawaal. Agar internet 24 ghante band ho jaye, to economy par kya asar padata hai?",
+          "visual": {
+            "type": "chapter",
+            "part": 3,
+            "total": 3
+          },
+          "mood": "think",
+          "say_hi": "तो ये था ... हॉस्पिटल में इलाज के लिए जानकारी गायब होती है। अब आखिरी और सबसे काम का सवाल। अगर इंटरनेट 24 घंटे बंद हो जाए, तो अर्थव्यवस्था पर कैसा असर पड़ता है?"
+        }
+      ],
+      "narration_hi": "तो ये था ... हॉस्पिटल में इलाज के लिए जानकारी गायब होती है। अब आखिरी और सबसे काम का सवाल। अगर इंटरनेट 24 घंटे बंद हो जाए, तो अर्थव्यवस्था पर कैसा असर पड़ता है?"
+    },
+    {
+      "on_screen": "Raat ko phone dekh rahe ho",
+      "beats": [
+        {
+          "say": "Delhi, Mumbai, Chennai, Kolkata, Hyderabad, Bengaluru me problem report hogi. UPI transactions ruk jaate hain, lekin offline payments possible hai.",
+          "visual": {
+            "type": "kinetic",
+            "text": "Delhi Mumbai Chennai Kolkata Hyderabad Bengaluru",
+            "highlight": "UPI"
+          },
+          "mood": "think",
+          "pop": "UPI ruk jaate hain",
+          "say_hi": "दिल्ली, मुम्बई, चेन्नई, कोलकाता, हैदराबाद, बेंगलुरु में प्रॉब्लम रिपोर्ट होगी। युपीआई ट्रांजेक्शन रूक जाते हैं, लेकिन ऑफलाइन पेमेंट्स संभव है।"
+        },
+        {
+          "say": "Lekin hospital mein real-time data ke liye internet zaroori hai. 2025 mein Prayagraj mein stampede ke duraan internet band kar diya gaya tha.",
+          "visual": {
+            "type": "icon",
+            "icon": "hospital",
+            "text": "real-time data zaroori hai"
+          },
+          "mood": "warn",
+          "pop": "hospitals",
+          "say_hi": "लेकिन हॉस्पिटल में रियल-टाइम डेटा के लिए इंटरनेट ज़रूरी है। 2025 में प्रयागराज में स्टैम्पेड के दौरान इंटरनेट बंद कर दिया गया था।"
+        },
+        {
+          "say": "To phir ... To ye tha ... hospitals me treatment ke liye information missing hoti hai.",
+          "visual": {
+            "type": "steps",
+            "items": [
+              "Treatment info missing",
+              "Emergency delays",
+              "Lives at risk"
+            ]
+          },
+          "mood": "shock",
+          "pop": "missing",
+          "say_hi": "तो फिर ... तो ये था ... हॉस्पिटल में इलाज के लिए जानकारी गायब होती है।"
+        },
+        {
+          "say": "Agar internet 24 ghante band ho jaye, to economy par kya asar padata hai?",
+          "visual": {
+            "type": "stat",
+            "value": "24 ghante",
+            "label": "economy asar"
+          },
+          "mood": "think",
+          "pop": "24 ghante",
+          "say_hi": "अगर इंटरनेट 24 घंटे बंद हो जाए, तो अर्थव्यवस्था पर कैसा प्रभाव पड़ता है?"
+        }
+      ],
+      "narration_hi": "दिल्ली, मुम्बई, चेन्नई, कोलकाता, हैदराबाद, बेंगलुरु में प्रॉब्लम रिपोर्ट होगी। युपीआई ट्रांजेक्शन रूक जाते हैं, लेकिन ऑफलाइन पेमेंट्स संभव है। लेकिन हॉस्पिटल में रियल-टाइम डेटा के लिए इंटरनेट ज़रूरी है। 2025 में प्रयागराज में स्टैम्पेड के दौरान इंटरनेट बंद कर दिया गया था। तो फिर ... तो ये था ... हॉस्पिटल में इलाज के लिए जानकारी गायब होती है। अगर इंटरनेट 24 घंटे बंद हो जाए, तो अर्थव्यवस्था पर कैसा प्रभाव पड़ता है?"
+    },
+    {
+      "on_screen": "February 2026: UPI Disruption",
+      "beats": [
+        {
+          "say": "Lekin internet shutdown ke dina mele, transport administration aur business operations severely disrupted ho sakte hain.",
+          "visual": {
+            "type": "kinetic",
+            "text": "Internet Shutdown",
+            "highlight": "Public Networks"
+          },
+          "mood": "warn",
+          "pop": "No Access",
+          "say_hi": "लेकिन इंटरनेट शुड़डाउन के दिन मेले, ट्रांसपोर्ट एडमिनिस्ट्रेशन और बिजनेस ऑपरेशंस सीवरली डिसर्टुर्ब हो सकते हैं।"
+        },
+        {
+          "say": "Electricity chal rahi hai lekin public network access nahi hai to data offline rahega.",
+          "visual": {
+            "type": "host",
+            "text": "Electricity on, but no internet"
+          },
+          "mood": "think",
+          "pop": "Offline Data",
+          "say_hi": "बिजली चल रही है लेकिन पब्लिक नेटवर्क एक्सेस नहीं है तो डाटा ऑफ़लाइन रहेगा।"
+        },
+        {
+          "say": "Private networks aur locally stored data help services continue partially during internet outage.",
+          "visual": {
+            "type": "icon",
+            "icon": "wifi",
+            "text": "Private Networks Help"
+          },
+          "mood": "explain",
+          "pop": "Partial Service",
+          "say_hi": "प्राइवेट नेटवर्क और लॉकली स्टोर्ड डेटा हेल्प सर्विसेज कंटिन्यू पार्शियली डूरिंग इंटरनेट आउटेज।"
+        },
+        {
+          "say": "Real example me small businesses ko kafi loss ho raha tha, UPI se payment nahi ho paya to cash nahi lagaya ja saka.",
+          "visual": {
+            "type": "compare",
+            "left_title": "Real",
+            "left": [
+              "Cash Loss"
+            ],
+            "right_title": "Fake",
+            "right": [
+              "No Cash"
+            ]
+          },
+          "mood": "shock",
+          "pop": "Business Impact",
+          "say_hi": "रियल एग्जाम्पल में समान छोटे व्यवसाय को काफी लॉस हो रहा था, UPI से पेमेंट नहीं हो पाया तो कैश नहीं लगाया जा सका।"
+        }
+      ],
+      "narration_hi": "लेकिन इंटरनेट शुड़डाउन के दिन मेले, ट्रांसपोर्ट एडमिनिस्ट्रेशन और बिजनेस ऑपरेशंस सीवरली डिसर्टुर्ब हो सकते हैं। बिजली चल रही है लेकिन पब्लिक नेटवर्क एक्सेस नहीं है तो डाटा ऑफ़लाइन रहेगा। प्राइवेट नेटवर्क और लॉकली स्टोर्ड डेटा हेल्प सर्विसेज कंटिन्यू पार्शियली डूरिंग इंटरनेट आउटेज। रियल एग्जाम्पल में समान छोटे व्यवसाय को काफी लॉस हो रहा था, UPI से पेमेंट नहीं हो पाया तो कैश नहीं लगाया जा सका।"
+    },
+    {
+      "on_screen": "UPI ka problem, cash ki zaroorat",
+      "beats": [
+        {
+          "say": "High transaction volumes aur server capacity ke durn pressure aayi thi, December 2024 me daily average 539.68 million transactions hui thi.",
+          "visual": {
+            "type": "stat",
+            "value": "539.68 million",
+            "label": "daily transactions"
+          },
+          "mood": "think",
+          "pop": "high volume",
+          "say_hi": "उच्च ट्रांजैक्शन वॉल्यूम्स और सर्वर कैपेसिटी के कारण प्रेशर आई थी, दिसंबर 2024 में दैनिक औसत 539.68 करोड़ ट्रांजैक्शन हुई थी।"
+        },
+        {
+          "say": "Even brief disruption me commerce aur consumer confidence par big impact ho sakta hai.",
+          "visual": {
+            "type": "warning",
+            "text": "commerce impacted"
+          },
+          "mood": "warn",
+          "pop": "disruption",
+          "say_hi": "समय के लिए छोटी भी अवरोध में व्यापार और उपभोक्ता आशा पर बड़ा प्रभाव हो सकता है।"
+        },
+        {
+          "say": "economy me major disruption ho sakti hai, lekin offline procedures help services continue karte hain.",
+          "visual": {
+            "type": "compare",
+            "left_title": "Online",
+            "left": [
+              "UPI"
+            ],
+            "right_title": "Offline",
+            "right": [
+              "cash"
+            ]
+          },
+          "mood": "explain",
+          "pop": "continue",
+          "say_hi": "अर्थव्यवस्था में मुख्य विघटन हो सकता है, लेकिन ऑफलाइन प्रक्रियाएँ सेवाओं के चलते मदद करती हैं।"
+        },
+        {
+          "say": "internet band hone se economy me loss hota hai, lekin essential services chalay jaa sakte hain.",
+          "visual": {
+            "type": "icon",
+            "icon": "shield",
+            "text": "essential services"
+          },
+          "mood": "think",
+          "pop": "offline",
+          "say_hi": "इंटरनेट बैंड होने से इकोनामी में लॉस होता है, लेकिन एसेंशियल सर्विसेज चलाय जा सकते हैं।"
+        }
+      ],
+      "narration_hi": "उच्च ट्रांजैक्शन वॉल्यूम्स और सर्वर कैपेसिटी के कारण प्रेशर आई थी, दिसंबर 2024 में दैनिक औसत 539.68 करोड़ ट्रांजैक्शन हुई थी। समय के लिए छोटी भी अवरोध में व्यापार और उपभोक्ता आशा पर बड़ा प्रभाव हो सकता है। अर्थव्यवस्था में मुख्य विघटन हो सकता है, लेकिन ऑफलाइन प्रक्रियाएँ सेवाओं के चलते मदद करती हैं। इंटरनेट बैंड होने से इकोनामी में लॉस होता है, लेकिन एसेंशियल सर्विसेज चलाय जा सकते हैं।"
+    },
+    {
+      "on_screen": "Aapko kya laga?",
+      "beats": [
+        {
+          "say": "Comment mein batao, aapko sabse hairan kis baat ne kiya? Aur aisi hi baatein jaanne ke liye Snack Code ko subscribe kar lo.",
+          "visual": {
+            "type": "host",
+            "text": "Comment karo aur subscribe karo"
+          },
+          "mood": "happy",
+          "say_hi": "कमेंट में बताओ, आपको सबसे हैरान किस बात ने किया? और ऐसी ही बातें जानने के लिए स्नैक कोड को सब्सक्राइब कर लो।"
+        }
+      ],
+      "narration_hi": "कमेंट में बताओ, आपको सबसे हैरान किस बात ने किया? और ऐसी ही बातें जानने के लिए स्नैक कोड को सब्सक्राइब कर लो।"
+    }
+  ]
+}

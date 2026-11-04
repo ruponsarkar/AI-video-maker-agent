@@ -1,0 +1,92 @@
+[
+  {
+    "on_screen": "PM ka video dekha, UPI PIN daala, paisa gaya",
+    "goal": "Shocking fact: Deepfake ads on Facebook & Instagram are tricking people into giving away money via fake welfare schemes.",
+    "visuals": [
+      "title",
+      "host",
+      "warning"
+    ]
+  },
+  {
+    "on_screen": "Real example of deepfake scam",
+    "goal": "Show a real case where someone clicked on a fake PM video and got scammed out of Rs. 50,000.",
+    "visuals": [
+      "story",
+      "phone_call",
+      "flow"
+    ]
+  },
+  {
+    "on_screen": "How the scam works: Step-by-step",
+    "goal": "Explain how deepfake videos are used to trick people into sharing UPI PIN and money.",
+    "visuals": [
+      "steps",
+      "compare",
+      "warning"
+    ]
+  },
+  {
+    "on_screen": "Stats & signs of a fake ad",
+    "goal": "Show stats like 12,000+ reported cases in October 2026 and signs to spot fake videos.",
+    "visuals": [
+      "stat",
+      "icon",
+      "phone_sms"
+    ]
+  },
+  {
+    "on_screen": "What to do: Tips & helpline",
+    "goal": "Give actionable tips like checking transaction details, not sharing OTP or PIN, and contacting 1930.",
+    "visuals": [
+      "tips",
+      "chat",
+      "phone_call"
+    ]
+  },
+  {
+    "on_screen": "Avoid fake videos of public officials",
+    "goal": "Remind viewers to verify all government schemes on official websites before acting.",
+    "visuals": [
+      "warning",
+      "steps",
+      "icon"
+    ]
+  },
+  {
+    "on_screen": "How fraudsters steal money",
+    "goal": "Show a flowchart: fake video → call or link → request UPI PIN → funds transferred to scammers' accounts.",
+    "visuals": [
+      "flow",
+      "stat",
+      "warning"
+    ]
+  },
+  {
+    "on_screen": "Don't share your UPI PIN",
+    "goal": "Highlight the risk of giving away UPI PIN and how it's used to drain accounts.",
+    "visuals": [
+      "icon",
+      "phone_call",
+      "warning"
+    ]
+  },
+  {
+    "on_screen": "Call 1930 if you're a victim",
+    "goal": "Encourage viewers to report scams and file complaints on cybercrime.gov.in.",
+    "visuals": [
+      "chat",
+      "phone_sms",
+      "helpline"
+    ]
+  },
+  {
+    "on_screen": "Summary & comment now",
+    "goal": "End with a summary of the scam and call to action for comments and shares.",
+    "visuals": [
+      "title",
+      "host",
+      "steps"
+    ]
+  }
+]

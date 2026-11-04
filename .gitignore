@@ -1,0 +1,32 @@
+# Login files: anyone with these could upload to the channel. Never commit them.
+client_secret*.json
+youtube_token.json
+
+# The owner's voice sample
+voices/*.wav
+
+# Contains SearXNG's secret key
+searxng/settings.yml
+
+# Python environments and caches (rebuild them, don't store them)
+venv/
+venv-voice/
+.venv/
+__pycache__/
+*.pyc
+
+# Generated and heavy files (scripts, notes and YouTube details stay in git)
+projects/*/audio/
+projects/*/output/
+projects/*/fonts
+projects/*/music.*
+audio/
+output/
+music.mp3
+music.wav
+music.m4a
+
+# Editor and system files
+.vscode/
+.idea/
+.DS_Store

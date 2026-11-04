@@ -1,0 +1,98 @@
+[
+  {
+    "on_screen": "Socho, aap raat ko phone dekh rahe ho, abhi kuch nahi kar rahe ho. Lekin ek click ke baad, aapke data, password aur paise khushamati mein chale gaye.",
+    "goal": "Kya hai yeh scam? Kaisa karta hai?",
+    "visuals": [
+      "phone_call",
+      "warning"
+    ]
+  },
+  {
+    "on_screen": "Aapne ek link share kiya, jisme aapke personal details daal diye. Lekin wahi link phishing website ke liye tha.",
+    "goal": "Kaisa scam hota hai?",
+    "visuals": [
+      "phone_sms",
+      "chat"
+    ],
+    "roadmap": [
+      "Ye scam hota kaise hai?",
+      "Isko pehchanein aur bachein kaise?",
+      "Agar fas gaye to kya karein?"
+    ]
+  },
+  {
+    "kind": "part",
+    "part": 1,
+    "total": 3,
+    "on_screen": "Ye scam hota kaise hai?",
+    "recap": ""
+  },
+  {
+    "on_screen": "Phishing website scigovinjudicial.com, jo sci.gov.in se ek click pe dekhne lage. Lekin yeh fake hai aur aapke sensitive data le leti hai.",
+    "goal": "Scam kaise hota hai?",
+    "visuals": [
+      "icon",
+      "compare"
+    ]
+  },
+  {
+    "on_screen": "Cybercriminals aapko login details, banking info aur identity data chha lena chahte hain. Lekin yeh sade click ke result me hua.",
+    "goal": "Kaisa scam hota hai?",
+    "visuals": [
+      "flow",
+      "warning"
+    ]
+  },
+  {
+    "kind": "part",
+    "part": 2,
+    "total": 3,
+    "on_screen": "Isko pehchanein aur bachein kaise?",
+    "recap": "To ye tha scam ka poora khel."
+  },
+  {
+    "on_screen": "URL hover karke dekh lo: scigovinjudicial.com fake hai, asli URL sci.gov.in hai. Yeh check karo, agar .gov.in nahi hua to avoid karo.",
+    "goal": "Kaise pehchane?",
+    "visuals": [
+      "steps",
+      "compare"
+    ]
+  },
+  {
+    "on_screen": "Phishing website me suspicious URLs, grammatical errors aur unsolicited requests hoti hai. Agar galti se data daal diya to immediately password update karo.",
+    "goal": "Kaise bache?",
+    "visuals": [
+      "warning",
+      "flow"
+    ]
+  },
+  {
+    "kind": "part",
+    "part": 3,
+    "total": 3,
+    "on_screen": "Agar fas gaye to kya karein?",
+    "recap": "To ab aap iske nishan pehchante hain."
+  },
+  {
+    "on_screen": "Galti se data daal diye? To immediately password change karo aur bank ko batao. Police ya cybersecurity department se contact karo.",
+    "goal": "Kya karein agar fas gaye?",
+    "visuals": [
+      "stat",
+      "warning"
+    ]
+  },
+  {
+    "on_screen": "Yeh phishing scam pehle 2023, 2025 aur 2026 mein bhi hua. Agar aapke mobile ki screen ke URL dekh lo, to kuch nahi hoga.",
+    "goal": "Kaisa bache?",
+    "visuals": [
+      "compare",
+      "warning"
+    ]
+  },
+  {
+    "on_screen": "Supreme Court ki asli website sirf sci.gov.in hai. Dusre links avoid karo aur URL hover karke dekh lo.",
+    "goal": "Phishing scam se bachne ke liye, URL check karo aur data nahi daalna.",
+    "visuals": [],
+    "ending": true
+  }
+]
