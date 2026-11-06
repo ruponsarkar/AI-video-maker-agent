@@ -7,11 +7,15 @@
 
 # ₹19,813 crore gaye: investment scam ka pura khel | India investment fraud 2025 (I4C data): fake trading apps, WhatsApp/Telegram stock tips groups, pehle chhota profit dikhana, kaise pehchane, kya karein | minutes=8
 
-Agar internet 24 ghante ke liye band ho jaye to? | Curiosity explainer: India mein internet 24 ghante band ho to UPI, bank, hospital, trains, offices, phones par kya asar. Real internet shutdown examples. Kurzgesagt what-if style | minutes=7
+# Agar internet 24 ghante ke liye band ho jaye to? | Curiosity explainer: India mein internet 24 ghante band ho to UPI, bank, hospital, trains, offices, phones par kya asar. Real internet shutdown examples. Kurzgesagt what-if style | minutes=7
 
 # Added 2026-11-04 from current news (these are news topics, not copies of viral videos)
 # PM ka video dekha, UPI PIN daala, paisa gaya: deepfake ad scam | I4C advisory October 2026: Facebook aur Instagram par PM, Finance Minister aur Chief Ministers ke deepfake ads, fake welfare scheme, scratch card aur cashback. Advance fee aur UPI collect request ka trick, +92 numbers. UPI PIN paise lene ke liye kabhi nahi lagta. Kaise pehchane, kya karein | minutes=6
 
 # Instagram ad par ek click aur phone freeze: fake ad scam | I4C awareness drive October 2026 on fake social media ads: fake offers, jobs aur dating ads, malicious apps, fake payment pages, data chori aur sextortion. Real case: Gwalior family, Instagram ad, phone freeze, UPI se paise gaye. Kaise bachein, kya karein | minutes=6
 
-Supreme Court ki nakli website: ek link aur data gaya | Supreme Court Registry notice 3 November 2026: scigovinjudicial.com phishing domain, asli website sirf sci.gov.in. Phishing kaise kaam karta hai, link kaise check karein, galti se details daal di to kya karein. Fast, short explainer | minutes=3
+# Supreme Court ki nakli website: ek link aur data gaya | Supreme Court Registry notice 3 November 2026: scigovinjudicial.com phishing domain, asli website sirf sci.gov.in. Phishing kaise kaam karta hai, link kaise check karein, galti se details daal di to kya karein. Fast, short explainer | minutes=3
+
+# Current Indian political news | Congress VS BJP  | Peoples opinions | minutes=4
+
+Internet Aata Kahan Se Hai? Samundar Ke Neeche Chhupi Internet Ki Duniya | Internet ka infrastructure: submarine fiber optic cables, data centers, ISPs, mobile towers, routers aur satellites. India mein internet kaise pahunchta hai aur duniya kaise connected hai | Real-life examples aur easy animations ke saath beginner-friendly explanation | minutes=9

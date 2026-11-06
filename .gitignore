@@ -18,6 +18,7 @@ __pycache__/
 # Generated and heavy files (scripts, notes and YouTube details stay in git)
 projects/*/audio/
 projects/*/output/
+projects/*/images/
 projects/*/fonts
 projects/*/music.*
 audio/

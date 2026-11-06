@@ -1,0 +1,1040 @@
+{
+  "title": "Internet Kahan Se Aata Hai? Samundar Ke Neeche Chhupi",
+  "topic": "Internet Aata Kahan Se Hai? Samundar Ke Neeche Chhupi Internet Ki Duniya",
+  "kind": "explainer",
+  "scenes": [
+    {
+      "on_screen": "Internet Aata Kahan Se Hai? Samundar Ke Neeche Chhupi Internet Ki Duniya",
+      "beats": [
+        {
+          "say": "Socho, aap ek din apne bachche ko phone se gem khelte hue dekhte hain.",
+          "visual": {
+            "type": "title"
+          },
+          "mood": "think",
+          "pop": "gem tez chal raha hai",
+          "say_hi": "सोचो, आप एक दिन अपने बच्चे को फ़ोन से गेम खेलते हुए देखते हैं।"
+        },
+        {
+          "say": "Wo keh raha hai, papa, ye gem itna tez kyun chal raha hai?",
+          "visual": {
+            "type": "host",
+            "text": "Papa, ye gem itna tez kyun chal raha hai?"
+          },
+          "mood": "explain",
+          "pop": "tez chal raha hai",
+          "say_hi": "वो कह रहा है, पापा, ये गेम इतना तेज़ क्यों चल रहा है?"
+        },
+        {
+          "say": "Aapko lagta hai, yah internet hai. Lekin kya aap jaante hain ki yah internet kahan se aata hai?",
+          "visual": {
+            "type": "host",
+            "text": "Yah internet hai. Kahan se aata hai?"
+          },
+          "mood": "warn",
+          "pop": "internet kahan se",
+          "say_hi": "आपको लगता है, यह इंटरनेट है। लेकिन क्या आप जानते हैं कि यह इंटरनेट कहाँ से आता है?"
+        },
+        {
+          "say": "Internet ka infrastructure submarine fiber optic cables, data centers, ISPs, mobile towers,",
+          "visual": {
+            "type": "photo",
+            "query": "submarine fiber optic cable",
+            "caption": "Internet ka jazba"
+          },
+          "mood": "explain",
+          "pop": "data centers",
+          "say_hi": "इंटरनेट का इंफ्रास्ट्रक्चर सबमरीन फाइबर ऑप्टिक केबल्स, डेटा सेंटर्स, ISPs, मोबाइल टावर्स,"
+        },
+        {
+          "say": "ISP wo company hai jo aapko internet deti hai, jaise aapki mobile ya broadband company.",
+          "say_hi": "आई-एस-पी वो कंपनी है जो आपको इंटरनेट देती है, जैसे आपकी मोबाइल या ब्रॉडबैंड कंपनी।",
+          "visual": {
+            "type": "term",
+            "term": "ISP",
+            "meaning": "Aapko internet dene wali company",
+            "example": "Aapki mobile ya broadband company",
+            "icon": "wifi"
+          },
+          "mood": "explain"
+        }
+      ],
+      "narration_hi": "सोचो, आप एक दिन अपने बच्चे को फ़ोन से गेम खेलते हुए देखते हैं। वो कह रहा है, पापा, ये गेम इतना तेज़ क्यों चल रहा है? आपको लगता है, यह इंटरनेट है। लेकिन क्या आप जानते हैं कि यह इंटरनेट कहाँ से आता है? इंटरनेट का इंफ्रास्ट्रक्चर सबमरीन फाइबर ऑप्टिक केबल्स, डेटा सेंटर्स, ISPs, मोबाइल टावर्स, आई-एस-पी वो कंपनी है जो आपको इंटरनेट देती है, जैसे आपकी मोबाइल या ब्रॉडबैंड कंपनी।"
+    },
+    {
+      "on_screen": "Internet ki duniya samundar ke neechey",
+      "beats": [
+        {
+          "say": "Routers aur satellites se banta hai. Bharat mein internet ka ikosistam sabse bada hai jo affordable mobile broadband aur digital infrastructure investment ki wajah se bana hai.",
+          "visual": {
+            "type": "photo",
+            "query": "underwater cable",
+            "caption": "submarine cables",
+            "file": "images/photos/s01_b00.jpg",
+            "credit": "U.S. Navy photo by Mass Communication Sp / Public domain"
+          },
+          "mood": "explain",
+          "pop": "hidden network",
+          "say_hi": "राउटर्स और सैटेलाइट्स से बनता है। भारत में इंटरनेट का इकोसिस्टम सबसे बड़ा है जो अफोर्डेबल मोबाइल ब्रॉडबैंड और डिजिटल इंफ्रास्ट्रक्चर इन्वेस्टमेंट की वजह से बना है।"
+        },
+        {
+          "say": "Router wo machine hai jo data ko sahi raste par bhejti hai. Jaise chauraahe par khada traffic police.",
+          "say_hi": "राउटर वो मशीन है जो डेटा को सही रास्ते पर भेजती है। जैसे चौराहे पर खड़ा ट्रैफ़िक पुलिस।",
+          "visual": {
+            "type": "pen",
+            "title": "Router",
+            "items": [
+              {
+                "label": "Aapka phone",
+                "icon": "phone"
+              },
+              {
+                "label": "Router",
+                "icon": "wifi"
+              },
+              {
+                "label": "Sahi rasta",
+                "icon": "globe"
+              }
+            ],
+            "note": "Chauraahe ke traffic police jaisa"
+          },
+          "mood": "explain"
+        },
+        {
+          "say": "2025 mein ITU data hub ke anusar, bharat mein 70% population internet user hai,",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Routers",
+                "icon": "wifi"
+              },
+              {
+                "label": "Satellites",
+                "icon": "globe"
+              },
+              {
+                "label": "Cables",
+                "icon": "chip"
+              }
+            ],
+            "note": "internet path"
+          },
+          "mood": "think",
+          "pop": "network flow",
+          "say_hi": "2025 में ITU डेटा हब के अनुसार, भारत में 70% पॉपुलेशन इंटरनेट यूज़र है,"
+        },
+        {
+          "say": "Jo 2018 ke 20.1% se zyada hai. Mobile broadband india ka primary internet access hota hai,",
+          "visual": {},
+          "mood": "happy",
+          "pop": "growth rate",
+          "say_hi": "जो 2018 के 20.1% से ज़्यादा है। मोबाइल ब्रॉडबैंड इंडिया का प्राइमरी इंटरनेट एक्सेस होता है,"
+        },
+        {
+          "say": "Jo 4G aur 5G networks ke saath chal raha hai. Lekin yaad rakhie, ye sab samudr ke niche bhi hai!",
+          "visual": {
+            "type": "compare",
+            "left_title": "2018",
+            "left": [
+              "20.1%"
+            ],
+            "right_title": "2025",
+            "right": [
+              "70%"
+            ],
+            "note": "growth"
+          },
+          "mood": "explain",
+          "pop": "data leap",
+          "say_hi": "जो 4G और 5G नेटवर्क्स के साथ चल रहा है। लेकिन याद रखिए, ये सब समुद्र के नीचे भी है!"
+        }
+      ],
+      "narration_hi": "राउटर्स और सैटेलाइट्स से बनता है। भारत में इंटरनेट का इकोसिस्टम सबसे बड़ा है जो अफोर्डेबल मोबाइल ब्रॉडबैंड और डिजिटल इंफ्रास्ट्रक्चर इन्वेस्टमेंट की वजह से बना है। राउटर वो मशीन है जो डेटा को सही रास्ते पर भेजती है। जैसे चौराहे पर खड़ा ट्रैफ़िक पुलिस। 2025 में ITU डेटा हब के अनुसार, भारत में 70% पॉपुलेशन इंटरनेट यूज़र है, जो 2018 के 20.1% से ज़्यादा है। मोबाइल ब्रॉडबैंड इंडिया का प्राइमरी इंटरनेट एक्सेस होता है, जो 4G और 5G नेटवर्क्स के साथ चल रहा है। लेकिन याद रखिए, ये सब समुद्र के नीचे भी है!"
+    },
+    {
+      "on_screen": "Internet ke naye rasta",
+      "beats": [
+        {
+          "say": "Bharat mein 15 submarine fiber optic cables hain jo desh ko videsh se internet lekar aate hain.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "SEA-ME-WE",
+                "icon": "globe"
+              },
+              {
+                "label": "IMEW-E",
+                "icon": "chip"
+              },
+              {
+                "label": "BBG",
+                "icon": "wifi"
+              }
+            ],
+            "note": "Cables ke naam"
+          },
+          "mood": "explain",
+          "pop": "Cable names",
+          "say_hi": "भारत में 15 सबमरीन फाइबर ऑप्टिक केबल्स हैं जो देश को विदेश से इंटरनेट लेकर आते हैं।"
+        },
+        {
+          "say": "Ye kebal munbai, kochin, chennai, tutikorin aur trivnadram jaise 5 shahron mein pahunchte hain.",
+          "visual": {
+            "type": "photo",
+            "query": "submarine cable",
+            "caption": "Fiber optic under sea",
+            "file": "images/photos/s02_b01.jpg",
+            "credit": "Schwarzweisz / CC0"
+          },
+          "mood": "think",
+          "pop": "Underwater cables",
+          "say_hi": "ये केबल मुंबई, कोचीन, चेन्नई, तुतिकोरिन और त्रिवनद्रम जैसे 5 शहरों में पहुंचते हैं।"
+        },
+        {
+          "say": "In keblon ko SEA-ME-WE, IMEWE aur BBG jaise naam die gaye hain.",
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              {
+                "icon": "phone",
+                "label": "Phone"
+              },
+              {
+                "icon": "globe",
+                "label": "Internet"
+              },
+              {
+                "icon": "bank",
+                "label": "Worldwide"
+              }
+            ]
+          },
+          "mood": "warn",
+          "pop": "Connect anywhere",
+          "say_hi": "इन केबलों को SEA-ME-WE, IMEWE और BBG जैसे नाम दिए गए हैं।"
+        },
+        {
+          "say": "Ye sab DNS, IP aur UPI ki tarah kaam karte hain. Ye sunishchit karte hain ki aapka phone duniya bhar mein kisi bhi device se connect ho sake.",
+          "visual": {
+            "type": "compare",
+            "left_title": "DNS",
+            "left": [
+              "Domain names"
+            ],
+            "right_title": "IP",
+            "right": [
+              "Unique numbers"
+            ]
+          },
+          "mood": "explain",
+          "pop": "How internet works",
+          "say_hi": "ये सब DNS, IP और UPI की तरह काम करते हैं। ये सुनिश्चित करते हैं कि आपका फ़ोन दुनिया भर में किसी भी डिवाइस से कनेक्ट हो सके।"
+        },
+        {
+          "say": "DNS internet ki phonebook hai. Aap website ka naam likhte ho, aur ye uska IP address dhoondh kar deta hai.",
+          "say_hi": "डी-एन-एस इंटरनेट की फ़ोनबुक है। आप वेबसाइट का नाम लिखते हो, और ये उसका आई-पी एड्रेस ढूंढ कर देता है।",
+          "visual": {
+            "type": "pen",
+            "title": "DNS",
+            "items": [
+              {
+                "label": "Website ka naam",
+                "icon": "globe"
+              },
+              {
+                "label": "DNS: phonebook",
+                "icon": "mail"
+              },
+              {
+                "label": "IP address mila",
+                "icon": "check"
+              }
+            ],
+            "note": "Naam aap yaad rakhte ho, number DNS dhoondhta hai"
+          },
+          "mood": "explain"
+        }
+      ],
+      "narration_hi": "भारत में 15 सबमरीन फाइबर ऑप्टिक केबल्स हैं जो देश को विदेश से इंटरनेट लेकर आते हैं। ये केबल मुंबई, कोचीन, चेन्नई, तुतिकोरिन और त्रिवनद्रम जैसे 5 शहरों में पहुंचते हैं। इन केबलों को SEA-ME-WE, IMEWE और BBG जैसे नाम दिए गए हैं। ये सब DNS, IP और UPI की तरह काम करते हैं। ये सुनिश्चित करते हैं कि आपका फ़ोन दुनिया भर में किसी भी डिवाइस से कनेक्ट हो सके। डी-एन-एस इंटरनेट की फ़ोनबुक है। आप वेबसाइट का नाम लिखते हो, और ये उसका आई-पी एड्रेस ढूंढ कर देता है।"
+    },
+    {
+      "on_screen": "Internet ke naye rasta",
+      "beats": [
+        {
+          "say": "UPI matlab phone se seedha bank se bank paisa bhejne ka tareeka. Jaise Google Pay ya PhonePe se payment.",
+          "say_hi": "यू-पी-आई मतलब फ़ोन से सीधा बैंक से बैंक पैसा भेजने का तरीका। जैसे गूगल पे या फ़ोनपे से पेमेंट।",
+          "visual": {
+            "type": "pen",
+            "title": "UPI",
+            "items": [
+              {
+                "label": "Aapka phone",
+                "icon": "phone"
+              },
+              {
+                "label": "UPI",
+                "icon": "money"
+              },
+              {
+                "label": "Dusre ka bank",
+                "icon": "bank"
+              }
+            ],
+            "note": "Jaise Google Pay ya PhonePe se payment"
+          },
+          "mood": "explain"
+        }
+      ],
+      "narration_hi": "यू-पी-आई मतलब फ़ोन से सीधा बैंक से बैंक पैसा भेजने का तरीका। जैसे गूगल पे या फ़ोनपे से पेमेंट।"
+    },
+    {
+      "on_screen": "Internet chhupi samundar ke neechey",
+      "beats": [
+        {
+          "say": "IXPs domestic traffic ko local exchange mein le aate hain, latency kam hoti hai aur transit cost ghat jaata hai.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "IXP local exchange",
+                "icon": "phone"
+              },
+              {
+                "label": "latency down",
+                "icon": "wifi"
+              },
+              {
+                "label": "cost cut",
+                "icon": "globe"
+              }
+            ],
+            "note": "network flow"
+          },
+          "mood": "explain",
+          "pop": "Local Exchange",
+          "say_hi": "IXPs डोमेस्टिक ट्रैफ़िक को लोकल एक्सचेंज में ले आते हैं, लेटेंसी कम होती है और ट्रांसिट कॉस्ट घट जाता है।"
+        },
+        {
+          "say": "Bharat mein 31 operational IXPs hain, jo asia pacific region mein sabse zyada hain.",
+          "visual": {
+            "type": "stat",
+            "value": "31",
+            "label": "IXPs in India"
+          },
+          "mood": "think",
+          "pop": "Asia-Pacific Leader",
+          "say_hi": "भारत में 31 ऑपरेशनल IXPs हैं, जो एशिया पैसिफिक रिगियन में सबसे ज़्यादा हैं।"
+        },
+        {
+          "say": "85% of india ke active networks IXP se connected hain, jo regional average se zyada hai.",
+          "visual": {},
+          "mood": "warn",
+          "pop": "Higher Connectivity",
+          "say_hi": "85% ऑफ इंडिया के एक्टिव नेटवर्क्स IXP से कनेक्टेड हैं, जो रिगियनल एवरेज से ज़्यादा है।"
+        },
+        {
+          "say": "Internet infrastructure ke liye private sector investment aur spectrum deployment mahatvapurn hai.",
+          "visual": {
+            "type": "photo",
+            "query": "submarine cable",
+            "caption": "Fiber under sea"
+          },
+          "mood": "happy",
+          "pop": "Internet Backbone",
+          "say_hi": "इंटरनेट इंफ्रास्ट्रक्चर के लिए प्राइवेट सेक्टर इन्वेस्टमेंट और स्पेक्ट्रम डिप्लोयमेंट महत्वपूर्ण है।"
+        }
+      ],
+      "narration_hi": "IXPs डोमेस्टिक ट्रैफ़िक को लोकल एक्सचेंज में ले आते हैं, लेटेंसी कम होती है और ट्रांसिट कॉस्ट घट जाता है। भारत में 31 ऑपरेशनल IXPs हैं, जो एशिया पैसिफिक रिगियन में सबसे ज़्यादा हैं। 85% ऑफ इंडिया के एक्टिव नेटवर्क्स IXP से कनेक्टेड हैं, जो रिगियनल एवरेज से ज़्यादा है। इंटरनेट इंफ्रास्ट्रक्चर के लिए प्राइवेट सेक्टर इन्वेस्टमेंट और स्पेक्ट्रम डिप्लोयमेंट महत्वपूर्ण है।"
+    },
+    {
+      "on_screen": "Internet ke sath submarine fiber optic cables",
+      "beats": [
+        {
+          "say": "Digital sabsakraibar lain mein kopar fiber ke bajae tar ka upyog kiya jaata hai.",
+          "visual": {
+            "type": "photo",
+            "query": "underwater cable",
+            "caption": "Samundar ke niche"
+          },
+          "mood": "explain",
+          "pop": "Underwater Internet",
+          "say_hi": "डिजिटल सब्सक्राइबर लाइन में कॉपर फाइबर के बजाए तार का उपयोग किया जाता है।"
+        },
+        {
+          "say": "Fiber tu da hom mein optikal fiber ke jarie tej internet pahunchta hai.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Home",
+                "icon": "wifi"
+              },
+              {
+                "label": "Internet",
+                "icon": "globe"
+              }
+            ],
+            "note": "Fiber se jata hai"
+          },
+          "mood": "think",
+          "pop": "Fiber ke jarie",
+          "say_hi": "फाइबर टू द होम में ऑप्टिकल फाइबर के जरिए तेज इंटरनेट पहुंचता है।"
+        },
+        {
+          "say": "To phir, agli baar jab aap internet ka istemal karen, to yaad rakhie ki yah samudr ke niche chhupi hui internet ki duniya se juda hua hai!",
+          "visual": {
+            "type": "warning",
+            "text": "Samundar ke niche chhupi hui duniya"
+          },
+          "mood": "warn",
+          "pop": "Submarine Internet",
+          "say_hi": "तो फिर, अगली बार जब आप इंटरनेट का इस्तेमाल करें, तो याद रखिए कि यह समुद्र के नीचे छुपी हुई इंटरनेट की दुनिया से जुड़ा हुआ है!"
+        }
+      ],
+      "narration_hi": "डिजिटल सब्सक्राइबर लाइन में कॉपर फाइबर के बजाए तार का उपयोग किया जाता है। फाइबर टू द होम में ऑप्टिकल फाइबर के जरिए तेज इंटरनेट पहुंचता है। तो फिर, अगली बार जब आप इंटरनेट का इस्तेमाल करें, तो याद रखिए कि यह समुद्र के नीचे छुपी हुई इंटरनेट की दुनिया से जुड़ा हुआ है!"
+    },
+    {
+      "on_screen": "Aaj in sawaalon ke jawab",
+      "beats": [
+        {
+          "say": "Is video mein 3 sawaalon ke jawab milenge. Kya internet sirf mobile mei hai? Kya woh samundar ke neechey chhupi hain? Kya internet India mei sirf 1-2 cities se aata hai? Kya woh sabhi log ko pahunchta hai? Kya internet sirf mobile se aata hai? Kya woh sabki tarah jaa sakti hai?",
+          "visual": {
+            "type": "steps",
+            "items": [
+              "Kya internet sirf mobile mei hai? Kya woh samundar ke neechey chhupi hain?",
+              "Kya internet India mei sirf 1-2 cities se aata hai? Kya woh sabhi log ko pahunchta hai?",
+              "Kya internet sirf mobile se aata hai? Kya woh sabki tarah jaa sakti hai?"
+            ]
+          },
+          "mood": "explain",
+          "say_hi": "इस वीडियो में तीन सवालों के जवाब मिलेंगे। क्या इंटरनेट सिर्फ़ मोबाइल में है? क्या वो समुद्र के नीचे छुपी हैं? क्या इंटरनेट इंडिया में सिर्फ़ 1-2 सिटीज़ से आता है? क्या वो सभी लोग को पहुंचता है? क्या इंटरनेट सिर्फ़ मोबाइल से आता है? क्या वो sabki तरह जा सकती है?"
+        }
+      ],
+      "narration_hi": "इस वीडियो में तीन सवालों के जवाब मिलेंगे। क्या इंटरनेट सिर्फ़ मोबाइल में है? क्या वो समुद्र के नीचे छुपी हैं? क्या इंटरनेट इंडिया में सिर्फ़ 1-2 सिटीज़ से आता है? क्या वो सभी लोग को पहुंचता है? क्या इंटरनेट सिर्फ़ मोबाइल से आता है? क्या वो sabki तरह जा सकती है?"
+    },
+    {
+      "on_screen": "Kya internet sirf mobile mei hai? Kya woh samundar ke neechey chhupi hain?",
+      "beats": [
+        {
+          "say": "Chaliye, pehle sawaal se shuru karte hain. Kya internet sirf mobile mei hai? Kya woh samundar ke neechey chhupi hain?",
+          "visual": {
+            "type": "chapter",
+            "part": 1,
+            "total": 3
+          },
+          "mood": "think",
+          "say_hi": "चलिए, पहले सवाल से शुरू करते हैं। क्या इंटरनेट सिर्फ़ मोबाइल में है? क्या वो समुद्र के नीचे छुपी हैं?"
+        }
+      ],
+      "narration_hi": "चलिए, पहले सवाल से शुरू करते हैं। क्या इंटरनेट सिर्फ़ मोबाइल में है? क्या वो समुद्र के नीचे छुपी हैं?"
+    },
+    {
+      "on_screen": "Internet sirf phone mein nahi",
+      "beats": [
+        {
+          "say": "Lekin, aap sochie, aap ek phone par video dekh rahe hain. Ye video aapke phone se server tak jaata hai.",
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              {
+                "icon": "phone",
+                "label": "Phone"
+              },
+              {
+                "icon": "wifi",
+                "label": "WiFi"
+              },
+              {
+                "icon": "server",
+                "label": "Server"
+              }
+            ]
+          },
+          "mood": "explain",
+          "pop": "Network chain",
+          "say_hi": "लेकिन, आप सोचिए, आप एक फ़ोन पर वीडियो देख रहे हैं। ये वीडियो आपके फ़ोन से सर्वर तक जाता है।"
+        },
+        {
+          "say": "Server ek taakatwar computer hai, jisme website ka data rakha hota hai. Aapka phone usi se data maangta hai.",
+          "say_hi": "सर्वर एक ताकतवर कंप्यूटर है, जिसमें वेबसाइट का डेटा रखा होता है। आपका फ़ोन उसी से डेटा मांगता है।",
+          "visual": {
+            "type": "pen",
+            "title": "Server",
+            "items": [
+              {
+                "label": "Aapka phone",
+                "icon": "phone"
+              },
+              {
+                "label": "Server",
+                "icon": "chip"
+              },
+              {
+                "label": "Website ka data",
+                "icon": "laptop"
+              }
+            ],
+            "note": "Phone maangta hai, server data bhejta hai"
+          },
+          "mood": "explain"
+        },
+        {
+          "say": "Ye server bhi computer hote hain, jo data stor karte hain. Ye data internet par hota hai.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Fiber optic cable",
+                "icon": "globe"
+              },
+              {
+                "label": "Router",
+                "icon": "wifi"
+              },
+              {
+                "label": "Data center",
+                "icon": "server"
+              }
+            ],
+            "note": "Internet ke elements"
+          },
+          "mood": "think",
+          "pop": "Key parts",
+          "say_hi": "ये सर्वर भी कंप्यूटर होते हैं, जो डेटा स्टोर करते हैं। ये डेटा इंटरनेट पर होता है।"
+        },
+        {
+          "say": "To phir, internet sirf aapke phone mein nahi hai. Ye bahut bada network hai, jismen phone, computer, aur server shamil hain.",
+          "visual": {
+            "type": "photo",
+            "query": "data center interior",
+            "caption": "Big network hub"
+          },
+          "mood": "warn",
+          "pop": "Server location",
+          "say_hi": "तो फिर, इंटरनेट सिर्फ़ आपके फ़ोन में नहीं है। ये बहुत बड़ा नेटवर्क है, जिसमें फ़ोन, कंप्यूटर, और सर्वर शामिल हैं।"
+        },
+        {
+          "say": "Lekin, is network ko chalane ke liye kuch zaroori cheezein hain. Sabse zaroori hai fiber optic kebal.",
+          "visual": {},
+          "mood": "explain",
+          "pop": "Main link",
+          "say_hi": "लेकिन, इस नेटवर्क को चलाने के लिए कुछ ज़रूरी चीज़ें हैं। सबसे ज़रूरी है फाइबर ऑप्टिक केबल।"
+        }
+      ],
+      "narration_hi": "लेकिन, आप सोचिए, आप एक फ़ोन पर वीडियो देख रहे हैं। ये वीडियो आपके फ़ोन से सर्वर तक जाता है। सर्वर एक ताकतवर कंप्यूटर है, जिसमें वेबसाइट का डेटा रखा होता है। आपका फ़ोन उसी से डेटा मांगता है। ये सर्वर भी कंप्यूटर होते हैं, जो डेटा स्टोर करते हैं। ये डेटा इंटरनेट पर होता है। तो फिर, इंटरनेट सिर्फ़ आपके फ़ोन में नहीं है। ये बहुत बड़ा नेटवर्क है, जिसमें फ़ोन, कंप्यूटर, और सर्वर शामिल हैं। लेकिन, इस नेटवर्क को चलाने के लिए कुछ ज़रूरी चीज़ें हैं। सबसे ज़रूरी है फाइबर ऑप्टिक केबल।"
+    },
+    {
+      "on_screen": "Samundar ke neechey internet ka rasta",
+      "beats": [
+        {
+          "say": "Ye kebal prakash ki madad se data bhejti hain. Ye kebal samudr ke niche bhi hoti hain,",
+          "visual": {
+            "type": "photo",
+            "query": "underwater cable",
+            "caption": "Submarine Cable"
+          },
+          "mood": "explain",
+          "pop": "Internet Rasta",
+          "say_hi": "ये केबल प्रकाश की मदद से डेटा भेजती हैं। ये केबल समुद्र के नीचे भी होती हैं,"
+        },
+        {
+          "say": "Jo ek shahar se dusre shahar tak internet le jati hain. To phir, ye aapke phone aur server ko aapas mein jodti hain.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Light",
+                "icon": "wifi"
+              },
+              {
+                "label": "Ocean",
+                "icon": "globe"
+              },
+              {
+                "label": "World",
+                "icon": "chip"
+              }
+            ],
+            "note": "Data ka rasta"
+          },
+          "mood": "think",
+          "pop": "Data Rasta",
+          "say_hi": "जो एक शहर से दूसरे शहर तक इंटरनेट ले जाती हैं। तो फिर, ये आपके फ़ोन और सर्वर को आपस में जोड़ती हैं।"
+        },
+        {
+          "say": "Ye aapko video dekhne, website par jaane, ya email bhejne ki suvidha deti hai.",
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              {
+                "icon": "phone",
+                "label": "Phone"
+              },
+              {
+                "icon": "bank",
+                "label": "Server"
+              },
+              {
+                "icon": "globe",
+                "label": "World"
+              }
+            ]
+          },
+          "mood": "happy",
+          "pop": "Connect World",
+          "say_hi": "ये आपको वीडियो देखने, वेबसाइट पर जाने, या ईमेल भेजने की सुविधा देती है।"
+        },
+        {
+          "say": "Ye sab in keblon ki madad se hota hai. Aur ye kebal sirf ek hi jagah se nahi aatin.",
+          "visual": {},
+          "mood": "explain",
+          "pop": "Distance",
+          "say_hi": "ये सब इन केबलों की मदद से होता है। और ये केबल सिर्फ़ एक ही जगह से नहीं आतीं।"
+        }
+      ],
+      "narration_hi": "ये केबल प्रकाश की मदद से डेटा भेजती हैं। ये केबल समुद्र के नीचे भी होती हैं, जो एक शहर से दूसरे शहर तक इंटरनेट ले जाती हैं। तो फिर, ये आपके फ़ोन और सर्वर को आपस में जोड़ती हैं। ये आपको वीडियो देखने, वेबसाइट पर जाने, या ईमेल भेजने की सुविधा देती है। ये सब इन केबलों की मदद से होता है। और ये केबल सिर्फ़ एक ही जगह से नहीं आतीं।"
+    },
+    {
+      "on_screen": "Samundar ke neechey internet",
+      "beats": [
+        {
+          "say": "Bharat mein kai aisi jaghen hain jahan ye kebal aati hain munbai,",
+          "visual": {
+            "type": "photo",
+            "query": "underwater cable",
+            "caption": "Submarine Cable"
+          },
+          "mood": "explain",
+          "pop": "Internet ke baap",
+          "say_hi": "भारत में कई ऐसी जगहें हैं जहाँ ये केबल आती हैं मुंबई,"
+        },
+        {
+          "say": "Chennai, kochin, aur any shahar. Ye kebal duniya bhar ke dusre deshon se internet lekar aate hain.",
+          "visual": {
+            "type": "map",
+            "places": [
+              "Chennai"
+            ]
+          },
+          "mood": "think",
+          "pop": "Jagahon ka jawaab",
+          "say_hi": "चेन्नई, कोचीन, और अन्य शहर। ये केबल दुनिया भर के दूसरे देशों से इंटरनेट लेकर आते हैं।"
+        },
+        {
+          "say": "Ye sab milkar internet banate hain. To phir, agli baar jab aap internet ka istemal karen,",
+          "visual": {},
+          "mood": "warn",
+          "pop": "Duniya ke saath kholta hai",
+          "say_hi": "ये सब मिलकर इंटरनेट बनाते हैं। तो फिर, अगली बार जब आप इंटरनेट का इस्तेमाल करें,"
+        },
+        {
+          "say": "To yaad rakhie ki ye sirf aapke phone mein nahi hai, balki ye ek bahut bada network hai jo samudr ke niche bhi phaila hua hai!",
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              {
+                "icon": "phone",
+                "label": "Aapki phone"
+              },
+              {
+                "icon": "globe",
+                "label": "Samundar ke niche"
+              },
+              {
+                "icon": "bank",
+                "label": "Internet ka network"
+              }
+            ]
+          },
+          "mood": "happy",
+          "pop": "Network ka jawaab",
+          "say_hi": "तो याद रखिए कि ये सिर्फ़ आपके फ़ोन में नहीं है, बल्कि ये एक बहुत बड़ा नेटवर्क है जो समुद्र के नीचे भी फैला हुआ है!"
+        }
+      ],
+      "narration_hi": "भारत में कई ऐसी जगहें हैं जहाँ ये केबल आती हैं मुंबई, चेन्नई, कोचीन, और अन्य शहर। ये केबल दुनिया भर के दूसरे देशों से इंटरनेट लेकर आते हैं। ये सब मिलकर इंटरनेट बनाते हैं। तो फिर, अगली बार जब आप इंटरनेट का इस्तेमाल करें, तो याद रखिए कि ये सिर्फ़ आपके फ़ोन में नहीं है, बल्कि ये एक बहुत बड़ा नेटवर्क है जो समुद्र के नीचे भी फैला हुआ है!"
+    },
+    {
+      "on_screen": "Kya internet India mei sirf 1-2 cities se aata hai? Kya woh sabhi log ko pahunchta hai?",
+      "beats": [
+        {
+          "say": "To ye tha ... ka tareeka. Internet nahi sirf computer aur phone mei hai, balki samundar ke neechey fiber optic cables ke saath. Ab agla sawaal. Kya internet India mei sirf 1-2 cities se aata hai? Kya woh sabhi log ko pahunchta hai?",
+          "visual": {
+            "type": "chapter",
+            "part": 2,
+            "total": 3
+          },
+          "mood": "think",
+          "say_hi": "तो ये था ..। का तरीका। इंटरनेट नहीं सिर्फ़ कंप्यूटर और फ़ोन में है, बल्कि समुद्र के नीचे फाइबर ऑप्टिक केबल्स के साथ। अब अगला सवाल। क्या इंटरनेट इंडिया में सिर्फ़ 1-2 सिटीज़ से आता है? क्या वो सभी लोग को पहुंचता है?"
+        }
+      ],
+      "narration_hi": "तो ये था ..। का तरीका। इंटरनेट नहीं सिर्फ़ कंप्यूटर और फ़ोन में है, बल्कि समुद्र के नीचे फाइबर ऑप्टिक केबल्स के साथ। अब अगला सवाल। क्या इंटरनेट इंडिया में सिर्फ़ 1-2 सिटीज़ से आता है? क्या वो सभी लोग को पहुंचता है?"
+    },
+    {
+      "on_screen": "India ke internet ka rahas",
+      "beats": [
+        {
+          "say": "Internet india mein sirf 1-2 sitiz se nahi aata, balki 5 shahron mein chhupa hai jo 70% aabadi ka istemal karte hain.",
+          "visual": {
+            "type": "compare",
+            "left_title": "Shahar",
+            "left": [
+              "Mumbai",
+              "Chennai",
+              "Kochin",
+              "Thiruvananthapuram"
+            ],
+            "right_title": "Aabadi",
+            "right": [
+              "70%"
+            ]
+          },
+          "mood": "think",
+          "pop": "Shahar aur aabadi",
+          "say_hi": "इंटरनेट इंडिया में सिर्फ़ 1-2 सिटीज़ से नहीं आता, बल्कि 5 शहरों में छुपा है जो 70% आबादी का इस्तेमाल करते हैं।"
+        },
+        {
+          "say": "Ye shahar munbai, chennai, kochin, tutikorin aur trivnadram hain. Ye keblen bharat ko duniya bhar se jodti hain,",
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              {
+                "icon": "globe",
+                "label": "World"
+              },
+              {
+                "icon": "phone",
+                "label": "India"
+              },
+              {
+                "icon": "chip",
+                "label": "Broadband"
+              }
+            ]
+          },
+          "mood": "explain",
+          "pop": "Internet ka rahas",
+          "say_hi": "ये शहर मुंबई, चेन्नई, कोचीन, तुतिकोरिन और त्रिवनद्रम हैं। ये केबलें भारत को दुनिया भर से जोड़ती हैं,"
+        },
+        {
+          "say": "Jisse bahut sare log internet ka istemal kar pate hain. Ye sach mein kamal ki baat hai na?",
+          "visual": {},
+          "mood": "happy",
+          "pop": "Sach mein kamal",
+          "say_hi": "जिससे बहुत सारे लोग इंटरनेट का इस्तेमाल कर पाते हैं। ये सच में कमाल की बात है ना?"
+        },
+        {
+          "say": "Ye dikhata hai ki kaise teknoloji hamen ek dusre se judi rakhti hai.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Global Connection",
+                "icon": "globe"
+              },
+              {
+                "label": "Broadband",
+                "icon": "wifi"
+              },
+              {
+                "label": "Digital Growth",
+                "icon": "chip"
+              }
+            ],
+            "note": "Internet ka rahas"
+          },
+          "mood": "think",
+          "pop": "Techno jod",
+          "say_hi": "ये दिखाता है कि कैसे टेक्नोलॉजी हमें एक दूसरे से जुड़ी रखती है।"
+        }
+      ],
+      "narration_hi": "इंटरनेट इंडिया में सिर्फ़ 1-2 सिटीज़ से नहीं आता, बल्कि 5 शहरों में छुपा है जो 70% आबादी का इस्तेमाल करते हैं। ये शहर मुंबई, चेन्नई, कोचीन, तुतिकोरिन और त्रिवनद्रम हैं। ये केबलें भारत को दुनिया भर से जोड़ती हैं, जिससे बहुत सारे लोग इंटरनेट का इस्तेमाल कर पाते हैं। ये सच में कमाल की बात है ना? ये दिखाता है कि कैसे टेक्नोलॉजी हमें एक दूसरे से जुड़ी रखती है।"
+    },
+    {
+      "on_screen": "Internet ke liye sabse bada challenge",
+      "beats": [
+        {
+          "say": "To phir, ye zaroori hai ki hum sabhi ko internet ka istemal karne ka mauka mile.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Affordable Broadband",
+                "icon": "wifi"
+              },
+              {
+                "label": "Digital Investment",
+                "icon": "globe"
+              }
+            ],
+            "note": "Ek chhoti line"
+          },
+          "mood": "explain",
+          "pop": "Internet ke liye sabse bada challenge",
+          "say_hi": "तो फिर, ये ज़रूरी है कि हम सभी को इंटरनेट का इस्तेमाल करने का मौका मिले।"
+        },
+        {
+          "say": "Kya ye keblen hamesha surakshit rahti hain?",
+          "visual": {
+            "type": "photo",
+            "query": "submarine cable ocean",
+            "caption": "Submarine Cables",
+            "file": "images/photos/s13_b01.jpg",
+            "credit": "U.S. Navy photo by Mass Communication Sp / Public domain"
+          },
+          "mood": "warn",
+          "pop": "Surakshit rakhna zaroori",
+          "say_hi": "क्या ये केबलें हमेशा सुरक्षित रहती हैं?"
+        }
+      ],
+      "narration_hi": "तो फिर, ये ज़रूरी है कि हम सभी को इंटरनेट का इस्तेमाल करने का मौका मिले। क्या ये केबलें हमेशा सुरक्षित रहती हैं?"
+    },
+    {
+      "on_screen": "Kya internet sirf mobile se aata hai? Kya woh sabki tarah jaa sakti hai?",
+      "beats": [
+        {
+          "say": "To ye tha ... ka tareeka. Internet nahi sirf Mumbai aur Chennai mei hai, balki 5 shhro mei chhupi hain, jisme 70% population use karte hain. Ab aakhri aur sabse kaam ka sawaal. Kya internet sirf mobile se aata hai? Kya woh sabki tarah jaa sakti hai?",
+          "visual": {
+            "type": "chapter",
+            "part": 3,
+            "total": 3
+          },
+          "mood": "think",
+          "say_hi": "तो ये था ..। का तरीका। इंटरनेट नहीं सिर्फ़ मुंबई और चेन्नई में है, बल्कि 5 शहरो में छुपी हैं, जिमें 70% पॉपुलेशन यूज़ करते हैं। अब आखिरी और सबसे काम का सवाल। क्या इंटरनेट सिर्फ़ मोबाइल से आता है? क्या वो सभकी तरह जा सकती है?"
+        }
+      ],
+      "narration_hi": "तो ये था ..। का तरीका। इंटरनेट नहीं सिर्फ़ मुंबई और चेन्नई में है, बल्कि 5 शहरो में छुपी हैं, जिमें 70% पॉपुलेशन यूज़ करते हैं। अब आखिरी और सबसे काम का सवाल। क्या इंटरनेट सिर्फ़ मोबाइल से आता है? क्या वो सभकी तरह जा सकती है?"
+    },
+    {
+      "on_screen": "Internet Mobile Se Nahi",
+      "beats": [
+        {
+          "say": "Lekin, aap sochie, aap, internet sirph aapke mobile se nahi aata! Ye ek bahut hi jatil system hai.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Fiber Optic",
+                "icon": "globe"
+              },
+              {
+                "label": "Data Center",
+                "icon": "chip"
+              },
+              {
+                "label": "Mobile",
+                "icon": "phone"
+              }
+            ],
+            "note": "System Flow"
+          },
+          "mood": "explain",
+          "pop": "Jatil System",
+          "say_hi": "लेकिन, आप सोचिए, आप, इंटरनेट सिर्फ आपके मोबाइल से नहीं आता! ये एक बहुत ही जटिल सिस्टम है।"
+        },
+        {
+          "say": "Ye samudr ke niche lage fiber optic keblon aur data sentron ke saath milkar kaam karta hai.",
+          "visual": {
+            "type": "photo",
+            "query": "underwater cable",
+            "caption": "Fiber Optic Cable"
+          },
+          "mood": "think",
+          "pop": "Samudr Ke Niche",
+          "say_hi": "ये समुद्र के नीचे लगे फाइबर ऑप्टिक केबलों और डेटा सेंटरों के साथ मिलकर काम करता है।"
+        },
+        {
+          "say": "Ye keblen duniya bhar mein phaile hue hain, aur ye bharat ko baki deshon se jodti hain.",
+          "visual": {
+            "type": "compare",
+            "left_title": "India",
+            "left": [
+              "Mobile"
+            ],
+            "right_title": "World",
+            "right": [
+              "Fiber",
+              "Data Center"
+            ]
+          },
+          "mood": "warn",
+          "pop": "Duniya Bhaar Phaili",
+          "say_hi": "ये केबलें दुनिया भर में फैले हुए हैं, और ये भारत को बाकी देशों से जोड़ती हैं।"
+        },
+        {
+          "say": "To phir, internet sirf aapke mobile se nahi aata, balki fiber optic cables aur data sentron ke saath milkar chalta hai.",
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              {
+                "icon": "chip",
+                "label": "Data Center"
+              },
+              {
+                "icon": "globe",
+                "label": "Fiber Optic"
+              },
+              {
+                "icon": "phone",
+                "label": "Mobile"
+              }
+            ]
+          },
+          "mood": "explain",
+          "pop": "Internet Chalta Hai",
+          "say_hi": "तो फिर, इंटरनेट सिर्फ़ आपके मोबाइल से नहीं आता, बल्कि फाइबर ऑप्टिक केबल्स और डेटा सेंटरों के साथ मिलकर चलता है।"
+        }
+      ],
+      "narration_hi": "लेकिन, आप सोचिए, आप, इंटरनेट सिर्फ आपके मोबाइल से नहीं आता! ये एक बहुत ही जटिल सिस्टम है। ये समुद्र के नीचे लगे फाइबर ऑप्टिक केबलों और डेटा सेंटरों के साथ मिलकर काम करता है। ये केबलें दुनिया भर में फैले हुए हैं, और ये भारत को बाकी देशों से जोड़ती हैं। तो फिर, इंटरनेट सिर्फ़ आपके मोबाइल से नहीं आता, बल्कि फाइबर ऑप्टिक केबल्स और डेटा सेंटरों के साथ मिलकर चलता है।"
+    },
+    {
+      "on_screen": "India mei 830 million internet users hain",
+      "beats": [
+        {
+          "say": "Ye keblen samudr ke niche bhi hoti hain, aur ye aapke phone aur server ko aapas mein jodti hain.",
+          "visual": {},
+          "mood": null,
+          "say_hi": "ये केबलें समुद्र के नीचे भी होती हैं, और ये आपके फ़ोन और सर्वर को आपस में जोड़ती हैं।"
+        },
+        {
+          "say": "To ye tha internet ka tareeka. In keblon ko kaun banae rakhta hai?",
+          "visual": {},
+          "mood": null,
+          "say_hi": "तो ये था इंटरनेट का तरीका। इन केबलों को कौन बनाए रखता है?"
+        },
+        {
+          "say": "Internet ke liye zaroori hain kai tarah ki kanpniyan. Sabse pehle hain aaiespi internet sarvis provaidar.",
+          "visual": {},
+          "mood": null,
+          "say_hi": "इंटरनेट के लिए ज़रूरी हैं कई तरह की कंपनियां। सबसे पहले हैं आईएसपी इंटरनेट सर्विस प्रोवाइडर।"
+        },
+        {
+          "say": "Ye kanpniyan aapke ghar ya ophis tak internet kanekshan pahunchati hain. To phir, ye aaiespi hi hain jo aapke internet ka istemal karne mein madad karte hain.",
+          "visual": {},
+          "mood": null,
+          "say_hi": "ये कंपनियां आपके घर या ऑफिस तक इंटरनेट कनेक्शन पहुंचाती हैं। तो फिर, ये आईएसपी ही हैं जो आपके इंटरनेट का इस्तेमाल करने में मदद करते हैं।"
+        }
+      ],
+      "narration_hi": "ये केबलें समुद्र के नीचे भी होती हैं, और ये आपके फ़ोन और सर्वर को आपस में जोड़ती हैं। तो ये था इंटरनेट का तरीका। इन केबलों को कौन बनाए रखता है? इंटरनेट के लिए ज़रूरी हैं कई तरह की कंपनियां। सबसे पहले हैं आईएसपी इंटरनेट सर्विस प्रोवाइडर। ये कंपनियां आपके घर या ऑफिस तक इंटरनेट कनेक्शन पहुंचाती हैं। तो फिर, ये आईएसपी ही हैं जो आपके इंटरनेट का इस्तेमाल करने में मदद करते हैं।"
+    },
+    {
+      "on_screen": "Internet ka sara data kahan hai?",
+      "beats": [
+        {
+          "say": "Iske alava, data sentar bhi bahut zaroori hain. Data sentar wo jagah hai jahan internet ka sara data stor hota hai.",
+          "visual": {
+            "type": "photo",
+            "query": "data center",
+            "caption": "Data Center",
+            "file": "images/photos/s17_b00.jpg",
+            "credit": "Rsparks3 / CC0"
+          },
+          "mood": "explain",
+          "pop": "Data Center",
+          "say_hi": "इसके अलावा, डेटा सेंटर भी बहुत ज़रूरी हैं। डेटा सेंटर वो जगह है जहाँ इंटरनेट का सारा डेटा स्टोर होता है।"
+        },
+        {
+          "say": "Ye data sentar bahut bade hote hain, aur inme bahut sare computer aur server lage hote hain.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Submarine Cable",
+                "icon": "chip"
+              },
+              {
+                "label": "Server",
+                "icon": "laptop"
+              },
+              {
+                "label": "Internet",
+                "icon": "globe"
+              }
+            ],
+            "note": "Data Flow"
+          },
+          "mood": "think",
+          "pop": "Flow",
+          "say_hi": "ये डेटा सेंटर बहुत बड़े होते हैं, और इनमें बहुत सारे कंप्यूटर और सर्वर लगे होते हैं।"
+        },
+        {
+          "say": "To phir, data sentar hi hai jo internet ko chalane mein madad karta hai.",
+          "visual": {},
+          "mood": "warn",
+          "pop": "Stored",
+          "say_hi": "तो फिर, डेटा सेंटर ही है जो इंटरनेट को चलाने में मदद करता है।"
+        },
+        {
+          "say": "Aur han, in keblon ko banae rakhne ke liye bhi kuch kanpniyon ki zaroorat hoti hai.",
+          "visual": {
+            "type": "photo",
+            "query": "underwater cable",
+            "caption": "Ocean Cable"
+          },
+          "mood": "explain",
+          "pop": "Cable",
+          "say_hi": "और हाँ, इन केबलों को बनाए रखने के लिए भी कुछ कंपनियों की ज़रूरत होती है।"
+        }
+      ],
+      "narration_hi": "इसके अलावा, डेटा सेंटर भी बहुत ज़रूरी हैं। डेटा सेंटर वो जगह है जहाँ इंटरनेट का सारा डेटा स्टोर होता है। ये डेटा सेंटर बहुत बड़े होते हैं, और इनमें बहुत सारे कंप्यूटर और सर्वर लगे होते हैं। तो फिर, डेटा सेंटर ही है जो इंटरनेट को चलाने में मदद करता है। और हाँ, इन केबलों को बनाए रखने के लिए भी कुछ कंपनियों की ज़रूरत होती है।"
+    },
+    {
+      "on_screen": "Internet aata kahan se?",
+      "beats": [
+        {
+          "say": "Ye kanpniyan submarine networks banati hain. Wo in keblon ko samudr mein bichhati hain,",
+          "visual": {
+            "type": "photo",
+            "query": "submarine cable",
+            "caption": "Ocean floor"
+          },
+          "mood": "explain",
+          "pop": "Cable under sea",
+          "say_hi": "ये कंपनियां सबमरीन नेटवर्क्स बनाती हैं। वो इन केबलों को समुद्र में बिछाती हैं,"
+        },
+        {
+          "say": "Aur ye sunishchit karti hain ki ye theek se kaam karen. Kya sab log bharat mein internet ka istemal kar pate hain?",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "5 cities",
+                "icon": "globe"
+              },
+              {
+                "label": "fiber optic",
+                "icon": "chip"
+              },
+              {
+                "label": "internet",
+                "icon": "wifi"
+              }
+            ],
+            "note": "Path"
+          },
+          "mood": "think",
+          "pop": "Path to internet",
+          "say_hi": "और ये सुनिश्चित करती हैं कि ये ठीक से काम करें। क्या सब लोग भारत में इंटरनेट का इस्तेमाल कर पाते हैं?"
+        }
+      ],
+      "narration_hi": "ये कंपनियां सबमरीन नेटवर्क्स बनाती हैं। वो इन केबलों को समुद्र में बिछाती हैं, और ये सुनिश्चित करती हैं कि ये ठीक से काम करें। क्या सब लोग भारत में इंटरनेट का इस्तेमाल कर पाते हैं?"
+    },
+    {
+      "on_screen": "Aapko kya laga?",
+      "beats": [
+        {
+          "say": "Comment mein batao, aapko sabse hairan kis baat ne kiya? Aur aisi hi baatein jaanne ke liye Snack Code ko subscribe kar lo.",
+          "visual": {
+            "type": "host",
+            "text": "Comment karo aur subscribe karo"
+          },
+          "mood": "happy",
+          "say_hi": "कमेंट में बताओ, आपको सबसे हैरान किस बात ने किया? और ऐसी ही बातें जानने के लिए स्नैक कोड को सब्सक्राइब कर लो।"
+        }
+      ],
+      "narration_hi": "कमेंट में बताओ, आपको सबसे हैरान किस बात ने किया? और ऐसी ही बातें जानने के लिए स्नैक कोड को सब्सक्राइब कर लो।"
+    }
+  ]
+}

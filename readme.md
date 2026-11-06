@@ -11,7 +11,8 @@ title -> research -> script -> voiceover -> animated video
 
 ## Quick start
 
-Open a terminal and start the tools. Ollama must also be running, with the `qwen3:8b` model.
+Open a terminal and start the tools. Ollama must also be running, with the `qwen3:8b` and `gemma3:4b` models.
+(`qwen3:8b` does the research and planning. `gemma3:4b` writes the script, because its Hindi is much better.)
 
 ```bash
 cd ~/snackcode-ai
@@ -52,9 +53,9 @@ cd projects/<video-folder>
 
 - Compare `research/notes.md` with its source links, because the AI can get facts wrong.
 - Read `scripts/review.md` if it exists. It lists problems the automatic checks couldn't fix.
-- Edit `scripts/script.json`. Read it aloud: the AI writes a first draft, and it often repeats
-  itself or uses filler lines. If you change a `say` line, change its `say_hi` line too, because
-  the voice reads `say_hi`.
+- Edit `scripts/script.json`. Read it aloud: the AI writes a first draft, and it can still repeat
+  itself or get a word wrong. **Edit the Hindi in `say_hi`**, because that's what the voice reads, then
+  run `python ../../hinglish.py --sync` to remake the captions from it.
 
 **4. Make the voiceover.** This uses its own Python environment, `venv-voice`.
 
@@ -106,13 +107,67 @@ Each title gets its own folder in `projects/`, so videos don't overwrite each ot
 | `output/animated.srt` | Subtitles for YouTube Studio |
 | `youtube/` | Thumbnails and the upload guide, made by `youtube_kit.py` |
 
+## What's on screen
+
+The writer picks visuals by itself. You can also set them by hand in `scripts/script.json`.
+
+| Visual | What it shows | How to set it |
+| --- | --- | --- |
+| `term` | A hard word in a notebook: the word, its meaning and an everyday example, written by a pen | `{"type": "term", "term": "VPN", "meaning": "...", "example": "...", "icon": "lock"}` |
+| `pen` | A pen draws boxes and arrows. `broken` crosses out one arrow, counting from 0 | `{"type": "pen", "title": "UPI", "items": [{"label": "Phone", "icon": "phone"}, {"label": "Bank", "icon": "bank"}], "note": "..."}` |
+| `map` | India with a pin on each place named | `{"type": "map", "places": ["Delhi", "Assam"], "label": "..."}` |
+| `photo` | A real photo across the whole screen | `{"type": "photo", "query": "mobile tower", "caption": "Mobile tower"}` |
+
+- **Hard terms:** the first time a video says a term from `glossary.py`, the next beat explains it. These
+  explanations are written by hand, not by the local model. If a term isn't in the list, it doesn't
+  get a card, so add an entry for any new term you want explained.
+- **Maps:** a beat that names a place in `india_places.py` shows the map automatically. The outline is
+  Natural Earth's India view, simplified. Check it yourself before publishing a video that
+  focuses on a border area.
+- **Photos:** `auto_video.py` fetches them from Wikimedia Commons, using only CC0, public-domain and
+  CC BY licences. **Look at `images/photos/review.jpg` before voicing**, because the search can pick
+  the wrong picture. Photos say "Sanketik photo" on screen, and `youtube_kit.py` adds the credits to
+  the description. To use your own photo, add `"file": "images/my_photo.jpg"` to the beat's visual.
+  To choose again, run `python ../../photos.py --redo`.
+- **Colours:** each scene gets its own colours. To keep one colour, run `animate.py --one-colour`.
+
+## Making the voice more emotional
+
+Each sentence already gets its own delivery from its words and punctuation. The biggest improvement
+comes from your own recordings, because the voice copies how the reference clip sounds.
+
+Record 8-15 seconds of yourself, in Hindi, in each mood, and save them in `voices/`:
+
+| File | How to sound |
+| --- | --- |
+| `narrator_shock.wav` | Surprised, like you've just heard big news |
+| `narrator_warn.wav` | Serious, warning a friend |
+| `narrator_happy.wav` | Excited and smiling |
+| `narrator_think.wav` | Curious, asking a question |
+| `narrator_explain.wav` | Calm, explaining over chai |
+
+You can add some or all of them. `voices/narrator.wav` is used for any mood without its own file.
+
 ## Adding videos to `topics.txt`
 
 Put one video on each line. Only the title is required, and the length defaults to 8 minutes.
 
 ```
-Title | direction for the AI | minutes=8
+Title | direction for the AI | minutes=8 | type=news
 ```
+
+`type` can be `news`, `scam` or `explainer`. Leave it out and the script guesses from the words used.
+
+**News videos** search the last month of news and follow one path: what happened, why, who says what,
+and what it means for you. They're told to name who said each thing, give every side and add no
+opinion, but **the local model still gets this wrong, including stating claims as fact**. So `--render`
+and `upload.py --publish` or `--schedule` refuse a news video until you've checked every name, date and
+claim against the sources (`scripts/review.md` has the checklist) and added `"reviewed": true` to
+`scripts/script.json`.
+
+Use one specific story per video, like `Sansad mein naya Bill: kya badlega?`, because a broad title
+like `Current political news` gives scattered research. People's opinions only appear when a source
+reports them: the script won't make up quotes or polls.
 
 Lines starting with `#` are skipped. Remove the `#` from a line to include that video.
 
@@ -135,6 +190,10 @@ start at 0, matching the audio file names (`scene_00.wav` is `--scene 0`).
   use `--force`. With `--render`, their video is still rendered again.
 - **Cut-off words:** Chatterbox sometimes cuts the last word of a beat. Listen to the
   `scene_XX_bYY.wav` files and redo that scene with `--scene`.
+- **A word spelled wrong:** captions and voice spellings come from `hindi_words.json`. Fix the word
+  there and it stays fixed in every video. Test a line with `python ../../hinglish.py "..."`.
+- **Voice not matching a line:** `voice.py` listens to every line with Whisper and redoes weak ones, up
+  to 3 takes. Anything still weak is listed in `audio/voice_check.md`. Whisper can be wrong, so listen first.
 - **Wrong number or short form:** test the text with `python hindi_text.py "UPI 1930"`, which
   shows what the voice will read. Fix a word by adding it to the lists in `hindi_text.py`, or
   by writing it in Hindi in `say_hi`. `voice.py` also prints any English words it couldn't convert.
@@ -197,6 +256,7 @@ test mode, Google may ask you to log in again about every 7 days.
 | `--theme NAME` | Sets the colours: `emerald`, `violet`, `ocean`, `sunset` or `crimson` |
 | `--no-mascot` | Hides Byte, the robot host |
 | `--no-sfx` | Turns off sound effects |
+| `--one-colour` | Keeps one colour for the whole video |
 
 **`voice.py`**
 
@@ -207,6 +267,7 @@ test mode, Google may ask you to log in again about every 7 days.
 | `--lang hi` or `en` | Sets the narration language (default `hi`) |
 | `--voice file.wav` | Uses a different reference voice |
 | `--engine chatterbox` or `kokoro` | Sets the voice engine (default `chatterbox`) |
+| `--no-check` | Skips the Whisper check: faster, but bad takes stay |
 | `--female` | Uses a female Hindi voice, with `--engine kokoro` only |
 
 Kokoro is installed in `venv`, not `venv-voice`, so with `venv` active run it like this:
@@ -226,6 +287,12 @@ python ../../voice.py --engine kokoro --female
 | `youtube_kit.py` | Makes thumbnails and the upload guide for a finished video |
 | `upload.py` | Uploads a finished video to YouTube with all its details |
 | `.gitignore` | Keeps login files, the voice sample, environments and heavy media out of git |
+| `glossary.py` | Hand-written explanations of hard tech, government, court and money terms |
+| `hinglish.py`, `hindi_words.json` | Keep captions and voice on the same words; the spelling list |
+| `voice_check.py` | Listens to voice clips with Whisper and scores them |
+| `india_places.py` | Places the map can mark |
+| `photos.py` | Fetches safely licensed real photos |
+| `assets/` | Handwriting font (Kalam, OFL licence) and the India outline |
 | `topics.txt` | The list of videos to make |
 | `voices/narrator.wav` | 10-20 second sample of the owner's own voice, copied by Chatterbox |
 | `searxng/settings.yml` | Search settings (`formats` must include `json`) |

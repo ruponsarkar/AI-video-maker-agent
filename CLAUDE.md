@@ -15,6 +15,8 @@ This file was written from the planning chat on claude.ai; it is the project's m
   hook in the first 3 s and a visual change every ~5 s.
 - Uploads every **Sunday**. Studio defaults already set: Hindi, Science & Technology.
 - Scam videos always end with helpline **1930** and cybercrime.gov.in.
+- General news explainers are also made now (`type=news`, category News & Politics). Neutral: every claim
+  attributed, both sides from the notes, no invented quotes or public opinion, human checks each one.
 - YouTube "inauthentic content" policy: fully automatic, unedited AI videos risk losing
   monetization. Keep a human in the loop: edit every script, prefer the owner's own voice,
   mark realistic AI audio with YouTube's "altered or synthetic content" label.
@@ -36,6 +38,12 @@ Never run Ollama and the voice model at the same time (VRAM). Disk space is limi
   youtube/uploaded.json prevents double uploads. Online and separate from the offline video pipeline.
   venv needs google-api-python-client + google-auth-oauthlib with `protobuf==4.25.9`
   (descript-audiotools needs protobuf <5; a plain install upgrades it).
+- `glossary.py`  hand-checked term explanations, inserted after a term's first mention (don't let
+  the model write these). `india_places.py`  map coordinates. `photos.py`  Wikimedia Commons photos,
+  CC0/PD/CC BY only (no SA/NC/ND), online but optional; review images/photos/review.jpg.
+  `assets/`  Kalam font and India outline (Natural Earth, India point of view).
+- `hinglish.py` + `hindi_words.json`  to_roman() makes captions from say_hi, so they always match the voice;
+  to_hindi() spells Roman lines word by word. `voice_check.py`  Whisper score per clip (venv, CPU), run by voice.py.
 - `research.py`, `script.py`  older single-step versions (still work on ./research, ./scripts)
 - `voices/narrator.wav`  10-20 s reference voice for Chatterbox (owner's own voice only)
 - `projects/<slug>/`  one folder per video: research/notes.md, research/sources.json,
@@ -64,7 +72,7 @@ cd projects/<slug>
 python ../../animate.py --preview                     # first 3 scenes
 python ../../animate.py                               # full: output/animated.mp4 + .srt
 ```
-animate.py flags: `--theme emerald|violet|ocean|sunset|crimson`, `--no-mascot`, `--no-sfx`.
+animate.py flags: `--theme emerald|violet|ocean|sunset|crimson`, `--no-mascot`, `--no-sfx`, `--one-colour`.
 voice.py flags: `--lang hi|en`, `--voice file.wav`, `--engine chatterbox|kokoro`.
 
 ## script.json format
@@ -77,8 +85,8 @@ voice.py flags: `--lang hi|en`, `--voice file.wav`, `--engine chatterbox|kokoro`
 ```
 - Beat visual types: title (first beat only), chapter (`part`, `total`: the card between parts),
   host, kinetic, icon, phone_call, phone_sms,
-  chat, steps, compare, stat, warning, flow; `image` is used automatically when
-  `images/scene_XX.png` exists.
+  chat, steps, compare, stat, warning, flow, term, pen, map, photo; `image` is used automatically when
+  `images/scene_XX.png` exists. Fields for the last four are in readme.md ("What's on screen").
 - Icons: phone shield lock bank money warning user hacker globe laptop wifi chip ram bug
   ai key sim mail check cross.
 - mood (drives the mascot face AND voice emotion): happy, shock, think, warn, explain.
@@ -111,6 +119,11 @@ voice.py flags: `--lang hi|en`, `--voice file.wav`, `--engine chatterbox|kokoro`
 - Render speed ~29 fps on this laptop (10-min video ~= 10 min render).
 
 ## Known issues / open items
+- Script language: the writer is gemma3:4b writing Devanagari; `say` is generated from `say_hi`. qwen3:8b can't
+  fix Hindi grammar (tested) and translates when converting scripts, so it only does research, outline, visuals.
+- News: gemma still sometimes states an allegation as fact. Keep the `"reviewed": true` lock in place.
+- Voice: settings barely change accuracy (tested 9 combinations); best takes via Whisper is what works. Whisper
+  itself hears डेटा as देटा, so voice_check compares consonant sounds, not exact letters.
 - Chatterbox logs "Detected 2x repetition" / "forcing EOS": normal safety stop, but it can
   cut the last word of a beat. Check scene_XX_bYY.wav files and re-run `--scene N`.
   Idea not built yet: auto-detect short clips (duration vs text length) and retry them.
@@ -131,3 +144,4 @@ e-challan scam, phone hack check, link-less scam messages, RBI "donation" fee sc
 - Test changes with `animate.py --preview` before full renders; look at extracted frames.
 - Hinglish (Roman) for anything on screen; Devanagari only for the voice text.
 - Don't invent facts or numbers in scripts; every fact must come from research notes.
+- Explain every hard term for a first-time listener; put new terms in glossary.py, written by hand.

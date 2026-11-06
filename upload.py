@@ -26,7 +26,7 @@ TOKEN = os.path.join(HERE, "youtube_token.json")
 SCOPES = ["https://www.googleapis.com/auth/youtube.upload",
           "https://www.googleapis.com/auth/youtube.force-ssl"]
 CHANNEL_HANDLE = "@snackcode108"   # refuses to upload to any other channel
-CATEGORY_SCIENCE_TECH = "28"
+CATEGORIES = {"tech": "28", "news": "25"}   # Science & Technology, News & Politics
 LANGUAGE = "hi"
 CAPTION_LANGUAGES = ("hi-Latn", "hi")   # the subtitles are Hindi in Roman letters
 IST = timezone(timedelta(hours=5, minutes=30))
@@ -86,6 +86,10 @@ def load_package(args, record):
         problems.append("The tags are over 500 characters.")
     if not os.path.exists(thumbnail):
         problems.append(f"{thumbnail} is missing.")
+    script = json.load(open("scripts/script.json", encoding="utf-8"))
+    if script.get("kind") == "news" and not script.get("reviewed") and (args.publish or args.schedule):
+        problems.append('This is a news video and nobody has marked it checked. Check scripts/review.md, then add '
+                        '"reviewed": true to scripts/script.json. A private upload is still allowed.')
     if problems:
         raise SystemExit("Fix these first:\n  " + "\n  ".join(problems))
     return info, description, tags, thumbnail
@@ -100,7 +104,7 @@ def video_body(info, description, tags, publish_at, public):
     if publish_at:
         status["publishAt"] = publish_at
     return {"snippet": {"title": info["title"], "description": description, "tags": tags,
-                        "categoryId": CATEGORY_SCIENCE_TECH, "defaultLanguage": LANGUAGE,
+                        "categoryId": CATEGORIES.get(info.get("category"), CATEGORIES["tech"]), "defaultLanguage": LANGUAGE,
                         "defaultAudioLanguage": LANGUAGE},
             "status": status}
 

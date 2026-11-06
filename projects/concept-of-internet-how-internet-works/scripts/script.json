@@ -1,0 +1,1284 @@
+{
+  "title": "Internet Kya Hai | Internet Kaam Kaise Karta Hai",
+  "topic": "Concept of Internet | How internet works",
+  "kind": "explainer",
+  "scenes": [
+    {
+      "on_screen": "Concept of Internet | How internet works",
+      "beats": [
+        {
+          "say": "Socho, aap aaj subah apne phone par ek video dekh rahe the, hai na?",
+          "visual": {
+            "type": "title"
+          },
+          "mood": "think",
+          "pop": "video",
+          "say_hi": "सोचो, आप आज सुबह अपने फ़ोन पर एक वीडियो देख रहे थे, है ना?"
+        },
+        {
+          "say": "Wo video kahin dur kisi server par bana tha. Us video ko aapke phone tak pahunchane mein kai tarah ke log shamil the.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "server par bana",
+                "icon": "phone"
+              },
+              {
+                "label": "log shamil the",
+                "icon": "wifi"
+              },
+              {
+                "label": "video pahuncha",
+                "icon": "globe"
+              }
+            ],
+            "note": "ek chhoti line"
+          },
+          "mood": "explain",
+          "pop": "server",
+          "say_hi": "वो वीडियो कहीं दूर किसी सर्वर पर बना था। उस वीडियो को आपके फ़ोन तक पहुंचाने में कई तरह के लोग शामिल थे।"
+        },
+        {
+          "say": "Server ek taakatwar computer hai, jisme website ka data rakha hota hai. Aapka phone usi se data maangta hai.",
+          "say_hi": "सर्वर एक ताकतवर कंप्यूटर है, जिसमें वेबसाइट का डेटा रखा होता है। आपका फ़ोन उसी से डेटा मांगता है।",
+          "visual": {
+            "type": "pen",
+            "title": "Server",
+            "items": [
+              {
+                "label": "Aapka phone",
+                "icon": "phone"
+              },
+              {
+                "label": "Server",
+                "icon": "chip"
+              },
+              {
+                "label": "Website ka data",
+                "icon": "laptop"
+              }
+            ],
+            "note": "Phone maangta hai, server data bhejta hai"
+          },
+          "mood": "explain"
+        },
+        {
+          "say": "Ye sab internet naam ki ek badi cheez se juda hua hai.",
+          "visual": {
+            "type": "icon",
+            "icon": "globe",
+            "text": "Internet jal hai"
+          },
+          "mood": "warn",
+          "pop": "jal",
+          "say_hi": "ये सब इंटरनेट नाम की एक बड़ी चीज़ से जुड़ा हुआ है।"
+        },
+        {
+          "say": "Internet asal mein duniya bhar ke computers aur mobile phon ko aapas mein jodne wala ek jal hai.",
+          "visual": {
+            "type": "photo",
+            "query": "computer network",
+            "caption": "internet jal"
+          },
+          "mood": "explain",
+          "pop": "network",
+          "say_hi": "इंटरनेट असल में दुनिया भर के कंप्यूटरों और मोबाइल फोन को आपस में जोड़ने वाला एक जाल है।"
+        }
+      ],
+      "narration_hi": "सोचो, आप आज सुबह अपने फ़ोन पर एक वीडियो देख रहे थे, है ना? वो वीडियो कहीं दूर किसी सर्वर पर बना था। उस वीडियो को आपके फ़ोन तक पहुंचाने में कई तरह के लोग शामिल थे। सर्वर एक ताकतवर कंप्यूटर है, जिसमें वेबसाइट का डेटा रखा होता है। आपका फ़ोन उसी से डेटा मांगता है। ये सब इंटरनेट नाम की एक बड़ी चीज़ से जुड़ा हुआ है। इंटरनेट असल में दुनिया भर के कंप्यूटरों और मोबाइल फोन को आपस में जोड़ने वाला एक जाल है।"
+    },
+    {
+      "on_screen": "Lekin kya aapko pata hai, yahan se",
+      "beats": [
+        {
+          "say": "Ye aisa hai jaise sadkon ka ek vishal network, lekin ye sadken data bhejti hain,",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "phone",
+                "icon": "wifi"
+              },
+              {
+                "label": "server",
+                "icon": "globe"
+              }
+            ],
+            "note": "Data flows"
+          },
+          "mood": "explain",
+          "pop": "data flow",
+          "say_hi": "ये ऐसा है जैसे सड़कों का एक विशाल नेटवर्क, लेकिन ये सड़कें डेटा भेजती हैं,"
+        },
+        {
+          "say": "Logon ko nahi. Aap soch rahe honge, ye kaise hota hai? Jab aap apne phone par koi website dekhte hain,",
+          "visual": {
+            "type": "kinetic",
+            "text": "Logon ko nahi",
+            "highlight": "nobody"
+          },
+          "mood": "warn",
+          "pop": "no one",
+          "say_hi": "लोगों को नहीं। आप सोच रहे होंगे, ये कैसे होता है? जब आप अपने फ़ोन पर कोई वेबसाइट देखते हैं,"
+        },
+        {
+          "say": "Ya email bhejte hain, to aapka phone us website ke server se baat karta hai.",
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              {
+                "icon": "phone",
+                "label": "phone"
+              },
+              {
+                "icon": "bank",
+                "label": "server"
+              },
+              {
+                "icon": "lock",
+                "label": "data"
+              }
+            ]
+          },
+          "mood": "think",
+          "pop": "secure?",
+          "say_hi": "या ईमेल भेजते हैं, तो आपका फ़ोन उस वेबसाइट के सर्वर से बात करता है।"
+        },
+        {
+          "say": "Ye baat karne ke liye, jankari chhote-chhote tukdon mein bant di jati hai jaise ki ek badi kitab ko chhote-chhote pej mein badlana.",
+          "visual": {
+            "type": "photo",
+            "query": "data transfer",
+            "caption": "network flow"
+          },
+          "mood": "explain",
+          "pop": "hidden",
+          "say_hi": "ये बात करने के लिए, जानकारी छोटे-छोटे टुकड़ों में बाँट दी जाती है जैसे कि एक बड़ी किताब को छोटे-छोटे पेज में बदलना।"
+        }
+      ],
+      "narration_hi": "ये ऐसा है जैसे सड़कों का एक विशाल नेटवर्क, लेकिन ये सड़कें डेटा भेजती हैं, लोगों को नहीं। आप सोच रहे होंगे, ये कैसे होता है? जब आप अपने फ़ोन पर कोई वेबसाइट देखते हैं, या ईमेल भेजते हैं, तो आपका फ़ोन उस वेबसाइट के सर्वर से बात करता है। ये बात करने के लिए, जानकारी छोटे-छोटे टुकड़ों में बाँट दी जाती है जैसे कि एक बड़ी किताब को छोटे-छोटे पेज में बदलना।"
+    },
+    {
+      "on_screen": "Data ke raste kya hote hain?",
+      "beats": [
+        {
+          "say": "In tukdon ko packet kehte hain. Ye packet alag-alag raston se yatra karte hain kuch sidhe, kuch ghumavdar.",
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              {
+                "icon": "chip",
+                "label": "Phone"
+              },
+              {
+                "icon": "router",
+                "label": "Router"
+              },
+              {
+                "icon": "switch",
+                "label": "Switch"
+              },
+              {
+                "icon": "bank",
+                "label": "Website"
+              }
+            ]
+          },
+          "mood": "explain",
+          "pop": "Packet raste",
+          "say_hi": "इन टुकड़ों को पैकेट कहते हैं। ये पैकेट अलग-अलग रास्तों से यात्रा करते हैं कुछ सीधे, कुछ घुमावदार।"
+        },
+        {
+          "say": "Data packet matlab data ka chhota tukda. Badi file tukdon mein jaati hai, aur aapke phone par phir jud jaati hai.",
+          "say_hi": "डेटा पैकेट मतलब डेटा का छोटा टुकड़ा। बड़ी फ़ाइल टुकड़ों में जाती है, और आपके फ़ोन पर फिर जुड़ जाती है।",
+          "visual": {
+            "type": "pen",
+            "title": "Data packet",
+            "items": [
+              {
+                "label": "Badi file",
+                "icon": "laptop"
+              },
+              {
+                "label": "Chhote tukde",
+                "icon": "mail"
+              },
+              {
+                "label": "Phone par judi",
+                "icon": "phone"
+              }
+            ],
+            "note": "Jaise saaman alag alag dabbon mein bhejna"
+          },
+          "mood": "explain"
+        },
+        {
+          "say": "Ye raaste router aur switch naam ke khas computers dvara banae jaate hain.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Sidhe Rasta",
+                "icon": "globe"
+              },
+              {
+                "label": "Ghumavdar Rasta",
+                "icon": "wifi"
+              }
+            ],
+            "note": "Dua raaste"
+          },
+          "mood": "think",
+          "pop": "Do raste",
+          "say_hi": "ये रास्ते राउटर और स्विच नाम के खास कंप्यूटरों द्वारा बनाए जाते हैं।"
+        },
+        {
+          "say": "Router wo machine hai jo data ko sahi raste par bhejti hai. Jaise chauraahe par khada traffic police.",
+          "say_hi": "राउटर वो मशीन है जो डेटा को सही रास्ते पर भेजती है। जैसे चौराहे पर खड़ा ट्रैफ़िक पुलिस।",
+          "visual": {
+            "type": "pen",
+            "title": "Router",
+            "items": [
+              {
+                "label": "Aapka phone",
+                "icon": "phone"
+              },
+              {
+                "label": "Router",
+                "icon": "wifi"
+              },
+              {
+                "label": "Sahi rasta",
+                "icon": "globe"
+              }
+            ],
+            "note": "Chauraahe ke traffic police jaisa"
+          },
+          "mood": "explain"
+        },
+        {
+          "say": "Ye router aur switch packet ko sahi jagah par pahunchane mein madad karte hain.",
+          "visual": {
+            "type": "photo",
+            "query": "network router",
+            "caption": "Router ka darwaza"
+          },
+          "mood": "explain",
+          "pop": "Sahi jagah",
+          "say_hi": "ये राउटर और स्विच पैकेट को सही जगह पर पहुंचाने में मदद करते हैं।"
+        }
+      ],
+      "narration_hi": "इन टुकड़ों को पैकेट कहते हैं। ये पैकेट अलग-अलग रास्तों से यात्रा करते हैं कुछ सीधे, कुछ घुमावदार। डेटा पैकेट मतलब डेटा का छोटा टुकड़ा। बड़ी फ़ाइल टुकड़ों में जाती है, और आपके फ़ोन पर फिर जुड़ जाती है। ये रास्ते राउटर और स्विच नाम के खास कंप्यूटरों द्वारा बनाए जाते हैं। राउटर वो मशीन है जो डेटा को सही रास्ते पर भेजती है। जैसे चौराहे पर खड़ा ट्रैफ़िक पुलिस। ये राउटर और स्विच पैकेट को सही जगह पर पहुंचाने में मदद करते हैं।"
+    },
+    {
+      "on_screen": "Data ke raste kya hote hain?",
+      "beats": [
+        {
+          "say": "Phir, aapke phone ka browser in packet ko vapas jodta hai aur aapko wo website dikhata hai.",
+          "visual": {
+            "type": "phone_call",
+            "caller": "Router",
+            "number": "+91 98XXX XXXXX"
+          },
+          "mood": "warn",
+          "pop": "Saaf rasta",
+          "say_hi": "फिर, आपके फ़ोन का ब्राउज़र इन पैकेट को वापस जोड़ता है और आपको वो वेबसाइट दिखाता है।"
+        },
+        {
+          "say": "Browser wo app hai jisse website khulti hai, jaise Chrome.",
+          "say_hi": "ब्राउज़र वो ऐप है जिससे वेबसाइट खुलती है, जैसे क्रोम।",
+          "visual": {
+            "type": "term",
+            "term": "Browser",
+            "meaning": "Website kholne wala app",
+            "example": "Jaise Chrome",
+            "icon": "laptop"
+          },
+          "mood": "explain"
+        }
+      ],
+      "narration_hi": "फिर, आपके फ़ोन का ब्राउज़र इन पैकेट को वापस जोड़ता है और आपको वो वेबसाइट दिखाता है। ब्राउज़र वो ऐप है जिससे वेबसाइट खुलती है, जैसे क्रोम।"
+    },
+    {
+      "on_screen": "Kya aapko pata hai?",
+      "beats": [
+        {
+          "say": "Ye sab TCP/IP jaise protocol ki wajah se hota hai, jo internet ke liye niyam banata hai.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "TCP/IP",
+                "icon": "chip"
+              },
+              {
+                "label": "Internet",
+                "icon": "wifi"
+              }
+            ],
+            "note": "Data flow"
+          },
+          "mood": "explain",
+          "pop": "TCP/IP",
+          "say_hi": "ये सब TCP/IP जैसे प्रोटोकॉल की वजह से होता है, जो इंटरनेट के लिए नियम बनाता है।"
+        },
+        {
+          "say": "TCP IP internet par data bhejne ke niyam hain. Inhi se har device ek hi tareeke se baat karta hai.",
+          "say_hi": "टी-सी-पी आई-पी इंटरनेट पर डेटा भेजने के नियम हैं। इन्हीं से हर डिवाइस एक ही तरीके से बात करता है।",
+          "visual": {
+            "type": "term",
+            "term": "TCP/IP",
+            "meaning": "Internet par data bhejne ke niyam",
+            "example": "Jaise sabko ek hi bhasha aati ho",
+            "icon": "check"
+          },
+          "mood": "explain"
+        },
+        {
+          "say": "Protocol matlab niyam. Inse do computer ek dusre ki baat samajh paate hain.",
+          "say_hi": "प्रोटोकॉल मतलब नियम। इनसे दो कंप्यूटर एक दूसरे की बात समझ पाते हैं।",
+          "visual": {
+            "type": "term",
+            "term": "Protocol",
+            "meaning": "Computers ke baat karne ke niyam",
+            "example": "Jaise sadak par chalne ke niyam",
+            "icon": "check"
+          },
+          "mood": "explain"
+        }
+      ],
+      "narration_hi": "ये सब TCP/IP जैसे प्रोटोकॉल की वजह से होता है, जो इंटरनेट के लिए नियम बनाता है। टी-सी-पी आई-पी इंटरनेट पर डेटा भेजने के नियम हैं। इन्हीं से हर डिवाइस एक ही तरीके से बात करता है। प्रोटोकॉल मतलब नियम। इनसे दो कंप्यूटर एक दूसरे की बात समझ पाते हैं।"
+    },
+    {
+      "on_screen": "Aaj in sawaalon ke jawab",
+      "beats": [
+        {
+          "say": "Is video mein 3 sawaalon ke jawab milenge. Internet hai kya? Internet kaam kaise karta hai? Aapki zindagi mein Internet ka kya matlab hai?",
+          "visual": {
+            "type": "steps",
+            "items": [
+              "Internet hai kya?",
+              "Internet kaam kaise karta hai?",
+              "Aapki zindagi mein Internet ka kya matlab hai?"
+            ]
+          },
+          "mood": "explain",
+          "say_hi": "इस वीडियो में तीन सवालों के जवाब मिलेंगे। इंटरनेट है क्या? इंटरनेट काम कैसे करता है? आपकी ज़िंदगी में इंटरनेट का क्या मतलब है?"
+        }
+      ],
+      "narration_hi": "इस वीडियो में तीन सवालों के जवाब मिलेंगे। इंटरनेट है क्या? इंटरनेट काम कैसे करता है? आपकी ज़िंदगी में इंटरनेट का क्या मतलब है?"
+    },
+    {
+      "on_screen": "Internet hai kya?",
+      "beats": [
+        {
+          "say": "Chaliye, pehle sawaal se shuru karte hain. Internet hai kya?",
+          "visual": {
+            "type": "chapter",
+            "part": 1,
+            "total": 3
+          },
+          "mood": "think",
+          "say_hi": "चलिए, पहले सवाल से शुरू करते हैं। इंटरनेट है क्या?"
+        }
+      ],
+      "narration_hi": "चलिए, पहले सवाल से शुरू करते हैं। इंटरनेट है क्या?"
+    },
+    {
+      "on_screen": "Internet ka pahli concept",
+      "beats": [
+        {
+          "say": "Theek hai, sunie! Iski shuruaat 1960 ke dashak mein hui thi, jab amerika ki sarkar ne ise banaya tha.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "1960s",
+                "icon": "chip"
+              },
+              {
+                "label": "ARPANET",
+                "icon": "laptop"
+              },
+              {
+                "label": "data packets",
+                "icon": "wifi"
+              }
+            ],
+            "note": "network ke tukde"
+          },
+          "mood": "explain",
+          "pop": "data packets",
+          "say_hi": "ठीक है, सुनिए! इसकी शुरुआत 1960 के दशक में हुई थी, जब अमेरिका की सरकार ने इसे बनाया था।"
+        },
+        {
+          "say": "Iska maksad tha ki agar koi musibat aaye, to bhi log aapas mein baat kar saken.",
+          "visual": {
+            "type": "kinetic",
+            "text": "musibat mein bhi baat ho sakti hai",
+            "highlight": "bhi baat"
+          },
+          "mood": "think",
+          "pop": "secure network",
+          "say_hi": "इसका मकसद था कि अगर कोई मुसीबत आए, तो भी लोग आपस में बात कर सकें।"
+        },
+        {
+          "say": "Us samay, ise ARPANET naam diya gaya tha. Ye ek khas tarah ka network tha jo data ko chhote-chhote tukdon mein bantkar bhejta tha.",
+          "visual": {
+            "type": "photo",
+            "query": "network diagram",
+            "caption": "ARPANET"
+          },
+          "mood": "explain",
+          "pop": "1960s",
+          "say_hi": "उस समय, इसे ARPANET नाम दिया गया था। ये एक खास तरह का नेटवर्क था जो डेटा को छोटे-छोटे टुकड़ों में बांटकर भेजता था।"
+        },
+        {
+          "say": "ARPANET ek shuruaati computer network tha, jo America mein bana. Internet ki shuruaat yahin se hui.",
+          "say_hi": "आरपानेट एक शुरुआती कंप्यूटर नेटवर्क था, जो अमेरिका में बना। इंटरनेट की शुरुआत यहीं से हुई।",
+          "visual": {
+            "type": "term",
+            "term": "ARPANET",
+            "meaning": "Internet se pehle ka shuruaati network",
+            "example": "America mein bana, yahin se internet ki shuruaat hui",
+            "icon": "globe"
+          },
+          "mood": "explain"
+        },
+        {
+          "say": "Jab aap apne phone par koi website dekhte hain, to aapka phone us website ke server se baat karta hai.",
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              {
+                "icon": "phone",
+                "label": "phone"
+              },
+              {
+                "icon": "globe",
+                "label": "internet"
+              },
+              {
+                "icon": "server",
+                "label": "website"
+              }
+            ]
+          },
+          "mood": "happy",
+          "pop": "connect",
+          "say_hi": "जब आप अपने फ़ोन पर कोई वेबसाइट देखते हैं, तो आपका फ़ोन उस वेबसाइट के सर्वर से बात करता है।"
+        }
+      ],
+      "narration_hi": "ठीक है, सुनिए! इसकी शुरुआत 1960 के दशक में हुई थी, जब अमेरिका की सरकार ने इसे बनाया था। इसका मकसद था कि अगर कोई मुसीबत आए, तो भी लोग आपस में बात कर सकें। उस समय, इसे ARPANET नाम दिया गया था। ये एक खास तरह का नेटवर्क था जो डेटा को छोटे-छोटे टुकड़ों में बांटकर भेजता था। आरपानेट एक शुरुआती कंप्यूटर नेटवर्क था, जो अमेरिका में बना। इंटरनेट की शुरुआत यहीं से हुई। जब आप अपने फ़ोन पर कोई वेबसाइट देखते हैं, तो आपका फ़ोन उस वेबसाइट के सर्वर से बात करता है।"
+    },
+    {
+      "on_screen": "Internet ke 4.5 billion users",
+      "beats": [
+        {
+          "say": "Ye baat karne ke liye, jankari chhote-chhote tukdon mein bant di jati hai.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Unique IP Address",
+                "icon": "phone"
+              },
+              {
+                "label": "Like Home Address",
+                "icon": "globe"
+              },
+              {
+                "label": "Deliver Data",
+                "icon": "wifi"
+              }
+            ],
+            "note": "Ek chhoti line"
+          },
+          "mood": "explain",
+          "pop": "IP Address",
+          "say_hi": "ये बात करने के लिए, जानकारी छोटे-छोटे टुकड़ों में बाँट दी जाती है।"
+        },
+        {
+          "say": "Aapke computer aur mobile phon ko aapas mein jodne ke liye har ek device ka ek anokha number hota hai,",
+          "visual": {
+            "type": "photo",
+            "query": "network router",
+            "caption": "Home Network"
+          },
+          "mood": "explain",
+          "pop": "Unique Number",
+          "say_hi": "आपके कंप्यूटर और मोबाइल फोन को आपस में जोड़ने के लिए हर एक डिवाइस का एक अनोखा नंबर होता है,"
+        },
+        {
+          "say": "Jise IP address kehte hain. Ye number jaise aapke ghar ka pata hota hai,",
+          "visual": {
+            "type": "kinetic",
+            "text": "Each Device Has One",
+            "highlight": "One"
+          },
+          "mood": "think",
+          "pop": "Anokha Number",
+          "say_hi": "जिसे IP एड्रेस कहते हैं। ये नंबर जैसे आपके घर का पता होता है,"
+        },
+        {
+          "say": "IP address matlab internet par aapke device ka number. Ye ghar ke pate jaisa hai, taaki data sahi jagah pahunche.",
+          "say_hi": "आई-पी एड्रेस मतलब इंटरनेट पर आपके डिवाइस का नंबर। ये घर के पते जैसा है, ताकि डेटा सही जगह पहुंचे।",
+          "visual": {
+            "type": "term",
+            "term": "IP address",
+            "meaning": "Internet par aapke device ka number",
+            "example": "Ghar ke pate jaisa, taaki data sahi jagah pahunche",
+            "icon": "globe"
+          },
+          "mood": "explain"
+        },
+        {
+          "say": "Jo mel dilivri karne valon ko batata hai ki aapka mel kahan bhejna hai.",
+          "visual": {
+            "type": "compare",
+            "left_title": "Home Address",
+            "left": [
+              "Phone",
+              "Computer"
+            ],
+            "right_title": "IP Address",
+            "right": [
+              "Unique Code",
+              "Deliver Data"
+            ]
+          },
+          "mood": "explain",
+          "pop": "Like Pata",
+          "say_hi": "जो मेल डिलीवरी करने वालों को बताता है कि आपका मेल कहां भेजना है।"
+        }
+      ],
+      "narration_hi": "ये बात करने के लिए, जानकारी छोटे-छोटे टुकड़ों में बाँट दी जाती है। आपके कंप्यूटर और मोबाइल फोन को आपस में जोड़ने के लिए हर एक डिवाइस का एक अनोखा नंबर होता है, जिसे IP एड्रेस कहते हैं। ये नंबर जैसे आपके घर का पता होता है, आई-पी एड्रेस मतलब इंटरनेट पर आपके डिवाइस का नंबर। ये घर के पते जैसा है, ताकि डेटा सही जगह पहुंचे। जो मेल डिलीवरी करने वालों को बताता है कि आपका मेल कहां भेजना है।"
+    },
+    {
+      "on_screen": "Internet ke 4.5 billion users",
+      "beats": [
+        {
+          "say": "Isi tarah, IP address data ko sahi jagah par pahunchane mein madad karta hai.",
+          "visual": {
+            "type": "kinetic",
+            "text": "IP address sahi jagah par pahuncha",
+            "highlight": "sahi jagah"
+          },
+          "mood": "explain",
+          "pop": "sahi jagah",
+          "say_hi": "इसी तरह, IP एड्रेस डेटा को सही जगह पर पहुंचाने में मदद करता है।"
+        },
+        {
+          "say": "Ye internet ko kaam karne wala banata hai!",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Device",
+                "icon": "phone"
+              },
+              {
+                "label": "IP Address",
+                "icon": "chip"
+              },
+              {
+                "label": "Data",
+                "icon": "globe"
+              }
+            ],
+            "note": "Data sahi jagah pohochta hai"
+          },
+          "mood": "think",
+          "pop": "data flow",
+          "say_hi": "ये इंटरनेट को काम करने वाला बनाता है!"
+        }
+      ],
+      "narration_hi": "इसी तरह, IP एड्रेस डेटा को सही जगह पर पहुंचाने में मदद करता है। ये इंटरनेट को काम करने वाला बनाता है!"
+    },
+    {
+      "on_screen": "Internet kaam kaise karta hai?",
+      "beats": [
+        {
+          "say": "To ye tha iska seedha matlab. Ab agla sawaal. Internet kaam kaise karta hai?",
+          "visual": {
+            "type": "chapter",
+            "part": 2,
+            "total": 3
+          },
+          "mood": "think",
+          "say_hi": "तो ये था इसका सीधा मतलब। अब अगला सवाल। इंटरनेट काम कैसे करता है?"
+        }
+      ],
+      "narration_hi": "तो ये था इसका सीधा मतलब। अब अगला सवाल। इंटरनेट काम कैसे करता है?"
+    },
+    {
+      "on_screen": "Website ka pata IP se kese lage?",
+      "beats": [
+        {
+          "say": "Lekin, aap sochie, agar har website ka pata ek lanba number hota,",
+          "visual": {
+            "type": "kinetic",
+            "text": "Har website ek lanba number hota hai",
+            "highlight": "lanba"
+          },
+          "mood": "think",
+          "pop": "lanba",
+          "say_hi": "लेकिन, आप सोचिए, अगर हर वेबसाइट का पता एक लंबा नंबर होता,"
+        },
+        {
+          "say": "To yaad rakhna kitna mushkil hota! Isliye, hamne DNS naam diya. DNS ka matlab hai domain name system.",
+          "visual": {
+            "type": "warning",
+            "text": "Yaad rakhna kitna mushkil hota!"
+          },
+          "mood": "warn",
+          "pop": "yaad rakhna",
+          "say_hi": "तो याद रखना कितना मुश्किल होता! इसलिए, हमने DNS नाम दिया। DNS का मतलब है डोमेन नेम सिस्टम।"
+        },
+        {
+          "say": "DNS internet ki phonebook hai. Aap website ka naam likhte ho, aur ye uska IP address dhoondh kar deta hai.",
+          "say_hi": "डी-एन-एस इंटरनेट की फ़ोनबुक है। आप वेबसाइट का नाम लिखते हो, और ये उसका आई-पी एड्रेस ढूंढ कर देता है।",
+          "visual": {
+            "type": "pen",
+            "title": "DNS",
+            "items": [
+              {
+                "label": "Website ka naam",
+                "icon": "globe"
+              },
+              {
+                "label": "DNS: phonebook",
+                "icon": "mail"
+              },
+              {
+                "label": "IP address mila",
+                "icon": "check"
+              }
+            ],
+            "note": "Naam aap yaad rakhte ho, number DNS dhoondhta hai"
+          },
+          "mood": "explain"
+        },
+        {
+          "say": "Domain matlab website ka naam, jaise google dot com.",
+          "say_hi": "डोमेन मतलब वेबसाइट का नाम, जैसे गूगल डॉट कॉम।",
+          "visual": {
+            "type": "term",
+            "term": "Domain",
+            "meaning": "Website ka naam",
+            "example": "Jaise google.com",
+            "icon": "globe"
+          },
+          "mood": "explain"
+        },
+        {
+          "say": "Ye ek tarah ka phonbuk hai. Jaise jab aap kisi ko phone karte hain,",
+          "visual": {
+            "type": "host",
+            "text": "DNS ka matlab hai domain name system"
+          },
+          "mood": "explain",
+          "pop": "DNS",
+          "say_hi": "ये एक तरह का फोनबुक है। जैसे जब आप किसी को फ़ोन करते हैं,"
+        }
+      ],
+      "narration_hi": "लेकिन, आप सोचिए, अगर हर वेबसाइट का पता एक लंबा नंबर होता, तो याद रखना कितना मुश्किल होता! इसलिए, हमने DNS नाम दिया। DNS का मतलब है डोमेन नेम सिस्टम। डी-एन-एस इंटरनेट की फ़ोनबुक है। आप वेबसाइट का नाम लिखते हो, और ये उसका आई-पी एड्रेस ढूंढ कर देता है। डोमेन मतलब वेबसाइट का नाम, जैसे गूगल डॉट कॉम। ये एक तरह का फोनबुक है। जैसे जब आप किसी को फ़ोन करते हैं,"
+    },
+    {
+      "on_screen": "Website ka pata IP se kese lage?",
+      "beats": [
+        {
+          "say": "To aap uska number dayal karte hain, waise hi jab aap kisi website par jana chahte hain,",
+          "visual": {
+            "type": "compare",
+            "left_title": "Phonebook",
+            "left": [
+              "Number dayal karte hain"
+            ],
+            "right_title": "Website",
+            "right": [
+              "Domain use karte hain"
+            ]
+          },
+          "mood": "explain",
+          "pop": "Compare",
+          "say_hi": "तो आप उसका नंबर डायल करते हैं, वैसे ही जब आप किसी वेबसाइट पर जाना चाहते हैं,"
+        }
+      ],
+      "narration_hi": "तो आप उसका नंबर डायल करते हैं, वैसे ही जब आप किसी वेबसाइट पर जाना चाहते हैं,"
+    },
+    {
+      "on_screen": "Data packets ka naam aur IP",
+      "beats": [
+        {
+          "say": "To aap uska naam likhte hain. Phir DNS us naam ko ek number mein badal deta hai, jise IP address kehte hain.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "DNS",
+                "icon": "phone"
+              },
+              {
+                "label": "IP Address",
+                "icon": "chip"
+              }
+            ],
+            "note": "Name to Number"
+          },
+          "mood": "explain",
+          "pop": "DNS to IP",
+          "say_hi": "तो आप उसका नाम लिखते हैं। फिर DNS उस नाम को एक नंबर में बदल देता है, जिसे IP एड्रेस कहते हैं।"
+        },
+        {
+          "say": "Ye IP address computer ko batata hai ki kis server se data lena hai.",
+          "visual": {
+            "type": "photo",
+            "query": "server room",
+            "caption": "Server Location",
+            "file": "images/photos/s13_b01.jpg",
+            "credit": "Jemimus / CC BY 2.0"
+          },
+          "mood": "think",
+          "pop": "Where to Send",
+          "say_hi": "ये आईपी एड्रेस कंप्यूटर को बताता है कि किस सर्वर से डेटा लेना है।"
+        },
+        {
+          "say": "To phir, ab dekhte hain ki internet par data kaise bheja jaata hai.",
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              {
+                "icon": "laptop",
+                "label": "Computer"
+              },
+              {
+                "icon": "wifi",
+                "label": "Router"
+              },
+              {
+                "icon": "server",
+                "label": "Server"
+              }
+            ]
+          },
+          "mood": "explain",
+          "pop": "Data Path",
+          "say_hi": "तो फिर, अब देखते हैं कि इंटरनेट पर डेटा कैसे भेजा जाता है।"
+        },
+        {
+          "say": "Jab aap browser mein koi website taip karte hain, to aapka computer us website ke server ko ek message bhejta hai.",
+          "visual": {
+            "type": "chat",
+            "name": "Unknown Number",
+            "messages": [
+              {
+                "from": "them",
+                "text": "Website request"
+              },
+              {
+                "from": "me",
+                "text": "IP Address sent"
+              }
+            ]
+          },
+          "mood": "warn",
+          "pop": "Request Sent",
+          "say_hi": "जब आप ब्राउज़र में कोई वेबसाइट टाइप करते हैं, तो आपका कंप्यूटर उस वेबसाइट के सर्वर को एक मैसेज भेजता है।"
+        }
+      ],
+      "narration_hi": "तो आप उसका नाम लिखते हैं। फिर DNS उस नाम को एक नंबर में बदल देता है, जिसे IP एड्रेस कहते हैं। ये आईपी एड्रेस कंप्यूटर को बताता है कि किस सर्वर से डेटा लेना है। तो फिर, अब देखते हैं कि इंटरनेट पर डेटा कैसे भेजा जाता है। जब आप ब्राउज़र में कोई वेबसाइट टाइप करते हैं, तो आपका कंप्यूटर उस वेबसाइट के सर्वर को एक मैसेज भेजता है।"
+    },
+    {
+      "on_screen": "Data packets ke tukde",
+      "beats": [
+        {
+          "say": "Ye message chhote-chhote tukdon mein bant jaata hai, jinhen packet kehte hain.",
+          "visual": {
+            "type": "icon",
+            "icon": "chip",
+            "text": "Chhote tukde"
+          },
+          "mood": "explain",
+          "pop": "Packet banta hai",
+          "say_hi": "ये मैसेज छोटे-छोटे टुकड़ों में बंट जाता है, जिन्हें पैकेट कहते हैं।"
+        },
+        {
+          "say": "Ye packet alag-alag raston se chalte hain aur phir vapas aakar ek saath jud jaate hain.",
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              {
+                "icon": "phone",
+                "label": "Routers"
+              },
+              {
+                "icon": "wifi",
+                "label": "Raston"
+              },
+              {
+                "icon": "globe",
+                "label": "Pahuncha"
+              }
+            ]
+          },
+          "mood": "think",
+          "pop": "Phir vapas aakar",
+          "say_hi": "ये पैकेट अलग-अलग रास्तों से चलते हैं और फिर वापस आकर एक साथ जुड़ जाते हैं।"
+        },
+        {
+          "say": "Jaise aap ek imarat banane ke liye inten ikattha karte hain, waise hi internet par data packet ikattha karke website ko dikhata hai.",
+          "visual": {
+            "type": "compare",
+            "left_title": "Ikattha",
+            "left": [
+              "Imarat banane",
+              "Website dikhana"
+            ],
+            "right_title": "Packet",
+            "right": [
+              "Raston se chalte",
+              "Sahi jagah pahuncha"
+            ]
+          },
+          "mood": "explain",
+          "pop": "Ikattha karke",
+          "say_hi": "जैसे आप एक इमारत बनाने के लिए ईंटें इकट्ठा करते हैं, वैसे ही इंटरनेट पर डेटा पैकेट इकट्ठा करके वेबसाइट को दिखाता है।"
+        },
+        {
+          "say": "Ye sab TCP/IP naam ke niymon se hota hai. Ye niyam batate hain ki data kaise bheja jae aur use sahi jagah par kaise pahunchaya jae.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "TCP/IP niyam",
+                "icon": "key"
+              },
+              {
+                "label": "Data bheja jae",
+                "icon": "mail"
+              },
+              {
+                "label": "Sahi jagah pahuncha",
+                "icon": "check"
+              }
+            ],
+            "note": "Kalam se diagram"
+          },
+          "mood": "warn",
+          "pop": "TCP/IP niyam",
+          "say_hi": "ये सब TCP/IP नाम के नियमों से होता है। ये नियम बताते हैं कि डेटा कैसे भेजा जाए और उसे सही जगह पर कैसे पहुंचाया जाए।"
+        }
+      ],
+      "narration_hi": "ये मैसेज छोटे-छोटे टुकड़ों में बंट जाता है, जिन्हें पैकेट कहते हैं। ये पैकेट अलग-अलग रास्तों से चलते हैं और फिर वापस आकर एक साथ जुड़ जाते हैं। जैसे आप एक इमारत बनाने के लिए ईंटें इकट्ठा करते हैं, वैसे ही इंटरनेट पर डेटा पैकेट इकट्ठा करके वेबसाइट को दिखाता है। ये सब TCP/IP नाम के नियमों से होता है। ये नियम बताते हैं कि डेटा कैसे भेजा जाए और उसे सही जगह पर कैसे पहुंचाया जाए।"
+    },
+    {
+      "on_screen": "Protocol Internet ke liye madad karta hai",
+      "beats": [
+        {
+          "say": "Ye protocol internet ko kaam karne mein madad karte hain.",
+          "visual": {
+            "type": "host",
+            "text": "Protocol internet ko kaam karne mein madad karte hain"
+          },
+          "mood": "explain",
+          "pop": "Protocol",
+          "say_hi": "ये प्रोटोकॉल इंटरनेट को काम करने में मदद करते हैं।"
+        }
+      ],
+      "narration_hi": "ये प्रोटोकॉल इंटरनेट को काम करने में मदद करते हैं।"
+    },
+    {
+      "on_screen": "Aapki zindagi mein Internet ka kya matlab hai?",
+      "beats": [
+        {
+          "say": "To ab aap iska poora raasta jaante hain. Ab aakhri aur sabse kaam ka sawaal. Aapki zindagi mein Internet ka kya matlab hai?",
+          "visual": {
+            "type": "chapter",
+            "part": 3,
+            "total": 3
+          },
+          "mood": "think",
+          "say_hi": "तो अब आप इसका पूरा रास्ता जानते हैं। अब आखिरी और सबसे काम का सवाल। आपकी ज़िंदगी में इंटरनेट का क्या मतलब है?"
+        }
+      ],
+      "narration_hi": "तो अब आप इसका पूरा रास्ता जानते हैं। अब आखिरी और सबसे काम का सवाल। आपकी ज़िंदगी में इंटरनेट का क्या मतलब है?"
+    },
+    {
+      "on_screen": "Internet ke 2G/3G/4G",
+      "beats": [
+        {
+          "say": "To ab aap sochenge ki internet humari zindagi mein kaise phit baithta hai, hai na?",
+          "visual": {
+            "type": "kinetic",
+            "text": "Internet humari zindagi mein phit baitha hai",
+            "highlight": "phit baitha"
+          },
+          "mood": "think",
+          "pop": "phit baitha",
+          "say_hi": "तो अब आप सोचेंगे कि इंटरनेट हमारी ज़िंदगी में कैसे फिट बैठता है, है ना?"
+        },
+        {
+          "say": "Ye sach mein jadu jaisa hai. 1960 ke dashak mein, jab amerika mein shit yuddh chal raha tha,",
+          "visual": {
+            "type": "photo",
+            "query": "old computer lab",
+            "caption": "1960 ke lab",
+            "file": "images/photos/s17_b01.jpg",
+            "credit": "Derek J Moore / CC BY 4.0"
+          },
+          "mood": "explain",
+          "pop": "jadu jaisa",
+          "say_hi": "ये सच में जादू जैसा है। 1960 के दशक में, जब अमेरिका में शीत युद्ध चल रहा था,"
+        },
+        {
+          "say": "To ameriki raksha vibhag ne ek network banaya ARPANET. Iska maksad tha ki agar koi parmanu hamla hua to bhi jankari surakshit rahe.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "ARPANET",
+                "icon": "user"
+              },
+              {
+                "label": "secure network",
+                "icon": "shield"
+              },
+              {
+                "label": "parmanu hamla",
+                "icon": "warning"
+              }
+            ],
+            "note": "jankari surakshit rahe"
+          },
+          "mood": "warn",
+          "pop": "secure network",
+          "say_hi": "तो अमेरिकी रक्षा विभाग ने एक नेटवर्क बनाया ARPANET। इसका मकसद था कि अगर कोई परमाणु हमला हुआ तो भी जानकारी सुरक्षित रहे।"
+        },
+        {
+          "say": "Us samay, computer bahut bade aur mahange the, aur aapas mein baat karne ka koi tareeka nahi tha.",
+          "visual": {},
+          "mood": "shock",
+          "pop": "mahange the",
+          "say_hi": "उस समय, कंप्यूटर बहुत बड़े और महंगे थे, और आपस में बात करने का कोई तरीका नहीं था।"
+        }
+      ],
+      "narration_hi": "तो अब आप सोचेंगे कि इंटरनेट हमारी ज़िंदगी में कैसे फिट बैठता है, है ना? ये सच में जादू जैसा है। 1960 के दशक में, जब अमेरिका में शीत युद्ध चल रहा था, तो अमेरिकी रक्षा विभाग ने एक नेटवर्क बनाया ARPANET। इसका मकसद था कि अगर कोई परमाणु हमला हुआ तो भी जानकारी सुरक्षित रहे। उस समय, कंप्यूटर बहुत बड़े और महंगे थे, और आपस में बात करने का कोई तरीका नहीं था।"
+    },
+    {
+      "on_screen": "Internet ke sarvajanik banane ka safar",
+      "beats": [
+        {
+          "say": "Lekin dhire-dhire, yunivarsiti aur kanpniyan bhi isme shamil huin. 1980 ke dashak mein, internet ko ek sarvajnik sansadhan banaya gaya.",
+          "visual": {
+            "type": "photo",
+            "query": "fiber optic cable",
+            "caption": "Optical Fiber",
+            "file": "images/photos/s18_b00.jpg",
+            "credit": "Rubin Observatory/ NSF /AURA / CC BY 4.0"
+          },
+          "mood": "explain",
+          "pop": "Fiber Network",
+          "say_hi": "लेकिन धीरे-धीरे, यूनिवर्सिटी और कंपनियां भी इसमें शामिल हुईं। 1980 के दशक में, इंटरनेट को एक सार्वजनिक संसाधन बनाया गया।"
+        },
+        {
+          "say": "Aaj, internet duniya bhar ke arbon logon ke liye zaroori ho gaya hai.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "1980s",
+                "icon": "chip"
+              },
+              {
+                "label": "Universities",
+                "icon": "user"
+              },
+              {
+                "label": "Companies",
+                "icon": "user"
+              }
+            ],
+            "note": "Expansion"
+          },
+          "mood": "think",
+          "pop": "1980s Expansion",
+          "say_hi": "आज, इंटरनेट दुनिया भर के अरबों लोगों के लिए ज़रूरी हो गया है।"
+        },
+        {
+          "say": "Aap sochie, har subah aap apne phone par nyuz dekhte hain, video gem khelte hain,",
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              {
+                "icon": "wifi",
+                "label": "Phones"
+              },
+              {
+                "icon": "globe",
+                "label": "Internet"
+              },
+              {
+                "icon": "bank",
+                "label": "Global Access"
+              }
+            ]
+          },
+          "mood": "happy",
+          "pop": "Global Reach",
+          "say_hi": "आप सोचिए, हर सुबह आप अपने फ़ोन पर न्यूज़ देखते हैं, वीडियो गेम खेलते हैं,"
+        },
+        {
+          "say": "Ya doston se baat karte hain ye sab internet ki wajah se hi mumkin hai!",
+          "visual": {
+            "type": "steps",
+            "items": [
+              "News on Phone",
+              "Video Games",
+              "Chat with Friends"
+            ]
+          },
+          "mood": "warn",
+          "pop": "Daily Life",
+          "say_hi": "या दोस्तों से बात करते हैं ये सब इंटरनेट की वजह से ही मुमकिन है!"
+        }
+      ],
+      "narration_hi": "लेकिन धीरे-धीरे, यूनिवर्सिटी और कंपनियां भी इसमें शामिल हुईं। 1980 के दशक में, इंटरनेट को एक सार्वजनिक संसाधन बनाया गया। आज, इंटरनेट दुनिया भर के अरबों लोगों के लिए ज़रूरी हो गया है। आप सोचिए, हर सुबह आप अपने फ़ोन पर न्यूज़ देखते हैं, वीडियो गेम खेलते हैं, या दोस्तों से बात करते हैं ये सब इंटरनेट की वजह से ही मुमकिन है!"
+    },
+    {
+      "on_screen": "Internet ka jatil system",
+      "beats": [
+        {
+          "say": "Ab baat karte hain ki internet kaise kaam karta hai. Internet ek jatil system hai, lekin ise samjhane mein mushkil nahi hai.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Computer",
+                "icon": "phone"
+              },
+              {
+                "label": "Server",
+                "icon": "wifi"
+              },
+              {
+                "label": "Network",
+                "icon": "globe"
+              }
+            ],
+            "note": "Jatil system"
+          },
+          "mood": "explain",
+          "pop": "Jatil system",
+          "say_hi": "अब बात करते हैं कि इंटरनेट कैसे काम करता है। इंटरनेट एक जटिल सिस्टम है, लेकिन इसे समझने में मुश्किल नहीं है।"
+        },
+        {
+          "say": "Ye computer aur server ke bich ek network hai jo duniya bhar mein phaila hua hai.",
+          "visual": {
+            "type": "photo",
+            "query": "global network map",
+            "caption": "Duniya bhar ke network"
+          },
+          "mood": "think",
+          "pop": "Global network",
+          "say_hi": "ये कंप्यूटर और सर्वर के बीच एक नेटवर्क है जो दुनिया भर में फैला हुआ है।"
+        },
+        {
+          "say": "Is sab ko chalane ke liye bahut sari cheezein hain optikal phaibar kebal,",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Optical fiber",
+                "icon": "chip"
+              },
+              {
+                "label": "Local network",
+                "icon": "wifi"
+              },
+              {
+                "label": "Metropolitan network",
+                "icon": "globe"
+              }
+            ],
+            "note": "Different networks"
+          },
+          "mood": "explain",
+          "pop": "Different networks",
+          "say_hi": "इस सब को चलाने के लिए बहुत सारी चीज़ें हैं ऑप्टिकल फाइबर केबल,"
+        },
+        {
+          "say": "Tanbe ke tar, lokal eriya network, vaid eriya network aur metropolitan eriya network.",
+          "visual": {
+            "type": "compare",
+            "left_title": "Local",
+            "left": [
+              "Home",
+              "Office"
+            ],
+            "right_title": "Metro",
+            "right": [
+              "City wide",
+              "Public"
+            ],
+            "mood": "think",
+            "pop": "Local vs Metro"
+          },
+          "mood": null,
+          "say_hi": "तांबे के तार, लोकल एरिया नेटवर्क, वाइड एरिया नेटवर्क और मेट्रोपॉलिटन एरिया नेटवर्क।"
+        }
+      ],
+      "narration_hi": "अब बात करते हैं कि इंटरनेट कैसे काम करता है। इंटरनेट एक जटिल सिस्टम है, लेकिन इसे समझने में मुश्किल नहीं है। ये कंप्यूटर और सर्वर के बीच एक नेटवर्क है जो दुनिया भर में फैला हुआ है। इस सब को चलाने के लिए बहुत सारी चीज़ें हैं ऑप्टिकल फाइबर केबल, तांबे के तार, लोकल एरिया नेटवर्क, वाइड एरिया नेटवर्क और मेट्रोपॉलिटन एरिया नेटवर्क।"
+    },
+    {
+      "on_screen": "Internet ka ek aham hissa",
+      "beats": [
+        {
+          "say": "Internet ka istemal sirf website dekhne ya email bhejne ke liye hi nahi hota.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Online shopping",
+                "icon": "phone"
+              },
+              {
+                "label": "Video conferencing",
+                "icon": "wifi"
+              },
+              {
+                "label": "Cloud computing",
+                "icon": "globe"
+              }
+            ],
+            "note": "Internet ka istemal"
+          },
+          "mood": "explain",
+          "pop": "Kya karne ke liye",
+          "say_hi": "इंटरनेट का इस्तेमाल सिर्फ़ वेबसाइट देखने या ईमेल भेजने के लिए ही नहीं होता।"
+        },
+        {
+          "say": "Iska istemal online shopping, video konphrensing, cloud kanpyuting aur bahut kuch karne ke liye bhi hota hai.",
+          "visual": {
+            "type": "photo",
+            "query": "data center",
+            "caption": "Internet ka base"
+          },
+          "mood": "think",
+          "pop": "Invisible network",
+          "say_hi": "इसका इस्तेमाल ऑनलाइन शॉपिंग, वीडियो कॉन्फ्रेंसिंग, क्लाउड कंप्यूटिंग और बहुत कुछ करने के लिए भी होता है।"
+        },
+        {
+          "say": "Cloud matlab aapka data phone mein nahi, kisi company ke computers par rakha hai. Wo aapko internet se milta hai.",
+          "say_hi": "क्लाउड मतलब आपका डेटा फ़ोन में नहीं, किसी कंपनी के कंप्यूटरों पर रखा है। वो आपको इंटरनेट से मिलता है।",
+          "visual": {
+            "type": "term",
+            "term": "Cloud",
+            "meaning": "Company ke computers par rakha data",
+            "example": "Aapke phone mein nahi, internet ke zariye milta hai",
+            "icon": "chip"
+          },
+          "mood": "explain"
+        },
+        {
+          "say": "Aaj, internet humari zindagi ka ek aham hissa ban gaya hai. Ye hamen duniya se jodta hai,",
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              {
+                "icon": "phone",
+                "label": "Request"
+              },
+              {
+                "icon": "wifi",
+                "label": "Process"
+              },
+              {
+                "icon": "globe",
+                "label": "Connect"
+              }
+            ]
+          },
+          "mood": "explain",
+          "pop": "Har request ke liye",
+          "say_hi": "आज, इंटरनेट हमारी ज़िंदगी का एक अहम हिस्सा बन गया है। ये हमें दुनिया से जोड़ता है,"
+        },
+        {
+          "say": "Hamen jankari deta hai, aur hamen naye dost banane mein madad karta hai.",
+          "visual": {
+            "type": "compare",
+            "left_title": "Pehle",
+            "left": [
+              "Phone call"
+            ],
+            "right_title": "Abhi",
+            "right": [
+              "Internet"
+            ]
+          },
+          "mood": "warn",
+          "pop": "Zindagi ka hissa",
+          "say_hi": "हमें जानकारी देता है, और हमें नए दोस्त बनाने में मदद करता है।"
+        }
+      ],
+      "narration_hi": "इंटरनेट का इस्तेमाल सिर्फ़ वेबसाइट देखने या ईमेल भेजने के लिए ही नहीं होता। इसका इस्तेमाल ऑनलाइन शॉपिंग, वीडियो कॉन्फ्रेंसिंग, क्लाउड कंप्यूटिंग और बहुत कुछ करने के लिए भी होता है। क्लाउड मतलब आपका डेटा फ़ोन में नहीं, किसी कंपनी के कंप्यूटरों पर रखा है। वो आपको इंटरनेट से मिलता है। आज, इंटरनेट हमारी ज़िंदगी का एक अहम हिस्सा बन गया है। ये हमें दुनिया से जोड़ता है, हमें जानकारी देता है, और हमें नए दोस्त बनाने में मदद करता है।"
+    },
+    {
+      "on_screen": "Internet ka invisible network",
+      "beats": [
+        {
+          "say": "To, ab aap samajh gaye honge ki internet kya hai, yah kaise kaam karta hai,",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "request",
+                "icon": "phone"
+              },
+              {
+                "label": "data",
+                "icon": "wifi"
+              },
+              {
+                "label": "response",
+                "icon": "globe"
+              }
+            ],
+            "note": "har request ke liye work chal raha hai"
+          },
+          "mood": "explain",
+          "pop": "request-response",
+          "say_hi": "तो, अब आप समझ गए होंगे कि इंटरनेट क्या है, यह कैसे काम करता है,"
+        },
+        {
+          "say": "Aur yah humare jeevan mein kitna mahatvapurn hai. Ummid hai isse aapko internet ke baare mein achchhi jankari mili hogi.",
+          "visual": {
+            "type": "photo",
+            "query": "data center",
+            "caption": "internet ka backbone"
+          },
+          "mood": "think",
+          "pop": "invisible network",
+          "say_hi": "और यह हमारे जीवन में कितना महत्वपूर्ण है। उम्मीद है इससे आपको इंटरनेट के बारे में अच्छी जानकारी मिली होगी।"
+        }
+      ],
+      "narration_hi": "तो, अब आप समझ गए होंगे कि इंटरनेट क्या है, यह कैसे काम करता है, और यह हमारे जीवन में कितना महत्वपूर्ण है। उम्मीद है इससे आपको इंटरनेट के बारे में अच्छी जानकारी मिली होगी।"
+    },
+    {
+      "on_screen": "Aapko kya laga?",
+      "beats": [
+        {
+          "say": "Comment mein batao, aapko sabse hairan kis baat ne kiya? Aur aisi hi baatein jaanne ke liye Snack Code ko subscribe kar lo.",
+          "visual": {
+            "type": "host",
+            "text": "Comment karo aur subscribe karo"
+          },
+          "mood": "happy",
+          "say_hi": "कमेंट में बताओ, आपको सबसे हैरान किस बात ने किया? और ऐसी ही बातें जानने के लिए स्नैक कोड को सब्सक्राइब कर लो।"
+        }
+      ],
+      "narration_hi": "कमेंट में बताओ, आपको सबसे हैरान किस बात ने किया? और ऐसी ही बातें जानने के लिए स्नैक कोड को सब्सक्राइब कर लो।"
+    }
+  ]
+}

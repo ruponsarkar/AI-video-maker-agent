@@ -1,0 +1,96 @@
+[
+  {
+    "on_screen": "Socho, aap raat ko phone dekh rahe ho... abhi kuch nahi hai, lekin yahan se sab ki shuruaati khoj hoti hai.",
+    "goal": "Introduce the internet as an invisible but essential part of everyday life",
+    "visuals": [
+      "phone_call",
+      "map"
+    ]
+  },
+  {
+    "on_screen": "Lekin kya aapko pata hai, yahan se koi bhi data, image ya video aate hain? Khatra kya hai?",
+    "goal": "Raise curiosity about the unseen network that connects everything",
+    "visuals": [
+      "warning",
+      "icon"
+    ],
+    "roadmap": [
+      "Internet hai kya?",
+      "Internet kaam kaise karta hai?",
+      "Aapki zindagi mein Internet ka kya matlab hai?"
+    ]
+  },
+  {
+    "kind": "part",
+    "part": 1,
+    "total": 3,
+    "on_screen": "Internet hai kya?",
+    "recap": ""
+  },
+  {
+    "on_screen": "Pahli baar internet ka concept 1960s mein start hua, jismein ARPANET ke zariye data packets mei break kiya jaata tha.",
+    "goal": "Explain the origin and basic idea of the internet",
+    "visuals": [
+      "icon",
+      "flow"
+    ]
+  },
+  {
+    "on_screen": "Ab aaj internet 4.5 billion users se connect hai, aur har device ek unique IP address lekar hai.",
+    "goal": "Show how internet connects people globally with unique IDs",
+    "visuals": [
+      "map"
+    ]
+  },
+  {
+    "kind": "part",
+    "part": 2,
+    "total": 3,
+    "on_screen": "Internet kaam kaise karta hai?",
+    "recap": "To ye tha iska seedha matlab."
+  },
+  {
+    "on_screen": "Jab aap ek website ko open karte hain to browser uske URL ko IP address mei convert karta hai.",
+    "goal": "Explain the process of converting domain name to IP address",
+    "visuals": [
+      "phone_sms",
+      "steps"
+    ]
+  },
+  {
+    "on_screen": "Data packets, ek 1000–1500 bytes ka hote hain aur usko routers mei lekar pahuncha jata hai.",
+    "goal": "Show how data is split and sent through networks",
+    "visuals": [
+      "compare"
+    ]
+  },
+  {
+    "kind": "part",
+    "part": 3,
+    "total": 3,
+    "on_screen": "Aapki zindagi mein Internet ka kya matlab hai?",
+    "recap": "To ab aap iska poora raasta jaante hain."
+  },
+  {
+    "on_screen": "Internet aapke phone mei bhi hai, jo 2G/3G/4G ke zariye work karta hai aur 5G ne speed ko badha diya hai.",
+    "goal": "Show how internet is part of daily life and its evolution",
+    "visuals": [
+      "phone_call",
+      "steps"
+    ]
+  },
+  {
+    "on_screen": "Ab aapke ghar mei optical fiber ke zariye internet aata hai, jo sabko connect karti hai.",
+    "goal": "Highlight the physical infrastructure behind internet",
+    "visuals": [
+      "pen",
+      "map"
+    ]
+  },
+  {
+    "on_screen": "Internet ek invisible network hota hai jo sab ko connect karta hai, aur aapke har request ke liye uska work chal raha hota hai.",
+    "goal": "Wrap up the story with a clear understanding of internet's role in life",
+    "visuals": [],
+    "ending": true
+  }
+]

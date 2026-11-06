@@ -45,6 +45,8 @@ import time
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
+from india_places import PLACES, canonical
+
 # ======================================================================= settings
 W, H, FPS = 1920, 1080, 30
 GAP = 0.35            # pause after each scene (seconds)
@@ -68,6 +70,13 @@ THEMES = {
     "sunset":  {"top": (40, 18, 20), "bot": (12, 5, 8), "accent": (249, 115, 22), "accent2": (250, 204, 21)},
     "crimson": {"top": (36, 12, 18), "bot": (10, 4, 7), "accent": (244, 63, 94), "accent2": (250, 204, 21)},
 }
+BRIGHT = [
+    {"top": (24, 54, 128), "bot": (7, 16, 52), "accent": (56, 189, 248), "accent2": (250, 204, 21)},
+    {"top": (92, 28, 140), "bot": (24, 8, 54), "accent": (232, 121, 249), "accent2": (56, 189, 248)},
+    {"top": (6, 96, 96), "bot": (3, 30, 40), "accent": (45, 212, 191), "accent2": (253, 224, 71)},
+    {"top": (150, 30, 88), "bot": (42, 8, 34), "accent": (251, 113, 133), "accent2": (253, 186, 116)},
+    {"top": (150, 72, 12), "bot": (44, 18, 6), "accent": (251, 191, 36), "accent2": (248, 113, 113)},
+]
 BG_STYLES = ["grid", "dots", "diagonal", "circuit"]
 VISUAL_TYPES = {"title", "icon", "phone_call", "phone_sms", "chat", "steps",
                 "compare", "stat", "warning", "flow", "host", "kinetic", "chapter"}
@@ -106,6 +115,8 @@ MONO = pick_font([
     "/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf",
     "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf",
 ])
+HERE = os.path.dirname(os.path.abspath(__file__))
+KALAM = pick_font([os.path.join(HERE, "assets", "Kalam-Bold.ttf"), BOLD])  # handwriting
 _fonts = {}
 
 
@@ -390,7 +401,7 @@ def guess_icon(text):
 SR = 48000
 USE_MASCOT = "--no-mascot" not in sys.argv
 USE_SFX = "--no-sfx" not in sys.argv
-VISUAL_TYPES = VISUAL_TYPES | {"kinetic", "host"}
+VISUAL_TYPES = VISUAL_TYPES | {"kinetic", "host", "term", "pen", "map", "photo"}
 
 script = json.load(open("scripts/script.json", encoding="utf-8"))
 os.makedirs("output", exist_ok=True)
@@ -414,8 +425,9 @@ BG_STYLE = script.get("background") if script.get("background") in BG_STYLES els
 MOODS = {"happy", "shock", "think", "warn", "explain"}
 DEFAULT_MOOD = {"title": "shock", "warning": "shock", "phone_sms": "warn", "phone_call": "think",
                 "stat": "shock", "icon": "happy", "kinetic": "explain", "chat": "think", "image": "explain",
-                "host": "explain", "steps": "happy", "compare": "think", "flow": "explain", "chapter": "think"}
-CORNER_OK = {"title", "chapter", "icon", "kinetic", "stat", "warning", "phone_call", "phone_sms", "chat", "image"}
+                "host": "explain", "steps": "happy", "compare": "think", "flow": "explain", "chapter": "think",
+                "term": "explain", "pen": "explain", "map": "explain", "photo": "think"}
+CORNER_OK = {"title", "chapter", "icon", "kinetic", "stat", "warning", "phone_call", "phone_sms", "chat", "image", "map", "photo"}
 
 
 def split_sentences(text):
@@ -428,6 +440,10 @@ def shorten(text, n):
 
 
 _auto = [0]
+
+
+def as_place_list(x):
+    return [x] if isinstance(x, str) else (x if isinstance(x, list) else [])
 
 
 def auto_visual(say):
@@ -507,12 +523,20 @@ for k, s in enumerate(scenes):
                 v.clear()
                 v.update(auto_visual(b["say"]))
                 t = v["type"]
+        # a photo that was never fetched, or a map with no place it knows, gets a different visual
+        if (t == "photo" and not os.path.exists(str(v.get("file") or ""))) or (
+                t == "map" and not any(canonical(n) for n in as_place_list(v.get("places")))):
+            v.clear()
+            v.update(auto_visual(b["say"]))
+            t = v["type"]
         if t == "icon" and v.get("icon") not in ICONS:
             v["icon"] = guess_icon(b["say"] + " " + s["heading"])
         v["type"] = t
         b["mood"] = b["mood"] if b["mood"] in MOODS else DEFAULT_MOOD.get(t, "explain")
         pop = str(b.get("pop") or "").strip()
         b["pop"] = pop if pop and len(pop.split()) <= 2 and len(pop) <= 16 else None
+        if t in ("term", "pen", "map"):   # a sticker would cover the drawing
+            b["pop"] = None
 
 # ----- timing: scenes follow their audio, beats share the scene by text length
 cursor = 0.0
@@ -610,9 +634,9 @@ def as_list(x, limit):
 
 
 # ======================================================================= background
-def make_background():
+def make_background(th):
     g = np.linspace(0, 1, H)[:, None]
-    col = np.array(TH["top"]) * (1 - g) + np.array(TH["bot"]) * g
+    col = np.array(th["top"]) * (1 - g) + np.array(th["bot"]) * g
     img = Image.fromarray(np.repeat(col[:, None, :], W, axis=1).astype(np.uint8), "RGB")
     d = ImageDraw.Draw(img, "RGBA")
     faint = (255, 255, 255, 9)
@@ -644,9 +668,22 @@ def draw_logo(d):
     d.text((136, 36), "Snack Code", font=font(34), fill=WHITE)
 
 
-BACKGROUND = make_background()
-GLOW_A = make_glow(ACCENT, 760, 55)
-GLOW_B = make_glow(ACCENT2, 900, 40)
+# every scene gets its own bright colours, starting from the video's theme
+COLOURS = [TH] if "--one-colour" in sys.argv else [TH] + [c for c in BRIGHT if c["accent"] != TH["accent"]]
+LOOKS = [{"th": c, "accent": c["accent"], "accent2": c["accent2"], "bg": make_background(c),
+          "glow_a": make_glow(c["accent"], 760, 70), "glow_b": make_glow(c["accent2"], 900, 55)} for c in COLOURS]
+for _k, _s in enumerate(scenes):
+    _s["look"] = LOOKS[_k % len(LOOKS)]
+
+
+def set_look(look):
+    """Switch the whole picture to one scene's colours."""
+    global TH, ACCENT, ACCENT2, BACKGROUND, GLOW_A, GLOW_B
+    TH, ACCENT, ACCENT2 = look["th"], look["accent"], look["accent2"]
+    BACKGROUND, GLOW_A, GLOW_B = look["bg"], look["glow_a"], look["glow_b"]
+
+
+set_look(LOOKS[0])
 GLOW_RED = make_glow(RED, 900, 210)
 rnd = random.Random(108)
 SYMBOLS = ["{ }", "</>", "01", "#", "( )", "=>", "[ ]", "&&", "AI", "5G", "UPI", "404", "OTP", "://"]
@@ -1446,12 +1483,408 @@ def draw_image(canvas, d, s, t):
     d.rounded_rectangle([x - 3, yy - 3, x + cw + 2, yy + ch + 2], radius=30, outline=ACCENT, width=3)
 
 
+# ======================================================================= pen, notebook, map and photo visuals
+PAPERS = [(255, 250, 235), (255, 244, 200), (224, 248, 236), (225, 240, 255), (253, 232, 243)]
+INK = (28, 38, 68)
+MARKERS = [(220, 38, 38), (37, 99, 235), (5, 150, 105), (234, 88, 12), (147, 51, 234)]
+HIGHLIGHT = (253, 224, 71)
+
+
+def ink_sprite(text, size, color):
+    f = font(size, KALAM)
+    box = f.getbbox(text)
+    img = Image.new("RGBA", (box[2] + 12, box[3] + 14), (0, 0, 0, 0))
+    ImageDraw.Draw(img).text((5, 2), text, font=f, fill=color + (255,))
+    return img
+
+
+def make_pen():
+    img = Image.new("RGBA", (360, 360), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    # drawn at double size: the tip is the bottom-left corner
+    d.polygon([(0, 360), (28, 296), (64, 332)], fill=(30, 41, 59))
+    d.polygon([(28, 296), (64, 332), (110, 286), (74, 250)], fill=(241, 214, 170))
+    d.polygon([(74, 250), (110, 286), (312, 84), (276, 48)], fill=(250, 190, 40))
+    d.polygon([(92, 268), (102, 278), (304, 76), (294, 66)], fill=(217, 150, 20))
+    d.polygon([(276, 48), (312, 84), (352, 44), (316, 8)], fill=(239, 68, 68))
+    return img.resize((180, 180), Image.LANCZOS)
+
+
+PEN = make_pen()
+
+
+def hand_points(p0, p1, rnd_, wobble=2.4, step=26):
+    (x0, y0), (x1, y1) = p0, p1
+    n = max(2, int(math.hypot(x1 - x0, y1 - y0) / step))
+    pts = []
+    for k in range(n + 1):
+        f = k / n
+        off = 0 if k in (0, n) else rnd_.uniform(-wobble, wobble)
+        pts.append((x0 + (x1 - x0) * f + off, y0 + (y1 - y0) * f + rnd_.uniform(-wobble, wobble) * (0 < k < n)))
+    return pts
+
+
+def path_length(pts):
+    return sum(math.hypot(b[0] - a[0], b[1] - a[1]) for a, b in zip(pts, pts[1:]))
+
+
+def tl_stroke(items, pts, color, width=7, speed=1500):
+    items.append({"k": "line", "pts": pts, "color": color, "width": width, "w": max(0.08, path_length(pts) / speed)})
+
+
+def tl_text(items, text, x, y, size, color, center=False):
+    sp = ink_sprite(text, size, color)
+    items.append({"k": "text", "s": sp, "x": x - sp.width / 2 if center else x, "y": y, "w": 0.1 + len(text) * 0.05})
+    return sp.height
+
+
+def tl_pop(items, sprite, cx, cy):
+    items.append({"k": "pop", "s": sprite, "x": cx, "y": cy, "w": 0.22})
+
+
+def tl_schedule(items, start, available):
+    """Fit the drawing into the time the voice takes, and keep it from dragging on short lists."""
+    total = sum(i["w"] for i in items) or 1
+    pace = min(1.25, available / total)
+    t = start
+    for i in items:
+        i["t0"], i["t1"] = t, t + i["w"] * pace
+        t = i["t1"]
+
+
+def tl_play(canvas, items, t):
+    """Draw everything finished so far, the part being drawn now, and the pen at its tip."""
+    d, tip = ImageDraw.Draw(canvas), None
+    for i in items:
+        if t <= i["t0"]:
+            break
+        f = clamp01((t - i["t0"]) / max(0.01, i["t1"] - i["t0"]))
+        if i["k"] == "text":
+            sp = i["s"]
+            w = max(1, int(sp.width * f))
+            comp(canvas, sp if f >= 1 else sp.crop((0, 0, w, sp.height)), i["x"], i["y"])
+            if f < 1:
+                tip = (i["x"] + w, i["y"] + sp.height * 0.72 + 7 * math.sin(t * 34))
+        elif i["k"] == "line":
+            pts = i["pts"]
+            n = max(2, 1 + int((len(pts) - 1) * f))
+            d.line(pts[:n], fill=i["color"], width=i["width"], joint="curve")
+            if f < 1:
+                tip = pts[n - 1]
+        else:
+            comp_c(canvas, scaled(i["s"], max(0.05, ease_back(f))), i["x"], i["y"])
+    if tip:
+        comp(canvas, PEN, tip[0] - 2, tip[1] - PEN.height + 2)
+
+
+def make_board(s, paper):
+    """A sheet of notebook paper filling the space under the heading."""
+    x0, y0, x1, y1 = 100, int(s["area"][1] - 18), W - 100, H - 168
+    w, h = x1 - x0, y1 - y0
+    img = Image.new("RGBA", (w + 40, h + 40), (0, 0, 0, 0))
+    ImageDraw.Draw(img).rounded_rectangle([14, 16, w + 22, h + 24], radius=28, fill=(0, 0, 0, 120))
+    img = img.filter(ImageFilter.GaussianBlur(9))
+    d = ImageDraw.Draw(img)
+    d.rounded_rectangle([8, 8, w + 8, h + 8], radius=26, fill=paper + (255,))
+    line = mix(paper, (70, 120, 200), 0.22)
+    for y in range(78, h, 62):
+        d.line([(30, y), (w - 14, y)], fill=line, width=2)
+    d.line([(74, 18), (74, h - 2)], fill=mix(paper, (230, 70, 70), 0.4), width=3)
+    return img, x0 - 8, y0 - 8, x0 + 8, y0 + 8, w, h
+
+
+def prep_term(s):
+    """A hard word explained in a notebook: the word, its meaning, then an everyday example."""
+    v = s["visual"]
+    n = s["idx"]
+    board, bx, by, x0, y0, w, h = make_board(s, PAPERS[n % len(PAPERS)])
+    v["_board"], v["_pos"] = board, (bx, by)
+    color = MARKERS[n % len(MARKERS)]
+    rnd_ = random.Random(n + 11)
+    left, items = x0 + 100, []
+    width = w - 500
+    term = str(v.get("term") or s["heading"])
+    size = 112
+    while size > 56 and font(size, KALAM).getlength(term) > width:
+        size -= 4
+    tw = font(size, KALAM).getlength(term)
+    y = y0 + 26
+    mid = y + size * 0.72
+    tl_stroke(items, hand_points((left - 8, mid), (left + tw + 12, mid), rnd_, 1.5), HIGHLIGHT, int(size * 0.62), 2600)
+    y += tl_text(items, term, left, y, size, INK) - 4
+    wave = [(left + k * 12, y + 4 * math.sin(k * 0.9)) for k in range(int(tw / 12) + 1)]
+    tl_stroke(items, wave, color, 7, 1900)
+    y += 28
+    if v.get("meaning"):
+        y += tl_text(items, "Matlab:", left, y, 48, color) - 2
+        for line in wrap(str(v["meaning"]), font(58, KALAM), width, max_lines=2):
+            y += tl_text(items, line, left, y, 58, INK) - 6
+        y += 12
+    if v.get("example"):
+        y += tl_text(items, "Jaise:", left, y, 48, MARKERS[(n + 1) % len(MARKERS)]) - 2
+        example = re.sub(r"^jaise\s+", "", str(v["example"]).strip(), flags=re.I)  # the label already says it
+        example = example[:1].upper() + example[1:]
+        for line in wrap(example, font(50, KALAM), width, max_lines=2):
+            y += tl_text(items, line, left, y, 50, INK) - 6
+    # a big bright icon on the right
+    badge = Image.new("RGBA", (300, 300), (0, 0, 0, 0))
+    ImageDraw.Draw(badge).ellipse([6, 6, 293, 293], fill=color + (255,))
+    name = v.get("icon") if v.get("icon") in ICONS else guess_icon(term)
+    ic = icon_sprite(name, 180, WHITE)
+    comp(badge, ic, (300 - ic.width) / 2, (300 - ic.height) / 2)
+    tl_pop(items, badge, x0 + w - 210, y0 + h / 2)
+    tl_schedule(items, 0.25, max(1.0, (s["end"] - s["start"]) * 0.85 - 0.25))
+    v["_items"] = items
+    sfx(s, 0.2, "whoosh", 0.5)
+
+
+def draw_notebook(canvas, d, s, t):
+    v = s["visual"]
+    p = ease(t / 0.3)
+    board = v["_board"] if p >= 1 else faded(v["_board"], p)
+    comp(canvas, board, v["_pos"][0], v["_pos"][1] + 26 * (1 - p))
+    if p >= 1:
+        tl_play(canvas, v["_items"], t)
+
+
+def prep_pen(s):
+    """A pen draws the idea as boxes and arrows. "broken" crosses out the arrow with that number."""
+    v = s["visual"]
+    n = s["idx"]
+    board, bx, by, x0, y0, w, h = make_board(s, PAPERS[(n + 2) % len(PAPERS)])
+    v["_board"], v["_pos"] = board, (bx, by)
+    rnd_ = random.Random(n + 23)
+    items = []
+    y = y0 + 16
+    if v.get("title"):
+        title = str(v["title"])
+        size = 76
+        tw = font(size, KALAM).getlength(title)
+        mid = y + size * 0.72
+        tl_stroke(items, hand_points((W / 2 - tw / 2 - 8, mid), (W / 2 + tw / 2 + 8, mid), rnd_, 1.5),
+                  HIGHLIGHT, int(size * 0.6), 2600)
+        y += tl_text(items, title, W / 2, y, size, INK, center=True) + 6
+    nodes = [x for x in (v.get("items") or v.get("nodes") or []) if x][:5]
+    nodes = [x if isinstance(x, dict) else {"label": str(x)} for x in nodes] or [{"label": s["heading"]}]
+    gap = 100
+    box = min(320, (w - 180 - gap * (len(nodes) - 1)) // len(nodes))
+    total = box * len(nodes) + gap * (len(nodes) - 1)
+    bh = min(230, box)
+    left = W / 2 - total / 2
+    note = str(v.get("note") or "")
+    bottom = y0 + h - (112 if note else 20)
+    top = max(y + 8, y + (bottom - y - bh - 120) / 2)   # centre the drawing on the page
+    broken = v.get("broken")
+    for k, node in enumerate(nodes):
+        color = MARKERS[(n + k) % len(MARKERS)]
+        x = left + k * (box + gap)
+        corners = [(x, top), (x + box, top), (x + box, top + bh), (x, top + bh), (x, top)]
+        outline = []
+        for a, b in zip(corners, corners[1:]):
+            outline += hand_points(a, b, rnd_)
+        tl_stroke(items, outline, color, 7)
+        label = str(node.get("label") or "")
+        name = node.get("icon") if node.get("icon") in ICONS else guess_icon(label)
+        tl_pop(items, icon_sprite(name, int(bh * 0.66), color), x + box / 2, top + bh / 2)
+        ly = top + bh + 12
+        for line in wrap(label, font(44, KALAM), box + gap - 16, max_lines=2):
+            ly += tl_text(items, line, x + box / 2, ly, 44, INK, center=True) - 6
+        if k < len(nodes) - 1:
+            ax0, ax1, ay = x + box + 10, x + box + gap - 12, top + bh / 2
+            is_broken = broken is not None and broken == k
+            arrow_col = MARKERS[0] if is_broken else INK
+            tl_stroke(items, hand_points((ax0, ay), (ax1, ay), rnd_, 1.5), arrow_col, 7)
+            tl_stroke(items, hand_points((ax1 - 24, ay - 20), (ax1, ay), rnd_, 1), arrow_col, 7)
+            tl_stroke(items, hand_points((ax1 - 24, ay + 20), (ax1, ay), rnd_, 1), arrow_col, 7)
+            if is_broken:
+                c = (ax0 + ax1) / 2
+                tl_stroke(items, hand_points((c - 32, ay - 32), (c + 32, ay + 32), rnd_, 1.5), MARKERS[0], 12)
+                tl_stroke(items, hand_points((c + 32, ay - 32), (c - 32, ay + 32), rnd_, 1.5), MARKERS[0], 12)
+    if note:
+        ny = y0 + h - 100
+        for line in wrap(note, font(56, KALAM), w - 220, max_lines=1):
+            tl_text(items, line, W / 2, ny, 56, MARKERS[(n + 1) % len(MARKERS)], center=True)
+    tl_schedule(items, 0.25, max(1.0, (s["end"] - s["start"]) * 0.85 - 0.25))
+    v["_items"] = items
+    sfx(s, 0.2, "whoosh", 0.5)
+
+
+_map_base = {}
+
+
+def india_map(height):
+    """India's outline in bright colours. Boundaries: Natural Earth's India point of view."""
+    if height in _map_base:
+        return _map_base[height]
+    data = json.load(open(os.path.join(HERE, "assets", "india.json")))
+    polys = data["polygons"]
+    lat_top, lat_bot, lon_left, lon_right = 37.3, 6.5, 67.9, 97.6
+    stretch = math.cos(math.radians(22))
+    ss = 2
+    scale = height / (lat_top - lat_bot)
+    width = int((lon_right - lon_left) * stretch * scale)
+
+    def to_xy(lat, lon):
+        return ((lon - lon_left) * stretch * scale, (lat_top - lat) * scale)
+
+    mask = Image.new("L", (width * ss, height * ss), 0)
+    m = ImageDraw.Draw(mask)
+    for ring in polys:
+        m.polygon([(to_xy(b, a)[0] * ss, to_xy(b, a)[1] * ss) for a, b in ring], fill=255)
+    g = np.linspace(0, 1, height * ss)[:, None, None]
+    top, midc, low = np.array([255, 170, 60]), np.array([255, 236, 190]), np.array([60, 190, 120])
+    col = np.where(g < 0.5, top + (midc - top) * (g / 0.5), midc + (low - midc) * ((g - 0.5) / 0.5))
+    fill = Image.fromarray(np.repeat(col, width * ss, axis=1).astype(np.uint8), "RGB").convert("RGBA")
+    fill.putalpha(mask)
+    edge = Image.new("RGBA", fill.size, (255, 255, 255, 0))
+    grown = mask.filter(ImageFilter.MaxFilter(7))
+    edge.paste((255, 255, 255, 255), (0, 0), grown)
+    edge.alpha_composite(fill)
+    img = edge.resize((width, height), Image.LANCZOS)
+    _map_base[height] = (img, to_xy)
+    return _map_base[height]
+
+
+def prep_map(s):
+    """India with a pin dropping on each place named."""
+    v = s["visual"]
+    x0, y0, x1, y1 = 330, int(s["area"][1] - 18), W - 110, H - 168
+    w, h = x1 - x0, y1 - y0
+    card = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    g = np.linspace(0, 1, h)[:, None, None]
+    col = np.array([18, 92, 170]) * (1 - g) + np.array([10, 44, 104]) * g
+    sea = Image.fromarray(np.repeat(col, w, axis=1).astype(np.uint8), "RGB").convert("RGBA")
+    mask = Image.new("L", (w, h), 0)
+    ImageDraw.Draw(mask).rounded_rectangle([0, 0, w - 1, h - 1], radius=28, fill=255)
+    card.paste(sea, (0, 0), mask)
+    d = ImageDraw.Draw(card)
+    for y in range(24, h, 34):
+        for x in range(24 + (y // 34 % 2) * 17, w, 34):
+            d.ellipse([x - 1, y - 1, x + 1, y + 1], fill=(255, 255, 255, 34))
+    map_h = h - 28
+    img, to_xy = india_map(map_h)
+    card.alpha_composite(img, (30, 14))
+    d.text((34, h - 30), "Map: Natural Earth", font=font(20, REGULAR), fill=(210, 225, 245))
+    v["_card"], v["_pos"] = card, (x0, y0)
+    places = [p for p in (canonical(n) for n in v.get("places", [])) if p][:6]
+    pins = []
+    start = 0.5
+    step = min(0.9, max(0.35, (s["end"] - s["start"]) * 0.6 / max(1, len(places))))
+    for k, name in enumerate(places):
+        lat, lon = PLACES[name]
+        px, py = to_xy(lat, lon)
+        when = start + k * step
+        pins.append({"name": name, "x": x0 + 30 + px, "y": y0 + 14 + py, "t": when,
+                     "color": MARKERS[k % len(MARKERS)]})
+        sfx(s, when, "pop", 0.7)
+    v["_pins"] = pins
+    # the panel on the right names each place as its pin lands
+    px0 = x0 + 30 + img.width + 40
+    pw = x1 - px0 - 30
+    rows = []
+    y = y0 + 34
+    if v.get("label"):
+        for line in wrap(str(v["label"]), font(54, KALAM), pw, max_lines=3):
+            rows.append({"s": ink_sprite(line, 54, YELLOW), "x": px0, "y": y, "t": 0.3})
+            y += 64
+        y += 20
+    for pin in pins:
+        sp = ink_sprite(pin["name"], 50, WHITE)
+        row = Image.new("RGBA", (sp.width + 60, 74), (0, 0, 0, 0))
+        ImageDraw.Draw(row).rounded_rectangle([0, 0, row.width - 1, 73], radius=22, fill=pin["color"] + (255,))
+        comp(row, sp, 30, 4)
+        rows.append({"s": row, "x": px0, "y": y, "t": pin["t"]})
+        y += 86
+    v["_rows"] = rows
+    sfx(s, 0.25, "whoosh", 0.5)
+
+
+def draw_map(canvas, d, s, t):
+    v = s["visual"]
+    p = ease(t / 0.35)
+    comp(canvas, v["_card"] if p >= 1 else faded(v["_card"], p), v["_pos"][0], v["_pos"][1] + 26 * (1 - p))
+    if p < 1:
+        return
+    d = ImageDraw.Draw(canvas, "RGBA")
+    for pin in v["_pins"]:
+        age = t - pin["t"]
+        if age <= 0:
+            continue
+        x, y = pin["x"], pin["y"]
+        for ring in (0.0, 0.8):
+            f = ((age + ring) % 1.6) / 1.6
+            r = 12 + 44 * f
+            d.ellipse([x - r, y - r, x + r, y + r], outline=pin["color"] + (int(220 * (1 - f)),), width=5)
+        q = ease_back(age / 0.35)
+        lift = 90 * (1 - min(1.0, q))
+        r = 15 * max(0.4, q)
+        d.polygon([(x - r * 0.8, y - 22 - lift), (x + r * 0.8, y - 22 - lift), (x, y - lift)], fill=pin["color"])
+        d.ellipse([x - r, y - 22 - r - lift, x + r, y - 22 + r - lift], fill=pin["color"], outline=WHITE, width=3)
+        d.ellipse([x - 5, y - 27 - lift, x + 5, y - 17 - lift], fill=WHITE)
+    for row in v["_rows"]:
+        q = ease((t - row["t"]) / 0.3)
+        if q > 0:
+            comp(canvas, faded(row["s"], q), row["x"] + 40 * (1 - q), row["y"])
+
+
+PHOTO_SHADE = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+_shade = np.zeros((H, W, 4), np.uint8)
+_alpha = np.maximum(np.clip(1 - np.arange(H) / 400, 0, 1) * 235, np.clip((np.arange(H) - (H - 340)) / 340, 0, 1) * 215)
+_shade[..., 3] = _alpha[:, None].astype(np.uint8)
+PHOTO_SHADE = Image.fromarray(_shade, "RGBA")
+
+
+def prep_photo(s):
+    """A real photo across the whole screen, slowly moving, with a caption and its credit."""
+    v = s["visual"]
+    bw, bh = int(W * 1.1), int(H * 1.1)
+    src = Image.open(v["file"]).convert("RGB")
+    f = max(bw / src.width, bh / src.height)
+    src = src.resize((int(src.width * f) + 1, int(src.height * f) + 1), Image.LANCZOS)
+    lft, tp = (src.width - bw) // 2, (src.height - bh) // 2
+    v["_src"] = src.crop((lft, tp, lft + bw, tp + bh))
+    v["_dir"] = -1 if s["idx"] % 2 else 1
+    cap = str(v.get("caption") or "").strip()
+    v["_cap"] = None
+    if cap:
+        sp = ink_sprite(cap, 56, INK)
+        pill = Image.new("RGBA", (sp.width + 56, sp.height + 18), (0, 0, 0, 0))
+        ImageDraw.Draw(pill).rounded_rectangle([0, 0, pill.width - 1, pill.height - 1], radius=20, fill=HIGHLIGHT + (255,))
+        comp(pill, sp, 28, 6)
+        v["_cap"] = pill
+    credit = str(v.get("credit") or "").strip()
+    note = "Sanketik photo" + (f"  |  {credit}" if credit else "")
+    v["_credit"] = text_sprite(note, 22, (235, 235, 235), path=REGULAR)
+    sfx(s, 0.1, "whoosh", 0.6)
+
+
+def draw_photo(canvas, d, s, t):
+    v = s["visual"]
+    src = v["_src"]
+    f = min(1.0, t / max(1.0, s["end"] - s["start"]))
+    zoom = 1 + 0.09 * f
+    ww, hh = src.width / zoom, src.height / zoom
+    lft = (src.width - ww) * (0.5 + v["_dir"] * (0.35 * f - 0.17))
+    tp = (src.height - hh) / 2
+    frame = src.resize((W, H), Image.BILINEAR, box=(lft, tp, lft + ww, tp + hh)).convert("RGBA")
+    frame.alpha_composite(PHOTO_SHADE)
+    p = ease(t / 0.3)
+    canvas.paste(frame if p >= 1 else Image.blend(canvas.convert("RGBA"), frame, p), (0, 0))
+    if v["_cap"] is not None:
+        q = ease_back((t - 0.45) / 0.4)
+        if q > 0:
+            comp(canvas, v["_cap"], 330 - 50 * (1 - min(1.0, q)), H - 300)
+    comp(canvas, v["_credit"], W - v["_credit"].width - 60, H - 76)
+
+
 VISUALS = {
     "title": (prep_title, draw_title), "chapter": (prep_chapter, draw_chapter), "icon": (prep_icon, draw_icon),
     "phone_call": (prep_phone_call, draw_phone_call), "phone_sms": (prep_phone_sms, draw_phone_sms),
     "chat": (prep_chat, draw_chat), "steps": (prep_steps, draw_steps), "compare": (prep_compare, draw_compare),
     "stat": (prep_stat, draw_stat), "warning": (prep_warning, draw_warning), "flow": (prep_flow, draw_flow),
     "image": (prep_image, draw_image), "kinetic": (prep_kinetic, draw_kinetic), "host": (prep_host, draw_host),
+    "term": (prep_term, draw_notebook), "pen": (prep_pen, draw_notebook), "map": (prep_map, draw_map),
+    "photo": (prep_photo, draw_photo),
 }
 
 
@@ -1472,13 +1905,16 @@ def prepare_captions(s):
                 cur = []
         if cur:
             chunks.append(cur)
-        total_chars = sum(len(w) + 1 for w in words) or 1
+        # a word's share of the beat follows its length, plus the pause the voice leaves after punctuation
+        def weight(w):
+            return len(w) + 1 + (5 if re.search(r"[.?!।]$", w) else 2 if w.endswith(",") else 0)
+        total_chars = sum(weight(w) for w in words) or 1
         t = 0.0
         for chunk in chunks:
             times = []
             for w in chunk:
                 times.append(b["start"] + t)
-                t += b["dur"] * (len(w) + 1) / total_chars
+                t += b["dur"] * weight(w) / total_chars
             s["captions"].append({"words": chunk, "times": times, "end": b["start"] + t})
 
 
@@ -1663,6 +2099,7 @@ for b in BEATS:
     else:
         b["head_t0"] = BEATS[b["idx"] - 1]["head_t0"]
     prev_lay = b["lay"]
+    set_look(s["look"])
     b["area"] = (120, b["lay"]["bottom"] + 40, W - 120, H - 190)
     VISUALS[b["visual"]["type"]][0](b)
     prep_sticker(b)
@@ -1723,6 +2160,7 @@ def draw_beat(layer, b, t):
 
 
 def render(T, canvas, bi):
+    set_look(scenes[-1]["look"] if T >= SCENES_END else BEATS[bi]["scene"]["look"])
     d = draw_background(canvas, T)
     if T >= SCENES_END:
         draw_outro(canvas, d, T)

@@ -207,6 +207,7 @@ def details_from_metadata(script):
             "hashtags": ["#SnackCode"],
             "tags": [t.strip() for t in section(meta, "Tags").split(",") if t.strip()],
             "pinned_comment": "Aapko is video mein sabse hairan kis baat ne kiya? Comment mein batao.",
+            "category": "news" if script.get("kind") == "news" else "tech",
             "chapter_names": {},
             "thumbnails": [{"layout": "byte", "lines": [{"text": w.upper(), "colour": c} for w, c in
                                                         zip(words[:2], ("white", "yellow"))]}]}
@@ -271,6 +272,11 @@ def main():
         parts.append("Chapters:\n" + "\n".join(f"{stamp(t)} {name}" for name, t in chapters))
     if "\n\nSources:" in info["description"]:
         parts.append("Sources:" + info["description"].split("\n\nSources:", 1)[1])
+    if os.path.exists("images/photos/credits.json"):
+        used = json.load(open("images/photos/credits.json", encoding="utf-8"))
+        if used:
+            parts.append("Photo credits (Wikimedia Commons):\n" + "\n".join(
+                f"- {c['artist'][:60]}, {c['licence']}: {c['page']}" for c in used))
     if info.get("hashtags"):
         parts.append(" ".join(info["hashtags"]))
     description = "\n\n".join(parts)
@@ -316,7 +322,7 @@ def main():
               "- Altered or synthetic content: Yes (AI-generated voice)",
               "- Video language: Hindi",
               "- Subtitles: upload the .srt as Hindi (Latin) if listed, otherwise Hindi",
-              "- Category: Science & Technology",
+              "- Category: " + ("News & Politics" if info.get("category") == "news" else "Science & Technology"),
               "- Thumbnail: upload one, or use Studio's Test & Compare if it's offered, to try up to 3",
               "- End screen: add a Subscribe element and a video over the last 5 to 9 seconds",
               "- Visibility: schedule for Sunday, at the time shown under \"When your viewers are on YouTube\"", "",

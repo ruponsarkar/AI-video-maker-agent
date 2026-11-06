@@ -1,0 +1,97 @@
+[
+  {
+    "on_screen": "Socho, aap raat ko phone dekh rahe ho... kya hua hai? Phone ke screen par ek logo ka video aaya, unke paas sabki tarah ek internet connection hai. Lekin kya hua jo aapko nahi pata?",
+    "goal": "Kuch log internet ki sarkari system se jaane lage, lekin kis tarah internet aata hai? Kya samundar ke neechey chhupi hai?",
+    "visuals": [
+      "host",
+      "map",
+      "warning"
+    ]
+  },
+  {
+    "on_screen": "Internet nahi sirf computer mei hai, woh samundar ke neechey chhupi hain. Woh submarine fiber optic cables kehte hain. Unki madad se internet duniya bhar tak pahunchta hai.",
+    "goal": "Jis tarah aap ek mobile phone se internet use karte ho, woh sirf aapke device mei nahi, balki samundar ke neechey chhupi hain fiber optic cables ke saath.",
+    "visuals": [
+      "kinetic",
+      "phone_call",
+      "icon"
+    ],
+    "roadmap": [
+      "Kya internet sirf mobile mei hai? Kya woh samundar ke neechey chhupi hain?",
+      "Kya internet India mei sirf 1-2 cities se aata hai? Kya woh sabhi log ko pahunchta hai?",
+      "Kya internet sirf mobile se aata hai? Kya woh sabki tarah jaa sakti hai?"
+    ]
+  },
+  {
+    "kind": "part",
+    "part": 1,
+    "total": 3,
+    "on_screen": "Kya internet sirf mobile mei hai? Kya woh samundar ke neechey chhupi hain?",
+    "recap": ""
+  },
+  {
+    "on_screen": "Aur kuch log internet use karte hain lekin unki connection chhoti hai. Woh kya kar sake? Kya woh sirf phone mei hai?",
+    "goal": "Internet nahi sirf mobile mei hai, balki samundar ke neechey fiber optic cables ke saath.",
+    "visuals": [
+      "compare",
+      "phone_sms",
+      "pen"
+    ]
+  },
+  {
+    "on_screen": "Samundar ke neechey chhupi submarine cables hain jo internet ko duniya bhar tak pahuncha dete hain. Unki madad se data 10,000 km ki duri par bhi jaa sakti hai.",
+    "goal": "Internet sirf mobile mei nahi, woh samundar ke neechey chhupi fiber optic cables ke saath chal raha hai. (Ye number notes mein nahi hai, use mat karna: 10,000)",
+    "visuals": [
+      "map",
+      "flow",
+      "stat"
+    ]
+  },
+  {
+    "kind": "part",
+    "part": 2,
+    "total": 3,
+    "on_screen": "Kya internet India mei sirf 1-2 cities se aata hai? Kya woh sabhi log ko pahunchta hai?",
+    "recap": "To ye tha ... ka tareeka. Internet nahi sirf computer aur phone mei hai, balki samundar ke neechey fiber optic cables ke saath."
+  },
+  {
+    "on_screen": "India ki internet infrastructure sabse bada hai jo affordable mobile broadband aur digital investment ke wajah se banaya gaya hai. Lekin un submarine cables ko protect karna bhi zaroori hai.",
+    "goal": "Internet India mei sirf 1-2 cities se nahi, balki 5 shhro mei chhupi hain jo 70% population ka use karte hain.",
+    "visuals": [
+      "warning",
+      "stat",
+      "flow"
+    ]
+  },
+  {
+    "kind": "part",
+    "part": 3,
+    "total": 3,
+    "on_screen": "Kya internet sirf mobile se aata hai? Kya woh sabki tarah jaa sakti hai?",
+    "recap": "To ye tha ... ka tareeka. Internet nahi sirf Mumbai aur Chennai mei hai, balki 5 shhro mei chhupi hain, jisme 70% population use karte hain."
+  },
+  {
+    "on_screen": "Internet sirf mobile mei nahi, woh fiber optic cables aur data centers ke saath chal raha hai. Woh 4G aur 5G networks se bhi jodta hai jo sabko internet pahuncha dete hain.",
+    "goal": "Internet sirf mobile se nahi, balki fiber optic cables aur data centers ke saath chal raha hai.",
+    "visuals": [
+      "icon",
+      "steps",
+      "map"
+    ]
+  },
+  {
+    "on_screen": "India mei 830 million internet users hain jo sabki tarah 70% population ka use karte hain. Woh data centers se bhi jodta hai jo cloud computing aur e-commerce ke saath chal raha hai.",
+    "goal": "Internet sirf mobile se nahi, balki fiber optic cables aur data centers ke saath chal raha hai.",
+    "visuals": [
+      "stat",
+      "compare",
+      "flow"
+    ]
+  },
+  {
+    "on_screen": "Internet aata kahan se? Woh samundar ke neechey submarine fiber optic cables ke saath, 5 cities mei chhupi hain. Unki madad se sabko internet pahuncha dete hain.",
+    "goal": "Internet sirf mobile se nahi, balki samundar ke neechey fiber optic cables aur data centers ke saath chal raha hai.",
+    "visuals": [],
+    "ending": true
+  }
+]

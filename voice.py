@@ -23,12 +23,22 @@ Usage:
     python voice.py --engine kokoro      # old voice
     python voice.py --redo               # regenerate all scenes
     python voice.py --scene 3            # regenerate only scene 3 (after you edit it)
+    python voice.py --no-check           # skip the Whisper check (faster, but bad takes stay)
+
+Emotion: each sentence gets its own delivery from its words and punctuation. For much stronger emotion,
+record 8-15 s of yourself in that mood as voices/narrator_shock.wav, _warn, _happy, _think or _explain.
+Each mood then copies your own delivery. Without them, voices/narrator.wav is used for every mood.
+
+Accuracy: Whisper listens to every line after generating. Lines it can't match are generated again, up to
+TAKES times, and the best take is kept. Anything still weak is listed in audio/voice_check.md.
 """
 import inspect
 import json
 import os
 import re
+import subprocess
 import sys
+import tempfile
 import time
 
 import numpy as np
@@ -37,9 +47,11 @@ import soundfile as sf
 from hindi_text import leftovers, spoken_hi
 
 SCRIPT ="scripts/script.json"
-LLM_MODEL = "qwen3:8b"
 PAUSE = 0.18          # silence between beats (seconds)
-MAX_CHARS = 260       # Chatterbox sounds best on short pieces
+MAX_CHARS = 150       # Chatterbox sounds best on short pieces
+SENTENCE_PAUSE = {"?": 0.34, "!": 0.30, "।": 0.24, ".": 0.24, ",": 0.10}
+TAKES = 3             # tries per line when Whisper can't match it
+GOOD_SCORE = 0.80     # a take scoring this or more is accepted
 
 
 def arg(name, default=None):
@@ -58,24 +70,44 @@ VOICE = arg("--voice") or next((p for p in ("voices/narrator.wav", os.path.join(
                                 if os.path.exists(p)), None)
 
 # mood -> (exaggeration, cfg_weight): more drama for shock/warn, calmer for think
-MOOD_STYLE = {"shock": (0.75, 0.35), "warn": (0.65, 0.40), "happy": (0.60, 0.45),
-              "think": (0.45, 0.50), "explain": (0.50, 0.50)}
+MOOD_STYLE = {"shock": (1.05, 0.40), "warn": (0.90, 0.45), "happy": (0.80, 0.45),
+              "think": (0.55, 0.50), "explain": (0.60, 0.50)}
+WARN_WORDS = re.compile(r"सावधान|खतरा|खतरनाक|नकली|ठग|धोखा|मत\s|कभी नहीं|बिल्कुल नहीं|हरगिज़")
+SHOCK_WORDS = re.compile(r"!|चौंक|हैरान|असली खेल|गायब|अचानक|सब कुछ")
+HAPPY_WORDS = re.compile(r"मज़े की|अच्छी बात|बधाई|कमाल|आसान")
+THINK_WORDS = re.compile(r"\?|सोचो|लेकिन|क्यों")
+
+
+def sentence_mood(text, beat_mood):
+    """Delivery for one sentence: its words first, then the mood the script gave the beat."""
+    if WARN_WORDS.search(text):
+        return "warn"
+    if SHOCK_WORDS.search(text):
+        return "shock"
+    if HAPPY_WORDS.search(text):
+        return "happy"
+    if THINK_WORDS.search(text):
+        return "think"
+    return beat_mood if beat_mood in MOOD_STYLE else "explain"
 
 
 def has_devanagari(text):
     return bool(re.search(r"[ऀ-ॿ]", str(text)))
 
 
-def split_long(text, limit=MAX_CHARS):
-    parts, cur = [], ""
-    for piece in re.split(r"(?<=[.?!।,])\s+", text.strip()):
-        if cur and len(cur) + len(piece) + 1 > limit:
+def split_sentences(text):
+    """Sentences, with any too long for the voice model split again at a comma."""
+    parts = []
+    for sentence in re.split(r"(?<=[.?!।])\s+", text.strip()):
+        cur = ""
+        for piece in re.split(r"(?<=,)\s+", sentence):
+            if cur and len(cur) + len(piece) + 1 > MAX_CHARS:
+                parts.append(cur)
+                cur = piece
+            else:
+                cur = f"{cur} {piece}".strip()
+        if cur:
             parts.append(cur)
-            cur = piece
-        else:
-            cur = f"{cur} {piece}".strip()
-    if cur:
-        parts.append(cur)
     return parts or [text]
 
 
@@ -131,18 +163,12 @@ os.makedirs("audio", exist_ok=True)
 if LANG == "hi":
     missing = [(i, b) for i in todo for b in scene_beats(scenes[i])[0] if not has_devanagari(b.get("say_hi", ""))]
     if missing:
-        print(f"Converting {len(missing)} beats to Devanagari with {LLM_MODEL} ...")
-        import ollama
+        print(f"Spelling {len(missing)} lines in Devanagari ...")
+        from hinglish import to_hindi
         for i, b in missing:
-            out = ollama.chat(model=LLM_MODEL, think=False, options={"temperature": 0.2, "num_predict": 600},
-                              messages=[{"role": "system", "content":
-                                         "Neeche diya Hinglish (Roman) text Devanagari Hindi script mein likho. "
-                                         "Same words, same order. English tech words bhi Devanagari mein likho. "
-                                         "Lekin short forms CAPITAL Roman mein hi rakho (OTP, UPI, I4C), web addresses "
-                                         "aur numbers bhi waise hi rakho (1930, ₹500, 25%). Sirf converted text do."},
-                                        {"role": "user", "content": b["say"]}])
-            b["say_hi"] = out["message"]["content"].strip()
-            print(f"  {b['say'][:40]}...  ->  {b['say_hi'][:40]}...")
+            b["say_hi"], left = to_hindi(b["say"])
+            if left:
+                print(f"  no spelling yet for: {', '.join(left)} (add to hindi_words.json)")
         for i in todo:  # keep old-style scenes in sync
             beats, real = scene_beats(scenes[i])
             if not real and has_devanagari(beats[0].get("say_hi", "")):
@@ -196,6 +222,10 @@ if ENGINE == "chatterbox":
     tts = ChatterboxMultilingualTTS.from_pretrained(device=device)
     SR = tts.sr
     accepted = set(inspect.signature(tts.generate).parameters)
+    VOICES = {m: p for m in MOOD_STYLE for p in [os.path.join(os.path.dirname(VOICE or "voices/x"), f"narrator_{m}.wav")]
+              if os.path.exists(p)}
+    if VOICES:
+        print(f"Your mood recordings: {', '.join(VOICES)}")
     if VOICE:
         print(f"Narrator voice: {VOICE}")
     else:
@@ -205,16 +235,16 @@ if ENGINE == "chatterbox":
     def speak(text, mood, seed):
         exag, cfg = MOOD_STYLE.get(mood, MOOD_STYLE["explain"])
         params = {"language_id": LANG, "audio_prompt_path": VOICE, "exaggeration": exag,
-                  "cfg_weight": cfg, "cfg": cfg, "temperature": 0.8}
+                  "cfg_weight": cfg, "cfg": cfg, "temperature": 0.7}
         params = {k: v for k, v in params.items() if k in accepted and v is not None}
-        pieces = []
-        for k, part in enumerate(split_long(text)):
-            torch.manual_seed(seed * 10 + k)
-            wav = tts.generate(part, **params)
-            wav = wav.squeeze().detach().cpu().numpy() if hasattr(wav, "detach") else np.asarray(wav).squeeze()
-            pieces.append(trim(wav.astype(np.float32), SR))
-            pieces.append(np.zeros(int(0.08 * SR), np.float32))
-        return np.concatenate(pieces[:-1]) if pieces else np.zeros(1, np.float32)
+        for voice in VOICES.get(mood), VOICE:
+            if voice:
+                params["audio_prompt_path"] = voice
+                break
+        torch.manual_seed(seed)
+        wav = tts.generate(text, **params)
+        wav = wav.squeeze().detach().cpu().numpy() if hasattr(wav, "detach") else np.asarray(wav).squeeze()
+        return trim(wav.astype(np.float32), SR)
 
 elif ENGINE == "kokoro":
     from kokoro import KPipeline
@@ -230,9 +260,36 @@ else:
     raise SystemExit("Unknown engine. Use --engine chatterbox or --engine kokoro")
 
 # ---------------------------------------------------------------- generate
+def speak_beat(text, mood, seed):
+    """One beat, sentence by sentence: each with its own delivery, then a natural pause."""
+    clips = []
+    parts = split_sentences(text) if LANG == "hi" and ENGINE == "chatterbox" else [text]
+    for k, part in enumerate(parts):
+        clips.append(speak(part, sentence_mood(part, mood), seed + k * 7))
+        if k < len(parts) - 1:
+            clips.append(np.zeros(int(SENTENCE_PAUSE.get(part[-1], 0.15) * SR), np.float32))
+    return np.concatenate(clips)
+
+
+def score_clips(clips):
+    """Ask Whisper how well each clip says its text. Needs the normal venv; if it's missing, skip the check."""
+    python = os.path.join(here, "venv", "bin", "python")
+    if not os.path.exists(python):
+        return None
+    with tempfile.TemporaryDirectory() as tmp:
+        ask, answer = os.path.join(tmp, "clips.json"), os.path.join(tmp, "scores.json")
+        json.dump(clips, open(ask, "w", encoding="utf-8"), ensure_ascii=False)
+        done = subprocess.run([python, os.path.join(here, "voice_check.py"), ask, answer],
+                              capture_output=True, text=True, env={**os.environ, "CUDA_VISIBLE_DEVICES": ""})
+        if done.returncode != 0:
+            print(f"Voice check skipped: {done.stderr.strip()[-200:]}")
+            return None
+        return json.load(open(answer, encoding="utf-8"))
+
+
+lines = {}
 for i in todo:
     beats, real = scene_beats(scenes[i])
-    clips, timing, cursor = [], [], 0.0
     for j, b in enumerate(beats):
         text = (b.get("say_hi") if LANG == "hi" and has_devanagari(b.get("say_hi", "")) else b.get("say", "")).strip()
         if not text:
@@ -242,8 +299,59 @@ for i in todo:
             if leftovers(text):
                 print(f"  scene {i:02d} beat {j:02d}: model will guess these English words: "
                       f"{', '.join(leftovers(text))} (write them in Hindi in say_hi to fix)")
-        audio = speak(text, b.get("mood", "explain"), seed=i * 100 + j)
-        sf.write(f"audio/scene_{i:02d}_b{j:02d}.wav", normalize(audio), SR)
+        path = f"audio/scene_{i:02d}_b{j:02d}.wav"
+        audio = speak_beat(text, b.get("mood", "explain"), seed=i * 100 + j)
+        sf.write(path, normalize(audio), SR)
+        lines[(i, j)] = {"file": path, "text": text, "mood": b.get("mood", "explain"), "audio": audio, "score": None}
+    print(f"  scene {i:02d}: voiced", flush=True)
+
+# ----- listen back: generate weak lines again and keep the best take
+if LANG == "hi" and "--no-check" not in sys.argv and lines:
+    weak = list(lines)
+    for take in range(TAKES):
+        print(f"Checking {len(weak)} lines with Whisper ...", flush=True)
+        scores = score_clips([{"file": lines[k]["file"] if take == 0 else f"{lines[k]['file']}.try.wav",
+                               "text": lines[k]["text"]} for k in weak])
+        if scores is None:
+            break
+        for k, s in zip(weak, scores):
+            line = lines[k]
+            if line["score"] is None or s["score"] > line["score"]:
+                line["score"], line["heard"] = s["score"], s["heard"]
+                if take:
+                    line["audio"] = line.pop("candidate")
+                    sf.write(line["file"], normalize(line["audio"]), SR)
+            line.pop("candidate", None)
+        weak = [k for k in weak if lines[k]["score"] < GOOD_SCORE]
+        if not weak or take == TAKES - 1:
+            break
+        print(f"  {len(weak)} lines need another take", flush=True)
+        for k in weak:
+            line = lines[k]
+            line["candidate"] = speak_beat(line["text"], line["mood"], seed=k[0] * 100 + k[1] + 1000 * (take + 1))
+            sf.write(f"{line['file']}.try.wav", normalize(line["candidate"]), SR)
+    for line in lines.values():
+        if os.path.exists(f"{line['file']}.try.wav"):
+            os.remove(f"{line['file']}.try.wav")
+    scored = [v for v in lines.values() if v["score"] is not None]
+    if scored:
+        bad = sorted([v for v in scored if v["score"] < GOOD_SCORE], key=lambda v: v["score"])
+        print(f"Voice check: average {sum(v['score'] for v in scored) / len(scored):.2f}, "
+              f"{len(bad)} of {len(scored)} lines below {GOOD_SCORE}")
+        with open("audio/voice_check.md", "w", encoding="utf-8") as f:
+            f.write("# Lines to listen to\n\nWhisper couldn't match these well. It can be wrong, so listen first. "
+                    "To fix one, edit say_hi and run voice.py --scene N.\n\n")
+            for v in bad:
+                f.write(f"- {v['file']} ({v['score']})\n  - script: {v['text']}\n  - heard: {v.get('heard', '')}\n")
+
+# ----- join the final takes into scenes
+for i in todo:
+    beats, real = scene_beats(scenes[i])
+    clips, timing, cursor = [], [], 0.0
+    for j in range(len(beats)):
+        if (i, j) not in lines:
+            continue
+        audio = lines[(i, j)]["audio"]
         clips.append(audio)
         dur = len(audio) / SR
         timing.append({"start": round(cursor, 3), "dur": round(dur, 3)})
@@ -255,12 +363,8 @@ for i in todo:
         continue
     scene_audio = normalize(np.concatenate(clips))
     sf.write(f"audio/scene_{i:02d}.wav", scene_audio, SR)
-    if real:
-        json.dump({"beats": timing, "total": round(len(scene_audio) / SR, 3), "engine": ENGINE},
-                  open(f"audio/scene_{i:02d}.json", "w"), indent=2)
-    else:
-        json.dump({"beats": [], "total": round(len(scene_audio) / SR, 3), "engine": ENGINE},
-                  open(f"audio/scene_{i:02d}.json", "w"), indent=2)
+    json.dump({"beats": timing if real else [], "total": round(len(scene_audio) / SR, 3), "engine": ENGINE},
+              open(f"audio/scene_{i:02d}.json", "w"), indent=2)
     print(f"  scene {i:02d}: {len(timing)} beats, {len(scene_audio) / SR:.1f}s")
 
 print("Done. Listen to a few files in the audio folder, then run animate.py.")
