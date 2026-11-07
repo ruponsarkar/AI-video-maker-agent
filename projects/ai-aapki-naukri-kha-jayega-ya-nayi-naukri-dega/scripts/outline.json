@@ -9,38 +9,38 @@
     "kind": "part",
     "part": 1,
     "total": 3,
-    "title_hi": "AI: नौकरी का क्या होगा?",
-    "on_screen": "AI: naukri ka kya hoga?"
+    "title_hi": "AI: नौकरी की बात - क्या होगा?",
+    "on_screen": "AI: naukri ki baat - kya hoga?"
   },
   {
-    "on_screen": "AI: naukri ka kya hoga?",
-    "goal": "- India mein AI ki wajahse jobs mei badlave ho rahen hain. Automation aur augmentation ke ek saath, new AI careers bhi ban rahe hai.\n- Machine learning se AI routine aur complex tasks perform karti hai, jo employment landscape ko dynamically change kar sakti hai."
+    "on_screen": "AI: naukri ki baat - kya hoga?",
+    "goal": "- AI Indian job market mein impact kar raha hai, especially software developers aur customer support professionals ke liye.\n- Google Cloud–National Research Group ki survey (2026) se 56% global manufacturing executives AI agents use karte hain aur 37% over ten AI tools deploy karte hain.\n- Deployment – impact gap hai; installing AI software alone productivity nahi badhate."
   },
   {
     "kind": "part",
     "part": 2,
     "total": 3,
-    "title_hi": "जॉब्स पे इम्पैक्ट: रिस्क और ओपोर्ट्यूनिटी",
-    "on_screen": "Jobs pe impaikt: risk aur oportyuniti"
+    "title_hi": "नए ऑपर्च्युनिटीज़, नई स्किल्स - कैसे होगा?",
+    "on_screen": "Naye opportunity, nayi skills - kaise hoga?"
   },
   {
-    "on_screen": "Jobs pe impaikt: risk aur oportyuniti",
-    "goal": "- Informal sector mein workers ke job displacement hone ka risk maximum hai kyunki skills ki kami hoti hai.\n- Automation manufacturing, logistics aur administrative jobs par zyada impact karta hai.  2030 tak 30% jobs automated ho sakti hain."
+    "on_screen": "Naye opportunity, nayi skills - kaise hoga?",
+    "goal": "- AI machine-learning engineers, prompt designers aur data annotators ke jaise naye career options banata hai.\n- India me 2027 तक AI market USD 17 billion ki hogi aur 2024 me approximately 4.2 lakh AI professionals hain.\n- World Economic Forum ne 2030 तक 170 million new jobs aur 92 million displaced jobs ki prediction di hai."
   },
   {
     "kind": "part",
     "part": 3,
     "total": 3,
-    "title_hi": "फ्यूचर की तैयार: स्किल और एडैप्टेबिलिटी",
-    "on_screen": "Phyuchar ki taiyar: skil aur edaiptebiliti"
+    "title_hi": "फाइनली, थे बिग रिवेल - एंसर क्या है?",
+    "on_screen": "Phainli, the big rivel - ensar kya hai?"
   },
   {
-    "on_screen": "Phyuchar ki taiyar: skil aur edaiptebiliti",
-    "goal": "- AI ki wajahse coding, data analysis aur critical thinking skills ka importance bad raha hai.\n- India ko AI benefits leverage karne ke liye infrastructure aur skilled workforce develop karna padega.  Skill development initiatives bahut zaroori hain."
+    "on_screen": "Phainli, the big rivel - ensar kya hai?",
+    "goal": "- AI not just job losses ka karan hai, lekin augmentation ke opportunities bhi banata hai.\n- Raymond & Infosys ke jaise companies automation se impact faced hain, par AI-driven efficiency se skills walon ki wages 56% tak badhi hai."
   },
   {
     "on_screen": "Yaad rakhne wali baat",
-    "goal": "- AI se jo jobs lost ho sakti hain, uske saath-साथ new opportunities bhi create honge - ek balanced approach sahi hoga.",
+    "goal": "- India me AI se jobs mein competition hoga, par innovation aur upskilling se naye opportunities bhi banenge.",
     "ending": true
   }
 ]

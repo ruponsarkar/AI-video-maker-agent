@@ -100,6 +100,7 @@ Each title gets its own folder in `projects/`, so videos don't overwrite each ot
 | `research/notes.md` | Facts from up to 8 articles, each under its source link |
 | `research/sources.json` | The list of sources used |
 | `scripts/outline.json` | The story plan: its shape, sections and ending, which differ from video to video |
+| `scripts/review_report.md` | What the script editor changed and flagged |
 | `scripts/review.md` | Only if needed: problems the automatic checks couldn't fix |
 | `scripts/script.json` | The final script: beats, visuals, Byte's moods, stickers, Hindi voice text |
 | `metadata.md` | 3 title options, thumbnail text, description with sources, tags |
@@ -255,6 +256,90 @@ test mode, Google may ask you to log in again about every 7 days.
   They're in `.gitignore`, so git won't add them. To remove access, go to your
   [Google account permissions](https://myaccount.google.com/permissions).
 
+## All run commands
+
+Every command assumes you've started the tools first:
+
+```bash
+cd ~/snackcode-ai
+source venv/bin/activate
+docker start searxng
+```
+
+**Run these from `~/snackcode-ai`:**
+
+```bash
+# Script only: one video, with an optional direction for the AI
+python auto_video.py "Title"
+python auto_video.py "Title" "Direction for the AI"
+
+# Script, voice and video for one video (news videos stop until "reviewed": true is set)
+python auto_video.py "Title" --render
+
+# Every video in topics.txt
+python auto_video.py --file topics.txt
+python auto_video.py --file topics.txt --render
+
+# Redo a video from scratch. This replaces its research and script
+python auto_video.py "Title" --force
+python auto_video.py "Title" --force --render
+
+# See how the voice will read numbers and short forms
+python hindi_text.py "UPI 1930"
+
+# See a line's spelling: Roman gives Devanagari, Devanagari gives the on-screen caption
+python hinglish.py "Data ka chhota tukda"
+python hinglish.py "डेटा का छोटा टुकड़ा"
+```
+
+**Run these from the video's folder.** Go there first with `cd projects/<video-folder>`:
+
+```bash
+# Script checks
+python ../../script_review.py                   # recheck the script with the script editor
+python ../../hinglish.py --sync                 # remake captions after editing say_hi
+
+# Photos
+python ../../photos.py                          # fetch photos that are missing
+python ../../photos.py --redo                   # choose all the photos again
+
+# Voice (uses venv-voice)
+../../venv-voice/bin/python ../../voice.py                        # voice any scenes that aren't done
+../../venv-voice/bin/python ../../voice.py --redo                 # redo every scene
+../../venv-voice/bin/python ../../voice.py --scene 8              # redo one scene
+../../venv-voice/bin/python ../../voice.py --redo --voice my.wav  # use a different reference voice
+../../venv-voice/bin/python ../../voice.py --redo --no-check      # faster: skip the Whisper check
+../../venv-voice/bin/python ../../voice.py --redo --lang en       # English narration
+python ../../voice.py --redo --engine kokoro                      # Kokoro male voice (uses venv)
+python ../../voice.py --redo --engine kokoro --female             # Kokoro female voice (uses venv)
+
+# Video
+python ../../animate.py --preview               # first 3 scenes
+python ../../animate.py                         # the full video
+python ../../animate.py --theme ocean           # emerald, violet, ocean, sunset or crimson
+python ../../animate.py --one-colour            # one colour for the whole video
+python ../../animate.py --no-mascot             # without Byte
+python ../../animate.py --no-sfx                # without sound effects
+
+# YouTube
+python ../../youtube_kit.py                     # thumbnails, chapters and the upload guide
+python ../../upload.py --thumbnail b --dry-run  # see what would be sent; nothing is uploaded
+python ../../upload.py --thumbnail b            # upload as private
+python ../../upload.py --thumbnail b --schedule "2026-11-08 18:00"   # goes public at this India time
+python ../../upload.py --thumbnail b --publish  # public straight away; asks you to type PUBLISH
+python ../../upload.py                          # after an upload: retry failed steps, post the comment
+```
+
+`voice.py` runs `voice_check.py` for you, so you don't need to run it yourself. The `--force` commands, `voice.py --redo`
+and `photos.py --redo` replace existing files for that video.
+
+**Older single-step scripts.** These use `./research` and `./scripts` in the current folder:
+
+```bash
+python research.py "call forwarding scam India"
+python script.py
+```
+
 ## All options
 
 **`animate.py`**
@@ -297,7 +382,7 @@ python ../../voice.py --engine kokoro --female
 | `upload.py` | Uploads a finished video to YouTube with all its details |
 | `.gitignore` | Keeps login files, the voice sample, environments and heavy media out of git |
 | `glossary.py` | Hand-written explanations of hard tech, government, court and money terms |
-| `hinglish.py`, `hindi_words.json` | Keep captions and voice on the same words; the spelling list |
+| `hinglish.py`, `hindi_words.json`, `caption_words.json` | Keep captions and voice on the same words; the voice and screen spelling lists |
 | `script_review.py` | The script editor: a second AI agent that rechecks every script before audio and video |
 | `voice_check.py` | Listens to voice clips with Whisper and scores them |
 | `india_places.py` | Places the map can mark |
