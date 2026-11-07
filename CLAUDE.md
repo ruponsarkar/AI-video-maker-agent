@@ -38,12 +38,16 @@ Never run Ollama and the voice model at the same time (VRAM). Disk space is limi
   youtube/uploaded.json prevents double uploads. Online and separate from the offline video pipeline.
   venv needs google-api-python-client + google-auth-oauthlib with `protobuf==4.25.9`
   (descript-audiotools needs protobuf <5; a plain install upgrades it).
+- `script_review.py`  the script editor, a second local agent run on every new script before audio/video: remakes
+  captions from say_hi, edits lines, reads the whole script, removes repeats. Edits only pass if numbers, short forms
+  and (for news) attribution survive. Report: scripts/review_report.md. It can't check facts.
 - `glossary.py`  hand-checked term explanations, inserted after a term's first mention (don't let
   the model write these). `india_places.py`  map coordinates. `photos.py`  Wikimedia Commons photos,
   CC0/PD/CC BY only (no SA/NC/ND), online but optional; review images/photos/review.jpg.
   `assets/`  Kalam font and India outline (Natural Earth, India point of view).
 - `hinglish.py` + `hindi_words.json`  to_roman() makes captions from say_hi, so they always match the voice;
-  to_hindi() spells Roman lines word by word. `voice_check.py`  Whisper score per clip (venv, CPU), run by voice.py.
+  English terms show in real English on screen (automation, never otomeshan): learn_words() asks gemma once and saves
+  to caption_words.json; fix_screen_text() corrects headings and card labels. to_hindi() spells Roman lines word by word. `voice_check.py`  Whisper score per clip (venv, CPU), run by voice.py.
 - `research.py`, `script.py`  older single-step versions (still work on ./research, ./scripts)
 - `voices/narrator.wav`  10-20 s reference voice for Chatterbox (owner's own voice only)
 - `projects/<slug>/`  one folder per video: research/notes.md, research/sources.json,
@@ -102,6 +106,10 @@ voice.py flags: `--lang hi|en`, `--voice file.wav`, `--engine chatterbox|kokoro`
   (removed), Devanagari on screen, English text, too short; what can't be fixed goes to
   scripts/review.md. Saves progress (outline.json, scenes_partial.json) so a rerun resumes.
   Skips videos that already have script.json unless --force.
+- Every video gets its own shape (SHAPES_BY_KIND) and section count, picked from the title: never announce a fixed
+  "3 sawaal" roadmap or reuse one set of questions. The intro is built from 4 checked sentences (hook, topic, why, tease).
+- balance_visuals limits repeated cards (compare, steps...) and adds real photos and 3D symbols. photos.py asks the
+  gemma vision model to reject faces, slides and text; queries must be things a camera can photograph.
 - Don't give the writing model a worked example: qwen3:8b copied it into the video even when told
   not to (a Supreme Court video opened with an electricity-bill story).
 - `llm()` retries on Ollama errors (e.g. "token repeat limit reached"), bad JSON and

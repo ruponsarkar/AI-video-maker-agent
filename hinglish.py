@@ -5,7 +5,8 @@ to_roman()  makes the on-screen caption from the Devanagari script, so captions 
 to_hindi()  goes the other way, for lines you write in Roman. It never translates or reorders: "users"
             becomes यूज़र्स, not उपयोगकर्ता.
 
-Spellings come from hindi_words.json. A spelling you fix in that file stays fixed in every video.
+Voice spellings are in hindi_words.json. Screen spellings the model has learned are in caption_words.json.
+A spelling you fix in either file stays fixed in every video.
 
 After editing say_hi in a script:  python ../../hinglish.py --sync   (from the video's folder)
 Check a line:  python hinglish.py "Data ka chhota tukda aapke phone tak pahunchta hai."
@@ -19,7 +20,19 @@ import sys
 import unicodedata
 
 MODEL = "qwen3:8b"
+WORD_MODEL = "gemma3:4b"
+HINDI_ENDINGS = re.compile(r"(enge|engi|yega|yegi|yenge|yengi|iye|aiye)$")
+# sound-spelled English that's too far off for the automatic correction
+ROMAN_FIXES = {"oportyuniti": "opportunity", "oportuniti": "opportunity", "opportyuniti": "opportunity",
+               "opportyunitiz": "opportunities", "oportyunitiz": "opportunities", "bailensad": "balanced", "bailensd": "balanced",
+               "devlap": "develop", "ephishient": "efficient", "inportens": "importance", "kanpniyon": "companies", "levar": "lever",
+               "prodakt": "product", "skils": "skills", "nukri": "naukri", "kampaniyon": "companies", "kanpni": "company"}
+# Hindi words that look like English ones: never swap these for the English word
+HINDI_LOOKALIKES = {"banana", "bana", "man", "mat", "par", "pad", "the", "do", "to", "hum", "main", "bat", "bar", "car", "kam", "come",
+                    "are", "gun", "chai", "rail", "lake", "more", "bus", "sub", "song", "son", "sun", "pass", "pal", "pan", "nut",
+                    "in", "is", "us", "un", "an", "he", "she", "we", "me", "my", "on", "or", "of", "at", "it", "so", "no", "ye", "am", "be"}
 WORDS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "hindi_words.json")
+CAPTION_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "caption_words.json")   # Devanagari -> screen spelling
 # stays as written; hindi_text.py turns these into spoken Hindi: numbers, money, short forms, web addresses
 KEEP = re.compile(r"(?:₹\s?)?\d[\d,.:]*%?|\b[A-Z][A-Z0-9/]+s?\b|\bI4C\b|\b[\w-]+(?:\.[\w-]+)*\.(?:com|in|org|net|gov)\b")
 WORD = re.compile(r"[A-Za-z][A-Za-z']*(?:-[A-Za-z]+)*")
@@ -135,6 +148,13 @@ def to_hindi(say, words=None, use_model=True):
 PREFERRED = {"में": "mein", "नहीं": "nahi", "ये": "ye", "वो": "wo", "वाला": "wala", "वैसे": "waise", "रास्ता": "raasta",
              "सवाल": "sawaal", "ताकि": "taaki", "चीज़": "cheez", "पूरा": "poora", "पूरे": "poore", "पूरी": "poori",
              "फिर": "phir", "अच्छा": "accha", "हां": "haan", "इसमें": "isme", "उसमें": "usme", "हमारे": "humare",
+             "भारत": "Bharat", "इंडिया": "India", "दिल्ली": "Delhi", "मुंबई": "Mumbai", "मुम्बई": "Mumbai", "चेन्नई": "Chennai", "कोलकाता": "Kolkata",
+             "बेंगलुरु": "Bengaluru", "बैंगलोर": "Bengaluru", "हैदराबाद": "Hyderabad", "कोचीन": "Kochi", "कोच्चि": "Kochi", "पुणे": "Pune",
+             "अहमदाबाद": "Ahmedabad", "जयपुर": "Jaipur", "लखनऊ": "Lucknow", "पटना": "Patna", "भोपाल": "Bhopal", "गुवाहाटी": "Guwahati",
+             "श्रीनगर": "Srinagar", "कश्मीर": "Kashmir", "प्रयागराज": "Prayagraj", "वाराणसी": "Varanasi", "मणिपुर": "Manipur", "असम": "Assam",
+             "बिहार": "Bihar", "गुजरात": "Gujarat", "पंजाब": "Punjab", "केरल": "Kerala", "गोवा": "Goa", "महाराष्ट्र": "Maharashtra",
+             "राजस्थान": "Rajasthan", "तमिलनाडु": "Tamil Nadu", "कर्नाटक": "Karnataka", "ओडिशा": "Odisha", "अमेरिका": "America",
+             "गूगल": "Google", "यूट्यूब": "YouTube", "व्हाट्सएप": "WhatsApp", "फ़ेसबुक": "Facebook", "इंस्टाग्राम": "Instagram",
              "एसआईआर": "SIR", "स्क्रीन": "screen", "बीजेपी": "BJP", "कांग्रेस": "Congress", "भाजपा": "BJP", "ईएमआई": "EMI", "आईपी": "IP", "जहां": "jahan", "यहां": "yahan", "कहां": "kahan", "पहुंच": "pahunch", "फ़ोन": "phone", "पूछा": "pucha"}
 _CONS = {unicodedata.normalize("NFD", k): v for k, v in {"क": "k", "ख": "kh", "ग": "g", "घ": "gh", "ङ": "n", "च": "ch", "छ": "chh", "ज": "j", "झ": "jh", "ञ": "n",
          "ट": "t", "ठ": "th", "ड": "d", "ढ": "dh", "ण": "n", "त": "t", "थ": "th", "द": "d", "ध": "dh", "न": "n",
@@ -146,6 +166,7 @@ _MATRAS = {"ा": "A", "ि": "i", "ी": "i", "ु": "u", "ू": "u", "े": "e
            "ॅ": "e", "ृ": "ri"}
 _DEVANAGARI_WORD = re.compile(r"[ऀ-ॿ]+")
 _reverse = {}
+_dictionary = set()
 _LETTERS = {unicodedata.normalize("NFD", k): v for k, v in {
     "ए": "A", "बी": "B", "सी": "C", "डी": "D", "ई": "E", "एफ़": "F", "जी": "G", "एच": "H", "आई": "I", "जे": "J", "के": "K",
     "एल": "L", "एम": "M", "एन": "N", "ओ": "O", "पी": "P", "क्यू": "Q", "आर": "R", "एस": "S", "टी": "T", "यू": "U",
@@ -187,18 +208,87 @@ def _sound_out(word):
     return "".join(c + v for c, v in parts).replace("A", "a")
 
 
+def _loose(word):
+    """फ़ and फ, or ड़ and ड, are often swapped: match a word either way."""
+    return _same_form(word).replace("़", "")
+
+
+def is_english(word):
+    """A real dictionary word? If this machine has no dictionary, trust the other checks."""
+    if not _dictionary:
+        for path in ("/usr/share/dict/words", "/usr/share/dict/american-english"):
+            if os.path.exists(path):
+                _dictionary.update(w.strip().lower() for w in open(path, encoding="utf-8", errors="ignore"))
+                break
+        _dictionary.add("")
+    return len(_dictionary) < 2 or word.lower() in _dictionary
+
+
+def _load_reverse():
+    if _reverse:
+        return
+    for roman, spelled in load_words().items():
+        key = _same_form(spelled)
+        # keep an English spelling over a sound-spelled one: "automation", not "otomeshan"
+        if key not in _reverse or (roman != _sound_out(key) and _reverse[key] == _sound_out(key)) or (
+                len(roman) < len(_reverse[key]) and (roman != _sound_out(key)) == (_reverse[key] != _sound_out(key))):
+            _reverse[key] = roman
+    if os.path.exists(CAPTION_FILE):
+        _reverse.update({_same_form(k): v for k, v in json.load(open(CAPTION_FILE, encoding="utf-8")).items()})
+    _reverse.update({_same_form(k): v for k, v in PREFERRED.items()})
+    for key, roman in list(_reverse.items()):   # the same word typed with or without the dot
+        _reverse.setdefault(_loose(key), roman)
+
+
+def _ask_english(batch):
+    """Which of these are English words, and how are they really spelled?"""
+    import ollama
+    system = ("These words are written in Devanagari. Some are English words spoken in Hindi, like ऑटोमेशन or कंपनी. Others are real "
+              "Hindi words, like नौकरी or करेंगे. For each English word give its correct English spelling. For each Hindi word give "
+              "null, and never translate it. Reply as JSON with each input word as a key.")
+    reply = ollama.chat(model=WORD_MODEL, format="json", options={"temperature": 0, "num_predict": 30 * len(batch) + 80},
+                        messages=[{"role": "system", "content": system},
+                                  {"role": "user", "content": json.dumps(batch, ensure_ascii=False)}])
+    return {_same_form(k): v for k, v in json.loads(reply["message"]["content"]).items()}
+
+
+def learn_words(hindi_text):
+    """Find out once which unknown words are English, and save the spelling. Hindi words keep their sound."""
+    _load_reverse()
+    found = _DEVANAGARI_WORD.findall(_same_form(hindi_text).replace("।", " "))
+    unknown = sorted({w for w in map(_same_form, found) if w not in _reverse and _loose(w) not in _reverse})
+    if not unknown:
+        return
+    learned = {}
+    for start in range(0, len(unknown), 12):   # small batches: in big ones the model skips words
+        batch = unknown[start:start + 12]
+        try:
+            answers = _ask_english(batch)
+        except Exception:   # no model right now: spell by sound, and ask again next time
+            continue
+        for w in batch:
+            english = answers.get(w)
+            usable = (isinstance(english, str) and re.fullmatch(r"[A-Za-z]{2,}", english) and sounds_like(english, w)
+                      and english.lower() not in HINDI_LOOKALIKES and not HINDI_ENDINGS.search(english.lower())
+                      and is_english(english))
+            learned[w] = english.lower() if usable else _sound_out(w)
+    if learned:
+        _reverse.update(learned)
+        saved = json.load(open(CAPTION_FILE, encoding="utf-8")) if os.path.exists(CAPTION_FILE) else {}
+        saved.update({unicodedata.normalize("NFC", k): v for k, v in learned.items()})
+        with open(CAPTION_FILE, "w", encoding="utf-8") as f:
+            json.dump(dict(sorted(saved.items())), f, ensure_ascii=False, indent=0)
+            f.write("\n")
+
+
 def to_roman(hindi):
-    """The caption for a line of the script: same words, same order. Numbers and short forms stay as they are."""
-    if not _reverse:
-        for roman, spelled in load_words().items():
-            key = _same_form(spelled)
-            if key not in _reverse or len(roman) < len(_reverse[key]):
-                _reverse[key] = roman
-        _reverse.update({_same_form(k): v for k, v in PREFERRED.items()})
+    """The caption for a line of the script: same words, same order. English words keep their real English spelling;
+    numbers and short forms stay as they are."""
+    learn_words(hindi)
 
     def word(m):
         w = _same_form(m.group(0))
-        return _reverse.get(w) or _sound_out(w)
+        return _reverse.get(w) or _reverse.get(_loose(w)) or _sound_out(w)
 
     def spelled_out(m):   # आई-पी -> IP
         return "".join(_LETTERS[x] for x in m.group(0).split("-"))
@@ -207,12 +297,67 @@ def to_roman(hindi):
     names = "|".join(re.escape(k) for k in sorted(_LETTERS, key=len, reverse=True))
     text = re.sub(rf"(?<![ऀ-ॿ])(?:{names})(?:-(?:{names}))+(?![ऀ-ॿ])", spelled_out, text)
     text = _DEVANAGARI_WORD.sub(word, text)
-    text = " ".join(text.split())
+    text = fix_english(" ".join(text.split()))
     return re.sub(r"(^|[.?!]\s+)([a-z])", lambda m: m.group(1) + m.group(2).upper(), text)
 
 
+_english_fixes = {}
+
+
+def fix_english(text):
+    """Corrects sound-spelled English in headings and card labels: "Otomeshan" -> "Automation"."""
+    if not _english_fixes:
+        _load_reverse()
+        known = {_same_form(spelled): roman for roman, spelled in load_words().items()}
+        known.update({k: v for k, v in _reverse.items() if re.fullmatch(r"[a-z]+", v)})
+        for spelled, roman in known.items():
+            sound = _sound_out(spelled)
+            if sound != roman and len(roman) >= 4 and difflib.SequenceMatcher(None, sound, roman).ratio() < 0.9:
+                _english_fixes[sound] = roman
+        _english_fixes.update(ROMAN_FIXES)
+
+    def fix(m):
+        w = m.group(0)
+        low = w.lower()
+        new = _english_fixes.get(low)
+        if not new and len(low) >= 8:
+            close = difflib.get_close_matches(low, _english_fixes, n=1, cutoff=0.84)
+            new = _english_fixes[close[0]] if close else None
+        if not new:
+            return w
+        return new.capitalize() if w[0].isupper() else new
+
+    return re.sub(r"[A-Za-z]{3,}", fix, str(text))
+
+
+def _fix_strings(value):
+    """Every piece of screen text in a visual. Settings like icon names and file paths are left alone."""
+    if isinstance(value, str):
+        return fix_english(value)
+    if isinstance(value, list):
+        return [_fix_strings(v) for v in value]
+    if isinstance(value, dict):
+        return {k: (v if k in SETTINGS_KEYS else _fix_strings(v)) for k, v in value.items()}
+    return value
+
+
+SETTINGS_KEYS = {"type", "icon", "file", "query", "credit", "part", "total", "broken", "places", "number", "from", "sender"}
+
+
+def fix_screen_text(script_scenes):
+    """Headings and card labels: real English spelling everywhere on screen."""
+    for scene in script_scenes:
+        if scene.get("on_screen"):
+            scene["on_screen"] = fix_english(scene["on_screen"])
+        for beat in scene.get("beats") or []:
+            if isinstance(beat.get("visual"), dict):
+                beat["visual"] = _fix_strings(beat["visual"])
+            if beat.get("pop"):
+                beat["pop"] = fix_english(beat["pop"])
+
+
 def sync_captions(path="scripts/script.json"):
-    """After you edit say_hi by hand: remake every beat's caption from it, so the two still match."""
+    """Remake every caption from say_hi, and correct English on screen. The voice text isn't touched."""
     script = json.load(open(path, encoding="utf-8"))
     changed = 0
     for scene in script["scenes"]:
@@ -220,8 +365,10 @@ def sync_captions(path="scripts/script.json"):
             if beat.get("say_hi") and to_roman(beat["say_hi"]) != beat.get("say"):
                 beat["say"] = to_roman(beat["say_hi"])
                 changed += 1
+    _english_fixes.clear()
+    fix_screen_text(script["scenes"])
     json.dump(script, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
-    print(f"{changed} captions updated from say_hi")
+    print(f"{changed} captions updated from say_hi; headings and labels checked")
 
 
 if __name__ == "__main__":

@@ -22,6 +22,7 @@ Each video gets its own folder:
 Needs: Ollama running with the model below, SearXNG on localhost:8080.
 """
 import difflib
+import hashlib
 import json
 import os
 import re
@@ -37,6 +38,7 @@ import trafilatura
 
 from glossary import find_new_term, term_visual
 from hinglish import to_hindi, to_roman
+from script_review import review as edit_script, write_report
 from india_places import places_in
 
 MODEL = "qwen3:8b"            # research, planning, visuals: reliable JSON
@@ -48,33 +50,62 @@ CHARS_PER_SOURCE = 3500
 SKIP_SITES = ("youtube.com", "youtu.be", "facebook.com", "instagram.com", "x.com", "twitter.com",
               "tiktok.com", "pinterest.", "quora.com", "reddit.com")
 VISUAL_TYPES = ["title", "host", "kinetic", "icon", "phone_call", "phone_sms", "chat", "steps",
-                "compare", "stat", "warning", "flow", "pen", "map", "photo"]
+                "compare", "stat", "warning", "flow", "pen", "map", "photo", "symbols"]
 SCAM_WORDS = r"scam|fraud|dhokha|fake|nakli|phishing|hack|thagi|cyber"
 WORDS_PER_MIN = 110   # measured: Chatterbox reads these scripts at about 105 words a minute
 STORY_TRIES = 3       # rewrites allowed when a part fails story_problems()
 BEAT_WORDS = 12       # a beat ends after this many words, so the picture changes every ~5 s
 BEATS_PER_SCENE = 4
-# every scam video answers the same questions: (part question, what the viewer has just learned)
-SCAM_PARTS = [("Ye scam hota kaise hai?", "To ye tha scam ka poora khel."),
-              ("Isko pehchanein aur bachein kaise?", "To ab aap iske nishan pehchante hain."),
-              ("Agar fas gaye to kya karein?", "")]
-# "what is it / how does it work" videos get a clear path through the topic
-EXPLAINER_WORDS = r"how |kaise|kya hai|kya hota|what is|concept|explained|samjho|matlab"
 NEWS_WORDS = (r"\b(news|khabar|samachar|election|chunav|congress|bjp|sansad|parliament|lok sabha|rajya sabha|budget|"
               r"sarkar|government|minister|mantri|protest|andolan|verdict|faisla|court|war|yuddh|rbi|economy)\b")
-NEWS_PARTS = [("Hua kya hai?", "To ye thi poori khabar."),
-              ("Ye kyun hua, aur iske peeche kya hai?", "To ab aap iski wajah jaante hain."),
-              ("Kaun kya keh raha hai?", "To ye the alag alag paksh."),
-              ("Aapke liye iska kya matlab hai?", "")]
+# every video picks one of these, so they don't all follow one formula
+SHAPES_BY_KIND = {
+    "explainer": {
+        "journey": "एक चीज़ के पीछे-पीछे चलो, शुरू से अंत तक, जैसे कोई सफ़र हो। हर हिस्सा सफ़र का अगला पड़ाव है।",
+        "mystery": "एक हैरान करने वाली बात से शुरू करो, फिर एक-एक परत खोलो। असली जवाब आखिरी हिस्से में मिले।",
+        "myth": "पहले वो बताओ जो ज़्यादातर लोग मानते हैं, फिर दिखाओ कि असल में क्या होता है।",
+        "what_if": "पहले दिखाओ कि ये न हो तो ज़िंदगी कैसे रुक जाएगी, फिर समझाओ कि ये चलता कैसे है।",
+        "build_up": "सबसे आसान बात से शुरू करो, और हर हिस्से में उसी पर एक नई बात जोड़ो।",
+    },
+    "scam": {
+        "the_trap": "एक आम इंसान के साथ ये जाल कैसे बिछता है, कदम दर कदम दिखाओ, जैसे कहानी। फिर बचने का रास्ता।",
+        "thief_view": "ठग के नज़रिए से समझाओ: वो क्या चाहता है, कैसे भरोसा जीतता है, और कहां पकड़ा जा सकता है।",
+        "warning_signs": "इस ठगी के निशान एक-एक करके दिखाओ, हर निशान के साथ समझाओ कि वो क्यों खतरनाक है।",
+    },
+    "news": {
+        "timeline": "जो हुआ उसे समय के क्रम में बताओ: पहले क्या, फिर क्या, और अब क्या।",
+        "two_sides": "पहले मुद्दा साफ़ करो, फिर एक-एक करके हर पक्ष की बात, बिना तरफ़ लिए।",
+        "why_it_matters": "पहले खबर, फिर इसकी पृष्ठभूमि, और आखिर में आम आदमी पर असर।",
+    },
+}
+MUST_COVER = {"scam": "इनमें ये तीन बातें ज़रूर आएं, पर अपने शब्दों में: ठगी कैसे होती है, इसे कैसे पहचानें और बचें, और फंस जाएं तो क्या करें।",
+              "news": "इनमें ये ज़रूर आए: क्या हुआ, क्यों हुआ, कौन क्या कह रहा है, और आम आदमी पर क्या असर होगा।"}
+# hooks the intro writer can try
+HOOKS = {"fact": "नोट्स की सबसे चौंकाने वाली बात से शुरू करो, सीधे पहले वाक्य में।",
+         "moment": "सुनने वाले की रोज़ की एक छोटी सी हरकत से शुरू करो (\"आप\" से बात करते हुए), और तुरंत बताओ कि उसके पीछे क्या छिपा है।",
+         "myth": "जो ज़्यादातर लोग गलत मानते हैं, उससे शुरू करो, और अगले वाक्य में उसे पलट दो।",
+         "stakes": "ये बताकर शुरू करो कि इसके न होने या गड़बड़ होने से सुनने वाले का क्या नुकसान होगा।",
+         "news": "सीधे खबर से शुरू करो: एक वाक्य में क्या हुआ। कोई कल्पना, किरदार या बातचीत मत बनाओ।"}
+INTRO_BANNED = re.compile(r"सोचो|सोचिए|क्या आप जानते|आज हम|इस वीडियो में|नमस्ते|दोस्तों|स्वागत|जादू|चलिए शुरू|आज के")
+# spoken before each section, so no two videos move on with the same words
+FIRST_LINES = ["सबसे पहले बात इसकी: {t}", "शुरुआत यहीं से होती है: {t}", "तो पहली बात: {t}", "कहानी यहां से शुरू होती है: {t}"]
+NEXT_LINES = ["अब आगे बढ़ते हैं: {t}", "लेकिन कहानी यहीं खत्म नहीं होती: {t}", "तो अब सवाल ये है: {t}", "अब असली बात: {t}", "और अब अगली बात: {t}"]
+LAST_LINES = ["और अब सबसे काम की बात: {t}", "आखिर में ये जान लीजिए: {t}", "और अब वो बात, जो आपके काम आएगी: {t}"]
+CHAPTER_LABELS = ["Agla padaav", "Ab aage", "Asli baat", "Dhyan dijiye", "Yahan se samjhiye", "Agli baat"]
+ASK_LINES = ["कमेंट में बताइए, इसमें आपको सबसे हैरान किस बात ने किया?", "कमेंट में बताइए, ये बात आपको पहले से पता थी या नहीं?",
+             "कमेंट में बताइए, अगली बार आप किस चीज़ के बारे में जानना चाहते हैं?", "इसे उस इंसान को ज़रूर भेजिए, जिसे ये जानना चाहिए।"]
+SCAM_ASK = ["कमेंट में बताइए, क्या आपके पास कभी ऐसा कुछ आया है?", "इसे अपने घरवालों को ज़रूर भेजिए, ताकि वो इस जाल में न फंसें।"]
+SUBSCRIBE = ["ऐसी ही आसान बातों के लिए स्नैक कोड को सब्सक्राइब कर लीजिए।", "हर संडे ऐसी ही एक नई बात के लिए स्नैक कोड से जुड़े रहिए।"]
+FOREIGN_LETTERS = re.compile(r"[\u0400-\u04FF\u0600-\u06FF\u0980-\u0DFF\u0E00-\u30FF\u4E00-\u9FFF]")   # Russian, Arabic, Bengali, Chinese...
 # dictionary Hindi nobody says out loud; the writer gets asked to use everyday words instead
 BOOKISH_WORDS = re.compile(r"वैश्विक|प्रणाली|गंतव्य|अनुरोध|प्रदान|विभाजित|सुगम|उपकरण|आदान-प्रदान|सूचनाओं|उपयोगकर्ता|"
-                           r"जटिल|सिद्धांत|संप्रेषण|अभिगम|माध्यम से|विभिन्न|उपलब्ध|महत्वपूर्ण")
+                           r"जटिल|सिद्धांत|संप्रेषण|अभिगम|माध्यम से|विभिन्न|उपलब्ध|महत्वपूर्ण|जादुई|जादू|खजाना")
 LOADED_WORDS = re.compile(r"चोर|गद्दार|देशद्रोही|निकम्मा|झूठे?\b|घटिया|बेवकूफ़?|देश का दुश्मन")
 EXPLAINER_PARTS = [("{subject} hai kya?", "To ye tha iska seedha matlab."),
                    ("{subject} kaam kaise karta hai?", "To ab aap iska poora raasta jaante hain."),
                    ("Aapki zindagi mein {subject} ka kya matlab hai?", "")]
 # instructions the model sometimes reads out instead of following
-LEAKED_TEXT = re.compile(r"viewer ko|aapke saath ye hua|research notes|direction:|\bhissa\b|\bscene\b|"
+LEAKED_TEXT = re.compile(r"चाय पर|दिलचस्प (कहानी|सवाल|बात)|हैरान हो गए होंगे|आप सोच रहे होंगे|अद्भुत|अप्रासंगिक|अनावश्यक|वीडियो के लिए|viewer ko|aapke saath ye hua|research notes|direction:|\bhissa\b|\bscene\b|"
                          r"\bkahani ka\b|\bsummary\b|रिसर्च नोट्स|व्यूअर|दर्शक को|ये हिस्सा|सारांश|दिशा\s*:|बोल चुके हो", re.I)
 HINDI_WORDS = set("""hai hain ho hota hoti hote ka ki ke ko se mein me par aur ya to ye yeh wo woh is us nahi na kya kaise
 kyun kyunki aap apna apne apni karo karein kar karna karta karte raha rahe rahi tha thi the lekin agar jab phir isliye
@@ -247,84 +278,71 @@ def valid_visuals(scene):
     return [v for v in scene.get("visuals", []) if v in VISUAL_TYPES and v != "title"]
 
 
-def make_outline(title, hint, notes, minutes, is_scam, kind="explainer"):
-    """Plan: opening story -> a roadmap of questions -> one part per question -> ending."""
-    log("2/5 Outline")
-    n_scenes = max(5, min(18, round(minutes * 1.7)))
-    set_parts = (SCAM_PARTS if is_scam else NEWS_PARTS if kind == "news"
-                 else EXPLAINER_PARTS if re.search(EXPLAINER_WORDS, title.lower()) else None)
-    fixed = ("Ye 3 parts bilkul isi order mein rakho:\n" + "\n".join(f"{i + 1}. {q}" for i, (q, _) in enumerate(set_parts))
-             if set_parts else "3 parts banao. Har part ek aisa sawaal ho jo aam aadmi sach mein poochega.")
-    system = f"""Tum Snack Code YouTube channel ke story planner ho (tech aur online safety, simple Hinglish).
-Video ek kahani ki tarah chalega, jo koi bhi samajh sake. About {minutes} minute, kul {n_scenes} scenes.
+def choice_for(title, options, salt=""):
+    """A choice that differs from video to video, but stays the same if the same video is redone."""
+    return options[int(hashlib.md5(f"{title}{salt}".encode()).hexdigest(), 16) % len(options)]
 
-Structure:
-- opening (1-2 scenes): ek aam insaan ka pal, jaise "Socho, aap raat ko phone dekh rahe ho...", phir khatra kya hai.
-  Ye "Socho" wali kalpana hai, asli case nahi: koi naam, rupaye ya number mat banao.
-- parts: {fixed} Har part mein 1-3 scenes. Har scene pichhle scene se aage badhe.
-- "recap": us part ke end par bolne wali 1 chhoti line, jo batati hai abhi kya samjha ("To ye tha ... ka tareeka.").
-- "on_screen": bolchaal ki baat jo viewer turant samjhe, Roman script mein. "Stats & signs" jaisa label nahi.
-- "goal": is scene mein kaunsi EK baat batani hai.
-Sirf research notes ke facts. Notes mein koi asli case ho tabhi use karo, aur number bhi wahi jo notes mein hai.
-Visuals inme se: {', '.join(v for v in VISUAL_TYPES if v != 'title')}.
-"subject": video jis cheez ke baare mein hai, 1-2 words, jaise "Internet" ya "UPI".
-JSON:
-{{"subject": "...", "opening": [{{"on_screen": "...", "goal": "...", "visuals": ["..."]}}],
- "parts": [{{"question": "...", "recap": "...", "scenes": [{{"on_screen": "...", "goal": "...", "visuals": ["..."]}}]}}],
- "ending": {{"on_screen": "...", "goal": "poori kahani ki 1-2 line mein yaad"}}}}"""
+
+def make_outline(title, hint, notes, minutes, is_scam, kind="explainer"):
+    """Plan a video: a shape for its story, and however many sections its facts really need."""
+    log("2/5 Outline")
+    shape_name = choice_for(title, list(SHAPES_BY_KIND[kind]), "shape")
+    shape = SHAPES_BY_KIND[kind][shape_name]
+    most = 2 if minutes <= 2.5 else 3 if minutes <= 4 else 4 if minutes <= 7 else 5
+    least = 3 if kind in ("scam", "news") else 2
+    sections = max(least, choice_for(title, list(range(2, most + 1)) or [2], "count"))
+    must = MUST_COVER.get(kind, "")
+    system = f"""तुम Snack Code YouTube चैनल के कहानी प्लानर हो। वीडियो करीब {minutes} मिनट का है, और देखने वाला इस विषय में बिल्कुल नया है।
+कहानी का तरीका: {shape}
+{sections} हिस्से बनाओ। {must}
+"title": उस हिस्से का बोलचाल का छोटा शीर्षक, 3 से 7 शब्द, देवनागरी में। इसे सुनकर जानने का मन करे। हर शीर्षक अलग ढंग का हो, और हर बार "क्या" या "कैसे" से शुरू न हो।
+"points": इस हिस्से में क्या क्या समझाना है: 2 से 4 बातें, सिर्फ़ रिसर्च नोट्स के तथ्य।
+"ending": पूरे वीडियो की सबसे काम की बात, एक वाक्य में।
+JSON: {{"sections": [{{"title": "...", "points": ["..."]}}], "ending": "..."}}"""
 
     def ok(d):
-        parts = d.get("parts")
-        return (isinstance(d.get("opening"), list) and d["opening"] and isinstance(parts, list)
-                and len(parts) >= 2 and (not set_parts or len(parts) == len(set_parts))
-                and all(isinstance(p, dict) and p.get("question") and p.get("scenes") for p in parts))
+        parts = d.get("sections")
+        return (isinstance(parts, list) and len(parts) >= 2
+                and all(isinstance(p, dict) and str(p.get("title") or "").strip() and p.get("points") for p in parts))
 
-    data = llm(system, f"Video title: {title}\nDirection: {hint or '-'}\n\nResearch notes:\n{notes[:9000]}",
-               check=ok, max_tokens=3000)
+    data = llm(system, f"वीडियो: {title}\n{hint}\n\nरिसर्च नोट्स:\n{notes[:9000]}", check=ok, max_tokens=2000, model=WRITER_MODEL)
     source = f"{title} {hint} {notes}"
 
-    def scene(s):
-        out = {"on_screen": str(s.get("on_screen") or "").strip(), "goal": str(s.get("goal") or "").strip(),
-               "visuals": valid_visuals(s)}
-        bad = unsupported_numbers(f"{out['on_screen']} {out['goal']}", source)
-        if bad:  # the planner invented it: warn the writer instead of passing it on
-            out["goal"] += f" (Ye number notes mein nahi hai, use mat karna: {', '.join(bad)})"
-        return out
+    def goal_for(points):
+        text = "\n".join(f"- {p}" for p in (points if isinstance(points, list) else [points]))
+        bad = unsupported_numbers(text, source)
+        return text + (f"\n(ये नंबर नोट्स में नहीं हैं, इस्तेमाल मत करना: {', '.join(bad)})" if bad else "")
 
-    parts = data["parts"][:4]
-    if set_parts:
-        subject = str(data.get("subject") or "").strip()
-        subject = subject if subject and len(subject.split()) <= 3 else "Ye"
-        for p, (q, recap) in zip(parts, set_parts):
-            p["question"], p["recap"] = q.replace("{subject}", subject), recap
-    questions = [str(p["question"]).strip() for p in parts]
-    plan = [scene(s) for s in data["opening"][:2] if isinstance(s, dict) and s.get("on_screen")]
-    plan[-1]["roadmap"] = questions
+    parts = data["sections"][:sections + 1]
+    plan = [{"on_screen": title, "goal": "", "opening": True, "shape": shape_name}]
     for n, p in enumerate(parts):
-        recap = str(parts[n - 1].get("recap") or "").strip() if n else ""
-        plan.append({"kind": "part", "part": n + 1, "total": len(parts), "on_screen": questions[n], "recap": recap})
-        plan += [scene(s) for s in p["scenes"][:3] if isinstance(s, dict) and s.get("on_screen")]
-    end = data.get("ending") if isinstance(data.get("ending"), dict) else {}
-    plan.append({"on_screen": str(end.get("on_screen") or "Yaad rakhne wali baat"),
-                 "goal": str(end.get("goal") or "Poori kahani ki 1-2 line mein yaad"), "visuals": [], "ending": True})
-    log(f"    {len(plan)} scenes planned, {len(parts)} parts: " + " / ".join(questions))
+        heading = " ".join(str(p["title"]).split())
+        heading = heading if has_devanagari(heading) else to_hindi(heading)[0]
+        plan.append({"kind": "part", "part": n + 1, "total": len(parts), "title_hi": heading, "on_screen": to_roman(heading)})
+        plan.append({"on_screen": to_roman(heading), "goal": goal_for(p["points"])})
+    plan.append({"on_screen": "Yaad rakhne wali baat", "goal": goal_for(data.get("ending") or "पूरी बात की एक लाइन में याद"), "ending": True})
+    log(f"    Shape: {shape_name}; {len(parts)} sections: " + " / ".join(p["on_screen"] for p in plan if p.get("kind") == "part"))
     return plan
 
 
 # ---------------------------------------------------------------- 3. the story, then beats and visuals
 # Written as plain text, not JSON, and one part at a time: the model tells a far better story this way.
-STORY_STYLE = """तुम एक अच्छे कहानी सुनाने वाले हो, जो अपने मम्मी-पापा को चाय पर समझा रहे हो। उन्हें ये विषय पहली बार सुनना है।
+STORY_STYLE = """तुम एक अच्छे कहानी सुनाने वाले हो। सुनने वाले को ये विषय पहली बार सुनना है, और उसे टेक का कोई ज्ञान नहीं।
 सिर्फ़ बोलने वाला टेक्स्ट लिखो, देवनागरी में: बोलचाल की आसान हिंदी। कोई हेडिंग, लिस्ट, bold या JSON नहीं। सुनने वाले को "आप" कहो।
 - इंग्लिश के आम शब्द वैसे ही देवनागरी में लिखो: फ़ोन, वेबसाइट, डेटा, सर्वर। उनका शुद्ध हिंदी अनुवाद मत करो।
 - छोटे नाम कैपिटल रोमन में रखो: DNS, UPI, IP। नंबर अंकों में: 3, 1930। वेबसाइट के पते रोमन में।
 - छोटे वाक्य, हर वाक्य 12 शब्दों से कम। लिंग और वचन सही रखो।
-- हर बात ऐसे समझाओ: क्या है, क्यों होता है, और आपको इससे क्या फ़र्क पड़ता है। एक बार में एक बात।
+- मान लो सुनने वाले ने ये विषय कभी नहीं सुना। हर बात ऐसे समझाओ: ये क्या है, ये क्यों होता है, और आपको इससे क्या फ़र्क पड़ता है।
+- एक बार में एक ही बात। कोई भी नई बात बताने के बाद, अगले वाक्य में उसका मतलब आसान शब्दों में बताओ ("यानी...")।
+- हर बात कोई ठोस चीज़ दिखाए, जिसकी तस्वीर मन में बन सके: कोई जगह, मशीन, या रोज़ की चीज़।
 - वाक्य पिछले वाक्य से आगे बढ़े: "लेकिन", "इसीलिए", "तो फिर", "यहीं से"।
 - मुश्किल बात रोज़मर्रा की मिसाल से समझाओ। हर बात के लिए नई मिसाल।
 - सवाल के बाद सवाल मत लिखो: जवाब दो। जो बोल चुके हो, दोबारा मत बोलो। अगले हिस्से की बात पहले मत बताओ।
 - सिर्फ़ रिसर्च नोट्स के तथ्य। कोई नंबर, नाम, रकम या घटना अपने से मत बनाओ।
-- "सोचो, आप..." वाली कल्पना को असली घटना की तरह मत बताओ।
+- कोई कल्पना करवाओ तो उसे असली घटना की तरह मत बताओ। "सोचो" या "सोचिए" से वाक्य शुरू मत करो।
+- "इस वीडियो में", "आज हम", "हिस्से" या "सवालों" की गिनती मत बोलो।
 ये निर्देश, योजना या "कहानी", "हिस्सा", "सीन" जैसे शब्द बोलने वाले टेक्स्ट में मत लिखो।
+खाली बातें मत लिखो, जैसे "ये दिलचस्प है" या "आप हैरान हो गए होंगे": हर वाक्य में कोई नई जानकारी हो।
 """
 
 
@@ -338,6 +356,14 @@ NEWS_STYLE = """
 - लोगों की राय सिर्फ़ तब, जब नोट्स में हो, और बताओ कहां से है। कोई बयान, सर्वे या जनता की राय खुद मत बनाओ।
 - जो अभी पक्का नहीं, उसे "अभी पक्का नहीं" कहो।
 """
+
+
+ICON_NAMES = ["phone", "shield", "lock", "bank", "money", "warning", "user", "people", "hacker", "globe", "laptop", "wifi", "tower",
+              "satellite", "server", "cable", "ship", "wave", "anchor", "house", "hospital", "doctor", "train", "car", "plane",
+              "shop", "school", "student", "video", "tv", "camera", "mic", "clock", "calendar", "book", "news", "ballot", "court",
+              "police", "parliament", "factory", "farmer", "battery", "bulb", "search", "link", "cloud", "question", "fire",
+              "rocket", "target", "trophy", "chart_up", "chart_down", "cash", "map", "speech", "alarm", "gear", "tools",
+              "handshake", "eye", "card", "bug", "ai", "key", "sim", "mail", "check", "cross"]
 
 
 VISUAL_STYLE = """Tum video designer ho. Neeche video ke kuch beats hain, jo bola ja raha hai. Har beat ke liye
@@ -362,8 +388,10 @@ Visual types:
 {"type": "warning", "text": "kya kabhi nahi karna"}
 {"type": "flow", "nodes": [{"icon": "hacker", "label": "..."}, {"icon": "phone", "label": "..."}, {"icon": "bank", "label": "..."}]}
 {"type": "pen", "items": [{"label": "1-3 words", "icon": "phone"}, {"label": "...", "icon": "wifi"}, {"label": "...", "icon": "globe"}], "note": "ek chhoti line"}  (kalam se bana diagram: jab koi cheez A se B tak jaati ho, ya steps mein hoti ho)
+{"type": "symbols", "items": [{"icon": "ship", "label": "1-3 words"}, {"icon": "cable", "label": "..."}]}  (2-3 asli jaise dikhne wale symbols: jab beat kai cheezon ka naam le)
 {"type": "photo", "query": "2-3 English words", "caption": "1-4 words Roman"}  (asli photo: jab beat kisi cheez ya jagah ki baat kare, jaise "mobile tower", "hospital ward", "data center", "fiber optic cable")
-Icons (sirf ye): phone, shield, lock, bank, money, warning, user, hacker, globe, laptop, wifi, chip, ram, bug, ai, key, sim, mail, check, cross
+Icons (sirf ye): phone, shield, lock, bank, money, warning, user, people, hacker, globe, laptop, wifi, tower, satellite, server, cable, ship, wave, anchor, house, hospital, doctor, train, car, plane, shop, school, student, video, tv, camera, mic, clock, calendar, book, news, ballot, court, police, parliament, factory, farmer, battery, bulb, search, link, cloud, question, fire, rocket, target, trophy, chart_up, chart_down, cash, map, speech, alarm, gear, tools, handshake, eye, card, chip, ram, bug, ai, key, sim, mail, check, cross
+"hacker" sirf thagi ya crime wali baat mein. "compare" sirf jab do cheezon ka sach mein farak bataya ja raha ho. "steps" sirf jab sach mein kadam gine ja rahe hon.
 
 JSON, beats ki ginti utni hi jitni di gayi:
 {"on_screen": "...", "beats": [{"visual": {"type": "..."}, "mood": "...", "pop": "..."}]}"""
@@ -398,7 +426,7 @@ def drop_repeats(text, earlier):
     openings = set()
     for s in sentences(text):
         latin_words = re.findall(r"\b[a-z]{2,}\b", s)
-        if LEAKED_TEXT.search(s) or len(latin_words) > max(2, len(s.split()) * 0.3):
+        if LEAKED_TEXT.search(s) or FOREIGN_LETTERS.search(s) or len(latin_words) > max(2, len(s.split()) * 0.3):
             continue   # read-out instructions, or a sentence that slipped into Roman
         start = " ".join(s.lower().split()[:3])
         if len(s.split()) > 3 and start in openings:   # "Internet ke baare mein..." again and again
@@ -417,6 +445,8 @@ def story_problems(text, words, source, earlier, opening, kind="explainer"):
     latin = re.findall(r"\b[a-z]{3,}\b", re.sub(WEB_ADDRESS, "", text))
     if not has_devanagari(text) or len(latin) > len(tokens) * 0.1:
         problems.append("सिर्फ़ देवनागरी में लिखो। इंग्लिश शब्द भी देवनागरी में।")
+    if re.search(r"(^|\s)(तुम|तुम्हारे|तुम्हारा|तुम्हारी|तुम्हें)(\s|$)", text):
+        problems.append('"तुम" मत लिखो: सुनने वाले को हमेशा "आप" कहो।')
     bookish = sorted(set(BOOKISH_WORDS.findall(text)))
     if bookish:
         problems.append(f"ये किताबी शब्द हैं: {', '.join(bookish)}। रोज़ की बोलचाल के शब्द लिखो।")
@@ -432,6 +462,64 @@ def story_problems(text, words, source, earlier, opening, kind="explainer"):
     return problems
 
 
+# how often a video may use a card, so it doesn't feel like one template
+VISUAL_LIMITS = {"compare": 2, "steps": 2, "flow": 3, "kinetic": 3, "host": 2, "warning": 3, "stat": 3, "icon": 4, "chat": 2,
+                 "phone_call": 1, "phone_sms": 2}
+CONTRAST = re.compile(r"\b(vs|farak|fark|jabki|banam|antar)\b|फ़र्क|फर्क|अंतर|जबकि|बनाम|लेकिन", re.I)
+PHOTO_EVERY = 4   # a real photo at least this often
+
+
+def balance_visuals(scenes, title, source):
+    """Mix the pictures: limit repeated cards, drop ones that don't fit, and bring in real photos and symbols."""
+    beats = [b for s in scenes for b in s["beats"]]
+    free = [b for b in beats if not b.get("locked") and (b.get("visual") or {}).get("type") not in ("title", "map")]
+    counts, swap = {}, []
+    previous = None
+    since_photo = 0
+    for b in beats:
+        kind_of = (b.get("visual") or {}).get("type")
+        if b.get("locked") or kind_of in ("title", "map"):
+            previous = kind_of
+            continue
+        counts[kind_of] = counts.get(kind_of, 0) + 1
+        since_photo = 0 if kind_of == "photo" else since_photo + 1
+        too_many = counts[kind_of] > VISUAL_LIMITS.get(kind_of, 99)
+        misfit = (kind_of == "compare" and not CONTRAST.search(b.get("say_hi", ""))) or not kind_of
+        if too_many or misfit or kind_of == previous or since_photo >= PHOTO_EVERY:
+            swap.append(b)
+            since_photo = 0
+        else:
+            previous = kind_of
+            continue
+        previous = None
+    if not swap:
+        return
+    system = ("Tum video designer ho. Har line ke liye JSON do: query = us line ke liye asli photo dhoondhne ke 2-3 aam English words: aisi cheez ya jagah jiski photo khinch sake, "
+              "jaise 'smartphone in hand', 'bank building', 'fiber optic cable', 'cargo ship'. 'fake website' ya 'ip address' jaisi cheez nahi, "
+              "aur koi insaan, company ya logo nahi; symbols = 2-3 items, har ek mein 'icon' (is list se: "
+              + ", ".join(ICON_NAMES) + ") aur 'label' (1-3 Roman Hinglish words). Koi nayi baat ya number nahi. "
+              'JSON: {"lines": [{"query": "...", "symbols": [{"icon": "...", "label": "..."}]}]}')
+    for start in range(0, len(swap), 10):
+        batch = swap[start:start + 10]
+        user = "\n".join(f"{n + 1}. {b['say']}" for n, b in enumerate(batch))
+        try:
+            lines = llm(system, user, ctx=4096, max_tokens=1500, retries=2, temperature=0.4,
+                        check=lambda d: isinstance(d.get("lines"), list) and len(d["lines"]) == len(batch))["lines"]
+        except RuntimeError:
+            lines = [{} for _ in batch]
+        for n, (b, line) in enumerate(zip(batch, lines)):
+            query = str(line.get("query") or "").strip() if isinstance(line, dict) else ""
+            items = line.get("symbols") if isinstance(line, dict) else None
+            items = [i for i in items if isinstance(i, dict) and i.get("icon") in ICON_NAMES and i.get("label")] if isinstance(items, list) else []
+            usable_query = re.fullmatch(r"[A-Za-z][A-Za-z ,-]{2,40}", query)
+            if usable_query and (n % 2 == 0 or len(items) < 2):
+                b["visual"] = {"type": "photo", "query": query, "caption": " ".join(b["say"].split()[:4]).rstrip(",.?!")}
+            elif len(items) >= 2:
+                b["visual"] = {"type": "symbols", "items": items[:3]}
+            else:
+                b["visual"] = {}
+
+
 def explain_terms(made, explained):
     """Right after a hard word is first said, stop and explain it with its own visual."""
     out = []
@@ -445,12 +533,22 @@ def explain_terms(made, explained):
             while entry:   # a line can bring in several hard words: explain each one
                 explained.add(entry["term"])
                 beats.append({"say": entry["say"], "say_hi": entry["say_hi"], "visual": term_visual(entry),
-                              "mood": "explain"})
+                              "mood": "explain", "locked": True})
                 entry = find_new_term(b["say"], explained)
         # animate.py shows at most 5 beats in a scene
         for k in range(0, len(beats), 5):
             out.append({**sc, "beats": beats[k:k + 5]})
     return out
+
+
+def clean_written(text, told):
+    """Tidy what the writer returned: markup, Devanagari digits, stray English, and anything already said."""
+    text = text.translate(str.maketrans("०१२३४५६७८९", "0123456789"))
+    text = re.sub(r"\s*\([^)]*\)", "", text)   # "DNS (DNS)", "SIR (Special Intensive Revision)"
+    text = re.sub(r"(^|\s)-\s+", r"\1", text)   # list dashes
+    text = text.replace("...", ",")
+    text = to_hindi(text)[0]   # any stray English word gets its Devanagari spelling
+    return drop_repeats(" ".join(re.sub(r"[*_#\"“”‘’']", "", text).split()), told)
 
 
 def write_part(title, hint, notes, goal, words, told, opening, kind="explainer"):
@@ -468,12 +566,7 @@ def write_part(title, hint, notes, goal, words, told, opening, kind="explainer")
         except RuntimeError as e:
             log(f"    no usable answer: {str(e)[:80]}")
             continue
-        text = text.translate(str.maketrans("०१२३४५६७८९", "0123456789"))
-        text = re.sub(r"\s*\([^)]*\)", "", text)   # "DNS (DNS)", "SIR (Special Intensive Revision)"
-        text = re.sub(r"(^|\s)-\s+", r"\1", text)   # list dashes
-        text = re.sub(r"सोचो,?\s*आप(\.\.\.|!|,)", "सोचो,", text).replace("...", ",")
-        text = to_hindi(text)[0]   # any stray English word gets its Devanagari spelling
-        text = drop_repeats(" ".join(re.sub(r"[*_#\"“”‘’']", "", text).split()), told)
+        text = clean_written(text, told)
         found = story_problems(text, words, source, told, opening, kind)
         if not best or len(found) < len(problems):
             best, problems = text, found
@@ -550,22 +643,7 @@ def add_visuals(says, heading, source):
 
 
 # fixed lines, written by hand so the voice is always right
-FIXED_HI = {
-    "Chaliye, pehle sawaal se shuru karte hain.": "चलिए, पहले सवाल से शुरू करते हैं।",
-    "Ab agla sawaal.": "अब अगला सवाल।",
-    "Ab aakhri aur sabse kaam ka sawaal.": "अब आखिरी और सबसे काम का सवाल।",
-    "Ye scam hota kaise hai?": "ये स्कैम होता कैसे है?",
-    "Isko pehchanein aur bachein kaise?": "इसको पहचानें और बचें कैसे?",
-    "Agar fas gaye to kya karein?": "अगर फँस गए तो क्या करें?",
-    "To ye tha scam ka poora khel.": "तो ये था स्कैम का पूरा खेल।",
-    "To ab aap iske nishan pehchante hain.": "तो अब आप इसके निशान पहचानते हैं।",
-    "Is video mein 3 sawaalon ke jawab milenge.": "इस वीडियो में तीन सवालों के जवाब मिलेंगे।",
-    "Aur agar aapke ya kisi apne ke saath aisa ho jaye, to turant 1930 par call kijiye, aur cybercrime.gov.in par complaint kijiye.":
-        "और अगर आपके या किसी अपने के साथ ऐसा हो जाए, तो तुरंत 1930 पर कॉल कीजिए, और cybercrime.gov.in पर शिकायत कीजिए।",
-    "Comment mein batao, kya aapke paas kabhi aisa kuch aaya hai?": "कमेंट में बताओ, क्या आपके पास कभी ऐसा कुछ आया है?",
-    "Comment mein batao, aapko sabse hairan kis baat ne kiya?": "कमेंट में बताओ, आपको सबसे हैरान किस बात ने किया?",
-    "Aur aisi hi baatein jaanne ke liye Snack Code ko subscribe kar lo.": "और ऐसी ही बातें जानने के लिए स्नैक कोड को सब्सक्राइब कर लो।",
-}
+FIXED_HI = {}
 WEB_ADDRESS = r"[a-zA-Z0-9.-]*\.(?:gov|in|com|org|net)\b"
 
 
@@ -581,29 +659,110 @@ def fixed_beat(say, visual, mood="explain"):
     return {"say": say, "visual": visual, "mood": mood}
 
 
-def part_scene(sc):
-    """The line break: says what the viewer just learned, and which question comes next."""
-    if sc["part"] == 1:
-        lead = "Chaliye, pehle sawaal se shuru karte hain."
-    else:
-        nxt = "Ab aakhri aur sabse kaam ka sawaal." if sc["part"] == sc["total"] else "Ab agla sawaal."
-        lead = f"{sc.get('recap', '')} {nxt}".strip()
-    return {"on_screen": sc["on_screen"], "beats": [fixed_beat(
-        f"{lead} {sc['on_screen']}", {"type": "chapter", "part": sc["part"], "total": sc["total"]}, "think")]}
+def part_scene(sc, title):
+    """The break between two sections, in words that change from video to video."""
+    n, total = sc["part"], sc["total"]
+    pool = FIRST_LINES if n == 1 else LAST_LINES if n == total else NEXT_LINES
+    heading = sc.get("title_hi") or to_hindi(sc["on_screen"])[0]
+    hindi = choice_for(title, pool, f"line{n}").replace("{t}", heading)
+    label = "Sabse pehle" if n == 1 else "Aakhri baat" if n == total else choice_for(title, CHAPTER_LABELS, f"label{n}")
+    return {"on_screen": sc["on_screen"], "beats": [{"say": to_roman(hindi), "say_hi": hindi, "locked": True,
+                                                     "visual": {"type": "chapter", "label": label}, "mood": "think"}]}
 
 
-def ending_scene(is_scam):
+def ending_scene(title, is_scam):
     beats = []
     if is_scam:
-        beats.append(fixed_beat("Aur agar aapke ya kisi apne ke saath aisa ho jaye, to turant 1930 par call kijiye, "
-                                "aur cybercrime.gov.in par complaint kijiye.",
-                                {"type": "stat", "value": "1930", "label": "Cybercrime helpline | cybercrime.gov.in"}, "warn"))
-        ask = "Comment mein batao, kya aapke paas kabhi aisa kuch aaya hai?"
-    else:
-        ask = "Comment mein batao, aapko sabse hairan kis baat ne kiya?"
-    beats.append(fixed_beat(f"{ask} Aur aisi hi baatein jaanne ke liye Snack Code ko subscribe kar lo.",
-                            {"type": "host", "text": "Comment karo aur subscribe karo"}, "happy"))
-    return {"on_screen": "Ye yaad rakhna" if is_scam else "Aapko kya laga?", "beats": beats}
+        hindi = "और अगर आपके या किसी अपने के साथ ऐसा हो जाए, तो तुरंत 1930 पर कॉल कीजिए, और cybercrime.gov.in पर शिकायत कीजिए।"
+        beats.append({"say": to_roman(hindi), "say_hi": hindi, "locked": True, "mood": "warn",
+                      "visual": {"type": "stat", "value": "1930", "label": "Cybercrime helpline | cybercrime.gov.in"}})
+    hindi = f"{choice_for(title, SCAM_ASK if is_scam else ASK_LINES, 'ask')} {choice_for(title, SUBSCRIBE, 'sub')}"
+    beats.append({"say": to_roman(hindi), "say_hi": hindi, "locked": True, "mood": "happy",
+                  "visual": {"type": "host", "text": "Comment karo aur subscribe karo"}})
+    return {"on_screen": "Ye yaad rakhna" if is_scam else "Aapki baari", "beats": beats}
+
+
+INTRO_STYLE = """तुम YouTube वीडियो की शुरुआत लिख रहे हो। लोग पहले 30 सेकंड में तय करते हैं कि देखना है या नहीं।
+देवनागरी में, बोलचाल की आसान हिंदी में लिखो। सुनने वाले को हमेशा "आप" कहो।
+JSON में ये चार वाक्य दो:
+"hook": सुनते ही रोकने वाला वाक्य, 4 से 9 शब्द। इसमें विषय की कोई ठोस चीज़ हो।
+"topic": एक वाक्य, 15 शब्दों से कम: ये बात किस बारे में है, ऐसे कि नया इंसान समझ जाए।
+"why": एक वाक्य, 15 शब्दों से कम: इससे आपकी रोज़ की ज़िंदगी में क्या फ़र्क पड़ता है।
+"tease": एक सवाल या अधूरी बात, 12 शब्दों से कम, जिसका जवाब जानने के लिए वो आगे देखे।
+ये शब्द कहीं मत लिखो: सोचिए, सोचो, कल्पना, "क्या आप जानते", "आज हम", "इस वीडियो में", नमस्ते, दोस्तों, जादू।
+ये मत बताओ कि वीडियो में कितने हिस्से या सवाल हैं। सिर्फ़ रिसर्च नोट्स के तथ्य: कोई नंबर, नाम या घटना अपने से मत बनाओ।"""
+
+
+def tidy_hook(line):
+    """"क्या आप जानते हैं कि इंटरनेट..." -> "इंटरनेट...": the fact is stronger without the stock opener."""
+    new = re.sub(r"^क्या (आप|आपको)\s*(जानते हैं|पता है)[,\s]*(कि\s+)?", "", str(line or "").strip())
+    return re.sub(r"\?\s*$", "।", new) if new != str(line or "").strip() else new
+
+
+def intro_problem(slots, source):
+    """Why this set of four sentences can't open the video, or None."""
+    limits = {"hook": 16, "topic": 22, "why": 26, "tease": 24}
+    for name, most in limits.items():
+        line = str(slots.get(name) or "").strip()
+        if not has_devanagari(line) or len(line.split()) > most or len(line.split()) < 3:
+            return f"{name} has the wrong length"
+    text = " ".join(str(slots[n]) for n in limits)
+    if INTRO_BANNED.search(text) or re.search(r"तुम|तू\b", text):
+        return "a banned phrase"
+    if unsupported_numbers(text, source) or BOOKISH_WORDS.search(text) or FOREIGN_LETTERS.search(text):
+        return "an invented number or a bad word"
+    return None
+
+
+def write_intro(title, hint, notes, kind, told):
+    """Build the opening from four checked sentences, try several times, and keep what an editor would pick."""
+    log("    Intro: writing versions")
+    source = f"{title} {hint} {notes}"
+    styles = ["news"] if kind == "news" else list(HOOKS)[:4]
+    start = int(hashlib.md5(title.encode()).hexdigest(), 16) % len(styles)
+    candidates, near = [], []
+    for k in range(9):
+        if len(candidates) == 3:
+            break
+        name = styles[(start + k) % len(styles)]
+        user = f"वीडियो: {title}\n{hint}\n\nरिसर्च नोट्स:\n{notes[:5000]}\n\n\"hook\" का तरीका: {HOOKS[name]}"
+        try:
+            slots = llm(INTRO_STYLE + (NEWS_STYLE if kind == "news" else ""), user, ctx=8192, temperature=0.6 + 0.05 * k,
+                        max_tokens=400, retries=2, model=WRITER_MODEL)
+        except RuntimeError:
+            continue
+        slots = {n: tidy_hook(slots.get(n)) for n in ("hook", "topic", "why", "tease")}
+        problem = intro_problem(slots, source)
+        end = lambda line: line if re.search(r"[।?!]$", line) else line + "।"
+        if problem:
+            log(f"    Intro: try {k + 1} rejected: {problem}")
+            if "length" in problem and all(has_devanagari(slots[n]) for n in slots):   # usable if nothing better comes
+                near.append(" ".join(end(str(slots[n]).strip()) for n in slots))
+            continue
+        end = lambda line: line if re.search(r"[।?!]$", line) else line + "।"
+        candidates.append((name, " ".join(end(str(slots[n]).strip()) for n in ("hook", "topic", "why", "tease"))))
+    if not candidates:
+        clean = [t for t in near if not INTRO_BANNED.search(t) and not unsupported_numbers(t, source)
+                 and not BOOKISH_WORDS.search(t) and not FOREIGN_LETTERS.search(t)]
+        if clean:
+            log("    Intro: using the shortest version; it's longer than ideal")
+            return clean_written(min(clean, key=lambda t: len(t.split())), told), ["Intro: थोड़ी लंबी है। इसे पढ़कर छोटा कीजिए।"]
+        log("    Intro: no version passed the checks")
+        hindi = to_hindi(title)[0]
+        return f"{hindi}?" if not hindi.endswith("?") else hindi, ["Intro: AI से अच्छी शुरुआत नहीं बनी। इसे हाथ से लिखिए।"]
+    if len(candidates) == 1:
+        return clean_written(candidates[0][1], told), []
+    listing = "\n\n".join(f"{n + 1}. {t}" for n, (_, t) in enumerate(candidates))
+    system = ("तुम YouTube एडिटर हो। ये एक वीडियो की शुरुआत के अलग-अलग रूप हैं। वो चुनो जिसे सुनकर आम इंसान रुक जाए, और जो सबसे साफ़ हो। "
+              'JSON: {"best": नंबर}')
+    try:
+        best = int(llm(system, f"वीडियो: {title}\n\n{listing}", ctx=4096, max_tokens=60, temperature=0.2, retries=2,
+                       model=WRITER_MODEL, check=lambda d: str(d.get("best", "")).isdigit()).get("best")) - 1
+    except (RuntimeError, ValueError):
+        best = 0
+    name, text = candidates[best if 0 <= best < len(candidates) else 0]
+    log(f"    Intro: picked the '{name}' version: {text[:80]}")
+    return clean_written(text, told), []
 
 
 def write_scenes(title, hint, notes, outline, minutes, is_scam, proj, kind="explainer"):
@@ -633,22 +792,19 @@ def write_scenes(title, hint, notes, outline, minutes, is_scam, proj, kind="expl
             made = saved[key] if isinstance(saved[key], list) else [saved[key]]
         elif group[0].get("kind") == "part":
             log(f"    {gi + 1}/{len(groups)}: PART {group[0]['part']}: {group[0]['on_screen']}")
-            made = [part_scene(group[0])]
+            made = [part_scene(group[0], title)]
         else:
-            opening = gi == 0
+            opening = bool(group[0].get("opening"))
             ending = bool(group[-1].get("ending"))
-            words = max(30, int(total * len(group) / n_content))
+            words = 30 if ending else max(70, int(total / max(1, n_content - 2)))
             goal = "\n".join(f"- {s.get('goal') or s['on_screen']}" for s in group)
-            if opening and kind == "news":   # a made-up scene has no place in a news story
-                goal = (f"सीधे असली खबर से शुरू करो: नोट्स के हिसाब से एक लाइन में क्या हुआ, और ये जानना क्यों ज़रूरी है। "
-                        f"कोई कल्पना, किरदार या बातचीत मत बनाओ। ({title})\n" + goal)
-            elif opening:
-                goal = (f'"सोचो" शब्द से शुरू करो: एक रोज़मर्रा का पल जो इस विषय से जुड़ा हो ({title})। '
-                        f"{hint}\n" + goal)
             if ending:
                 goal += "\nसिर्फ़ याद दिलाओ, नई बात नहीं। सब्सक्राइब या हेल्पलाइन मत लिखो।"
             log(f"    {gi + 1}/{len(groups)}: writing {group[0]['on_screen'][:60]}")
-            text, problems = write_part(title, hint, notes, goal, words, told, opening, kind)
+            if opening:
+                text, problems = write_intro(title, hint, notes, kind, told)
+            else:
+                text, problems = write_part(title, hint, notes, goal, words, told, False, kind)
             if not text:
                 log(f"    skipped {gi + 1}: no text")
                 continue
@@ -664,13 +820,8 @@ def write_scenes(title, hint, notes, outline, minutes, is_scam, proj, kind="expl
             if opening:
                 made[0]["beats"][0]["visual"] = {"type": "title"}
                 made[0]["on_screen"] = title
-                qs = group[-1].get("roadmap") or []
-                if qs:
-                    made.append({"on_screen": "Aaj in sawaalon ke jawab", "beats": [fixed_beat(
-                        f"Is video mein {len(qs)} sawaalon ke jawab milenge. " + " ".join(qs),
-                        {"type": "steps", "items": qs})]})
             if ending:
-                made.append(ending_scene(is_scam))
+                made.append(ending_scene(title, is_scam))
             if problems:
                 made[0]["review"] = problems
             made = explain_terms(made, explained)
@@ -690,6 +841,11 @@ def write_scenes(title, hint, notes, outline, minutes, is_scam, proj, kind="expl
             scenes.append(sc)
     if not scenes:
         raise RuntimeError("No scenes were written.")
+    balance_visuals(scenes, title, source)
+    log("    Second agent: script editor")
+    changes, left = edit_script(scenes, kind, log)
+    write_report(os.path.join(proj, "scripts"), changes, left)
+    review += [f"- {p}" for p in left]
     review_path = os.path.join(proj, "scripts", "review.md")
     if kind == "news":   # a person has to check this every time, whatever the automatic checks say
         review.insert(0, "- Khabar hai: har naam, tareekh, bayan aur number source link se milao. Dekho ki har paksh "

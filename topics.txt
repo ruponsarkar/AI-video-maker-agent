@@ -18,4 +18,48 @@
 
 # Current Indian political news | Congress VS BJP  | Peoples opinions | minutes=4
 
-Internet Aata Kahan Se Hai? Samundar Ke Neeche Chhupi Internet Ki Duniya | Internet ka infrastructure: submarine fiber optic cables, data centers, ISPs, mobile towers, routers aur satellites. India mein internet kaise pahunchta hai aur duniya kaise connected hai | Real-life examples aur easy animations ke saath beginner-friendly explanation | minutes=9
+# Internet Aata Kahan Se Hai? Samundar Ke Neeche Chhupi Internet Ki Duniya | Internet ka infrastructure: submarine fiber optic cables, data centers, ISPs, mobile towers, routers aur satellites. India mein internet kaise pahunchta hai aur duniya kaise connected hai | Real-life examples aur easy animations ke saath beginner-friendly explanation | minutes=9
+
+
+# One video per line: Title | direction for the AI | minutes=N
+# Lines starting with # are ignored.
+
+# CYBERCRIME & ONLINE SCAMS----------------
+
+# Ek OTP Aur Bank Account Khali: Scam Kaise Hota Hai? | India mein OTP fraud, fake bank calls, phishing links, screen sharing apps aur social engineering. Scammers kaise trust jeette hain, real-life style examples, warning signs aur bachne ke practical steps. Hindi storytelling with suspense | minutes=8
+
+# Digital Arrest: Police Ne Video Call Par Giraftar Kar Liya? | India digital arrest scam explained: fake CBI officers, police uniforms, video calls, money laundering allegations, fake arrest warrants aur paise transfer karne ka pressure. Kaise pehchane aur cybercrime.gov.in par report karein | minutes=9
+
+# QR Code Scan Kiya Aur Paise Kat Gaye? | UPI QR code scam explained: paise receive karne aur send karne ka difference, fake payment screenshots, UPI collect requests aur PIN fraud. Realistic examples aur simple animations ke saath practical safety guide | minutes=6
+
+# WhatsApp Par APK Aaya: Ek File Se Phone Hack? | Fake wedding invitations, traffic challan APK, courier delivery messages aur malicious Android apps. Permissions ka misuse, data theft, banking risks aur phone ko secure rakhne ke practical steps | minutes=7
+
+# AI & FUTURE TECHNOLOGY---------------------
+
+AI Aapki Naukri Kha Jayega Ya Nayi Naukri Dega? | Artificial intelligence ka Indian job market par impact: software developers, customer support, designers, teachers aur students. Automation vs augmentation, new AI careers, skills to learn aur realistic future scenarios | minutes=9
+
+# ChatGPT Sochta Kaise Hai? AI Ke Dimaag Ke Andar | Large language models explained in simple Hinglish: tokens, training data, neural networks, transformers, prediction aur hallucinations. Easy analogies, beginner-friendly animations aur real examples | minutes=8
+
+# Deepfake Video Asli Hai Ya Nakli? 5 Second Mein Kaise Pehchane | AI-generated videos, cloned voices, fake celebrity endorsements aur political deepfakes. Visual warning signs, source verification, reverse image search aur fact-checking tools. Explain why no single detection trick is foolproof | minutes=7
+
+# INTERNET & TECHNOLOGY SECRETS------------------
+
+# Incognito Mode Mein Bhi Aapko Kaun Dekh Sakta Hai? | Browser incognito mode explained: browsing history, cookies, ISP, employer networks, websites aur IP address. Incognito vs VPN vs Tor ka simple comparison, privacy myths aur practical tips | minutes=7
+
+# Google Par Search Karte Hi Result Kaise Aa Jata Hai? | Google Search kaise kaam karta hai: crawling, indexing, ranking, data centers, caching aur search algorithms. Ek search query ki journey ko step-by-step animated storytelling se explain karein | minutes=8
+
+# Phone Airplane Mode Mein Bhi Track Ho Sakta Hai? | Smartphone location technology explained: GPS, Wi-Fi positioning, cell towers, Bluetooth aur offline location networks. Airplane mode kya disable karta hai, kya active reh sakta hai, privacy settings aur common myths | minutes=7
+
+# MONEY, BANKING & INDIA------------------
+
+# Bank Mein Rakha Paisa Asal Mein Kahan Jata Hai? | Indian banking system explained: deposits, loans, interest, RBI regulations, liquidity aur deposit insurance. Agar sab log ek saath paise nikalne aayein to kya hoga? Simple examples and animations | minutes=9
+
+# ₹100 Ka Note Chhapne Mein Kitna Kharcha Aata Hai? | Indian currency printing process: RBI, printing presses, security features, currency production costs, inflation aur government unlimited money kyun nahi chhap sakti. Verified data aur beginner-friendly economics | minutes=7
+
+# UPI Free Hai To PhonePe Aur Google Pay Paise Kaise Kamate Hain? | India UPI business model explained: NPCI, banks, payment apps, merchant services, advertisements, financial product distribution aur transaction economics. Consumer UPI charges ke myths aur actual revenue models | minutes=8
+
+# CURIOSITY & WHAT-IF---------------------
+
+# Agar Duniya Mein GPS Ek Din Ke Liye Band Ho Jaye To? | What-if scenario: GPS outage ka Google Maps, delivery apps, flights, ships, agriculture, telecom timing aur financial systems par impact. Backup navigation systems aur real-world GPS disruptions | minutes=8
+
+# Agar India Mein 24 Ghante Bijli Band Ho Jaye To? | Nationwide power blackout hypothetical: hospitals, metro, railways, mobile networks, ATMs, UPI, water supply aur data centers par effects. Backup generators, power grid recovery aur realistic timeline. Cinematic storytelling | minutes=9

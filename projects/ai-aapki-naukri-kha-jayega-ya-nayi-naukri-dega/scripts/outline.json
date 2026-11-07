@@ -1,0 +1,46 @@
+[
+  {
+    "on_screen": "AI Aapki Naukri Kha Jayega Ya Nayi Naukri Dega?",
+    "goal": "",
+    "opening": true,
+    "shape": "mystery"
+  },
+  {
+    "kind": "part",
+    "part": 1,
+    "total": 3,
+    "title_hi": "AI: नौकरी का क्या होगा?",
+    "on_screen": "AI: naukri ka kya hoga?"
+  },
+  {
+    "on_screen": "AI: naukri ka kya hoga?",
+    "goal": "- India mein AI ki wajahse jobs mei badlave ho rahen hain. Automation aur augmentation ke ek saath, new AI careers bhi ban rahe hai.\n- Machine learning se AI routine aur complex tasks perform karti hai, jo employment landscape ko dynamically change kar sakti hai."
+  },
+  {
+    "kind": "part",
+    "part": 2,
+    "total": 3,
+    "title_hi": "जॉब्स पे इम्पैक्ट: रिस्क और ओपोर्ट्यूनिटी",
+    "on_screen": "Jobs pe impaikt: risk aur oportyuniti"
+  },
+  {
+    "on_screen": "Jobs pe impaikt: risk aur oportyuniti",
+    "goal": "- Informal sector mein workers ke job displacement hone ka risk maximum hai kyunki skills ki kami hoti hai.\n- Automation manufacturing, logistics aur administrative jobs par zyada impact karta hai.  2030 tak 30% jobs automated ho sakti hain."
+  },
+  {
+    "kind": "part",
+    "part": 3,
+    "total": 3,
+    "title_hi": "फ्यूचर की तैयार: स्किल और एडैप्टेबिलिटी",
+    "on_screen": "Phyuchar ki taiyar: skil aur edaiptebiliti"
+  },
+  {
+    "on_screen": "Phyuchar ki taiyar: skil aur edaiptebiliti",
+    "goal": "- AI ki wajahse coding, data analysis aur critical thinking skills ka importance bad raha hai.\n- India ko AI benefits leverage karne ke liye infrastructure aur skilled workforce develop karna padega.  Skill development initiatives bahut zaroori hain."
+  },
+  {
+    "on_screen": "Yaad rakhne wali baat",
+    "goal": "- AI se jo jobs lost ho sakti hain, uske saath-साथ new opportunities bhi create honge - ek balanced approach sahi hoga.",
+    "ending": true
+  }
+]

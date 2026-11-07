@@ -49,10 +49,26 @@ def search(query):
     return list(reply.json().get("query", {}).get("pages", {}).values())
 
 
+def looks_right(path, query):
+    """Ask the local vision model: does it fit, and is it free of faces, slides and big text? Fails open."""
+    try:
+        import ollama
+        ask = ("Look at the photo. Reply JSON: {\"matches\": true/false (clearly shows the subject), "
+               "\"people_main\": true/false (a person or face is a main part), \"text_heavy\": true/false (mostly a chart, "
+               "map, slide, sign, poster, logo or big text), \"clear\": true/false (sharp, well lit, looks professional)}"
+               f"\nSubject: {query}")
+        reply = ollama.chat(model="gemma3:4b", format="json", options={"temperature": 0},
+                            messages=[{"role": "user", "content": ask, "images": [path]}])
+        seen = json.loads(reply["message"]["content"])
+        return bool(seen.get("matches", True)) and not seen.get("people_main") and not seen.get("text_heavy") and seen.get("clear", True) is not False
+    except Exception:
+        return True
+
+
 def choose(pages, query, used):
-    """The usable photo whose title best matches the search words, or None."""
+    """Usable photos, best title match first."""
     words = [w for w in re.findall(r"[a-z]+", query.lower()) if len(w) > 2 and w not in ("map", "diagram", "logo")]
-    best, best_score = None, 0
+    ranked = []
     for page in pages:
         info = (page.get("imageinfo") or [{}])[0]
         meta = info.get("extmetadata", {})
@@ -69,9 +85,9 @@ def choose(pages, query, used):
             continue
         lowered = title.lower()
         score = sum(w in lowered for w in words)
-        if score > best_score:
-            best, best_score = (page, info, licence), score
-    return best if words and best_score >= max(1, len(words) // 2) else None
+        if words and score >= max(1, len(words) // 2):
+            ranked.append((score, len(ranked), page, info, licence))
+    return [r[2:] for r in sorted(ranked, key=lambda r: (-r[0], r[1]))][:5]
 
 
 def download(info, path):
@@ -117,15 +133,26 @@ def fetch_all(redo=False):
                 missed += 1
                 continue
             try:
-                pick = choose(search(query), query, used)
+                path = os.path.join(FOLDER, f"s{i:02d}_b{j:02d}.jpg")
+                pick = None
+                short = " ".join(query.split()[:2])
+                for attempt in dict.fromkeys([f"{query} India", query, short]):   # Indian places first
+                    for page, info, licence in choose(search(attempt), query, used):
+                        download(info, path)
+                        if looks_right(path, query):
+                            pick = (page, info, licence)
+                            break
+                        print(f"  scene {i:02d} beat {j:02d}: rejected {page['title'][:50]}")
+                    if pick:
+                        break
                 if not pick:
-                    print(f"  scene {i:02d} beat {j:02d}: no safe photo for '{query}'")
+                    print(f"  scene {i:02d} beat {j:02d}: no good photo for '{query}'")
                     v.pop("file", None)
+                    if os.path.exists(path):
+                        os.remove(path)
                     missed += 1
                     continue
                 page, info, licence = pick
-                path = os.path.join(FOLDER, f"s{i:02d}_b{j:02d}.jpg")
-                download(info, path)
             except Exception as e:  # no internet or a bad reply: the video still renders without it
                 print(f"  scene {i:02d} beat {j:02d}: couldn't fetch '{query}' ({type(e).__name__})")
                 missed += 1

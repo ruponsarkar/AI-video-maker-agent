@@ -82,6 +82,8 @@ VISUAL_TYPES = {"title", "icon", "phone_call", "phone_sms", "chat", "steps",
                 "compare", "stat", "warning", "flow", "host", "kinetic", "chapter"}
 ICONS = ["phone", "shield", "lock", "bank", "money", "warning", "user", "hacker", "globe",
          "laptop", "wifi", "chip", "ram", "bug", "ai", "key", "sim", "mail", "check", "cross"]
+ICONS += [os.path.basename(p)[:-4] for p in glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "icons", "*.png"))
+          if os.path.basename(p)[:-4] not in ICONS]
 
 PREVIEW = "--preview" in sys.argv
 OUT = "output/preview.mp4" if PREVIEW else "output/animated.mp4"
@@ -263,10 +265,14 @@ _icon_cache = {}
 
 
 def icon_sprite(name, size, color):
-    """Vector icons drawn at 2x and scaled down for smooth edges."""
+    """A realistic 3D icon from assets/icons when there is one, otherwise a vector icon drawn at 2x."""
     name = name if name in ICONS else "shield"
     key = (name, size, color)
     if key in _icon_cache:
+        return _icon_cache[key]
+    realistic = os.path.join(HERE, "assets", "icons", f"{name}.png")
+    if os.path.exists(realistic):
+        _icon_cache[key] = Image.open(realistic).convert("RGBA").resize((size, size), Image.LANCZOS)
         return _icon_cache[key]
     S = size * 2
     img = Image.new("RGBA", (S, S), (0, 0, 0, 0))
@@ -379,6 +385,13 @@ def icon_sprite(name, size, color):
 
 
 KEYWORD_ICONS = [
+    (r"samundar|samudra|\bsea\b|ocean", "wave"), (r"\bship|jahaz", "ship"), (r"cable|taar|fiber|fibre", "cable"),
+    (r"tower|antenna", "tower"), (r"satellite", "satellite"), (r"server|data ?cent", "server"), (r"hospital|aspatal", "hospital"),
+    (r"doctor|ilaaj|patient", "doctor"), (r"train|rail", "train"), (r"school|padhai", "school"), (r"\bghar\b|house", "house"),
+    (r"chunav|election|\bvote", "ballot"), (r"court|adalat|kanoon", "court"), (r"police", "police"),
+    (r"sansad|parliament|sarkar|government", "parliament"), (r"video|youtube|film", "video"), (r"\blog\b|logon|janta|people", "people"),
+    (r"shop|dukan|kharid|bazaar", "shop"), (r"news|khabar", "news"), (r"\bsamay\b|time|ghante|minute|second", "clock"),
+    (r"khoj|search|dhoondh", "search"), (r"cloud", "cloud"), (r"kyun|kya\b|sawaal", "question"), (r"bijli|electric|battery", "battery"),
     (r"hack|hacker|malware|virus|apk", "hacker"), (r"scam|fraud|fake|dhokha|sawdhan|saavdhan|savdhan", "warning"),
     (r"upi|payment|paisa|paise|rupay|money|₹|price|daam|mehng", "money"), (r"bank|account|khata", "bank"),
     (r"otp|password|pin", "lock"), (r"call|phone|mobile|smartphone", "phone"),
@@ -401,7 +414,7 @@ def guess_icon(text):
 SR = 48000
 USE_MASCOT = "--no-mascot" not in sys.argv
 USE_SFX = "--no-sfx" not in sys.argv
-VISUAL_TYPES = VISUAL_TYPES | {"kinetic", "host", "term", "pen", "map", "photo"}
+VISUAL_TYPES = VISUAL_TYPES | {"kinetic", "host", "term", "pen", "map", "photo", "symbols"}
 
 script = json.load(open("scripts/script.json", encoding="utf-8"))
 os.makedirs("output", exist_ok=True)
@@ -426,8 +439,8 @@ MOODS = {"happy", "shock", "think", "warn", "explain"}
 DEFAULT_MOOD = {"title": "shock", "warning": "shock", "phone_sms": "warn", "phone_call": "think",
                 "stat": "shock", "icon": "happy", "kinetic": "explain", "chat": "think", "image": "explain",
                 "host": "explain", "steps": "happy", "compare": "think", "flow": "explain", "chapter": "think",
-                "term": "explain", "pen": "explain", "map": "explain", "photo": "think"}
-CORNER_OK = {"title", "chapter", "icon", "kinetic", "stat", "warning", "phone_call", "phone_sms", "chat", "image", "map", "photo"}
+                "term": "explain", "pen": "explain", "map": "explain", "photo": "think", "symbols": "explain"}
+CORNER_OK = {"title", "chapter", "icon", "kinetic", "stat", "warning", "phone_call", "phone_sms", "chat", "image", "map", "photo", "symbols"}
 
 
 def split_sentences(text):
@@ -535,7 +548,7 @@ for k, s in enumerate(scenes):
         b["mood"] = b["mood"] if b["mood"] in MOODS else DEFAULT_MOOD.get(t, "explain")
         pop = str(b.get("pop") or "").strip()
         b["pop"] = pop if pop and len(pop.split()) <= 2 and len(pop) <= 16 else None
-        if t in ("term", "pen", "map"):   # a sticker would cover the drawing
+        if t in ("term", "pen", "map", "symbols"):   # a sticker would cover the drawing
             b["pop"] = None
 
 # ----- timing: scenes follow their audio, beats share the scene by text length
@@ -940,7 +953,8 @@ def draw_title(canvas, d, s, t):
 def prep_chapter(s):
     v = s["visual"]
     part, total = v.get("part"), v.get("total")
-    v["_pill"] = text_sprite(f"PART {part} / {total}" if total else f"PART {part}", 44, WHITE, shadow=False)
+    label = str(v.get("label") or (f"PART {part} / {total}" if total else f"PART {part}"))
+    v["_pill"] = text_sprite(label, 44, WHITE, shadow=False)
     sfx(s, 0.2, "ding", 0.8)
 
 
@@ -1239,6 +1253,45 @@ def draw_steps(canvas, d, s, t):
             if k == current:
                 d.rounded_rectangle([x - 14, y + 10, x - 6, y + rs.height - 10], radius=4, fill=ACCENT)
         y += rs.height + gap * sc
+
+
+def prep_symbols(s):
+    """Two or three realistic symbols popping in, each on its own bright card."""
+    v = s["visual"]
+    items = [i for i in v.get("items", []) if isinstance(i, dict) and str(i.get("label", "")).strip()][:3]
+    if not items:
+        items = [{"icon": guess_icon(s["narration"]), "label": s["heading"][:24]}]
+    colours = [ACCENT, ACCENT2, (253, 224, 71)]
+    cw, ch, gap = 430, 500, 70
+    cards = []
+    for k, item in enumerate(items):
+        card = Image.new("RGBA", (cw, ch), (0, 0, 0, 0))
+        d = ImageDraw.Draw(card)
+        tint = colours[k % len(colours)]
+        d.rounded_rectangle([0, 0, cw - 1, ch - 1], radius=36, fill=mix(TH["bot"], tint, 0.22) + (255,), outline=tint + (255,), width=5)
+        name = item.get("icon") if item.get("icon") in ICONS else guess_icon(str(item["label"]))
+        card.alpha_composite(icon_sprite(name, 280, tint), dest=(75, 44))
+        lines = wrap(str(item["label"]), font(50, KALAM), cw - 40, 2)
+        for j, line in enumerate(lines):
+            d.text((cw / 2, 380 + j * 58), line, font=font(50, KALAM), fill=WHITE, anchor="mm")
+        cards.append(card)
+    x0, y0, x1, y1 = s["area"]
+    total = cw * len(cards) + gap * (len(cards) - 1)
+    v["_cards"] = cards
+    v["_x"] = W / 2 - total / 2 + cw / 2
+    v["_y"] = (y0 + y1) / 2
+    v["_step"] = cw + gap
+    v["_times"] = reveal_times(s, len(cards), start=0.3, share=0.55)
+    for tm in v["_times"]:
+        sfx(s, tm, "pop", 0.8)
+
+
+def draw_symbols(canvas, d, s, t):
+    v = s["visual"]
+    for k, (card, tm) in enumerate(zip(v["_cards"], v["_times"])):
+        q = ease_back((t - tm) / 0.4)
+        if q > 0:
+            comp_c(canvas, scaled(card, max(0.05, q)), v["_x"] + k * v["_step"], v["_y"] + 6 * math.sin(t * 1.6 + k))
 
 
 def prep_compare(s):
@@ -1884,7 +1937,7 @@ VISUALS = {
     "stat": (prep_stat, draw_stat), "warning": (prep_warning, draw_warning), "flow": (prep_flow, draw_flow),
     "image": (prep_image, draw_image), "kinetic": (prep_kinetic, draw_kinetic), "host": (prep_host, draw_host),
     "term": (prep_term, draw_notebook), "pen": (prep_pen, draw_notebook), "map": (prep_map, draw_map),
-    "photo": (prep_photo, draw_photo),
+    "photo": (prep_photo, draw_photo), "symbols": (prep_symbols, draw_symbols),
 }
 
 

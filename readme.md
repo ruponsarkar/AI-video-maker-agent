@@ -49,7 +49,9 @@ python auto_video.py "Your title"
 cd projects/<video-folder>
 ```
 
-**3. Check and edit.**
+**3. Check and edit.** A second AI agent, the script editor, has already fixed grammar, wrong words, repeats
+and hard lines. `scripts/review_report.md` shows every change it made. After your own edits you can run it again
+with `python ../../script_review.py`. It can't check facts, so that part is still yours:
 
 - Compare `research/notes.md` with its source links, because the AI can get facts wrong.
 - Read `scripts/review.md` if it exists. It lists problems the automatic checks couldn't fix.
@@ -97,7 +99,7 @@ Each title gets its own folder in `projects/`, so videos don't overwrite each ot
 | --- | --- |
 | `research/notes.md` | Facts from up to 8 articles, each under its source link |
 | `research/sources.json` | The list of sources used |
-| `scripts/outline.json` | The story plan: opening, a roadmap of questions, one part per question, ending |
+| `scripts/outline.json` | The story plan: its shape, sections and ending, which differ from video to video |
 | `scripts/review.md` | Only if needed: problems the automatic checks couldn't fix |
 | `scripts/script.json` | The final script: beats, visuals, Byte's moods, stickers, Hindi voice text |
 | `metadata.md` | 3 title options, thumbnail text, description with sources, tags |
@@ -114,6 +116,7 @@ The writer picks visuals by itself. You can also set them by hand in `scripts/sc
 | Visual | What it shows | How to set it |
 | --- | --- | --- |
 | `term` | A hard word in a notebook: the word, its meaning and an everyday example, written by a pen | `{"type": "term", "term": "VPN", "meaning": "...", "example": "...", "icon": "lock"}` |
+| `symbols` | 2-3 realistic 3D icons on bright cards | `{"type": "symbols", "items": [{"icon": "ship", "label": "Jahaz"}, {"icon": "cable", "label": "Cable"}]}` |
 | `pen` | A pen draws boxes and arrows. `broken` crosses out one arrow, counting from 0 | `{"type": "pen", "title": "UPI", "items": [{"label": "Phone", "icon": "phone"}, {"label": "Bank", "icon": "bank"}], "note": "..."}` |
 | `map` | India with a pin on each place named | `{"type": "map", "places": ["Delhi", "Assam"], "label": "..."}` |
 | `photo` | A real photo across the whole screen | `{"type": "photo", "query": "mobile tower", "caption": "Mobile tower"}` |
@@ -125,10 +128,13 @@ The writer picks visuals by itself. You can also set them by hand in `scripts/sc
   Natural Earth's India view, simplified. Check it yourself before publishing a video that
   focuses on a border area.
 - **Photos:** `auto_video.py` fetches them from Wikimedia Commons, using only CC0, public-domain and
-  CC BY licences. **Look at `images/photos/review.jpg` before voicing**, because the search can pick
+  CC BY licences. The local AI looks at each one first and rejects photos of people, slides and big text. **Look at `images/photos/review.jpg` before voicing**, because the search can pick
   the wrong picture. Photos say "Sanketik photo" on screen, and `youtube_kit.py` adds the credits to
   the description. To use your own photo, add `"file": "images/my_photo.jpg"` to the beat's visual.
   To choose again, run `python ../../photos.py --redo`.
+- **Icons:** realistic 3D icons are in `assets/icons/` (Microsoft Fluent Emoji, MIT licence). Any file you
+  add there can be used by its file name.
+- **Mix:** `auto_video.py` limits repeated cards like `compare` and `steps`, and swaps some for photos and symbols.
 - **Colours:** each scene gets its own colours. To keep one colour, run `animate.py --one-colour`.
 
 ## Making the voice more emotional
@@ -190,8 +196,11 @@ start at 0, matching the audio file names (`scene_00.wav` is `--scene 0`).
   use `--force`. With `--render`, their video is still rendered again.
 - **Cut-off words:** Chatterbox sometimes cuts the last word of a beat. Listen to the
   `scene_XX_bYY.wav` files and redo that scene with `--scene`.
-- **A word spelled wrong:** captions and voice spellings come from `hindi_words.json`. Fix the word
-  there and it stays fixed in every video. Test a line with `python ../../hinglish.py "..."`.
+- **A word spelled wrong:** voice spellings are in `hindi_words.json`. Screen spellings are in
+  `caption_words.json`, where each Hindi word is matched to how it shows on screen, like
+  `"ऑटोमेशन": "automation"`. English terms appear in real English. Fix a word in either file and it stays
+  fixed in every video. Then run `python ../../hinglish.py --sync` and `python ../../animate.py`; the voice
+  doesn't need redoing. Test a line with `python ../../hinglish.py "..."`.
 - **Voice not matching a line:** `voice.py` listens to every line with Whisper and redoes weak ones, up
   to 3 takes. Anything still weak is listed in `audio/voice_check.md`. Whisper can be wrong, so listen first.
 - **Wrong number or short form:** test the text with `python hindi_text.py "UPI 1930"`, which
@@ -289,6 +298,7 @@ python ../../voice.py --engine kokoro --female
 | `.gitignore` | Keeps login files, the voice sample, environments and heavy media out of git |
 | `glossary.py` | Hand-written explanations of hard tech, government, court and money terms |
 | `hinglish.py`, `hindi_words.json` | Keep captions and voice on the same words; the spelling list |
+| `script_review.py` | The script editor: a second AI agent that rechecks every script before audio and video |
 | `voice_check.py` | Listens to voice clips with Whisper and scores them |
 | `india_places.py` | Places the map can mark |
 | `photos.py` | Fetches safely licensed real photos |
