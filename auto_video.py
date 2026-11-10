@@ -37,7 +37,7 @@ import requests
 import trafilatura
 
 from glossary import find_new_term, term_visual
-from hinglish import to_hindi, to_roman
+from hinglish import screen_text, to_hindi, to_roman
 from script_review import review as edit_script, write_report
 from india_places import places_in
 
@@ -123,25 +123,36 @@ def slugify(text):
 
 
 def extract_json(text):
-    """Find the JSON object inside a free-text answer."""
+    """Find the JSON object inside a free-text answer. Tolerates text or an extra } after it, and curly
+    quotes used as string quotes (gemma writes "...है।” when it means "...है।")."""
     text = re.sub(r"^```(?:json)?|```$", "", text.strip(), flags=re.M)
-    a, b = text.find("{"), text.rfind("}")
-    if a == -1 or b <= a:
+    a = text.find("{")
+    if a == -1:
         raise json.JSONDecodeError("no JSON object", text, 0)
-    return json.loads(text[a:b + 1])
+    text = text[a:]
+    error = None
+    for attempt in (text, re.sub(r"[“”„]", '"', text), re.sub(r",\s*([}\]])", r"\1", re.sub(r"[“”„]", '"', text))):
+        try:
+            return json.JSONDecoder().raw_decode(attempt)[0]
+        except json.JSONDecodeError as e:
+            error = error or e
+    raise error
 
 
-def llm(system, user, as_json=True, ctx=12288, retries=4, temperature=0.7, check=None, max_tokens=2500, model=MODEL):
+def llm(system, user, as_json=True, ctx=12288, retries=4, temperature=0.7, check=None, max_tokens=2500, model=MODEL,
+        schema=None):
     """Ask the local model. Retries on model errors (like 'token repeat limit'),
-    bad JSON or incomplete answers, nudging the settings each time."""
-    last = ""
+    bad JSON or incomplete answers, nudging the settings each time.
+    schema: a JSON schema; Ollama then only lets the model write JSON with those fields."""
+    last, empty = "", False
     for attempt in range(1, retries + 1):
         opts = {"num_ctx": ctx, "num_predict": max_tokens,
                 "temperature": min(1.2, temperature + 0.15 * (attempt - 1)),
                 "repeat_penalty": 1.1 + 0.05 * (attempt - 1)}
         # last try for JSON: let the model write freely, then pull the JSON out of the text
-        free = as_json and attempt == retries
-        kwargs = {"format": "json"} if as_json and not free else {}
+        # gemma sometimes answers just {} in JSON mode, every time: then go free straight away
+        free = as_json and (attempt == retries or empty)
+        kwargs = {"format": schema or "json"} if as_json and not free else {}
         msgs = [{"role": "system", "content": system + ("\nSirf JSON object do, aur kuch nahi." if free else "")},
                 {"role": "user", "content": user}]
         try:
@@ -163,6 +174,7 @@ def llm(system, user, as_json=True, ctx=12288, retries=4, temperature=0.7, check
             continue
         try:
             data = json.loads(last) if not free else extract_json(last)
+            empty = empty or data in ({}, [])
             if check is None or check(data):
                 return data
             log(f"    answer incomplete, retry {attempt}/{retries}")
@@ -177,11 +189,17 @@ def has_devanagari(text):
 
 # ---------------------------------------------------------------- 1. research
 def video_kind(title, hint=""):
-    """scam, news or explainer. A topic line can also say it directly: type=news"""
+    """scam, news or explainer. A topic line can also say it directly: type=news
+
+    News is decided by the title only: a direction that mentions RBI, a court or the government is usually
+    background for an explainer, and treating it as news would search only last month's headlines."""
     text = f"{title} {hint}".lower()
     if re.search(SCAM_WORDS, text):
         return "scam"
-    if re.search(NEWS_WORDS, text):
+    explains = re.search(r"explain|kaise|kahan|kyun|kya hai|kya hota|how |why |what is|samjho|concept", text)
+    if re.search(NEWS_WORDS, title.lower()) and not explains:
+        return "news"
+    if re.search(r"\b(news|khabar|samachar|breaking|latest)\b", text) and not explains:
         return "news"
     return "explainer"
 
@@ -290,7 +308,9 @@ def make_outline(title, hint, notes, minutes, is_scam, kind="explainer"):
     shape = SHAPES_BY_KIND[kind][shape_name]
     most = 2 if minutes <= 2.5 else 3 if minutes <= 4 else 4 if minutes <= 7 else 5
     least = 3 if kind in ("scam", "news") else 2
-    sections = max(least, choice_for(title, list(range(2, most + 1)) or [2], "count"))
+    # enough sections for the length: gemma writes about 150-250 words a section, however many are asked for
+    need = max(2, min(most, round(minutes * WORDS_PER_MIN / 220)))
+    sections = max(least, choice_for(title, sorted({need, min(most, need + 1)}), "count"))
     must = MUST_COVER.get(kind, "")
     system = f"""तुम Snack Code YouTube चैनल के कहानी प्लानर हो। वीडियो करीब {minutes} मिनट का है, और देखने वाला इस विषय में बिल्कुल नया है।
 कहानी का तरीका: {shape}
@@ -305,7 +325,14 @@ JSON: {{"sections": [{{"title": "...", "points": ["..."]}}], "ending": "..."}}""
         return (isinstance(parts, list) and len(parts) >= 2
                 and all(isinstance(p, dict) and str(p.get("title") or "").strip() and p.get("points") for p in parts))
 
-    data = llm(system, f"वीडियो: {title}\n{hint}\n\nरिसर्च नोट्स:\n{notes[:9000]}", check=ok, max_tokens=2000, model=WRITER_MODEL)
+    schema = {"type": "object", "required": ["sections", "ending"],
+              "properties": {"sections": {"type": "array", "minItems": 2, "items": {
+                  "type": "object", "required": ["title", "points"],
+                  "properties": {"title": {"type": "string"},
+                                 "points": {"type": "array", "minItems": 1, "items": {"type": "string"}}}}},
+                  "ending": {"type": "string"}}}
+    data = llm(system, f"वीडियो: {title}\n{hint}\n\nरिसर्च नोट्स:\n{notes[:9000]}", check=ok, max_tokens=2500,
+               model=WRITER_MODEL, schema=schema)
     source = f"{title} {hint} {notes}"
 
     def goal_for(points):
@@ -318,8 +345,8 @@ JSON: {{"sections": [{{"title": "...", "points": ["..."]}}], "ending": "..."}}""
     for n, p in enumerate(parts):
         heading = " ".join(str(p["title"]).split())
         heading = heading if has_devanagari(heading) else to_hindi(heading)[0]
-        plan.append({"kind": "part", "part": n + 1, "total": len(parts), "title_hi": heading, "on_screen": to_roman(heading)})
-        plan.append({"on_screen": to_roman(heading), "goal": goal_for(p["points"])})
+        plan.append({"kind": "part", "part": n + 1, "total": len(parts), "title_hi": heading, "on_screen": screen_text(heading)})
+        plan.append({"on_screen": screen_text(heading), "goal": goal_for(p["points"])})
     plan.append({"on_screen": "Yaad rakhne wali baat", "goal": goal_for(data.get("ending") or "पूरी बात की एक लाइन में याद"), "ending": True})
     log(f"    Shape: {shape_name}; {len(parts)} sections: " + " / ".join(p["on_screen"] for p in plan if p.get("kind") == "part"))
     return plan
@@ -467,6 +494,7 @@ VISUAL_LIMITS = {"compare": 2, "steps": 2, "flow": 3, "kinetic": 3, "host": 2, "
                  "phone_call": 1, "phone_sms": 2}
 CONTRAST = re.compile(r"\b(vs|farak|fark|jabki|banam|antar)\b|फ़र्क|फर्क|अंतर|जबकि|बनाम|लेकिन", re.I)
 PHOTO_EVERY = 4   # a real photo at least this often
+OPENING_BEATS, OPENING_PHOTO_EVERY = 10, 2   # about the first minute: viewers leave early, so show more real things
 
 
 def balance_visuals(scenes, title, source):
@@ -476,7 +504,8 @@ def balance_visuals(scenes, title, source):
     counts, swap = {}, []
     previous = None
     since_photo = 0
-    for b in beats:
+    hook = beats[0] if beats and (beats[0].get("visual") or {}).get("type") == "title" else None
+    for n, b in enumerate(beats):
         kind_of = (b.get("visual") or {}).get("type")
         if b.get("locked") or kind_of in ("title", "map"):
             previous = kind_of
@@ -485,20 +514,25 @@ def balance_visuals(scenes, title, source):
         since_photo = 0 if kind_of == "photo" else since_photo + 1
         too_many = counts[kind_of] > VISUAL_LIMITS.get(kind_of, 99)
         misfit = (kind_of == "compare" and not CONTRAST.search(b.get("say_hi", ""))) or not kind_of
-        if too_many or misfit or kind_of == previous or since_photo >= PHOTO_EVERY:
+        every = OPENING_PHOTO_EVERY if n < OPENING_BEATS else PHOTO_EVERY
+        if too_many or misfit or kind_of == previous or since_photo >= every:
             swap.append(b)
             since_photo = 0
         else:
             previous = kind_of
             continue
         previous = None
+    if hook:   # the hook line gets a real photo behind it (the title stays on top)
+        swap.insert(0, hook)
     if not swap:
         return
     system = ("Tum video designer ho. Har line ke liye JSON do: query = us line ke liye asli photo dhoondhne ke 2-3 aam English words: aisi cheez ya jagah jiski photo khinch sake, "
               "jaise 'smartphone in hand', 'bank building', 'fiber optic cable', 'cargo ship'. 'fake website' ya 'ip address' jaisi cheez nahi, "
-              "aur koi insaan, company ya logo nahi; symbols = 2-3 items, har ek mein 'icon' (is list se: "
+              "aur koi insaan, company ya logo nahi; backup = ek aur, zyada aam query usi cheez ke liye (jaise 'cargo ship' -> 'ship at sea'); "
+              "symbols = 2-3 items, har ek mein 'icon' (is list se: "
               + ", ".join(ICON_NAMES) + ") aur 'label' (1-3 Roman Hinglish words). Koi nayi baat ya number nahi. "
-              'JSON: {"lines": [{"query": "...", "symbols": [{"icon": "...", "label": "..."}]}]}')
+              'JSON: {"lines": [{"query": "...", "backup": "...", "symbols": [{"icon": "...", "label": "..."}]}]}')
+    photo_query = re.compile(r"[A-Za-z][A-Za-z ,-]{2,40}")
     for start in range(0, len(swap), 10):
         batch = swap[start:start + 10]
         user = "\n".join(f"{n + 1}. {b['say']}" for n, b in enumerate(batch))
@@ -511,9 +545,17 @@ def balance_visuals(scenes, title, source):
             query = str(line.get("query") or "").strip() if isinstance(line, dict) else ""
             items = line.get("symbols") if isinstance(line, dict) else None
             items = [i for i in items if isinstance(i, dict) and i.get("icon") in ICON_NAMES and i.get("label")] if isinstance(items, list) else []
-            usable_query = re.fullmatch(r"[A-Za-z][A-Za-z ,-]{2,40}", query)
-            if usable_query and (n % 2 == 0 or len(items) < 2):
-                b["visual"] = {"type": "photo", "query": query, "caption": " ".join(b["say"].split()[:4]).rstrip(",.?!")}
+            usable_query = photo_query.fullmatch(query)
+            backup = str(line.get("backup") or "").strip() if isinstance(line, dict) else ""
+            backups = [backup] if photo_query.fullmatch(backup) and backup.lower() != query.lower() else []
+            if b is hook:
+                if usable_query:
+                    b["visual"] = {"type": "title", "query": query, "backup": backups}
+                continue
+            opening = beats.index(b) < OPENING_BEATS
+            if usable_query and (opening or n % 2 == 0 or len(items) < 2):
+                b["visual"] = {"type": "photo", "query": query, "backup": backups,
+                               "caption": " ".join(b["say"].split()[:4]).rstrip(",.?!")}
             elif len(items) >= 2:
                 b["visual"] = {"type": "symbols", "items": items[:3]}
             else:
@@ -666,7 +708,7 @@ def part_scene(sc, title):
     heading = sc.get("title_hi") or to_hindi(sc["on_screen"])[0]
     hindi = choice_for(title, pool, f"line{n}").replace("{t}", heading)
     label = "Sabse pehle" if n == 1 else "Aakhri baat" if n == total else choice_for(title, CHAPTER_LABELS, f"label{n}")
-    return {"on_screen": sc["on_screen"], "beats": [{"say": to_roman(hindi), "say_hi": hindi, "locked": True,
+    return {"on_screen": sc["on_screen"], "beats": [{"say": screen_text(hindi), "say_from": hindi, "say_hi": hindi, "locked": True,
                                                      "visual": {"type": "chapter", "label": label}, "mood": "think"}]}
 
 
@@ -674,10 +716,10 @@ def ending_scene(title, is_scam):
     beats = []
     if is_scam:
         hindi = "और अगर आपके या किसी अपने के साथ ऐसा हो जाए, तो तुरंत 1930 पर कॉल कीजिए, और cybercrime.gov.in पर शिकायत कीजिए।"
-        beats.append({"say": to_roman(hindi), "say_hi": hindi, "locked": True, "mood": "warn",
+        beats.append({"say": screen_text(hindi), "say_from": hindi, "say_hi": hindi, "locked": True, "mood": "warn",
                       "visual": {"type": "stat", "value": "1930", "label": "Cybercrime helpline | cybercrime.gov.in"}})
     hindi = f"{choice_for(title, SCAM_ASK if is_scam else ASK_LINES, 'ask')} {choice_for(title, SUBSCRIBE, 'sub')}"
-    beats.append({"say": to_roman(hindi), "say_hi": hindi, "locked": True, "mood": "happy",
+    beats.append({"say": screen_text(hindi), "say_from": hindi, "say_hi": hindi, "locked": True, "mood": "happy",
                   "visual": {"type": "host", "text": "Comment karo aur subscribe karo"}})
     return {"on_screen": "Ye yaad rakhna" if is_scam else "Aapki baari", "beats": beats}
 
@@ -812,10 +854,10 @@ def write_scenes(title, hint, notes, outline, minutes, is_scam, proj, kind="expl
             made = []
             for k in range(0, len(spoken), BEATS_PER_SCENE):
                 part = spoken[k:k + BEATS_PER_SCENE]
-                sc = add_visuals([to_roman(s) for s in part], group[min(k // BEATS_PER_SCENE, len(group) - 1)]["on_screen"],
+                sc = add_visuals([screen_text(s) for s in part], group[min(k // BEATS_PER_SCENE, len(group) - 1)]["on_screen"],
                                  source)
                 for beat, hindi in zip(sc["beats"], part):
-                    beat["say_hi"] = hindi   # the caption was made from this, so voice and caption match
+                    beat["say_hi"], beat["say_from"] = hindi, hindi   # voice text, and what its caption was written from
                 made.append(sc)
             if opening:
                 made[0]["beats"][0]["visual"] = {"type": "title"}

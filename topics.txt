@@ -36,7 +36,7 @@
 
 # AI & FUTURE TECHNOLOGY---------------------
 
-AI Aapki Naukri Kha Jayega Ya Nayi Naukri Dega? | Artificial intelligence ka Indian job market par impact: software developers, customer support, designers, teachers aur students. Automation vs augmentation, new AI careers, skills to learn aur realistic future scenarios | minutes=9
+# AI Aapki Naukri Kha Jayega Ya Nayi Naukri Dega? | Artificial intelligence ka Indian job market par impact: software developers, customer support, designers, teachers aur students. Automation vs augmentation, new AI careers, skills to learn aur realistic future scenarios | minutes=9
 
 # ChatGPT Sochta Kaise Hai? AI Ke Dimaag Ke Andar | Large language models explained in simple Hinglish: tokens, training data, neural networks, transformers, prediction aur hallucinations. Easy analogies, beginner-friendly animations aur real examples | minutes=8
 
@@ -63,3 +63,11 @@ AI Aapki Naukri Kha Jayega Ya Nayi Naukri Dega? | Artificial intelligence ka Ind
 # Agar Duniya Mein GPS Ek Din Ke Liye Band Ho Jaye To? | What-if scenario: GPS outage ka Google Maps, delivery apps, flights, ships, agriculture, telecom timing aur financial systems par impact. Backup navigation systems aur real-world GPS disruptions | minutes=8
 
 # Agar India Mein 24 Ghante Bijli Band Ho Jaye To? | Nationwide power blackout hypothetical: hospitals, metro, railways, mobile networks, ATMs, UPI, water supply aur data centers par effects. Backup generators, power grid recovery aur realistic timeline. Cinematic storytelling | minutes=9
+
+Diwali Ke Patakhe Itni Tez Awaaz Kaise Paida Karte Hain? | Sound waves, rapid gas expansion, pressure aur shock waves ka science. | minutes=8
+
+Diwali Ki Raat Aasman Mein Patakhe Itne Colourful Kyun Dikhte Hain? | Fireworks ke colours ke peeche chemistry, metal salts, temperature aur atomic emission spectra. | minutes=8
+
+2050 Ki Diwali Kaisi Hogi? | AI-generated decorations, holographic rangoli, robot delivery, smart homes, drone shows aur virtual celebrations. | minutes=9
+
+Kya Future Mein AI Robots Diwali Manayenge? | Humanoid robots, machine vision, autonomous cooking, home automation aur human-robot interaction. | minutes=8

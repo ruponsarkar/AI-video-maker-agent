@@ -1,0 +1,810 @@
+{
+  "title": "Diwali Patakhe Ke Dhamake Ka Science",
+  "topic": "Diwali Ke Patakhe Itni Tez Awaaz Kaise Paida Karte Hain?",
+  "kind": "explainer",
+  "scenes": [
+    {
+      "on_screen": "Diwali Ke Patakhe Itni Tez Awaaz Kaise Paida Karte Hain?",
+      "beats": [
+        {
+          "say": "Kya aapko kabhi aisa nahi laga hai, patakhe phutte hi achanak aapke sine mein ek zordar dhakke jaisa mahsus hota hai?",
+          "visual": {
+            "type": "title",
+            "query": "sound wave",
+            "backup": [
+              "acoustic effect"
+            ]
+          },
+          "mood": "think",
+          "pop": "dhakke",
+          "say_hi": "क्या आपको कभी ऐसा नहीं लगा है, पटाखे फूटते ही अचानक आपके सीने में एक जोरदार धक्के जैसा महसूस होता है?",
+          "say_from": "क्या आपको कभी ऐसा नहीं लगा है, पटाखे फूटते ही अचानक आपके सीने में एक जोरदार धक्के जैसा महसूस होता है?"
+        },
+        {
+          "say": "Ye to bas ek dhamaka nahi, balki ek dilchasp vaijnanik prakriya hai!",
+          "visual": {
+            "type": "host",
+            "text": "Yeh to bas ek dhamaka nahi hai"
+          },
+          "mood": "explain",
+          "pop": "science",
+          "say_hi": "ये तो बस एक धमाका नहीं, बल्कि एक दिलचस्प वैज्ञानिक प्रक्रिया है!",
+          "say_from": "ये तो बस एक धमाका नहीं, बल्कि एक दिलचस्प वैज्ञानिक प्रक्रिया है!"
+        },
+        {
+          "say": "Patakhon ki tez awaaz ka vijnan jaanne ke liye aap yahan hain.",
+          "visual": {
+            "type": "photo",
+            "query": "explosion sound",
+            "backup": [
+              "loud noise"
+            ],
+            "caption": "Patakhon ki tez awaaz"
+          },
+          "mood": "explain",
+          "pop": "dhakka",
+          "say_hi": "पटाखों की तेज आवाज का विज्ञान जानने के लिए आप यहाँ हैं।",
+          "say_from": "पटाखों की तेज आवाज का विज्ञान जानने के लिए आप यहाँ हैं।"
+        },
+        {
+          "say": "Isse aapko pata chalega ki aapke aas-paas patakhe kaise dhamaka karte hain aur kyun ye itna prabhavshali lagta hai.",
+          "visual": {
+            "type": "photo",
+            "query": "fireworks explosion",
+            "caption": "Dhakka ke sath",
+            "file": "images/photos/s00_b03.jpg",
+            "credit": "NASA / ESA and The Hubble Heritage Team  / Public domain"
+          },
+          "mood": "shock",
+          "pop": "dhamaka",
+          "say_hi": "इससे आपको पता चलेगा कि आपके आस-पास पटाखे कैसे धमाका करते हैं और क्यों ये इतना प्रभावशाली लगता है।",
+          "say_from": "इससे आपको पता चलेगा कि आपके आस-पास पटाखे कैसे धमाका करते हैं और क्यों ये इतना प्रभावशाली लगता है।"
+        }
+      ],
+      "narration_hi": "क्या आपको कभी ऐसा नहीं लगा है, पटाखे फूटते ही अचानक आपके सीने में एक जोरदार धक्के जैसा महसूस होता है? ये तो बस एक धमाका नहीं, बल्कि एक दिलचस्प वैज्ञानिक प्रक्रिया है! पटाखों की तेज आवाज का विज्ञान जानने के लिए आप यहाँ हैं। इससे आपको पता चलेगा कि आपके आस-पास पटाखे कैसे धमाका करते हैं और क्यों ये इतना प्रभावशाली लगता है।"
+    },
+    {
+      "on_screen": "Patakhon ki awaaz itni tez kyun hoti hai?",
+      "beats": [
+        {
+          "say": "Patakhon ki awaaz itni tez kyun hoti hai? Aaie ise samjhate hain!",
+          "visual": {
+            "type": "kinetic",
+            "text": "Aaj ke patakhe itni tez aawaz kaise pade",
+            "highlight": "tez aawaz"
+          },
+          "mood": "explain",
+          "pop": "tez aawaz",
+          "say_hi": "पटाखों की आवाज इतनी तेज़ क्यों होती है? आइए इसे समझते हैं!",
+          "say_from": "पटाखों की आवाज इतनी तेज़ क्यों होती है? आइए इसे समझते हैं!"
+        }
+      ],
+      "narration_hi": "पटाखों की आवाज इतनी तेज़ क्यों होती है? आइए इसे समझते हैं!"
+    },
+    {
+      "on_screen": "Patkahe: awaaz ka rahasya",
+      "beats": [
+        {
+          "say": "To pehli baat: patkahe: awaaz ka rahasya",
+          "say_from": "तो पहली बात: पटकहे: आवाज़ का रहस्य",
+          "say_hi": "तो पहली बात: पटकहे: आवाज़ का रहस्य",
+          "locked": true,
+          "visual": {
+            "type": "chapter",
+            "label": "Sabse pehle"
+          },
+          "mood": "think"
+        }
+      ],
+      "narration_hi": "तो पहली बात: पटकहे: आवाज़ का रहस्य"
+    },
+    {
+      "on_screen": "Patkahe: awaaz ka rahasya",
+      "beats": [
+        {
+          "say": "To pehli baat: patkahon ki awaaz ka mukhya karan hawa ke teji se phailne ke karan hoti hai.",
+          "visual": {
+            "type": "photo",
+            "query": "sound propagation",
+            "backup": [
+              "noise spread"
+            ],
+            "caption": "To pehli baat: patkahon",
+            "file": "images/photos/s03_b00.jpg",
+            "credit": "Ensign John Gay, U.S. Navy / Public domain"
+          },
+          "mood": "explain",
+          "pop": "dhakka dega",
+          "say_hi": "तो पहली बात: पटकहों की आवाज़ का मुख्य कारण हवा के तेजी से फैलने के कारण होती है।",
+          "say_from": "तो पहली बात: पटकहों की आवाज़ का मुख्य कारण हवा के तेजी से फैलने के कारण होती है।"
+        },
+        {
+          "say": "Ab, sochie ek chhota sa dibba. Aap us dibbe mein hawa bharte hain, aur phir use teji se band kar dete hain.",
+          "visual": {
+            "type": "photo",
+            "query": "metal box",
+            "caption": "dibba andar ki jagah",
+            "file": "images/photos/s03_b01.jpg",
+            "credit": "Wikimedia Commons / CC0"
+          },
+          "mood": "think",
+          "pop": "band kar dete hain",
+          "say_hi": "अब, सोचिए एक छोटा सा डिब्बा। आप उस डिब्बे में हवा भरते हैं, और फिर उसे तेजी से बंद कर देते हैं।",
+          "say_from": "अब, सोचिए एक छोटा सा डिब्बा। आप उस डिब्बे में हवा भरते हैं, और फिर उसे तेजी से बंद कर देते हैं।"
+        },
+        {
+          "say": "Kya hoga? Dibba andar ki taraph dhakka dega, hai na? Patakhon mein bhi aisa hi hota hai.",
+          "visual": {
+            "type": "kinetic",
+            "text": "gaisen teji se phailti hain",
+            "highlight": "teji se"
+          },
+          "mood": "warn",
+          "pop": "phailti hain",
+          "say_hi": "क्या होगा? डिब्बा अंदर की तरफ धक्का देगा, है ना? पटाखों में भी ऐसा ही होता है।",
+          "say_from": "क्या होगा? डिब्बा अंदर की तरफ धक्का देगा, है ना? पटाखों में भी ऐसा ही होता है।"
+        },
+        {
+          "say": "Ye gaisen teji se phailti hain, jaise ki wo dibba apne andar ki jagah banane ke liye koshish kar rahi hone.",
+          "visual": {
+            "type": "photo",
+            "query": "gas expansion",
+            "backup": [
+              "pressure release"
+            ],
+            "caption": "Ye gaisen teji se"
+          },
+          "mood": "explain",
+          "pop": "phailti hain",
+          "say_hi": "ये गैसें तेजी से फैलती हैं, जैसे कि वो डिब्बा अपने अंदर की जगह बनाने के लिए कोशिश कर रही हों।",
+          "say_from": "ये गैसें तेजी से फैलती हैं, जैसे कि वो डिब्बा अपने अंदर की जगह बनाने के लिए कोशिश कर रही हों।"
+        }
+      ],
+      "narration_hi": "तो पहली बात: पटकहों की आवाज़ का मुख्य कारण हवा के तेजी से फैलने के कारण होती है। अब, सोचिए एक छोटा सा डिब्बा। आप उस डिब्बे में हवा भरते हैं, और फिर उसे तेजी से बंद कर देते हैं। क्या होगा? डिब्बा अंदर की तरफ धक्का देगा, है ना? पटाखों में भी ऐसा ही होता है। ये गैसें तेजी से फैलती हैं, जैसे कि वो डिब्बा अपने अंदर की जगह बनाने के लिए कोशिश कर रही हों।"
+    },
+    {
+      "on_screen": "Patkahe: Awaaz ka Rahasya",
+      "beats": [
+        {
+          "say": "Is gas ke phailne se vayu mein dabav banta hai. Aur yahi dabav ek shockwave banata hai.",
+          "visual": {
+            "type": "kinetic",
+            "text": "Gas phailta hai",
+            "highlight": "dabav"
+          },
+          "mood": "explain",
+          "pop": "dabav",
+          "say_hi": "इस गैस के फैलने से वायु में दबाव बनता है। और यही दबाव एक शॉकवेव बनाता है।",
+          "say_from": "इस गैस के फैलने से वायु में दबाव बनता है। और यही दबाव एक शॉकवेव बनाता है।"
+        },
+        {
+          "say": "Shockwave kya hota hai? Ye ek tarah ki tarang hai jo bahut teji se phailti hai,",
+          "visual": {
+            "type": "icon",
+            "icon": "wave",
+            "text": "Tarang teji se"
+          },
+          "mood": "think",
+          "pop": "tarang",
+          "say_hi": "शॉकवेव क्या होता है? ये एक तरह की तरंग है जो बहुत तेजी से फैलती है,",
+          "say_from": "शॉकवेव क्या होता है? ये एक तरह की तरंग है जो बहुत तेजी से फैलती है,"
+        },
+        {
+          "say": "Bilkul ek lahar ki tarah! Ye tarang hawa ke anuon ko hilati hai,",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Lahar ki tarah",
+                "icon": "wave"
+              },
+              {
+                "label": "Anuon ko hilati",
+                "icon": "user"
+              },
+              {
+                "label": "Awaaz ho jati",
+                "icon": "speaker"
+              }
+            ],
+            "note": "Kalam se diagram"
+          },
+          "mood": "explain",
+          "pop": "awaaz",
+          "say_hi": "बिल्कुल एक लहर की तरह! ये तरंग हवा के अणुओं को हिलाती है,",
+          "say_from": "बिल्कुल एक लहर की तरह! ये तरंग हवा के अणुओं को हिलाती है,"
+        },
+        {
+          "say": "Aur jab ye hilae gaye anu aapke kano tak pahunchte hain, to aap use awaaz ke rup mein sunte hain.",
+          "visual": {
+            "type": "photo",
+            "query": "sound wave visualization",
+            "caption": "Awaz ke rup mein",
+            "file": "images/photos/s04_b03.jpg",
+            "credit": "Amanda.yuu / CC BY 4.0"
+          },
+          "mood": "happy",
+          "pop": "sunte hain",
+          "say_hi": "और जब ये हिलाए गए अणु आपके कानों तक पहुँचते हैं, तो आप उसे आवाज़ के रूप में सुनते हैं।",
+          "say_from": "और जब ये हिलाए गए अणु आपके कानों तक पहुँचते हैं, तो आप उसे आवाज़ के रूप में सुनते हैं।"
+        }
+      ],
+      "narration_hi": "इस गैस के फैलने से वायु में दबाव बनता है। और यही दबाव एक शॉकवेव बनाता है। शॉकवेव क्या होता है? ये एक तरह की तरंग है जो बहुत तेजी से फैलती है, बिल्कुल एक लहर की तरह! ये तरंग हवा के अणुओं को हिलाती है, और जब ये हिलाए गए अणु आपके कानों तक पहुँचते हैं, तो आप उसे आवाज़ के रूप में सुनते हैं।"
+    },
+    {
+      "on_screen": "Patkahe: Awaaz ka Rahasya",
+      "beats": [
+        {
+          "say": "Ab, ye yaad rakhie ki patakhon ka aakar bhi mine rakhta hai.",
+          "visual": {
+            "type": "photo",
+            "query": "sound intensity",
+            "backup": [
+              "volume level"
+            ],
+            "caption": "Ab, ye yaad rakhie"
+          },
+          "mood": "explain",
+          "pop": "shockwave",
+          "say_hi": "अब, ये याद रखिए कि पटाखों का आकार भी मायने रखता है।",
+          "say_from": "अब, ये याद रखिए कि पटाखों का आकार भी मायने रखता है।"
+        },
+        {
+          "say": "Bade patakhe mein zyada gas paida hoti hai, aur isliye shockwave bhi zyada shaktishali hota hai.",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "fire",
+                "label": "Combustion"
+              },
+              {
+                "icon": "lock",
+                "label": "Ignition"
+              }
+            ]
+          },
+          "mood": "think",
+          "pop": "shakti",
+          "say_hi": "बड़े पटाखे में ज़्यादा गैस पैदा होती है, और इसलिए शॉकवेव भी ज़्यादा शक्तिशाली होता है।",
+          "say_from": "बड़े पटाखे में ज़्यादा गैस पैदा होती है, और इसलिए शॉकवेव भी ज़्यादा शक्तिशाली होता है।"
+        },
+        {
+          "say": "Chhote patakhe mein kam gas hoti hai, isliye awaaz kam tez hoti hai.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Gas Tez Hoti Hai",
+                "icon": "phone"
+              },
+              {
+                "label": "Awaaz Phailti Hai",
+                "icon": "wifi"
+              },
+              {
+                "label": "Shockwave Bane",
+                "icon": "globe"
+              }
+            ],
+            "note": "Patakhe ka rahasya"
+          },
+          "mood": "explain",
+          "pop": "shockwave",
+          "say_hi": "छोटे पटाखे में कम गैस होती है, इसलिए आवाज़ कम तेज़ होती है।",
+          "say_from": "छोटे पटाखे में कम गैस होती है, इसलिए आवाज़ कम तेज़ होती है।"
+        },
+        {
+          "say": "To phir, ye samjhie ki patakhon ki awaaz ka rahasya bas gaison ke teji se phailne aur us dabav se bane wale shockwave mein chhipa hai.",
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              {
+                "icon": "user",
+                "label": "Gas Tez Hoti Hai"
+              },
+              {
+                "icon": "phone",
+                "label": "Awaaz Phailti Hai"
+              },
+              {
+                "icon": "bank",
+                "label": "Shockwave Bane"
+              }
+            ]
+          },
+          "mood": "explain",
+          "pop": "shocka",
+          "say_hi": "तो फिर, ये समझिए कि पटाखों की आवाज़ का रहस्य बस गैसों के तेजी से फैलने और उस दबाव से बनने वाले शॉकवेव में छिपा है।",
+          "say_from": "तो फिर, ये समझिए कि पटाखों की आवाज़ का रहस्य बस गैसों के तेजी से फैलने और उस दबाव से बनने वाले शॉकवेव में छिपा है।"
+        }
+      ],
+      "narration_hi": "अब, ये याद रखिए कि पटाखों का आकार भी मायने रखता है। बड़े पटाखे में ज़्यादा गैस पैदा होती है, और इसलिए शॉकवेव भी ज़्यादा शक्तिशाली होता है। छोटे पटाखे में कम गैस होती है, इसलिए आवाज़ कम तेज़ होती है। तो फिर, ये समझिए कि पटाखों की आवाज़ का रहस्य बस गैसों के तेजी से फैलने और उस दबाव से बनने वाले शॉकवेव में छिपा है।"
+    },
+    {
+      "on_screen": "Vaijnanik karan: gas ka visphot",
+      "beats": [
+        {
+          "say": "Lekin kahani yahin khatm nahi hoti: vaijnanik karan: gas ka visphot",
+          "say_from": "लेकिन कहानी यहीं खत्म नहीं होती: वैज्ञानिक कारण: गैस का विस्फोट",
+          "say_hi": "लेकिन कहानी यहीं खत्म नहीं होती: वैज्ञानिक कारण: गैस का विस्फोट",
+          "locked": true,
+          "visual": {
+            "type": "chapter",
+            "label": "Asli baat"
+          },
+          "mood": "think"
+        }
+      ],
+      "narration_hi": "लेकिन कहानी यहीं खत्म नहीं होती: वैज्ञानिक कारण: गैस का विस्फोट"
+    },
+    {
+      "on_screen": "Vaijnanik karan: gas ka visphot",
+      "beats": [
+        {
+          "say": "To phir, patakhon ki awaaz ka asli rahasya black powder mein maujud chijon ke jalne se hota hai.",
+          "visual": {
+            "type": "photo",
+            "query": "air pressure wave",
+            "backup": [
+              "shock formation"
+            ],
+            "caption": "To phir, patakhon ki"
+          },
+          "mood": "explain",
+          "pop": "Black Powder",
+          "say_hi": "तो फिर, पटाखों की आवाज़ का असली रहस्य ब्लैक पाउडर में मौजूद चीजों के जलने से होता है।",
+          "say_from": "तो फिर, पटाखों की आवाज़ का असली रहस्य ब्लैक पाउडर में मौजूद चीजों के जलने से होता है।"
+        },
+        {
+          "say": "Black powder mein potassium nitrate, charcoal aur sulfur jaise padarth hote hain.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Potassium nitrate",
+                "icon": "fire"
+              },
+              {
+                "label": "Charcoal",
+                "icon": "globe"
+              },
+              {
+                "label": "Sulfur",
+                "icon": "lock"
+              }
+            ],
+            "note": "Padarth jisme jalne se gas banti hai"
+          },
+          "mood": "think",
+          "pop": "Jalne wale padarth",
+          "say_hi": "ब्लैक पाउडर में पोटेशियम नाइट्रेट, चारकोल और सल्फर जैसे पदार्थ होते हैं।",
+          "say_from": "ब्लैक पाउडर में पोटेशियम नाइट्रेट, चारकोल और सल्फर जैसे पदार्थ होते हैं।"
+        },
+        {
+          "say": "Jab ye padarth jalte hain, to ve bahut teji se garm gaisen banate hain, jisse...",
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              {
+                "icon": "fire",
+                "label": "Gas banane"
+              },
+              {
+                "icon": "wave",
+                "label": "Phailna"
+              },
+              {
+                "icon": "rocket",
+                "label": "Hawa charon taraf"
+              }
+            ]
+          },
+          "mood": "happy",
+          "pop": "Gaisen phailti hain",
+          "say_hi": "जब ये पदार्थ जलते हैं, तो वे बहुत तेजी से गर्म गैसें बनाते हैं, जिससे...",
+          "say_from": "जब ये पदार्थ जलते हैं, तो वे बहुत तेजी से गर्म गैसें बनाते हैं, जिससे..."
+        },
+        {
+          "say": "Ye gaisen phir bahut jaldi phailti hain, jaise ki ek gubbara phutte hi hawa charon taraph nikal jae.",
+          "visual": {
+            "type": "photo",
+            "query": "black powder explosion",
+            "caption": "Gas ka visphot"
+          },
+          "mood": "warn",
+          "pop": "Visphot dekh lo",
+          "say_hi": "ये गैसें फिर बहुत जल्दी फैलती हैं, जैसे कि एक गुब्बारा फूटते ही हवा चारों तरफ़ निकल जाए।",
+          "say_from": "ये गैसें फिर बहुत जल्दी फैलती हैं, जैसे कि एक गुब्बारा फूटते ही हवा चारों तरफ़ निकल जाए।"
+        }
+      ],
+      "narration_hi": "तो फिर, पटाखों की आवाज़ का असली रहस्य ब्लैक पाउडर में मौजूद चीजों के जलने से होता है। ब्लैक पाउडर में पोटेशियम नाइट्रेट, चारकोल और सल्फर जैसे पदार्थ होते हैं। जब ये पदार्थ जलते हैं, तो वे बहुत तेजी से गर्म गैसें बनाते हैं, जिससे... ये गैसें फिर बहुत जल्दी फैलती हैं, जैसे कि एक गुब्बारा फूटते ही हवा चारों तरफ़ निकल जाए।"
+    },
+    {
+      "on_screen": "Vaijnanik Karna: Gas ka Visphot",
+      "beats": [
+        {
+          "say": "Ise aise samjho ki aapne ek patthar pani mein phenka, jisse pani mein lahren uthti hain, bilkul visa hi!",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Patthar pani mein",
+                "icon": "water"
+              },
+              {
+                "label": "Lahren uthti",
+                "icon": "waves"
+              }
+            ],
+            "note": "Pani ke lahren"
+          },
+          "mood": "think",
+          "pop": "lahren",
+          "say_hi": "इसे ऐसे समझो कि आपने एक पत्थर पानी में फेंका, जिससे पानी में लहरें उठती हैं, बिल्कुल वैसा ही!",
+          "say_from": "इसे ऐसे समझो कि आपने एक पत्थर पानी में फेंका, जिससे पानी में लहरें उठती हैं, बिल्कुल वैसा ही!"
+        },
+        {
+          "say": "Usi tarah, patakhon ke dhamake se hawa mein shockwave phailta hai.",
+          "visual": {
+            "type": "photo",
+            "query": "explosion effect",
+            "backup": [
+              "noise impact"
+            ],
+            "caption": "Usi tarah, patakhon ke"
+          },
+          "mood": "explain",
+          "pop": "shockwave",
+          "say_hi": "उसी तरह, पटाखों के धमाके से हवा में शॉकवेव फैलता है।",
+          "say_from": "उसी तरह, पटाखों के धमाके से हवा में शॉकवेव फैलता है।"
+        },
+        {
+          "say": "Agar gas bahut teji se phailegi aur jagah thodi sankri hogi, to awaaz aur bhi tez hogi, kyunki...",
+          "visual": {
+            "type": "steps",
+            "items": [
+              "Gas teji se phailti",
+              "Jagah sankri hogi",
+              "Shockwave bane"
+            ],
+            "note": "Kadam gat ho raha hai"
+          },
+          "mood": "think",
+          "pop": "kya hoga",
+          "say_hi": "अगर गैस बहुत तेजी से फैलेगी और जगह थोड़ी संकरी होगी, तो आवाज़ और भी तेज़ होगी, क्योंकि...",
+          "say_from": "अगर गैस बहुत तेजी से फैलेगी और जगह थोड़ी संकरी होगी, तो आवाज़ और भी तेज़ होगी, क्योंकि..."
+        }
+      ],
+      "narration_hi": "इसे ऐसे समझो कि आपने एक पत्थर पानी में फेंका, जिससे पानी में लहरें उठती हैं, बिल्कुल वैसा ही! उसी तरह, पटाखों के धमाके से हवा में शॉकवेव फैलता है। अगर गैस बहुत तेजी से फैलेगी और जगह थोड़ी संकरी होगी, तो आवाज़ और भी तेज़ होगी, क्योंकि..."
+    },
+    {
+      "on_screen": "Gas ke visphot ka secret",
+      "beats": [
+        {
+          "say": "Awaaz to zyada tez hogi, hai na? Kyunki jitni tezi se gas phailti hai,",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "wave",
+                "label": "Speed"
+              },
+              {
+                "icon": "clock",
+                "label": "Fast"
+              }
+            ]
+          },
+          "mood": "explain",
+          "pop": "tez urja",
+          "say_hi": "आवाज़ तो ज़्यादा तेज़ होगी, है ना? क्योंकि जितनी तेज़ी से गैस फैलती है,",
+          "say_from": "आवाज़ तो ज़्यादा तेज़ होगी, है ना? क्योंकि जितनी तेज़ी से गैस फैलती है,"
+        },
+        {
+          "say": "Utni hi zyada urja niklati hai, aur utni hi damdar shockwave banta hai.",
+          "visual": {
+            "type": "photo",
+            "query": "shockwave from explosion",
+            "backup": [
+              "explosion shockwave"
+            ],
+            "caption": "Utni hi zyada urja",
+            "file": "images/photos/s09_b01.jpg",
+            "credit": "NASA/JPL-Caltech/D. Barrado y NavascuÃ©s / Public domain"
+          },
+          "mood": "think",
+          "pop": "damdar",
+          "say_hi": "उतनी ही ज़्यादा ऊर्जा निकलती है, और उतनी ही दमदार शॉकवेव बनता है।",
+          "say_from": "उतनी ही ज़्यादा ऊर्जा निकलती है, और उतनी ही दमदार शॉकवेव बनता है।"
+        },
+        {
+          "say": "Isliye, agli baar jab aap patakhe sunen, to yaad rakhie ki ye sirf ek dhamaka nahi hai, balki science ka kamal hai!",
+          "visual": {
+            "type": "host",
+            "text": "Science ka kamal hai"
+          },
+          "mood": "happy",
+          "pop": "science",
+          "say_hi": "इसलिए, अगली बार जब आप पटाखे सुनें, तो याद रखिए कि ये सिर्फ़ एक धमाका नहीं है, बल्कि साइंस का कमाल है!",
+          "say_from": "इसलिए, अगली बार जब आप पटाखे सुनें, तो याद रखिए कि ये सिर्फ़ एक धमाका नहीं है, बल्कि साइंस का कमाल है!"
+        }
+      ],
+      "narration_hi": "आवाज़ तो ज़्यादा तेज़ होगी, है ना? क्योंकि जितनी तेज़ी से गैस फैलती है, उतनी ही ज़्यादा ऊर्जा निकलती है, और उतनी ही दमदार शॉकवेव बनता है। इसलिए, अगली बार जब आप पटाखे सुनें, तो याद रखिए कि ये सिर्फ़ एक धमाका नहीं है, बल्कि साइंस का कमाल है!"
+    },
+    {
+      "on_screen": "Ultra-shorts: dhamake ka vijnan",
+      "beats": [
+        {
+          "say": "To ab sawaal ye hai: ultra-shorts: dhamake ka vijnan",
+          "say_from": "तो अब सवाल ये है: अल्ट्रा-श्रोट्स: धमाके का विज्ञान",
+          "say_hi": "तो अब सवाल ये है: अल्ट्रा-श्रोट्स: धमाके का विज्ञान",
+          "locked": true,
+          "visual": {
+            "type": "chapter",
+            "label": "Ab aage"
+          },
+          "mood": "think"
+        }
+      ],
+      "narration_hi": "तो अब सवाल ये है: अल्ट्रा-श्रोट्स: धमाके का विज्ञान"
+    },
+    {
+      "on_screen": "Dhamake ke vijnan",
+      "beats": [
+        {
+          "say": "Ye samajhna zaroori hai ki patakhon ki awaaz ka ye rahasya shock waves mein chhipa hai.",
+          "visual": {
+            "type": "photo",
+            "query": "sound of explosion hidden in shockwaves",
+            "backup": [
+              "hidden sound waves"
+            ],
+            "caption": "Ye samajhna zaroori hai"
+          },
+          "mood": "explain",
+          "pop": "shock waves",
+          "say_hi": "ये समझना ज़रूरी है कि पटाखों की आवाज़ का ये रहस्य शॉक वेव्स में छिपा है।",
+          "say_from": "ये समझना ज़रूरी है कि पटाखों की आवाज़ का ये रहस्य शॉक वेव्स में छिपा है।"
+        },
+        {
+          "say": "Ye shock waves hawa mein itni tezi se phailti hain, mano kisi patthar ko pani mein phenka ho aur lahren uth rahi hone.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Hawa mein tezi",
+                "icon": "wave"
+              },
+              {
+                "label": "Pani mein phenka",
+                "icon": "water"
+              },
+              {
+                "label": "Lahren uth rahi",
+                "icon": "sound"
+              }
+            ],
+            "note": "Dhamakon ka itihaas"
+          },
+          "mood": "think",
+          "pop": "tez lahren",
+          "say_hi": "ये शॉक वेव्स हवा में इतनी तेज़ी से फैलती हैं, मानो किसी पत्थर को पानी में फेंका हो और लहरें उठ रही हों।",
+          "say_from": "ये शॉक वेव्स हवा में इतनी तेज़ी से फैलती हैं, मानो किसी पत्थर को पानी में फेंका हो और लहरें उठ रही हों।"
+        },
+        {
+          "say": "Lekin yahan ye lahren bahut tez hoti hain aur zyada shaktishali hoti hain.",
+          "visual": {
+            "type": "photo",
+            "query": "firework explosion",
+            "caption": "Flash powder"
+          },
+          "mood": "warn",
+          "pop": "flash powder",
+          "say_hi": "लेकिन यहाँ ये लहरें बहुत तेज़ होती हैं और ज़्यादा शक्तिशाली होती हैं।",
+          "say_from": "लेकिन यहाँ ये लहरें बहुत तेज़ होती हैं और ज़्यादा शक्तिशाली होती हैं।"
+        },
+        {
+          "say": "Salute ya shots firework mein khas tarah ka flash powder istemal hota hai, jo...",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "sparkle",
+                "label": "Shaktishali lahren"
+              },
+              {
+                "icon": "lightning",
+                "label": "Tez awaaz"
+              }
+            ],
+            "note": "Dhamakon ka rahasya"
+          },
+          "mood": "explain",
+          "pop": "shaktishali",
+          "say_hi": "सैलूट या शॉट्स फायरवर्क में खास तरह का फ्लैश पाउडर इस्तेमाल होता है, जो...",
+          "say_from": "सैलूट या शॉट्स फायरवर्क में खास तरह का फ्लैश पाउडर इस्तेमाल होता है, जो..."
+        }
+      ],
+      "narration_hi": "ये समझना ज़रूरी है कि पटाखों की आवाज़ का ये रहस्य शॉक वेव्स में छिपा है। ये शॉक वेव्स हवा में इतनी तेज़ी से फैलती हैं, मानो किसी पत्थर को पानी में फेंका हो और लहरें उठ रही हों। लेकिन यहाँ ये लहरें बहुत तेज़ होती हैं और ज़्यादा शक्तिशाली होती हैं। सैलूट या शॉट्स फायरवर्क में खास तरह का फ्लैश पाउडर इस्तेमाल होता है, जो..."
+    },
+    {
+      "on_screen": "Dhamake ka vijnan",
+      "beats": [
+        {
+          "say": "Ye powder ek chhote se tube ke andar hota hai, jiski wajah se dhamake ki awaaz aur bhi tez ho jaati hai.",
+          "visual": {
+            "type": "photo",
+            "query": "powder in tube",
+            "caption": "Tube mein powder",
+            "file": "images/photos/s12_b00.jpg",
+            "credit": "West Yorkshire Archaeology Advisory Serv / CC BY 2.0"
+          },
+          "mood": "explain",
+          "pop": "Powder in Tube",
+          "say_hi": "ये पाउडर एक छोटे से ट्यूब के अंदर होता है, जिसकी वजह से धमाके की आवाज़ और भी तेज़ हो जाती है।",
+          "say_from": "ये पाउडर एक छोटे से ट्यूब के अंदर होता है, जिसकी वजह से धमाके की आवाज़ और भी तेज़ हो जाती है।"
+        },
+        {
+          "say": "Ye powder bahut tezi se jalta hai, jisse zyada garam gas banti hai aur wo bahut jaldi phailti hai.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Tez jala",
+                "icon": "fire"
+              },
+              {
+                "label": "Garam gas",
+                "icon": "cloud"
+              },
+              {
+                "label": "Jaldi phaila",
+                "icon": "wave"
+              }
+            ],
+            "note": "Gas ke phailne se awaaz"
+          },
+          "mood": "think",
+          "pop": "Tez jala",
+          "say_hi": "ये पाउडर बहुत तेज़ी से जलता है, जिससे ज़्यादा गरम गैस बनती है और वो बहुत जल्दी फैलती है।",
+          "say_from": "ये पाउडर बहुत तेज़ी से जलता है, जिससे ज़्यादा गरम गैस बनती है और वो बहुत जल्दी फैलती है।"
+        },
+        {
+          "say": "Ye shockwave aapke kano tak pahunchkar dhamake ki anubhuti karata hai. Aapko yaad rakhna chahiye ki dragon eggs ya cracking stars jaise firework mein bhi awaaz aati hai.",
+          "visual": {},
+          "mood": "warn",
+          "pop": "Kano tak",
+          "say_hi": "ये शॉकवेव आपके कानों तक पहुँचकर धमाके की अनुभूति कराता है। आपको याद रखना चाहिए कि ड्रैगन एग्स या क्रैकिंग स्टार्स जैसे फायरवर्क में भी आवाज़ आती है।",
+          "say_from": "ये शॉकवेव आपके कानों तक पहुँचकर धमाके की अनुभूति कराता है। आपको याद रखना चाहिए कि ड्रैगन एग्स या क्रैकिंग स्टार्स जैसे फायरवर्क में भी आवाज़ आती है।"
+        },
+        {
+          "say": "Ye awaaz chhote-chhote visphoton ke karan hoti hai, jo gas ke phailne se bante hain.",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "wave",
+                "label": "Visphoton"
+              },
+              {
+                "icon": "cloud",
+                "label": "Gas phaila"
+              }
+            ]
+          },
+          "mood": "explain",
+          "pop": "Visphoton",
+          "say_hi": "ये आवाज़ छोटे-छोटे विस्फोटों के कारण होती है, जो गैस के फैलने से बनते हैं।",
+          "say_from": "ये आवाज़ छोटे-छोटे विस्फोटों के कारण होती है, जो गैस के फैलने से बनते हैं।"
+        }
+      ],
+      "narration_hi": "ये पाउडर एक छोटे से ट्यूब के अंदर होता है, जिसकी वजह से धमाके की आवाज़ और भी तेज़ हो जाती है। ये पाउडर बहुत तेज़ी से जलता है, जिससे ज़्यादा गरम गैस बनती है और वो बहुत जल्दी फैलती है। ये शॉकवेव आपके कानों तक पहुँचकर धमाके की अनुभूति कराता है। आपको याद रखना चाहिए कि ड्रैगन एग्स या क्रैकिंग स्टार्स जैसे फायरवर्क में भी आवाज़ आती है। ये आवाज़ छोटे-छोटे विस्फोटों के कारण होती है, जो गैस के फैलने से बनते हैं।"
+    },
+    {
+      "on_screen": "Dabav laaron ke dhamakay",
+      "beats": [
+        {
+          "say": "In visphoton se bane wale dabav lahron ko sunkar hi hume dhamake ki anubhuti karte hain.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "visphoton dabav",
+                "icon": "wave"
+              },
+              {
+                "label": "dhamakay anubhuti",
+                "icon": "heart"
+              }
+            ],
+            "note": "kalam se bana diagram"
+          },
+          "mood": "think",
+          "pop": "dhamakay anubhuti",
+          "say_hi": "इन विस्फोटों से बनने वाले दबाव लहरों को सुनकर ही हम धमाके की अनुभूति करते हैं।",
+          "say_from": "इन विस्फोटों से बनने वाले दबाव लहरों को सुनकर ही हम धमाके की अनुभूति करते हैं।"
+        }
+      ],
+      "narration_hi": "इन विस्फोटों से बनने वाले दबाव लहरों को सुनकर ही हम धमाके की अनुभूति करते हैं।"
+    },
+    {
+      "on_screen": "Awaaz ka saphar: dhvani tarangen",
+      "beats": [
+        {
+          "say": "Aur ab sabse kaam ki baat: awaaz ka saphar: dhvani tarangen",
+          "say_from": "और अब सबसे काम की बात: आवाज़ का सफर: ध्वनि तरंगें",
+          "say_hi": "और अब सबसे काम की बात: आवाज़ का सफर: ध्वनि तरंगें",
+          "locked": true,
+          "visual": {
+            "type": "chapter",
+            "label": "Aakhri baat"
+          },
+          "mood": "think"
+        }
+      ],
+      "narration_hi": "और अब सबसे काम की बात: आवाज़ का सफर: ध्वनि तरंगें"
+    },
+    {
+      "on_screen": "Awaaz ka saphar: dhvani tarangen",
+      "beats": [
+        {
+          "say": "Dhvani tarangon ke rup mein yatra karti hai, jahan hawa ke anu hilte-dulte urja ko ek jagah se dusri jagah pahunchate hain.",
+          "visual": {
+            "type": "photo",
+            "query": "sound travels as waves through air",
+            "backup": [
+              "sound wave travel"
+            ],
+            "caption": "Patakhon ki awaaz dhvani"
+          },
+          "mood": "explain",
+          "pop": "dhvani tarang",
+          "say_hi": "ध्वनि तरंगों के रूप में यात्रा करती है, जहां हवा के अणु हिलते-डुलते ऊर्जा को एक जगह से दूसरी जगह पहुंचाते हैं.",
+          "say_from": "ध्वनि तरंगों के रूप में यात्रा करती है, जहां हवा के अणु हिलते-डुलते ऊर्जा को एक जगह से दूसरी जगह पहुंचाते हैं."
+        },
+        {
+          "say": "Decibel mein iski takat mapi jaati hai 10 dibi ka matlab hai awaaz doguni tez lagti hai.",
+          "visual": {
+            "type": "stat",
+            "value": "10 dB",
+            "label": "doguni tez lagti hai"
+          },
+          "mood": "think",
+          "pop": "10 dB",
+          "say_hi": "डेसिबल में इसकी ताकत मापी जाती है 10 डीबी का मतलब है आवाज़ दोगुनी तेज़ लगती है।",
+          "say_from": "डेसिबल में इसकी ताकत मापी जाती है 10 डीबी का मतलब है आवाज़ दोगुनी तेज़ लगती है।"
+        },
+        {
+          "say": "To, patakhon ki awaaz samajhna ek mushkil vijnan hai!",
+          "visual": {
+            "type": "warning",
+            "text": "To, patakhon ki awaaz samajhna mushkil hai"
+          },
+          "mood": "shock",
+          "pop": "mushkil vijnan",
+          "say_hi": "तो, पटाखों की आवाज़ समझना एक मुश्किल विज्ञान है!",
+          "say_from": "तो, पटाखों की आवाज़ समझना एक मुश्किल विज्ञान है!"
+        }
+      ],
+      "narration_hi": "ध्वनि तरंगों के रूप में यात्रा करती है, जहां हवा के अणु हिलते-डुलते ऊर्जा को एक जगह से दूसरी जगह पहुंचाते हैं. डेसिबल में इसकी ताकत मापी जाती है 10 डीबी का मतलब है आवाज़ दोगुनी तेज़ लगती है। तो, पटाखों की आवाज़ समझना एक मुश्किल विज्ञान है!"
+    },
+    {
+      "on_screen": "Aapki baari",
+      "beats": [
+        {
+          "say": "Ise us insan ko sure bhejie, jise ye janna chahiye. Har sunday aisi hi ek nayi baat ke liye snack code se jude rahie.",
+          "say_from": "इसे उस इंसान को ज़रूर भेजिए, जिसे ये जानना चाहिए। हर संडे ऐसी ही एक नई बात के लिए स्नैक कोड से जुड़े रहिए।",
+          "say_hi": "इसे उस इंसान को ज़रूर भेजिए, जिसे ये जानना चाहिए। हर संडे ऐसी ही एक नई बात के लिए स्नैक कोड से जुड़े रहिए।",
+          "locked": true,
+          "mood": "happy",
+          "visual": {
+            "type": "host",
+            "text": "Comment karo aur subscribe karo"
+          }
+        }
+      ],
+      "narration_hi": "इसे उस इंसान को ज़रूर भेजिए, जिसे ये जानना चाहिए। हर संडे ऐसी ही एक नई बात के लिए स्नैक कोड से जुड़े रहिए।"
+    }
+  ]
+}

@@ -1,0 +1,1107 @@
+{
+  "title": "Bank Mein Rakha Paisa Asal Mein Kahan Jata Hai?",
+  "topic": "Bank Mein Rakha Paisa Asal Mein Kahan Jata Hai?",
+  "kind": "explainer",
+  "scenes": [
+    {
+      "on_screen": "Bank Mein Rakha Paisa Asal Mein Kahan Jaata Hai?",
+      "beats": [
+        {
+          "say": "Lagta hai bank mein jama kiya paisa bas yun hi gayao ho jaata hai?",
+          "visual": {
+            "type": "title"
+          },
+          "mood": "think",
+          "pop": "Bas yun hi",
+          "say_hi": "लगता है बैंक में जमा किया पैसा बस यूं ही गायब हो जाता है?",
+          "say_from": "लगता है बैंक में जमा किया पैसा बस यूं ही गायब हो जाता है?"
+        },
+        {
+          "say": "Bank mein aapka paisa kahan jaata hai? Hum aapko batate hain ki kaise bank loan dete hain aur byaj kamaate hain..",
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              {
+                "icon": "bank",
+                "label": "Bank"
+              },
+              {
+                "icon": "money",
+                "label": "Loan dete hain"
+              },
+              {
+                "icon": "lock",
+                "label": "Byaj kamaate hain"
+              }
+            ]
+          },
+          "mood": "explain",
+          "pop": "Loan dete hain",
+          "say_hi": "बैंक में आपका पैसा कहां जाता है? हम आपको बताते हैं कि कैसे बैंक लोन देते हैं और ब्याज कमाते हैं.।",
+          "say_from": "बैंक में आपका पैसा कहां जाता है? हम आपको बताते हैं कि कैसे बैंक लोन देते हैं और ब्याज कमाते हैं.।"
+        },
+        {
+          "say": "Yah samajhne se aapko pata chalega ki aapke paise ka istemal kaise hota hai aur bainkon ki bhumika kya hoti hai..",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "bank",
+                "label": "Bank"
+              },
+              {
+                "icon": "money",
+                "label": "Paisa"
+              }
+            ]
+          },
+          "mood": "explain",
+          "pop": "Bank ki bhumika",
+          "say_hi": "यह समझने से आपको पता चलेगा कि आपके पैसे का इस्तेमाल कैसे होता है और बैंकों की भूमिका क्या होती है.।",
+          "say_from": "यह समझने से आपको पता चलेगा कि आपके पैसे का इस्तेमाल कैसे होता है और बैंकों की भूमिका क्या होती है.।"
+        },
+        {
+          "say": "Agar aap ek saath saare paise nikalne lagenge, to kya hoga?",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Paise nikalne",
+                "icon": "bank"
+              },
+              {
+                "label": "Kaam paise",
+                "icon": "warning"
+              },
+              {
+                "label": "System crash",
+                "icon": "alarm"
+              }
+            ],
+            "note": "Ek chhoti line"
+          },
+          "mood": "warn",
+          "pop": "System crash",
+          "say_hi": "अगर आप एक साथ सारे पैसे निकालने लगेंगे, तो क्या होगा?",
+          "say_from": "अगर आप एक साथ सारे पैसे निकालने लगेंगे, तो क्या होगा?"
+        }
+      ],
+      "narration_hi": "लगता है बैंक में जमा किया पैसा बस यूं ही गायब हो जाता है? बैंक में आपका पैसा कहां जाता है? हम आपको बताते हैं कि कैसे बैंक लोन देते हैं और ब्याज कमाते हैं.। यह समझने से आपको पता चलेगा कि आपके पैसे का इस्तेमाल कैसे होता है और बैंकों की भूमिका क्या होती है.। अगर आप एक साथ सारे पैसे निकालने लगेंगे, तो क्या होगा?"
+    },
+    {
+      "on_screen": "Bank mein paisa: ek shuruaat",
+      "beats": [
+        {
+          "say": "To pehli baat: bank mein paisa: ek shuruaat",
+          "say_from": "तो पहली बात: बैंक में पैसा: एक शुरुआत",
+          "say_hi": "तो पहली बात: बैंक में पैसा: एक शुरुआत",
+          "locked": true,
+          "visual": {
+            "type": "chapter",
+            "label": "Sabse pehle"
+          },
+          "mood": "think"
+        }
+      ],
+      "narration_hi": "तो पहली बात: बैंक में पैसा: एक शुरुआत"
+    },
+    {
+      "on_screen": "Bank mein paisa: ek shuruaat",
+      "beats": [
+        {
+          "say": "Ye ek aam sawal hai, aur sunne mein ajib lta hai. Chalo samajhte hain ki ye kaise hota hai.",
+          "visual": {
+            "type": "kinetic",
+            "text": "Bank ke account mein paisa rehta hai",
+            "highlight": "account"
+          },
+          "mood": "explain",
+          "pop": "account",
+          "say_hi": "ये एक आम सवाल है, और सुनने में अजीब लगता है। चलो समझते हैं कि ये कैसे होता है।",
+          "say_from": "ये एक आम सवाल है, और सुनने में अजीब लगता है। चलो समझते हैं कि ये कैसे होता है।"
+        },
+        {
+          "say": "Bank mein jama kiya gaya paisa asle mein bank ke grahakon ke accounts mein hi rehta hai.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "dibba me cheeze",
+                "icon": "lock"
+              },
+              {
+                "label": "bank me account",
+                "icon": "shield"
+              }
+            ],
+            "note": "kalam se bana diagram"
+          },
+          "mood": "think",
+          "pop": "account",
+          "say_hi": "बैंक में जमा किया गया पैसा असल में बैंक के ग्राहकों के अकाउंट्स में ही रहता है।",
+          "say_from": "बैंक में जमा किया गया पैसा असल में बैंक के ग्राहकों के अकाउंट्स में ही रहता है।"
+        },
+        {
+          "say": "Sochiye aapke paas ek dibba hai, jismein aap apni cheezein rakhte hain.",
+          "visual": {
+            "type": "photo",
+            "query": "safe box inside bank",
+            "caption": "dibba me cheeze",
+            "file": "images/photos/s02_b02.jpg",
+            "credit": "Asanagi / CC0"
+          },
+          "mood": "warn",
+          "pop": "safe",
+          "say_hi": "सोचिए आपके पास एक डिब्बा है, जिसमें आप अपनी चीजें रखते हैं।",
+          "say_from": "सोचिए आपके पास एक डिब्बा है, जिसमें आप अपनी चीजें रखते हैं।"
+        },
+        {
+          "say": "Bank bhi kuch isai hi karta hai wo aapki bachat ko surakshit rakhta hai.",
+          "visual": {
+            "type": "host",
+            "text": "Bank bhi aapki bachat ko surakshit rakhta hai"
+          },
+          "mood": "happy",
+          "pop": "surakshit",
+          "say_hi": "बैंक भी कुछ ऐसा ही करता है वो आपकी बचत को सुरक्षित रखता है।",
+          "say_from": "बैंक भी कुछ ऐसा ही करता है वो आपकी बचत को सुरक्षित रखता है।"
+        }
+      ],
+      "narration_hi": "ये एक आम सवाल है, और सुनने में अजीब लगता है। चलो समझते हैं कि ये कैसे होता है। बैंक में जमा किया गया पैसा असल में बैंक के ग्राहकों के अकाउंट्स में ही रहता है। सोचिए आपके पास एक डिब्बा है, जिसमें आप अपनी चीजें रखते हैं। बैंक भी कुछ ऐसा ही करता है वो आपकी बचत को सुरक्षित रखता है।"
+    },
+    {
+      "on_screen": "Bank mein paisa: ek shuruaat",
+      "beats": [
+        {
+          "say": "Leikin bank is paiso ko yun hi nahi rakhte! Bank loan dekar aur byaj kamaakar paisa banate hain.",
+          "visual": {
+            "type": "kinetic",
+            "text": "Bank loan dekar byaj kamaate hain",
+            "highlight": "byaj"
+          },
+          "mood": "explain",
+          "pop": "byaj",
+          "say_hi": "लेकिन बैंक इस पैसे को यूं ही नहीं रखते! बैंक लोन देकर और ब्याज कमाकर पैसा बनाते हैं।",
+          "say_from": "लेकिन बैंक इस पैसे को यूं ही नहीं रखते! बैंक लोन देकर और ब्याज कमाकर पैसा बनाते हैं।"
+        },
+        {
+          "say": "Matlab, bank kisi aur ko paisa udaar dete hain, aur us par baisa lete hain.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "paisa udaar dete hain",
+                "icon": "phone"
+              },
+              {
+                "label": "baisa lete hain",
+                "icon": "money"
+              }
+            ],
+            "note": "ek chhoti line"
+          },
+          "mood": "think",
+          "pop": "udaar",
+          "say_hi": "मतलब, बैंक किसी और को पैसा उधार देते हैं, और उस पर ब्याज लेते हैं।",
+          "say_from": "मतलब, बैंक किसी और को पैसा उधार देते हैं, और उस पर ब्याज लेते हैं।"
+        },
+        {
+          "say": "Ye byaj bank ke liye kamaai hoti hai. RBI, yaani rizhav bank of India, bainkon par nirnaya rata hai.",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "shield",
+                "label": "RBI"
+              },
+              {
+                "icon": "money",
+                "label": "Byaj"
+              }
+            ]
+          },
+          "mood": "warn",
+          "pop": "RBI",
+          "say_hi": "ये ब्याज बैंक के लिए कमाई होती है। RBI, यानी रिज़र्व बैंक ऑफ़ इंडिया, बैंकों पर निगरानी रखता है।",
+          "say_from": "ये ब्याज बैंक के लिए कमाई होती है। RBI, यानी रिज़र्व बैंक ऑफ़ इंडिया, बैंकों पर निगरानी रखता है।"
+        },
+        {
+          "say": "RBI India ka sentral Bank hai. Ye baaki bainkon par nazar rata hai, aur note bhi yahi chapta hai.",
+          "say_hi": "आर-बी-आई इंडिया का सेंट्रल बैंक है। ये बाकी बैंकों पर नज़र रखता है, और नोट भी यही छापता है।",
+          "visual": {
+            "type": "term",
+            "term": "RBI",
+            "meaning": "India ka central bank",
+            "example": "Baaki bankon par nazar rakhta hai aur note chhapta hai",
+            "icon": "bank"
+          },
+          "mood": "explain",
+          "locked": true,
+          "say_from": "आर-बी-आई इंडिया का सेंट्रल बैंक है। ये बाकी बैंकों पर नज़र रखता है, और नोट भी यही छापता है।"
+        },
+        {
+          "say": "RBI ye sunishchit karta hai ki bank apne sare kaam sahi tareeke se kar rahe hain.",
+          "visual": {
+            "type": "photo",
+            "query": "bank office interior",
+            "caption": "bank kaam karte hain",
+            "file": "images/photos/s03_b04.jpg",
+            "credit": "Canmenwalker / CC BY 4.0"
+          },
+          "mood": "explain",
+          "pop": "bank",
+          "say_hi": "RBI ये सुनिश्चित करता है कि बैंक अपने सारे काम सही तरीके से कर रहे हैं।",
+          "say_from": "RBI ये सुनिश्चित करता है कि बैंक अपने सारे काम सही तरीके से कर रहे हैं।"
+        }
+      ],
+      "narration_hi": "लेकिन बैंक इस पैसे को यूं ही नहीं रखते! बैंक लोन देकर और ब्याज कमाकर पैसा बनाते हैं। मतलब, बैंक किसी और को पैसा उधार देते हैं, और उस पर ब्याज लेते हैं। ये ब्याज बैंक के लिए कमाई होती है। RBI, यानी रिज़र्व बैंक ऑफ़ इंडिया, बैंकों पर निगरानी रखता है। आर-बी-आई इंडिया का सेंट्रल बैंक है। ये बाकी बैंकों पर नज़र रखता है, और नोट भी यही छापता है। RBI ये सुनिश्चित करता है कि बैंक अपने सारे काम सही तरीके से कर रहे हैं।"
+    },
+    {
+      "on_screen": "Bank mein paisa: ek shuruaat",
+      "beats": [
+        {
+          "say": "RBI ke niyam bainkon ko batata hai ki unhe kitna paisa rakhna chahiye aur kitna loan dena chahiye.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "RBI niyam",
+                "icon": "shield"
+              },
+              {
+                "label": "Banks ke karya",
+                "icon": "bank"
+              },
+              {
+                "label": "Loan dena chahiye",
+                "icon": "money"
+              }
+            ],
+            "note": "RBI ki shakthi"
+          },
+          "mood": "explain",
+          "pop": "RBI niyam",
+          "say_hi": "RBI के नियम बैंकों को बताता है कि उन्हें कितना पैसा रखना चाहिए और कितना लोन देना चाहिए।",
+          "say_from": "RBI के नियम बैंकों को बताता है कि उन्हें कितना पैसा रखना चाहिए और कितना लोन देना चाहिए।"
+        },
+        {
+          "say": "Ab sawaal aata hai ki agar sab log ek saath paise nikalne aa jaen to kya hoga?",
+          "visual": {
+            "type": "warning",
+            "text": "Sare log paise nikalne aaye"
+          },
+          "mood": "shock",
+          "pop": "Sare log",
+          "say_hi": "अब सवाल आता है कि अगर सब लोग एक साथ पैसे निकालने आ जाएं तो क्या होगा?",
+          "say_from": "अब सवाल आता है कि अगर सब लोग एक साथ पैसे निकालने आ जाएं तो क्या होगा?"
+        },
+        {
+          "say": "Agar achanak bahut sare log ek saath bank mein paisa nikaalne aa jaen,",
+          "visual": {
+            "type": "photo",
+            "query": "bank queue",
+            "caption": "Paisa nikaalna"
+          },
+          "mood": "think",
+          "pop": "Queue",
+          "say_hi": "अगर अचानक बहुत सारे लोग एक साथ बैंक में पैसा निकालने आ जाएं,",
+          "say_from": "अगर अचानक बहुत सारे लोग एक साथ बैंक में पैसा निकालने आ जाएं,"
+        },
+        {
+          "say": "To bank ke paas paisa kaam pad sakta hai. Ise liquidity crisis kahate hain.",
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              {
+                "icon": "bank",
+                "label": "Bank ke paas paisa"
+              },
+              {
+                "icon": "warning",
+                "label": "Liquidity crisis"
+              },
+              {
+                "icon": "user",
+                "label": "Sare log nikaalne aaye"
+              }
+            ]
+          },
+          "mood": "warn",
+          "pop": "Crisis",
+          "say_hi": "तो बैंक के पास पैसा कम पड़ सकता है। इसे लिक्विडिटी क्राइसिस कहते हैं।",
+          "say_from": "तो बैंक के पास पैसा कम पड़ सकता है। इसे लिक्विडिटी क्राइसिस कहते हैं।"
+        }
+      ],
+      "narration_hi": "RBI के नियम बैंकों को बताता है कि उन्हें कितना पैसा रखना चाहिए और कितना लोन देना चाहिए। अब सवाल आता है कि अगर सब लोग एक साथ पैसे निकालने आ जाएं तो क्या होगा? अगर अचानक बहुत सारे लोग एक साथ बैंक में पैसा निकालने आ जाएं, तो बैंक के पास पैसा कम पड़ सकता है। इसे लिक्विडिटी क्राइसिस कहते हैं।"
+    },
+    {
+      "on_screen": "Bank mein paisa: ek shuruaat",
+      "beats": [
+        {
+          "say": "Sochiye, agar aapke bank khate mein achanak sare paise gayab ho gaye to ye mushkil hoga, hai na?",
+          "visual": {
+            "type": "kinetic",
+            "text": "Achanak bartan gayaab hoga?",
+            "highlight": "achanak"
+          },
+          "mood": "think",
+          "pop": "achanak",
+          "say_hi": "सोचिए, अगर आपके बैंक खाते में अचानक सारे पैसे गायब हो गए तो ये मुश्किल होगा, है ना?",
+          "say_from": "सोचिए, अगर आपके बैंक खाते में अचानक सारे पैसे गायब हो गए तो ये मुश्किल होगा, है ना?"
+        },
+        {
+          "say": "RBI is tarah ki sthiti se niptane ke liye niyam banata hai.",
+          "visual": {
+            "type": "host",
+            "text": "RBI niyam banata hai"
+          },
+          "mood": "explain",
+          "pop": "niyam",
+          "say_hi": "RBI इस तरह की स्थिति से निपटने के लिए नियम बनाता है।",
+          "say_from": "RBI इस तरह की स्थिति से निपटने के लिए नियम बनाता है।"
+        },
+        {
+          "say": "RBI banko ko batata hai ki unhe kitna paisa rakhna chahiye taaki ye achanak aane wali prashnati ka samna kar saken.",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "shield",
+                "label": "RBI"
+              },
+              {
+                "icon": "money",
+                "label": "Paisa"
+              }
+            ]
+          },
+          "mood": "warn",
+          "pop": "samna",
+          "say_hi": "RBI बैंकों को बताता है कि उन्हें कितना पैसा रखना चाहिए ताकि ये अचानक आने वाली परेशानी का सामना कर सकें।",
+          "say_from": "RBI बैंकों को बताता है कि उन्हें कितना पैसा रखना चाहिए ताकि ये अचानक आने वाली परेशानी का सामना कर सकें।"
+        },
+        {
+          "say": "RBI bhi grahakon ki jama rashi ko surakshit rakhne ke liye ek bima yojana chalata hai.",
+          "visual": {
+            "type": "photo",
+            "query": "insurance policy",
+            "caption": "bima yojana"
+          },
+          "mood": "safe",
+          "pop": "bima",
+          "say_hi": "RBI भी ग्राहकों की जमा राशि को सुरक्षित रखने के लिए एक बीमा योजना चलाता है।",
+          "say_from": "RBI भी ग्राहकों की जमा राशि को सुरक्षित रखने के लिए एक बीमा योजना चलाता है।"
+        }
+      ],
+      "narration_hi": "सोचिए, अगर आपके बैंक खाते में अचानक सारे पैसे गायब हो गए तो ये मुश्किल होगा, है ना? RBI इस तरह की स्थिति से निपटने के लिए नियम बनाता है। RBI बैंकों को बताता है कि उन्हें कितना पैसा रखना चाहिए ताकि ये अचानक आने वाली परेशानी का सामना कर सकें। RBI भी ग्राहकों की जमा राशि को सुरक्षित रखने के लिए एक बीमा योजना चलाता है।"
+    },
+    {
+      "on_screen": "Bank mein paisa: shuruaat",
+      "beats": [
+        {
+          "say": "Agar bank diwallia ho jaata hai, to is beema yojana ke tehta aapke paise vapas mil sakte hain.",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "shield",
+                "label": "Beema"
+              },
+              {
+                "icon": "money",
+                "label": "Paisa"
+              }
+            ]
+          },
+          "mood": "explain",
+          "pop": "vapas milein",
+          "say_hi": "अगर बैंक दिवालिया हो जाता है, तो इस बीमा योजना के तहत आपके पैसे वापस मिल सकते हैं।",
+          "say_from": "अगर बैंक दिवालिया हो जाता है, तो इस बीमा योजना के तहत आपके पैसे वापस मिल सकते हैं।"
+        },
+        {
+          "say": "Lekin dhyaan rahe, is beema yojana mein sirf 5 lakh rupaye tak ki rakam hi surakshit hoti hai.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "5 lakh rupaye",
+                "icon": "shield"
+              },
+              {
+                "label": "sirf rakam",
+                "icon": "lock"
+              }
+            ],
+            "note": "ek chhoti line"
+          },
+          "mood": "warn",
+          "pop": "5 lakh rupaye",
+          "say_hi": "लेकिन ध्यान रहे, इस बीमा योजना में सिर्फ़ 5 लाख रुपये तक की रकम ही सुरक्षित होती है।",
+          "say_from": "लेकिन ध्यान रहे, इस बीमा योजना में सिर्फ़ 5 लाख रुपये तक की रकम ही सुरक्षित होती है।"
+        },
+        {
+          "say": "Bank ye paisa loan dekar aur baisa karake kamaate hain, jo grahakon ko bhi milta hai.",
+          "visual": {
+            "type": "phone_call",
+            "caller": "Bank",
+            "number": "+91 98XXX XXXXX"
+          },
+          "mood": "think",
+          "pop": "loan dekar kamaata hai",
+          "say_hi": "बैंक ये पैसा लोन देकर और ब्याज करके कमाते हैं, जो ग्राहकों को भी मिलता है।",
+          "say_from": "बैंक ये पैसा लोन देकर और ब्याज करके कमाते हैं, जो ग्राहकों को भी मिलता है।"
+        },
+        {
+          "say": "Ye ek tarah se sarkular hota hai bank paisa leta hai, use loan dekar paisa kamaata hai,",
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              {
+                "icon": "bank",
+                "label": "paisa leta hai"
+              },
+              {
+                "icon": "money",
+                "label": "loan dekar kamaata hai"
+              },
+              {
+                "icon": "user",
+                "label": "graahak ko milta hai"
+              }
+            ]
+          },
+          "mood": "explain",
+          "pop": "sarkular",
+          "say_hi": "ये एक तरह से सर्कुलर होता है बैंक पैसा लेता है, उसे लोन देकर पैसा कमाता है,",
+          "say_from": "ये एक तरह से सर्कुलर होता है बैंक पैसा लेता है, उसे लोन देकर पैसा कमाता है,"
+        }
+      ],
+      "narration_hi": "अगर बैंक दिवालिया हो जाता है, तो इस बीमा योजना के तहत आपके पैसे वापस मिल सकते हैं। लेकिन ध्यान रहे, इस बीमा योजना में सिर्फ़ 5 लाख रुपये तक की रकम ही सुरक्षित होती है। बैंक ये पैसा लोन देकर और ब्याज करके कमाते हैं, जो ग्राहकों को भी मिलता है। ये एक तरह से सर्कुलर होता है बैंक पैसा लेता है, उसे लोन देकर पैसा कमाता है,"
+    },
+    {
+      "on_screen": "Bank mein paise kaisa lagte hain",
+      "beats": [
+        {
+          "say": "Aur us paise ka kuch hissa grahakon ko baisa ke roop mein vapas milta hai.",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "money",
+                "label": "Baisa"
+              },
+              {
+                "icon": "user",
+                "label": "Grahak"
+              }
+            ]
+          },
+          "mood": "explain",
+          "pop": "Loan & Interest",
+          "say_hi": "और उस पैसे का कुछ हिस्सा ग्राहकों को ब्याज के रूप में वापस मिलता है।",
+          "say_from": "और उस पैसे का कुछ हिस्सा ग्राहकों को ब्याज के रूप में वापस मिलता है।"
+        },
+        {
+          "say": "To, bank mein jama kiya gaya paisa asle mein loan dene aur byaj kamane ke liye istemal hota hai.",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "money",
+                "label": "Loan"
+              },
+              {
+                "icon": "shield",
+                "label": "Byaj"
+              }
+            ]
+          },
+          "mood": "think",
+          "pop": "Asli vs Fake",
+          "say_hi": "तो, बैंक में जमा किया गया पैसा असल में लोन देने और ब्याज कमाने के लिए इस्तेमाल होता है।",
+          "say_from": "तो, बैंक में जमा किया गया पैसा असल में लोन देने और ब्याज कमाने के लिए इस्तेमाल होता है।"
+        }
+      ],
+      "narration_hi": "और उस पैसे का कुछ हिस्सा ग्राहकों को ब्याज के रूप में वापस मिलता है। तो, बैंक में जमा किया गया पैसा असल में लोन देने और ब्याज कमाने के लिए इस्तेमाल होता है।"
+    },
+    {
+      "on_screen": "Karz aur baisa: Kaise bank paisa kamaate hain?",
+      "beats": [
+        {
+          "say": "Lekin kahani yahin khatm nahi hoti: Karz aur byaj: Kaise bank paisa kamaate hain?",
+          "say_from": "लेकिन कहानी यहीं खत्म नहीं होती: कर्ज़ और ब्याज: कैसे बैंक पैसा कमाते हैं?",
+          "say_hi": "लेकिन कहानी यहीं खत्म नहीं होती: कर्ज़ और ब्याज: कैसे बैंक पैसा कमाते हैं?",
+          "locked": true,
+          "visual": {
+            "type": "chapter",
+            "label": "Dhyan dijiye"
+          },
+          "mood": "think"
+        }
+      ],
+      "narration_hi": "लेकिन कहानी यहीं खत्म नहीं होती: कर्ज़ और ब्याज: कैसे बैंक पैसा कमाते हैं?"
+    },
+    {
+      "on_screen": "Bank kaise paisa kamaate hain?",
+      "beats": [
+        {
+          "say": "Bank grahakon ko loan dete hain, jaise ghar kharidne ya vyavashta shuru karne ke liye.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Loan",
+                "icon": "money"
+              },
+              {
+                "label": "Interest",
+                "icon": "bank"
+              },
+              {
+                "label": "Risk",
+                "icon": "warning"
+              }
+            ],
+            "note": "Bank ka profit"
+          },
+          "mood": "explain",
+          "pop": "Byaj bank ka mukhya kamaata hai",
+          "say_hi": "बैंक ग्राहकों को लोन देते हैं, जैसे घर खरीदने या व्यवसाय शुरू करने के लिए।",
+          "say_from": "बैंक ग्राहकों को लोन देते हैं, जैसे घर खरीदने या व्यवसाय शुरू करने के लिए।"
+        },
+        {
+          "say": "Is loan par unhe byaj milta hai. Yah byaj hi bank ka mukhya aay srot hota hai.",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "money",
+                "label": "Byaj"
+              },
+              {
+                "icon": "shield",
+                "label": "Aay"
+              }
+            ]
+          },
+          "mood": "explain",
+          "pop": "Byaj ka matlab profit",
+          "say_hi": "इस लोन पर उन्हें ब्याज मिलता है। यह ब्याज ही बैंक का मुख्य आय स्रोत होता है।",
+          "say_from": "इस लोन पर उन्हें ब्याज मिलता है। यह ब्याज ही बैंक का मुख्य आय स्रोत होता है।"
+        },
+        {
+          "say": "Yah samajhna zaroori hai ki byaj ki daren kai karkon se prabhavi hoti hain,",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "user",
+                "label": "Risk"
+              },
+              {
+                "icon": "bank",
+                "label": "Loan"
+              },
+              {
+                "icon": "money",
+                "label": "Interest"
+              }
+            ]
+          },
+          "mood": "think",
+          "pop": "Byaj ki daren karkon",
+          "say_hi": "यह समझना ज़रूरी है कि ब्याज की दरें कई कारकों से प्रभावित होती हैं,",
+          "say_from": "यह समझना ज़रूरी है कि ब्याज की दरें कई कारकों से प्रभावित होती हैं,"
+        },
+        {
+          "say": "Jinmen bank ka jokhim mulyankan aur bajar ki sitiyan shamil hain. Udahran ke liye,",
+          "visual": {
+            "type": "photo",
+            "query": "loan agreement",
+            "caption": "Bank ka profit"
+          },
+          "mood": "explain",
+          "pop": "Loan aur byaj",
+          "say_hi": "जिनमें बैंक का जोखिम मूल्यांकन और बाजार की स्थितियां शामिल हैं। उदाहरण के लिए,",
+          "say_from": "जिनमें बैंक का जोखिम मूल्यांकन और बाजार की स्थितियां शामिल हैं। उदाहरण के लिए,"
+        }
+      ],
+      "narration_hi": "बैंक ग्राहकों को लोन देते हैं, जैसे घर खरीदने या व्यवसाय शुरू करने के लिए। इस लोन पर उन्हें ब्याज मिलता है। यह ब्याज ही बैंक का मुख्य आय स्रोत होता है। यह समझना ज़रूरी है कि ब्याज की दरें कई कारकों से प्रभावित होती हैं, जिनमें बैंक का जोखिम मूल्यांकन और बाजार की स्थितियां शामिल हैं। उदाहरण के लिए,"
+    },
+    {
+      "on_screen": "Bank kaise paisa kamaate hain?",
+      "beats": [
+        {
+          "say": "Agar koi vyakti ghar kharidne ke liye bank se loan leta hai,",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Loan byaj",
+                "icon": "money"
+              },
+              {
+                "label": "Sampatti invest",
+                "icon": "bank"
+              }
+            ],
+            "note": "Labh aur nishchit dar"
+          },
+          "mood": "explain",
+          "pop": "Byaj aur invest",
+          "say_hi": "अगर कोई व्यक्ति घर खरीदने के लिए बैंक से लोन लेता है,",
+          "say_from": "अगर कोई व्यक्ति घर खरीदने के लिए बैंक से लोन लेता है,"
+        },
+        {
+          "say": "To bank us loan par ek nishchit byaj dar vasool karega. Yah byaj bank ko labh dega,",
+          "visual": {
+            "type": "photo",
+            "query": "bank branch",
+            "caption": "Bank ki sampatti"
+          },
+          "mood": "think",
+          "pop": "Sampatti invest",
+          "say_hi": "तो बैंक उस लोन पर एक निश्चित ब्याज दर वसूल करेगा। यह ब्याज बैंक को लाभ देगा,",
+          "say_from": "तो बैंक उस लोन पर एक निश्चित ब्याज दर वसूल करेगा। यह ब्याज बैंक को लाभ देगा,"
+        },
+        {
+          "say": "Jisaka upyog vah apne parichalan kharchon aur munafe ke liye kar sakta hai.",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "money",
+                "label": "Kharch"
+              },
+              {
+                "icon": "chart_up",
+                "label": "Munafa"
+              }
+            ]
+          },
+          "mood": "explain",
+          "pop": "Labh vs nafisa",
+          "say_hi": "जिसका उपयोग वह अपने परिचालन खर्चों और मुनाफे के लिए कर सकता है।",
+          "say_from": "जिसका उपयोग वह अपने परिचालन खर्चों और मुनाफे के लिए कर सकता है।"
+        },
+        {
+          "say": "Iske atirikt, bainkon ko apni sampatti mein invest karne ki aavashyakta hoti hai,",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "money",
+                "label": "Invest"
+              },
+              {
+                "icon": "bank",
+                "label": "Sampatti"
+              }
+            ]
+          },
+          "mood": "happy",
+          "pop": "Kaam se labh",
+          "say_hi": "इसके अतिरिक्त, बैंकों को अपनी संपत्ति में निवेश करने की आवश्यकता होती है,",
+          "say_from": "इसके अतिरिक्त, बैंकों को अपनी संपत्ति में निवेश करने की आवश्यकता होती है,"
+        }
+      ],
+      "narration_hi": "अगर कोई व्यक्ति घर खरीदने के लिए बैंक से लोन लेता है, तो बैंक उस लोन पर एक निश्चित ब्याज दर वसूल करेगा। यह ब्याज बैंक को लाभ देगा, जिसका उपयोग वह अपने परिचालन खर्चों और मुनाफे के लिए कर सकता है। इसके अतिरिक्त, बैंकों को अपनी संपत्ति में निवेश करने की आवश्यकता होती है,"
+    },
+    {
+      "on_screen": "Bank kaise paisa kamaate hain?",
+      "beats": [
+        {
+          "say": "Jaise sarkari bond ya any surakshit nivesh. In niveshon se bhi unhen aay prapt hoti hai, jo unke labh mein yogdan karti hai.",
+          "visual": {
+            "type": "photo",
+            "query": "government building",
+            "caption": "Sarkari nivesh",
+            "file": "images/photos/s11_b00.jpg",
+            "credit": "Dr. Umesh Behari Mathur / CC BY 2.0"
+          },
+          "mood": "explain",
+          "pop": "Nivesh",
+          "say_hi": "जैसे सरकारी बॉन्ड या अन्य सुरक्षित निवेश। इन निवेशों से भी उन्हें आय प्राप्त होती है, जो उनके लाभ में योगदान करती है।",
+          "say_from": "जैसे सरकारी बॉन्ड या अन्य सुरक्षित निवेश। इन निवेशों से भी उन्हें आय प्राप्त होती है, जो उनके लाभ में योगदान करती है।"
+        }
+      ],
+      "narration_hi": "जैसे सरकारी बॉन्ड या अन्य सुरक्षित निवेश। इन निवेशों से भी उन्हें आय प्राप्त होती है, जो उनके लाभ में योगदान करती है।"
+    },
+    {
+      "on_screen": "RBI: Bank par nazar rakhne wala kaun?",
+      "beats": [
+        {
+          "say": "Aur ab agli baat: RBI: bank par nazar rakhne wala kaun?",
+          "say_from": "और अब अगली बात: RBI: बैंक पर नज़र रखने वाला कौन?",
+          "say_hi": "और अब अगली बात: RBI: बैंक पर नज़र रखने वाला कौन?",
+          "locked": true,
+          "visual": {
+            "type": "chapter",
+            "label": "Yahan se samjhiye"
+          },
+          "mood": "think"
+        }
+      ],
+      "narration_hi": "और अब अगली बात: RBI: बैंक पर नज़र रखने वाला कौन?"
+    },
+    {
+      "on_screen": "RBI: Bank par nazar rakhne wala kaun?",
+      "beats": [
+        {
+          "say": "Bank mein rakha paisa asal mein bank ke grahkon ke paise ka istemal karke lon diya jaata hai.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Loan data",
+                "icon": "phone"
+              },
+              {
+                "label": "Interest rate",
+                "icon": "money"
+              },
+              {
+                "label": "Credit limit",
+                "icon": "shield"
+              }
+            ],
+            "note": "Bank ke rules"
+          },
+          "mood": "explain",
+          "pop": "Loan Rules",
+          "say_hi": "बैंक में रखा पैसा असल में बैंक के ग्राहकों के पैसे का इस्तेमाल करके लोन दिया जाता है।",
+          "say_from": "बैंक में रखा पैसा असल में बैंक के ग्राहकों के पैसे का इस्तेमाल करके लोन दिया जाता है।"
+        },
+        {
+          "say": "Sochiye, ek aadmi ghar kharidna chahta hai, to vo bank se loan leta hai.",
+          "visual": {
+            "type": "photo",
+            "query": "bank loan process",
+            "caption": "Loan Process"
+          },
+          "mood": "think",
+          "pop": "Loan Flow",
+          "say_hi": "सोचिए, एक आदमी घर खरीदना चाहता है, तो वो बैंक से लोन लेता है।",
+          "say_from": "सोचिए, एक आदमी घर खरीदना चाहता है, तो वो बैंक से लोन लेता है।"
+        },
+        {
+          "say": "Bank us adami ko loan data hai aur badle mein usse byaj vasulatta hai.",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "money",
+                "label": "Loan"
+              },
+              {
+                "icon": "shield",
+                "label": "Byaj"
+              }
+            ]
+          },
+          "mood": "warn",
+          "pop": "Regulator",
+          "say_hi": "बैंक उस आदमी को लोन देता है और बदले में उससे ब्याज वसूलता है।",
+          "say_from": "बैंक उस आदमी को लोन देता है और बदले में उससे ब्याज वसूलता है।"
+        },
+        {
+          "say": "Lekin, RBI is baat ka dhyan rakhta hai ki bank zyadatar lon na den.",
+          "visual": {},
+          "mood": "shock",
+          "pop": "Scam Alert",
+          "say_hi": "लेकिन, RBI इस बात का ध्यान रखता है कि बैंक ज़्यादातर लोन न दें।",
+          "say_from": "लेकिन, RBI इस बात का ध्यान रखता है कि बैंक ज़्यादातर लोन न दें।"
+        }
+      ],
+      "narration_hi": "बैंक में रखा पैसा असल में बैंक के ग्राहकों के पैसे का इस्तेमाल करके लोन दिया जाता है। सोचिए, एक आदमी घर खरीदना चाहता है, तो वो बैंक से लोन लेता है। बैंक उस आदमी को लोन देता है और बदले में उससे ब्याज वसूलता है। लेकिन, RBI इस बात का ध्यान रखता है कि बैंक ज़्यादातर लोन न दें।"
+    },
+    {
+      "on_screen": "RBI: Bank par nazar rakhne wala kaun?",
+      "beats": [
+        {
+          "say": "RBI banko ko batata hai ki unhe kitna paisa rakhna chahiye taaki agar achanak bahut sare log paise nikaalne aayein to koi pareshaani nahi ho.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Paisa rakhna chahiye",
+                "icon": "bank"
+              },
+              {
+                "label": "Loan dekar paisa kamaata hai",
+                "icon": "money"
+              },
+              {
+                "label": "Baisa vapas karta hai",
+                "icon": "user"
+              }
+            ],
+            "note": "Bank ka kamar tareeke"
+          },
+          "mood": "explain",
+          "pop": "Paisa rakhna chahiye",
+          "say_hi": "RBI बैंकों को बताता है कि उन्हें कितना पैसा रखना चाहिए ताकि अगर अचानक बहुत सारे लोग पैसे निकालने आएं तो कोई परेशानी नहीं हो।",
+          "say_from": "RBI बैंकों को बताता है कि उन्हें कितना पैसा रखना चाहिए ताकि अगर अचानक बहुत सारे लोग पैसे निकालने आएं तो कोई परेशानी नहीं हो।"
+        },
+        {
+          "say": "RBI bainkon par nazar rakhta hai taaki ye surakshit tareeke se kaam karein aur desh ki arthavyavastha ko sthir rakhen.",
+          "visual": {},
+          "mood": "explain",
+          "pop": "Bank ka kamar tareeke",
+          "say_hi": "RBI बैंकों पर नज़र रखता है ताकि ये सुरक्षित तरीके से काम करें और देश की अर्थव्यवस्था को स्थिर रखें।",
+          "say_from": "RBI बैंकों पर नज़र रखता है ताकि ये सुरक्षित तरीके से काम करें और देश की अर्थव्यवस्था को स्थिर रखें।"
+        }
+      ],
+      "narration_hi": "RBI बैंकों को बताता है कि उन्हें कितना पैसा रखना चाहिए ताकि अगर अचानक बहुत सारे लोग पैसे निकालने आएं तो कोई परेशानी नहीं हो। RBI बैंकों पर नज़र रखता है ताकि ये सुरक्षित तरीके से काम करें और देश की अर्थव्यवस्था को स्थिर रखें।"
+    },
+    {
+      "on_screen": "RBI: Bank par bharosa kaise banta hai?",
+      "beats": [
+        {
+          "say": "RBI niymon ke zarie bainkon ki gatividaniyon par nirnay reta hai, jisse logon ka bank par bharosa bana rata hai.",
+          "visual": {},
+          "mood": "explain",
+          "pop": "nirnay",
+          "say_hi": "RBI नियमों के ज़रिए बैंकों की गतिविधियों पर निगरानी रखता है, जिससे लोगों का बैंक पर भरोसा बना रहता है।",
+          "say_from": "RBI नियमों के ज़रिए बैंकों की गतिविधियों पर निगरानी रखता है, जिससे लोगों का बैंक पर भरोसा बना रहता है।"
+        }
+      ],
+      "narration_hi": "RBI नियमों के ज़रिए बैंकों की गतिविधियों पर निगरानी रखता है, जिससे लोगों का बैंक पर भरोसा बना रहता है।"
+    },
+    {
+      "on_screen": "Agar sab log ek saath paise nikal len to?",
+      "beats": [
+        {
+          "say": "To ab sawaal ye hai: agar sab log ek saath paise nikal len to?",
+          "say_from": "तो अब सवाल ये है: अगर सब लोग एक साथ पैसे निकाल लें तो?",
+          "say_hi": "तो अब सवाल ये है: अगर सब लोग एक साथ पैसे निकाल लें तो?",
+          "locked": true,
+          "visual": {
+            "type": "chapter",
+            "label": "Yahan se samjhiye"
+          },
+          "mood": "think"
+        }
+      ],
+      "narration_hi": "तो अब सवाल ये है: अगर सब लोग एक साथ पैसे निकाल लें तो?"
+    },
+    {
+      "on_screen": "Agar sab log paise nikal len",
+      "beats": [
+        {
+          "say": "Agar sab log ek saath paise nikalne aayein to bank ko bahut mushkil hoti.",
+          "visual": {},
+          "mood": "think",
+          "pop": "Loan nahi milega",
+          "say_hi": "अगर सब लोग एक साथ पैसे निकालने आएं तो बैंक को बहुत मुश्किल होती।",
+          "say_from": "अगर सब लोग एक साथ पैसे निकालने आएं तो बैंक को बहुत मुश्किल होती।"
+        },
+        {
+          "say": "Aisa isliye hota kyunki bank ka paisa loan dene ke liye hota hai,",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Bank paas loan dene ke liye paisa",
+                "icon": "money"
+              },
+              {
+                "label": "Sare log paise nikalne aate hain",
+                "icon": "people"
+              }
+            ],
+            "note": "Paisa kha gaya"
+          },
+          "mood": "warn",
+          "pop": "Bank khali ho jayega",
+          "say_hi": "ऐसा इसलिए होता क्योंकि बैंक का पैसा लोन देने के लिए होता है,",
+          "say_from": "ऐसा इसलिए होता क्योंकि बैंक का पैसा लोन देने के लिए होता है,"
+        },
+        {
+          "say": "Aur agar sare log ek saath paise nikal len to bank ke paas loan dene ke liye kuch nahi bachaega.",
+          "visual": {
+            "type": "photo",
+            "query": "empty cash register",
+            "caption": "Kha gaya"
+          },
+          "mood": "shock",
+          "pop": "Kuch nahi bacha",
+          "say_hi": "और अगर सारे लोग एक साथ पैसे निकाल लें तो बैंक के पास लोन देने के लिए कुछ नहीं बचेगा।",
+          "say_from": "और अगर सारे लोग एक साथ पैसे निकाल लें तो बैंक के पास लोन देने के लिए कुछ नहीं बचेगा।"
+        },
+        {
+          "say": "Sochiye, aapke paas ek tokri mein phal hain, aur aap unhe logon ko baant rahe hain.",
+          "visual": {},
+          "mood": "explain",
+          "pop": "Paisa khali ho jayega",
+          "say_hi": "सोचिए, आपके पास एक टोकरी में फल हैं, और आप उन्हें लोगों को बांट रहे हैं।",
+          "say_from": "सोचिए, आपके पास एक टोकरी में फल हैं, और आप उन्हें लोगों को बांट रहे हैं।"
+        }
+      ],
+      "narration_hi": "अगर सब लोग एक साथ पैसे निकालने आएं तो बैंक को बहुत मुश्किल होती। ऐसा इसलिए होता क्योंकि बैंक का पैसा लोन देने के लिए होता है, और अगर सारे लोग एक साथ पैसे निकाल लें तो बैंक के पास लोन देने के लिए कुछ नहीं बचेगा। सोचिए, आपके पास एक टोकरी में फल हैं, और आप उन्हें लोगों को बांट रहे हैं।"
+    },
+    {
+      "on_screen": "Agar sab log ek saath pise nikal len",
+      "beats": [
+        {
+          "say": "Ab agar achanak sab log ek saath tokri se phal lene aa jaen,",
+          "visual": {},
+          "mood": "think",
+          "pop": "ek saath",
+          "say_hi": "अब अगर अचानक सब लोग एक साथ टोकरी से फल लेने आ जाएं,",
+          "say_from": "अब अगर अचानक सब लोग एक साथ टोकरी से फल लेने आ जाएं,"
+        },
+        {
+          "say": "To aapko kya hoga? Aapke paas baantne ke liye kuch nahi bachega.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Bank ke paas paise nahi",
+                "icon": "bank"
+              },
+              {
+                "label": "Loan dene ke liye prayaaghit paisa",
+                "icon": "money"
+              }
+            ],
+            "note": "Paise nikalne ka effect"
+          },
+          "mood": "warn",
+          "pop": "paise nikaalne",
+          "say_hi": "तो आपको क्या होगा? आपके पास बांटने के लिए कुछ नहीं बचेगा।",
+          "say_from": "तो आपको क्या होगा? आपके पास बांटने के लिए कुछ नहीं बचेगा।"
+        },
+        {
+          "say": "Isi tarah, bank bhi grahakon se paise jama karvate hain, aur us paise ka istemal loan dene ke liye karte hain.",
+          "visual": {
+            "type": "photo",
+            "query": "bank vault",
+            "caption": "Bank ke paas paise"
+          },
+          "mood": "explain",
+          "pop": "loan dene ke liye",
+          "say_hi": "इसी तरह, बैंक भी ग्राहकों से पैसे जमा करवाते हैं, और उस पैसे का इस्तेमाल लोन देने के लिए करते हैं।",
+          "say_from": "इसी तरह, बैंक भी ग्राहकों से पैसे जमा करवाते हैं, और उस पैसे का इस्तेमाल लोन देने के लिए करते हैं।"
+        }
+      ],
+      "narration_hi": "अब अगर अचानक सब लोग एक साथ टोकरी से फल लेने आ जाएं, तो आपको क्या होगा? आपके पास बांटने के लिए कुछ नहीं बचेगा। इसी तरह, बैंक भी ग्राहकों से पैसे जमा करवाते हैं, और उस पैसे का इस्तेमाल लोन देने के लिए करते हैं।"
+    },
+    {
+      "on_screen": "RBI ke niyamo",
+      "beats": [
+        {
+          "say": "Isliye, RBI bainkon par nazara rakhta hai taaki ve ek saath paise nikaalne ki sthiti mein zyadaa nuksan na uthaen. RBI niyamon aur gaidalain ke zariye bainkon ko ye batata hai ki kaise kaam karna hai.",
+          "visual": {
+            "type": "icon",
+            "icon": "shield",
+            "text": "Bank surakshit tareeke se kaam karen"
+          },
+          "mood": "explain",
+          "pop": "Surakshit tareeke",
+          "say_hi": "इसलिए, RBI बैंकों पर नज़र रखता है ताकि वे एक साथ पैसे निकालने की स्थिति में ज़्यादा नुकसान न उठाएं। RBI नियमों और गाइडलाइन्स के ज़रिए बैंकों को ये बताता है कि कैसे काम करना है।",
+          "say_from": "इसलिए, RBI बैंकों पर नज़र रखता है ताकि वे एक साथ पैसे निकालने की स्थिति में ज़्यादा नुकसान न उठाएं। RBI नियमों और गाइडलाइन्स के ज़रिए बैंकों को ये बताता है कि कैसे काम करना है।"
+        }
+      ],
+      "narration_hi": "इसलिए, RBI बैंकों पर नज़र रखता है ताकि वे एक साथ पैसे निकालने की स्थिति में ज़्यादा नुकसान न उठाएं। RBI नियमों और गाइडलाइन्स के ज़रिए बैंकों को ये बताता है कि कैसे काम करना है।"
+    },
+    {
+      "on_screen": "Aapke paise kaise surakshit hain?",
+      "beats": [
+        {
+          "say": "Akhir mein ye jan lije: aapke paise kaise surakshit hain?",
+          "say_from": "आखिर में ये जान लीजिए: आपके पैसे कैसे सुरक्षित हैं?",
+          "say_hi": "आखिर में ये जान लीजिए: आपके पैसे कैसे सुरक्षित हैं?",
+          "locked": true,
+          "visual": {
+            "type": "chapter",
+            "label": "Aakhri baat"
+          },
+          "mood": "think"
+        }
+      ],
+      "narration_hi": "आखिर में ये जान लीजिए: आपके पैसे कैसे सुरक्षित हैं?"
+    },
+    {
+      "on_screen": "Paise kaise surakshit kare",
+      "beats": [
+        {
+          "say": "Aapke bank jama ki suraksha ke liye, RBI ne Deposit insurance Scheme shuru ki hai.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Deposit Insurance Scheme",
+                "icon": "bank"
+              },
+              {
+                "label": "RBI ne shuru kiya",
+                "icon": "shield"
+              },
+              {
+                "label": "Jama rashee wapis aayega",
+                "icon": "money"
+              }
+            ],
+            "note": "Bank jama ke suraksha"
+          },
+          "mood": "explain",
+          "pop": "Deposit Insurance",
+          "say_hi": "आपके बैंक जमा की सुरक्षा के लिए, RBI ने डिपॉजिट इंश्योरेंस स्कीम शुरू की है।",
+          "say_from": "आपके बैंक जमा की सुरक्षा के लिए, RBI ने डिपॉजिट इंश्योरेंस स्कीम शुरू की है।"
+        },
+        {
+          "say": "Iska matlab hai ki yadi koi bank divaalia ho jaata hai, to aapko apne jama rashee ka ek nishchit hissa vapas mil jaega.",
+          "visual": {},
+          "mood": "warn",
+          "pop": "Jama rashee wapis",
+          "say_hi": "इसका मतलब है कि यदि कोई बैंक दिवालिया हो जाता है, तो आपको अपने जमा राशि का एक निश्चित हिस्सा वापस मिल जाएगा।",
+          "say_from": "इसका मतलब है कि यदि कोई बैंक दिवालिया हो जाता है, तो आपको अपने जमा राशि का एक निश्चित हिस्सा वापस मिल जाएगा।"
+        },
+        {
+          "say": "Bank mein aapka paisa surakshit roop se jama karke aur bainkon ki bhumika ko samajhkar aap apni vittiy suraksha sunishchit kar sakte hain.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Bank jama karke",
+                "icon": "money"
+              },
+              {
+                "label": "Banks ki bhumika samajh",
+                "icon": "shield"
+              },
+              {
+                "label": "Vittiy suraksha sunishchit",
+                "icon": "lock"
+              }
+            ],
+            "note": "Suraksha ke tareeqa"
+          },
+          "mood": "think",
+          "pop": "Suraksha kaise",
+          "say_hi": "बैंक में आपका पैसा सुरक्षित रूप से जमा करके और बैंकों की भूमिका को समझकर आप अपनी वित्तीय सुरक्षा सुनिश्चित कर सकते हैं।",
+          "say_from": "बैंक में आपका पैसा सुरक्षित रूप से जमा करके और बैंकों की भूमिका को समझकर आप अपनी वित्तीय सुरक्षा सुनिश्चित कर सकते हैं।"
+        }
+      ],
+      "narration_hi": "आपके बैंक जमा की सुरक्षा के लिए, RBI ने डिपॉजिट इंश्योरेंस स्कीम शुरू की है। इसका मतलब है कि यदि कोई बैंक दिवालिया हो जाता है, तो आपको अपने जमा राशि का एक निश्चित हिस्सा वापस मिल जाएगा। बैंक में आपका पैसा सुरक्षित रूप से जमा करके और बैंकों की भूमिका को समझकर आप अपनी वित्तीय सुरक्षा सुनिश्चित कर सकते हैं।"
+    },
+    {
+      "on_screen": "Aapki baari",
+      "beats": [
+        {
+          "say": "Comment mein bataie, agli baar aap kis cheez ke baare mein janna chahte hain? Har sande aisi hi ek nayi baat ke liye snack code se jude rahie.",
+          "say_from": "कमेंट में बताइए, अगली बार आप किस चीज़ के बारे में जानना चाहते हैं? हर संडे ऐसी ही एक नई बात के लिए स्नैक कोड से जुड़े रहिए।",
+          "say_hi": "कमेंट में बताइए, अगली बार आप किस चीज़ के बारे में जानना चाहते हैं? हर संडे ऐसी ही एक नई बात के लिए स्नैक कोड से जुड़े रहिए।",
+          "locked": true,
+          "mood": "happy",
+          "visual": {
+            "type": "host",
+            "text": "Comment karo aur subscribe karo"
+          }
+        }
+      ],
+      "narration_hi": "कमेंट में बताइए, अगली बार आप किस चीज़ के बारे में जानना चाहते हैं? हर संडे ऐसी ही एक नई बात के लिए स्नैक कोड से जुड़े रहिए।"
+    }
+  ]
+}

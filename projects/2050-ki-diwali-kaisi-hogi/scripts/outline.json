@@ -1,0 +1,68 @@
+[
+  {
+    "on_screen": "2050 Ki Diwali Kaisi Hogi?",
+    "goal": "",
+    "opening": true,
+    "shape": "build_up"
+  },
+  {
+    "kind": "part",
+    "part": 1,
+    "total": 5,
+    "title_hi": "दिवाली की खोज – कैसे होगी?",
+    "on_screen": "Diwali ki khoj – kaise hogi?"
+  },
+  {
+    "on_screen": "Diwali ki khoj – kaise hogi?",
+    "goal": "- Diwali 2050 mein AI se banaye decoration aayenge. Holographic rangoli aur drone shows dekhne ko bahut hi interesting honge."
+  },
+  {
+    "kind": "part",
+    "part": 2,
+    "total": 5,
+    "title_hi": "रोबोट और घर – क्या हुआ?",
+    "on_screen": "Robot aur ghar – kya hua?"
+  },
+  {
+    "on_screen": "Robot aur ghar – kya hua?",
+    "goal": "- Diwali ke gifts aur snacks robot deliver karengi, aur smart homes mein lighting aur temperature automatically adjust hogi.  AI image generator se festive visuals create karne ke liye text description diya jata hai."
+  },
+  {
+    "kind": "part",
+    "part": 3,
+    "total": 5,
+    "title_hi": "रंगोली की दुनिया – कैसे बनाए?",
+    "on_screen": "Rangoli ki duniya – kaise bane?"
+  },
+  {
+    "on_screen": "Rangoli ki duniya – kaise bane?",
+    "goal": "- Holographic rangoli design me bright pink, orange, saffron yellow aur white colors use hongi. Traditional attire waale log sparklers lit karte hue Diwali mood bana sakte hain."
+  },
+  {
+    "kind": "part",
+    "part": 4,
+    "total": 5,
+    "title_hi": "डिजिटल दिवाली – क्या देखे?",
+    "on_screen": "Digital Diwali – kya dekhe?"
+  },
+  {
+    "on_screen": "Digital Diwali – kya dekhe?",
+    "goal": "- Virtual celebrations me people online Diwali celebrate kar sakte hain. AI-generated decorations use hongi aur AI video generator se existing festive image ko animate karke video bana sakte hain."
+  },
+  {
+    "kind": "part",
+    "part": 5,
+    "total": 5,
+    "title_hi": "सस्तेनेबल दिवाली – कैसे हो?",
+    "on_screen": "Sustainable Diwali – kaise ho?"
+  },
+  {
+    "on_screen": "Sustainable Diwali – kaise ho?",
+    "goal": "- 2050 mein homes sustainability, technology, adaptability aur wellness se integrate honge. Shree Om Consultant (SOC) sustainable homes design kar raha hai jo client vision ke according customize hota hai."
+  },
+  {
+    "on_screen": "Yaad rakhne wali baat",
+    "goal": "- 2050 ki Diwali AI aur technology ke upyog se ek exciting aur sustainable celebration hogi.",
+    "ending": true
+  }
+]

@@ -86,6 +86,12 @@ ICONS += [os.path.basename(p)[:-4] for p in glob.glob(os.path.join(os.path.dirna
           if os.path.basename(p)[:-4] not in ICONS]
 
 PREVIEW = "--preview" in sys.argv
+
+
+def arg_value(name):
+    """The value after a command-line option, like --music song.mp3."""
+    return sys.argv[sys.argv.index(name) + 1] if name in sys.argv and sys.argv.index(name) + 1 < len(sys.argv) else None
+
 OUT = "output/preview.mp4" if PREVIEW else "output/animated.mp4"
 
 
@@ -400,6 +406,30 @@ KEYWORD_ICONS = [
     (r"internet|wifi|wi-fi|network|5g", "wifi"), (r"sim\b", "sim"), (r"safe|surakshit|bacho|bachein|secure|safety", "shield"),
     (r"website|online|google", "globe"), (r"bug|error|code", "bug"),
 ]
+
+
+# names the writer often uses for icons that exist under another name
+ICON_ALIASES = {"brain": "ai", "robot": "ai", "lightbulb": "bulb", "idea": "bulb", "light": "bulb", "hands": "handshake",
+                "teamwork": "handshake", "team": "people", "group": "people", "person": "user", "worker": "user",
+                "workers": "people", "job": "tools", "work": "tools", "office": "factory", "growth": "chart_up",
+                "graph": "chart_up", "chart": "chart_up", "loss": "chart_down", "danger": "warning", "alert": "alarm",
+                "time": "clock", "learn": "book", "learning": "book", "education": "school", "skill": "tools",
+                "skills": "tools", "computer": "laptop", "pc": "laptop", "internet": "globe", "world": "globe",
+                "earth": "globe", "network": "wifi", "data": "server", "storage": "server", "message": "mail",
+                "email": "mail", "chat": "speech", "talk": "speech", "payment": "money", "rupee": "cash", "law": "court",
+                "government": "parliament", "election": "ballot", "vote": "ballot", "health": "doctor", "medicine": "doctor",
+                "farm": "farmer", "farming": "farmer", "creativity": "bulb", "decision": "target", "goal": "target",
+                "success": "trophy", "fast": "rocket", "speed": "rocket", "settings": "gear", "camera": "camera"}
+
+
+def icon_for(name, label=""):
+    """A real icon for whatever name the writer used, else one guessed from the label."""
+    name = str(name or "").lower().strip()
+    if name in ICONS:
+        return name
+    if ICON_ALIASES.get(name) in ICONS:
+        return ICON_ALIASES[name]
+    return guess_icon(f"{label} {name}")
 
 
 def guess_icon(text):
@@ -937,11 +967,24 @@ def draw_kinetic(canvas, d, s, t):
 # ======================================================================= visuals
 # Each visual has prep(s) (build sprites once) and draw(canvas, d, s, t).
 
+TITLE_DIM = Image.new("RGBA", (W, H), (0, 0, 0, 120))   # keeps the big hook heading readable on a photo
+
+
 def prep_title(s):
-    pass
+    """The hook line: on a real photo when photos.py found one for it, otherwise on the animated rings."""
+    v = s["visual"]
+    if v.get("file") and os.path.exists(v["file"]):
+        prep_photo(s)
+        v["_cap"] = None   # the heading is the caption here
+        v["_photo"] = True
 
 
 def draw_title(canvas, d, s, t):
+    if s["visual"].get("_photo"):
+        draw_photo(canvas, d, s, t)
+        canvas.alpha_composite(TITLE_DIM)
+        comp(canvas, s["visual"]["_credit"], W - s["visual"]["_credit"].width - 60, H - 76)   # credit stays readable
+        return
     cx, cy, r = W // 2, int(H * 0.40), 360
     a = t * 20 + s["idx"] * 40
     d.arc([cx - r, cy - r, cx + r, cy + r], a, a + 110, fill=dim(ACCENT, 0.4, TH["top"]), width=5)
@@ -1269,7 +1312,7 @@ def prep_symbols(s):
         d = ImageDraw.Draw(card)
         tint = colours[k % len(colours)]
         d.rounded_rectangle([0, 0, cw - 1, ch - 1], radius=36, fill=mix(TH["bot"], tint, 0.22) + (255,), outline=tint + (255,), width=5)
-        name = item.get("icon") if item.get("icon") in ICONS else guess_icon(str(item["label"]))
+        name = icon_for(item.get("icon"), str(item["label"]))
         card.alpha_composite(icon_sprite(name, 280, tint), dest=(75, 44))
         lines = wrap(str(item["label"]), font(50, KALAM), cw - 40, 2)
         for j, line in enumerate(lines):
@@ -1448,7 +1491,7 @@ def prep_flow(s):
     for nd in v.get("nodes", [])[:4] if isinstance(v.get("nodes"), list) else []:
         if isinstance(nd, dict):
             lab = str(nd.get("label", "")).strip()
-            ic = nd.get("icon") if nd.get("icon") in ICONS else guess_icon(lab)
+            ic = icon_for(nd.get("icon"), lab)
         else:
             lab, ic = str(nd).strip(), guess_icon(str(nd))
         if lab:
@@ -1682,7 +1725,7 @@ def prep_term(s):
     # a big bright icon on the right
     badge = Image.new("RGBA", (300, 300), (0, 0, 0, 0))
     ImageDraw.Draw(badge).ellipse([6, 6, 293, 293], fill=color + (255,))
-    name = v.get("icon") if v.get("icon") in ICONS else guess_icon(term)
+    name = icon_for(v.get("icon"), term)
     ic = icon_sprite(name, 180, WHITE)
     comp(badge, ic, (300 - ic.width) / 2, (300 - ic.height) / 2)
     tl_pop(items, badge, x0 + w - 210, y0 + h / 2)
@@ -1737,7 +1780,7 @@ def prep_pen(s):
             outline += hand_points(a, b, rnd_)
         tl_stroke(items, outline, color, 7)
         label = str(node.get("label") or "")
-        name = node.get("icon") if node.get("icon") in ICONS else guess_icon(label)
+        name = icon_for(node.get("icon"), label)
         tl_pop(items, icon_sprite(name, int(bh * 0.66), color), x + box / 2, top + bh / 2)
         ly = top + bh + 12
         for line in wrap(label, font(44, KALAM), box + gap - 16, max_lines=2):
@@ -2163,7 +2206,7 @@ for b in BEATS:
 EVENTS.append((SCENES_END + 0.35, "ding", 1.0))
 
 OUTRO_BIG = text_sprite("Video pasand aayi?", 76, WHITE)
-OUTRO_SMALL = text_sprite("Har Sunday nayi tech video", 40, MUTED, shadow=False)
+OUTRO_SMALL = text_sprite("Nayi videos ke liye Subscribe karo", 40, MUTED, shadow=False)
 
 
 def draw_outro(canvas, d, T):
@@ -2253,8 +2296,14 @@ def render(T, canvas, bi):
 # ======================================================================= final audio: voice + music + effects
 print("Mixing audio ...")
 audio = VOICE.copy()
-music = next((p for p in ["music.mp3", "music.wav", "music.m4a"] if os.path.exists(p)), None)
+# background music: --music FILE, else music.* in the video's folder, else in ~/snackcode-ai
+MUSIC_FILES = [os.path.join(folder, f"music.{ext}") for folder in (".", HERE) for ext in ("mp3", "wav", "m4a")]
+music = None if "--no-music" in sys.argv else (arg_value("--music") or next((p for p in MUSIC_FILES if os.path.exists(p)), None))
+if music and not os.path.exists(music):
+    raise SystemExit(f"Music file not found: {music}")
+MUSIC_VOLUME = float(arg_value("--music-volume") or MUSIC_VOLUME)
 if music:
+    print(f"Music: {music} at volume {MUSIC_VOLUME}")
     m = decode(["-stream_loop", "-1", "-i", music, "-t", f"{TOTAL + 1:.2f}"])
     m = np.pad(m, (0, max(0, N_SAMPLES - len(m))))[:N_SAMPLES]
     fade = np.ones(N_SAMPLES, np.float32)

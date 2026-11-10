@@ -13,7 +13,8 @@
           },
           "mood": "think",
           "pop": "AI kaam kya karega",
-          "say_hi": "क्या आप अपनी नौकरी खतरे में देख रहे हैं? AI सच में आपकी नौकरी लेगा या देगा?"
+          "say_hi": "क्या आप अपनी नौकरी खतरे में देख रहे हैं? AI सच में आपकी नौकरी लेगा या देगा?",
+          "say_from": "क्या आप अपनी नौकरी खतरे में देख रहे हैं? AI सच में आपकी नौकरी लेगा या देगा?"
         },
         {
           "say": "AI ke aane se Bharat mein naukriyon par kya asar pad raha hai,",
@@ -33,10 +34,11 @@
           },
           "mood": "explain",
           "pop": "Kya hoga kya nahi",
-          "say_hi": "AI के आने से भारत में नौकरियों पर क्या असर पड़ रहा है,"
+          "say_hi": "AI के आने से भारत में नौकरियों पर क्या असर पड़ रहा है,",
+          "say_from": "AI के आने से भारत में नौकरियों पर क्या असर पड़ रहा है,"
         },
         {
-          "say": "AI matlab aisa computer program, jo likhna, bolna ya chehra pehchan seekh leta hai.",
+          "say": "AI matlab esa computer program, jo likhna, bolna ya chehra pehchan seek leta hai.",
           "say_hi": "ए-आई मतलब ऐसा कंप्यूटर प्रोग्राम, जो लिखना, बोलना या चेहरा पहचानना सीख लेता है।",
           "visual": {
             "type": "term",
@@ -46,7 +48,8 @@
             "icon": "ai"
           },
           "mood": "explain",
-          "locked": true
+          "locked": true,
+          "say_from": "ए-आई मतलब ऐसा कंप्यूटर प्रोग्राम, जो लिखना, बोलना या चेहरा पहचानना सीख लेता है।"
         },
         {
           "say": "Ye jaanne ki koshish karte hain.. Agar aap ye nahi samjhenge ki AI kaise aapke kaam ko badal sakta hai,",
@@ -57,7 +60,8 @@
           },
           "mood": "warn",
           "pop": "Bharat mein asar",
-          "say_hi": "ये जानने की कोशिश करते हैं.। अगर आप ये नहीं समझेंगे कि AI कैसे आपके काम को बदल सकता है,"
+          "say_hi": "ये जानने की कोशिश करते हैं.। अगर आप ये नहीं समझेंगे कि AI कैसे आपके काम को बदल सकता है,",
+          "say_from": "ये जानने की कोशिश करते हैं.। अगर आप ये नहीं समझेंगे कि AI कैसे आपके काम को बदल सकता है,"
         },
         {
           "say": "To aapko aage badhne mein dikkat hogi. Kya AI aapki company ko poori tarah se badal dega ya sirf aapki madad karega?",
@@ -76,7 +80,8 @@
           },
           "mood": "shock",
           "pop": "Asli aur Fake",
-          "say_hi": "तो आपको आगे बढ़ने में दिक्कत होगी। क्या AI आपकी कंपनी को पूरी तरह से बदल देगा या सिर्फ आपकी मदद करेगा?"
+          "say_hi": "तो आपको आगे बढ़ने में दिक्कत होगी। क्या AI आपकी कंपनी को पूरी तरह से बदल देगा या सिर्फ आपकी मदद करेगा?",
+          "say_from": "तो आपको आगे बढ़ने में दिक्कत होगी। क्या AI आपकी कंपनी को पूरी तरह से बदल देगा या सिर्फ आपकी मदद करेगा?"
         }
       ],
       "narration_hi": "क्या आप अपनी नौकरी खतरे में देख रहे हैं? AI सच में आपकी नौकरी लेगा या देगा? AI के आने से भारत में नौकरियों पर क्या असर पड़ रहा है, ए-आई मतलब ऐसा कंप्यूटर प्रोग्राम, जो लिखना, बोलना या चेहरा पहचानना सीख लेता है। ये जानने की कोशिश करते हैं.। अगर आप ये नहीं समझेंगे कि AI कैसे आपके काम को बदल सकता है, तो आपको आगे बढ़ने में दिक्कत होगी। क्या AI आपकी कंपनी को पूरी तरह से बदल देगा या सिर्फ आपकी मदद करेगा?"
@@ -85,14 +90,15 @@
       "on_screen": "AI: naukri ki baat - kya hoga?",
       "beats": [
         {
-          "say": "Sabse pehle baat iski: AI: naukri ki baat - kya hoga?",
+          "say": "Sabse pehle baat iski: AI: Naukri ki baat - kya hoga?",
           "say_hi": "सबसे पहले बात इसकी: AI: नौकरी की बात - क्या होगा?",
           "locked": true,
           "visual": {
             "type": "chapter",
             "label": "Sabse pehle"
           },
-          "mood": "think"
+          "mood": "think",
+          "say_from": "सबसे पहले बात इसकी: AI: नौकरी की बात - क्या होगा?"
         }
       ],
       "narration_hi": "सबसे पहले बात इसकी: AI: नौकरी की बात - क्या होगा?"
@@ -101,7 +107,7 @@
       "on_screen": "AI ka naukri market me kya hoga?",
       "beats": [
         {
-          "say": "AI Indian job market mein impact kar raha hai, espeshli software developers aur customer support professionals ke liye.",
+          "say": "AI Indian JOB MARKET mein IMPACT kar raha hai, especially SOFTWARE developers aur CUSTOMER support PROFESSIONALS ke liye.",
           "visual": {
             "type": "symbols",
             "items": [
@@ -117,7 +123,8 @@
           },
           "mood": "think",
           "pop": "data vs AI",
-          "say_hi": "AI Indian जॉब मार्केट में इम्पैक्ट कर रहा है, एस्पेशली सॉफ्टवेयर डेवलपर्स और कस्टमर सपोर्ट प्रोफेशनल्स के लिए।"
+          "say_hi": "AI Indian जॉब मार्केट में इम्पैक्ट कर रहा है, एस्पेशली सॉफ्टवेयर डेवलपर्स और कस्टमर सपोर्ट प्रोफेशनल्स के लिए।",
+          "say_from": "AI Indian जॉब मार्केट में इम्पैक्ट कर रहा है, एस्पेशली सॉफ्टवेयर डेवलपर्स और कस्टमर सपोर्ट प्रोफेशनल्स के लिए।"
         },
         {
           "say": "Iska matlab hai ki sirf AI install karne se kaam mein koi badlav nahi aayega.",
@@ -136,10 +143,11 @@
           },
           "mood": "explain",
           "pop": "17 billion",
-          "say_hi": "इसका मतलब है कि सिर्फ़ AI इंस्टॉल करने से काम में कोई बदलाव नहीं आएगा।"
+          "say_hi": "इसका मतलब है कि सिर्फ़ AI इंस्टॉल करने से काम में कोई बदलाव नहीं आएगा।",
+          "say_from": "इसका मतलब है कि सिर्फ़ AI इंस्टॉल करने से काम में कोई बदलाव नहीं आएगा।"
         },
         {
-          "say": "Varna AI ko sahi tareeke se istamal karna zaroori hai. India ka domestic AI market 2027 tak USD 17 billion pe pahunch jayega.",
+          "say": "Warna AI ko sahi tareeke se istemaal karna zaroori hai. India ka domestic AI market 2027 tak USD 17 billion pe pahunche jayega.",
           "visual": {
             "type": "pen",
             "items": [
@@ -160,10 +168,11 @@
           },
           "mood": "warn",
           "pop": "jobs change",
-          "say_hi": "वर्ना AI को सही तरीके से इस्तमाल करना ज़रूरी है। इंडिया का डोमेस्टिक AI मार्केट 2027 तक USD 17 बिलियन पे पहुंच जाएगा।"
+          "say_hi": "वर्ना AI को सही तरीके से इस्तमाल करना ज़रूरी है। इंडिया का डोमेस्टिक AI मार्केट 2027 तक USD 17 बिलियन पे पहुंच जाएगा।",
+          "say_from": "वर्ना AI को सही तरीके से इस्तमाल करना ज़रूरी है। इंडिया का डोमेस्टिक AI मार्केट 2027 तक USD 17 बिलियन पे पहुंच जाएगा।"
         },
         {
-          "say": "2024 tak India mein aproksimetli 4.2 lakh AI professionals the. Varld ikonomik phoram ki future of jobs report 2025 ne bataya hai ke 2030 tak global mein 170 miliyan naye jobs aur 92 miliyan jobs displesment hon wali hain.",
+          "say": "2024 tak India mein approximately 4.2 lakh AI professionals the. World Economic Forum ki future of Jobs report 2025 ne bataya hai ke 2030 tak global mein 170 million naye jobs aur 92 million jobs displacement hone wali hain.",
           "visual": {
             "type": "photo",
             "query": "data center",
@@ -171,7 +180,8 @@
           },
           "mood": "explain",
           "pop": "future jobs",
-          "say_hi": "2024 तक इंडिया में अप्रॉक्सिमेटली 4.2 लाख AI प्रोफेशनल्स थे। वर्ल्ड इकोनॉमिक फोरम की फ्यूचर ऑफ जॉब्स रिपोर्ट 2025 ने बताया है के 2030 तक ग्लोबल में 170 मिलियन नए जॉब्स और 92 मिलियन जॉब्स डिस्प्लेसमेंट होन वाली हैं।"
+          "say_hi": "2024 तक इंडिया में अप्रॉक्सिमेटली 4.2 लाख AI प्रोफेशनल्स थे। वर्ल्ड इकोनॉमिक फोरम की फ्यूचर ऑफ जॉब्स रिपोर्ट 2025 ने बताया है के 2030 तक ग्लोबल में 170 मिलियन नए जॉब्स और 92 मिलियन जॉब्स डिस्प्लेसमेंट होन वाली हैं।",
+          "say_from": "2024 तक इंडिया में अप्रॉक्सिमेटली 4.2 लाख AI प्रोफेशनल्स थे। वर्ल्ड इकोनॉमिक फोरम की फ्यूचर ऑफ जॉब्स रिपोर्ट 2025 ने बताया है के 2030 तक ग्लोबल में 170 मिलियन नए जॉब्स और 92 मिलियन जॉब्स डिस्प्लेसमेंट होन वाली हैं।"
         }
       ],
       "narration_hi": "AI Indian जॉब मार्केट में इम्पैक्ट कर रहा है, एस्पेशली सॉफ्टवेयर डेवलपर्स और कस्टमर सपोर्ट प्रोफेशनल्स के लिए। इसका मतलब है कि सिर्फ़ AI इंस्टॉल करने से काम में कोई बदलाव नहीं आएगा। वर्ना AI को सही तरीके से इस्तमाल करना ज़रूरी है। इंडिया का डोमेस्टिक AI मार्केट 2027 तक USD 17 बिलियन पे पहुंच जाएगा। 2024 तक इंडिया में अप्रॉक्सिमेटली 4.2 लाख AI प्रोफेशनल्स थे। वर्ल्ड इकोनॉमिक फोरम की फ्यूचर ऑफ जॉब्स रिपोर्ट 2025 ने बताया है के 2030 तक ग्लोबल में 170 मिलियन नए जॉब्स और 92 मिलियन जॉब्स डिस्प्लेसमेंट होन वाली हैं।"
@@ -180,7 +190,7 @@
       "on_screen": "AI ke naukri ki baat",
       "beats": [
         {
-          "say": "AI ke zarie naye career opportunity bana rahe hain, jaise machine-learning engineers,",
+          "say": "AI ke zariye naye career opportunity bana rahe hain, jaise machine-learning engineers,",
           "visual": {
             "type": "pen",
             "items": [
@@ -201,10 +211,11 @@
           },
           "mood": "think",
           "pop": "New Jobs",
-          "say_hi": "AI के ज़रिए नए करियर ऑपर्च्युनिटीज़ बना रहे हैं, जैसे मशीन-लर्निंग इंजीनियर्स,"
+          "say_hi": "AI के ज़रिए नए करियर ऑपर्च्युनिटीज़ बना रहे हैं, जैसे मशीन-लर्निंग इंजीनियर्स,",
+          "say_from": "AI के ज़रिए नए करियर ऑपर्च्युनिटीज़ बना रहे हैं, जैसे मशीन-लर्निंग इंजीनियर्स,"
         },
         {
-          "say": "AI product mainejars, emaelaops speshlists, data enotetars, prompt dizainars, modal editars, red-timars,",
+          "say": "AI product managers, MLOps specialists, data annotators, prompt designers, model editors, red-teams,",
           "visual": {
             "type": "symbols",
             "items": [
@@ -220,10 +231,11 @@
           },
           "mood": "explain",
           "pop": "Real vs Fake",
-          "say_hi": "AI प्रोडक्ट मैनेजर्स, एमएलओप्स स्पेशलिस्ट्स, डेटा एनोटेटर्स, प्रॉम्प्ट डिज़ाइनर्स, मॉडल एडिटर्स, रेड-टीमर्स,"
+          "say_hi": "AI प्रोडक्ट मैनेजर्स, एमएलओप्स स्पेशलिस्ट्स, डेटा एनोटेटर्स, प्रॉम्प्ट डिज़ाइनर्स, मॉडल एडिटर्स, रेड-टीमर्स,",
+          "say_from": "AI प्रोडक्ट मैनेजर्स, एमएलओप्स स्पेशलिस्ट्स, डेटा एनोटेटर्स, प्रॉम्प्ट डिज़ाइनर्स, मॉडल एडिटर्स, रेड-टीमर्स,"
         },
         {
-          "say": "Aur AI-ethiks ophisars. AI agrikalchar, helthakeyar, mainyuphaikcharing, phainens, idukeshan, lojistiks, klaimet service,",
+          "say": "Aur AI-ethics officers. AI agriculture, healthcare, manufacturing, finance, education, logistics, climate services,",
           "visual": {
             "type": "flow",
             "nodes": [
@@ -243,10 +255,11 @@
           },
           "mood": "warn",
           "pop": "Where AI Works",
-          "say_hi": "और AI-एथिक्स ऑफिसर्स। AI अग्रिकल्चर, हेल्थकेयर, मैन्युफैक्चरिंग, फाइनेंस, ईडुकेशन, लॉजिस्टिक्स, क्लाइमेट सर्विसेज,"
+          "say_hi": "और AI-एथिक्स ऑफिसर्स। AI अग्रिकल्चर, हेल्थकेयर, मैन्युफैक्चरिंग, फाइनेंस, ईडुकेशन, लॉजिस्टिक्स, क्लाइमेट सर्विसेज,",
+          "say_from": "और AI-एथिक्स ऑफिसर्स। AI अग्रिकल्चर, हेल्थकेयर, मैन्युफैक्चरिंग, फाइनेंस, ईडुकेशन, लॉजिस्टिक्स, क्लाइमेट सर्विसेज,"
         },
         {
-          "say": "Aur public edministreshan mein bhi kaam kar sakta hai. Kropin, vadhvani AI, aur kyur.eaai jaise companies ye shahar karta rahen hain.",
+          "say": "Aur public administration mein bhi kaam kar sakta hai. Cropin, Wadhwani AI, aur qure.ai jaise companies ye shahar karta raheen hain.",
           "visual": {
             "type": "photo",
             "query": "ai office",
@@ -254,7 +267,8 @@
           },
           "mood": "happy",
           "pop": "AI Offices",
-          "say_hi": "और पब्लिक एडमिनिस्ट्रेशन में भी काम कर सकता है। क्रॉपिन, वाधवानी AI, और क्यूर.एआई जैसे कंपनियां ये शहर करता रहें हैं।"
+          "say_hi": "और पब्लिक एडमिनिस्ट्रेशन में भी काम कर सकता है। क्रॉपिन, वाधवानी AI, और क्यूर.एआई जैसे कंपनियां ये शहर करता रहें हैं।",
+          "say_from": "और पब्लिक एडमिनिस्ट्रेशन में भी काम कर सकता है। क्रॉपिन, वाधवानी AI, और क्यूर.एआई जैसे कंपनियां ये शहर करता रहें हैं।"
         }
       ],
       "narration_hi": "AI के ज़रिए नए करियर ऑपर्च्युनिटीज़ बना रहे हैं, जैसे मशीन-लर्निंग इंजीनियर्स, AI प्रोडक्ट मैनेजर्स, एमएलओप्स स्पेशलिस्ट्स, डेटा एनोटेटर्स, प्रॉम्प्ट डिज़ाइनर्स, मॉडल एडिटर्स, रेड-टीमर्स, और AI-एथिक्स ऑफिसर्स। AI अग्रिकल्चर, हेल्थकेयर, मैन्युफैक्चरिंग, फाइनेंस, ईडुकेशन, लॉजिस्टिक्स, क्लाइमेट सर्विसेज, और पब्लिक एडमिनिस्ट्रेशन में भी काम कर सकता है। क्रॉपिन, वाधवानी AI, और क्यूर.एआई जैसे कंपनियां ये शहर करता रहें हैं।"
@@ -263,7 +277,7 @@
       "on_screen": "AI: naukri ki baat - kya hoga?",
       "beats": [
         {
-          "say": "India ko workforce apaskiling karna hoga, indijenas data infrastructure banane hoga aur ethikal sephgards lagne hue AI redi hona hoga.",
+          "say": "India ko workforce upskilling karna hoga, indigenous data infrastructure banaen hoga aur ethical safeguards lagen huye AI ready hona hoga.",
           "visual": {
             "type": "symbols",
             "items": [
@@ -279,10 +293,11 @@
           },
           "mood": "think",
           "pop": "data center",
-          "say_hi": "इंडिया को वर्कफ़ोर्स अपस्किलिंग करना होगा, इंडिजेनस डेटा इंफ्रास्ट्रक्चर बनाने होगा और एथिकल सेफगार्ड्स लगने हुए AI रेडी होना होगा।"
+          "say_hi": "इंडिया को वर्कफ़ोर्स अपस्किलिंग करना होगा, इंडिजेनस डेटा इंफ्रास्ट्रक्चर बनाने होगा और एथिकल सेफगार्ड्स लगने हुए AI रेडी होना होगा।",
+          "say_from": "इंडिया को वर्कफ़ोर्स अपस्किलिंग करना होगा, इंडिजेनस डेटा इंफ्रास्ट्रक्चर बनाने होगा और एथिकल सेफगार्ड्स लगने हुए AI रेडी होना होगा।"
         },
         {
-          "say": "NITI aayog ka responsibal AI report ye riske hailait karta hai jo AI se employment aur soshal baysej mein ho sakte hain.",
+          "say": "NITI aayog ka Responsive AI report ye riske highlight karta hai jo AI se employment aur social biases mein ho sakte hain.",
           "visual": {
             "type": "flow",
             "nodes": [
@@ -302,10 +317,11 @@
           },
           "mood": "warn",
           "pop": "risk",
-          "say_hi": "NITI आयोग का रेस्पॉन्सिबल AI रिपोर्ट ये रिस्के हाइलाइट करता है जो AI से एम्प्लॉयमेंट और सोशल बायसेज में हो सकते हैं।"
+          "say_hi": "NITI आयोग का रेस्पॉन्सिबल AI रिपोर्ट ये रिस्के हाइलाइट करता है जो AI से एम्प्लॉयमेंट और सोशल बायसेज में हो सकते हैं।",
+          "say_from": "NITI आयोग का रेस्पॉन्सिबल AI रिपोर्ट ये रिस्के हाइलाइट करता है जो AI से एम्प्लॉयमेंट और सोशल बायसेज में हो सकते हैं।"
         },
         {
-          "say": "PhdCCI ne AI aur robotiks ke liye sentar of excellence lonch kiya hai,",
+          "say": "PhdCCI ne AI aur robotics ke liye centre of excellence launch kiya hai,",
           "visual": {
             "type": "pen",
             "items": [
@@ -322,10 +338,11 @@
           },
           "mood": "explain",
           "pop": "reskill",
-          "say_hi": "PhdCCI ने AI और रोबोटिक्स के लिए सेंटर ऑफ excellence लॉन्च किया है,"
+          "say_hi": "PhdCCI ने AI और रोबोटिक्स के लिए सेंटर ऑफ excellence लॉन्च किया है,",
+          "say_from": "PhdCCI ने AI और रोबोटिक्स के लिए सेंटर ऑफ excellence लॉन्च किया है,"
         },
         {
-          "say": "Jisse MSMEs ko reskil karne mein madad milegi. AI India mein 38 miliyan jobs impact karega,",
+          "say": "Jisse MSMEs ko reskill karne mein madad milegi. AI India mein 38 million jobs impact karega,",
           "visual": {
             "type": "stat",
             "value": "38%",
@@ -333,7 +350,8 @@
           },
           "mood": "happy",
           "pop": "jobs",
-          "say_hi": "जिससे MSMEs को रेस्किल करने में मदद मिलेगी। AI इंडिया में 38 मिलियन जॉब्स इम्पैक्ट करेगा,"
+          "say_hi": "जिससे MSMEs को रेस्किल करने में मदद मिलेगी। AI इंडिया में 38 मिलियन जॉब्स इम्पैक्ट करेगा,",
+          "say_from": "जिससे MSMEs को रेस्किल करने में मदद मिलेगी। AI इंडिया में 38 मिलियन जॉब्स इम्पैक्ट करेगा,"
         }
       ],
       "narration_hi": "इंडिया को वर्कफ़ोर्स अपस्किलिंग करना होगा, इंडिजेनस डेटा इंफ्रास्ट्रक्चर बनाने होगा और एथिकल सेफगार्ड्स लगने हुए AI रेडी होना होगा। NITI आयोग का रेस्पॉन्सिबल AI रिपोर्ट ये रिस्के हाइलाइट करता है जो AI से एम्प्लॉयमेंट और सोशल बायसेज में हो सकते हैं। PhdCCI ने AI और रोबोटिक्स के लिए सेंटर ऑफ excellence लॉन्च किया है, जिससे MSMEs को रेस्किल करने में मदद मिलेगी। AI इंडिया में 38 मिलियन जॉब्स इम्पैक्ट करेगा,"
@@ -342,25 +360,27 @@
       "on_screen": "AI: naukri ki baat - kya hoga?",
       "beats": [
         {
-          "say": "Jaise ki 24% kamplitli otometed honge aur 42% mein signiphikent taim sevings hogi.",
+          "say": "Jaise ki 24% completely automated honge aur 42% mein significant time savings hogi.",
           "visual": {},
           "mood": "think",
-          "pop": "24% otometed",
-          "say_hi": "जैसे की 24% कम्प्लीटली ऑटोमेटेड होंगे और 42% में सिग्निफिकेंट टाइम सेविंग्स होगी।"
+          "pop": "24% automated",
+          "say_hi": "जैसे की 24% कम्प्लीटली ऑटोमेटेड होंगे और 42% में सिग्निफिकेंट टाइम सेविंग्स होगी।",
+          "say_from": "जैसे की 24% कम्प्लीटली ऑटोमेटेड होंगे और 42% में सिग्निफिकेंट टाइम सेविंग्स होगी।"
         },
         {
-          "say": "AI neshnal prodaktiviti ko 2.61% tak badal sakta hai, jiska matlab ekachchhi gaya average groth ke samne 6 sailon ka progres hoga.",
+          "say": "AI National Productivity ko 2.61% tak badal sakta hai, jiska matlab ekchhi gaya average growth ke samne 6 saloon ka progress hoga.",
           "visual": {
             "type": "stat",
-            "value": "6 sailon",
+            "value": "6 saalon",
             "label": "progres hoga"
           },
           "mood": "explain",
-          "pop": "6 sailon progres",
-          "say_hi": "AI नेशनल प्रोडक्टिविटी को 2.61% तक बदल सकता है, जिसका मतलब एकच्छी गया एवरेज ग्रोथ के समने 6 सैलॉन का प्रोग्रेस होगा।"
+          "pop": "6 saalon progres",
+          "say_hi": "AI नेशनल प्रोडक्टिविटी को 2.61% तक बदल सकता है, जिसका मतलब एकच्छी गया एवरेज ग्रोथ के समने 6 सैलॉन का प्रोग्रेस होगा।",
+          "say_from": "AI नेशनल प्रोडक्टिविटी को 2.61% तक बदल सकता है, जिसका मतलब एकच्छी गया एवरेज ग्रोथ के समने 6 सैलॉन का प्रोग्रेस होगा।"
         },
         {
-          "say": "EY ne bataya hai ke software development aur call centers mein AI automation se 60-80% prodaktiviti gens hon wali hain.",
+          "say": "EY ne bataya hai ke software development aur call centers mein AI automation se 60-80% productivity gains hone wali hain.",
           "visual": {
             "type": "symbols",
             "items": [
@@ -375,32 +395,34 @@
             ]
           },
           "mood": "warn",
-          "pop": "60-80% prodaktiviti",
-          "say_hi": "EY ने बताया है के सॉफ्टवेयर डेवलपमेंट और कॉल सेंटर्स में AI ऑटोमेशन से 60-80% प्रोडक्टिविटी गेन्स होन वाली हैं।"
+          "pop": "60-80% productivity",
+          "say_hi": "EY ने बताया है के सॉफ्टवेयर डेवलपमेंट और कॉल सेंटर्स में AI ऑटोमेशन से 60-80% प्रोडक्टिविटी गेन्स होन वाली हैं।",
+          "say_from": "EY ने बताया है के सॉफ्टवेयर डेवलपमेंट और कॉल सेंटर्स में AI ऑटोमेशन से 60-80% प्रोडक्टिविटी गेन्स होन वाली हैं।"
         },
         {
-          "say": "AI hyuman potenshiyal ko improve karta hai, disijan meking, krietiviti aur kolaboreshan ko badhte hai.",
+          "say": "AI human potential ko improve karta hai, decision making, creativity aur collaboration ko badhate hai.",
           "visual": {
             "type": "pen",
             "items": [
               {
-                "label": "disijan meking",
+                "label": "decision making",
                 "icon": "brain"
               },
               {
-                "label": "krietiviti",
+                "label": "creativity",
                 "icon": "lightbulb"
               },
               {
-                "label": "kolaboreshan",
+                "label": "collaboration",
                 "icon": "handshake"
               }
             ],
-            "note": "AI ka potenshiyal"
+            "note": "AI ka potential"
           },
           "mood": "happy",
-          "pop": "krietiviti badhte hai",
-          "say_hi": "AI ह्यूमन पोटेंशियल को इम्प्रूव करता है, डिसिजन मेकिंग, क्रिएटिविटी और कोलाबोरेशन को बढ़ते है।"
+          "pop": "creativity badhte hai",
+          "say_hi": "AI ह्यूमन पोटेंशियल को इम्प्रूव करता है, डिसिजन मेकिंग, क्रिएटिविटी और कोलाबोरेशन को बढ़ते है।",
+          "say_from": "AI ह्यूमन पोटेंशियल को इम्प्रूव करता है, डिसिजन मेकिंग, क्रिएटिविटी और कोलाबोरेशन को बढ़ते है।"
         }
       ],
       "narration_hi": "जैसे की 24% कम्प्लीटली ऑटोमेटेड होंगे और 42% में सिग्निफिकेंट टाइम सेविंग्स होगी। AI नेशनल प्रोडक्टिविटी को 2.61% तक बदल सकता है, जिसका मतलब एकच्छी गया एवरेज ग्रोथ के समने 6 सैलॉन का प्रोग्रेस होगा। EY ने बताया है के सॉफ्टवेयर डेवलपमेंट और कॉल सेंटर्स में AI ऑटोमेशन से 60-80% प्रोडक्टिविटी गेन्स होन वाली हैं। AI ह्यूमन पोटेंशियल को इम्प्रूव करता है, डिसिजन मेकिंग, क्रिएटिविटी और कोलाबोरेशन को बढ़ते है।"
@@ -409,7 +431,7 @@
       "on_screen": "AI: Naukri ki baat - kya hoga?",
       "beats": [
         {
-          "say": "Jenretiv AI use karte hue companies mein revenyu groth 2.5 taims ho sakta hai aur prodaktiviti 2.4 taims badh sakta hai.",
+          "say": "Generative AI use karte huye companies mein revenue growth 2.5 times ho sakta hai aur productivity 2.4 times badh sakta hai.",
           "visual": {
             "type": "symbols",
             "items": [
@@ -425,10 +447,11 @@
           },
           "mood": "think",
           "pop": "Big Boost",
-          "say_hi": "जेनरेटिव AI यूज़ करते हुए कंपनियां में रेवेन्यू ग्रोथ 2.5 टाइम्स हो सकता है और प्रोडक्टिविटी 2.4 टाइम्स बढ़ सकता है।"
+          "say_hi": "जेनरेटिव AI यूज़ करते हुए कंपनियां में रेवेन्यू ग्रोथ 2.5 टाइम्स हो सकता है और प्रोडक्टिविटी 2.4 टाइम्स बढ़ सकता है।",
+          "say_from": "जेनरेटिव AI यूज़ करते हुए कंपनियां में रेवेन्यू ग्रोथ 2.5 टाइम्स हो सकता है और प्रोडक्टिविटी 2.4 टाइम्स बढ़ सकता है।"
         },
         {
-          "say": "74% companies jo AI integrate karte hain, wo business expectations ko mit karte hain ya anhe eksid karte hain.",
+          "say": "74% companies jo AI integrate karte hain, wo business expectations ko meet karte hain ya unhe exceed karte hain.",
           "visual": {
             "type": "symbols",
             "items": [
@@ -444,10 +467,11 @@
           },
           "mood": "warn",
           "pop": "74% Missed",
-          "say_hi": "74% कंपनियां जो AI इंटीग्रेट करते हैं, वो बिजनेस एक्स्पेक्टेशन्स को मीट करते हैं या अनहे एक्सीड करते हैं।"
+          "say_hi": "74% कंपनियां जो AI इंटीग्रेट करते हैं, वो बिजनेस एक्स्पेक्टेशन्स को मीट करते हैं या अनहे एक्सीड करते हैं।",
+          "say_from": "74% कंपनियां जो AI इंटीग्रेट करते हैं, वो बिजनेस एक्स्पेक्टेशन्स को मीट करते हैं या अनहे एक्सीड करते हैं।"
         },
         {
-          "say": "AI research ne hyuman-leval machine intelijens ke liye kaam kiya hai, jiska matlab AI ki kshamtaen bhi insanon ke barabar hain.",
+          "say": "AI research ne human-level machine intelijens ke liye kaam kiya hai, jiska matlab AI ki kshamtaein bhi insanon ke barabar hain.",
           "visual": {
             "type": "photo",
             "query": "robot hand writing",
@@ -455,10 +479,11 @@
           },
           "mood": "explain",
           "pop": "AI Can Write",
-          "say_hi": "AI रिसर्च ने ह्यूमन-लेवल मशीन इंटेलिजेंस के लिए काम किया है, जिसका मतलब AI की क्षमताएं भी इंसानों के बराबर हैं।"
+          "say_hi": "AI रिसर्च ने ह्यूमन-लेवल मशीन इंटेलिजेंस के लिए काम किया है, जिसका मतलब AI की क्षमताएं भी इंसानों के बराबर हैं।",
+          "say_from": "AI रिसर्च ने ह्यूमन-लेवल मशीन इंटेलिजेंस के लिए काम किया है, जिसका मतलब AI की क्षमताएं भी इंसानों के बराबर हैं।"
         },
         {
-          "say": "GPT-4 baar exam aur SAT jaise professional aur ekadmik benchmarks mein hyuman-leval parphormens dikha raha hai.",
+          "say": "GPT-4 baare exam aur SAT jaise professional aur academic benchmarks mein human-level performance dikha raha hai.",
           "visual": {
             "type": "flow",
             "nodes": [
@@ -478,7 +503,8 @@
           },
           "mood": "shock",
           "pop": "Exam Master",
-          "say_hi": "GPT-4 बार exam और SAT जैसे प्रोफ़ेशनल और एकाडमिक बेंचमार्क्स में ह्यूमन-लेवल परफॉर्मेंस दिखा रहा है।"
+          "say_hi": "GPT-4 बार exam और SAT जैसे प्रोफ़ेशनल और एकाडमिक बेंचमार्क्स में ह्यूमन-लेवल परफॉर्मेंस दिखा रहा है।",
+          "say_from": "GPT-4 बार exam और SAT जैसे प्रोफ़ेशनल और एकाडमिक बेंचमार्क्स में ह्यूमन-लेवल परफॉर्मेंस दिखा रहा है।"
         }
       ],
       "narration_hi": "जेनरेटिव AI यूज़ करते हुए कंपनियां में रेवेन्यू ग्रोथ 2.5 टाइम्स हो सकता है और प्रोडक्टिविटी 2.4 टाइम्स बढ़ सकता है। 74% कंपनियां जो AI इंटीग्रेट करते हैं, वो बिजनेस एक्स्पेक्टेशन्स को मीट करते हैं या अनहे एक्सीड करते हैं। AI रिसर्च ने ह्यूमन-लेवल मशीन इंटेलिजेंस के लिए काम किया है, जिसका मतलब AI की क्षमताएं भी इंसानों के बराबर हैं। GPT-4 बार exam और SAT जैसे प्रोफ़ेशनल और एकाडमिक बेंचमार्क्स में ह्यूमन-लेवल परफॉर्मेंस दिखा रहा है।"
@@ -487,7 +513,7 @@
       "on_screen": "AI: Naukri ki baat - kya hoga?",
       "beats": [
         {
-          "say": "Jiphri hintan ne rediyolojists ko AI se riples hon ka predikshan kiya tha.",
+          "say": "Geoffrey hinton ne radiologists ko AI se replace hone ka prediction kiya tha.",
           "visual": {
             "type": "symbols",
             "items": [
@@ -503,17 +529,19 @@
           },
           "mood": "think",
           "pop": "Risk vs Help",
-          "say_hi": "जिफ्री हिंटन ने रेडियोलॉजिस्ट्स को AI से रिप्लेस होन का प्रेडिक्शन किया था।"
+          "say_hi": "जिफ्री हिंटन ने रेडियोलॉजिस्ट्स को AI से रिप्लेस होन का प्रेडिक्शन किया था।",
+          "say_from": "जिफ्री हिंटन ने रेडियोलॉजिस्ट्स को AI से रिप्लेस होन का प्रेडिक्शन किया था।"
         },
         {
-          "say": "Jon markoph ne bataya hai ke AI ko hyumen intelligence ko enhains karne ke liye istamal karna chahiye,",
+          "say": "John markoff ne bataya hai ke AI ko humain intelligence ko enhance karne ke liye istemaal karna chahiye,",
           "visual": {},
           "mood": "warn",
           "pop": "Job Risks",
-          "say_hi": "जॉन मार्कोफ ने बताया है के AI को ह्यूमेन intelligence को एनहैंस करने के लिए इस्तमाल करना चाहिए,"
+          "say_hi": "जॉन मार्कोफ ने बताया है के AI को ह्यूमेन intelligence को एनहैंस करने के लिए इस्तमाल करना चाहिए,",
+          "say_from": "जॉन मार्कोफ ने बताया है के AI को ह्यूमेन intelligence को एनहैंस करने के लिए इस्तमाल करना चाहिए,"
         },
         {
-          "say": "Nahi ki isse riples karne ke liye. Daron esemoglu ne vorning di hai ke AI research ko augmentation par phokas karna hoga,",
+          "say": "Nahi ki isse replace karne ke liye. Daron Asemlu ne warning di hai ke AI research ko augmentation par focus karna hoga,",
           "visual": {
             "type": "pen",
             "items": [
@@ -534,10 +562,11 @@
           },
           "mood": "explain",
           "pop": "Better Together",
-          "say_hi": "नहीं की इससे रिप्लेस करने के लिए। दारोन एसेमोग्लू ने वॉर्निंग दी है के AI रिसर्च को एग्ज़िग्मेंट पर फोकस करना होगा,"
+          "say_hi": "नहीं की इससे रिप्लेस करने के लिए। दारोन एसेमोग्लू ने वॉर्निंग दी है के AI रिसर्च को एग्ज़िग्मेंट पर फोकस करना होगा,",
+          "say_from": "नहीं की इससे रिप्लेस करने के लिए। दारोन एसेमोग्लू ने वॉर्निंग दी है के AI रिसर्च को एग्ज़िग्मेंट पर फोकस करना होगा,"
         },
         {
-          "say": "Varna employment mein riske ho sakte hain.",
+          "say": "Warna employment mein risk ho sakte hain.",
           "visual": {
             "type": "photo",
             "query": "office workers",
@@ -545,7 +574,8 @@
           },
           "mood": "think",
           "pop": "Human Touch",
-          "say_hi": "वर्ना एम्प्लॉयमेंट में रिस्के हो सकते हैं।"
+          "say_hi": "वर्ना एम्प्लॉयमेंट में रिस्के हो सकते हैं।",
+          "say_from": "वर्ना एम्प्लॉयमेंट में रिस्के हो सकते हैं।"
         }
       ],
       "narration_hi": "जिफ्री हिंटन ने रेडियोलॉजिस्ट्स को AI से रिप्लेस होन का प्रेडिक्शन किया था। जॉन मार्कोफ ने बताया है के AI को ह्यूमेन intelligence को एनहैंस करने के लिए इस्तमाल करना चाहिए, नहीं की इससे रिप्लेस करने के लिए। दारोन एसेमोग्लू ने वॉर्निंग दी है के AI रिसर्च को एग्ज़िग्मेंट पर फोकस करना होगा, वर्ना एम्प्लॉयमेंट में रिस्के हो सकते हैं।"
@@ -561,7 +591,8 @@
             "type": "chapter",
             "label": "Agli baat"
           },
-          "mood": "think"
+          "mood": "think",
+          "say_from": "लेकिन कहानी यहीं खत्म नहीं होती: नए ऑपर्च्युनिटीज़, नई स्किल्स - कैसे होगा?"
         }
       ],
       "narration_hi": "लेकिन कहानी यहीं खत्म नहीं होती: नए ऑपर्च्युनिटीज़, नई स्किल्स - कैसे होगा?"
@@ -570,7 +601,7 @@
       "on_screen": "Naye opportunity, nayi skills - kaise hoga?",
       "beats": [
         {
-          "say": "To phir, ye sab milkar kya darshata hai? Sochie, ek bade shahar mein, jaise ki Bengaluru.",
+          "say": "To phir, ye sab milakar kya darshata hai? Sochiye, ek bade shehar mein, jaise ki Bengaluru.",
           "visual": {
             "type": "map",
             "places": [
@@ -578,25 +609,29 @@
             ]
           },
           "mood": null,
-          "say_hi": "तो फिर, ये सब मिलकर क्या दर्शाता है? सोचिए, एक बड़े शहर में, जैसे कि बेंगलुरु।"
+          "say_hi": "तो फिर, ये सब मिलकर क्या दर्शाता है? सोचिए, एक बड़े शहर में, जैसे कि बेंगलुरु।",
+          "say_from": "तो फिर, ये सब मिलकर क्या दर्शाता है? सोचिए, एक बड़े शहर में, जैसे कि बेंगलुरु।"
         },
         {
-          "say": "Vahan bahut sare log kaam karte hain software developers, jo computer programing karte hain,",
+          "say": "Wahaan bahut sare log kaam karte hain software developers, jo computer programming karte hain,",
           "visual": {},
           "mood": null,
-          "say_hi": "वहाँ बहुत सारे लोग काम करते हैं सॉफ्टवेयर डेवलपर्स, जो कंप्यूटर प्रोग्रामिंग करते हैं,"
+          "say_hi": "वहाँ बहुत सारे लोग काम करते हैं सॉफ्टवेयर डेवलपर्स, जो कंप्यूटर प्रोग्रामिंग करते हैं,",
+          "say_from": "वहाँ बहुत सारे लोग काम करते हैं सॉफ्टवेयर डेवलपर्स, जो कंप्यूटर प्रोग्रामिंग करते हैं,"
         },
         {
-          "say": "Customer support wale, jo logon ki samasyaon ko hal karte hain, aur dizainar,",
+          "say": "Customer support wale, jo logon ki samasyaon ko hal karte hain, aur designer,",
           "visual": {},
           "mood": null,
-          "say_hi": "कस्टमर सपोर्ट वाले, जो लोगों की समस्याओं को हल करते हैं, और डिज़ाइनर,"
+          "say_hi": "कस्टमर सपोर्ट वाले, जो लोगों की समस्याओं को हल करते हैं, और डिज़ाइनर,",
+          "say_from": "कस्टमर सपोर्ट वाले, जो लोगों की समस्याओं को हल करते हैं, और डिज़ाइनर,"
         },
         {
-          "say": "Jo khubsurat cheezein banate hain. Ab, AI in sabhi kamon mein madad kar sakta hai,",
+          "say": "Jo khoobhaarat cheezein banate hain. Ab, AI in sabhi kaam mein madad kar sakta hai,",
           "visual": {},
           "mood": null,
-          "say_hi": "जो खूबसूरत चीजें बनाते हैं। अब, AI इन सभी कामों में मदद कर सकता है,"
+          "say_hi": "जो खूबसूरत चीजें बनाते हैं। अब, AI इन सभी कामों में मदद कर सकता है,",
+          "say_from": "जो खूबसूरत चीजें बनाते हैं। अब, AI इन सभी कामों में मदद कर सकता है,"
         }
       ],
       "narration_hi": "तो फिर, ये सब मिलकर क्या दर्शाता है? सोचिए, एक बड़े शहर में, जैसे कि बेंगलुरु। वहाँ बहुत सारे लोग काम करते हैं सॉफ्टवेयर डेवलपर्स, जो कंप्यूटर प्रोग्रामिंग करते हैं, कस्टमर सपोर्ट वाले, जो लोगों की समस्याओं को हल करते हैं, और डिज़ाइनर, जो खूबसूरत चीजें बनाते हैं। अब, AI इन सभी कामों में मदद कर सकता है,"
@@ -626,10 +661,11 @@
           },
           "mood": "explain",
           "pop": "Naye mauke",
-          "say_hi": "लेकिन ये भी सच है कि कुछ पुराने काम कम हो सकते हैं।"
+          "say_hi": "लेकिन ये भी सच है कि कुछ पुराने काम कम हो सकते हैं।",
+          "say_from": "लेकिन ये भी सच है कि कुछ पुराने काम कम हो सकते हैं।"
         },
         {
-          "say": "Lekin, ye chinta mat kijie. AI naye mauke bhi paida karega. Jaise ki machine learning engineer, jo AI ko behtar banane ke liye kaam karte hain.",
+          "say": "Lekin, ye chinta mat kijiye. AI naye mauke bhi paida karega. Jaise ki machine learning engineer, jo AI ko behtar banane ke liye kaam karte hain.",
           "visual": {
             "type": "photo",
             "query": "office desk with laptop",
@@ -639,10 +675,11 @@
           },
           "mood": "think",
           "pop": "Purane kaam",
-          "say_hi": "लेकिन, ये चिंता मत कीजिए। AI नए मौके भी पैदा करेगा। जैसे कि मशीन लर्निंग इंजीनियर, जो AI को बेहतर बनाने के लिए काम करते हैं।"
+          "say_hi": "लेकिन, ये चिंता मत कीजिए। AI नए मौके भी पैदा करेगा। जैसे कि मशीन लर्निंग इंजीनियर, जो AI को बेहतर बनाने के लिए काम करते हैं।",
+          "say_from": "लेकिन, ये चिंता मत कीजिए। AI नए मौके भी पैदा करेगा। जैसे कि मशीन लर्निंग इंजीनियर, जो AI को बेहतर बनाने के लिए काम करते हैं।"
         },
         {
-          "say": "Prompt dijainar, jo AI ko sahi sawaal puchhte hain taaki wo sahi jawab de sake.",
+          "say": "Prompt designer, jo AI ko sahi sawaal puchte hain taaki vo sahi jawaab de sake.",
           "visual": {
             "type": "icon",
             "icon": "shield",
@@ -650,14 +687,16 @@
           },
           "mood": "warn",
           "pop": "AI ke mauke",
-          "say_hi": "प्रॉम्प्ट डिजाइनर, जो AI को सही सवाल पूछते हैं ताकि वो सही जवाब दे सके।"
+          "say_hi": "प्रॉम्प्ट डिजाइनर, जो AI को सही सवाल पूछते हैं ताकि वो सही जवाब दे सके।",
+          "say_from": "प्रॉम्प्ट डिजाइनर, जो AI को सही सवाल पूछते हैं ताकि वो सही जवाब दे सके।"
         },
         {
-          "say": "Aur data enotetars, jo AI ko sikhane ke liye data ko lebal karte hain.",
+          "say": "Aur data annotators, jo AI ko sikhane ke liye data ko label karte hain.",
           "visual": {},
           "mood": "happy",
           "pop": "Nayi skills",
-          "say_hi": "और डेटा एनोटेटर्स, जो AI को सिखाने के लिए डेटा को लेबल करते हैं।"
+          "say_hi": "और डेटा एनोटेटर्स, जो AI को सिखाने के लिए डेटा को लेबल करते हैं।",
+          "say_from": "और डेटा एनोटेटर्स, जो AI को सिखाने के लिए डेटा को लेबल करते हैं।"
         }
       ],
       "narration_hi": "लेकिन ये भी सच है कि कुछ पुराने काम कम हो सकते हैं। लेकिन, ये चिंता मत कीजिए। AI नए मौके भी पैदा करेगा। जैसे कि मशीन लर्निंग इंजीनियर, जो AI को बेहतर बनाने के लिए काम करते हैं। प्रॉम्प्ट डिजाइनर, जो AI को सही सवाल पूछते हैं ताकि वो सही जवाब दे सके। और डेटा एनोटेटर्स, जो AI को सिखाने के लिए डेटा को लेबल करते हैं।"
@@ -666,14 +705,15 @@
       "on_screen": "Naya opportunity, nayi skills",
       "beats": [
         {
-          "say": "Ye sab naya hai, aur in kamon ke liye naye logon ko sikhna hoga.",
+          "say": "Ye sab naya hai, aur in kamaon ke liye naye logon ko seekhna hoga.",
           "visual": {},
           "mood": "explain",
           "pop": "Big Market",
-          "say_hi": "ये सब नया है, और इन कामों के लिए नए लोगों को सीखना होगा।"
+          "say_hi": "ये सब नया है, और इन कामों के लिए नए लोगों को सीखना होगा।",
+          "say_from": "ये सब नया है, और इन कामों के लिए नए लोगों को सीखना होगा।"
         },
         {
-          "say": "Bharat mein, 2027 tak AI market 17 billion dollar ka hone ki ummid hai.",
+          "say": "Bharat mein, 2027 tak AI market 17 billion dollar ka hone ki ummeed hai.",
           "visual": {
             "type": "pen",
             "items": [
@@ -694,10 +734,11 @@
           },
           "mood": "think",
           "pop": "Skills Gap",
-          "say_hi": "भारत में, 2027 तक AI मार्केट 17 बिलियन डॉलर का होने की उम्मीद है।"
+          "say_hi": "भारत में, 2027 तक AI मार्केट 17 बिलियन डॉलर का होने की उम्मीद है।",
+          "say_from": "भारत में, 2027 तक AI मार्केट 17 बिलियन डॉलर का होने की उम्मीद है।"
         },
         {
-          "say": "2024 mein lagbhag 4.2 lakh AI professional hain. Varld ikonomik phoram ka kehna hai ki 2030 tak duniya bhar mein 17 karod naye kaam honge,",
+          "say": "2024 mein lagbhag 4.2 lakh AI professional hain. World economic forum ka kehna hai ki 2030 tak duniya bhar mein 17 karod naye kaam honge,",
           "visual": {
             "type": "symbols",
             "items": [
@@ -713,17 +754,19 @@
           },
           "mood": "explain",
           "pop": "New Jobs",
-          "say_hi": "2024 में लगभग 4.2 लाख AI प्रोफेशनल हैं। वर्ल्ड इकोनॉमिक फोरम का कहना है कि 2030 तक दुनिया भर में 17 करोड़ नए काम होंगे,"
+          "say_hi": "2024 में लगभग 4.2 लाख AI प्रोफेशनल हैं। वर्ल्ड इकोनॉमिक फोरम का कहना है कि 2030 तक दुनिया भर में 17 करोड़ नए काम होंगे,",
+          "say_from": "2024 में लगभग 4.2 लाख AI प्रोफेशनल हैं। वर्ल्ड इकोनॉमिक फोरम का कहना है कि 2030 तक दुनिया भर में 17 करोड़ नए काम होंगे,"
         },
         {
-          "say": "Lekin 9 karod 20 lakh log apni naukri kho denge. Ye thoda daravna lag sakta hai, lekin AI ki wajah se kai naye mauke bhi banenge.",
+          "say": "Lekin 9 karod 20 lakh log apni naukri kho denge. Ye thoda darwana lag sakta hai, lekin AI ki wajah se kai naye mauke bhi banenge.",
           "visual": {
             "type": "warning",
             "text": "9 crores may lose jobs"
           },
           "mood": null,
           "pop": "Job Loss",
-          "say_hi": "लेकिन 9 करोड़ 20 लाख लोग अपनी नौकरी खो देंगे। ये थोड़ा डरावना लग सकता है, लेकिन AI की वजह से कई नए मौके भी बनेंगे।"
+          "say_hi": "लेकिन 9 करोड़ 20 लाख लोग अपनी नौकरी खो देंगे। ये थोड़ा डरावना लग सकता है, लेकिन AI की वजह से कई नए मौके भी बनेंगे।",
+          "say_from": "लेकिन 9 करोड़ 20 लाख लोग अपनी नौकरी खो देंगे। ये थोड़ा डरावना लग सकता है, लेकिन AI की वजह से कई नए मौके भी बनेंगे।"
         }
       ],
       "narration_hi": "ये सब नया है, और इन कामों के लिए नए लोगों को सीखना होगा। भारत में, 2027 तक AI मार्केट 17 बिलियन डॉलर का होने की उम्मीद है। 2024 में लगभग 4.2 लाख AI प्रोफेशनल हैं। वर्ल्ड इकोनॉमिक फोरम का कहना है कि 2030 तक दुनिया भर में 17 करोड़ नए काम होंगे, लेकिन 9 करोड़ 20 लाख लोग अपनी नौकरी खो देंगे। ये थोड़ा डरावना लग सकता है, लेकिन AI की वजह से कई नए मौके भी बनेंगे।"
@@ -732,7 +775,7 @@
       "on_screen": "Naye opportunity, nayi skills - kaise hoga?",
       "beats": [
         {
-          "say": "AI un kamon ko aasaan bana dega jo pehle bahut mushkil the.",
+          "say": "AI un kaam ko aasaan bana dega jo pehle bahut mushkil the.",
           "visual": {
             "type": "symbols",
             "items": [
@@ -747,10 +790,11 @@
             ]
           },
           "mood": null,
-          "say_hi": "AI उन कामों को आसान बना देगा जो पहले बहुत मुश्किल थे।"
+          "say_hi": "AI उन कामों को आसान बना देगा जो पहले बहुत मुश्किल थे।",
+          "say_from": "AI उन कामों को आसान बना देगा जो पहले बहुत मुश्किल थे।"
         },
         {
-          "say": "Jaise ki kainsar ka pata lagane ke liye IBM votsan ka istemal kiya jaata hai,",
+          "say": "Jaise ki kainsar ka pata lane ke liye IBM Watson ka istemal kiya jaata hai,",
           "visual": {
             "type": "symbols",
             "items": [
@@ -765,16 +809,18 @@
             ]
           },
           "mood": null,
-          "say_hi": "जैसे कि कैंसर का पता लगाने के लिए IBM वॉटसन का इस्तेमाल किया जाता है,"
+          "say_hi": "जैसे कि कैंसर का पता लगाने के लिए IBM वॉटसन का इस्तेमाल किया जाता है,",
+          "say_from": "जैसे कि कैंसर का पता लगाने के लिए IBM वॉटसन का इस्तेमाल किया जाता है,"
         },
         {
-          "say": "Ya phir riyo tinto mein khadanon mein kaam karne ke liye AI ka istemal hota hai.",
+          "say": "Ya phir rio Tinto mein khadanon mein kaam karne ke liye AI ka istemal hota hai.",
           "visual": {},
           "mood": null,
-          "say_hi": "या फिर रियो टिंटो में खदानों में काम करने के लिए AI का इस्तेमाल होता है।"
+          "say_hi": "या फिर रियो टिंटो में खदानों में काम करने के लिए AI का इस्तेमाल होता है।",
+          "say_from": "या फिर रियो टिंटो में खदानों में काम करने के लिए AI का इस्तेमाल होता है।"
         },
         {
-          "say": "Isse logon ko zyada zaroori kamon par dhyan dene ka samay milega.",
+          "say": "Isse logon ko zyaada zuroori kamaon par dhyaan dene ka samay milega.",
           "visual": {
             "type": "symbols",
             "items": [
@@ -789,7 +835,8 @@
             ]
           },
           "mood": null,
-          "say_hi": "इससे लोगों को ज़्यादा ज़रूरी कामों पर ध्यान देने का समय मिलेगा।"
+          "say_hi": "इससे लोगों को ज़्यादा ज़रूरी कामों पर ध्यान देने का समय मिलेगा।",
+          "say_from": "इससे लोगों को ज़्यादा ज़रूरी कामों पर ध्यान देने का समय मिलेगा।"
         }
       ],
       "narration_hi": "AI उन कामों को आसान बना देगा जो पहले बहुत मुश्किल थे। जैसे कि कैंसर का पता लगाने के लिए IBM वॉटसन का इस्तेमाल किया जाता है, या फिर रियो टिंटो में खदानों में काम करने के लिए AI का इस्तेमाल होता है। इससे लोगों को ज़्यादा ज़रूरी कामों पर ध्यान देने का समय मिलेगा।"
@@ -798,7 +845,7 @@
       "on_screen": "AI ke saath behtar insaan",
       "beats": [
         {
-          "say": "Aur sabse achchhi baat ye hai ki AI humein behtar insan banaega.",
+          "say": "Aur sabse achchhi baat ye hai ki AI hamein behtar insan banayega.",
           "visual": {
             "type": "icon",
             "icon": "hacker",
@@ -806,7 +853,8 @@
           },
           "mood": "think",
           "pop": "naukri chhin lega",
-          "say_hi": "और सबसे अच्छी बात ये है कि AI हमें बेहतर इंसान बनाएगा।"
+          "say_hi": "और सबसे अच्छी बात ये है कि AI हमें बेहतर इंसान बनाएगा।",
+          "say_from": "और सबसे अच्छी बात ये है कि AI हमें बेहतर इंसान बनाएगा।"
         },
         {
           "say": "Ye humari nirnay lene ki kshamta badhaega, humari rachnatmakta ko badhava dega,",
@@ -826,10 +874,11 @@
           },
           "mood": "explain",
           "pop": "rachnatmakta",
-          "say_hi": "ये हमारी निर्णय लेने की क्षमता बढ़ाएगा, हमारी रचनात्मकता को बढ़ावा देगा,"
+          "say_hi": "ये हमारी निर्णय लेने की क्षमता बढ़ाएगा, हमारी रचनात्मकता को बढ़ावा देगा,",
+          "say_from": "ये हमारी निर्णय लेने की क्षमता बढ़ाएगा, हमारी रचनात्मकता को बढ़ावा देगा,"
         },
         {
-          "say": "Aur hum milkar behtar tareeke se kaam kar payenge. Ye ek sentaur modal jaisa hoga jahan insan aur machine milkar kaam karein,",
+          "say": "Aur hum milkar behtar tareeke se kaam kar payenge. Ye ek sentaur model jaisa hoga jahan insan aur machine milkar kaam kare,",
           "visual": {
             "type": "symbols",
             "items": [
@@ -845,10 +894,11 @@
           },
           "mood": "happy",
           "pop": "phayda uthae",
-          "say_hi": "और हम मिलकर बेहतर तरीके से काम कर पाएंगे। ये एक सेंटौर मॉडल जैसा होगा जहाँ इंसान और मशीन मिलकर काम करें,"
+          "say_hi": "और हम मिलकर बेहतर तरीके से काम कर पाएंगे। ये एक सेंटौर मॉडल जैसा होगा जहाँ इंसान और मशीन मिलकर काम करें,",
+          "say_from": "और हम मिलकर बेहतर तरीके से काम कर पाएंगे। ये एक सेंटौर मॉडल जैसा होगा जहाँ इंसान और मशीन मिलकर काम करें,"
         },
         {
-          "say": "Dono ka phayda uthae. To, AI aapki naukri chhin lega ya naya naukri dega?",
+          "say": "Dono ka fayada uthae. To, AI aapki naukri cheen lega ya naya naukri dega?",
           "visual": {
             "type": "photo",
             "query": "workplace with robot",
@@ -856,7 +906,8 @@
           },
           "mood": "warn",
           "pop": "naya naukri",
-          "say_hi": "दोनों का फायदा उठाए। तो, AI आपकी नौकरी छीन लेगा या नया नौकरी देगा?"
+          "say_hi": "दोनों का फायदा उठाए। तो, AI आपकी नौकरी छीन लेगा या नया नौकरी देगा?",
+          "say_from": "दोनों का फायदा उठाए। तो, AI आपकी नौकरी छीन लेगा या नया नौकरी देगा?"
         }
       ],
       "narration_hi": "और सबसे अच्छी बात ये है कि AI हमें बेहतर इंसान बनाएगा। ये हमारी निर्णय लेने की क्षमता बढ़ाएगा, हमारी रचनात्मकता को बढ़ावा देगा, और हम मिलकर बेहतर तरीके से काम कर पाएंगे। ये एक सेंटौर मॉडल जैसा होगा जहाँ इंसान और मशीन मिलकर काम करें, दोनों का फायदा उठाए। तो, AI आपकी नौकरी छीन लेगा या नया नौकरी देगा?"
@@ -865,7 +916,7 @@
       "on_screen": "Naye opportunity, nayi skills",
       "beats": [
         {
-          "say": "Iska jawab hai, dono! Lekin agar aap sikhen aur naye kaushal hasil karein,",
+          "say": "Isaka jawab hai, dono! Lekin agar aap seekhen aur naye kashal haasil karen,",
           "visual": {
             "type": "kinetic",
             "text": "Sikhein, naye skills milein",
@@ -873,10 +924,11 @@
           },
           "mood": "think",
           "pop": "sikhen",
-          "say_hi": "इसका जवाब है, दोनों! लेकिन अगर आप सीखें और नए कौशल हासिल करें,"
+          "say_hi": "इसका जवाब है, दोनों! लेकिन अगर आप सीखें और नए कौशल हासिल करें,",
+          "say_from": "इसका जवाब है, दोनों! लेकिन अगर आप सीखें और नए कौशल हासिल करें,"
         },
         {
-          "say": "Aur AI ke saath milkar kaam karna sikhen, to aap is badlav se aage rahenge.",
+          "say": "Aur AI ke saath milakar kaam karna seeken, to aap is badlaav se aage rahenge.",
           "visual": {
             "type": "symbols",
             "items": [
@@ -892,32 +944,34 @@
           },
           "mood": "explain",
           "pop": "badlav",
-          "say_hi": "और AI के साथ मिलकर काम करना सीखें, तो आप इस बदलाव से आगे रहेंगे।"
+          "say_hi": "और AI के साथ मिलकर काम करना सीखें, तो आप इस बदलाव से आगे रहेंगे।",
+          "say_from": "और AI के साथ मिलकर काम करना सीखें, तो आप इस बदलाव से आगे रहेंगे।"
         }
       ],
       "narration_hi": "इसका जवाब है, दोनों! लेकिन अगर आप सीखें और नए कौशल हासिल करें, और AI के साथ मिलकर काम करना सीखें, तो आप इस बदलाव से आगे रहेंगे।"
     },
     {
-      "on_screen": "Phainli, the big rivel - ensar kya hai?",
+      "on_screen": "Finally, the big reveal - answer kya hai?",
       "beats": [
         {
-          "say": "Aur ab wo baat, jo aapke kaam aaegi: phainli, the big rivel - ensar kya hai?",
+          "say": "Aur ab wo baat, jo aapke kaam aaegi: Finally, the Big Reveal - answer kya hai?",
           "say_hi": "और अब वो बात, जो आपके काम आएगी: फाइनली, थे बिग रिवेल - एंसर क्या है?",
           "locked": true,
           "visual": {
             "type": "chapter",
             "label": "Aakhri baat"
           },
-          "mood": "think"
+          "mood": "think",
+          "say_from": "और अब वो बात, जो आपके काम आएगी: फाइनली, थे बिग रिवेल - एंसर क्या है?"
         }
       ],
       "narration_hi": "और अब वो बात, जो आपके काम आएगी: फाइनली, थे बिग रिवेल - एंसर क्या है?"
     },
     {
-      "on_screen": "Phainli ka rivel ensar kya hai?",
+      "on_screen": "Finally ka reveal answer kya hai?",
       "beats": [
         {
-          "say": "AI na sirf naukri chhutne ka karan hai, balki ogmenteshan ke avsar bhi banata hai.",
+          "say": "AI na sirf naukri chhutne ka karan hai, balki ogmenteshan ke avasar bhi banata hai.",
           "visual": {
             "type": "pen",
             "items": [
@@ -938,10 +992,11 @@
           },
           "mood": "think",
           "pop": "Naukri chhutne",
-          "say_hi": "AI ना सिर्फ नौकरी छूटने का कारण है, बल्कि ऑगमेंटेशन के अवसर भी बनाता है।"
+          "say_hi": "AI ना सिर्फ नौकरी छूटने का कारण है, बल्कि ऑगमेंटेशन के अवसर भी बनाता है।",
+          "say_from": "AI ना सिर्फ नौकरी छूटने का कारण है, बल्कि ऑगमेंटेशन के अवसर भी बनाता है।"
         },
         {
-          "say": "Remand aur inphosis jaisi companies ko automation se asar mahsus hua, lekin AI ke istemal se kushal logon ki tanakhvah 56% tak badh gayi hai.",
+          "say": "Raymond aur Infosys jaise companies ko automation se asar mahsus hua, lekin AI ke istemal se kushal logon ki tanxah 56% tak badh gayi hai.",
           "visual": {
             "type": "symbols",
             "items": [
@@ -957,7 +1012,8 @@
           },
           "mood": "explain",
           "pop": "Tanakhvah badhi",
-          "say_hi": "रेमंड और इन्फोसिस जैसी कंपनियों को ऑटोमेशन से असर महसूस हुआ, लेकिन AI के इस्तेमाल से कुशल लोगों की तनख्वाह 56% तक बढ़ गई है।"
+          "say_hi": "रेमंड और इन्फोसिस जैसी कंपनियों को ऑटोमेशन से असर महसूस हुआ, लेकिन AI के इस्तेमाल से कुशल लोगों की तनख्वाह 56% तक बढ़ गई है।",
+          "say_from": "रेमंड और इन्फोसिस जैसी कंपनियों को ऑटोमेशन से असर महसूस हुआ, लेकिन AI के इस्तेमाल से कुशल लोगों की तनख्वाह 56% तक बढ़ गई है।"
         },
         {
           "say": "Bharat mein AI aane se naukriyon mein thodi takkar hogi, lekin naye tareeke aur logon ko behtar banane se naye mauke bhi milenge.",
@@ -968,7 +1024,8 @@
           },
           "mood": "warn",
           "pop": "Pratispardha hogi",
-          "say_hi": "भारत में AI आने से नौकरियों में थोड़ी टक्कर होगी, लेकिन नए तरीके और लोगों को बेहतर बनाने से नए मौके भी मिलेंगे।"
+          "say_hi": "भारत में AI आने से नौकरियों में थोड़ी टक्कर होगी, लेकिन नए तरीके और लोगों को बेहतर बनाने से नए मौके भी मिलेंगे।",
+          "say_from": "भारत में AI आने से नौकरियों में थोड़ी टक्कर होगी, लेकिन नए तरीके और लोगों को बेहतर बनाने से नए मौके भी मिलेंगे।"
         }
       ],
       "narration_hi": "AI ना सिर्फ नौकरी छूटने का कारण है, बल्कि ऑगमेंटेशन के अवसर भी बनाता है। रेमंड और इन्फोसिस जैसी कंपनियों को ऑटोमेशन से असर महसूस हुआ, लेकिन AI के इस्तेमाल से कुशल लोगों की तनख्वाह 56% तक बढ़ गई है। भारत में AI आने से नौकरियों में थोड़ी टक्कर होगी, लेकिन नए तरीके और लोगों को बेहतर बनाने से नए मौके भी मिलेंगे।"
@@ -984,7 +1041,8 @@
           "visual": {
             "type": "host",
             "text": "Comment karo aur subscribe karo"
-          }
+          },
+          "say_from": "इसे उस इंसान को ज़रूर भेजिए, जिसे ये जानना चाहिए। ऐसी ही आसान बातों के लिए स्नैक कोड को सब्सक्राइब कर लीजिए।"
         }
       ],
       "narration_hi": "इसे उस इंसान को ज़रूर भेजिए, जिसे ये जानना चाहिए। ऐसी ही आसान बातों के लिए स्नैक कोड को सब्सक्राइब कर लीजिए।"

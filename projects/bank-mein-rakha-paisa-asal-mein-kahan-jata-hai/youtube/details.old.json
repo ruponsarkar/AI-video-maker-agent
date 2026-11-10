@@ -1,0 +1,72 @@
+{
+  "title": "Bank Mein Rakha Paisa Asal Mein Kahan Jata Hai?",
+  "titles": [
+    "Bank Mein Rakha Paisa Asal Mein Kahan Jata Hai?",
+    "Paisa Bank Mein Kahan Rehta Hai? Explained"
+  ],
+  "description": "Aapke bank mein jama kiya paisa kahan rehta hai? क्या bank apne grahakon ka paise yehi rakhte hain ya unko loan dekar baisa kamaate hain? Bank लोन देकर, ब्याज कमाते हैं और RBI के नियम भी बैंक पर नजर रखते हैं। अगर सभी लोग एक साथ पैसा निकालने आए, तो क्या होगा? हम इसे सरल उदाहरण और एनिमेशन के माध्यम से समझाएंगे।\n\nSources:\n- https://www.dbs.bank.in/digibank/in/articles/save/how-to-deposit-money-in-bank\n- https://www.themirrority.com/data/bank-deposits\n- https://www.hdfc.bank.in/ways-to-bank/banking-in-person/cash-deposit-machine\n- https://www.moneycontrol.com/news/business/banks/where-is-that-rs-100-deposit-going-10196641.html\n- https://bankofbaroda.bank.in/banking-mantra/digital/articles/what-is-cash-deposit-machine-cdm\n- https://www.bankopedia.co.in/banking/indian-banking-system-complete-guide-2026\n- https://www.azbpartners.com/bank/banking-regulation-in-india-overview/\n- https://rbi.org.in/Scripts/AboutUsDisplay.aspx",
+  "hashtags": [
+    "#SnackCode"
+  ],
+  "tags": [
+    "Bank Mein Rakha Paisa Kahan Jata Hai",
+    "Paisa Bank Mein Kahan Rehta Hai",
+    "Indian Banking System Explained",
+    "Bank Loan",
+    "Bajj",
+    "RBI Regulations",
+    "Deposit Insurance Scheme",
+    "Liquidity Crisis In Banks",
+    "How Do Banks Make Money",
+    "Banks Use Your Money For Loans",
+    "RBI के नियम",
+    "Bank Deposit Insurance",
+    "Banking System in India",
+    "Paisa Kaise Banate Hain",
+    "Bank Ke Paisa Ka Istemal",
+    "Grahakon Ki Surakshit Paise",
+    "Banks And Loan Process"
+  ],
+  "pinned_comment": "Aapko is video mein sabse hairan kis baat ne kiya? Comment mein batao.",
+  "category": "tech",
+  "chapter_names": {},
+  "thumbnails": [
+    {
+      "layout": "byte",
+      "glow": "red",
+      "lines": [
+        {
+          "text": "PAISA BANK",
+          "colour": "white"
+        },
+        {
+          "text": "MEIN KAHAN",
+          "colour": "white"
+        },
+        {
+          "text": "REHTA HAI?",
+          "colour": "yellow"
+        }
+      ]
+    },
+    {
+      "layout": "icon",
+      "icon": "bank",
+      "glow": "yellow",
+      "lines": [
+        {
+          "text": "BANK KA PAISA",
+          "colour": "yellow"
+        },
+        {
+          "text": "KAISE BANATE",
+          "colour": "yellow"
+        },
+        {
+          "text": "HAIN?",
+          "colour": "white"
+        }
+      ]
+    }
+  ]
+}

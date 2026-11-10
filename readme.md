@@ -56,8 +56,15 @@ with `python ../../script_review.py`. It can't check facts, so that part is stil
 - Compare `research/notes.md` with its source links, because the AI can get facts wrong.
 - Read `scripts/review.md` if it exists. It lists problems the automatic checks couldn't fix.
 - Edit `scripts/script.json`. Read it aloud: the AI writes a first draft, and it can still repeat
-  itself or get a word wrong. **Edit the Hindi in `say_hi`**, because that's what the voice reads, then
-  run `python ../../hinglish.py --sync` to remake the captions from it.
+  itself or get a word wrong. Each line has two texts, kept separate:
+  - `say_hi` is what the **voice** reads, in Devanagari.
+  - `say` is the **on-screen caption**, in Roman, with English words in real English (`decision making`).
+
+  Edit either one. After changing `say_hi`, run `python ../../hinglish.py --sync`: it rewrites the caption
+  only for lines whose voice text changed, so captions you fixed by hand stay. `--sync --all` rewrites all.
+  Both also run the English-word check: any English word still shown by its sound (mashin, shokvev) is
+  changed to its English spelling (machine, shockwave) when the sounds really match. Words it isn't sure
+  about are printed (and listed in `scripts/review_report.md` by the editor) for you to fix by hand.
 
 **4. Make the voiceover.** This uses its own Python environment, `venv-voice`.
 
@@ -138,6 +145,26 @@ The writer picks visuals by itself. You can also set them by hand in `scripts/sc
 - **Mix:** `auto_video.py` limits repeated cards like `compare` and `steps`, and swaps some for photos and symbols.
 - **Colours:** each scene gets its own colours. To keep one colour, run `animate.py --one-colour`.
 
+## Background music
+
+Music plays quietly under the voice, at volume `0.08`, and fades out at the end.
+
+1. Get a track you're allowed to use on YouTube. The safest source is the free
+   [YouTube Audio Library](https://www.youtube.com/audiolibrary): in YouTube Studio, open **Audio library**,
+   filter by **Attribution not required**, and download a calm, steady track.
+2. Save it as `~/snackcode-ai/music.mp3` for every video, or as `music.mp3` inside one video's folder for
+   just that video. `.wav` and `.m4a` work too.
+3. Render the video again: `python ../../animate.py`. The voice doesn't need redoing.
+
+| I want to... | Command |
+| --- | --- |
+| Use a different track for one video | `python ../../animate.py --music /path/to/track.mp3` |
+| Make the music louder or softer | `python ../../animate.py --music-volume 0.05` (0.03 soft, 0.12 loud) |
+| Leave the music out | `python ../../animate.py --no-music` |
+
+Music from elsewhere, even a few seconds, can get a copyright claim on YouTube and stop the video earning.
+If a track needs credit, put that credit in the description.
+
 ## Making the voice more emotional
 
 Each sentence already gets its own delivery from its words and punctuation. The biggest improvement
@@ -163,7 +190,7 @@ Put one video on each line. Only the title is required, and the length defaults 
 Title | direction for the AI | minutes=8 | type=news
 ```
 
-`type` can be `news`, `scam` or `explainer`. Leave it out and the script guesses from the words used.
+`type` can be `news`, `scam` or `explainer`. Leave it out and the script guesses: a video is news only when its **title** sounds like news (a direction that mentions RBI or a court is treated as background). If it guesses wrong, add `type=explainer` or `type=news` to the line.
 
 **News videos** search the last month of news and follow one path: what happened, why, who says what,
 and what it means for you. They're told to name who said each thing, give every side and add no
@@ -297,7 +324,8 @@ python hinglish.py "डेटा का छोटा टुकड़ा"
 ```bash
 # Script checks
 python ../../script_review.py                   # recheck the script with the script editor
-python ../../hinglish.py --sync                 # remake captions after editing say_hi
+python ../../hinglish.py --sync                 # rewrite captions for lines whose voice text changed
+python ../../hinglish.py --sync --all           # rewrite every caption
 
 # Photos
 python ../../photos.py                          # fetch photos that are missing
@@ -320,9 +348,14 @@ python ../../animate.py --theme ocean           # emerald, violet, ocean, sunset
 python ../../animate.py --one-colour            # one colour for the whole video
 python ../../animate.py --no-mascot             # without Byte
 python ../../animate.py --no-sfx                # without sound effects
+python ../../animate.py --music track.mp3       # background music from this file
+python ../../animate.py --music-volume 0.05     # softer music (default 0.08)
+python ../../animate.py --no-music              # no background music
 
 # YouTube
 python ../../youtube_kit.py                     # thumbnails, chapters and the upload guide
+python ../../youtube_kit.py --redo              # start details.json again from metadata.md (2 titles, 2 thumbnails)
+python ../../upload.py --thumbnail b --title b  # use the second thumbnail and the second title
 python ../../upload.py --thumbnail b --dry-run  # see what would be sent; nothing is uploaded
 python ../../upload.py --thumbnail b            # upload as private
 python ../../upload.py --thumbnail b --schedule "2026-11-08 18:00"   # goes public at this India time
@@ -351,6 +384,9 @@ python script.py
 | `--no-mascot` | Hides Byte, the robot host |
 | `--no-sfx` | Turns off sound effects |
 | `--one-colour` | Keeps one colour for the whole video |
+| `--music FILE` | Uses this file as background music |
+| `--music-volume N` | Music volume, default `0.08` |
+| `--no-music` | Leaves out background music |
 
 **`voice.py`**
 
@@ -395,8 +431,8 @@ python ../../voice.py --engine kokoro --female
 
 Optional extras:
 
-- **`fonts/*.ttf` and `music.mp3`:** put these in `~/snackcode-ai`. `--render` links them into
-  each video's folder. If you run `animate.py` by hand, it only looks in the current folder.
+- **`fonts/*.ttf` and `music.mp3`:** put these in `~/snackcode-ai` and every video uses them. See
+  [Background music](#background-music).
 - **Other music formats:** `music.wav` and `music.m4a` also work.
 
 ## Good to know

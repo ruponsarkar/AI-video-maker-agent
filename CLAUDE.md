@@ -13,7 +13,7 @@ This file was written from the planning chat on claude.ai; it is the project's m
   Goal: organic reach and YPP monetization (1,000 subs + 4,000 watch hours).
 - Weak points found: CTR 0.5-3.5%, viewers leave in the first 30 s. So every video needs a
   hook in the first 3 s and a visual change every ~5 s.
-- Uploads every **Sunday**. Studio defaults already set: Hindi, Science & Technology.
+- No fixed upload day or count (some weeks 0-3 videos). Studio defaults already set: Hindi, Science & Technology.
 - Scam videos always end with helpline **1930** and cybercrime.gov.in.
 - General news explainers are also made now (`type=news`, category News & Politics). Neutral: every claim
   attributed, both sides from the notes, no invented quotes or public opinion, human checks each one.
@@ -45,7 +45,19 @@ Never run Ollama and the voice model at the same time (VRAM). Disk space is limi
   the model write these). `india_places.py`  map coordinates. `photos.py`  Wikimedia Commons photos,
   CC0/PD/CC BY only (no SA/NC/ND), online but optional; review images/photos/review.jpg.
   `assets/`  Kalam font and India outline (Natural Earth, India point of view).
-- `hinglish.py` + `hindi_words.json`  to_roman() makes captions from say_hi, so they always match the voice;
+- Captions: Hindi words always use the rule spelling (to_roman); a model's English word is used only if english_matches()
+  finds the same consonant sounds (oxygen=ऑक्सीजन passes, beryllium for बेरियम fails) and it's a dictionary word.
+  caption_words.json `_checked_with` version: bump it to re-ask old guesses once.
+  english_pass() (run by script_review and `hinglish.py --sync`) re-checks every sound-spelled caption word
+  (mashin -> machine); unsure ones go to review_report.md. Test pairs before changing _skeletons_en/english_matches.
+- Photos: the title beat gets a hook photo (visual title + query); first ~10 beats get a photo every 2 beats;
+  each photo beat has a `backup` query.
+- Captions (`say`) and voice (`say_hi`) are separate texts. screen_text() has gemma write the caption with the whole
+  sentence as context (English words in real English), then checks every word against the voice text with
+  same_word() and the dictionary; a word that fails falls back to to_roman(). `say_from` records which say_hi a
+  caption was made from, so --sync only rewrites captions whose voice changed. Music: animate.py --music FILE,
+  --music-volume, --no-music; music.* in the video folder or ~/snackcode-ai.
+- `hinglish.py` + `hindi_words.json`  to_roman() is the letter-by-letter fallback for captions;
   English terms show in real English on screen (automation, never otomeshan): learn_words() asks gemma once and saves
   to caption_words.json; fix_screen_text() corrects headings and card labels. to_hindi() spells Roman lines word by word. `voice_check.py`  Whisper score per clip (venv, CPU), run by voice.py.
 - `research.py`, `script.py`  older single-step versions (still work on ./research, ./scripts)

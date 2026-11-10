@@ -22,7 +22,7 @@ import re
 import sys
 
 from glossary import TERMS
-from hinglish import fix_screen_text, to_roman
+from hinglish import english_pass, fix_screen_text, screen_text
 
 MODEL = "gemma3:4b"
 ATTRIBUTION = re.compile(r"कहना है|कहा|आरोप|दावा|मुताबिक|बताया|अनुसार|मानना है|पक्का नहीं")
@@ -106,7 +106,7 @@ def is_locked(beat):
 
 def set_line(beat, hindi):
     beat["say_hi"] = hindi
-    beat["say"] = to_roman(hindi)
+    beat["say"], beat["say_from"] = screen_text(hindi), hindi
 
 
 def edit_lines(scenes, kind, report):
@@ -212,7 +212,10 @@ def final_checks(scenes, report):
             if not hindi:
                 left.append(f"Scene {i} line {j}: has no Hindi for the voice")
                 continue
-            beat["say"] = to_roman(hindi)   # the word match: one source for voice and caption
+            if beat.get("say_from") != hindi:   # a caption is only remade when its voice line changed
+                beat["say"], beat["say_from"] = screen_text(hindi), hindi
+            if abs(len(beat.get("say", "").split()) - len(hindi.split())) > max(2, len(hindi.split()) * 0.2):
+                left.append(f"Scene {i} line {j}: caption and voice have different words; check both")
             if len(hindi.split()) > 30:
                 left.append(f"Scene {i} line {j}: very long, hard to follow: {hindi[:70]}")
             found = BOOKISH.findall(hindi)
@@ -220,6 +223,10 @@ def final_checks(scenes, report):
                 left.append(f"Scene {i} line {j}: bookish words ({', '.join(sorted(set(found)))}): {hindi[:70]}")
         scene["narration_hi"] = " ".join(b.get("say_hi", "") for b in scene["beats"])
     fix_screen_text(scenes)
+    fixed, unsure = english_pass(scenes)   # English words on screen in real English: machine, not mashin
+    if fixed:
+        report.append("English spellings on screen: " + ", ".join(fixed))
+    left += [f"On screen: {u}" for u in unsure]
     return left
 
 

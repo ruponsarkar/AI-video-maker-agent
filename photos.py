@@ -38,14 +38,34 @@ def plain(text):
     return " ".join(html.unescape(re.sub(r"<[^>]+>", " ", str(text or ""))).split())
 
 
+_last_call = [0.0]
+
+
+def _get(url, **kwargs):
+    """Wikimedia limits how fast a tool may ask: wait between calls, and back off when it says 'too many'."""
+    import time
+    import requests
+    for attempt in range(5):
+        wait = 1.0 - (time.time() - _last_call[0])
+        if wait > 0:
+            time.sleep(wait)
+        _last_call[0] = time.time()
+        reply = requests.get(url, headers=HEADERS, **kwargs)
+        if reply.status_code in (429, 503) and attempt < 4:
+            pause = reply.headers.get("Retry-After", "")
+            time.sleep(min(60, int(pause)) if pause.isdigit() else 10 * (attempt + 1))
+            continue
+        reply.raise_for_status()
+        return reply
+
+
 def search(query):
     import requests
     query = re.sub(r"\b(map|diagram|logo|chart)\b", "", query, flags=re.I).strip()
     params = {"action": "query", "format": "json", "generator": "search", "gsrnamespace": 6,
               "gsrsearch": f"{query} filetype:bitmap", "gsrlimit": 30, "prop": "imageinfo",
               "iiprop": "url|extmetadata|size|mime", "iiurlwidth": 1920}
-    reply = requests.get(API, params=params, headers=HEADERS, timeout=30)
-    reply.raise_for_status()
+    reply = _get(API, params=params, timeout=30)
     return list(reply.json().get("query", {}).get("pages", {}).values())
 
 
@@ -92,8 +112,7 @@ def choose(pages, query, used):
 
 def download(info, path):
     import requests
-    reply = requests.get(info.get("thumburl") or info["url"], headers=HEADERS, timeout=60)
-    reply.raise_for_status()
+    reply = _get(info.get("thumburl") or info["url"], timeout=60)
     from io import BytesIO
     Image.open(BytesIO(reply.content)).convert("RGB").save(path, "JPEG", quality=88)
 
@@ -126,18 +145,22 @@ def fetch_all(redo=False):
     for i, scene in enumerate(script["scenes"]):
         for j, beat in enumerate(scene.get("beats") or []):
             v = beat.get("visual") or {}
-            if v.get("type") != "photo" or (not redo and v.get("file") and os.path.exists(v["file"])):
+            if v.get("type") not in ("photo", "title") or (not redo and v.get("file") and os.path.exists(v["file"])):
                 continue
+            if v.get("type") == "title" and not v.get("query"):
+                continue   # a title card without a hook photo
             query = str(v.get("query") or "").strip()
             if not query:
                 missed += 1
                 continue
             try:
                 path = os.path.join(FOLDER, f"s{i:02d}_b{j:02d}.jpg")
-                pick = None
+                pick, rejected = None, set()
                 short = " ".join(query.split()[:2])
-                for attempt in dict.fromkeys([f"{query} India", query, short]):   # Indian places first
-                    for page, info, licence in choose(search(attempt), query, used):
+                backups = [str(q).strip() for q in (v.get("backup") or []) if str(q).strip()]
+                for attempt in dict.fromkeys([f"{query} India", query, short, *backups]):   # Indian places first
+                    for page, info, licence in choose(search(attempt), query, used | rejected):
+                        rejected.add(page["title"])   # checked once is enough, whichever query found it
                         download(info, path)
                         if looks_right(path, query):
                             pick = (page, info, licence)

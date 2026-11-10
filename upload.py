@@ -4,6 +4,7 @@ Snack Code - upload a finished video to YouTube with all its details.
 Run from inside a video's folder, after youtube_kit.py:
     python ../../upload.py --dry-run                         # show what would be sent, upload nothing
     python ../../upload.py --thumbnail b                     # upload as PRIVATE (the default)
+    python ../../upload.py --thumbnail b --title b           # the second title from details.json
     python ../../upload.py --thumbnail b --schedule "2026-11-08 18:00"   # goes public then (India time)
     python ../../upload.py --thumbnail b --publish           # public straight away (asks you first)
 
@@ -43,6 +44,7 @@ RECORD = "youtube/uploaded.json"
 def parse_args():
     p = argparse.ArgumentParser(description="Upload this video to YouTube.")
     p.add_argument("--thumbnail", choices=["a", "b", "c"], help="which youtube/thumbnail_X.jpg to use (default: a)")
+    p.add_argument("--title", choices=["a", "b"], help="which title from details.json \"titles\" (default: a)")
     p.add_argument("--schedule", metavar="'YYYY-MM-DD HH:MM'", help="publish at this India time")
     p.add_argument("--publish", action="store_true", help="make the video public straight away")
     p.add_argument("--dry-run", action="store_true", help="show what would be sent and stop")
@@ -74,6 +76,11 @@ def load_package(args, record):
     if os.path.getmtime(VIDEO) > os.path.getmtime(DESCRIPTION):
         raise SystemExit("The video is newer than its chapter times. Run this first: python ../../youtube_kit.py")
     info = json.load(open(DETAILS, encoding="utf-8"))
+    titles = info.get("titles") or [info.get("title", "")]
+    pick = "ab".index(args.title or "a")
+    if pick >= len(titles):
+        raise SystemExit('details.json has only one title. Add a second one to "titles".')
+    info["title"] = titles[pick]
     description = open(DESCRIPTION, encoding="utf-8").read().strip()
     tags = info.get("tags", [])
     thumbnail = record["thumbnail"] if record else f"youtube/thumbnail_{args.thumbnail or 'a'}.jpg"

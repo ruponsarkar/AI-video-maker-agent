@@ -1,0 +1,816 @@
+{
+  "title": "Diwali Ki Raat Ke Rang Ka Rahasya",
+  "topic": "Diwali Ki Raat Aasman Mein Patakhe Itne Colourful Kyun Dikhte Hain?",
+  "kind": "explainer",
+  "scenes": [
+    {
+      "on_screen": "Diwali Ki Raat Aasman Mein Patakhe Itne Colourful Kyun Dikhte Hain?",
+      "beats": [
+        {
+          "say": "Diwali ki raat ke aasman mein chamkate rangon ke peeche ek hairan karne wala sach hai!",
+          "visual": {
+            "type": "title",
+            "query": "rainbow colors in sky",
+            "backup": [
+              "sky with colorful lights"
+            ],
+            "file": "images/photos/s00_b00.jpg",
+            "credit": "Raphael Andres / CC BY 3.0"
+          },
+          "mood": "think",
+          "pop": "chamak",
+          "say_hi": "दीवाली की रात के आसमान में चमकते रंगों के पीछे एक हैरान करने वाला सच है!",
+          "say_from": "दीवाली की रात के आसमान में चमकते रंगों के पीछे एक हैरान करने वाला सच है!"
+        },
+        {
+          "say": "Diwali mein patakhon ke rang data lavnon aur unke rasaynik gunon ke karan hote hain.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Rasaynik gun",
+                "icon": "phone"
+              },
+              {
+                "label": "Data lavnon",
+                "icon": "wifi"
+              },
+              {
+                "label": "Rang nikalne",
+                "icon": "globe"
+              }
+            ],
+            "note": "Kya karta hai?"
+          },
+          "mood": "explain",
+          "pop": "rasaynik gun",
+          "say_hi": "दीवाली में पटाखों के रंग धातु लवणों और उनके रासायनिक गुणों के कारण होते हैं।",
+          "say_from": "दीवाली में पटाखों के रंग धातु लवणों और उनके रासायनिक गुणों के कारण होते हैं।"
+        },
+        {
+          "say": "Isse aapko pata chalta hai ki patakhe itne rangin kyun dikhte hain aur yah vijnan kaise kaam karta hai.",
+          "visual": {
+            "type": "photo",
+            "query": "prism refracting light",
+            "backup": [
+              "light bending through glass"
+            ],
+            "caption": "Isse aapko pata chalta",
+            "file": "images/photos/s00_b02.jpg",
+            "credit": "Sobolishko / CC BY 4.0"
+          },
+          "mood": "think",
+          "pop": "farak",
+          "say_hi": "इससे आपको पता चलता है कि पटाखे इतने रंगीन क्यों दिखते हैं और यह विज्ञान कैसे काम करता है।",
+          "say_from": "इससे आपको पता चलता है कि पटाखे इतने रंगीन क्यों दिखते हैं और यह विज्ञान कैसे काम करता है।"
+        },
+        {
+          "say": "Kaun si dhatuen alag-alag rangon ka nirman karti hain.",
+          "visual": {
+            "type": "photo",
+            "query": "firework explosion",
+            "caption": "Patakh ka rang"
+          },
+          "mood": "warn",
+          "pop": "rang",
+          "say_hi": "कौन सी धातुएं अलग-अलग रंगों का निर्माण करती हैं।",
+          "say_from": "कौन सी धातुएं अलग-अलग रंगों का निर्माण करती हैं।"
+        }
+      ],
+      "narration_hi": "दीवाली की रात के आसमान में चमकते रंगों के पीछे एक हैरान करने वाला सच है! दीवाली में पटाखों के रंग धातु लवणों और उनके रासायनिक गुणों के कारण होते हैं। इससे आपको पता चलता है कि पटाखे इतने रंगीन क्यों दिखते हैं और यह विज्ञान कैसे काम करता है। कौन सी धातुएं अलग-अलग रंगों का निर्माण करती हैं।"
+    },
+    {
+      "on_screen": "Aasman mein patakhon ka rang: ek rahasya",
+      "beats": [
+        {
+          "say": "Kahani yahan se shuru hoti hai: aasman mein patakhon ka rang: ek rahasya",
+          "say_from": "कहानी यहां से शुरू होती है: आसमान में पटाखों का रंग: एक रहस्य",
+          "say_hi": "कहानी यहां से शुरू होती है: आसमान में पटाखों का रंग: एक रहस्य",
+          "locked": true,
+          "visual": {
+            "type": "chapter",
+            "label": "Sabse pehle"
+          },
+          "mood": "think"
+        }
+      ],
+      "narration_hi": "कहानी यहां से शुरू होती है: आसमान में पटाखों का रंग: एक रहस्य"
+    },
+    {
+      "on_screen": "Aasman ke rang ka rahasya",
+      "beats": [
+        {
+          "say": "Kahani yahan se shuru hoti hai: aasman mein patakhon ka rang: ek rahasya patakhon ke rangon ka rahasya data lavnon mein chhipa hai,",
+          "visual": {
+            "type": "kinetic",
+            "text": "Patakhon ke rang ke rahasya",
+            "highlight": "data"
+          },
+          "mood": "think",
+          "pop": "data",
+          "say_hi": "कहानी यहां से शुरू होती है: आसमान में पटाखों का रंग: एक रहस्य पटाखों के रंगों का रहस्य धातु लवणों में छिपा है,",
+          "say_from": "कहानी यहां से शुरू होती है: आसमान में पटाखों का रंग: एक रहस्य पटाखों के रंगों का रहस्य धातु लवणों में छिपा है,"
+        },
+        {
+          "say": "Jo uchch tapman par prakash utsarjit karte hain. Sochie, aap ek bartan mein pani ubal rahe hain.",
+          "visual": {
+            "type": "photo",
+            "query": "boiling water in pot",
+            "backup": [
+              "steam rising from kettle"
+            ],
+            "caption": "Jo uchch tapman par",
+            "file": "images/photos/s02_b01.jpg",
+            "credit": "Nutrition, Food Safety & Health / CC0"
+          },
+          "mood": "explain",
+          "pop": "garmi",
+          "say_hi": "जो उच्च तापमान पर प्रकाश उत्सर्जित करते हैं। सोचिए, आप एक बर्तन में पानी उबाल रहे हैं।",
+          "say_from": "जो उच्च तापमान पर प्रकाश उत्सर्जित करते हैं। सोचिए, आप एक बर्तन में पानी उबाल रहे हैं।"
+        },
+        {
+          "say": "Jaise-jaise pani garm hota hai, usme bulbule uthte hain, hai na? Theek waise hi,",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "bubble",
+                "label": "bulbule uthte hain"
+              },
+              {
+                "icon": "fire",
+                "label": "patakhon meindhan jalta hai"
+              }
+            ],
+            "note": "garmi aur patakhon"
+          },
+          "mood": "explain",
+          "pop": "garmi",
+          "say_hi": "जैसे-जैसे पानी गर्म होता है, उसमें बुलबुले उठते हैं, है ना? ठीक वैसे ही,",
+          "say_from": "जैसे-जैसे पानी गर्म होता है, उसमें बुलबुले उठते हैं, है ना? ठीक वैसे ही,"
+        },
+        {
+          "say": "Patakhon mein jab indhan jalta hai, to ye bahut zyada garam ho jaata hai.",
+          "visual": {
+            "type": "photo",
+            "query": "boiling water",
+            "caption": "uchch tapman"
+          },
+          "mood": "warn",
+          "pop": "tapman",
+          "say_hi": "पटाखों में जब ईंधन जलता है, तो ये बहुत ज़्यादा गरम हो जाता है।",
+          "say_from": "पटाखों में जब ईंधन जलता है, तो ये बहुत ज़्यादा गरम हो जाता है।"
+        }
+      ],
+      "narration_hi": "कहानी यहां से शुरू होती है: आसमान में पटाखों का रंग: एक रहस्य पटाखों के रंगों का रहस्य धातु लवणों में छिपा है, जो उच्च तापमान पर प्रकाश उत्सर्जित करते हैं। सोचिए, आप एक बर्तन में पानी उबाल रहे हैं। जैसे-जैसे पानी गर्म होता है, उसमें बुलबुले उठते हैं, है ना? ठीक वैसे ही, पटाखों में जब ईंधन जलता है, तो ये बहुत ज़्यादा गरम हो जाता है।"
+    },
+    {
+      "on_screen": "Aasman mein patakhon ka rang: ek rahasya",
+      "beats": [
+        {
+          "say": "Is garmi ke karan data lavnon ke andar ke chhote-chhote kan roshni paida karte hain.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Strontium lal",
+                "icon": "phone"
+              },
+              {
+                "label": "Barium hara",
+                "icon": "wifi"
+              },
+              {
+                "label": "Data lavan",
+                "icon": "globe"
+              }
+            ],
+            "note": "Chhote kan uttejit ho jaate hain"
+          },
+          "mood": "think",
+          "pop": "chhote kan uttejit",
+          "say_hi": "इस गर्मी के कारण धातु लवणों के अंदर के छोटे-छोटे कण रोशनी पैदा करते हैं।",
+          "say_from": "इस गर्मी के कारण धातु लवणों के अंदर के छोटे-छोटे कण रोशनी पैदा करते हैं।"
+        },
+        {
+          "say": "Alag-alag dhatuen alag-alag rang paida karti hain jaise ki strontium lal aur barium hara.",
+          "visual": {
+            "type": "photo",
+            "query": "light spectrum",
+            "caption": "Rangon ka jadoo"
+          },
+          "mood": "explain",
+          "pop": "dhatuen rang paida karti hain",
+          "say_hi": "अलग-अलग धातुएँ अलग-अलग रंग पैदा करती हैं जैसे कि स्ट्रॉन्शियम लाल और बेरियम हरा।",
+          "say_from": "अलग-अलग धातुएँ अलग-अलग रंग पैदा करती हैं जैसे कि स्ट्रॉन्शियम लाल और बेरियम हरा।"
+        },
+        {
+          "say": "Strontium lal rang data hai, jaise lal patthar.",
+          "visual": {
+            "type": "icon",
+            "icon": "shield",
+            "text": "Lal patthar jaise"
+          },
+          "mood": "warn",
+          "pop": "Stront, lal rang",
+          "say_hi": "स्ट्रॉन्शियम लाल रंग देता है, जैसे लाल पत्थर।",
+          "say_from": "स्ट्रॉन्शियम लाल रंग देता है, जैसे लाल पत्थर।"
+        },
+        {
+          "say": "Ye dono hi data lavan patakhon mein istemal hote hain taaki ve shandar rangon ka pradarshan kar saken.",
+          "visual": {
+            "type": "photo",
+            "query": "data transmission through light",
+            "backup": [
+              "fiber optic cable"
+            ],
+            "caption": "Ye dono hi data"
+          },
+          "mood": "explain",
+          "pop": "shandar rangon",
+          "say_hi": "ये दोनों ही धातु लवण पटाखों में इस्तेमाल होते हैं ताकि वे शानदार रंगों का प्रदर्शन कर सकें।",
+          "say_from": "ये दोनों ही धातु लवण पटाखों में इस्तेमाल होते हैं ताकि वे शानदार रंगों का प्रदर्शन कर सकें।"
+        }
+      ],
+      "narration_hi": "इस गर्मी के कारण धातु लवणों के अंदर के छोटे-छोटे कण रोशनी पैदा करते हैं। अलग-अलग धातुएँ अलग-अलग रंग पैदा करती हैं जैसे कि स्ट्रॉन्शियम लाल और बेरियम हरा। स्ट्रॉन्शियम लाल रंग देता है, जैसे लाल पत्थर। ये दोनों ही धातु लवण पटाखों में इस्तेमाल होते हैं ताकि वे शानदार रंगों का प्रदर्शन कर सकें।"
+    },
+    {
+      "on_screen": "Aasman ke rang ka rahasya",
+      "beats": [
+        {
+          "say": "Is prakriya ko atomic emission spectrum kaha jaata hai, jo rangon ke nirman ka aadhaar hai.",
+          "visual": {
+            "type": "kinetic",
+            "text": "Atomic emission spectrum",
+            "highlight": "prism"
+          },
+          "mood": "explain",
+          "pop": "Prism effect",
+          "say_hi": "इस प्रक्रिया को आटोमिक एमिशन स्पेक्ट्रम कहा जाता है, जो रंगों के निर्माण का आधार है।",
+          "say_from": "इस प्रक्रिया को आटोमिक एमिशन स्पेक्ट्रम कहा जाता है, जो रंगों के निर्माण का आधार है।"
+        },
+        {
+          "say": "Iska matlab hai ki jab data ke kan roshni chhodte hain, to wo alag-alag rangon ki kirnen banate hain jaise ek prism se hokar gujrane wali dhup!",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Rangon ka nirman",
+                "icon": "prism"
+              },
+              {
+                "label": "Data ke roshni",
+                "icon": "wave"
+              },
+              {
+                "label": "Aasman ki dhup",
+                "icon": "sun"
+              }
+            ],
+            "note": "Kiran kaise banta hain"
+          },
+          "mood": "think",
+          "pop": "Rangon ka aadhaar",
+          "say_hi": "इसका मतलब है कि जब धातु के कण रोशनी छोड़ते हैं, तो वो अलग-अलग रंगों की किरणें बनाते हैं जैसे एक प्रिज्म से होकर गुजरने वाली धूप!",
+          "say_from": "इसका मतलब है कि जब धातु के कण रोशनी छोड़ते हैं, तो वो अलग-अलग रंगों की किरणें बनाते हैं जैसे एक प्रिज्म से होकर गुजरने वाली धूप!"
+        },
+        {
+          "say": "Ye hi rangon ka asli karan hai jo aap aasman mein dekhte hain.",
+          "visual": {
+            "type": "photo",
+            "query": "rainbow prism light",
+            "caption": "Aasman ki dhup",
+            "file": "images/photos/s04_b02.jpg",
+            "credit": "Kelvinsong / CC0"
+          },
+          "mood": "happy",
+          "pop": "Dhup ke rang",
+          "say_hi": "ये ही रंगों का असली कारण है जो आप आसमान में देखते हैं।",
+          "say_from": "ये ही रंगों का असली कारण है जो आप आसमान में देखते हैं।"
+        }
+      ],
+      "narration_hi": "इस प्रक्रिया को आटोमिक एमिशन स्पेक्ट्रम कहा जाता है, जो रंगों के निर्माण का आधार है। इसका मतलब है कि जब धातु के कण रोशनी छोड़ते हैं, तो वो अलग-अलग रंगों की किरणें बनाते हैं जैसे एक प्रिज्म से होकर गुजरने वाली धूप! ये ही रंगों का असली कारण है जो आप आसमान में देखते हैं।"
+    },
+    {
+      "on_screen": "Dhatuon ka jaadu: rang kaise bante?",
+      "beats": [
+        {
+          "say": "Ab asli baat: dhatuon ka jaadu: rang kaise bante?",
+          "say_from": "अब असली बात: धातुओं का जादू: रंग कैसे बनते?",
+          "say_hi": "अब असली बात: धातुओं का जादू: रंग कैसे बनते?",
+          "locked": true,
+          "visual": {
+            "type": "chapter",
+            "label": "Agli baat"
+          },
+          "mood": "think"
+        }
+      ],
+      "narration_hi": "अब असली बात: धातुओं का जादू: रंग कैसे बनते?"
+    },
+    {
+      "on_screen": "Dhatuon ka jaadu: rang kaise bante?",
+      "beats": [
+        {
+          "say": "To unke parmanuon mein ilektronon ka uttejit hona prakash utpann karta hai.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "electron uttejit hona",
+                "icon": "phone"
+              },
+              {
+                "label": "prakash utpann",
+                "icon": "wifi"
+              }
+            ],
+            "note": "urja chhodne wala"
+          },
+          "mood": "explain",
+          "pop": "urja",
+          "say_hi": "तो उनके परमाणुओं में इलेक्ट्रॉनों का उत्तेजित होना प्रकाश उत्पन्न करता है।",
+          "say_from": "तो उनके परमाणुओं में इलेक्ट्रॉनों का उत्तेजित होना प्रकाश उत्पन्न करता है।"
+        },
+        {
+          "say": "Sochie, jaise aap ek chhoti si gend ko uchhalte hain vah upar jaati hai aur phir neeche aati hai.",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "globe",
+                "label": "chhoti si gend uchhalte hain"
+              },
+              {
+                "icon": "wave",
+                "label": "upar jaati hai"
+              }
+            ],
+            "note": "uchhalne wala"
+          },
+          "mood": "think",
+          "pop": "uchhalne",
+          "say_hi": "सोचिए, जैसे आप एक छोटी सी गेंद को उछालते हैं वह ऊपर जाती है और फिर नीचे आती है।",
+          "say_from": "सोचिए, जैसे आप एक छोटी सी गेंद को उछालते हैं वह ऊपर जाती है और फिर नीचे आती है।"
+        },
+        {
+          "say": "Isi tarah, data ke andar ke electron urja prapt karte hain aur phir us urja ko roshni ke rup mein chhodte hain!",
+          "visual": {
+            "type": "photo",
+            "query": "electron emitting light",
+            "backup": [
+              "electric bulb glowing"
+            ],
+            "caption": "Isi tarah, data ke",
+            "file": "images/photos/s06_b02.jpg",
+            "credit": "ESA/Hubble & NASA, M. Hayes / CC BY 4.0"
+          },
+          "mood": "explain",
+          "pop": "rang",
+          "say_hi": "इसी तरह, धातु के अंदर के इलेक्ट्रॉन ऊर्जा प्राप्त करते हैं और फिर उस ऊर्जा को रोशनी के रूप में छोड़ते हैं!",
+          "say_from": "इसी तरह, धातु के अंदर के इलेक्ट्रॉन ऊर्जा प्राप्त करते हैं और फिर उस ऊर्जा को रोशनी के रूप में छोड़ते हैं!"
+        }
+      ],
+      "narration_hi": "तो उनके परमाणुओं में इलेक्ट्रॉनों का उत्तेजित होना प्रकाश उत्पन्न करता है। सोचिए, जैसे आप एक छोटी सी गेंद को उछालते हैं वह ऊपर जाती है और फिर नीचे आती है। इसी तरह, धातु के अंदर के इलेक्ट्रॉन ऊर्जा प्राप्त करते हैं और फिर उस ऊर्जा को रोशनी के रूप में छोड़ते हैं!"
+    },
+    {
+      "on_screen": "Dhatuon ke rang ki jaadu",
+      "beats": [
+        {
+          "say": "Alag-alag dhatuon ke alag-alag tarang dairdhya ka utsarjan hota hai, jisse ve alag-alag rang dikhate hain.",
+          "visual": {},
+          "mood": "explain",
+          "pop": "tarang dairdhya",
+          "say_hi": "अलग-अलग धातुओं के अलग-अलग तरंग दैर्ध्य का उत्सर्जन होता है, जिससे वे अलग-अलग रंग दिखाते हैं।",
+          "say_from": "अलग-अलग धातुओं के अलग-अलग तरंग दैर्ध्य का उत्सर्जन होता है, जिससे वे अलग-अलग रंग दिखाते हैं।"
+        },
+        {
+          "say": "Matlab, har data apni khas tarah ki roshni paida karti hai. Udahran ke liye, copper monochloride nila aur calcium monochloride narangi rang ka hota hai.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "copper monochloride",
+                "icon": "lock"
+              },
+              {
+                "label": "calcium monochloride",
+                "icon": "shield"
+              }
+            ],
+            "note": "alag rang"
+          },
+          "mood": "think",
+          "pop": "nila narangi",
+          "say_hi": "मतलब, हर धातु अपनी खास तरह की रोशनी पैदा करती है। उदाहरण के लिए, कॉपर मोनोक्लोराइड नीला और कैल्सियम मोनोक्लोराइड नारंगी रंग का होता है।",
+          "say_from": "मतलब, हर धातु अपनी खास तरह की रोशनी पैदा करती है। उदाहरण के लिए, कॉपर मोनोक्लोराइड नीला और कैल्सियम मोनोक्लोराइड नारंगी रंग का होता है।"
+        },
+        {
+          "say": "Ye bilkul alag-alag rangon ki tarah dikhte hain! Sochie, aap ek painting bana rahe hain.",
+          "visual": {
+            "type": "photo",
+            "query": "colorful painting",
+            "caption": "khubsurat lage"
+          },
+          "mood": "happy",
+          "pop": "painting rang",
+          "say_hi": "ये बिल्कुल अलग-अलग रंगों की तरह दिखते हैं! सोचिए, आप एक पेंटिंग बना रहे हैं।",
+          "say_from": "ये बिल्कुल अलग-अलग रंगों की तरह दिखते हैं! सोचिए, आप एक पेंटिंग बना रहे हैं।"
+        },
+        {
+          "say": "Aap alag-alag rangon ka istemal karte hain taaki aapki painting khubsurat lage.",
+          "visual": {
+            "type": "steps",
+            "items": [
+              "data tarang",
+              "roshni paida",
+              "rang dikhaye"
+            ],
+            "note": "istemal karte hain"
+          },
+          "mood": "explain",
+          "pop": "rang istemal",
+          "say_hi": "आप अलग-अलग रंगों का इस्तेमाल करते हैं ताकि आपकी पेंटिंग खूबसूरत लगे।",
+          "say_from": "आप अलग-अलग रंगों का इस्तेमाल करते हैं ताकि आपकी पेंटिंग खूबसूरत लगे।"
+        }
+      ],
+      "narration_hi": "अलग-अलग धातुओं के अलग-अलग तरंग दैर्ध्य का उत्सर्जन होता है, जिससे वे अलग-अलग रंग दिखाते हैं। मतलब, हर धातु अपनी खास तरह की रोशनी पैदा करती है। उदाहरण के लिए, कॉपर मोनोक्लोराइड नीला और कैल्सियम मोनोक्लोराइड नारंगी रंग का होता है। ये बिल्कुल अलग-अलग रंगों की तरह दिखते हैं! सोचिए, आप एक पेंटिंग बना रहे हैं। आप अलग-अलग रंगों का इस्तेमाल करते हैं ताकि आपकी पेंटिंग खूबसूरत लगे।"
+    },
+    {
+      "on_screen": "Dhatuon ka jaadu: rang kaise bante?",
+      "beats": [
+        {
+          "say": "Strontium lal rang data hai, barium hara rang data hai, aur copper nila rang data hai.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Strontium",
+                "icon": "shield"
+              },
+              {
+                "label": "Barium",
+                "icon": "lock"
+              },
+              {
+                "label": "Copper",
+                "icon": "money"
+              }
+            ],
+            "note": "Data rang data"
+          },
+          "mood": "explain",
+          "pop": "Rang data",
+          "say_hi": "स्ट्रॉन्शियम लाल रंग देता है, बेरियम हरा रंग देता है, और कॉपर नीला रंग देता है।",
+          "say_from": "स्ट्रॉन्शियम लाल रंग देता है, बेरियम हरा रंग देता है, और कॉपर नीला रंग देता है।"
+        },
+        {
+          "say": "Calcium narangi rang data hai. Ye sabhi dhatuen milkar aasman ko rangon se bhar deti hain!",
+          "visual": {
+            "type": "photo",
+            "query": "sky with colors",
+            "caption": "Aasman ko rang bhar deti hain",
+            "file": "images/photos/s08_b01.jpg",
+            "credit": "Nikunj Gupta mecyborg / CC0"
+          },
+          "mood": "think",
+          "pop": "Aasman rang",
+          "say_hi": "कैल्सियम नारंगी रंग देता है। ये सभी धातुएँ मिलकर आसमान को रंगों से भर देती हैं!",
+          "say_from": "कैल्सियम नारंगी रंग देता है। ये सभी धातुएँ मिलकर आसमान को रंगों से भर देती हैं!"
+        }
+      ],
+      "narration_hi": "स्ट्रॉन्शियम लाल रंग देता है, बेरियम हरा रंग देता है, और कॉपर नीला रंग देता है। कैल्सियम नारंगी रंग देता है। ये सभी धातुएँ मिलकर आसमान को रंगों से भर देती हैं!"
+    },
+    {
+      "on_screen": "Delhi mein pradushan: kya karein?",
+      "beats": [
+        {
+          "say": "Aur ab agli baat: Delhi mein pradushan: kya karein?",
+          "say_from": "और अब अगली बात: दिल्ली में प्रदूषण: क्या करें?",
+          "say_hi": "और अब अगली बात: दिल्ली में प्रदूषण: क्या करें?",
+          "locked": true,
+          "visual": {
+            "type": "chapter",
+            "label": "Yahan se samjhiye"
+          },
+          "mood": "think"
+        }
+      ],
+      "narration_hi": "और अब अगली बात: दिल्ली में प्रदूषण: क्या करें?"
+    },
+    {
+      "on_screen": "Delhi ka pradushan: kya karein?",
+      "beats": [
+        {
+          "say": "Sochie, jaise aap ek shandarphayravarks dekhte hain, lekin aapko pata chalta hai ki wo fireworks hawa ko pradoshit kar rahi hai.",
+          "visual": {
+            "type": "photo",
+            "query": "fireworks in delhi",
+            "caption": "patakhon ke jalne se"
+          },
+          "mood": "think",
+          "pop": "PM2.5 namak",
+          "say_hi": "सोचिए, जैसे आप एक शानदारफायरवर्क्स देखते हैं, लेकिन आपको पता चलता है कि वो फायरवर्क्स हवा को प्रदूषित कर रही है।",
+          "say_from": "सोचिए, जैसे आप एक शानदारफायरवर्क्स देखते हैं, लेकिन आपको पता चलता है कि वो फायरवर्क्स हवा को प्रदूषित कर रही है।"
+        },
+        {
+          "say": "Vastav mein, us sal Delhi mein patakhon ke jalne se PM2.5 namak chhote-chhote kano mein bhari matra mein tatv shamil ho gaye.",
+          "visual": {
+            "type": "map",
+            "places": [
+              "Delhi"
+            ]
+          },
+          "mood": "warn",
+          "pop": "barium strontium",
+          "say_hi": "वास्तव में, उस साल दिल्ली में पटाखों के जलने से PM2.5 नामक छोटे-छोटे कणों में भारी मात्रा में तत्व शामिल हो गए।",
+          "say_from": "वास्तव में, उस साल दिल्ली में पटाखों के जलने से PM2.5 नामक छोटे-छोटे कणों में भारी मात्रा में तत्व शामिल हो गए।"
+        },
+        {
+          "say": "Vaijnanikon ne paya ki barium aur strontium jaise dhatuon ki matra samanya se 123 guna lekar 190 guna tak badh gayi thi.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "hawa ko pradoshit",
+                "icon": "smoke"
+              },
+              {
+                "label": "data ka sambandh",
+                "icon": "atom"
+              },
+              {
+                "label": "sukoon chahiye",
+                "icon": "shield"
+              }
+            ],
+            "note": "kalaam se diagram"
+          },
+          "mood": "explain",
+          "pop": "190x badh gaya",
+          "say_hi": "वैज्ञानिकों ने पाया कि बेरियम और स्ट्रॉन्शियम जैसे धातुओं की मात्रा सामान्य से 123 गुना लेकर 190 गुना तक बढ़ गई थी।",
+          "say_from": "वैज्ञानिकों ने पाया कि बेरियम और स्ट्रॉन्शियम जैसे धातुओं की मात्रा सामान्य से 123 गुना लेकर 190 गुना तक बढ़ गई थी।"
+        },
+        {
+          "say": "Iska matlab hai ki hawa mein in dhatuon ki matra bahut zyada ho gayi thi.",
+          "visual": {
+            "type": "photo",
+            "query": "heavy metal particles in air",
+            "backup": [
+              "smoke particles floating"
+            ],
+            "caption": "Iska matlab hai ki"
+          },
+          "mood": "shock",
+          "pop": "190x badh gaya",
+          "say_hi": "इसका मतलब है कि हवा में इन धातुओं की मात्रा बहुत ज्यादा हो गई थी।",
+          "say_from": "इसका मतलब है कि हवा में इन धातुओं की मात्रा बहुत ज्यादा हो गई थी।"
+        }
+      ],
+      "narration_hi": "सोचिए, जैसे आप एक शानदारफायरवर्क्स देखते हैं, लेकिन आपको पता चलता है कि वो फायरवर्क्स हवा को प्रदूषित कर रही है। वास्तव में, उस साल दिल्ली में पटाखों के जलने से PM2.5 नामक छोटे-छोटे कणों में भारी मात्रा में तत्व शामिल हो गए। वैज्ञानिकों ने पाया कि बेरियम और स्ट्रॉन्शियम जैसे धातुओं की मात्रा सामान्य से 123 गुना लेकर 190 गुना तक बढ़ गई थी। इसका मतलब है कि हवा में इन धातुओं की मात्रा बहुत ज्यादा हो गई थी।"
+    },
+    {
+      "on_screen": "Delhi ke pradushan ka samasya",
+      "beats": [
+        {
+          "say": "Yah sthiti Delhi-NCR kshetr ke liye ek gambhir khatra ban gayi thi.",
+          "visual": {
+            "type": "map",
+            "places": [
+              "Delhi"
+            ]
+          },
+          "mood": "think",
+          "pop": "Smog",
+          "say_hi": "यह स्थिति दिल्ली-NCR क्षेत्र के लिए एक गंभीर खतरा बन गई थी।",
+          "say_from": "यह स्थिति दिल्ली-NCR क्षेत्र के लिए एक गंभीर खतरा बन गई थी।"
+        },
+        {
+          "say": "Ye tatv hawa mein milkar pradushan ko aur badha rahe the. Is samasya ko dekhte huye,",
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              {
+                "icon": "firecracker",
+                "label": "Pahli Dharani"
+              },
+              {
+                "icon": "cloud",
+                "label": "Hawa mein jate hain"
+              },
+              {
+                "icon": "hospital",
+                "label": "Dhyan"
+              }
+            ]
+          },
+          "mood": "warn",
+          "pop": "Pradushan",
+          "say_hi": "ये तत्व हवा में मिलकर प्रदूषण को और बढ़ा रहे थे। इस समस्या को देखते हुए,",
+          "say_from": "ये तत्व हवा में मिलकर प्रदूषण को और बढ़ा रहे थे। इस समस्या को देखते हुए,"
+        },
+        {
+          "say": "Supreme court ne green firecrackers ka istemal karne par rook laga di thi.",
+          "visual": {
+            "type": "host",
+            "text": "Supreme court ne green firecrackers par rook laga di"
+          },
+          "mood": "explain",
+          "pop": "Rook",
+          "say_hi": "सुप्रीम कोर्ट ने ग्रीन फायरक्रैकर्स का इस्तेमाल करने पर रोक लगा दी थी।",
+          "say_from": "सुप्रीम कोर्ट ने ग्रीन फायरक्रैकर्स का इस्तेमाल करने पर रोक लगा दी थी।"
+        },
+        {
+          "say": "Green firecrackers mein aise rasayan hote hain jo kam hanikarak hote hain aur kam pradushan paida karte hain.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Kam hanikarak rasayan",
+                "icon": "shield"
+              },
+              {
+                "label": "Kam pradushan",
+                "icon": "globe"
+              }
+            ],
+            "note": "Chhota kadam"
+          },
+          "mood": "think",
+          "pop": "Kam",
+          "say_hi": "ग्रीन फायरक्रैकर्स में ऐसे रसायन होते हैं जो कम हानिकारक होते हैं और कम प्रदूषण पैदा करते हैं।",
+          "say_from": "ग्रीन फायरक्रैकर्स में ऐसे रसायन होते हैं जो कम हानिकारक होते हैं और कम प्रदूषण पैदा करते हैं।"
+        }
+      ],
+      "narration_hi": "यह स्थिति दिल्ली-NCR क्षेत्र के लिए एक गंभीर खतरा बन गई थी। ये तत्व हवा में मिलकर प्रदूषण को और बढ़ा रहे थे। इस समस्या को देखते हुए, सुप्रीम कोर्ट ने ग्रीन फायरक्रैकर्स का इस्तेमाल करने पर रोक लगा दी थी। ग्रीन फायरक्रैकर्स में ऐसे रसायन होते हैं जो कम हानिकारक होते हैं और कम प्रदूषण पैदा करते हैं।"
+    },
+    {
+      "on_screen": "Delhi mein patakhon ka pradushan",
+      "beats": [
+        {
+          "say": "Ye firecrackers barium jaise khatranak tatvon ka istemal nahi karte hain. Isliye,",
+          "visual": {
+            "type": "photo",
+            "query": "fireworks in delhi",
+            "caption": "Patakhon ke dhang"
+          },
+          "mood": "think",
+          "pop": "Firecrackers",
+          "say_hi": "ये फायरक्रैकर्स बेरियम जैसे खतरनाक तत्वों का इस्तेमाल नहीं करते हैं। इसलिए,",
+          "say_from": "ये फायरक्रैकर्स बेरियम जैसे खतरनाक तत्वों का इस्तेमाल नहीं करते हैं। इसलिए,"
+        },
+        {
+          "say": "Green firecrackers ka upyog karke hume patakhon ke jalne se hone wale vayu pradushan ko kam kar sakte hain.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Green Firecrackers",
+                "icon": "shield"
+              },
+              {
+                "label": "Prakriti ko nasha na ho",
+                "icon": "tree"
+              }
+            ],
+            "note": "Surakshit tarik"
+          },
+          "mood": "warn",
+          "pop": "Kam pradushan",
+          "say_hi": "ग्रीन फायरक्रैकर्स का उपयोग करके हम पटाखों के जलने से होने वाले वायु प्रदूषण को कम कर सकते हैं।",
+          "say_from": "ग्रीन फायरक्रैकर्स का उपयोग करके हम पटाखों के जलने से होने वाले वायु प्रदूषण को कम कर सकते हैं।"
+        },
+        {
+          "say": "Is baat ka dhyan rahe ki tyoharon mein bhi humein paryavran ka khyal rakhna chahiye aur aise tareeke istemal karne chahiye jo humare liye surakshit hone aur prakriti ko nuksan na pahunchaen.",
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              {
+                "icon": "user",
+                "label": "Firecrackers"
+              },
+              {
+                "icon": "bank",
+                "label": "Air Quality"
+              },
+              {
+                "icon": "warning",
+                "label": "Health Risk"
+              }
+            ]
+          },
+          "mood": "explain",
+          "pop": "Surakshit raste",
+          "say_hi": "इस बात का ध्यान रहे कि त्योहारों में भी हमें पर्यावरण का ख्याल रखना चाहिए और ऐसे तरीके इस्तेमाल करने चाहिए जो हमारे लिए सुरक्षित हों और प्रकृति को नुकसान न पहुंचाएं।",
+          "say_from": "इस बात का ध्यान रहे कि त्योहारों में भी हमें पर्यावरण का ख्याल रखना चाहिए और ऐसे तरीके इस्तेमाल करने चाहिए जो हमारे लिए सुरक्षित हों और प्रकृति को नुकसान न पहुंचाएं।"
+        }
+      ],
+      "narration_hi": "ये फायरक्रैकर्स बेरियम जैसे खतरनाक तत्वों का इस्तेमाल नहीं करते हैं। इसलिए, ग्रीन फायरक्रैकर्स का उपयोग करके हम पटाखों के जलने से होने वाले वायु प्रदूषण को कम कर सकते हैं। इस बात का ध्यान रहे कि त्योहारों में भी हमें पर्यावरण का ख्याल रखना चाहिए और ऐसे तरीके इस्तेमाल करने चाहिए जो हमारे लिए सुरक्षित हों और प्रकृति को नुकसान न पहुंचाएं।"
+    },
+    {
+      "on_screen": "Patakhon ka vijnan: ek nishkarsh",
+      "beats": [
+        {
+          "say": "Aur ab wo baat, jo aapke kaam aaegi: patakhon ka vijnan: ek nishkarsh",
+          "say_from": "और अब वो बात, जो आपके काम आएगी: पटाखों का विज्ञान: एक निष्कर्ष",
+          "say_hi": "और अब वो बात, जो आपके काम आएगी: पटाखों का विज्ञान: एक निष्कर्ष",
+          "locked": true,
+          "visual": {
+            "type": "chapter",
+            "label": "Aakhri baat"
+          },
+          "mood": "think"
+        }
+      ],
+      "narration_hi": "और अब वो बात, जो आपके काम आएगी: पटाखों का विज्ञान: एक निष्कर्ष"
+    },
+    {
+      "on_screen": "Patakhon ka vijnan: ek nishkarsh",
+      "beats": [
+        {
+          "say": "Theek hai, suno! Patakhon ka rang aasman mein itna colourful kyun dikhta hai?",
+          "visual": {
+            "type": "photo",
+            "query": "why fireworks look colorful in sky",
+            "backup": [
+              "sky with firework lights"
+            ],
+            "caption": "Theek hai, suno! Patakhon"
+          },
+          "mood": "think",
+          "pop": "rang",
+          "say_hi": "ठीक है, सुनो! पटाखों का रंग आसमान में इतना कलरफुल क्यों दिखता है?",
+          "say_from": "ठीक है, सुनो! पटाखों का रंग आसमान में इतना कलरफुल क्यों दिखता है?"
+        },
+        {
+          "say": "Ye ek mazedar baat hai, aur iska jawab science mein chhipa hai.",
+          "visual": {
+            "type": "host",
+            "text": "Science ke jawab mei patakhon ka secret hai"
+          },
+          "mood": "explain",
+          "pop": "secret",
+          "say_hi": "ये एक मजेदार बात है, और इसका जवाब साइंस में छिपा है।",
+          "say_from": "ये एक मजेदार बात है, और इसका जवाब साइंस में छिपा है।"
+        },
+        {
+          "say": "Jaise aap paint kharidte hain, usme alag-alag rangon ke powder hote hain,",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "paint powder",
+                "icon": "phone"
+              },
+              {
+                "label": "rang mix",
+                "icon": "wifi"
+              },
+              {
+                "label": "aasman mei dikhata hai",
+                "icon": "globe"
+              }
+            ],
+            "note": "kalam se bana diagram"
+          },
+          "mood": "think",
+          "pop": "mix",
+          "say_hi": "जैसे आप पेंट खरीदते हैं, उसमें अलग-अलग रंगों के पाउडर होते हैं,",
+          "say_from": "जैसे आप पेंट खरीदते हैं, उसमें अलग-अलग रंगों के पाउडर होते हैं,"
+        },
+        {
+          "say": "Waise hi patakhon mein bhi alag-alag rangon ke data ke powder istemal kiye jaate hain.",
+          "visual": {
+            "type": "photo",
+            "query": "firework colors in sky",
+            "caption": "rang ke data",
+            "file": "images/photos/s14_b03.jpg",
+            "credit": "NASA Goddard Space Flight Center from Gr / Public domain"
+          },
+          "mood": "warn",
+          "pop": "data",
+          "say_hi": "वैसे ही पटाखों में भी अलग-अलग रंगों के धातु के पाउडर इस्तेमाल किए जाते हैं।",
+          "say_from": "वैसे ही पटाखों में भी अलग-अलग रंगों के धातु के पाउडर इस्तेमाल किए जाते हैं।"
+        }
+      ],
+      "narration_hi": "ठीक है, सुनो! पटाखों का रंग आसमान में इतना कलरफुल क्यों दिखता है? ये एक मजेदार बात है, और इसका जवाब साइंस में छिपा है। जैसे आप पेंट खरीदते हैं, उसमें अलग-अलग रंगों के पाउडर होते हैं, वैसे ही पटाखों में भी अलग-अलग रंगों के धातु के पाउडर इस्तेमाल किए जाते हैं।"
+    },
+    {
+      "on_screen": "Aapki baari",
+      "beats": [
+        {
+          "say": "Comment mein bataie, agli baar aap kis cheez ke baare mein janna chahte hain? Aisi hi aasaan baton ke liye snack code ko subscribe kar lijie.",
+          "say_from": "कमेंट में बताइए, अगली बार आप किस चीज़ के बारे में जानना चाहते हैं? ऐसी ही आसान बातों के लिए स्नैक कोड को सब्सक्राइब कर लीजिए।",
+          "say_hi": "कमेंट में बताइए, अगली बार आप किस चीज़ के बारे में जानना चाहते हैं? ऐसी ही आसान बातों के लिए स्नैक कोड को सब्सक्राइब कर लीजिए।",
+          "locked": true,
+          "mood": "happy",
+          "visual": {
+            "type": "host",
+            "text": "Comment karo aur subscribe karo"
+          }
+        }
+      ],
+      "narration_hi": "कमेंट में बताइए, अगली बार आप किस चीज़ के बारे में जानना चाहते हैं? ऐसी ही आसान बातों के लिए स्नैक कोड को सब्सक्राइब कर लीजिए।"
+    }
+  ]
+}

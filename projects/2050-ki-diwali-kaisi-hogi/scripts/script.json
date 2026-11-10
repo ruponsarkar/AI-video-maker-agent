@@ -1,0 +1,842 @@
+{
+  "title": "2050 Ki Diwali Kaisi Hogi?",
+  "topic": "2050 Ki Diwali Kaisi Hogi?",
+  "kind": "explainer",
+  "scenes": [
+    {
+      "on_screen": "2050 Ki Diwali Kaisi Hogi?",
+      "beats": [
+        {
+          "say": "2050 mein Diwali par robot delivery karenge aapke gifts! Hume janenge ki 2050 mein Diwali kaise hogi, AI aur technology se bharpur.",
+          "visual": {
+            "type": "title",
+            "query": "robot delivery",
+            "backup": [
+              "delivery robot"
+            ],
+            "file": "images/photos/s00_b00.jpg",
+            "credit": "Phillip Pessar / CC BY 2.0"
+          },
+          "mood": "think",
+          "pop": "AI Gifts",
+          "say_hi": "2050 में दिवाली पर रोबोट डिलीवरी करेंगे आपके गिफ्ट्स! हम जानेंगे कि 2050 में दिवाली कैसे होगी, AI और टेक्नोलॉजी से भरपूर।",
+          "say_from": "2050 में दिवाली पर रोबोट डिलीवरी करेंगे आपके गिफ्ट्स! हम जानेंगे कि 2050 में दिवाली कैसे होगी, AI और टेक्नोलॉजी से भरपूर।"
+        },
+        {
+          "say": "Isse aapko pata chalega ki bhavishya mein Diwali ka anubhav kaisa ho sakta hai,",
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              {
+                "icon": "user",
+                "label": "Future Diwali"
+              },
+              {
+                "icon": "phone",
+                "label": "Tech Trends"
+              },
+              {
+                "icon": "bank",
+                "label": "Smart Celebrations"
+              }
+            ]
+          },
+          "mood": "explain",
+          "pop": "Smart Diwali",
+          "say_hi": "इससे आपको पता चलेगा कि भविष्य में दिवाली का अनुभव कैसा हो सकता है,",
+          "say_from": "इससे आपको पता चलेगा कि भविष्य में दिवाली का अनुभव कैसा हो सकता है,"
+        },
+        {
+          "say": "Aur aap iske liye taiyaan ho sakte hain. Hologram wale rangoli ke saath Diwali ka andaza lagaie, kya ye sach hoga?",
+          "visual": {
+            "type": "photo",
+            "query": "hologram rangoli",
+            "backup": [],
+            "caption": "Aur aap iske liye"
+          },
+          "mood": "warn",
+          "pop": "Hologram vs Real",
+          "say_hi": "और आप इसके लिए तैयार हो सकते हैं। होलोग्राम वाले रंगोली के साथ दिवाली का अंदाज़ा लगाइए, क्या ये सच होगा?",
+          "say_from": "और आप इसके लिए तैयार हो सकते हैं। होलोग्राम वाले रंगोली के साथ दिवाली का अंदाज़ा लगाइए, क्या ये सच होगा?"
+        }
+      ],
+      "narration_hi": "2050 में दिवाली पर रोबोट डिलीवरी करेंगे आपके गिफ्ट्स! हम जानेंगे कि 2050 में दिवाली कैसे होगी, AI और टेक्नोलॉजी से भरपूर। इससे आपको पता चलेगा कि भविष्य में दिवाली का अनुभव कैसा हो सकता है, और आप इसके लिए तैयार हो सकते हैं। होलोग्राम वाले रंगोली के साथ दिवाली का अंदाज़ा लगाइए, क्या ये सच होगा?"
+    },
+    {
+      "on_screen": "Diwali ki khoj – kaise hogi?",
+      "beats": [
+        {
+          "say": "Shuruaat yahin se hoti hai: Diwali ki khoj – kaise hogi?",
+          "say_from": "शुरुआत यहीं से होती है: दिवाली की खोज – कैसे होगी?",
+          "say_hi": "शुरुआत यहीं से होती है: दिवाली की खोज – कैसे होगी?",
+          "locked": true,
+          "visual": {
+            "type": "chapter",
+            "label": "Sabse pehle"
+          },
+          "mood": "think"
+        }
+      ],
+      "narration_hi": "शुरुआत यहीं से होती है: दिवाली की खोज – कैसे होगी?"
+    },
+    {
+      "on_screen": "Diwali ki khoj – kaise hogi?",
+      "beats": [
+        {
+          "say": "2050 mein Diwali par aapko AI se bane gaye bahut sare sajavten dekhne ko milengi.",
+          "visual": {
+            "type": "kinetic",
+            "text": "AI sajavten dekhne ko milengi",
+            "highlight": "AI"
+          },
+          "mood": "think",
+          "pop": "AI sajavten",
+          "say_hi": "2050 में दिवाली पर आपको AI से बनाए गए बहुत सारे सजावटें देखने को मिलेंगी।",
+          "say_from": "2050 में दिवाली पर आपको AI से बनाए गए बहुत सारे सजावटें देखने को मिलेंगी।"
+        },
+        {
+          "say": "AI matlab aisa computer program, jo likhna, bolna ya chehra pahchanna seekh leta hai.",
+          "say_hi": "ए-आई मतलब ऐसा कंप्यूटर प्रोग्राम, जो लिखना, बोलना या चेहरा पहचानना सीख लेता है।",
+          "visual": {
+            "type": "term",
+            "term": "AI",
+            "meaning": "Insaan jaisa kaam seekhne wala program",
+            "example": "Likhna, bolna ya chehra pehchanna",
+            "icon": "ai"
+          },
+          "mood": "explain",
+          "locked": true,
+          "say_from": "ए-आई मतलब ऐसा कंप्यूटर प्रोग्राम, जो लिखना, बोलना या चेहरा पहचानना सीख लेता है।"
+        },
+        {
+          "say": "Hologram wali rangoli aur drone show dekhna bahut hi dilchasp hoga. Sochie,",
+          "visual": {
+            "type": "photo",
+            "query": "drone show",
+            "backup": [
+              "aerial display"
+            ],
+            "caption": "Hologram wali rangoli aur",
+            "file": "images/photos/s02_b02.jpg",
+            "credit": "AmeteurAngeleno / CC0"
+          },
+          "mood": "explain",
+          "pop": "Hologram drone",
+          "say_hi": "होलोग्राम वाली रंगोली और ड्रोन शो देखना बहुत ही दिलचस्प होगा। सोचिए,",
+          "say_from": "होलोग्राम वाली रंगोली और ड्रोन शो देखना बहुत ही दिलचस्प होगा। सोचिए,"
+        },
+        {
+          "say": "Aapke ghar ki divar par ek chamkata hua hologram wala rangoli design hai yah narangi,",
+          "visual": {
+            "type": "photo",
+            "query": "hologram rangoli",
+            "caption": "Chamkata hologram"
+          },
+          "mood": "happy",
+          "pop": "Rangoli design",
+          "say_hi": "आपके घर की दीवार पर एक चमकता हुआ होलोग्राम वाला रंगोली डिज़ाइन है यह नारंगी,",
+          "say_from": "आपके घर की दीवार पर एक चमकता हुआ होलोग्राम वाला रंगोली डिज़ाइन है यह नारंगी,"
+        },
+        {
+          "say": "Pila aur saphed rangon mein hai. Yah dekhkar aapko kitna accha lagega!",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Pila aur saphed",
+                "icon": "globe"
+              },
+              {
+                "label": "Accha lagega",
+                "icon": "heart"
+              }
+            ],
+            "note": "Ek chhoti line"
+          },
+          "mood": "happy",
+          "pop": "Accha lagega",
+          "say_hi": "पीला और सफेद रंगों में है। यह देखकर आपको कितना अच्छा लगेगा!",
+          "say_from": "पीला और सफेद रंगों में है। यह देखकर आपको कितना अच्छा लगेगा!"
+        }
+      ],
+      "narration_hi": "2050 में दिवाली पर आपको AI से बनाए गए बहुत सारे सजावटें देखने को मिलेंगी। ए-आई मतलब ऐसा कंप्यूटर प्रोग्राम, जो लिखना, बोलना या चेहरा पहचानना सीख लेता है। होलोग्राम वाली रंगोली और ड्रोन शो देखना बहुत ही दिलचस्प होगा। सोचिए, आपके घर की दीवार पर एक चमकता हुआ होलोग्राम वाला रंगोली डिज़ाइन है यह नारंगी, पीला और सफेद रंगों में है। यह देखकर आपको कितना अच्छा लगेगा!"
+    },
+    {
+      "on_screen": "Diwali ki khoj – kaise hogi?",
+      "beats": [
+        {
+          "say": "Iske alava, Diwali ke uphar aur snacks pahunchane ke liye robot delivery system ka istemal hoga.",
+          "visual": {
+            "type": "photo",
+            "query": "drone light show",
+            "caption": "Rangin Aasman"
+          },
+          "mood": "happy",
+          "pop": "Drone Show",
+          "say_hi": "इसके अलावा, दिवाली के उपहार और स्नैक्स पहुंचाने के लिए रोबोट डिलीवरी सिस्टम का इस्तेमाल होगा।",
+          "say_from": "इसके अलावा, दिवाली के उपहार और स्नैक्स पहुंचाने के लिए रोबोट डिलीवरी सिस्टम का इस्तेमाल होगा।"
+        },
+        {
+          "say": "Aap aaram se baithkar apne parivar ke saath Diwali manaenge, jabki robot aapke ghar par hi cheezein pahuncha dega.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Robot Delivery",
+                "icon": "phone"
+              },
+              {
+                "label": "Smart Home",
+                "icon": "wifi"
+              },
+              {
+                "label": "Droning Lights",
+                "icon": "globe"
+              }
+            ],
+            "note": "Aapki Diwali, Aaram se!"
+          },
+          "mood": "think",
+          "pop": "Smart System",
+          "say_hi": "आप आराम से बैठकर अपने परिवार के साथ दिवाली मनाएंगे, जबकि रोबोट आपके घर पर ही चीजें पहुंचा देगा।",
+          "say_from": "आप आराम से बैठकर अपने परिवार के साथ दिवाली मनाएंगे, जबकि रोबोट आपके घर पर ही चीजें पहुंचा देगा।"
+        },
+        {
+          "say": "Aapke ghar ko smart home taknik se sajaya jayega. Roshni aur tapman svachalit rup se samayojit honge aapko kuch bhi karne ki zaroorat nahi hogi!",
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              {
+                "icon": "home",
+                "label": "Ghar"
+              },
+              {
+                "icon": "truck",
+                "label": "Delivery"
+              },
+              {
+                "icon": "light",
+                "label": "Droning"
+              }
+            ]
+          },
+          "mood": "explain",
+          "pop": "Easy Diwali",
+          "say_hi": "आपके घर को स्मार्ट होम तकनीक से सजाया जाएगा। रोशनी और तापमान स्वचालित रूप से समायोजित होंगे आपको कुछ भी करने की ज़रूरत नहीं होगी!",
+          "say_from": "आपके घर को स्मार्ट होम तकनीक से सजाया जाएगा। रोशनी और तापमान स्वचालित रूप से समायोजित होंगे आपको कुछ भी करने की ज़रूरत नहीं होगी!"
+        },
+        {
+          "say": "Yah sab dekhne ke liye drone show bhi honge, jo aasman mein rangin pattern dikhaenge.",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "drone",
+                "label": "Light Show"
+              },
+              {
+                "icon": "home",
+                "label": "Smart House"
+              }
+            ]
+          },
+          "mood": "happy",
+          "pop": "Diwali Tech",
+          "say_hi": "यह सब देखने के लिए ड्रोन शो भी होंगे, जो आसमान में रंगीन पैटर्न दिखाएंगे।",
+          "say_from": "यह सब देखने के लिए ड्रोन शो भी होंगे, जो आसमान में रंगीन पैटर्न दिखाएंगे।"
+        }
+      ],
+      "narration_hi": "इसके अलावा, दिवाली के उपहार और स्नैक्स पहुंचाने के लिए रोबोट डिलीवरी सिस्टम का इस्तेमाल होगा। आप आराम से बैठकर अपने परिवार के साथ दिवाली मनाएंगे, जबकि रोबोट आपके घर पर ही चीजें पहुंचा देगा। आपके घर को स्मार्ट होम तकनीक से सजाया जाएगा। रोशनी और तापमान स्वचालित रूप से समायोजित होंगे आपको कुछ भी करने की ज़रूरत नहीं होगी! यह सब देखने के लिए ड्रोन शो भी होंगे, जो आसमान में रंगीन पैटर्न दिखाएंगे।"
+    },
+    {
+      "on_screen": "Diwali ki khoj – kaise hogi?",
+      "beats": [
+        {
+          "say": "Ye show Diwali ki virtual celebration ka hissa honge, jahan aap duniya bhar ke logon ke saath online Diwali manna payenge.",
+          "visual": {
+            "type": "photo",
+            "query": "virtual celebration",
+            "backup": [
+              "online festival"
+            ],
+            "caption": "Ye show Diwali ki"
+          },
+          "mood": "think",
+          "pop": "virtual",
+          "say_hi": "ये शो दिवाली की वर्चुअल सेलिब्रेशन का हिस्सा होंगे, जहाँ आप दुनिया भर के लोगों के साथ ऑनलाइन दिवाली मना पाएंगे।",
+          "say_from": "ये शो दिवाली की वर्चुअल सेलिब्रेशन का हिस्सा होंगे, जहाँ आप दुनिया भर के लोगों के साथ ऑनलाइन दिवाली मना पाएंगे।"
+        },
+        {
+          "say": "To, 2050 mein Diwali nishchit rup se bahut hi aadhunik aur romanchak hogi!",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Smart Diwali",
+                "icon": "globe"
+              },
+              {
+                "label": "Global Fairs",
+                "icon": "people"
+              },
+              {
+                "label": "AR Lamps",
+                "icon": "light"
+              }
+            ],
+            "note": "Digital Diwali"
+          },
+          "mood": "happy",
+          "pop": "future",
+          "say_hi": "तो, 2050 में दिवाली निश्चित रूप से बहुत ही आधुनिक और रोमांचक होगी!",
+          "say_from": "तो, 2050 में दिवाली निश्चित रूप से बहुत ही आधुनिक और रोमांचक होगी!"
+        }
+      ],
+      "narration_hi": "ये शो दिवाली की वर्चुअल सेलिब्रेशन का हिस्सा होंगे, जहाँ आप दुनिया भर के लोगों के साथ ऑनलाइन दिवाली मना पाएंगे। तो, 2050 में दिवाली निश्चित रूप से बहुत ही आधुनिक और रोमांचक होगी!"
+    },
+    {
+      "on_screen": "Robot aur ghar – kya hua?",
+      "beats": [
+        {
+          "say": "Ab asli baat: robot aur ghar – kya hua?",
+          "say_from": "अब असली बात: रोबोट और घर – क्या हुआ?",
+          "say_hi": "अब असली बात: रोबोट और घर – क्या हुआ?",
+          "locked": true,
+          "visual": {
+            "type": "chapter",
+            "label": "Ab aage"
+          },
+          "mood": "think"
+        }
+      ],
+      "narration_hi": "अब असली बात: रोबोट और घर – क्या हुआ?"
+    },
+    {
+      "on_screen": "Robot aur ghar – kya hua?",
+      "beats": [
+        {
+          "say": "To phir, 2050 mein aapke Diwali ke tohphe aur snacks robot hi deliver karenge.",
+          "visual": {
+            "type": "photo",
+            "query": "robot delivery",
+            "caption": "Diwali tohpa",
+            "file": "images/photos/s06_b00.jpg",
+            "credit": "Phillip Pessar / CC BY 2.0"
+          },
+          "mood": "happy",
+          "pop": "Diwali tohpa",
+          "say_hi": "तो फिर, 2050 में आपके दिवाली के तोहफे और स्नैक्स रोबोट ही डिलीवर करेंगे।",
+          "say_from": "तो फिर, 2050 में आपके दिवाली के तोहफे और स्नैक्स रोबोट ही डिलीवर करेंगे।"
+        },
+        {
+          "say": "Sochie, ek robot aapke ghar ke darvaje par aata hai, aapke hathon mein Diwali ka tohpha thame huye!",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Robot darwaja",
+                "icon": "phone"
+              },
+              {
+                "label": "Tohpa thamra",
+                "icon": "wifi"
+              }
+            ],
+            "note": "Thamra"
+          },
+          "mood": "think",
+          "pop": "Tohpa thamra",
+          "say_hi": "सोचिए, एक रोबोट आपके घर के दरवाजे पर आता है, आपके हाथों में दिवाली का तोहफा थामे हुए!",
+          "say_from": "सोचिए, एक रोबोट आपके घर के दरवाजे पर आता है, आपके हाथों में दिवाली का तोहफा थामे हुए!"
+        },
+        {
+          "say": "Aur aapka ghar, ek smart home hoga. Iska matlab hai ki aapke ghar ki roshni aur tapman khud-bakhud adjust ho jayenge.",
+          "visual": {
+            "type": "photo",
+            "query": "smart home",
+            "backup": [
+              "automated house"
+            ],
+            "caption": "Aur aapka ghar, ek",
+            "file": "images/photos/s06_b02.jpg",
+            "credit": "Maurizio Pesce from Milan, Italia / CC BY 2.0"
+          },
+          "mood": "explain",
+          "pop": "Smart home",
+          "say_hi": "और आपका घर, एक स्मार्ट होम होगा। इसका मतलब है कि आपके घर की रोशनी और तापमान खुद-बखुद एडजस्ट हो जाएंगे।",
+          "say_from": "और आपका घर, एक स्मार्ट होम होगा। इसका मतलब है कि आपके घर की रोशनी और तापमान खुद-बखुद एडजस्ट हो जाएंगे।"
+        },
+        {
+          "say": "Aapko kuch bhi karne ki zaroorat nahi hogi. AI image generator se aap bas ek baat likhenge Diwali ki sajavat aur wo aapko Diwali ke liye ekdam sahi tasviren bana dega.",
+          "visual": {
+            "type": "steps",
+            "items": [
+              "Diwali baat",
+              "AI generator",
+              "Sajavat banayi"
+            ]
+          },
+          "mood": "warn",
+          "pop": "Sajavat bana",
+          "say_hi": "आपको कुछ भी करने की ज़रूरत नहीं होगी। AI इमेज जेनरेटर से आप बस एक बात लिखेंगे दिवाली की सजावट और वो आपको दिवाली के लिए एकदम सही तस्वीरें बना देगा।",
+          "say_from": "आपको कुछ भी करने की ज़रूरत नहीं होगी। AI इमेज जेनरेटर से आप बस एक बात लिखेंगे दिवाली की सजावट और वो आपको दिवाली के लिए एकदम सही तस्वीरें बना देगा।"
+        }
+      ],
+      "narration_hi": "तो फिर, 2050 में आपके दिवाली के तोहफे और स्नैक्स रोबोट ही डिलीवर करेंगे। सोचिए, एक रोबोट आपके घर के दरवाजे पर आता है, आपके हाथों में दिवाली का तोहफा थामे हुए! और आपका घर, एक स्मार्ट होम होगा। इसका मतलब है कि आपके घर की रोशनी और तापमान खुद-बखुद एडजस्ट हो जाएंगे। आपको कुछ भी करने की ज़रूरत नहीं होगी। AI इमेज जेनरेटर से आप बस एक बात लिखेंगे दिवाली की सजावट और वो आपको दिवाली के लिए एकदम सही तस्वीरें बना देगा।"
+    },
+    {
+      "on_screen": "Robot aur ghar – kya hua?",
+      "beats": [
+        {
+          "say": "Yahin se ye sab shuru hota hai. Aap sochie, aapke ghar ki divar par ek chamkadar hologram wali rangoli hai.",
+          "visual": {
+            "type": "photo",
+            "query": "hologram wall art",
+            "caption": "Hologram Rangoli"
+          },
+          "mood": "think",
+          "pop": "Hologram Rangoli",
+          "say_hi": "यहीं से ये सब शुरू होता है। आप सोचिए, आपके घर की दीवार पर एक चमकदार होलोग्राम वाली रंगोली है।",
+          "say_from": "यहीं से ये सब शुरू होता है। आप सोचिए, आपके घर की दीवार पर एक चमकदार होलोग्राम वाली रंगोली है।"
+        },
+        {
+          "say": "Ye narangi, pila aur saphed rangon mein chamak rahi hogi! Ye sab technology ka kamal hoga.",
+          "visual": {
+            "type": "kinetic",
+            "text": "Narangi, Pila, Saphed Chamak",
+            "highlight": "Technology Kamal"
+          },
+          "mood": "explain",
+          "pop": "Tech Colors",
+          "say_hi": "ये नारंगी, पीला और सफेद रंगों में चमक रही होगी! ये सब टेक्नोलॉजी का कमाल होगा।",
+          "say_from": "ये नारंगी, पीला और सफेद रंगों में चमक रही होगी! ये सब टेक्नोलॉजी का कमाल होगा।"
+        },
+        {
+          "say": "Ye technology aapko Diwali ko aur bhi khas bana degi. Iski wajah se aap aaram se ghar baithe hi duniya bhar ke logon ke saath Diwali manna payenge.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Diwali Online",
+                "icon": "globe"
+              },
+              {
+                "label": "Duniya Ke Saath",
+                "icon": "people"
+              }
+            ],
+            "note": "Ghar Se Diwali"
+          },
+          "mood": "happy",
+          "pop": "Online Diwali",
+          "say_hi": "ये टेक्नोलॉजी आपको दिवाली को और भी खास बना देगी। इसकी वजह से आप आराम से घर बैठे ही दुनिया भर के लोगों के साथ दिवाली मना पाएंगे।",
+          "say_from": "ये टेक्नोलॉजी आपको दिवाली को और भी खास बना देगी। इसकी वजह से आप आराम से घर बैठे ही दुनिया भर के लोगों के साथ दिवाली मना पाएंगे।"
+        },
+        {
+          "say": "Ab aap samajh gaye honge ki bhavishya mein Diwali kaisi ho sakti hai...",
+          "visual": {
+            "type": "photo",
+            "query": "future diwali",
+            "backup": [
+              "tomorrow festival"
+            ],
+            "caption": "Ab aap samajh gaye"
+          },
+          "mood": "think",
+          "pop": "Future Diw,al",
+          "say_hi": "अब आप समझ गए होंगे कि भविष्य में दिवाली कैसी हो सकती है...",
+          "say_from": "अब आप समझ गए होंगे कि भविष्य में दिवाली कैसी हो सकती है..."
+        }
+      ],
+      "narration_hi": "यहीं से ये सब शुरू होता है। आप सोचिए, आपके घर की दीवार पर एक चमकदार होलोग्राम वाली रंगोली है। ये नारंगी, पीला और सफेद रंगों में चमक रही होगी! ये सब टेक्नोलॉजी का कमाल होगा। ये टेक्नोलॉजी आपको दिवाली को और भी खास बना देगी। इसकी वजह से आप आराम से घर बैठे ही दुनिया भर के लोगों के साथ दिवाली मना पाएंगे। अब आप समझ गए होंगे कि भविष्य में दिवाली कैसी हो सकती है..."
+    },
+    {
+      "on_screen": "Rangoli ki duniya – kaise bane?",
+      "beats": [
+        {
+          "say": "Ab asli baat: rangoli ki duniya – kaise bane?",
+          "say_from": "अब असली बात: रंगोली की दुनिया – कैसे बनाए?",
+          "say_hi": "अब असली बात: रंगोली की दुनिया – कैसे बनाए?",
+          "locked": true,
+          "visual": {
+            "type": "chapter",
+            "label": "Yahan se samjhiye"
+          },
+          "mood": "think"
+        }
+      ],
+      "narration_hi": "अब असली बात: रंगोली की दुनिया – कैसे बनाए?"
+    },
+    {
+      "on_screen": "Rangoli ki duniya – kaise bane?",
+      "beats": [
+        {
+          "say": "2050 ki Diwali par rangoli ka kya hoga? Sochie, rangoli ab sirf pharsh par powder se nahi, balki hologram taknik se banai jayegi.",
+          "visual": {
+            "type": "photo",
+            "query": "hologram art",
+            "caption": "2050 Diwali"
+          },
+          "mood": "think",
+          "pop": "Hologram Rangoli",
+          "say_hi": "2050 की दिवाली पर रंगोली का क्या होगा? सोचिए, रंगोली अब सिर्फ फर्श पर पाउडर से नहीं, बल्कि होलोग्राम तकनीक से बनाई जाएगी।",
+          "say_from": "2050 की दिवाली पर रंगोली का क्या होगा? सोचिए, रंगोली अब सिर्फ फर्श पर पाउडर से नहीं, बल्कि होलोग्राम तकनीक से बनाई जाएगी।"
+        },
+        {
+          "say": "Isme chamkile gulabi, narangi, kesriya pile aur saphed rang honge. Ye rang itne shandar honge ki dekhne mein bilkul asli lage!",
+          "visual": {
+            "type": "photo",
+            "query": "shiny colors",
+            "backup": [
+              "vibrant hues"
+            ],
+            "caption": "Isme chamkile gulabi, narangi",
+            "file": "images/photos/s09_b01.jpg",
+            "credit": "Morgan from Montreal, Quebec, Canada / CC BY 2.0"
+          },
+          "mood": "happy",
+          "pop": "Shandar Rang",
+          "say_hi": "इसमें चमकीले गुलाबी, नारंगी, केसरिया पीले और सफेद रंग होंगे। ये रंग इतने शानदार होंगे कि देखने में बिल्कुल असली लगे!",
+          "say_from": "इसमें चमकीले गुलाबी, नारंगी, केसरिया पीले और सफेद रंग होंगे। ये रंग इतने शानदार होंगे कि देखने में बिल्कुल असली लगे!"
+        },
+        {
+          "say": "Log apne paramprik kapde pahnenge, aur khushi se sparklers jalaenge. Diwali ka mahaul ekdam khushnuma hoga.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Paramprik Kapde",
+                "icon": "user"
+              },
+              {
+                "label": "Sparklers Jalaenge",
+                "icon": "fire"
+              }
+            ],
+            "note": "Khushi ke kadam"
+          },
+          "mood": "explain",
+          "pop": "Diwali Mahaul",
+          "say_hi": "लोग अपने पारंपरिक कपड़े पहनेंगे, और खुशी से स्पार्कलर्स जलाएंगे। दिवाली का माहौल एकदम खुशनुमा होगा।",
+          "say_from": "लोग अपने पारंपरिक कपड़े पहनेंगे, और खुशी से स्पार्कलर्स जलाएंगे। दिवाली का माहौल एकदम खुशनुमा होगा।"
+        },
+        {
+          "say": "Ye rangoli banane ke liye AI ka istemal hoga. Aap bas diwali naam ka ek shabd likhenge, aur AI aapko aisi rangoli ki tasvir dega jo aapne pehle kabhi nahi dekhi hogi.",
+          "visual": {
+            "type": "steps",
+            "items": [
+              "Diwali likhoge",
+              "AI tasvir dega",
+              "Aap dekho aur khush ho"
+            ],
+            "note": "AI Rangoli"
+          },
+          "mood": "warn",
+          "pop": "AI Se Rangoli",
+          "say_hi": "ये रंगोली बनाने के लिए AI का इस्तेमाल होगा। आप बस दीवाली नाम का एक शब्द लिखेंगे, और AI आपको ऐसी रंगोली की तस्वीर देगा जो आपने पहले कभी नहीं देखी होगी।",
+          "say_from": "ये रंगोली बनाने के लिए AI का इस्तेमाल होगा। आप बस दीवाली नाम का एक शब्द लिखेंगे, और AI आपको ऐसी रंगोली की तस्वीर देगा जो आपने पहले कभी नहीं देखी होगी।"
+        }
+      ],
+      "narration_hi": "2050 की दिवाली पर रंगोली का क्या होगा? सोचिए, रंगोली अब सिर्फ फर्श पर पाउडर से नहीं, बल्कि होलोग्राम तकनीक से बनाई जाएगी। इसमें चमकीले गुलाबी, नारंगी, केसरिया पीले और सफेद रंग होंगे। ये रंग इतने शानदार होंगे कि देखने में बिल्कुल असली लगे! लोग अपने पारंपरिक कपड़े पहनेंगे, और खुशी से स्पार्कलर्स जलाएंगे। दिवाली का माहौल एकदम खुशनुमा होगा। ये रंगोली बनाने के लिए AI का इस्तेमाल होगा। आप बस दीवाली नाम का एक शब्द लिखेंगे, और AI आपको ऐसी रंगोली की तस्वीर देगा जो आपने पहले कभी नहीं देखी होगी।"
+    },
+    {
+      "on_screen": "Rangoli ki duniya – kaise bane?",
+      "beats": [
+        {
+          "say": "Ye rangoli itni shandar hogi ki dekhne wale log hairan rah jayenge!",
+          "visual": {
+            "type": "photo",
+            "query": "diwali rangoli design",
+            "caption": "Diwali Rangoli",
+            "file": "images/photos/s10_b00.jpg",
+            "credit": "siddarth varanasi / CC BY 2.0"
+          },
+          "mood": "happy",
+          "pop": "Diwali Rangoli",
+          "say_hi": "ये रंगोली इतनी शानदार होगी कि देखने वाले लोग हैरान रह जाएंगे!",
+          "say_from": "ये रंगोली इतनी शानदार होगी कि देखने वाले लोग हैरान रह जाएंगे!"
+        },
+        {
+          "say": "Aur ye sab robot aur smart home se juda hai. Aapke ghar mein robot delivery system hoga,",
+          "visual": {
+            "type": "icon",
+            "icon": "robot",
+            "text": "Smart Home Robot"
+          },
+          "mood": "think",
+          "pop": "Robot Delivery",
+          "say_hi": "और ये सब रोबोट और स्मार्ट होम से जुड़ा है। आपके घर में रोबोट डिलीवरी सिस्टम होगा,",
+          "say_from": "और ये सब रोबोट और स्मार्ट होम से जुड़ा है। आपके घर में रोबोट डिलीवरी सिस्टम होगा,"
+        },
+        {
+          "say": "Jo aapke Diwali ke tohphe aur snacks aapke darvaje par pahunchaega. Aapka ghar ek smart home hoga, jismen roshni aur tapman khud-bakhud adjust ho jayega.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Light Adjust",
+                "icon": "lamp"
+              },
+              {
+                "label": "Temperature Control",
+                "icon": "thermometer"
+              },
+              {
+                "label": "Smart Rangoli",
+                "icon": "paint"
+              }
+            ],
+            "note": "Home Automation"
+          },
+          "mood": "explain",
+          "pop": "Smart Home",
+          "say_hi": "जो आपके दिवाली के तोहफे और स्नैक्स आपके दरवाजे पर पहुंचाएगा। आपका घर एक स्मार्ट होम होगा, जिसमें रोशनी और तापमान खुद-बखुद एडजस्ट हो जाएगा।",
+          "say_from": "जो आपके दिवाली के तोहफे और स्नैक्स आपके दरवाजे पर पहुंचाएगा। आपका घर एक स्मार्ट होम होगा, जिसमें रोशनी और तापमान खुद-बखुद एडजस्ट हो जाएगा।"
+        },
+        {
+          "say": "Ye sab milkar Diwali ko aur bhi khas bana denge!",
+          "visual": {},
+          "mood": "happy",
+          "pop": "Diwali Magic",
+          "say_hi": "ये सब मिलकर दिवाली को और भी खास बना देंगे!",
+          "say_from": "ये सब मिलकर दिवाली को और भी खास बना देंगे!"
+        }
+      ],
+      "narration_hi": "ये रंगोली इतनी शानदार होगी कि देखने वाले लोग हैरान रह जाएंगे! और ये सब रोबोट और स्मार्ट होम से जुड़ा है। आपके घर में रोबोट डिलीवरी सिस्टम होगा, जो आपके दिवाली के तोहफे और स्नैक्स आपके दरवाजे पर पहुंचाएगा। आपका घर एक स्मार्ट होम होगा, जिसमें रोशनी और तापमान खुद-बखुद एडजस्ट हो जाएगा। ये सब मिलकर दिवाली को और भी खास बना देंगे!"
+    },
+    {
+      "on_screen": "Digital Diwali – kya dekhe?",
+      "beats": [
+        {
+          "say": "Ab aage badhate hain: digital Diwali – kya dekhe?",
+          "say_from": "अब आगे बढ़ते हैं: डिजिटल दिवाली – क्या देखे?",
+          "say_hi": "अब आगे बढ़ते हैं: डिजिटल दिवाली – क्या देखे?",
+          "locked": true,
+          "visual": {
+            "type": "chapter",
+            "label": "Agla padaav"
+          },
+          "mood": "think"
+        }
+      ],
+      "narration_hi": "अब आगे बढ़ते हैं: डिजिटल दिवाली – क्या देखे?"
+    },
+    {
+      "on_screen": "Digital Diwali – Kya Dekhe?",
+      "beats": [
+        {
+          "say": "2050 mein Diwali ka jashn poori tarah se digital hoga...",
+          "visual": {
+            "type": "photo",
+            "query": "digital diwali",
+            "backup": [
+              "online celebration"
+            ],
+            "caption": "Aap sochie, 2050 mein"
+          },
+          "mood": "think",
+          "pop": "future",
+          "say_hi": "2050 में दिवाली का जश्न पूरी तरह से डिजिटल होगा...",
+          "say_from": "2050 में दिवाली का जश्न पूरी तरह से डिजिटल होगा..."
+        },
+        {
+          "say": "AI image generator se sundar sajavat taiyaan hongi aur AI video generator se purane tyoharon ki tasviron ko animate karke video bane jayenge...",
+          "visual": {
+            "type": "photo",
+            "query": "ai image generator",
+            "backup": [
+              "digital design"
+            ],
+            "caption": "Ye virtual celebration technology"
+          },
+          "mood": "explain",
+          "pop": "technology",
+          "say_hi": "AI इमेज जेनरेटर से सुंदर सजावट तैयार होंगी और AI वीडियो जनरेटर से पुराने त्योहारों की तस्वीरों को एनिमेट करके वीडियो बनाए जाएंगे...",
+          "say_from": "AI इमेज जेनरेटर से सुंदर सजावट तैयार होंगी और AI वीडियो जनरेटर से पुराने त्योहारों की तस्वीरों को एनिमेट करके वीडियो बनाए जाएंगे..."
+        },
+        {
+          "say": "Kalpana kijie, aap ek hologram wali rangoli dekh rahe hain ye narangi,",
+          "visual": {
+            "type": "photo",
+            "query": "hologram rangoli",
+            "caption": "narangi, saphed chamak"
+          },
+          "mood": "happy",
+          "pop": "hologram",
+          "say_hi": "कल्पना कीजिए, आप एक होलोग्राम वाली रंगोली देख रहे हैं ये नारंगी,",
+          "say_from": "कल्पना कीजिए, आप एक होलोग्राम वाली रंगोली देख रहे हैं ये नारंगी,"
+        },
+        {
+          "say": "Aapke paas ek robot delivery system hai jo aapke Diwali ke tohphe aur snacks aapke darvaje par pahuncha raha hai...",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "robot delivery system",
+                "icon": "phone"
+              },
+              {
+                "label": "Diwali tohphe aur snacks",
+                "icon": "globe"
+              }
+            ],
+            "note": "aapke darvaje par pahuncha raha hai"
+          },
+          "mood": "warn",
+          "pop": "delivery",
+          "say_hi": "आपके पास एक रोबोट डिलीवरी सिस्टम है जो आपके दिवाली के तोहफे और स्नैक्स आपके दरवाजे पर पहुंचा रहा है...",
+          "say_from": "आपके पास एक रोबोट डिलीवरी सिस्टम है जो आपके दिवाली के तोहफे और स्नैक्स आपके दरवाजे पर पहुंचा रहा है..."
+        }
+      ],
+      "narration_hi": "2050 में दिवाली का जश्न पूरी तरह से डिजिटल होगा... AI इमेज जेनरेटर से सुंदर सजावट तैयार होंगी और AI वीडियो जनरेटर से पुराने त्योहारों की तस्वीरों को एनिमेट करके वीडियो बनाए जाएंगे... कल्पना कीजिए, आप एक होलोग्राम वाली रंगोली देख रहे हैं ये नारंगी, आपके पास एक रोबोट डिलीवरी सिस्टम है जो आपके दिवाली के तोहफे और स्नैक्स आपके दरवाजे पर पहुंचा रहा है..."
+    },
+    {
+      "on_screen": "Digital Diwali – Kya Dekhe?",
+      "beats": [
+        {
+          "say": "Drone show aasman mein rangin pattern bana rahe hain ye Diwali ka jashn manane ka ek naya tareeka hai...",
+          "visual": {
+            "type": "photo",
+            "query": "drone light show",
+            "caption": "Drone Show"
+          },
+          "mood": "happy",
+          "pop": "Drone Show",
+          "say_hi": "ड्रोन शो आसमान में रंगीन पैटर्न बना रहे हैं ये दिवाली का जश्न मनाने का एक नया तरीका है...",
+          "say_from": "ड्रोन शो आसमान में रंगीन पैटर्न बना रहे हैं ये दिवाली का जश्न मनाने का एक नया तरीका है..."
+        },
+        {
+          "say": "Aap apne doston ke saath virtual Diwali party kar sakte hain, games khel sakte hain aur milkar gane ga sakte hain.",
+          "visual": {
+            "type": "chat",
+            "name": "Virtual Party",
+            "messages": [
+              {
+                "from": "them",
+                "text": "Games, Music, Fun!"
+              },
+              {
+                "from": "me",
+                "text": "Join Now!"
+              }
+            ]
+          },
+          "mood": "think",
+          "pop": "Virtual Party",
+          "say_hi": "आप अपने दोस्तों के साथ वर्चुअल दिवाली पार्टी कर सकते हैं, गेम्स खेल सकते हैं और मिलकर गाने गा सकते हैं।",
+          "say_from": "आप अपने दोस्तों के साथ वर्चुअल दिवाली पार्टी कर सकते हैं, गेम्स खेल सकते हैं और मिलकर गाने गा सकते हैं।"
+        },
+        {
+          "say": "Ye sab technology ki madad se hoga, lekin iska matlab hai ki aap duniya bhar ke logon ke saath milkar Diwali ka tyohar manna payenge.",
+          "visual": {
+            "type": "photo",
+            "query": "global celebration",
+            "backup": [
+              "worldwide festival"
+            ],
+            "caption": "Ye sab technology ki"
+          },
+          "mood": "explain",
+          "pop": "Global Connection",
+          "say_hi": "ये सब टेक्नोलॉजी की मदद से होगा, लेकिन इसका मतलब है कि आप दुनिया भर के लोगों के साथ मिलकर दिवाली का त्योहार मना पाएंगे।",
+          "say_from": "ये सब टेक्नोलॉजी की मदद से होगा, लेकिन इसका मतलब है कि आप दुनिया भर के लोगों के साथ मिलकर दिवाली का त्योहार मना पाएंगे।"
+        },
+        {
+          "say": "Ye bahut hi romanchak hoga, hai na?",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "rocket",
+                "label": "Romanchak"
+              },
+              {
+                "icon": "firework",
+                "label": "Diwali Vibes"
+              }
+            ]
+          },
+          "mood": "happy",
+          "pop": "Romanchak",
+          "say_hi": "ये बहुत ही रोमांचक होगा, है ना?",
+          "say_from": "ये बहुत ही रोमांचक होगा, है ना?"
+        }
+      ],
+      "narration_hi": "ड्रोन शो आसमान में रंगीन पैटर्न बना रहे हैं ये दिवाली का जश्न मनाने का एक नया तरीका है... आप अपने दोस्तों के साथ वर्चुअल दिवाली पार्टी कर सकते हैं, गेम्स खेल सकते हैं और मिलकर गाने गा सकते हैं। ये सब टेक्नोलॉजी की मदद से होगा, लेकिन इसका मतलब है कि आप दुनिया भर के लोगों के साथ मिलकर दिवाली का त्योहार मना पाएंगे। ये बहुत ही रोमांचक होगा, है ना?"
+    },
+    {
+      "on_screen": "Sustainable Diwali – kaise ho?",
+      "beats": [
+        {
+          "say": "Aur ab wo baat, jo aapke kaam aaegi: sustainable Diwali – kaise ho?",
+          "say_from": "और अब वो बात, जो आपके काम आएगी: सस्तेनेबल दिवाली – कैसे हो?",
+          "say_hi": "और अब वो बात, जो आपके काम आएगी: सस्तेनेबल दिवाली – कैसे हो?",
+          "locked": true,
+          "visual": {
+            "type": "chapter",
+            "label": "Aakhri baat"
+          },
+          "mood": "think"
+        }
+      ],
+      "narration_hi": "और अब वो बात, जो आपके काम आएगी: सस्तेनेबल दिवाली – कैसे हो?"
+    },
+    {
+      "on_screen": "Sustainable Diwali – Kaise ho?",
+      "beats": [
+        {
+          "say": "2050 mein ghar sthirta, taknik, anukulnashilta aur kalyan se judenge. Shri om consultant tikau gharon ka design kar raha hai jo client vision ke anusar anukulit hota hai.",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "house",
+                "label": "Hou Des"
+              },
+              {
+                "icon": "tools",
+                "label": "Des Con"
+              }
+            ]
+          },
+          "mood": "think",
+          "pop": "taknik",
+          "say_hi": "2050 में घर स्थिरता, तकनीक, अनुकूलनशीलता और कल्याण से जुड़ेंगे। श्री ओम कंसल्टेंट टिकाऊ घरों का डिजाइन कर रहा है जो क्लाइंट विजन के अनुसार अनुकूलित होता है।",
+          "say_from": "2050 में घर स्थिरता, तकनीक, अनुकूलनशीलता और कल्याण से जुड़ेंगे। श्री ओम कंसल्टेंट टिकाऊ घरों का डिजाइन कर रहा है जो क्लाइंट विजन के अनुसार अनुकूलित होता है।"
+        },
+        {
+          "say": "2050 ki Diwali eaai aur taknik ke upyog se ek romanchak aur tikau utsav hoga.",
+          "visual": {
+            "type": "photo",
+            "query": "solar panel rooftop",
+            "caption": "Ghar sthirta",
+            "file": "images/photos/s15_b01.jpg",
+            "credit": "Dr. Chinchu C. / CC BY 4.0"
+          },
+          "mood": "happy",
+          "pop": "ghar",
+          "say_hi": "2050 की दिवाली एआई और तकनीक के उपयोग से एक रोमांचक और टिकाऊ उत्सव होगा।",
+          "say_from": "2050 की दिवाली एआई और तकनीक के उपयोग से एक रोमांचक और टिकाऊ उत्सव होगा।"
+        }
+      ],
+      "narration_hi": "2050 में घर स्थिरता, तकनीक, अनुकूलनशीलता और कल्याण से जुड़ेंगे। श्री ओम कंसल्टेंट टिकाऊ घरों का डिजाइन कर रहा है जो क्लाइंट विजन के अनुसार अनुकूलित होता है। 2050 की दिवाली एआई और तकनीक के उपयोग से एक रोमांचक और टिकाऊ उत्सव होगा।"
+    },
+    {
+      "on_screen": "Aapki baari",
+      "beats": [
+        {
+          "say": "Comment mein bataie, ye baat aapko pehle se pata thi ya nahi? Har sunday aisi hi ek nayi baat ke liye snack code se jude rahie.",
+          "say_from": "कमेंट में बताइए, ये बात आपको पहले से पता थी या नहीं? हर संडे ऐसी ही एक नई बात के लिए स्नैक कोड से जुड़े रहिए।",
+          "say_hi": "कमेंट में बताइए, ये बात आपको पहले से पता थी या नहीं? हर संडे ऐसी ही एक नई बात के लिए स्नैक कोड से जुड़े रहिए।",
+          "locked": true,
+          "mood": "happy",
+          "visual": {
+            "type": "host",
+            "text": "Comment karo aur subscribe karo"
+          }
+        }
+      ],
+      "narration_hi": "कमेंट में बताइए, ये बात आपको पहले से पता थी या नहीं? हर संडे ऐसी ही एक नई बात के लिए स्नैक कोड से जुड़े रहिए।"
+    }
+  ]
+}

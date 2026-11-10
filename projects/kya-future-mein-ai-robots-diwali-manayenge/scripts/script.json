@@ -1,0 +1,923 @@
+{
+  "title": "Kya AI Robots Diwali Manayenge?",
+  "topic": "Kya Future Mein AI Robots Diwali Manayenge?",
+  "kind": "explainer",
+  "scenes": [
+    {
+      "on_screen": "Kya Future Mein AI Robots Diwali Manayenge?",
+      "beats": [
+        {
+          "say": "Kya aap sochenge ki Diwali ab robot bhi manaenge? AI robots Bharat mein Diwali manane ki shuruaat kar sakte hain.",
+          "visual": {
+            "type": "title",
+            "query": "AI robots celebrating Diwali",
+            "backup": [
+              "robots during festival"
+            ]
+          },
+          "mood": "think",
+          "pop": "Smart Diwali",
+          "say_hi": "क्या आप सोचेंगे कि दिवाली अब रोबोट भी मनाएंगे? AI रोबोट्स भारत में दिवाली मनाने की शुरुआत कर सकते हैं।",
+          "say_from": "क्या आप सोचेंगे कि दिवाली अब रोबोट भी मनाएंगे? AI रोबोट्स भारत में दिवाली मनाने की शुरुआत कर सकते हैं।"
+        },
+        {
+          "say": "Agar ye sach hota hai, to aapke ghar aur tyoharon ka anubhav badal jayega.",
+          "visual": {
+            "type": "photo",
+            "query": "diwali lights outside",
+            "caption": "Smart Lights",
+            "file": "images/photos/s00_b01.jpg",
+            "credit": "peddhapati / CC BY 2.0"
+          },
+          "mood": "explain",
+          "pop": "AI Decor",
+          "say_hi": "अगर ये सच होता है, तो आपके घर और त्योहारों का अनुभव बदल जाएगा।",
+          "say_from": "अगर ये सच होता है, तो आपके घर और त्योहारों का अनुभव बदल जाएगा।"
+        },
+        {
+          "say": "Kya pata bhavishya mein aapke padosi robot aapki Diwali ki badhai den?",
+          "visual": {
+            "type": "photo",
+            "query": "future robot greeting neighbor",
+            "backup": [
+              "robot in neighborhood"
+            ],
+            "caption": "Kya pata bhavishya mein"
+          },
+          "mood": "warn",
+          "pop": "AI vs Human",
+          "say_hi": "क्या पता भविष्य में आपके पड़ोसी रोबोट आपकी दिवाली की बधाई दें?",
+          "say_from": "क्या पता भविष्य में आपके पड़ोसी रोबोट आपकी दिवाली की बधाई दें?"
+        }
+      ],
+      "narration_hi": "क्या आप सोचेंगे कि दिवाली अब रोबोट भी मनाएंगे? AI रोबोट्स भारत में दिवाली मनाने की शुरुआत कर सकते हैं। अगर ये सच होता है, तो आपके घर और त्योहारों का अनुभव बदल जाएगा। क्या पता भविष्य में आपके पड़ोसी रोबोट आपकी दिवाली की बधाई दें?"
+    },
+    {
+      "on_screen": "Tyoharon mein mashinon ka dakhal",
+      "beats": [
+        {
+          "say": "To pehli baat: tyoharon mein mashinon ka dakhal",
+          "say_from": "तो पहली बात: त्योहारों में मशीनों का दखल",
+          "say_hi": "तो पहली बात: त्योहारों में मशीनों का दखल",
+          "locked": true,
+          "visual": {
+            "type": "chapter",
+            "label": "Sabse pehle"
+          },
+          "mood": "think"
+        }
+      ],
+      "narration_hi": "तो पहली बात: त्योहारों में मशीनों का दखल"
+    },
+    {
+      "on_screen": "Tyoharon mein mashinon ka dakhal",
+      "beats": [
+        {
+          "say": "Jyadatar log abhi sochte hain ki tyohar sirf insan aur parampraon ka utsav hote hain.",
+          "visual": {
+            "type": "photo",
+            "query": "diwali celebration",
+            "caption": "Jaipur garden"
+          },
+          "mood": "think",
+          "pop": "Humanoid robots",
+          "say_hi": "ज्यादातर लोग अभी सोचते हैं कि त्योहार सिर्फ़ इंसान और परंपराओं का उत्सव होते हैं।",
+          "say_from": "ज्यादातर लोग अभी सोचते हैं कि त्योहार सिर्फ़ इंसान और परंपराओं का उत्सव होते हैं।"
+        },
+        {
+          "say": "Lekin ab ye dekhna shuru ho gaya hai ki taknik tyoharon mein kitni gahrai tak jaa sakti hai.",
+          "visual": {
+            "type": "kinetic",
+            "text": "Taknik tyoharon mein gahrai",
+            "highlight": "gahrai"
+          },
+          "mood": "explain",
+          "pop": "Tech depth",
+          "say_hi": "लेकिन अब ये देखना शुरू हो गया है कि तकनीक त्योहारों में कितनी गहराई तक जा सकती है।",
+          "say_from": "लेकिन अब ये देखना शुरू हो गया है कि तकनीक त्योहारों में कितनी गहराई तक जा सकती है।"
+        },
+        {
+          "say": "Jaipur ki gulmohar garden society mein humanoid robots ne diwali manai, jisse ye sabit hua ki mashinon ko bhi manviy vyavhar sikhaya jaa sakta hai.",
+          "visual": {
+            "type": "map",
+            "places": [
+              "Jaipur"
+            ]
+          },
+          "mood": "warn",
+          "pop": "Human touch",
+          "say_hi": "जयपुर की गुलमोहर गार्डन सोसाइटी में ह्यूमनॉइड रोबोट्स ने दीवाली मनाई, जिससे ये साबित हुआ कि मशीनों को भी मानवीय व्यवहार सिखाया जा सकता है।",
+          "say_from": "जयपुर की गुलमोहर गार्डन सोसाइटी में ह्यूमनॉइड रोबोट्स ने दीवाली मनाई, जिससे ये साबित हुआ कि मशीनों को भी मानवीय व्यवहार सिखाया जा सकता है।"
+        },
+        {
+          "say": "Robots ne sparkler jalae, logon se hath milae aur aagantukon ka svagat kiya ye sabhi manviy pahlu the.",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "fire",
+                "label": "Sparkler"
+              },
+              {
+                "icon": "handshake",
+                "label": "Greet"
+              }
+            ]
+          },
+          "mood": "happy",
+          "pop": "Tech & tradition",
+          "say_hi": "रोबोट्स ने स्पार्कलर जलाए, लोगों से हाथ मिलाए और आगंतुकों का स्वागत किया ये सभी मानवीय पहलू थे।",
+          "say_from": "रोबोट्स ने स्पार्कलर जलाए, लोगों से हाथ मिलाए और आगंतुकों का स्वागत किया ये सभी मानवीय पहलू थे।"
+        }
+      ],
+      "narration_hi": "ज्यादातर लोग अभी सोचते हैं कि त्योहार सिर्फ़ इंसान और परंपराओं का उत्सव होते हैं। लेकिन अब ये देखना शुरू हो गया है कि तकनीक त्योहारों में कितनी गहराई तक जा सकती है। जयपुर की गुलमोहर गार्डन सोसाइटी में ह्यूमनॉइड रोबोट्स ने दीवाली मनाई, जिससे ये साबित हुआ कि मशीनों को भी मानवीय व्यवहार सिखाया जा सकता है। रोबोट्स ने स्पार्कलर जलाए, लोगों से हाथ मिलाए और आगंतुकों का स्वागत किया ये सभी मानवीय पहलू थे।"
+    },
+    {
+      "on_screen": "Tyoharon mein mashinon ka dakhal",
+      "beats": [
+        {
+          "say": "Sochie, ye robots aapke ghar mein Diwali manaenge! Club first robotics ke robots dvara design kiye gaye the, jo ki ek startup hai.",
+          "visual": {
+            "type": "photo",
+            "query": "robot in home",
+            "caption": "Diwali robot"
+          },
+          "mood": "think",
+          "pop": "Robot Diwali",
+          "say_hi": "सोचिए, ये रोबोट्स आपके घर में दिवाली मनाएंगे! क्लब फर्स्ट रोबोटिक्स के रोबोट्स द्वारा डिज़ाइन किए गए थे, जो कि एक स्टार्टअप है।",
+          "say_from": "सोचिए, ये रोबोट्स आपके घर में दिवाली मनाएंगे! क्लब फर्स्ट रोबोटिक्स के रोबोट्स द्वारा डिज़ाइन किए गए थे, जो कि एक स्टार्टअप है।"
+        },
+        {
+          "say": "Ye robots emergency mein aag bujhane aur sewer line theek karne jaise kaam bhi karte hain.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              "Emergency",
+              "Sewer Fix",
+              "Fire"
+            ],
+            "note": "Kaam"
+          },
+          "mood": "explain",
+          "pop": "Robots ka kaam",
+          "say_hi": "ये रोबोट्स इमरजेंसी में आग बुझाने और सीवर लाइन ठीक करने जैसे काम भी करते हैं।",
+          "say_from": "ये रोबोट्स इमरजेंसी में आग बुझाने और सीवर लाइन ठीक करने जैसे काम भी करते हैं।"
+        },
+        {
+          "say": "Ye robots na sirf tyoharon ko manane mein madad karenge balki rojmarra ki samasyaon ka samadhan bhi karenge.",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "tools",
+                "label": "Solve"
+              },
+              {
+                "icon": "people",
+                "label": "Daily"
+              }
+            ]
+          },
+          "mood": "warn",
+          "pop": "Fast Fix",
+          "say_hi": "ये रोबोट्स न सिर्फ़ त्योहारों को मनाने में मदद करेंगे बल्कि रोजमर्रा की समस्याओं का समाधान भी करेंगे।",
+          "say_from": "ये रोबोट्स न सिर्फ़ त्योहारों को मनाने में मदद करेंगे बल्कि रोजमर्रा की समस्याओं का समाधान भी करेंगे।"
+        },
+        {
+          "say": "Jaise, agar aapke ghar mein koi pareshani ho jae to ye robots turant use theek kar denge.",
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              {
+                "icon": "house",
+                "label": "Ghar"
+              },
+              {
+                "icon": "robot",
+                "label": "Fix"
+              },
+              {
+                "icon": "check",
+                "label": "Done"
+              }
+            ]
+          },
+          "mood": "happy",
+          "pop": "Turant theek",
+          "say_hi": "जैसे, अगर आपके घर में कोई परेशानी हो जाए तो ये रोबोट्स तुरंत उसे ठीक कर देंगे।",
+          "say_from": "जैसे, अगर आपके घर में कोई परेशानी हो जाए तो ये रोबोट्स तुरंत उसे ठीक कर देंगे।"
+        }
+      ],
+      "narration_hi": "सोचिए, ये रोबोट्स आपके घर में दिवाली मनाएंगे! क्लब फर्स्ट रोबोटिक्स के रोबोट्स द्वारा डिज़ाइन किए गए थे, जो कि एक स्टार्टअप है। ये रोबोट्स इमरजेंसी में आग बुझाने और सीवर लाइन ठीक करने जैसे काम भी करते हैं। ये रोबोट्स न सिर्फ़ त्योहारों को मनाने में मदद करेंगे बल्कि रोजमर्रा की समस्याओं का समाधान भी करेंगे। जैसे, अगर आपके घर में कोई परेशानी हो जाए तो ये रोबोट्स तुरंत उसे ठीक कर देंगे।"
+    },
+    {
+      "on_screen": "Tyoharon mein mashinon ka dakhal",
+      "beats": [
+        {
+          "say": "Aur ye sab data aur server ke zariye chalte hain, jo ki aajkal humare jeevan ka ek aham hissa hai.",
+          "visual": {
+            "type": "photo",
+            "query": "data and servers managing life",
+            "backup": [
+              "digital infrastructure"
+            ],
+            "caption": "Aur ye sab data"
+          },
+          "mood": "explain",
+          "pop": "Data ke zariye chalte hain",
+          "say_hi": "और ये सब डेटा और सर्वर के ज़रिए चलते हैं, जो कि आजकल हमारे जीवन का एक अहम हिस्सा है।",
+          "say_from": "और ये सब डेटा और सर्वर के ज़रिए चलते हैं, जो कि आजकल हमारे जीवन का एक अहम हिस्सा है।"
+        },
+        {
+          "say": "Server ek taktavar computer hai, jismen website ka data rakha hota hai. Aapka phone usi se data maangta hai.",
+          "say_hi": "सर्वर एक ताकतवर कंप्यूटर है, जिसमें वेबसाइट का डेटा रखा होता है। आपका फ़ोन उसी से डेटा मांगता है।",
+          "visual": {
+            "type": "pen",
+            "title": "Server",
+            "items": [
+              {
+                "label": "Aapka phone",
+                "icon": "phone"
+              },
+              {
+                "label": "Server",
+                "icon": "chip"
+              },
+              {
+                "label": "Website ka data",
+                "icon": "laptop"
+              }
+            ],
+            "note": "Phone maangta hai, server data bhejta hai"
+          },
+          "mood": "explain",
+          "locked": true,
+          "say_from": "सर्वर एक ताकतवर कंप्यूटर है, जिसमें वेबसाइट का डेटा रखा होता है। आपका फ़ोन उसी से डेटा मांगता है।"
+        },
+        {
+          "say": "Shayad aap apne ghar mein sona naam ke cafeteria mein sona 2.5 aur sona 3.5 se svadisht bhojan order karein.",
+          "visual": {
+            "type": "photo",
+            "query": "AI ordering food in cafeteria",
+            "backup": [
+              "robot in restaurant"
+            ],
+            "caption": "Shayad aap apne ghar"
+          },
+          "mood": "think",
+          "pop": "Sona 2.5 aur 3.5",
+          "say_hi": "शायद आप अपने घर में सोना नाम के कैफ़ेटेरिया में सोना 2.5 और सोना 3.5 से स्वादिष्ट भोजन ऑर्डर करें।",
+          "say_from": "शायद आप अपने घर में सोना नाम के कैफ़ेटेरिया में सोना 2.5 और सोना 3.5 से स्वादिष्ट भोजन ऑर्डर करें।"
+        },
+        {
+          "say": "Ya phir xena 5.0 aur xena 6.0 aapki suraksha ka dhyan rakh sakte hain.",
+          "visual": {
+            "type": "photo",
+            "query": "security camera",
+            "caption": "Suraksha ka dhyan rakhen"
+          },
+          "mood": "warn",
+          "pop": "Xena 5.0 aur 6.0",
+          "say_hi": "या फिर एक्सेना 5.0 और एक्सेना 6.0 आपकी सुरक्षा का ध्यान रख सकते हैं।",
+          "say_from": "या फिर एक्सेना 5.0 और एक्सेना 6.0 आपकी सुरक्षा का ध्यान रख सकते हैं।"
+        },
+        {
+          "say": "To, ye ek nayi shuruaat hai tyoharon mein mashinon ka dakhal!",
+          "visual": {
+            "type": "icon",
+            "icon": "shield",
+            "text": "Nayi shuruaat"
+          },
+          "mood": "happy",
+          "pop": "Mashinon ka dakhal",
+          "say_hi": "तो, ये एक नई शुरुआत है त्योहारों में मशीनों का दखल!",
+          "say_from": "तो, ये एक नई शुरुआत है त्योहारों में मशीनों का दखल!"
+        }
+      ],
+      "narration_hi": "और ये सब डेटा और सर्वर के ज़रिए चलते हैं, जो कि आजकल हमारे जीवन का एक अहम हिस्सा है। सर्वर एक ताकतवर कंप्यूटर है, जिसमें वेबसाइट का डेटा रखा होता है। आपका फ़ोन उसी से डेटा मांगता है। शायद आप अपने घर में सोना नाम के कैफ़ेटेरिया में सोना 2.5 और सोना 3.5 से स्वादिष्ट भोजन ऑर्डर करें। या फिर एक्सेना 5.0 और एक्सेना 6.0 आपकी सुरक्षा का ध्यान रख सकते हैं। तो, ये एक नई शुरुआत है त्योहारों में मशीनों का दखल!"
+    },
+    {
+      "on_screen": "Vastav mein kya ho raha hai?",
+      "beats": [
+        {
+          "say": "Ab aage badhate hain: vastav mein kya ho raha hai?",
+          "say_from": "अब आगे बढ़ते हैं: वास्तव में क्या हो रहा है?",
+          "say_hi": "अब आगे बढ़ते हैं: वास्तव में क्या हो रहा है?",
+          "locked": true,
+          "visual": {
+            "type": "chapter",
+            "label": "Agli baat"
+          },
+          "mood": "think"
+        }
+      ],
+      "narration_hi": "अब आगे बढ़ते हैं: वास्तव में क्या हो रहा है?"
+    },
+    {
+      "on_screen": "Vastav mein kya ho raha hai?",
+      "beats": [
+        {
+          "say": "Vastav mein kya ho raha hai? Ab dekhie, ye robots sirf tyohar manane tak hi simit nahi hain.",
+          "visual": {
+            "type": "kinetic",
+            "text": "Robots sirf tyohar manane tak simit nahi hain",
+            "highlight": "tyohar"
+          },
+          "mood": "think",
+          "pop": "tyohar",
+          "say_hi": "वास्तव में क्या हो रहा है? अब देखिए, ये रोबोट्स सिर्फ़ त्योहार मनाने तक ही सीमित नहीं हैं।",
+          "say_from": "वास्तव में क्या हो रहा है? अब देखिए, ये रोबोट्स सिर्फ़ त्योहार मनाने तक ही सीमित नहीं हैं।"
+        },
+        {
+          "say": "Inka istemal rakhrakhav, saphai aur suraksha jaise kamon ke liye kiya jaa raha hai.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "saphai",
+                "icon": "cleaner"
+              },
+              {
+                "label": "suraksha",
+                "icon": "shield"
+              },
+              {
+                "label": "istemal rakhrakhav",
+                "icon": "lock"
+              }
+            ],
+            "note": "ek chhoti line"
+          },
+          "mood": "explain",
+          "pop": "saphai",
+          "say_hi": "इनका इस्तेमाल रखरखाव, सफाई और सुरक्षा जैसे कामों के लिए किया जा रहा है।",
+          "say_from": "इनका इस्तेमाल रखरखाव, सफाई और सुरक्षा जैसे कामों के लिए किया जा रहा है।"
+        },
+        {
+          "say": "Gulmohar garden society mein, robots ne sewer line theek ki, aag bujhai aur kaife mein bhojan parosa.",
+          "visual": {
+            "type": "photo",
+            "query": "garden sewer repair",
+            "caption": "Gulmohar Garden"
+          },
+          "mood": "happy",
+          "pop": "sewer",
+          "say_hi": "गुल्मोहर गार्डन सोसाइटी में, रोबोट्स ने सीवर लाइन ठीक की, आग बुझाई और कैफ़े में भोजन परोसा।",
+          "say_from": "गुल्मोहर गार्डन सोसाइटी में, रोबोट्स ने सीवर लाइन ठीक की, आग बुझाई और कैफ़े में भोजन परोसा।"
+        },
+        {
+          "say": "Sochie, aapke ghar ki saphai karne wala koi robot! 3.5 shikayten darj huin.",
+          "visual": {
+            "type": "steps",
+            "items": [
+              "aag bujhai",
+              "kaife mein bhojan parosa",
+              "safai kari"
+            ],
+            "note": "ek chhoti line"
+          },
+          "mood": "shock",
+          "pop": "bhojan",
+          "say_hi": "सोचिए, आपके घर की सफाई करने वाला कोई रोबोट! 3.5 शिकायतें दर्ज हुईं।",
+          "say_from": "सोचिए, आपके घर की सफाई करने वाला कोई रोबोट! 3.5 शिकायतें दर्ज हुईं।"
+        }
+      ],
+      "narration_hi": "वास्तव में क्या हो रहा है? अब देखिए, ये रोबोट्स सिर्फ़ त्योहार मनाने तक ही सीमित नहीं हैं। इनका इस्तेमाल रखरखाव, सफाई और सुरक्षा जैसे कामों के लिए किया जा रहा है। गुल्मोहर गार्डन सोसाइटी में, रोबोट्स ने सीवर लाइन ठीक की, आग बुझाई और कैफ़े में भोजन परोसा। सोचिए, आपके घर की सफाई करने वाला कोई रोबोट! 3.5 शिकायतें दर्ज हुईं।"
+    },
+    {
+      "on_screen": "Vastav mein kya ho raha hai?",
+      "beats": [
+        {
+          "say": "Feedback de, society-related queries ensar kar raha hai , ye robots logon ke saath batchit bhi kar sakte hain.",
+          "visual": {
+            "type": "host",
+            "text": "Feedback de, society-related queries ensar kar raha hai"
+          },
+          "mood": "think",
+          "pop": "robot help",
+          "say_hi": "फ़ीडबैक दे, सोसाइटी-रिलेटेड क्वेरीज़ एंसर कर रहा है , ये रोबोट्स लोगों के साथ बातचीत भी कर सकते हैं।",
+          "say_from": "फ़ीडबैक दे, सोसाइटी-रिलेटेड क्वेरीज़ एंसर कर रहा है , ये रोबोट्स लोगों के साथ बातचीत भी कर सकते हैं।"
+        },
+        {
+          "say": "Yaani, aap kisi bhi sawaal ka jawab sidhe unse le sakte hain.",
+          "visual": {
+            "type": "kinetic",
+            "text": "Aap kisi bhi sawaal ka jawab sidhe unse le sakte hain",
+            "highlight": "sidhe"
+          },
+          "mood": "explain",
+          "pop": "direct answer",
+          "say_hi": "यानी, आप किसी भी सवाल का जवाब सीधे उनसे ले सकते हैं।",
+          "say_from": "यानी, आप किसी भी सवाल का जवाब सीधे उनसे ले सकते हैं।"
+        },
+        {
+          "say": "Ye bahut hi suvidhajnak hoga, hai na? Robots suraksha nigrani jaise kaam bhi karte hain.",
+          "visual": {
+            "type": "photo",
+            "query": "robots providing security and convenience",
+            "backup": [
+              "smart home robot"
+            ],
+            "caption": "Ye bahut hi suvidhajnak"
+          },
+          "mood": "happy",
+          "pop": "security work",
+          "say_hi": "ये बहुत ही सुविधाजनक होगा, है न? रोबोट्स सुरक्षा निगरानी जैसे काम भी करते हैं।",
+          "say_from": "ये बहुत ही सुविधाजनक होगा, है न? रोबोट्स सुरक्षा निगरानी जैसे काम भी करते हैं।"
+        },
+        {
+          "say": "Ye aapke ghar aur society ko surakshit rakhne mein madad karenge. Ye xena 5.0, xena 6.0 jaise model hain.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Ghar aur society ko surakshit rakhne",
+                "icon": "shield"
+              },
+              {
+                "label": "Xena 5.0, Xena 6.0 model",
+                "icon": "robot"
+              }
+            ],
+            "note": "ek chhoti line"
+          },
+          "mood": "warn",
+          "pop": "AI models",
+          "say_hi": "ये आपके घर और सोसाइटी को सुरक्षित रखने में मदद करेंगे। ये एक्सेना 5.0, एक्सेना 6.0 जैसे मॉडल हैं।",
+          "say_from": "ये आपके घर और सोसाइटी को सुरक्षित रखने में मदद करेंगे। ये एक्सेना 5.0, एक्सेना 6.0 जैसे मॉडल हैं।"
+        }
+      ],
+      "narration_hi": "फ़ीडबैक दे, सोसाइटी-रिलेटेड क्वेरीज़ एंसर कर रहा है , ये रोबोट्स लोगों के साथ बातचीत भी कर सकते हैं। यानी, आप किसी भी सवाल का जवाब सीधे उनसे ले सकते हैं। ये बहुत ही सुविधाजनक होगा, है न? रोबोट्स सुरक्षा निगरानी जैसे काम भी करते हैं। ये आपके घर और सोसाइटी को सुरक्षित रखने में मदद करेंगे। ये एक्सेना 5.0, एक्सेना 6.0 जैसे मॉडल हैं।"
+    },
+    {
+      "on_screen": "Vastav mein kya ho raha hai?",
+      "beats": [
+        {
+          "say": "Xena 5.0 ek sainya tank ke aakar ka hai, jo bachav kaam mein prayog kiya jaata hai.",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "tower",
+                "label": "Tank"
+              },
+              {
+                "icon": "globe",
+                "label": "War"
+              }
+            ]
+          },
+          "mood": "explain",
+          "pop": "Robot saath denge",
+          "say_hi": "एक्सेना 5.0 एक सैन्य टैंक के आकार का है, जो बचाव काम में प्रयोग किया जाता है।",
+          "say_from": "एक्सेना 5.0 एक सैन्य टैंक के आकार का है, जो बचाव काम में प्रयोग किया जाता है।"
+        },
+        {
+          "say": "Iska matlab hai ki ye robots na sirf tyoharon mein madad karenge balki mushkil paristhitiyon mein bhi aapka saath denge.",
+          "visual": {
+            "type": "photo",
+            "query": "robot in disaster zone",
+            "caption": "Bachav kaam mein",
+            "file": "images/photos/s08_b01.jpg",
+            "credit": "Anani A. George / CC0"
+          },
+          "mood": "think",
+          "pop": "Tyohar aur mushkil",
+          "say_hi": "इसका मतलब है कि ये रोबोट्स न सिर्फ़ त्योहारों में मदद करेंगे बल्कि मुश्किल परिस्थितियों में भी आपका साथ देंगे।",
+          "say_from": "इसका मतलब है कि ये रोबोट्स न सिर्फ़ त्योहारों में मदद करेंगे बल्कि मुश्किल परिस्थितियों में भी आपका साथ देंगे।"
+        },
+        {
+          "say": "Ye mashinen aapke jeevan ko aur bhi aasaan bana dengi. Is taknik ko samjhane ki zaroorat hai, kyunki bhavishya mein ye aur bhi zaroori ho jayegi.",
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              {
+                "icon": "user",
+                "label": "Tech ke saath"
+              },
+              {
+                "icon": "phone",
+                "label": "Sainya tank"
+              },
+              {
+                "icon": "bank",
+                "label": "Jeevan ko asaan"
+              }
+            ]
+          },
+          "mood": "warn",
+          "pop": "Bhavishya mein zaroori",
+          "say_hi": "ये मशीनें आपके जीवन को और भी आसान बना देंगी। इस तकनीक को समझने की ज़रूरत है, क्योंकि भविष्य में ये और भी ज़रूरी हो जाएगी।",
+          "say_from": "ये मशीनें आपके जीवन को और भी आसान बना देंगी। इस तकनीक को समझने की ज़रूरत है, क्योंकि भविष्य में ये और भी ज़रूरी हो जाएगी।"
+        },
+        {
+          "say": "Ye ek tarah se humare jeevan ka ek naya hissa ban jayega,",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "ship",
+                "label": "Mushkil paristhitiyon"
+              },
+              {
+                "icon": "cable",
+                "label": "Tech ke saath"
+              }
+            ]
+          },
+          "mood": "happy",
+          "pop": "Naya hissa ban jayega",
+          "say_hi": "ये एक तरह से हमारे जीवन का एक नया हिस्सा बन जाएगा,",
+          "say_from": "ये एक तरह से हमारे जीवन का एक नया हिस्सा बन जाएगा,"
+        }
+      ],
+      "narration_hi": "एक्सेना 5.0 एक सैन्य टैंक के आकार का है, जो बचाव काम में प्रयोग किया जाता है। इसका मतलब है कि ये रोबोट्स न सिर्फ़ त्योहारों में मदद करेंगे बल्कि मुश्किल परिस्थितियों में भी आपका साथ देंगे। ये मशीनें आपके जीवन को और भी आसान बना देंगी। इस तकनीक को समझने की ज़रूरत है, क्योंकि भविष्य में ये और भी ज़रूरी हो जाएगी। ये एक तरह से हमारे जीवन का एक नया हिस्सा बन जाएगा,"
+    },
+    {
+      "on_screen": "Vastav mein kya ho raha hai?",
+      "beats": [
+        {
+          "say": "Ye ek tarah se humare jeevan ka ek naya hissa ban jayega, aur ab aage badhate hain: bhavishya ki jhalak. To phir, kya aap bhi is badlav ke liye taiyaan hain?",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Tayyar raho",
+                "icon": "phone"
+              },
+              {
+                "label": "Kaam kiya jaye",
+                "icon": "wifi"
+              },
+              {
+                "label": "Jagah padi",
+                "icon": "globe"
+              }
+            ],
+            "note": "Ek chhoti line"
+          },
+          "mood": "think",
+          "pop": "Tayyar raho",
+          "say_hi": "ये एक तरह से हमारे जीवन का एक नया हिस्सा बन जाएगा, और अब आगे बढ़ते हैं: भविष्य की झलक। तो फिर, क्या आप भी इस बदलाव के लिए तैयार हैं?",
+          "say_from": "ये एक तरह से हमारे जीवन का एक नया हिस्सा बन जाएगा, और अब आगे बढ़ते हैं: भविष्य की झलक। तो फिर, क्या आप भी इस बदलाव के लिए तैयार हैं?"
+        }
+      ],
+      "narration_hi": "ये एक तरह से हमारे जीवन का एक नया हिस्सा बन जाएगा, और अब आगे बढ़ते हैं: भविष्य की झलक। तो फिर, क्या आप भी इस बदलाव के लिए तैयार हैं?"
+    },
+    {
+      "on_screen": "Bhavishya ki jhalak",
+      "beats": [
+        {
+          "say": "Ab aage badhate hain: bhavishya ki jhalak",
+          "say_from": "अब आगे बढ़ते हैं: भविष्य की झलक",
+          "say_hi": "अब आगे बढ़ते हैं: भविष्य की झलक",
+          "locked": true,
+          "visual": {
+            "type": "chapter",
+            "label": "Ab aage"
+          },
+          "mood": "think"
+        }
+      ],
+      "narration_hi": "अब आगे बढ़ते हैं: भविष्य की झलक"
+    },
+    {
+      "on_screen": "Bhavishya ki jhalak",
+      "beats": [
+        {
+          "say": "To sochie, 2050 ka manzar hai! AI tools se rangoli ban rahi hai usme kamal ke full,",
+          "visual": {
+            "type": "photo",
+            "query": "AI creating rangoli designs",
+            "backup": [
+              "digital art creation"
+            ],
+            "caption": "To sochie, 2050 ka"
+          },
+          "mood": "think",
+          "pop": "AI tools",
+          "say_hi": "तो सोचिए, 2050 का मंज़र है! AI टूल्स से रंगोली बन रही है उसमें कमल के फूल,",
+          "say_from": "तो सोचिए, 2050 का मंज़र है! AI टूल्स से रंगोली बन रही है उसमें कमल के फूल,"
+        },
+        {
+          "say": "AI matlab aisa computer program, jo likhna, bolna ya chehra pahchanna seekh leta hai.",
+          "say_hi": "ए-आई मतलब ऐसा कंप्यूटर प्रोग्राम, जो लिखना, बोलना या चेहरा पहचानना सीख लेता है।",
+          "visual": {
+            "type": "term",
+            "term": "AI",
+            "meaning": "Insaan jaisa kaam seekhne wala program",
+            "example": "Likhna, bolna ya chehra pehchanna",
+            "icon": "ai"
+          },
+          "mood": "explain",
+          "locked": true,
+          "say_from": "ए-आई मतलब ऐसा कंप्यूटर प्रोग्राम, जो लिखना, बोलना या चेहरा पहचानना सीख लेता है।"
+        },
+        {
+          "say": "Aasman ki tarah chamkati hui aakashganga aur wo robots jo hume aajkal dekh rahe hain.",
+          "visual": {
+            "type": "photo",
+            "query": "nebula",
+            "caption": "Aakashganga",
+            "file": "images/photos/s11_b02.jpg",
+            "credit": "ESO/T. Preibisch / CC BY 4.0"
+          },
+          "mood": "happy",
+          "pop": "chamkati",
+          "say_hi": "आसमान की तरह चमकती हुई आकाशगंगा और वो रोबोट्स जो हम आजकल देख रहे हैं।",
+          "say_from": "आसमान की तरह चमकती हुई आकाशगंगा और वो रोबोट्स जो हम आजकल देख रहे हैं।"
+        },
+        {
+          "say": "Ye sab ek saath milkar kamal ka lagega, hai na? Aur AI to aarti ke bol bhi suna sakta hai, jaise koi gana ho!",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "robot",
+                "label": "robots"
+              },
+              {
+                "icon": "mic",
+                "label": "aarti ke bol"
+              }
+            ],
+            "note": "ek chhoti line"
+          },
+          "mood": "explain",
+          "pop": "AI suna sakta hai",
+          "say_hi": "ये सब एक साथ मिलकर कमाल का लगेगा, है न? और AI तो आरती के बोल भी सुना सकता है, जैसे कोई गाना हो!",
+          "say_from": "ये सब एक साथ मिलकर कमाल का लगेगा, है न? और AI तो आरती के बोल भी सुना सकता है, जैसे कोई गाना हो!"
+        },
+        {
+          "say": "Digital laddu banane ka bhi kaam AI karega. Sochie, ek tarah se karaoke jaisa anubhav hoga, lekin aarti ke bol AI sunaega.",
+          "visual": {},
+          "mood": "warn",
+          "pop": "AI sunaega",
+          "say_hi": "डिजिटल लड्डू बनाने का भी काम AI करेगा। सोचिए, एक तरह से कैरोके जैसा अनुभव होगा, लेकिन आरती के बोल AI सुनाएगा।",
+          "say_from": "डिजिटल लड्डू बनाने का भी काम AI करेगा। सोचिए, एक तरह से कैरोके जैसा अनुभव होगा, लेकिन आरती के बोल AI सुनाएगा।"
+        }
+      ],
+      "narration_hi": "तो सोचिए, 2050 का मंज़र है! AI टूल्स से रंगोली बन रही है उसमें कमल के फूल, ए-आई मतलब ऐसा कंप्यूटर प्रोग्राम, जो लिखना, बोलना या चेहरा पहचानना सीख लेता है। आसमान की तरह चमकती हुई आकाशगंगा और वो रोबोट्स जो हम आजकल देख रहे हैं। ये सब एक साथ मिलकर कमाल का लगेगा, है न? और AI तो आरती के बोल भी सुना सकता है, जैसे कोई गाना हो! डिजिटल लड्डू बनाने का भी काम AI करेगा। सोचिए, एक तरह से कैरोके जैसा अनुभव होगा, लेकिन आरती के बोल AI सुनाएगा।"
+    },
+    {
+      "on_screen": "Bhavishya ki jhalak",
+      "beats": [
+        {
+          "say": "Lekin ye sirf itna hi nahi hoga. Robots ka istemal karke hume virtual tareeke se puja kar payenge.",
+          "visual": {
+            "type": "photo",
+            "query": "robot in temple",
+            "caption": "Mandir me robot",
+            "file": "images/photos/s12_b00.jpg",
+            "credit": "江上清风1961 / CC BY 3.0"
+          },
+          "mood": "think",
+          "pop": "Mandir me robot",
+          "say_hi": "लेकिन ये सिर्फ़ इतना ही नहीं होगा। रोबोट्स का इस्तेमाल करके हम वर्चुअल तरीके से पूजा कर पाएंगे।",
+          "say_from": "लेकिन ये सिर्फ़ इतना ही नहीं होगा। रोबोट्स का इस्तेमाल करके हम वर्चुअल तरीके से पूजा कर पाएंगे।"
+        },
+        {
+          "say": "Matlab, aap ghar baithe hi mandir mein jaa sakte hain! Bachchon ko robotics aur AI sikhane ke liye aise kay tarah ke kit bhi mileinge.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Ghar baithe mandir",
+                "icon": "phone"
+              },
+              {
+                "label": "Bachche robotics",
+                "icon": "wifi"
+              },
+              {
+                "label": "AI sikhane ke liye",
+                "icon": "globe"
+              }
+            ],
+            "note": "Ek chhoti line"
+          },
+          "mood": "explain",
+          "pop": "Ghar baithe mandir",
+          "say_hi": "मतलब, आप घर बैठे ही मंदिर में जा सकते हैं! बच्चों को रब्बोटिक्स और AI सिखाने के लिए ऐसे कई तरह के किट भी मिलेंगे।",
+          "say_from": "मतलब, आप घर बैठे ही मंदिर में जा सकते हैं! बच्चों को रब्बोटिक्स और AI सिखाने के लिए ऐसे कई तरह के किट भी मिलेंगे।"
+        },
+        {
+          "say": "Jaise ACEBOTT naam ka ek kit hai, jismen do pairon wala robot banta hai jo chalta aur nachta hai.",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "robot",
+                "label": "ACEBOTT kit"
+              },
+              {
+                "icon": "speaker",
+                "label": "Robot pairon wala"
+              }
+            ],
+            "note": "2-3 asli jaise dikhne wale symbols"
+          },
+          "mood": "think",
+          "pop": "ACEBOTT kit",
+          "say_hi": "जैसे ACEBOTT नाम का एक किट है, जिसमें दो पैरों वाला रोबोट बनता है जो चलता और नाचता है।",
+          "say_from": "जैसे ACEBOTT नाम का एक किट है, जिसमें दो पैरों वाला रोबोट बनता है जो चलता और नाचता है।"
+        },
+        {
+          "say": "Viiikor bot ek AIOT voice programming robot hai, jo aapki awaaz se control kiya jaa sakta hai aur internet se judta hai.",
+          "visual": {
+            "type": "photo",
+            "query": "voice controlled robot",
+            "caption": "AIOT voice bot"
+          },
+          "mood": "warn",
+          "pop": "AIOT voice bot",
+          "say_hi": "वीईईकोर बॉट एक AIOT वॉइस प्रोग्रामिंग रोबोट है, जो आपकी आवाज से कंट्रोल किया जा सकता है और इंटरनेट से जुड़ता है।",
+          "say_from": "वीईईकोर बॉट एक AIOT वॉइस प्रोग्रामिंग रोबोट है, जो आपकी आवाज से कंट्रोल किया जा सकता है और इंटरनेट से जुड़ता है।"
+        }
+      ],
+      "narration_hi": "लेकिन ये सिर्फ़ इतना ही नहीं होगा। रोबोट्स का इस्तेमाल करके हम वर्चुअल तरीके से पूजा कर पाएंगे। मतलब, आप घर बैठे ही मंदिर में जा सकते हैं! बच्चों को रब्बोटिक्स और AI सिखाने के लिए ऐसे कई तरह के किट भी मिलेंगे। जैसे ACEBOTT नाम का एक किट है, जिसमें दो पैरों वाला रोबोट बनता है जो चलता और नाचता है। वीईईकोर बॉट एक AIOT वॉइस प्रोग्रामिंग रोबोट है, जो आपकी आवाज से कंट्रोल किया जा सकता है और इंटरनेट से जुड़ता है।"
+    },
+    {
+      "on_screen": "Bhavishya ki jhalak",
+      "beats": [
+        {
+          "say": "To, ye kit bachchon ko sikhaenge ki kaise ye mashinen kaam karti hain,",
+          "visual": {
+            "type": "host",
+            "text": "To, ye kit bachchon ko sikhaenge ki kaise ye mashinen kaam karti hain"
+          },
+          "mood": "think",
+          "pop": "Machine ke kaam",
+          "say_hi": "तो, ये किट बच्चों को सिखाएंगे कि कैसे ये मशीनें काम करती हैं,",
+          "say_from": "तो, ये किट बच्चों को सिखाएंगे कि कैसे ये मशीनें काम करती हैं,"
+        },
+        {
+          "say": "Aur ye unhen bhavishya ke liye taiyaan karenge. Ye sach mein bahut hi mazedar hoga, hai na?",
+          "visual": {
+            "type": "photo",
+            "query": "future vision",
+            "backup": [
+              "vision of tomorrow"
+            ],
+            "caption": "Aur ye unhen bhavishya",
+            "file": "images/photos/s13_b01.jpg",
+            "credit": "NASA Goddard Space Flight Center from Gr / Public domain"
+          },
+          "mood": "explain",
+          "pop": "Bhavishya ke liye",
+          "say_hi": "और ये उन्हें भविष्य के लिए तैयार करेंगे। ये सच में बहुत ही मजेदार होगा, है न?",
+          "say_from": "और ये उन्हें भविष्य के लिए तैयार करेंगे। ये सच में बहुत ही मजेदार होगा, है न?"
+        }
+      ],
+      "narration_hi": "तो, ये किट बच्चों को सिखाएंगे कि कैसे ये मशीनें काम करती हैं, और ये उन्हें भविष्य के लिए तैयार करेंगे। ये सच में बहुत ही मजेदार होगा, है न?"
+    },
+    {
+      "on_screen": "Tyoharon mein taknik ka bhavishya",
+      "beats": [
+        {
+          "say": "Aur ab sabse kaam ki baat: tyoharon mein taknik ka bhavishya",
+          "say_from": "और अब सबसे काम की बात: त्योहारों में तकनीक का भविष्य",
+          "say_hi": "और अब सबसे काम की बात: त्योहारों में तकनीक का भविष्य",
+          "locked": true,
+          "visual": {
+            "type": "chapter",
+            "label": "Aakhri baat"
+          },
+          "mood": "think"
+        }
+      ],
+      "narration_hi": "और अब सबसे काम की बात: त्योहारों में तकनीक का भविष्य"
+    },
+    {
+      "on_screen": "Tyoharon mein taknik ka bhavishya",
+      "beats": [
+        {
+          "say": "Robots ki maang badh rahi hai, aur inka istemal Bharat mein teji se ho raha hai.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Robots ki maang badh rahi hai",
+                "icon": "phone"
+              },
+              {
+                "label": "Bharat mein teji se istemal",
+                "icon": "wifi"
+              }
+            ],
+            "note": "Paise bachane ke liye rakhrakhav"
+          },
+          "mood": "think",
+          "pop": "Rakhrakhav",
+          "say_hi": "रोबोट्स की मांग बढ़ रही है, और इनका इस्तेमाल भारत में तेजी से हो रहा है।",
+          "say_from": "रोबोट्स की मांग बढ़ रही है, और इनका इस्तेमाल भारत में तेजी से हो रहा है।"
+        },
+        {
+          "say": "Ye robots rakhrakhav karne mein bhi madad kar sakte hain jisse paise bachenge.",
+          "visual": {
+            "type": "photo",
+            "query": "robot factory",
+            "caption": "Bharat mein teji se istemal",
+            "file": "images/photos/s15_b01.jpg",
+            "credit": "KUKA Roboter GmbH, Bachmann / Public domain"
+          },
+          "mood": "explain",
+          "pop": "Paise bachane",
+          "say_hi": "ये रोबोट्स रखरखाव करने में भी मदद कर सकते हैं जिससे पैसे बचेंगे।",
+          "say_from": "ये रोबोट्स रखरखाव करने में भी मदद कर सकते हैं जिससे पैसे बचेंगे।"
+        },
+        {
+          "say": "Robotics sector ka vikas ho raha hai, aur bhavishya mein insanon ke saath milkar kaam karenge.",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "laptop",
+                "label": "Robo Dev"
+              },
+              {
+                "icon": "handshake",
+                "label": "Human AI"
+              }
+            ]
+          },
+          "mood": "happy",
+          "pop": "Milkar kaam karenge",
+          "say_hi": "रोबोटिक्स सेक्टर का विकास हो रहा है, और भविष्य में इंसानों के साथ मिलकर काम करेंगे।",
+          "say_from": "रोबोटिक्स सेक्टर का विकास हो रहा है, और भविष्य में इंसानों के साथ मिलकर काम करेंगे।"
+        },
+        {
+          "say": "Ramyan ko ek film ki tarah banaya jaa sakta hai jismen hanuman,",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "film",
+                "label": "Ramyan ko film ki tarah"
+              },
+              {
+                "icon": "hanuman",
+                "label": "Hanuman ke sath"
+              }
+            ]
+          },
+          "mood": "warn",
+          "pop": "Film ki tarah banaya jaa sakta hai",
+          "say_hi": "रामयण को एक फिल्म की तरह बनाया जा सकता है जिसमें हनुमान,",
+          "say_from": "रामयण को एक फिल्म की तरह बनाया जा सकता है जिसमें हनुमान,"
+        }
+      ],
+      "narration_hi": "रोबोट्स की मांग बढ़ रही है, और इनका इस्तेमाल भारत में तेजी से हो रहा है। ये रोबोट्स रखरखाव करने में भी मदद कर सकते हैं जिससे पैसे बचेंगे। रोबोटिक्स सेक्टर का विकास हो रहा है, और भविष्य में इंसानों के साथ मिलकर काम करेंगे। रामयण को एक फिल्म की तरह बनाया जा सकता है जिसमें हनुमान,"
+    },
+    {
+      "on_screen": "Yaad rakhne wali baat",
+      "beats": [
+        {
+          "say": "Sita aur ravan shamil hone. Bhavishya mein, diwali jaise tyoharon mein taknik aur manav jeevan ka ek anokha mishran dekhne ko milega.",
+          "visual": {
+            "type": "photo",
+            "query": "diwali celebration",
+            "backup": [
+              "festival tech mix"
+            ],
+            "caption": "Sita aur ravan shamil"
+          },
+          "mood": "think",
+          "pop": "Tyohar ke yadgar",
+          "say_hi": "सीता और रावण शामिल हों। भविष्य में, दीवाली जैसे त्योहारों में तकनीक और मानव जीवन का एक अनोखा मिश्रण देखने को मिलेगा।",
+          "say_from": "सीता और रावण शामिल हों। भविष्य में, दीवाली जैसे त्योहारों में तकनीक और मानव जीवन का एक अनोखा मिश्रण देखने को मिलेगा।"
+        },
+        {
+          "say": "Yaani, ye robots na sirf mushkil paristhitiyon mein madad karenge balki tyoharon ko bhi yadgar bana denge!",
+          "visual": {
+            "type": "photo",
+            "query": "festival lights",
+            "caption": "Diwali tyohar"
+          },
+          "mood": "happy",
+          "pop": "Tyohar ka jyoti",
+          "say_hi": "यानी, ये रोबोट्स न सिर्फ़ मुश्किल परिस्थितियों में मदद करेंगे बल्कि त्योहारों को भी यादगार बना देंगे!",
+          "say_from": "यानी, ये रोबोट्स न सिर्फ़ मुश्किल परिस्थितियों में मदद करेंगे बल्कि त्योहारों को भी यादगार बना देंगे!"
+        }
+      ],
+      "narration_hi": "सीता और रावण शामिल हों। भविष्य में, दीवाली जैसे त्योहारों में तकनीक और मानव जीवन का एक अनोखा मिश्रण देखने को मिलेगा। यानी, ये रोबोट्स न सिर्फ़ मुश्किल परिस्थितियों में मदद करेंगे बल्कि त्योहारों को भी यादगार बना देंगे!"
+    },
+    {
+      "on_screen": "Aapki baari",
+      "beats": [
+        {
+          "say": "Comment mein bataie, isme aapko sabse hairan kis baat ne kiya? Har sunday aisi hi ek nayi baat ke liye snack code se jude rahie.",
+          "say_from": "कमेंट में बताइए, इसमें आपको सबसे हैरान किस बात ने किया? हर संडे ऐसी ही एक नई बात के लिए स्नैक कोड से जुड़े रहिए।",
+          "say_hi": "कमेंट में बताइए, इसमें आपको सबसे हैरान किस बात ने किया? हर संडे ऐसी ही एक नई बात के लिए स्नैक कोड से जुड़े रहिए।",
+          "locked": true,
+          "mood": "happy",
+          "visual": {
+            "type": "host",
+            "text": "Comment karo aur subscribe karo"
+          }
+        }
+      ],
+      "narration_hi": "कमेंट में बताइए, इसमें आपको सबसे हैरान किस बात ने किया? हर संडे ऐसी ही एक नई बात के लिए स्नैक कोड से जुड़े रहिए।"
+    }
+  ]
+}
