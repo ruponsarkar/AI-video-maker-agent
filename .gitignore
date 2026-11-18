@@ -20,17 +20,16 @@ wan2gp/
 __pycache__/
 *.pyc
 
-# Generated and heavy files (scripts, notes and YouTube details stay in git)
-projects/*/audio/
-projects/*/output/
-projects/*/images/
-projects/*/fonts
-projects/*/music.*
-series/*/episodes/*/audio/
-series/*/episodes/*/output/
+# Video folders: everything made per video stays on this laptop, not in git
+projects/
+rhymes/songs/
+series/*/episodes/
 series/*/music/
 audio/
 output/
+images/
+research/
+scripts/
 music.mp3
 music.wav
 music.m4a
@@ -40,13 +39,9 @@ music.m4a
 .idea/
 .DS_Store
 
-# rhymes: generated media (lyrics.txt, script.json and review.md are kept)
-rhymes/songs/*/audio/
-rhymes/songs/*/output/
-rhymes/songs/*/youtube/*.jpg
+# rhymes: generated media (cast.json, settings.json and the character art stay in git)
 rhymes/voices/
 rhymes/cast.png
-rhymes/songs/*/images/
 rhymes/cast_art/*_cut.png
 
 # ACE-Step 1.5 code + 6 GB of models (git clone, see rhyme/README.md)
