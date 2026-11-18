@@ -8,6 +8,14 @@ Run from inside a video's folder, after youtube_kit.py:
     python ../../upload.py --thumbnail b --schedule "2026-11-08 18:00"   # goes public then (India time)
     python ../../upload.py --thumbnail b --publish           # public straight away (asks you first)
 
+Other channels and the serial (python serial.py upload runs this for you):
+    python upload.py --channel @MyStoryChannel --video output/episode.mp4 --subtitles output/episode.srt \
+        --category story --playlist "Ramayan" --schedule "2026-11-12 18:00"
+Each channel keeps its own login file (youtube_token_<handle>.json), so channels never mix.
+Set up a channel once (logs in, checks it's the right channel, uploads nothing):
+    python upload.py --check                       # Snack Code
+    python upload.py --check --channel @GoluCartoon14
+
 Run it again at any time: it never uploads the video twice. It finishes any step that failed, and
 posts the comment once the video is public. Progress is kept in youtube/uploaded.json.
 
@@ -17,6 +25,7 @@ youtube_token.json. Keep that file and client_secret.json private.
 import argparse
 import json
 import os
+import re
 import sys
 import time
 from datetime import datetime, timedelta, timezone
@@ -27,7 +36,7 @@ TOKEN = os.path.join(HERE, "youtube_token.json")
 SCOPES = ["https://www.googleapis.com/auth/youtube.upload",
           "https://www.googleapis.com/auth/youtube.force-ssl"]
 CHANNEL_HANDLE = "@snackcode108"   # refuses to upload to any other channel
-CATEGORIES = {"tech": "28", "news": "25"}   # Science & Technology, News & Politics
+CATEGORIES = {"tech": "28", "news": "25", "story": "1", "entertainment": "24", "education": "27", "music": "10"}
 LANGUAGE = "hi"
 CAPTION_LANGUAGES = ("hi-Latn", "hi")   # the subtitles are Hindi in Roman letters
 IST = timezone(timedelta(hours=5, minutes=30))
@@ -48,6 +57,14 @@ def parse_args():
     p.add_argument("--schedule", metavar="'YYYY-MM-DD HH:MM'", help="publish at this India time")
     p.add_argument("--publish", action="store_true", help="make the video public straight away")
     p.add_argument("--dry-run", action="store_true", help="show what would be sent and stop")
+    p.add_argument("--check", action="store_true",
+                   help="only log in to --channel and confirm it's the right channel (setup); uploads nothing")
+    p.add_argument("--channel", default=CHANNEL_HANDLE, help="the channel's @handle (default: Snack Code)")
+    p.add_argument("--video", default=VIDEO, help="video file (default: output/animated.mp4)")
+    p.add_argument("--subtitles", default=SUBTITLES, help="subtitle file (default: output/animated.srt)")
+    p.add_argument("--category", choices=sorted(CATEGORIES), help="YouTube category (default: from details.json)")
+    p.add_argument("--kids", action="store_true", help="mark as made for kids (YouTube's audience setting)")
+    p.add_argument("--playlist", help="add the video to this playlist (made if it doesn't exist)")
     args = p.parse_args()
     if args.schedule and args.publish:
         p.error("use --schedule or --publish, not both")
@@ -65,9 +82,19 @@ def publish_time(text):
     return when.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
+def configure(args):
+    """Paths and the channel for this run: Snack Code by default, or another channel."""
+    global CHANNEL_HANDLE, TOKEN, VIDEO, SUBTITLES
+    handle = args.channel.strip().lower()
+    handle = handle if handle.startswith("@") else "@" + handle
+    if handle != CHANNEL_HANDLE:
+        TOKEN = os.path.join(HERE, f"youtube_token_{re.sub(r'[^a-z0-9_.-]', '', handle[1:])}.json")
+    CHANNEL_HANDLE, VIDEO, SUBTITLES = handle, args.video, args.subtitles
+
+
 def load_package(args, record):
     """Check that everything exists and is current BEFORE logging in or sending anything."""
-    if not os.path.exists("scripts/script.json"):
+    if not os.path.exists("scripts/script.json") and VIDEO == "output/animated.mp4":
         raise SystemExit("Run this from inside a video's folder (projects/<video>).")
     if not os.path.exists(DETAILS) or not os.path.exists(DESCRIPTION):
         raise SystemExit("Run this first: python ../../youtube_kit.py")
@@ -93,7 +120,10 @@ def load_package(args, record):
         problems.append("The tags are over 500 characters.")
     if not os.path.exists(thumbnail):
         problems.append(f"{thumbnail} is missing.")
-    script = json.load(open("scripts/script.json", encoding="utf-8"))
+    script = json.load(open("scripts/script.json", encoding="utf-8")) if os.path.exists("scripts/script.json") else {}
+    if args.category:
+        info["category"] = args.category
+    info["kids"] = bool(args.kids)
     if script.get("kind") == "news" and not script.get("reviewed") and (args.publish or args.schedule):
         problems.append('This is a news video and nobody has marked it checked. Check scripts/review.md, then add '
                         '"reviewed": true to scripts/script.json. A private upload is still allowed.')
@@ -104,7 +134,7 @@ def load_package(args, record):
 
 def video_body(info, description, tags, publish_at, public):
     status = {"privacyStatus": "public" if public else "private",
-              "selfDeclaredMadeForKids": False,
+              "selfDeclaredMadeForKids": bool(info.get("kids")),
               "containsSyntheticMedia": True,   # the AI voice: YouTube's altered or synthetic label
               "embeddable": True,
               "license": "youtube"}
@@ -133,7 +163,7 @@ def login():
             print("Your YouTube login has expired, so a browser will open to log in again.")
             creds = None
     if not creds or not creds.valid:
-        print("Opening your browser. Choose the Snack Code channel and click Allow.")
+        print(f"Opening your browser. Choose the {CHANNEL_HANDLE} channel and click Allow.")
         creds = InstalledAppFlow.from_client_secrets_file(CLIENT_SECRET, SCOPES).run_local_server(port=0)
     descriptor = os.open(TOKEN, os.O_WRONLY | os.O_CREAT | os.O_TRUNC, 0o600)
     with os.fdopen(descriptor, "w") as f:
@@ -147,7 +177,7 @@ def check_channel(youtube):
     if handle.lower() != CHANNEL_HANDLE:
         os.remove(TOKEN)   # so the next run asks again and lets you pick the right channel
         raise SystemExit(f"This login is for channel '{handle or 'none'}', not {CHANNEL_HANDLE}. "
-                         "Nothing was uploaded. Run again and choose the Snack Code channel.")
+                         f"Nothing was uploaded. Run again and choose the {CHANNEL_HANDLE} channel.")
     print(f"Channel: {items[0]['snippet']['title']} ({handle})")
 
 
@@ -205,6 +235,22 @@ def add_subtitles(youtube, video_id):
                 raise
 
 
+def add_to_playlist(youtube, video_id, name):
+    """Find the channel's playlist with this name (or make it, public), then add the video at the end."""
+    found, token = None, None
+    while not found:
+        page = youtube.playlists().list(part="snippet", mine=True, maxResults=50, pageToken=token).execute()
+        found = next((p["id"] for p in page.get("items", []) if p["snippet"]["title"].strip().lower() == name.lower()), None)
+        token = page.get("nextPageToken")
+        if not token:
+            break
+    if not found:
+        found = youtube.playlists().insert(part="snippet,status", body={
+            "snippet": {"title": name, "defaultLanguage": LANGUAGE}, "status": {"privacyStatus": "public"}}).execute()["id"]
+    youtube.playlistItems().insert(part="snippet", body={"snippet": {
+        "playlistId": found, "resourceId": {"kind": "youtube#video", "videoId": video_id}}}).execute()
+
+
 def post_comment(youtube, video_id, text):
     youtube.commentThreads().insert(part="snippet", body={"snippet": {
         "videoId": video_id, "topLevelComment": {"snippet": {"textOriginal": text}}}}).execute()
@@ -241,6 +287,12 @@ def run_step(record, name, label, action):
 # ---------------------------------------------------------------- main
 def main():
     args = parse_args()
+    configure(args)
+    if args.check:
+        from googleapiclient.discovery import build
+        check_channel(build("youtube", "v3", credentials=login()))
+        print(f"Login saved in {os.path.basename(TOKEN)}. This channel is ready for uploads.")
+        return 0
     record = json.load(open(RECORD, encoding="utf-8")) if os.path.exists(RECORD) else None
     info, description, tags, thumbnail = load_package(args, record)
     publish_at = publish_time(args.schedule) if args.schedule and not record else None
@@ -252,7 +304,8 @@ def main():
         print(f"Already uploaded, so --publish and --schedule do nothing now. "
               f"Change visibility in Studio: https://studio.youtube.com/video/{record['video_id']}/edit")
     if args.dry_run or not record:
-        print(f"Video:      {VIDEO} ({os.path.getsize(VIDEO) / 1e6:.0f} MB)\n"
+        print(f"Channel:    {CHANNEL_HANDLE}\n"
+              f"Video:      {VIDEO} ({os.path.getsize(VIDEO) / 1e6:.0f} MB)\n"
               f"Title:      {info['title']}\n"
               f"Visibility: {when}\n"
               f"Thumbnail:  {thumbnail}\n"
@@ -289,6 +342,8 @@ def main():
     run_step(record, "thumbnail", "Thumbnail", lambda: set_thumbnail(youtube, video_id, record["thumbnail"]))
     if os.path.exists(SUBTITLES):
         run_step(record, "subtitles", "Subtitles", lambda: add_subtitles(youtube, video_id))
+    if args.playlist:
+        run_step(record, "playlist", "Playlist", lambda: add_to_playlist(youtube, video_id, args.playlist))
     comment = info.get("pinned_comment", "").strip()
     if comment and "comment" not in record["done"]:
         if is_public(youtube, video_id):

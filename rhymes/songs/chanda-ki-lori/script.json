@@ -1,0 +1,212 @@
+{
+ "title": "Chanda Ki Lori",
+ "n": 1,
+ "tempo": 100,
+ "key": "C",
+ "scenes": [
+  {
+   "kind": "verse",
+   "place": "night",
+   "cast": [
+    "moon",
+    "star"
+   ],
+   "beats": [
+    {
+     "say_hi": "चंदा रानी रात में आया",
+     "say": "Chanda rani raat mein aaya",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "प्यारी रोशनी से हमको भाया",
+     "say": "Pyari roshni se hamko bhaya",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "तारे सारे भी साथ चले",
+     "say": "Tare sare bhi saath chale",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "सितारों से हमको भाया",
+     "say": "Sitaron se hamko bhaya",
+     "speaker": "singer",
+     "emotion": "happy"
+    }
+   ]
+  },
+  {
+   "kind": "chorus",
+   "place": "night",
+   "cast": [
+    "moon",
+    "star"
+   ],
+   "beats": [
+    {
+     "say_hi": "आओ बच्चो, चलो हम गाएँ",
+     "say": "Aao bachcho, chalo hume gaen",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "चंदा और तारे हमको बुलाएँ",
+     "say": "Chanda aur tare hamko bulaen",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "रात की शांति में खेलें प्यारे",
+     "say": "Raat ki shanti mein khelen pyare",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "झूले नाचे, बनो सब न्यारे",
+     "say": "Jhule nache, bano sab nyare",
+     "speaker": "singer",
+     "emotion": "happy"
+    }
+   ]
+  },
+  {
+   "kind": "verse",
+   "place": "night",
+   "cast": [
+    "boy",
+    "moon",
+    "star"
+   ],
+   "beats": [
+    {
+     "say_hi": "छोटे बच्चे भी सो रहे हैं",
+     "say": "Chhote bachche bhi so rahe hain",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "चंदा उनकी परवाह करता है",
+     "say": "Chanda unki parvah karta hai",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "तारे भी उनकी मदद करते हैं",
+     "say": "Tare bhi unki madad karte hain",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "सबके लिए है ये प्यार भरा",
+     "say": "Sabke liye hai ye pyar bhara",
+     "speaker": "singer",
+     "emotion": "happy"
+    }
+   ]
+  },
+  {
+   "kind": "chorus",
+   "place": "night",
+   "cast": [
+    "moon",
+    "star"
+   ],
+   "beats": [
+    {
+     "say_hi": "आओ बच्चो, चलो हम गाएँ",
+     "say": "Aao bachcho, chalo hume gaen",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "चंदा और तारे हमको बुलाएँ",
+     "say": "Chanda aur tare hamko bulaen",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "रात की शांति में खेलें प्यारे",
+     "say": "Raat ki shanti mein khelen pyare",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "झूले नाचे, बनो सब न्यारे",
+     "say": "Jhule nache, bano sab nyare",
+     "speaker": "singer",
+     "emotion": "happy"
+    }
+   ]
+  },
+  {
+   "kind": "verse",
+   "place": "night",
+   "cast": [
+    "moon"
+   ],
+   "beats": [
+    {
+     "say_hi": "नहाएं हाथ, धोएं पैर",
+     "say": "Nahaen hath, dhoen pair",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "चंदा देखे आपका प्यार",
+     "say": "Chanda dekhe aapka pyar",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "पड़े सोना धीरे-धीरे",
+     "say": "Pade sona dhire-dhire",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "सुनाओ चंदा हमको प्यारे",
+     "say": "Sunao chanda hamko pyare",
+     "speaker": "singer",
+     "emotion": "happy"
+    }
+   ]
+  },
+  {
+   "kind": "chorus",
+   "place": "night",
+   "cast": [
+    "moon",
+    "star"
+   ],
+   "beats": [
+    {
+     "say_hi": "आओ बच्चो, चलो हम गाएँ",
+     "say": "Aao bachcho, chalo hume gaen",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "चंदा और तारे हमको बुलाएँ",
+     "say": "Chanda aur tare hamko bulaen",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "रात की शांति में खेलें प्यारे",
+     "say": "Raat ki shanti mein khelen pyare",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "झूले नाचे, बनो सब न्यारे",
+     "say": "Jhule nache, bano sab nyare",
+     "speaker": "singer",
+     "emotion": "happy"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,65 @@
+{
+  "story_so_far": "In 'Test of True Merchant,' Emperor Akbar challenges his minister Birbal to find the true merchant in the kingdom. Birbal defines a true merchant as one who sells what cannot be bought with gold or silver. Various merchants arrive at court, each claiming to have such an item but are all rejected by Birbal. An old man claims to offer something more valuable than gold or jewels—time. Birbal acknowledges the wisdom of time and leaves the court, leaving the crowd in deep thought about the true value of life. In Episode 2, the old man returns to the court, holding nothing but time. He claims to sell time, the only treasure that cannot be stolen or stored. Akbar is intrigued, but Birbal recognizes the wisdom of this claim and praises the old man's insight, leaving the court in deep thought about the true value of life. In Episode 3, Akbar seeks the meaning of true friendship after Birbal's words. He visits a poor friend who offers loyalty over wealth, proving that selflessness defines true friendship. The court is moved by this act of devotion. In Episode 4, Birbal and Akbar reflect on their journey, recognizing that true value lies not in material wealth but in love, loyalty, and the soul. They conclude that the true merchant is not someone who sells physical goods, but a person whose heart embodies selflessness and integrity.",
+  "characters": {
+    "akbar": {
+      "status": "alive",
+      "where": "court of Emperor Akbar",
+      "notes": "Emperor who has learned to value selflessness and true friendship over wealth."
+    },
+    "birbal": {
+      "status": "alive",
+      "where": "court of Emperor Akbar",
+      "notes": "Minister who guides the emperor in understanding the deeper meaning of life and value."
+    },
+    "oldman": {
+      "status": "alive",
+      "where": "court",
+      "notes": "A wise old man who claims to sell time."
+    },
+    "old_man": {
+      "status": "alive",
+      "where": "court",
+      "notes": "Mysterious figure who speaks with wisdom about time."
+    },
+    "poor_friend": {
+      "status": "alive",
+      "where": "village",
+      "notes": "Proved that loyalty and trust are more valuable than wealth."
+    }
+  },
+  "open_threads": [
+    "The search for the true merchant continues",
+    "The search for the true merchant continues as Birbal begins to understand that it may not be a physical item.",
+    "The search for the true merchant continues as Birbal begins to understand it may not be a physical item.",
+    "Akbar's journey into understanding friendship through selfless acts.",
+    "The search for the true merchant continues as a philosophical journey"
+  ],
+  "last_episode": {
+    "n": 4,
+    "title": "The Soul of a Friend",
+    "summary": "In Episode 4 of 'Test of True Merchant,' Emperor Akbar and Birbal reflect on their journey, recognizing that true value lies not in material wealth but in love, loyalty, and the soul. They conclude that the true merchant is not someone who sells physical goods, but a person whose heart embodies selflessness and integrity.",
+    "ending": "Akbar and Birbal agree that the true merchant is defined by the richness of one's character and the depth of their relationships, marking a philosophical conclusion to their quest."
+  },
+  "episodes": {
+    "1": {
+      "title": "Test of True Merchant",
+      "summary": "In this first episode, Emperor Akbar challenges his minister Birbal to find the true merchant in the kingdom. Birbal defines a true merchant as one who sells what cannot be bought with gold or silver. Various merchants claim to have such items but are rejected by Birbal. An old man claims to sell time, which Birbal recognizes as the only thing truly valuable and irreplaceable. The court is left in deep thought after Birbal's final judgment.",
+      "ending": "Birbal leaves the court, leaving the old man with a profound realization about the value of time."
+    },
+    "2": {
+      "title": "Time is a Merchant",
+      "summary": "In Episode 2, an old man claims to sell time, the only treasure that cannot be stolen or stored. Birbal recognizes the wisdom of this claim and praises the old man's insight, leaving the court in deep thought about the true value of life.",
+      "ending": "Birbal bows and exits, leaving Akbar in deep thought about the nature of time and its true worth."
+    },
+    "3": {
+      "title": "Friendship Tested",
+      "summary": "In Episode 3 of 'Test of True Merchant,' Akbar seeks the meaning of true friendship after Birbal's wisdom. He visits a poor friend who offers loyalty over wealth, proving that selflessness defines true friendship. The court is moved by this act of devotion.",
+      "ending": "The court is deeply moved by the poor friend's selfless act and reflects on the value of true friendship."
+    },
+    "4": {
+      "title": "The Soul of a Friend",
+      "summary": "In Episode 4 of 'Test of True Merchant,' Emperor Akbar and Birbal reflect on their journey, recognizing that true value lies not in material wealth but in love, loyalty, and the soul. They conclude that the true merchant is not someone who sells physical goods, but a person whose heart embodies selflessness and integrity.",
+      "ending": "Akbar and Birbal agree that the true merchant is defined by the richness of one's character and the depth of their relationships, marking a philosophical conclusion to their quest."
+    }
+  }
+}

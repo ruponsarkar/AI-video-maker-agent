@@ -1,0 +1,385 @@
+{
+  "series": "Ramayan",
+  "n": 1,
+  "title": "Divine Birth in Ayodhya",
+  "title_hi": "आयोध्या में देवी प्रसन्नता",
+  "arc": 1,
+  "next_title": "Forest Trials with Viswamitra",
+  "written": "2026-11-11 18:25",
+  "scenes": [
+    {
+      "place": "ayodhya",
+      "time": "dawn",
+      "weather": "clear",
+      "music": "divine",
+      "cast": [
+        {
+          "id": "rama",
+          "slot": "center",
+          "arrives": false,
+          "hidden": false
+        },
+        {
+          "id": "dasaratha",
+          "slot": "left",
+          "arrives": false,
+          "hidden": false
+        }
+      ],
+      "what_happens": "At dawn in Ayodhya, King Dasaratha and Queen Kausalya welcome the newborn Rama. The infant is described with divine attributes—lotus-red eyes, lengthy arms, roseate lips, and a voice like drumbeat. The atmosphere is filled with sacred music, signaling Rama's divine birth as Vishnu’s incarnation.",
+      "words": 100,
+      "beats": [
+        {
+          "speaker": "narrator",
+          "say_en": "At dawn in Ayodhya, King Dasaratha and Queen Kausalya welcome the newborn Rama.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "conch"
+          ],
+          "react": {},
+          "say_hi": "अयोध्या में सूर्योदय हुआ। राजा दशरथ और माता कौशल्या ने नवजात राम का स्वागत किया।",
+          "say": "Ayodhya mein suryoday hua. Raja dashrath aur mata kaushalya ne navjat ram ka svagat kiya.",
+          "say_from": "अयोध्या में सूर्योदय हुआ। राजा दशरथ और माता कौशल्या ने नवजात राम का स्वागत किया।"
+        },
+        {
+          "speaker": "rama",
+          "say_en": "My father, I am born with divine strength and grace.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {},
+          "say_hi": "पिताजी, मैं जन्म लेकर दिव्य शक्ति और सौंदर्य से ओतप्रोत हूँ।",
+          "say": "Pitaji, main janm lekar divya shakti aur saundarya se otaprot hun.",
+          "say_from": "पिताजी, मैं जन्म लेकर दिव्य शक्ति और सौंदर्य से ओतप्रोत हूँ।"
+        },
+        {
+          "speaker": "dasaratha",
+          "say_en": "O my son, you are a blessing to this kingdom. Your eyes shine like lotus flowers.",
+          "emotion": "calm",
+          "action": {
+            "type": "point",
+            "who": "dasaratha",
+            "target": "rama"
+          },
+          "sfx": [
+            "bell"
+          ],
+          "react": {},
+          "say_hi": "हे मेरे पुत्र, तुम इस राज्य के लिए वरदान हो। तुम्हारी आँखें कमल के फूल जैसी सुंदर हैं।",
+          "say": "He mere putr, tum is rajya ke liye vardan ho. Tumhari aankhen kamal ke full jaisi sundar hain.",
+          "say_from": "हे मेरे पुत्र, तुम इस राज्य के लिए वरदान हो। तुम्हारी आँखें कमल के फूल जैसी सुंदर हैं।"
+        },
+        {
+          "speaker": "narrator",
+          "say_en": "The infant is described with divine attributes—lotus-red eyes, lengthy arms, roseate lips, and a voice like drumbeat.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "magic"
+          ],
+          "react": {},
+          "say_hi": "शिशु को दिव्य गुण-दोषों से सजी पाया जाता है - कमल के रंग की आँखें, लम्बे हाथ, गुलाबी होंठ और एक आवाज जो ताल की तरह है।",
+          "say": "Shishu ko divya gun-doshon se saji paya jaata hai - kamal ke rang ki aankhen, lambe hath, gulabi honth aur ek awaaz jo tal ki tarah hai.",
+          "say_from": "शिशु को दिव्य गुण-दोषों से सजी पाया जाता है - कमल के रंग की आँखें, लम्बे हाथ, गुलाबी होंठ और एक आवाज जो ताल की तरह है।"
+        },
+        {
+          "speaker": "rama",
+          "say_en": "I see the heavens in your gaze, father.",
+          "emotion": "calm",
+          "action": {
+            "type": "raise",
+            "who": "rama"
+          },
+          "sfx": [
+            "thunder"
+          ],
+          "react": {},
+          "say_hi": "पिताजी, आपकी आँखों में मैं स्वर्ग देखता हूँ।",
+          "say": "Pitaji, aapki aankhon mein main svarg dekhta hun.",
+          "say_from": "पिताजी, आपकी आँखों में मैं स्वर्ग देखता हूँ।"
+        },
+        {
+          "speaker": "dasaratha",
+          "say_en": "You are indeed the incarnation of Vishnu, my son. May you bring peace to all.",
+          "emotion": "calm",
+          "action": {
+            "type": "bow",
+            "who": "dasaratha",
+            "target": "rama"
+          },
+          "sfx": [
+            "drum_hit"
+          ],
+          "react": {},
+          "say_hi": "वास्तव में तुम विष्णु के अवतार हो, मेरे पुत्र। तुम सभी को शांति प्रदान करो।",
+          "say": "Vastav mein tum vishnu ke avatar ho, mere putr. Tum sabhi ko shanti pradan karo.",
+          "say_from": "वास्तव में तुम विष्णु के अवतार हो, मेरे पुत्र। तुम सभी को शांति प्रदान करो।"
+        },
+        {
+          "speaker": "narrator",
+          "say_en": "Sacred music fills the air, celebrating Rama's divine birth.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "gong",
+            "crowd_gasp"
+          ],
+          "react": {},
+          "say_hi": "पवित्र संगीत गूंज रहा है, राम के दिव्य जन्म का उत्सव मना रहे हैं।",
+          "say": "Pavitr sangit gunj raha hai, ram ke divya janm ka utsav manna rahe hain.",
+          "say_from": "पवित्र संगीत गूंज रहा है, राम के दिव्य जन्म का उत्सव मना रहे हैं।"
+        }
+      ],
+      "kind": "story"
+    },
+    {
+      "place": "ayodhya",
+      "time": "day",
+      "weather": "clear",
+      "music": "happy",
+      "cast": [
+        {
+          "id": "rama",
+          "slot": "center",
+          "arrives": false,
+          "hidden": false
+        },
+        {
+          "id": "dasaratha",
+          "slot": "left",
+          "arrives": false,
+          "hidden": false
+        }
+      ],
+      "what_happens": "As the sun rises, Rama is now 16 years old and has grown into a handsome prince. He meets Sage Viswamitra who is disturbed by rakshas Mericha and Subahu. The sage praises Rama's strength and wisdom, hinting at his future greatness.",
+      "words": 100,
+      "beats": [
+        {
+          "speaker": "narrator",
+          "say_en": "As the sun rises over Ayodhya, sixteen-year-old Rama stands before Sage Viswamitra, who has come seeking help against evil forces.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {},
+          "say_hi": "सूरज अयोध्या पर उगता है, सोलह साल का राम ऋषि विश्वामित्र के सामने खड़ा है, जो बुराइयों से लड़ने में मदद मांग रहा है।",
+          "say": "Suraj ayodhya par ugta hai, solah sal ka ram rishi vishvamitr ke samne khada hai, jo buraiyon se ladne mein madad maang raha hai.",
+          "say_from": "सूरज अयोध्या पर उगता है, सोलह साल का राम ऋषि विश्वामित्र के सामने खड़ा है, जो बुराइयों से लड़ने में मदद मांग रहा है।"
+        },
+        {
+          "speaker": "rama",
+          "say_en": "Sage, I am but a youth, yet I wish to serve justice and protect the innocent.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {},
+          "say_hi": "ऋषि देव, मैं तो बस एक युवक हूँ, फिर भी मैं न्याय स्थापित करना चाहता हूँ और निर्दोषों की रक्षा करना चाहता हूँ।",
+          "say": "Rishi dev, main to bas ek yuvak hun, phir bhi main nyay sthapit karna chahta hun aur nirdoshon ki raksha karna chahta hun.",
+          "say_from": "ऋषि देव, मैं तो बस एक युवक हूँ, फिर भी मैं न्याय स्थापित करना चाहता हूँ और निर्दोषों की रक्षा करना चाहता हूँ।"
+        },
+        {
+          "speaker": "dasaratha",
+          "say_en": "My son, you speak with the heart of a true ruler. Go forth, and may the gods guide you.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "heartbeat"
+          ],
+          "react": {},
+          "say_hi": "मेरे पुत्र, तुम एक सच्चे राजा के दिल से बात कर रहे हो। जाओ, और भगवान तुम्हें मार्गदर्शन करें।",
+          "say": "Mere putr, tum ek sachche raja ke dil se baat kar rahe ho. Jao, aur bhagvan tumhen margadarshan karein.",
+          "say_from": "मेरे पुत्र, तुम एक सच्चे राजा के दिल से बात कर रहे हो। जाओ, और भगवान तुम्हें मार्गदर्शन करें।"
+        },
+        {
+          "speaker": "rama",
+          "say_en": "I will not hesitate to fight for righteousness, father and sage.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "thunder"
+          ],
+          "react": {},
+          "say_hi": "मैं धर्म के लिए लड़ने में कभी नहीं हिचकिचाऊँगा, महाराज और ऋषि।",
+          "say": "Main dharma ke liye ladne mein kabhi nahi hichkichaunga, maharaja aur rishi.",
+          "say_from": "मैं धर्म के लिए लड़ने में कभी नहीं हिचकिचाऊँगा, महाराज और ऋषि।"
+        },
+        {
+          "speaker": "dasaratha",
+          "say_en": "May your path be clear, my son. I place my trust in you.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "gong"
+          ],
+          "react": {},
+          "say_hi": "मेरे प्यारे राम, तेरी राहें सीधी रहें। आप मेरी विश्वास करें।",
+          "say": "Mere pyare ram, teri rahen sidhi rahein. Aap meri vishvas karein.",
+          "say_from": "मेरे प्यारे राम, तेरी राहें सीधी रहें। आप मेरी विश्वास करें।"
+        }
+      ],
+      "kind": "story"
+    },
+    {
+      "place": "dandakaranya",
+      "time": "evening",
+      "weather": "fog",
+      "music": "mystery",
+      "cast": [
+        {
+          "id": "rama",
+          "slot": "center",
+          "arrives": true,
+          "hidden": false
+        },
+        {
+          "id": "dasaratha",
+          "slot": "right",
+          "arrives": false,
+          "hidden": false
+        }
+      ],
+      "what_happens": "In the dense fog of Dandakaranya, Rama is approached by Sage Viswamitra. The sage asks Dasaratha to send his sons to help him defeat the demons. Rama volunteers, and his divine attributes are revealed through visions, foreshadowing his legendary destiny as a hero destined for greatness.",
+      "words": 120,
+      "beats": [
+        {
+          "speaker": "narrator",
+          "say_en": "In the dense fog of Dandakaranya, Rama stands with Sage Viswamitra, awaiting his command.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "thunder"
+          ],
+          "react": {},
+          "say_hi": "दंडकारण्य की घनी धुंध में राम, ऋषि विश्वामित्र के साथ उनकी आज्ञा का इंतज़ार कर रहे हैं।",
+          "say": "Dandkaranya ki ghani dhundh mein ram, rishi vishvamitr ke saath unki aajna ka intjar kar rahe hain.",
+          "say_from": "दंडकारण्य की घनी धुंध में राम, ऋषि विश्वामित्र के साथ उनकी आज्ञा का इंतज़ार कर रहे हैं।"
+        },
+        {
+          "speaker": "dasaratha",
+          "say_en": "Sage Viswamitra, let me serve you and help vanquish these demons.",
+          "emotion": "calm",
+          "action": {
+            "type": "bow",
+            "who": "dasaratha"
+          },
+          "sfx": [],
+          "react": {},
+          "say_hi": "ऋषि विश्वामित्र, मैं आपकी सेवा करने और इन राक्षसों को नष्ट करने में मदद करूँगा।",
+          "say": "Rishi vishvamitr, main aapki seva karne aur in rakshason ko nasht karne mein madad karunga.",
+          "say_from": "ऋषि विश्वामित्र, मैं आपकी सेवा करने और इन राक्षसों को नष्ट करने में मदद करूँगा।"
+        },
+        {
+          "speaker": "rama",
+          "say_en": "Brother, I am ready to serve alongside you. Let us fight for justice and protect the innocent.",
+          "emotion": "calm",
+          "action": {
+            "type": "enter",
+            "who": "rama"
+          },
+          "sfx": [
+            "conch"
+          ],
+          "react": {},
+          "say_hi": "भाई, मैं आपके साथ सेवा करने के लिए तैयार हूँ। आइए हम न्याय के लिए लड़ें और निर्दोषों की रक्षा करें।",
+          "say": "Bhai, main aapke saath seva karne ke liye taiyaan hun. Aaie hume nyay ke liye laden aur nirdoshon ki raksha karein.",
+          "say_from": "भाई, मैं आपके साथ सेवा करने के लिए तैयार हूँ। आइए हम न्याय के लिए लड़ें और निर्दोषों की रक्षा करें।"
+        },
+        {
+          "speaker": "narrator",
+          "say_en": "The air shimmers with divine light as Rama's true nature shines through.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "magic"
+          ],
+          "react": {
+            "rama": "surprised"
+          },
+          "say_hi": "राम का असली रूप दिव्य प्रकाश से चमकता है, हवा में एक अद्भुत आभा होती है।",
+          "say": "Ram ka asli rup divya prakash se chamkata hai, hawa mein ek adbhut aabha hoti hai.",
+          "say_from": "राम का असली रूप दिव्य प्रकाश से चमकता है, हवा में एक अद्भुत आभा होती है।"
+        },
+        {
+          "speaker": "dasaratha",
+          "say_en": "May the gods bless you, my son. Your destiny is greatness.",
+          "emotion": "calm",
+          "action": {
+            "type": "raise",
+            "who": "dasaratha",
+            "target": "rama"
+          },
+          "sfx": [
+            "gong"
+          ],
+          "react": {},
+          "say_hi": "महाराज, भगवान आपको आशीर्वाद दें। आपका भाग्य महानता का है।",
+          "say": "Maharaja, bhagvan aapko aashirvad den. Aapka bhagya mahanta ka hai.",
+          "say_from": "महाराज, भगवान आपको आशीर्वाद दें। आपका भाग्य महानता का है।"
+        },
+        {
+          "speaker": "rama",
+          "say_en": "I will not falter, father. I am ready to face any challenge.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "riser"
+          ],
+          "react": {},
+          "say_hi": "मैं कभी नहीं टस-फूंस करूँगा, महाराज। मैं किसी भी चुनौती का सामना करने के लिए तैयार हूँ।",
+          "say": "Main kabhi nahi tas-phuns karunga, maharaja. Main kisi bhi chunauti ka samna karne ke liye taiyaan hun.",
+          "say_from": "मैं कभी नहीं टस-फूंस करूँगा, महाराज। मैं किसी भी चुनौती का सामना करने के लिए तैयार हूँ।"
+        }
+      ],
+      "kind": "story"
+    },
+    {
+      "kind": "teaser",
+      "place": "dandakaranya",
+      "time": "evening",
+      "weather": "fog",
+      "music": "mystery",
+      "cast": [
+        {
+          "id": "rama",
+          "slot": "center",
+          "arrives": false,
+          "hidden": false
+        },
+        {
+          "id": "dasaratha",
+          "slot": "right",
+          "arrives": false,
+          "hidden": false
+        }
+      ],
+      "beats": [
+        {
+          "speaker": "narrator",
+          "say_en": "Rama struggles with the moral weight of killing a woman who has become a dangerous enemy.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "riser"
+          ],
+          "react": {},
+          "say_hi": "राम, अपने मन में बहुत सोचता था कि एक ऐसे स्त्री को मारा जाए जो अब भयंकर शत्रु बन गई है।",
+          "say": "Ram, apne man mein bahut sochta tha ki ek aise stri ko mara jae jo ab bhayankar shatru ban gayi hai.",
+          "say_from": "राम, अपने मन में बहुत सोचता था कि एक ऐसे स्त्री को मारा जाए जो अब भयंकर शत्रु बन गई है।"
+        },
+        {
+          "speaker": "narrator",
+          "say_en": "Why does Viswamitra believe evil can't be judged by gender?",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "riser"
+          ],
+          "react": {},
+          "say_hi": "विश्वामित्र महाराज कहते हैं, क्या कोई बुराई को बस इसलिए दोष दे सकता है, क्योंकि वह पुरुष है?",
+          "say": "Vishvamitr maharaja kehte hain, kya koi burai ko bas isliye dosh de sakta hai, kyunki vah purush hai?",
+          "say_from": "विश्वामित्र महाराज कहते हैं, क्या कोई बुराई को बस इसलिए दोष दे सकता है, क्योंकि वह पुरुष है?"
+        }
+      ]
+    }
+  ]
+}

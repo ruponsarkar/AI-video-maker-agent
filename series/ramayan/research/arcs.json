@@ -1,0 +1,43 @@
+{
+  "title_screen": "RAMAYAN",
+  "title_hi": "रामायण",
+  "tagline": "जन्म से लेकर मुक्ति तक, कहानी है रमांचित।",
+  "arcs": [
+    {
+      "title": "I. RAMA JEEVAN - BALA KANDA",
+      "summary": "Rama is born to King Dasaratha and Queen Kausalya, chosen by the gods as Vishnu's incarnation. His childhood includes meeting sage Viswamitra, slaying demon Tadaka, learning weapons from sages, marrying Sita in Mithila, and being crowned prince of Ayodhya.",
+      "episodes": 4
+    },
+    {
+      "title": "II. AYODHYA KANDA - KAISERI BOON",
+      "summary": "Kaikeyi demands two boons from Dasaratha: Rama's exile and Bharata's coronation. Though reluctant, Dasaratha grants them, leading to Rama's banishment and his father’s death.",
+      "episodes": 3
+    },
+    {
+      "title": "III. VANVAS - ARANYA KANDA",
+      "summary": "Rama, Lakshmana, and Sita live in the forest for fourteen years during Rama's exile as described in the Aranya Kanda, facing challenges like demons, hunger, and separation from Ayodhya. They find refuge with Sugriva in Kishkindha.",
+      "episodes": 4
+    },
+    {
+      "title": "IV. LANKA JOURNEY - PANCHALI KANDA",
+      "summary": "Rama meets Hanuman, who agrees to search for Sita. Hanuman discovers her location and returns with news of Ravana’s abducting her from Lanka.",
+      "episodes": 2
+    },
+    {
+      "title": "V. LANKA YUDDH - KISHKINDHA KANDA",
+      "summary": "Rama builds a bridge to Lanka, leads the Vanara army with Hanuman's help, and prepares for war against Ravana, the ten-headed demon king.",
+      "episodes": 3
+    },
+    {
+      "title": "VI. LANKA YUDDH - ARANYA KANDA",
+      "summary": "The battle in Lanka begins with Rama vs. Ravana and his army. Hanuman sets fire to Lanka, destroys fortresses, rescues Sita from captivity, and brings her back.",
+      "episodes": 4
+    },
+    {
+      "title": "VII. RAM RAJYA - UTTHAN KANDA",
+      "summary": "Rama returns to Ayodhya after defeating Ravana. Bharata gives him the crown, Sita proves her purity through fire ordeal, and Ram Rajya is established as an ideal kingdom.",
+      "episodes": 3
+    }
+  ],
+  "checked": true
+}

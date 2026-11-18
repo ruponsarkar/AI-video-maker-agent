@@ -1,0 +1,1046 @@
+{
+  "title": "AI Girlfriend Scam: Online Pyaar Ke Naam Par Lakhon Ka Fraud?",
+  "topic": "AI Girlfriend Scam: Online Pyaar Ke Naam Par Lakhon Ka Fraud?",
+  "kind": "scam",
+  "theme": "crimson",
+  "scenes": [
+    {
+      "on_screen": "AI Girlfriend Scam: Online Pyaar Ke Naam Paar Lakhon Ka Fraud?",
+      "beats": [
+        {
+          "say": "Kya aapko lagta hai ki pyar online muft mein mil sakta hai?",
+          "visual": {
+            "type": "title",
+            "query": "ai girlfriend",
+            "backup": [
+              "fake relationship"
+            ]
+          },
+          "mood": "warn",
+          "pop": "Paisa moh liya jaa sakta hai",
+          "say_hi": "क्या आपको लगता है कि प्यार ऑनलाइन मुफ़्त में मिल सकता है?",
+          "say_from": "क्या आपको लगता है कि प्यार ऑनलाइन मुफ़्त में मिल सकता है?"
+        },
+        {
+          "say": "Online pyar ke naam paar AI girlfriend ke zariye lakhon ka fraud badh raha hai.",
+          "visual": {
+            "type": "photo",
+            "query": "online fraud",
+            "backup": [
+              "scam online"
+            ],
+            "caption": "Online pyar ke naam"
+          },
+          "mood": "think",
+          "pop": "Real vs Fake",
+          "say_hi": "ऑनलाइन प्यार के नाम पर AI गर्लफ्रेंड के ज़रिए लाखों का फ्रॉड बढ़ रहा है।",
+          "say_from": "ऑनलाइन प्यार के नाम पर AI गर्लफ्रेंड के ज़रिए लाखों का फ्रॉड बढ़ रहा है।"
+        },
+        {
+          "say": "AI matlab aisa computer program, jo likhna, bolna ya chehra pahchanna seekh leta hai.",
+          "say_hi": "ए-आई मतलब ऐसा कंप्यूटर प्रोग्राम, जो लिखना, बोलना या चेहरा पहचानना सीख लेता है।",
+          "visual": {
+            "type": "term",
+            "term": "AI",
+            "meaning": "Insaan jaisa kaam seekhne wala program",
+            "example": "Likhna, bolna ya chehra pehchanna",
+            "icon": "ai"
+          },
+          "mood": "explain",
+          "locked": true,
+          "say_from": "ए-आई मतलब ऐसा कंप्यूटर प्रोग्राम, जो लिखना, बोलना या चेहरा पहचानना सीख लेता है।"
+        },
+        {
+          "say": "Agar aap savdhan nahi hain, to aapka paisa aur samay lutaya jaa sakta hai.",
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              {
+                "icon": "user",
+                "label": "Scammer"
+              },
+              {
+                "icon": "phone",
+                "label": "AI Girlfriend"
+              },
+              {
+                "icon": "bank",
+                "label": "Money Lost"
+              }
+            ]
+          },
+          "mood": "shock",
+          "pop": "Money Lost",
+          "say_hi": "अगर आप सावधान नहीं हैं, तो आपका पैसा और समय लुटाया जा सकता है।",
+          "say_from": "अगर आप सावधान नहीं हैं, तो आपका पैसा और समय लुटाया जा सकता है।"
+        },
+        {
+          "say": "Aapki online dating mein AI kitni buri tarah se istemal ho sakti hai.",
+          "visual": {
+            "type": "photo",
+            "query": "ai in dating",
+            "backup": [
+              "ai relationships"
+            ],
+            "caption": "Aapki online dating mein"
+          },
+          "mood": "explain",
+          "pop": "Financial Loss",
+          "say_hi": "आपकी ऑनलाइन डेटिंग में AI कितनी बुरी तरह से इस्तेमाल हो सकती है।",
+          "say_from": "आपकी ऑनलाइन डेटिंग में AI कितनी बुरी तरह से इस्तेमाल हो सकती है।"
+        }
+      ],
+      "narration_hi": "क्या आपको लगता है कि प्यार ऑनलाइन मुफ़्त में मिल सकता है? ऑनलाइन प्यार के नाम पर AI गर्लफ्रेंड के ज़रिए लाखों का फ्रॉड बढ़ रहा है। ए-आई मतलब ऐसा कंप्यूटर प्रोग्राम, जो लिखना, बोलना या चेहरा पहचानना सीख लेता है। अगर आप सावधान नहीं हैं, तो आपका पैसा और समय लुटाया जा सकता है। आपकी ऑनलाइन डेटिंग में AI कितनी बुरी तरह से इस्तेमाल हो सकती है।"
+    },
+    {
+      "on_screen": "AI ka dhokha: pyar ka dikhava",
+      "beats": [
+        {
+          "say": "Shuruaat yahin se hoti hai: AI ka dhokha: pyar ka dikhava",
+          "say_from": "शुरुआत यहीं से होती है: AI का धोखा: प्यार का दिखावा",
+          "say_hi": "शुरुआत यहीं से होती है: AI का धोखा: प्यार का दिखावा",
+          "locked": true,
+          "visual": {
+            "type": "chapter",
+            "label": "Sabse pehle"
+          },
+          "mood": "think"
+        }
+      ],
+      "narration_hi": "शुरुआत यहीं से होती है: AI का धोखा: प्यार का दिखावा"
+    },
+    {
+      "on_screen": "AI ke pyar ki dhadkan",
+      "beats": [
+        {
+          "say": "Aap sochie ki kisi ne aapka pyar karne wala bana liya hai,",
+          "visual": {
+            "type": "kinetic",
+            "text": "Kisi ne aapka pyar karne wala bana liya",
+            "highlight": "pyar"
+          },
+          "mood": "think",
+          "pop": "pyar",
+          "say_hi": "आप सोचिए कि किसी ने आपका प्यार करने वाला बना लिया है,",
+          "say_from": "आप सोचिए कि किसी ने आपका प्यार करने वाला बना लिया है,"
+        },
+        {
+          "say": "Lekin ye pyar asal mein ek computer program hai. Ye program, jise AI kaha jaata hai,",
+          "visual": {
+            "type": "photo",
+            "query": "ai program",
+            "backup": [
+              "computer fake"
+            ],
+            "caption": "Lekin ye pyar asal"
+          },
+          "mood": "warn",
+          "pop": "AI",
+          "say_hi": "लेकिन ये प्यार असल में एक कंप्यूटर प्रोग्राम है। ये प्रोग्राम, जिसे AI कहा जाता है,",
+          "say_from": "लेकिन ये प्यार असल में एक कंप्यूटर प्रोग्राम है। ये प्रोग्राम, जिसे AI कहा जाता है,"
+        },
+        {
+          "say": "Aapke sawaalon ke jawab data hai, aapki baton ko samjhata hai aur aapko accha mahsus karata hai.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Data",
+                "icon": "phone"
+              },
+              {
+                "label": "Samjha",
+                "icon": "wifi"
+              },
+              {
+                "label": "Accha laga",
+                "icon": "globe"
+              }
+            ],
+            "note": "Kaise samajhta hai"
+          },
+          "mood": "explain",
+          "pop": "data",
+          "say_hi": "आपके सवालों के जवाब देता है, आपकी बातों को समझता है और आपको अच्छा महसूस कराता है।",
+          "say_from": "आपके सवालों के जवाब देता है, आपकी बातों को समझता है और आपको अच्छा महसूस कराता है।"
+        },
+        {
+          "say": "Ye AI girlfriend app, jaise replica, aapko bhavnatmak support dene ka daava karte hain.",
+          "visual": {
+            "type": "photo",
+            "query": "AI girlfriend app",
+            "caption": "Replica daawa"
+          },
+          "mood": null,
+          "say_hi": "ये AI गर्लफ्रेंड ऐप, जैसे रिप्लिका, आपको भावनात्मक सपोर्ट देने का दावा करते हैं।",
+          "say_from": "ये AI गर्लफ्रेंड ऐप, जैसे रिप्लिका, आपको भावनात्मक सपोर्ट देने का दावा करते हैं।"
+        }
+      ],
+      "narration_hi": "आप सोचिए कि किसी ने आपका प्यार करने वाला बना लिया है, लेकिन ये प्यार असल में एक कंप्यूटर प्रोग्राम है। ये प्रोग्राम, जिसे AI कहा जाता है, आपके सवालों के जवाब देता है, आपकी बातों को समझता है और आपको अच्छा महसूस कराता है। ये AI गर्लफ्रेंड ऐप, जैसे रिप्लिका, आपको भावनात्मक सपोर्ट देने का दावा करते हैं।"
+    },
+    {
+      "on_screen": "AI se pyar kiya ja raha hai",
+      "beats": [
+        {
+          "say": "Kuch log, jaise karan em, noeda se, is AI girlfriend se baat karke apne flirt karne ki practice karte hain aur aatmavishvas badhate hain.",
+          "visual": {
+            "type": "kinetic",
+            "text": "Karan em, Noeda se AI girlfriend",
+            "highlight": "Flirt practice"
+          },
+          "mood": "think",
+          "pop": "Flirt practice",
+          "say_hi": "कुछ लोग, जैसे करण एम, नोएडा से, इस AI गर्लफ्रेंड से बात करके अपने फ्लर्ट करने की प्रैक्टिस करते हैं और आत्मविश्वास बढ़ाते हैं।",
+          "say_from": "कुछ लोग, जैसे करण एम, नोएडा से, इस AI गर्लफ्रेंड से बात करके अपने फ्लर्ट करने की प्रैक्टिस करते हैं और आत्मविश्वास बढ़ाते हैं।"
+        },
+        {
+          "say": "Vikram es, jo ontario mein rahta hai, talak ke baad apni bhavnaon ko shant karne ke liye kathy naam ki AI girlfriend ka istemal karta hai.",
+          "visual": {
+            "type": "host",
+            "text": "Vikram ontario me kathy AI girlfriend"
+          },
+          "mood": "explain",
+          "pop": "Emotional relief",
+          "say_hi": "विक्रम एस, जो ऑंटारियो में रहता है, तलाक के बाद अपनी भावनाओं को शांत करने के लिए कैथी नाम की AI गर्लफ्रेंड का इस्तेमाल करता है।",
+          "say_from": "विक्रम एस, जो ऑंटारियो में रहता है, तलाक के बाद अपनी भावनाओं को शांत करने के लिए कैथी नाम की AI गर्लफ्रेंड का इस्तेमाल करता है।"
+        },
+        {
+          "say": "Lekin ye sab kitna khatranak ho sakta hai? Valentine day jaise khas maukon paar, log aasani se dhokha kha sakte hain.",
+          "visual": {
+            "type": "warning",
+            "text": "Valentine's day risk"
+          },
+          "mood": "shock",
+          "pop": "Heartbreak risk",
+          "say_hi": "लेकिन ये सब कितना खतरनाक हो सकता है? वैलेंटाइन डे जैसे खास मौकों पर, लोग आसानी से धोखा खा सकते हैं।",
+          "say_from": "लेकिन ये सब कितना खतरनाक हो सकता है? वैलेंटाइन डे जैसे खास मौकों पर, लोग आसानी से धोखा खा सकते हैं।"
+        },
+        {
+          "say": "Ye skaimar AI tool ka istemal karke logon ko dhokha dete hain.",
+          "visual": {
+            "type": "photo",
+            "query": "scam tool",
+            "backup": [
+              "fake software"
+            ],
+            "caption": "Ye skaimar AI tool"
+          },
+          "mood": "warn",
+          "pop": "Scam AI",
+          "say_hi": "ये स्कैमर AI टूल का इस्तेमाल करके लोगों को धोखा देते हैं।",
+          "say_from": "ये स्कैमर AI टूल का इस्तेमाल करके लोगों को धोखा देते हैं।"
+        }
+      ],
+      "narration_hi": "कुछ लोग, जैसे करण एम, नोएडा से, इस AI गर्लफ्रेंड से बात करके अपने फ्लर्ट करने की प्रैक्टिस करते हैं और आत्मविश्वास बढ़ाते हैं। विक्रम एस, जो ऑंटारियो में रहता है, तलाक के बाद अपनी भावनाओं को शांत करने के लिए कैथी नाम की AI गर्लफ्रेंड का इस्तेमाल करता है। लेकिन ये सब कितना खतरनाक हो सकता है? वैलेंटाइन डे जैसे खास मौकों पर, लोग आसानी से धोखा खा सकते हैं। ये स्कैमर AI टूल का इस्तेमाल करके लोगों को धोखा देते हैं।"
+    },
+    {
+      "on_screen": "AI ke pyar ki dhadkan",
+      "beats": [
+        {
+          "say": "Ye profile sach nahi hote, aur ye aapko paise dene ke liye lubhate hain ya aapki jankari chura lete hain.",
+          "visual": {
+            "type": "warning",
+            "text": "Kya kabhi nahi karna"
+          },
+          "mood": "shock",
+          "pop": "Track na kar sake",
+          "say_hi": "ये प्रोफाइल सच नहीं होते, और ये आपको पैसे देने के लिए लुभाते हैं या आपकी जानकारी चुरा लेते हैं।",
+          "say_from": "ये प्रोफाइल सच नहीं होते, और ये आपको पैसे देने के लिए लुभाते हैं या आपकी जानकारी चुरा लेते हैं।"
+        },
+        {
+          "say": "Ek vyakti mein se har sat log is tarah ke fraud ka shikar huye hain.",
+          "visual": {
+            "type": "photo",
+            "query": "deepfake couple",
+            "caption": "Dil ki dhadkan"
+          },
+          "mood": "think",
+          "pop": "Deepfake photo",
+          "say_hi": "एक व्यक्ति में से हर सात लोग इस तरह के फ्रॉड का शिकार हुए हैं।",
+          "say_from": "एक व्यक्ति में से हर सात लोग इस तरह के फ्रॉड का शिकार हुए हैं।"
+        },
+        {
+          "say": "Ye skaimar deepfake photo aur video ka istemal karke apni pehchan banate hain.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Fake Profile",
+                "icon": "phone"
+              },
+              {
+                "label": "Paise Dene",
+                "icon": "bank"
+              },
+              {
+                "label": "Jankari Chura",
+                "icon": "lock"
+              }
+            ],
+            "note": "Ek chhoti line"
+          },
+          "mood": "warn",
+          "pop": "Sach nahi hote",
+          "say_hi": "ये स्कैमर डीपफ़ेक फोटो और वीडियो का इस्तेमाल करके अपनी पहचान बनाते हैं।",
+          "say_from": "ये स्कैमर डीपफ़ेक फोटो और वीडियो का इस्तेमाल करके अपनी पहचान बनाते हैं।"
+        },
+        {
+          "say": "Deepfake matlab AI se bana nakli video. Isme insan bolta hua dikhta hai, paar usne wo kabhi kaha nahi.",
+          "say_hi": "डीपफ़ेक मतलब ए-आई से बना नकली वीडियो। इसमें इंसान बोलता हुआ दिखता है, पर उसने वो कभी कहा नहीं।",
+          "visual": {
+            "type": "term",
+            "term": "Deepfake",
+            "meaning": "AI se bana nakli video",
+            "example": "Insaan bolta dikhta hai, paar usne kabhi kaha nahi",
+            "icon": "ai"
+          },
+          "mood": "explain",
+          "locked": true,
+          "say_from": "डीपफ़ेक मतलब ए-आई से बना नकली वीडियो। इसमें इंसान बोलता हुआ दिखता है, पर उसने वो कभी कहा नहीं।"
+        },
+        {
+          "say": "Ve aapko niji messaging platform paar bulate hain taaki koi unhen track na kar sake.",
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              {
+                "icon": "user",
+                "label": "Fake Profile"
+              },
+              {
+                "icon": "phone",
+                "label": "Private Chat"
+              },
+              {
+                "icon": "bank",
+                "label": "Paise Dene"
+              }
+            ]
+          },
+          "mood": "explain",
+          "pop": "Niji Messaging",
+          "say_hi": "वे आपको निजी मैसेजिंग प्लेटफॉर्म पर बुलाते हैं ताकि कोई उन्हें ट्रैक न कर सके।",
+          "say_from": "वे आपको निजी मैसेजिंग प्लेटफॉर्म पर बुलाते हैं ताकि कोई उन्हें ट्रैक न कर सके।"
+        }
+      ],
+      "narration_hi": "ये प्रोफाइल सच नहीं होते, और ये आपको पैसे देने के लिए लुभाते हैं या आपकी जानकारी चुरा लेते हैं। एक व्यक्ति में से हर सात लोग इस तरह के फ्रॉड का शिकार हुए हैं। ये स्कैमर डीपफ़ेक फोटो और वीडियो का इस्तेमाल करके अपनी पहचान बनाते हैं। डीपफ़ेक मतलब ए-आई से बना नकली वीडियो। इसमें इंसान बोलता हुआ दिखता है, पर उसने वो कभी कहा नहीं। वे आपको निजी मैसेजिंग प्लेटफॉर्म पर बुलाते हैं ताकि कोई उन्हें ट्रैक न कर सके।"
+    },
+    {
+      "on_screen": "AI ka dhokha: pyar ka dikhava",
+      "beats": [
+        {
+          "say": "Ye yaad rakhie, agar koi aapko online pyar karne wala bana raha hai, to savdhan rahie.",
+          "visual": {
+            "type": "warning",
+            "text": "kisi se paise na bheje"
+          },
+          "mood": "warn",
+          "pop": "paise maang raha ho",
+          "say_hi": "ये याद रखिए, अगर कोई आपको ऑनलाइन प्यार करने वाला बना रहा है, तो सावधान रहिए।",
+          "say_from": "ये याद रखिए, अगर कोई आपको ऑनलाइन प्यार करने वाला बना रहा है, तो सावधान रहिए।"
+        },
+        {
+          "say": "Kabhi bhi kisi ko paise na bhejen, khaskar agar wo apse bahut jaldi paise maang raha ho.",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "money",
+                "label": "Paisa"
+              },
+              {
+                "icon": "cross",
+                "label": "Nahi"
+              }
+            ]
+          },
+          "mood": "think",
+          "pop": "ajib lagta hai",
+          "say_hi": "कभी भी किसी को पैसे न भेजें, खासकर अगर वो आपसे बहुत जल्दी पैसे मांग रहा हो।",
+          "say_from": "कभी भी किसी को पैसे न भेजें, खासकर अगर वो आपसे बहुत जल्दी पैसे मांग रहा हो।"
+        },
+        {
+          "say": "Apne account ki jankari aur personal details ko gupt rakhen. Agar aapko kuch ajib lagta hai, to turant saibar helpalain ya police ko report karein.",
+          "visual": {
+            "type": "phone_sms",
+            "sender": "Unknown",
+            "message": "paise bheje"
+          },
+          "mood": "shock",
+          "pop": "turant report karein",
+          "say_hi": "अपने अकाउंट की जानकारी और पर्सनल डिटेल्स को गुप्त रखें। अगर आपको कुछ अजीब लगता है, तो तुरंत साइबर हेल्पलाइन या पुलिस को रिपोर्ट करें।",
+          "say_from": "अपने अकाउंट की जानकारी और पर्सनल डिटेल्स को गुप्त रखें। अगर आपको कुछ अजीब लगता है, तो तुरंत साइबर हेल्पलाइन या पुलिस को रिपोर्ट करें।"
+        }
+      ],
+      "narration_hi": "ये याद रखिए, अगर कोई आपको ऑनलाइन प्यार करने वाला बना रहा है, तो सावधान रहिए। कभी भी किसी को पैसे न भेजें, खासकर अगर वो आपसे बहुत जल्दी पैसे मांग रहा हो। अपने अकाउंट की जानकारी और पर्सनल डिटेल्स को गुप्त रखें। अगर आपको कुछ अजीब लगता है, तो तुरंत साइबर हेल्पलाइन या पुलिस को रिपोर्ट करें।"
+    },
+    {
+      "on_screen": "Pahchanna zaroori: lal jhande dekhen!",
+      "beats": [
+        {
+          "say": "Lekin kahani yahin khatm nahi hoti: pahchanna zaroori: lal jhande dekhen!",
+          "say_from": "लेकिन कहानी यहीं खत्म नहीं होती: पहचानना ज़रूरी: लाल झंडे देखें!",
+          "say_hi": "लेकिन कहानी यहीं खत्म नहीं होती: पहचानना ज़रूरी: लाल झंडे देखें!",
+          "locked": true,
+          "visual": {
+            "type": "chapter",
+            "label": "Dhyan dijiye"
+          },
+          "mood": "think"
+        }
+      ],
+      "narration_hi": "लेकिन कहानी यहीं खत्म नहीं होती: पहचानना ज़रूरी: लाल झंडे देखें!"
+    },
+    {
+      "on_screen": "Pahchanna zaroori: lal jhande dekhen!",
+      "beats": [
+        {
+          "say": "Lekin ye pyar asal mein ek computer program hai. Scammers aksar turant hi love bombing karte hain, yaani bahut zyada pyar aur dhyan dikhate hain.",
+          "visual": {
+            "type": "icon",
+            "icon": "hacker",
+            "text": "Scammers ka program"
+          },
+          "mood": "think",
+          "pop": "program",
+          "say_hi": "लेकिन ये प्यार असल में एक कंप्यूटर प्रोग्राम है। स्कैमर्स अक्सर तुरंत ही लव बमिंग करते हैं, यानी बहुत ज्यादा प्यार और ध्यान दिखाते हैं।",
+          "say_from": "लेकिन ये प्यार असल में एक कंप्यूटर प्रोग्राम है। स्कैमर्स अक्सर तुरंत ही लव बमिंग करते हैं, यानी बहुत ज्यादा प्यार और ध्यान दिखाते हैं।"
+        },
+        {
+          "say": "Iska matlab hai ki ve aapko bahut jaldi bahut zyada tariph karenge,",
+          "visual": {
+            "type": "photo",
+            "query": "quick money",
+            "backup": [
+              "fast loan"
+            ],
+            "caption": "Iska matlab hai ki"
+          },
+          "mood": "explain",
+          "pop": "tariph",
+          "say_hi": "इसका मतलब है कि वे आपको बहुत जल्दी बहुत ज्यादा तारीफ करेंगे,",
+          "say_from": "इसका मतलब है कि वे आपको बहुत जल्दी बहुत ज्यादा तारीफ करेंगे,"
+        },
+        {
+          "say": "Aapki har baat paar aapka samarthan karenge, aur aapke liye kuch bhi karne ko taiyaan rahenge.",
+          "visual": {
+            "type": "photo",
+            "query": "love message",
+            "caption": "fake pyar"
+          },
+          "mood": "shock",
+          "pop": "fake",
+          "say_hi": "आपकी हर बात पर आपका समर्थन करेंगे, और आपके लिए कुछ भी करने को तैयार रहेंगे।",
+          "say_from": "आपकी हर बात पर आपका समर्थन करेंगे, और आपके लिए कुछ भी करने को तैयार रहेंगे।"
+        }
+      ],
+      "narration_hi": "लेकिन ये प्यार असल में एक कंप्यूटर प्रोग्राम है। स्कैमर्स अक्सर तुरंत ही लव बमिंग करते हैं, यानी बहुत ज्यादा प्यार और ध्यान दिखाते हैं। इसका मतलब है कि वे आपको बहुत जल्दी बहुत ज्यादा तारीफ करेंगे, आपकी हर बात पर आपका समर्थन करेंगे, और आपके लिए कुछ भी करने को तैयार रहेंगे।"
+    },
+    {
+      "on_screen": "Lal Jhande Dekhen!",
+      "beats": [
+        {
+          "say": "Yah ek tarah ka dabav banane ka tareeka hai taaki aap unke pyar mein padne lag jaen aur apni buddhi ka istemal na karein.",
+          "visual": {
+            "type": "icon",
+            "icon": "warning",
+            "text": "Paise dene se pehle dekho"
+          },
+          "mood": "warn",
+          "pop": "Warning",
+          "say_hi": "यह एक तरह का दबाव बनाने का तरीका है ताकि आप उनके प्यार में पड़ने लग जाएं और अपनी बुद्धि का इस्तेमाल न करें।",
+          "say_from": "यह एक तरह का दबाव बनाने का तरीका है ताकि आप उनके प्यार में पड़ने लग जाएं और अपनी बुद्धि का इस्तेमाल न करें।"
+        },
+        {
+          "say": "Paise mangne ke liye ajib bahane banana yadi koi achanak aapko paise dene ke liye kahta hai,",
+          "visual": {
+            "type": "photo",
+            "query": "red flag",
+            "caption": "Lal Jhande"
+          },
+          "mood": "think",
+          "pop": "Red Flag",
+          "say_hi": "पैसे मांगने के लिए अजीब बहाने बनाना यदि कोई अचानक आपको पैसे देने के लिए कहता है,",
+          "say_from": "पैसे मांगने के लिए अजीब बहाने बनाना यदि कोई अचानक आपको पैसे देने के लिए कहता है,"
+        },
+        {
+          "say": "Khaskar agar vah vyakti apse pehle baat nahi karta hai to yah lal jhanda hai.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Ajib Bahane",
+                "icon": "phone"
+              },
+              {
+                "label": "Paise Mangne",
+                "icon": "money"
+              },
+              {
+                "label": "Musibat Mein Phansay",
+                "icon": "user"
+              }
+            ],
+            "note": "Kadam Karte Ho"
+          },
+          "mood": "explain",
+          "pop": "Steps",
+          "say_hi": "खासकर अगर वह व्यक्ति आपसे पहले बात नहीं करता है तो यह लाल झंडा है।",
+          "say_from": "खासकर अगर वह व्यक्ति आपसे पहले बात नहीं करता है तो यह लाल झंडा है।"
+        },
+        {
+          "say": "Aksar skaimar aapko kisi musibat mein phansa hua batate hain aur madad ke naam paar paise mangte hain.",
+          "visual": {
+            "type": "photo",
+            "query": "scam help",
+            "backup": [
+              "fake support"
+            ],
+            "caption": "Aksar skaimar aapko kisi"
+          },
+          "mood": null,
+          "say_hi": "अक्सर स्कैमर आपको किसी मुसीबत में फंसा हुआ बताते हैं और मदद के नाम पर पैसे मांगते हैं।",
+          "say_from": "अक्सर स्कैमर आपको किसी मुसीबत में फंसा हुआ बताते हैं और मदद के नाम पर पैसे मांगते हैं।"
+        }
+      ],
+      "narration_hi": "यह एक तरह का दबाव बनाने का तरीका है ताकि आप उनके प्यार में पड़ने लग जाएं और अपनी बुद्धि का इस्तेमाल न करें। पैसे मांगने के लिए अजीब बहाने बनाना यदि कोई अचानक आपको पैसे देने के लिए कहता है, खासकर अगर वह व्यक्ति आपसे पहले बात नहीं करता है तो यह लाल झंडा है। अक्सर स्कैमर आपको किसी मुसीबत में फंसा हुआ बताते हैं और मदद के नाम पर पैसे मांगते हैं।"
+    },
+    {
+      "on_screen": "Pahchanna zaroori: lal jhande dekhen!",
+      "beats": [
+        {
+          "say": "Suraksha ke baare mein gopniyta banaye rakhne ki maang karna scammers aksar aapki vyaktigat jankari aur tasviren gupt rakhne ke liye dabav dalte hain.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "tasviren gupt rakhne",
+                "icon": "shield"
+              },
+              {
+                "label": "vyaktigat jankari",
+                "icon": "lock"
+              },
+              {
+                "label": "dabav dalte hain",
+                "icon": "hacker"
+              }
+            ],
+            "note": "ek chhoti line"
+          },
+          "mood": "warn",
+          "pop": "dabav dalte hain",
+          "say_hi": "सुरक्षा के बारे में गोपनीयता बनाए रखने की मांग करना स्कैमर्स अक्सर आपकी व्यक्तिगत जानकारी और तस्वीरें गुप्त रखने के लिए दबाव डालते हैं।",
+          "say_from": "सुरक्षा के बारे में गोपनीयता बनाए रखने की मांग करना स्कैमर्स अक्सर आपकी व्यक्तिगत जानकारी और तस्वीरें गुप्त रखने के लिए दबाव डालते हैं।"
+        },
+        {
+          "say": "Ve keh sakte hain ki unhen aapki tasviron ko dekhne se koi nahi janta,",
+          "visual": {
+            "type": "photo",
+            "query": "see relationship",
+            "backup": [
+              "check love"
+            ],
+            "caption": "Ve keh sakte hain",
+            "file": "images/photos/s09_b01.jpg",
+            "credit": "ESA/Hubble & NASA, K. Larson et al. / Public domain"
+          },
+          "mood": "explain",
+          "pop": "nijiyat bharpe",
+          "say_hi": "वे कह सकते हैं कि उन्हें आपकी तस्वीरों को देखने से कोई नहीं जानता,",
+          "say_from": "वे कह सकते हैं कि उन्हें आपकी तस्वीरों को देखने से कोई नहीं जानता,"
+        },
+        {
+          "say": "Ya ve keh sakte hain ki unhen aapki niji baton ko jaanne ki zaroorat hai taaki ve aapko behtar samajh saken.",
+          "visual": {
+            "type": "icon",
+            "icon": "phone",
+            "text": "behtar samajh saken"
+          },
+          "mood": "think",
+          "pop": "behtar samajh saken",
+          "say_hi": "या वे कह सकते हैं कि उन्हें आपकी निजी बातों को जानने की जरूरत है ताकि वे आपको बेहतर समझ सकें।",
+          "say_from": "या वे कह सकते हैं कि उन्हें आपकी निजी बातों को जानने की जरूरत है ताकि वे आपको बेहतर समझ सकें।"
+        },
+        {
+          "say": "Online video call ko asvikar karna koi bhi yadi online video call svikar karne se inkar kar de, to iska matlab hai ki vah vyakti jhuth bol raha hai.",
+          "visual": {
+            "type": "photo",
+            "query": "video call screen",
+            "caption": "online call"
+          },
+          "mood": "warn",
+          "pop": "inkar kar de",
+          "say_hi": "ऑनलाइन वीडियो कॉल को अस्वीकार करना कोई भी यदि ऑनलाइन वीडियो कॉल स्वीकार करने से इनकार कर दे, तो इसका मतलब है कि वह व्यक्ति झूठ बोल रहा है।",
+          "say_from": "ऑनलाइन वीडियो कॉल को अस्वीकार करना कोई भी यदि ऑनलाइन वीडियो कॉल स्वीकार करने से इनकार कर दे, तो इसका मतलब है कि वह व्यक्ति झूठ बोल रहा है।"
+        }
+      ],
+      "narration_hi": "सुरक्षा के बारे में गोपनीयता बनाए रखने की मांग करना स्कैमर्स अक्सर आपकी व्यक्तिगत जानकारी और तस्वीरें गुप्त रखने के लिए दबाव डालते हैं। वे कह सकते हैं कि उन्हें आपकी तस्वीरों को देखने से कोई नहीं जानता, या वे कह सकते हैं कि उन्हें आपकी निजी बातों को जानने की जरूरत है ताकि वे आपको बेहतर समझ सकें। ऑनलाइन वीडियो कॉल को अस्वीकार करना कोई भी यदि ऑनलाइन वीडियो कॉल स्वीकार करने से इनकार कर दे, तो इसका मतलब है कि वह व्यक्ति झूठ बोल रहा है।"
+    },
+    {
+      "on_screen": "Lal jhande dekho, jhuth bol raha hai",
+      "beats": [
+        {
+          "say": "To iska matlab hai ki vah vyakti jhuth bol raha hai. Vastavik rishton mein log video call ke liye taiyaan rahte hain,",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "camera",
+                "label": "Video"
+              },
+              {
+                "icon": "speech",
+                "label": "Baat"
+              }
+            ]
+          },
+          "mood": "think",
+          "pop": "inkar",
+          "say_hi": "तो इसका मतलब है कि वह व्यक्ति झूठ बोल रहा है। वास्तविक रिश्तों में लोग वीडियो कॉल के लिए तैयार रहते हैं,",
+          "say_from": "तो इसका मतलब है कि वह व्यक्ति झूठ बोल रहा है। वास्तविक रिश्तों में लोग वीडियो कॉल के लिए तैयार रहते हैं,"
+        },
+        {
+          "say": "Lekin skaimar aisa karne se inkar karte hain taaki aap unhen na dekh saken aur ve aapki pehchan chhipa saken.",
+          "visual": {
+            "type": "photo",
+            "query": "red flag",
+            "caption": "Lal jhande"
+          },
+          "mood": "warn",
+          "pop": "pehchan",
+          "say_hi": "लेकिन स्कैमर ऐसा करने से इनकार करते हैं ताकि आप उन्हें न देख सकें और वे आपकी पहचान छिपा सकें।",
+          "say_from": "लेकिन स्कैमर ऐसा करने से इनकार करते हैं ताकि आप उन्हें न देख सकें और वे आपकी पहचान छिपा सकें।"
+        }
+      ],
+      "narration_hi": "तो इसका मतलब है कि वह व्यक्ति झूठ बोल रहा है। वास्तविक रिश्तों में लोग वीडियो कॉल के लिए तैयार रहते हैं, लेकिन स्कैमर ऐसा करने से इनकार करते हैं ताकि आप उन्हें न देख सकें और वे आपकी पहचान छिपा सकें।"
+    },
+    {
+      "on_screen": "Phansae gaye hone paar kya karein?",
+      "beats": [
+        {
+          "say": "Ab asli baat: phansae gaye hone paar kya karein?",
+          "say_from": "अब असली बात: फंसाए गए होने पर क्या करें?",
+          "say_hi": "अब असली बात: फंसाए गए होने पर क्या करें?",
+          "locked": true,
+          "visual": {
+            "type": "chapter",
+            "label": "Agli baat"
+          },
+          "mood": "think"
+        }
+      ],
+      "narration_hi": "अब असली बात: फंसाए गए होने पर क्या करें?"
+    },
+    {
+      "on_screen": "Phansae gaye hone paar kya karein?",
+      "beats": [
+        {
+          "say": "Suniye, ye to sach mein badi ajib baat hai, hai na? Aajkal log online pyar karne lage hain, paar ye pyar asli nahi hota.",
+          "visual": {
+            "type": "photo",
+            "query": "online pyar",
+            "backup": [
+              "fake relationship"
+            ],
+            "caption": "Suniye, ye to sach"
+          },
+          "mood": "think",
+          "pop": "dhokha",
+          "say_hi": "सुनिए, ये तो सच में बड़ी अजीब बात है, है ना? आजकल लोग ऑनलाइन प्यार करने लगे हैं, पर ये प्यार असली नहीं होता।",
+          "say_from": "सुनिए, ये तो सच में बड़ी अजीब बात है, है ना? आजकल लोग ऑनलाइन प्यार करने लगे हैं, पर ये प्यार असली नहीं होता।"
+        },
+        {
+          "say": "Ye ek computer program hota hai, jo aapko dhokha de sakta hai.",
+          "visual": {
+            "type": "icon",
+            "icon": "hacker",
+            "text": "Computer program jodta hai"
+          },
+          "mood": "warn",
+          "pop": "program",
+          "say_hi": "ये एक कंप्यूटर प्रोग्राम होता है, जो आपको धोखा दे सकता है।",
+          "say_from": "ये एक कंप्यूटर प्रोग्राम होता है, जो आपको धोखा दे सकता है।"
+        },
+        {
+          "say": "Sochie, koi aapko bahut jaldi bahut zyada pyar jata raha hai, har baat paar aapka saath de raha hai,",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Jaldi pyar",
+                "icon": "phone"
+              },
+              {
+                "label": "Saath de raha",
+                "icon": "wifi"
+              }
+            ],
+            "note": "Kya saath hai?"
+          },
+          "mood": "explain",
+          "pop": "saath",
+          "say_hi": "सोचिए, कोई आपको बहुत जल्दी बहुत ज्यादा प्यार जता रहा है, हर बात पर आपका साथ दे रहा है,",
+          "say_from": "सोचिए, कोई आपको बहुत जल्दी बहुत ज्यादा प्यार जता रहा है, हर बात पर आपका साथ दे रहा है,"
+        },
+        {
+          "say": "Ye sab ek dhokha ho sakta hai. Scammers aksar aisa karte hain taaki aap unke chakkar mein pad jaen aur apni aam samjhadari bhul jaen.",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "hacker",
+                "label": "Dhokha"
+              },
+              {
+                "icon": "lock",
+                "label": "Security"
+              }
+            ]
+          },
+          "mood": "shock",
+          "pop": "nhi jaye",
+          "say_hi": "ये सब एक धोखा हो सकता है। स्कैमर्स अक्सर ऐसा करते हैं ताकि आप उनके चक्कर में पड़ जाएं और अपनी आम समझदारी भूल जाएं।",
+          "say_from": "ये सब एक धोखा हो सकता है। स्कैमर्स अक्सर ऐसा करते हैं ताकि आप उनके चक्कर में पड़ जाएं और अपनी आम समझदारी भूल जाएं।"
+        }
+      ],
+      "narration_hi": "सुनिए, ये तो सच में बड़ी अजीब बात है, है ना? आजकल लोग ऑनलाइन प्यार करने लगे हैं, पर ये प्यार असली नहीं होता। ये एक कंप्यूटर प्रोग्राम होता है, जो आपको धोखा दे सकता है। सोचिए, कोई आपको बहुत जल्दी बहुत ज्यादा प्यार जता रहा है, हर बात पर आपका साथ दे रहा है, ये सब एक धोखा हो सकता है। स्कैमर्स अक्सर ऐसा करते हैं ताकि आप उनके चक्कर में पड़ जाएं और अपनी आम समझदारी भूल जाएं।"
+    },
+    {
+      "on_screen": "Phansae gaye hone paar kya karein?",
+      "beats": [
+        {
+          "say": "Lekin, yaad rakhie, agar aapko kuch ajib lage to turant karravai karni chahiye.",
+          "visual": {
+            "type": "photo",
+            "query": "ajib lage",
+            "backup": [
+              "strange feeling"
+            ],
+            "caption": "Lekin, yaad rakhie, agar"
+          },
+          "mood": "warn",
+          "pop": "block",
+          "say_hi": "लेकिन, याद रखिए, अगर आपको कुछ अजीब लगे तो तुरंत कार्रवाई करनी चाहिए।",
+          "say_from": "लेकिन, याद रखिए, अगर आपको कुछ अजीब लगे तो तुरंत कार्रवाई करनी चाहिए।"
+        },
+        {
+          "say": "Sabse pehle, us aadmi ko block kar dijie jisse baat kar rahe hain.",
+          "visual": {
+            "type": "photo",
+            "query": "block aadmi",
+            "backup": [
+              "block user"
+            ],
+            "caption": "Sabse pehle, us aadmi"
+          },
+          "mood": "explain",
+          "pop": "block",
+          "say_hi": "सबसे पहले, उस आदमी को ब्लॉक कर दीजिए जिससे बात कर रहे हैं।",
+          "say_from": "सबसे पहले, उस आदमी को ब्लॉक कर दीजिए जिससे बात कर रहे हैं।"
+        },
+        {
+          "say": "Use kabhi dobara message ya call na kijie. Phir, apne bank account ki jankari ko surakshit rakhen, kisi ko bhi paise transfer na karein.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Bank account surakshit rakhen",
+                "icon": "lock"
+              },
+              {
+                "label": "Paise transfer na karein",
+                "icon": "money"
+              }
+            ],
+            "note": "ek chhoti line"
+          },
+          "mood": "think",
+          "pop": "secure",
+          "say_hi": "उसे कभी दोबारा मैसेज या कॉल न कीजिए। फिर, अपने बैंक अकाउंट की जानकारी को सुरक्षित रखें, किसी को भी पैसे ट्रांसफर न करें।",
+          "say_from": "उसे कभी दोबारा मैसेज या कॉल न कीजिए। फिर, अपने बैंक अकाउंट की जानकारी को सुरक्षित रखें, किसी को भी पैसे ट्रांसफर न करें।"
+        },
+        {
+          "say": "Agar usne apse paise mange, to inkar kar dijie. Ye bahut jaruri hai!",
+          "visual": {
+            "type": "flow",
+            "nodes": [
+              {
+                "icon": "user",
+                "label": "Inkaar kar dijie"
+              },
+              {
+                "icon": "bank",
+                "label": "Paise na de dijie"
+              }
+            ]
+          },
+          "mood": "warn",
+          "pop": "inkaar",
+          "say_hi": "अगर उसने आपसे पैसे मांगे, तो इनकार कर दीजिए। ये बहुत जरूरी है!",
+          "say_from": "अगर उसने आपसे पैसे मांगे, तो इनकार कर दीजिए। ये बहुत जरूरी है!"
+        }
+      ],
+      "narration_hi": "लेकिन, याद रखिए, अगर आपको कुछ अजीब लगे तो तुरंत कार्रवाई करनी चाहिए। सबसे पहले, उस आदमी को ब्लॉक कर दीजिए जिससे बात कर रहे हैं। उसे कभी दोबारा मैसेज या कॉल न कीजिए। फिर, अपने बैंक अकाउंट की जानकारी को सुरक्षित रखें, किसी को भी पैसे ट्रांसफर न करें। अगर उसने आपसे पैसे मांगे, तो इनकार कर दीजिए। ये बहुत जरूरी है!"
+    },
+    {
+      "on_screen": "Phansae gaye hone paar kya karein?",
+      "beats": [
+        {
+          "say": "Apne doston aur parivar valon ko bhi is baare mein bataie. Unse baat karke aapko himmat milegi aur aap samjhadari se kaam le payenge.",
+          "visual": {
+            "type": "photo",
+            "query": "doston aur parivar valon",
+            "backup": [
+              "family and friends"
+            ],
+            "caption": "Apne doston aur parivar"
+          },
+          "mood": "think",
+          "pop": "himan",
+          "say_hi": "अपने दोस्तों और परिवार वालों को भी इस बारे में बताइए। उनसे बात करके आपको हिम्मत मिलेगी और आप समझदारी से काम ले पाएंगे।",
+          "say_from": "अपने दोस्तों और परिवार वालों को भी इस बारे में बताइए। उनसे बात करके आपको हिम्मत मिलेगी और आप समझदारी से काम ले पाएंगे।"
+        },
+        {
+          "say": "Agar aapko lagta hai ki aap musibat mein hain, to turant police ya saibar helpline ko report karein.",
+          "visual": {
+            "type": "phone_call",
+            "caller": "Police",
+            "number": "+91 98XXX XXXXX"
+          },
+          "mood": "warn",
+          "pop": "turant call",
+          "say_hi": "अगर आपको लगता है कि आप मुसीबत में हैं, तो तुरंत पुलिस या साइबर हेल्पलाइन को रिपोर्ट करें।",
+          "say_from": "अगर आपको लगता है कि आप मुसीबत में हैं, तो तुरंत पुलिस या साइबर हेल्पलाइन को रिपोर्ट करें।"
+        },
+        {
+          "say": "Ye bahut zaroori hai ki aap apni jankari surakshit rakhen. Agar koi apse aapki niji tasviren ya video gupt rakhne ke liye kahe,",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "niji tasvir gupt rakhna",
+                "icon": "shield"
+              },
+              {
+                "label": "scammer se manna nahi",
+                "icon": "warning"
+              }
+            ],
+            "note": "ek chhoti line"
+          },
+          "mood": "explain",
+          "pop": "manna nahi",
+          "say_hi": "ये बहुत ज़रूरी है कि आप अपनी जानकारी सुरक्षित रखें। अगर कोई आपसे आपकी निजी तस्वीरें या वीडियो गुप्त रखने के लिए कहे,",
+          "say_from": "ये बहुत ज़रूरी है कि आप अपनी जानकारी सुरक्षित रखें। अगर कोई आपसे आपकी निजी तस्वीरें या वीडियो गुप्त रखने के लिए कहे,"
+        },
+        {
+          "say": "To manna kar dijie. Ye scammers ka ek tareeka hota hai aapki jankari churane ka.",
+          "visual": {
+            "type": "photo",
+            "query": "data center",
+            "caption": "niji data surakshit rakhna",
+            "file": "images/photos/s14_b03.jpg",
+            "credit": "Rsparks3 / CC0"
+          },
+          "mood": "warn",
+          "pop": "surakshit",
+          "say_hi": "तो मना कर दीजिए। ये स्कैमर्स का एक तरीका होता है आपकी जानकारी चुराने का।",
+          "say_from": "तो मना कर दीजिए। ये स्कैमर्स का एक तरीका होता है आपकी जानकारी चुराने का।"
+        }
+      ],
+      "narration_hi": "अपने दोस्तों और परिवार वालों को भी इस बारे में बताइए। उनसे बात करके आपको हिम्मत मिलेगी और आप समझदारी से काम ले पाएंगे। अगर आपको लगता है कि आप मुसीबत में हैं, तो तुरंत पुलिस या साइबर हेल्पलाइन को रिपोर्ट करें। ये बहुत ज़रूरी है कि आप अपनी जानकारी सुरक्षित रखें। अगर कोई आपसे आपकी निजी तस्वीरें या वीडियो गुप्त रखने के लिए कहे, तो मना कर दीजिए। ये स्कैमर्स का एक तरीका होता है आपकी जानकारी चुराने का।"
+    },
+    {
+      "on_screen": "Phansae gaye hone paar kya karein?",
+      "beats": [
+        {
+          "say": "Aur agar wo aapko kisi musibat mein phansane ki koshish kare, jaise ki aapka saman customs mein attack huye ho,",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "satark rahein",
+                "icon": "shield"
+              },
+              {
+                "label": "buddhi ka istemal",
+                "icon": "brain"
+              },
+              {
+                "label": "sawaal puchhie",
+                "icon": "question"
+              }
+            ],
+            "note": "apni apni jankari"
+          },
+          "mood": "think",
+          "pop": "satark rahein",
+          "say_hi": "और अगर वो आपको किसी मुसीबत में फंसाने की कोशिश करे, जैसे कि आपका सामान कस्टम्स में अटके हुए हो,",
+          "say_from": "और अगर वो आपको किसी मुसीबत में फंसाने की कोशिश करे, जैसे कि आपका सामान कस्टम्स में अटके हुए हो,"
+        },
+        {
+          "say": "To ghabraie mat. Sabse zaroori baat ye hai ki aap satark rahein aur apni buddhi ka istemal karein.",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "alarm",
+                "label": "Alert"
+              },
+              {
+                "icon": "eye",
+                "label": "Watch"
+              }
+            ]
+          },
+          "mood": "warn",
+          "pop": "savdhan rakhie",
+          "say_hi": "तो घबराइए मत। सबसे ज़रूरी बात ये है कि आप सतर्क रहें और अपनी बुद्धि का इस्तेमाल करें।",
+          "say_from": "तो घबराइए मत। सबसे ज़रूरी बात ये है कि आप सतर्क रहें और अपनी बुद्धि का इस्तेमाल करें।"
+        },
+        {
+          "say": "Agar aapko kuch bhi samajh mein nahi aata hai, to sawaal puchhie aur jankari jutaen.",
+          "visual": {
+            "type": "photo",
+            "query": "customs checkpoint",
+            "caption": "samandar ke kareeb",
+            "file": "images/photos/s15_b02.jpg",
+            "credit": "Rakoon / CC0"
+          },
+          "mood": "explain",
+          "pop": "attack huye saman",
+          "say_hi": "अगर आपको कुछ भी समझ में नहीं आता है, तो सवाल पूछिए और जानकारी जुटाएं।",
+          "say_from": "अगर आपको कुछ भी समझ में नहीं आता है, तो सवाल पूछिए और जानकारी जुटाएं।"
+        },
+        {
+          "say": "Yaad rakhie, pyar mein dhokha hona buri baat hai, paar agar aap savdhan rahenge to aap khud ko bach sakte hain.",
+          "visual": {
+            "type": "photo",
+            "query": "pyar mein dhokha",
+            "backup": [
+              "love fraud"
+            ],
+            "caption": "Yaad rakhie, pyar mein"
+          },
+          "mood": "explain",
+          "pop": "khud ko bach sakte hain",
+          "say_hi": "याद रखिए, प्यार में धोखा होना बुरी बात है, पर अगर आप सावधान रहेंगे तो आप खुद को बचा सकते हैं।",
+          "say_from": "याद रखिए, प्यार में धोखा होना बुरी बात है, पर अगर आप सावधान रहेंगे तो आप खुद को बचा सकते हैं।"
+        }
+      ],
+      "narration_hi": "और अगर वो आपको किसी मुसीबत में फंसाने की कोशिश करे, जैसे कि आपका सामान कस्टम्स में अटके हुए हो, तो घबराइए मत। सबसे ज़रूरी बात ये है कि आप सतर्क रहें और अपनी बुद्धि का इस्तेमाल करें। अगर आपको कुछ भी समझ में नहीं आता है, तो सवाल पूछिए और जानकारी जुटाएं। याद रखिए, प्यार में धोखा होना बुरी बात है, पर अगर आप सावधान रहेंगे तो आप खुद को बचा सकते हैं।"
+    },
+    {
+      "on_screen": "Surakshit rahein: satarkata sabse zaroori!",
+      "beats": [
+        {
+          "say": "Aur ab wo baat, jo aapke kaam aaegi: surakshit rahein: satarkata sabse zaroori!",
+          "say_from": "और अब वो बात, जो आपके काम आएगी: सुरक्षित रहें: सतर्कता सबसे ज़रूरी!",
+          "say_hi": "और अब वो बात, जो आपके काम आएगी: सुरक्षित रहें: सतर्कता सबसे ज़रूरी!",
+          "locked": true,
+          "visual": {
+            "type": "chapter",
+            "label": "Aakhri baat"
+          },
+          "mood": "think"
+        }
+      ],
+      "narration_hi": "और अब वो बात, जो आपके काम आएगी: सुरक्षित रहें: सतर्कता सबसे ज़रूरी!"
+    },
+    {
+      "on_screen": "Surakshit Rahein: Satarkata Sabse Zaroori!",
+      "beats": [
+        {
+          "say": "Kisi bhi online rishte paar jaldi bharosa na karein. Pehchan janchne ke liye hamesha khud se koshish karein, bhale hi video call ho.",
+          "visual": {
+            "type": "pen",
+            "items": [
+              {
+                "label": "Video Call",
+                "icon": "phone"
+              },
+              {
+                "label": "Pehchan",
+                "icon": "shield"
+              },
+              {
+                "label": "Satya",
+                "icon": "lock"
+              }
+            ],
+            "note": "Aapko pahliche pehchan karna chahiye"
+          },
+          "mood": "warn",
+          "pop": "Pehchan Satyapit Karein",
+          "say_hi": "किसी भी ऑनलाइन रिश्ते पर जल्दी भरोसा न करें। पहचान जांचने के लिए हमेशा खुद से कोशिश करें, भले ही वीडियो कॉल हो।",
+          "say_from": "किसी भी ऑनलाइन रिश्ते पर जल्दी भरोसा न करें। पहचान जांचने के लिए हमेशा खुद से कोशिश करें, भले ही वीडियो कॉल हो।"
+        },
+        {
+          "say": "Data aur algorithm ka upyog karke scammers vyaktigat batchit ko anukulit karte hain.",
+          "visual": {
+            "type": "symbols",
+            "items": [
+              {
+                "icon": "cloud",
+                "label": "Data"
+              },
+              {
+                "icon": "chart_up",
+                "label": "Use"
+              }
+            ]
+          },
+          "mood": "think",
+          "pop": "AI Generated Dhokhe",
+          "say_hi": "डेटा और एल्गोरिदम का उपयोग करके स्कैमर्स व्यक्तिगत बातचीत को अनुकूलित करते हैं।",
+          "say_from": "डेटा और एल्गोरिदम का उपयोग करके स्कैमर्स व्यक्तिगत बातचीत को अनुकूलित करते हैं।"
+        },
+        {
+          "say": "Online pyar ki talash mein rahein, lekin savdhan rahein AI-generated dhokhe ke khatron se khud ko bachaen.",
+          "visual": {
+            "type": "photo",
+            "query": "ai generated face",
+            "caption": "Dhokha Ka Rishta",
+            "file": "images/photos/s17_b02.jpg",
+            "credit": "Midjourney prompted by Dennis Sylvester  / Public domain"
+          },
+          "mood": "shock",
+          "pop": "Online Pyar",
+          "say_hi": "ऑनलाइन प्यार की तलाश में रहें, लेकिन सावधान रहें AI-जनरेटेड धोखे के खतरों से खुद को बचाएं।",
+          "say_from": "ऑनलाइन प्यार की तलाश में रहें, लेकिन सावधान रहें AI-जनरेटेड धोखे के खतरों से खुद को बचाएं।"
+        }
+      ],
+      "narration_hi": "किसी भी ऑनलाइन रिश्ते पर जल्दी भरोसा न करें। पहचान जांचने के लिए हमेशा खुद से कोशिश करें, भले ही वीडियो कॉल हो। डेटा और एल्गोरिदम का उपयोग करके स्कैमर्स व्यक्तिगत बातचीत को अनुकूलित करते हैं। ऑनलाइन प्यार की तलाश में रहें, लेकिन सावधान रहें AI-जनरेटेड धोखे के खतरों से खुद को बचाएं।"
+    },
+    {
+      "on_screen": "Ye yaad rakhna",
+      "beats": [
+        {
+          "say": "Aur agar aapke ya kisi apne ke saath aisa ho jae, to turant 1930 paar call kijie, aur cybercrime.gov.in paar shikayat kijie.",
+          "say_from": "और अगर आपके या किसी अपने के साथ ऐसा हो जाए, तो तुरंत 1930 पर कॉल कीजिए, और cybercrime.gov.in पर शिकायत कीजिए।",
+          "say_hi": "और अगर आपके या किसी अपने के साथ ऐसा हो जाए, तो तुरंत 1930 पर कॉल कीजिए, और cybercrime.gov.in पर शिकायत कीजिए।",
+          "locked": true,
+          "mood": "warn",
+          "visual": {
+            "type": "stat",
+            "value": "1930",
+            "label": "Cybercrime helpline | cybercrime.gov.in"
+          }
+        },
+        {
+          "say": "Comment mein bataie, kya aapke paas kabhi aisa kuch aaya hai? Aisi hi aasaan baton ke liye snack code ko subscribe kar lijie.",
+          "say_from": "कमेंट में बताइए, क्या आपके पास कभी ऐसा कुछ आया है? ऐसी ही आसान बातों के लिए स्नैक कोड को सब्सक्राइब कर लीजिए।",
+          "say_hi": "कमेंट में बताइए, क्या आपके पास कभी ऐसा कुछ आया है? ऐसी ही आसान बातों के लिए स्नैक कोड को सब्सक्राइब कर लीजिए।",
+          "locked": true,
+          "mood": "happy",
+          "visual": {
+            "type": "host",
+            "text": "Comment karo aur subscribe karo"
+          }
+        }
+      ],
+      "narration_hi": "और अगर आपके या किसी अपने के साथ ऐसा हो जाए, तो तुरंत 1930 पर कॉल कीजिए, और cybercrime.gov.in पर शिकायत कीजिए। कमेंट में बताइए, क्या आपके पास कभी ऐसा कुछ आया है? ऐसी ही आसान बातों के लिए स्नैक कोड को सब्सक्राइब कर लीजिए।"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{"ep": 1, "kind": "event", "text": "King Dasaratha and Queen Kausalya welcome Rama at dawn.", "chars": ["dasaratha", "kausalya"]}
+{"ep": 1, "kind": "state", "text": "Rama is born with divine attributes: lotus-red eyes, lengthy arms, roseate lips, and a voice like drumbeat.", "chars": ["rama"]}
+{"ep": 1, "kind": "event", "text": "Sage Viswamitra arrives in Ayodhya seeking help against evil forces.", "chars": ["viswamitra"]}
+{"ep": 1, "kind": "promise", "text": "Dasaratha promises to place his trust in Rama's path.", "chars": ["dasaratha", "rama"]}
+{"ep": 1, "kind": "event", "text": "Rama expresses his desire to serve justice and protect the innocent.", "chars": ["rama"]}
+{"ep": 1, "kind": "relation", "text": "Rama and Viswamitra form a mentor-protégé relationship.", "chars": ["rama", "viswamitra"]}
+{"ep": 1, "kind": "event", "text": "Rama and his brother agree to fight for justice together in Dandakaranya.", "chars": ["rama", "brother"]}
+{"ep": 2, "kind": "event", "text": "Rama and Lakshmana enter the Dandakaranya forest under Viswamitra's guidance.", "chars": ["rama", "lakshmana", "viswamitra"]}
+{"ep": 2, "kind": "state", "text": "Tadaka, a yaksha woman turned rakshasi, confronts Rama and Lakshmana in the misty forest.", "chars": ["tadaka"]}
+{"ep": 2, "kind": "event", "text": "Rama refuses to judge Tadaka by gender and challenges her for her deeds.", "chars": ["rama", "tadaka"]}
+{"ep": 2, "kind": "event", "text": "Lakshmana stands up to Tadaka, showing his loyalty and courage.", "chars": ["lakshmana", "tadaka"]}
+{"ep": 2, "kind": "event", "text": "Rama defeats Tadaka with a single arrow, breaking her curse and ending her dark power.", "chars": ["rama", "tadaka"]}
+{"ep": 2, "kind": "object", "text": "Viswamitra gives Rama a divine weapon, an astra, to protect the innocent.", "chars": ["viswamitra", "rama"]}
+{"ep": 2, "kind": "object", "text": "Lakshmana receives a sacred sword, a sastra, from Viswamitra.", "chars": ["viswamitra", "lakshmana"]}
+{"ep": 2, "kind": "promise", "text": "Rama vows to use his divine weapons only to defend the innocent.", "chars": ["rama"]}
+{"ep": 3, "kind": "event", "text": "Rama accepts the divine bow Shiv Dhanush from King Janaka.", "chars": ["rama", "janaka"]}
+{"ep": 3, "kind": "event", "text": "Rama breaks the Shiv Dhanush in two to demonstrate his strength and humility.", "chars": ["rama"]}
+{"ep": 3, "kind": "event", "text": "Sita expresses her admiration for Rama's divine power.", "chars": ["sita", "rama"]}
+{"ep": 3, "kind": "event", "text": "King Janaka announces Sita's hand in marriage to the worthy soul.", "chars": ["janaka", "sita"]}
+{"ep": 3, "kind": "event", "text": "Rama accepts Sita's hand in marriage, vowing to protect her and Ayodhya.", "chars": ["rama", "sita"]}
+{"ep": 3, "kind": "event", "text": "Lakshmana pledges his loyalty to Rama and vows to protect their homeland.", "chars": ["lakshmana", "rama"]}
+{"ep": 3, "kind": "event", "text": "Rama, Lakshmana, and Sita approach Ayodhya's gates under cover of night.", "chars": ["rama", "lakshmana", "sita"]}
+{"ep": 3, "kind": "object", "text": "Shiv Dhanush is a divine bow crafted by Lord Shiva himself.", "chars": ["janaka", "rama"]}
+{"ep": 4, "kind": "event", "text": "Kaikeyi demands that Rama be exiled and Bharata made king.", "chars": ["kaikeyi", "dasaratha"]}
+{"ep": 4, "kind": "state", "text": "Dasaratha is deeply sorrowful after granting Kaikeyi's wish.", "chars": ["dasaratha"]}
+{"ep": 4, "kind": "event", "text": "Rama is set to leave Ayodhya, beginning his exile.", "chars": ["rama"]}
+{"ep": 4, "kind": "relation", "text": "Kaikeyi and Dasaratha's relationship becomes strained as she pushes for her demand.", "chars": ["kaikeyi", "dasaratha"]}
+{"ep": 4, "kind": "promise", "text": "Rama vows to return to Ayodhya when the time is right.", "chars": ["rama"]}
+{"ep": 4, "kind": "secret", "text": "Kaikeyi's true motives remain hidden, as she may have ulterior intentions.", "chars": ["kaikeyi"]}

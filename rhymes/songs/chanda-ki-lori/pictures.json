@@ -1,0 +1,793 @@
+{
+ "pictures": [
+  {
+   "id": "p01",
+   "role": "title",
+   "scene": 0,
+   "lines": [],
+   "place": "night",
+   "cast": [
+    "moon"
+   ],
+   "text": "Chanda Ki Lori",
+   "effect": "stars",
+   "prompt": "3D animated feature film still for a children's song video, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field. Scene: Chanda smiling and waving at the viewer, big and close, title picture of a song called 'Chanda Ki Lori', empty bright sky in the top third for the title. Characters: Chanda (a smiling cartoon crescent moon, soft pale yellow, with closed happy eyes). Place: a calm night sky over a small Indian village, many twinkling stars, soft blue light. wide 16:9 picture, characters in the middle third, keep the bottom fifth of the picture simple (song words go there), no text, no letters, no logo, no watermark.",
+   "seed": 796577864,
+   "ai": "segmind/SSD-1B",
+   "ai_file": "p01.png",
+   "ai_layers": true,
+   "sd_prompt": [
+    "empty a calm night sky over a small Indian village, many twinkling stars, soft blue light, wide view, nobody there, open ground in the middle, bright open sky in the top half",
+    "a calm night sky over a small Indian village, background art for a cartoon, no characters, 3D animated feature film still, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field, detailed textures"
+   ]
+  },
+  {
+   "id": "p02",
+   "role": "verse",
+   "scene": 0,
+   "lines": [
+    [
+     0,
+     0
+    ]
+   ],
+   "place": "night",
+   "cast": [
+    "moon",
+    "star"
+   ],
+   "text": "चंदा रानी रात में आया",
+   "effect": "stars",
+   "show": "Chanda the moon arrives at night, shining brightly.",
+   "setting": "A dark sky",
+   "action": "arrive",
+   "prompt": "3D animated feature film still for a children's song video, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field. Scene: Chanda the moon arrives at night, shining brightly. Characters: Chanda (a smiling cartoon crescent moon, soft pale yellow, with closed happy eyes); Tara (a small smiling five-pointed star, glowing yellow). Place: a calm night sky over a small Indian village, many twinkling stars, soft blue light. wide 16:9 picture, characters in the middle third, keep the bottom fifth of the picture simple (song words go there), no text, no letters, no logo, no watermark.",
+   "seed": 859821308,
+   "ai": "segmind/SSD-1B",
+   "ai_file": "p02.png",
+   "ai_layers": true,
+   "sd_prompt": [
+    "empty A dark sky, nobody there, open floor in the middle",
+    "A dark sky, background art for an animated film, no characters, 3D animated feature film still, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field, detailed textures"
+   ]
+  },
+  {
+   "id": "p03",
+   "role": "verse",
+   "scene": 0,
+   "lines": [
+    [
+     0,
+     1
+    ]
+   ],
+   "place": "night",
+   "cast": [
+    "moon",
+    "star"
+   ],
+   "text": "प्यारी रोशनी से हमको भाया",
+   "effect": "stars",
+   "show": "Chanda and Tara illuminate the night with their gentle light.",
+   "setting": "A dimly lit bedroom, a window showing the night sky",
+   "action": "illuminate",
+   "prompt": "3D animated feature film still for a children's song video, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field. Scene: Chanda and Tara illuminate the night with their gentle light. Characters: Chanda (a smiling cartoon crescent moon, soft pale yellow, with closed happy eyes); Tara (a small smiling five-pointed star, glowing yellow). Place: a calm night sky over a small Indian village, many twinkling stars, soft blue light. wide 16:9 picture, characters in the middle third, keep the bottom fifth of the picture simple (song words go there), no text, no letters, no logo, no watermark.",
+   "seed": 45091362,
+   "ai": "segmind/SSD-1B",
+   "ai_file": "p03.png",
+   "ai_layers": true,
+   "sd_prompt": [
+    "empty A dimly lit bedroom, a window showing the night sky, nobody there, open floor in the middle",
+    "A dimly lit bedroom, a window showing the night sky, background art for an animated film, no characters, 3D animated feature film still, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field, detailed textures"
+   ]
+  },
+  {
+   "id": "p04",
+   "role": "verse",
+   "scene": 0,
+   "lines": [
+    [
+     0,
+     2
+    ]
+   ],
+   "place": "night",
+   "cast": [
+    "moon",
+    "star"
+   ],
+   "text": "तारे सारे भी साथ चले",
+   "effect": "stars",
+   "show": "All the stars join Chanda as they travel through the night sky.",
+   "setting": "A clear night sky",
+   "action": "join",
+   "prompt": "3D animated feature film still for a children's song video, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field. Scene: All the stars join Chanda as they travel through the night sky. Characters: Chanda (a smiling cartoon crescent moon, soft pale yellow, with closed happy eyes); Tara (a small smiling five-pointed star, glowing yellow). Place: a calm night sky over a small Indian village, many twinkling stars, soft blue light. wide 16:9 picture, characters in the middle third, keep the bottom fifth of the picture simple (song words go there), no text, no letters, no logo, no watermark.",
+   "seed": 34629061,
+   "ai": "segmind/SSD-1B",
+   "ai_file": "p04.png",
+   "ai_layers": true,
+   "sd_prompt": [
+    "empty A clear night sky, nobody there, open floor in the middle",
+    "A clear night sky, background art for an animated film, no characters, 3D animated feature film still, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field, detailed textures"
+   ]
+  },
+  {
+   "id": "p05",
+   "role": "verse",
+   "scene": 0,
+   "lines": [
+    [
+     0,
+     3
+    ]
+   ],
+   "place": "night",
+   "cast": [
+    "moon",
+    "star"
+   ],
+   "text": "सितारों से हमको भाया",
+   "effect": "stars",
+   "show": "The stars shine brightly, lighting up the dark night.",
+   "setting": "A dark sky filled",
+   "action": "shine",
+   "prompt": "3D animated feature film still for a children's song video, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field. Scene: The stars shine brightly, lighting up the dark night. Characters: Chanda (a smiling cartoon crescent moon, soft pale yellow, with closed happy eyes); Tara (a small smiling five-pointed star, glowing yellow). Place: a calm night sky over a small Indian village, many twinkling stars, soft blue light. wide 16:9 picture, characters in the middle third, keep the bottom fifth of the picture simple (song words go there), no text, no letters, no logo, no watermark.",
+   "seed": 816854058,
+   "ai": "segmind/SSD-1B",
+   "ai_file": "p05.png",
+   "ai_layers": true,
+   "sd_prompt": [
+    "empty A dark sky filled, nobody there, open floor in the middle",
+    "A dark sky filled, background art for an animated film, no characters, 3D animated feature film still, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field, detailed textures"
+   ]
+  },
+  {
+   "id": "p06",
+   "role": "chorus",
+   "scene": 1,
+   "lines": [
+    [
+     1,
+     0
+    ]
+   ],
+   "place": "night",
+   "cast": [
+    "boy",
+    "girl",
+    "moon"
+   ],
+   "text": "आओ बच्चो, चलो हम गाएँ",
+   "effect": "stars",
+   "show": "Children are invited to dance and sing under the moonlight.",
+   "setting": "An open courtyard under a night-time night sky",
+   "action": "dance",
+   "prompt": "3D animated feature film still for a children's song video, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field. Scene: Children are invited to dance and sing under the moonlight. Characters: Chanda (a smiling cartoon crescent moon, soft pale yellow, with closed happy eyes); Tara (a small smiling five-pointed star, glowing yellow). Place: a calm night sky over a small Indian village, many twinkling stars, soft blue light. wide 16:9 picture, characters in the middle third, keep the bottom fifth of the picture simple (song words go there), no text, no letters, no logo, no watermark.",
+   "seed": 637273723,
+   "ai": "segmind/SSD-1B",
+   "ai_file": "p06.png",
+   "ai_layers": true,
+   "sd_prompt": [
+    "empty An open courtyard under a night-time night sky, nobody there, open floor in the middle",
+    "An open courtyard under a night-time night sky, background art for an animated film, no characters, 3D animated feature film still, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field, detailed textures"
+   ]
+  },
+  {
+   "id": "p07",
+   "role": "chorus",
+   "scene": 1,
+   "lines": [
+    [
+     1,
+     1
+    ]
+   ],
+   "place": "night",
+   "cast": [
+    "boy",
+    "girl",
+    "moon"
+   ],
+   "text": "चंदा और तारे हमको बुलाएँ",
+   "effect": "stars",
+   "show": "Chanda and Tara welcome the children to join them in the night.",
+   "setting": "A peaceful night-time field",
+   "action": "invite",
+   "prompt": "3D animated feature film still for a children's song video, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field. Scene: Chanda and Tara welcome the children to join them in the night. Characters: Chanda (a smiling cartoon crescent moon, soft pale yellow, with closed happy eyes); Tara (a small smiling five-pointed star, glowing yellow). Place: a calm night sky over a small Indian village, many twinkling stars, soft blue light. wide 16:9 picture, characters in the middle third, keep the bottom fifth of the picture simple (song words go there), no text, no letters, no logo, no watermark.",
+   "seed": 48745650,
+   "ai": "segmind/SSD-1B",
+   "ai_file": "p07.png",
+   "ai_layers": true,
+   "sd_prompt": [
+    "empty A peaceful night-time field, nobody there, open floor in the middle",
+    "A peaceful night-time field, background art for an animated film, no characters, 3D animated feature film still, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field, detailed textures"
+   ]
+  },
+  {
+   "id": "p08",
+   "role": "chorus",
+   "scene": 1,
+   "lines": [
+    [
+     1,
+     2
+    ]
+   ],
+   "place": "night",
+   "cast": [
+    "boy",
+    "girl",
+    "moon"
+   ],
+   "text": "रात की शांति में खेलें प्यारे",
+   "effect": "stars",
+   "show": "The children play and dance peacefully under the calm night sky.",
+   "setting": "An open space, a clear sky",
+   "action": "play",
+   "prompt": "3D animated feature film still for a children's song video, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field. Scene: The children play and dance peacefully under the calm night sky. Characters: Chanda (a smiling cartoon crescent moon, soft pale yellow, with closed happy eyes); Tara (a small smiling five-pointed star, glowing yellow). Place: a calm night sky over a small Indian village, many twinkling stars, soft blue light. wide 16:9 picture, characters in the middle third, keep the bottom fifth of the picture simple (song words go there), no text, no letters, no logo, no watermark.",
+   "seed": 45606073,
+   "ai": "segmind/SSD-1B",
+   "ai_file": "p08.png",
+   "ai_layers": true,
+   "sd_prompt": [
+    "empty An open space, a clear sky, at night, dark blue night sky, warm lamp light, nobody there, open floor in the middle",
+    "An open space, a clear sky, at night, dark blue night sky, warm lamp light, background art for an animated film, no characters, 3D animated feature film still, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field, detailed textures"
+   ]
+  },
+  {
+   "id": "p09",
+   "role": "chorus",
+   "scene": 1,
+   "lines": [
+    [
+     1,
+     3
+    ]
+   ],
+   "place": "night",
+   "cast": [
+    "boy",
+    "girl",
+    "moon"
+   ],
+   "text": "झूले नाचे, बनो सब न्यारे",
+   "effect": "stars",
+   "show": "Children swing and dance, glowing with joy under the stars.",
+   "setting": "A night-time playground, a swing",
+   "action": "dance",
+   "prompt": "3D animated feature film still for a children's song video, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field. Scene: Children swing and dance, glowing with joy under the stars. Characters: Chanda (a smiling cartoon crescent moon, soft pale yellow, with closed happy eyes); Tara (a small smiling five-pointed star, glowing yellow). Place: a calm night sky over a small Indian village, many twinkling stars, soft blue light. wide 16:9 picture, characters in the middle third, keep the bottom fifth of the picture simple (song words go there), no text, no letters, no logo, no watermark.",
+   "seed": 601487812,
+   "ai": "segmind/SSD-1B",
+   "ai_file": "p09.png",
+   "ai_layers": false,
+   "sd_prompt": [
+    "a chubby little Indian boy in a sky-blue t-shirt and orange shorts and a little Indian girl with two pigtails in a yellow frock sitting on a wooden swing hanging from a tree, swinging happily, A night-time playground, a swing, at night, warm lamp light, 3d cartoon, cute",
+    "a chubby little Indian boy in a sky-blue t-shirt and orange shorts and a little Indian girl with two pigtails in a yellow frock sitting on a wooden swing hanging from a tree, swinging happily, 3D animated feature film still, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field, detailed textures"
+   ]
+  },
+  {
+   "id": "p10",
+   "role": "verse",
+   "scene": 2,
+   "lines": [
+    [
+     2,
+     0
+    ]
+   ],
+   "place": "night",
+   "cast": [
+    "boy",
+    "moon",
+    "star"
+   ],
+   "text": "छोटे बच्चे भी सो रहे हैं",
+   "effect": "stars",
+   "show": "Little children are sleeping soundly as Chanda watches over them.",
+   "setting": "A cozy bedroom, a small bed, a window showing the night sky",
+   "action": "sleep",
+   "prompt": "3D animated feature film still for a children's song video, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field. Scene: Little children are sleeping soundly as Chanda watches over them. Characters: Golu (a chubby 5-year-old Indian boy with short black hair and one curl on his forehead, round face, big brown eyes, a sky-blue t-shirt with a yellow star, orange shorts); Chanda (a smiling cartoon crescent moon, soft pale yellow, with closed happy eyes); Tara (a small smiling five-pointed star, glowing yellow). Place: a calm night sky over a small Indian village, many twinkling stars, soft blue light. wide 16:9 picture, characters in the middle third, keep the bottom fifth of the picture simple (song words go there), no text, no letters, no logo, no watermark.",
+   "seed": 421652837,
+   "ai": "segmind/SSD-1B",
+   "ai_file": "p10.png",
+   "ai_layers": false,
+   "sd_prompt": [
+    "a chubby little Indian boy in a sky-blue t-shirt and orange shorts sleeping peacefully in a cosy bed under a soft blanket, eyes closed, head on a pillow, A cozy bedroom, a small bed, a window showing the night sky, at night, warm lamp light, 3d cartoon, cute",
+    "a chubby little Indian boy in a sky-blue t-shirt and orange shorts sleeping peacefully in a cosy bed under a soft blanket, eyes closed, head on a pillow, 3D animated feature film still, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field, detailed textures"
+   ]
+  },
+  {
+   "id": "p11",
+   "role": "verse",
+   "scene": 2,
+   "lines": [
+    [
+     2,
+     1
+    ]
+   ],
+   "place": "night",
+   "cast": [
+    "boy",
+    "moon",
+    "star"
+   ],
+   "text": "चंदा उनकी परवाह करता है",
+   "effect": "stars",
+   "show": "Chanda cares for Golu as he sleeps peacefully in the night.",
+   "setting": "A quiet bedroom",
+   "action": "watch",
+   "prompt": "3D animated feature film still for a children's song video, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field. Scene: Chanda cares for Golu as he sleeps peacefully in the night. Characters: Golu (a chubby 5-year-old Indian boy with short black hair and one curl on his forehead, round face, big brown eyes, a sky-blue t-shirt with a yellow star, orange shorts); Chanda (a smiling cartoon crescent moon, soft pale yellow, with closed happy eyes); Tara (a small smiling five-pointed star, glowing yellow). Place: a calm night sky over a small Indian village, many twinkling stars, soft blue light. wide 16:9 picture, characters in the middle third, keep the bottom fifth of the picture simple (song words go there), no text, no letters, no logo, no watermark.",
+   "seed": 18798097,
+   "ai": "segmind/SSD-1B",
+   "ai_file": "p11.png",
+   "ai_layers": false,
+   "sd_prompt": [
+    "a chubby little Indian boy in a sky-blue t-shirt and orange shorts sleeping peacefully in a cosy bed under a soft blanket, eyes closed, head on a pillow, A quiet bedroom, at night, warm lamp light, 3d cartoon, cute",
+    "a chubby little Indian boy in a sky-blue t-shirt and orange shorts sleeping peacefully in a cosy bed under a soft blanket, eyes closed, head on a pillow, 3D animated feature film still, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field, detailed textures"
+   ]
+  },
+  {
+   "id": "p12",
+   "role": "verse",
+   "scene": 2,
+   "lines": [
+    [
+     2,
+     2
+    ]
+   ],
+   "place": "night",
+   "cast": [
+    "boy",
+    "moon",
+    "star"
+   ],
+   "text": "तारे भी उनकी मदद करते हैं",
+   "effect": "stars",
+   "show": "The stars help support Golu as he rests under the moonlight.",
+   "setting": "A dimly lit room, a small bed",
+   "action": "help",
+   "prompt": "3D animated feature film still for a children's song video, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field. Scene: The stars help support Golu as he rests under the moonlight. Characters: Golu (a chubby 5-year-old Indian boy with short black hair and one curl on his forehead, round face, big brown eyes, a sky-blue t-shirt with a yellow star, orange shorts); Chanda (a smiling cartoon crescent moon, soft pale yellow, with closed happy eyes); Tara (a small smiling five-pointed star, glowing yellow). Place: a calm night sky over a small Indian village, many twinkling stars, soft blue light. wide 16:9 picture, characters in the middle third, keep the bottom fifth of the picture simple (song words go there), no text, no letters, no logo, no watermark.",
+   "seed": 533109298,
+   "ai": "segmind/SSD-1B",
+   "ai_file": "p12.png",
+   "ai_layers": true,
+   "sd_prompt": [
+    "empty A dimly lit room, a small bed, nobody there, open floor in the middle",
+    "A dimly lit room, a small bed, background art for an animated film, no characters, 3D animated feature film still, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field, detailed textures"
+   ]
+  },
+  {
+   "id": "p13",
+   "role": "verse",
+   "scene": 2,
+   "lines": [
+    [
+     2,
+     3
+    ]
+   ],
+   "place": "night",
+   "cast": [
+    "boy",
+    "moon",
+    "star"
+   ],
+   "text": "सबके लिए है ये प्यार भरा",
+   "effect": "stars",
+   "show": "Love fills the night for everyone, including Chanda and Tara.",
+   "setting": "A dark sky filled",
+   "action": "shine",
+   "prompt": "3D animated feature film still for a children's song video, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field. Scene: Love fills the night for everyone, including Chanda and Tara. Characters: Golu (a chubby 5-year-old Indian boy with short black hair and one curl on his forehead, round face, big brown eyes, a sky-blue t-shirt with a yellow star, orange shorts); Chanda (a smiling cartoon crescent moon, soft pale yellow, with closed happy eyes); Tara (a small smiling five-pointed star, glowing yellow). Place: a calm night sky over a small Indian village, many twinkling stars, soft blue light. wide 16:9 picture, characters in the middle third, keep the bottom fifth of the picture simple (song words go there), no text, no letters, no logo, no watermark.",
+   "seed": 647200293,
+   "ai": "segmind/SSD-1B",
+   "ai_file": "p13.png",
+   "ai_layers": true,
+   "sd_prompt": [
+    "empty A dark sky filled, nobody there, open floor in the middle",
+    "A dark sky filled, background art for an animated film, no characters, 3D animated feature film still, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field, detailed textures"
+   ]
+  },
+  {
+   "id": "p14",
+   "role": "chorus",
+   "scene": 3,
+   "lines": [
+    [
+     3,
+     0
+    ]
+   ],
+   "place": "night",
+   "cast": [
+    "boy",
+    "girl",
+    "moon"
+   ],
+   "text": "आओ बच्चो, चलो हम गाएँ",
+   "effect": "stars",
+   "same_as": "p06",
+   "show": "Children are invited to dance and sing under the moonlight.",
+   "setting": "An open courtyard under a night-time night sky",
+   "action": "dance",
+   "prompt": "3D animated feature film still for a children's song video, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field. Scene: Children are invited to dance and sing under the moonlight. Characters: Chanda (a smiling cartoon crescent moon, soft pale yellow, with closed happy eyes); Tara (a small smiling five-pointed star, glowing yellow). Place: a calm night sky over a small Indian village, many twinkling stars, soft blue light. wide 16:9 picture, characters in the middle third, keep the bottom fifth of the picture simple (song words go there), no text, no letters, no logo, no watermark.",
+   "seed": 637273723,
+   "ai": "segmind/SSD-1B",
+   "ai_file": "p06.png",
+   "ai_layers": true,
+   "sd_prompt": [
+    "empty An open courtyard under a night-time night sky, nobody there, open floor in the middle",
+    "An open courtyard under a night-time night sky, background art for an animated film, no characters, 3D animated feature film still, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field, detailed textures"
+   ]
+  },
+  {
+   "id": "p15",
+   "role": "chorus",
+   "scene": 3,
+   "lines": [
+    [
+     3,
+     1
+    ]
+   ],
+   "place": "night",
+   "cast": [
+    "boy",
+    "girl",
+    "moon"
+   ],
+   "text": "चंदा और तारे हमको बुलाएँ",
+   "effect": "stars",
+   "same_as": "p07",
+   "show": "Chanda and Tara welcome the children to join them in the night.",
+   "setting": "A peaceful night-time field",
+   "action": "invite",
+   "prompt": "3D animated feature film still for a children's song video, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field. Scene: Chanda and Tara welcome the children to join them in the night. Characters: Chanda (a smiling cartoon crescent moon, soft pale yellow, with closed happy eyes); Tara (a small smiling five-pointed star, glowing yellow). Place: a calm night sky over a small Indian village, many twinkling stars, soft blue light. wide 16:9 picture, characters in the middle third, keep the bottom fifth of the picture simple (song words go there), no text, no letters, no logo, no watermark.",
+   "seed": 48745650,
+   "ai": "segmind/SSD-1B",
+   "ai_file": "p07.png",
+   "ai_layers": true,
+   "sd_prompt": [
+    "empty A peaceful night-time field, nobody there, open floor in the middle",
+    "A peaceful night-time field, background art for an animated film, no characters, 3D animated feature film still, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field, detailed textures"
+   ]
+  },
+  {
+   "id": "p16",
+   "role": "chorus",
+   "scene": 3,
+   "lines": [
+    [
+     3,
+     2
+    ]
+   ],
+   "place": "night",
+   "cast": [
+    "boy",
+    "girl",
+    "moon"
+   ],
+   "text": "रात की शांति में खेलें प्यारे",
+   "effect": "stars",
+   "same_as": "p08",
+   "show": "The children play and dance peacefully under the calm night sky.",
+   "setting": "An open space, a clear sky",
+   "action": "play",
+   "prompt": "3D animated feature film still for a children's song video, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field. Scene: The children play and dance peacefully under the calm night sky. Characters: Chanda (a smiling cartoon crescent moon, soft pale yellow, with closed happy eyes); Tara (a small smiling five-pointed star, glowing yellow). Place: a calm night sky over a small Indian village, many twinkling stars, soft blue light. wide 16:9 picture, characters in the middle third, keep the bottom fifth of the picture simple (song words go there), no text, no letters, no logo, no watermark.",
+   "seed": 45606073,
+   "ai": "segmind/SSD-1B",
+   "ai_file": "p08.png",
+   "ai_layers": true,
+   "sd_prompt": [
+    "empty An open space, a clear sky, at night, dark blue night sky, warm lamp light, nobody there, open floor in the middle",
+    "An open space, a clear sky, at night, dark blue night sky, warm lamp light, background art for an animated film, no characters, 3D animated feature film still, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field, detailed textures"
+   ]
+  },
+  {
+   "id": "p17",
+   "role": "chorus",
+   "scene": 3,
+   "lines": [
+    [
+     3,
+     3
+    ]
+   ],
+   "place": "night",
+   "cast": [
+    "boy",
+    "girl",
+    "moon"
+   ],
+   "text": "झूले नाचे, बनो सब न्यारे",
+   "effect": "stars",
+   "same_as": "p09",
+   "show": "Children swing and dance, glowing with joy under the stars.",
+   "setting": "A night-time playground, a swing",
+   "action": "dance",
+   "prompt": "3D animated feature film still for a children's song video, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field. Scene: Children swing and dance, glowing with joy under the stars. Characters: Chanda (a smiling cartoon crescent moon, soft pale yellow, with closed happy eyes); Tara (a small smiling five-pointed star, glowing yellow). Place: a calm night sky over a small Indian village, many twinkling stars, soft blue light. wide 16:9 picture, characters in the middle third, keep the bottom fifth of the picture simple (song words go there), no text, no letters, no logo, no watermark.",
+   "seed": 601487812,
+   "ai": "segmind/SSD-1B",
+   "ai_file": "p09.png",
+   "ai_layers": false,
+   "sd_prompt": [
+    "a chubby little Indian boy in a sky-blue t-shirt and orange shorts and a little Indian girl with two pigtails in a yellow frock sitting on a wooden swing hanging from a tree, swinging happily, A night-time playground, a swing, at night, warm lamp light, 3d cartoon, cute",
+    "a chubby little Indian boy in a sky-blue t-shirt and orange shorts and a little Indian girl with two pigtails in a yellow frock sitting on a wooden swing hanging from a tree, swinging happily, 3D animated feature film still, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field, detailed textures"
+   ]
+  },
+  {
+   "id": "p18",
+   "role": "verse",
+   "scene": 4,
+   "lines": [
+    [
+     4,
+     0
+    ]
+   ],
+   "place": "night",
+   "cast": [
+    "boy",
+    "girl",
+    "moon"
+   ],
+   "text": "नहाएं हाथ, धोएं पैर",
+   "effect": "bubbles",
+   "show": "Chanda watches over the children as they wash their hands and feet.",
+   "setting": "A small outdoor area, a bucket of water under a night-time sky",
+   "action": "wash",
+   "prompt": "3D animated feature film still for a children's song video, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field. Scene: Chanda watches over the children as they wash their hands and feet. Characters: Chanda (a smiling cartoon crescent moon, soft pale yellow, with closed happy eyes). Place: a calm night sky over a small Indian village, many twinkling stars, soft blue light. wide 16:9 picture, characters in the middle third, keep the bottom fifth of the picture simple (song words go there), no text, no letters, no logo, no watermark.",
+   "seed": 478720429,
+   "ai": "segmind/SSD-1B",
+   "ai_file": "p18.png",
+   "ai_layers": false,
+   "sd_prompt": [
+    "a chubby little Indian boy in a sky-blue t-shirt and orange shorts and a little Indian girl with two pigtails in a yellow frock washing hands with soap and water at a wash basin, bubbles, A small outdoor area, a bucket of water under a night-time sky, at night, warm lamp light, 3d cartoon, cute",
+    "a chubby little Indian boy in a sky-blue t-shirt and orange shorts and a little Indian girl with two pigtails in a yellow frock washing hands with soap and water at a wash basin, bubbles, 3D animated feature film still, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field, detailed textures"
+   ]
+  },
+  {
+   "id": "p19",
+   "role": "verse",
+   "scene": 4,
+   "lines": [
+    [
+     4,
+     1
+    ]
+   ],
+   "place": "night",
+   "cast": [
+    "boy",
+    "moon"
+   ],
+   "text": "चंदा देखे आपका प्यार",
+   "effect": "stars",
+   "show": "Chanda looks kindly at the child with a warm, loving gaze.",
+   "setting": "A quiet room",
+   "action": "watch",
+   "prompt": "3D animated feature film still for a children's song video, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field. Scene: Chanda looks kindly at the child with a warm, loving gaze. Characters: Chanda (a smiling cartoon crescent moon, soft pale yellow, with closed happy eyes). Place: a calm night sky over a small Indian village, many twinkling stars, soft blue light. wide 16:9 picture, characters in the middle third, keep the bottom fifth of the picture simple (song words go there), no text, no letters, no logo, no watermark.",
+   "seed": 951763950,
+   "ai": "segmind/SSD-1B",
+   "ai_file": "p19.png",
+   "ai_layers": true,
+   "sd_prompt": [
+    "empty a calm night sky over a small Indian village, many twinkling stars, soft blue light, wide view, nobody there, open ground in the middle",
+    "a calm night sky over a small Indian village, background art for a cartoon, no characters, 3D animated feature film still, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field, detailed textures"
+   ]
+  },
+  {
+   "id": "p20",
+   "role": "verse",
+   "scene": 4,
+   "lines": [
+    [
+     4,
+     2
+    ]
+   ],
+   "place": "night",
+   "cast": [
+    "boy",
+    "moon"
+   ],
+   "text": "पड़े सोना धीरे-धीरे",
+   "effect": "stars",
+   "show": "Chanda gently guides the child to sleep slowly under the moonlight.",
+   "setting": "A soft-lit bedroom",
+   "action": "lie down",
+   "prompt": "3D animated feature film still for a children's song video, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field. Scene: Chanda gently guides the child to sleep slowly under the moonlight. Characters: Chanda (a smiling cartoon crescent moon, soft pale yellow, with closed happy eyes). Place: a calm night sky over a small Indian village, many twinkling stars, soft blue light. wide 16:9 picture, characters in the middle third, keep the bottom fifth of the picture simple (song words go there), no text, no letters, no logo, no watermark.",
+   "seed": 914839187,
+   "ai": "segmind/SSD-1B",
+   "ai_file": "p20.png",
+   "ai_layers": false,
+   "sd_prompt": [
+    "a chubby little Indian boy in a sky-blue t-shirt and orange shorts lying in a cosy bed under a soft blanket, sleepy, A soft-lit bedroom, at night, warm lamp light, 3d cartoon, cute",
+    "a chubby little Indian boy in a sky-blue t-shirt and orange shorts lying in a cosy bed under a soft blanket, sleepy, 3D animated feature film still, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field, detailed textures"
+   ]
+  },
+  {
+   "id": "p21",
+   "role": "verse",
+   "scene": 4,
+   "lines": [
+    [
+     4,
+     3
+    ]
+   ],
+   "place": "night",
+   "cast": [
+    "boy",
+    "moon"
+   ],
+   "text": "सुनाओ चंदा हमको प्यारे",
+   "effect": "stars",
+   "show": "Chanda sings a lullaby to the child, full of love and care.",
+   "setting": "An open courtyard under a night-time sky",
+   "action": "sing",
+   "prompt": "3D animated feature film still for a children's song video, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field. Scene: Chanda sings a lullaby to the child, full of love and care. Characters: Chanda (a smiling cartoon crescent moon, soft pale yellow, with closed happy eyes). Place: a calm night sky over a small Indian village, many twinkling stars, soft blue light. wide 16:9 picture, characters in the middle third, keep the bottom fifth of the picture simple (song words go there), no text, no letters, no logo, no watermark.",
+   "seed": 543666026,
+   "ai": "segmind/SSD-1B",
+   "ai_file": "p21.png",
+   "ai_layers": true,
+   "sd_prompt": [
+    "empty An open courtyard under a night-time sky, nobody there, open floor in the middle",
+    "An open courtyard under a night-time sky, background art for an animated film, no characters, 3D animated feature film still, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field, detailed textures"
+   ]
+  },
+  {
+   "id": "p22",
+   "role": "chorus",
+   "scene": 5,
+   "lines": [
+    [
+     5,
+     0
+    ]
+   ],
+   "place": "night",
+   "cast": [
+    "boy",
+    "girl",
+    "moon"
+   ],
+   "text": "आओ बच्चो, चलो हम गाएँ",
+   "effect": "stars",
+   "same_as": "p06",
+   "show": "Children are invited to dance and sing under the moonlight.",
+   "setting": "An open courtyard under a night-time night sky",
+   "action": "dance",
+   "prompt": "3D animated feature film still for a children's song video, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field. Scene: Children are invited to dance and sing under the moonlight. Characters: Chanda (a smiling cartoon crescent moon, soft pale yellow, with closed happy eyes); Tara (a small smiling five-pointed star, glowing yellow). Place: a calm night sky over a small Indian village, many twinkling stars, soft blue light. wide 16:9 picture, characters in the middle third, keep the bottom fifth of the picture simple (song words go there), no text, no letters, no logo, no watermark.",
+   "seed": 637273723,
+   "ai": "segmind/SSD-1B",
+   "ai_file": "p06.png",
+   "ai_layers": true,
+   "sd_prompt": [
+    "empty An open courtyard under a night-time night sky, nobody there, open floor in the middle",
+    "An open courtyard under a night-time night sky, background art for an animated film, no characters, 3D animated feature film still, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field, detailed textures"
+   ]
+  },
+  {
+   "id": "p23",
+   "role": "chorus",
+   "scene": 5,
+   "lines": [
+    [
+     5,
+     1
+    ]
+   ],
+   "place": "night",
+   "cast": [
+    "boy",
+    "girl",
+    "moon"
+   ],
+   "text": "चंदा और तारे हमको बुलाएँ",
+   "effect": "stars",
+   "same_as": "p07",
+   "show": "Chanda and Tara welcome the children to join them in the night.",
+   "setting": "A peaceful night-time field",
+   "action": "invite",
+   "prompt": "3D animated feature film still for a children's song video, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field. Scene: Chanda and Tara welcome the children to join them in the night. Characters: Chanda (a smiling cartoon crescent moon, soft pale yellow, with closed happy eyes); Tara (a small smiling five-pointed star, glowing yellow). Place: a calm night sky over a small Indian village, many twinkling stars, soft blue light. wide 16:9 picture, characters in the middle third, keep the bottom fifth of the picture simple (song words go there), no text, no letters, no logo, no watermark.",
+   "seed": 48745650,
+   "ai": "segmind/SSD-1B",
+   "ai_file": "p07.png",
+   "ai_layers": true,
+   "sd_prompt": [
+    "empty A peaceful night-time field, nobody there, open floor in the middle",
+    "A peaceful night-time field, background art for an animated film, no characters, 3D animated feature film still, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field, detailed textures"
+   ]
+  },
+  {
+   "id": "p24",
+   "role": "chorus",
+   "scene": 5,
+   "lines": [
+    [
+     5,
+     2
+    ]
+   ],
+   "place": "night",
+   "cast": [
+    "boy",
+    "girl",
+    "moon"
+   ],
+   "text": "रात की शांति में खेलें प्यारे",
+   "effect": "stars",
+   "same_as": "p08",
+   "show": "The children play and dance peacefully under the calm night sky.",
+   "setting": "An open space, a clear sky",
+   "action": "play",
+   "prompt": "3D animated feature film still for a children's song video, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field. Scene: The children play and dance peacefully under the calm night sky. Characters: Chanda (a smiling cartoon crescent moon, soft pale yellow, with closed happy eyes); Tara (a small smiling five-pointed star, glowing yellow). Place: a calm night sky over a small Indian village, many twinkling stars, soft blue light. wide 16:9 picture, characters in the middle third, keep the bottom fifth of the picture simple (song words go there), no text, no letters, no logo, no watermark.",
+   "seed": 45606073,
+   "ai": "segmind/SSD-1B",
+   "ai_file": "p08.png",
+   "ai_layers": true,
+   "sd_prompt": [
+    "empty An open space, a clear sky, at night, dark blue night sky, warm lamp light, nobody there, open floor in the middle",
+    "An open space, a clear sky, at night, dark blue night sky, warm lamp light, background art for an animated film, no characters, 3D animated feature film still, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field, detailed textures"
+   ]
+  },
+  {
+   "id": "p25",
+   "role": "chorus",
+   "scene": 5,
+   "lines": [
+    [
+     5,
+     3
+    ]
+   ],
+   "place": "night",
+   "cast": [
+    "boy",
+    "girl",
+    "moon"
+   ],
+   "text": "झूले नाचे, बनो सब न्यारे",
+   "effect": "stars",
+   "same_as": "p09",
+   "show": "Children swing and dance, glowing with joy under the stars.",
+   "setting": "A night-time playground, a swing",
+   "action": "dance",
+   "prompt": "3D animated feature film still for a children's song video, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field. Scene: Children swing and dance, glowing with joy under the stars. Characters: Chanda (a smiling cartoon crescent moon, soft pale yellow, with closed happy eyes); Tara (a small smiling five-pointed star, glowing yellow). Place: a calm night sky over a small Indian village, many twinkling stars, soft blue light. wide 16:9 picture, characters in the middle third, keep the bottom fifth of the picture simple (song words go there), no text, no letters, no logo, no watermark.",
+   "seed": 601487812,
+   "ai": "segmind/SSD-1B",
+   "ai_file": "p09.png",
+   "ai_layers": false,
+   "sd_prompt": [
+    "a chubby little Indian boy in a sky-blue t-shirt and orange shorts and a little Indian girl with two pigtails in a yellow frock sitting on a wooden swing hanging from a tree, swinging happily, A night-time playground, a swing, at night, warm lamp light, 3d cartoon, cute",
+    "a chubby little Indian boy in a sky-blue t-shirt and orange shorts and a little Indian girl with two pigtails in a yellow frock sitting on a wooden swing hanging from a tree, swinging happily, 3D animated feature film still, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field, detailed textures"
+   ]
+  },
+  {
+   "id": "p26",
+   "role": "end",
+   "scene": 5,
+   "lines": [],
+   "place": "night",
+   "cast": [
+    "moon",
+    "star",
+    "boy"
+   ],
+   "text": "everyone waves goodbye",
+   "effect": "stars",
+   "prompt": "3D animated feature film still for a children's song video, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field. Scene: all the friends together, happy, waving goodbye at the viewer. Characters: Chanda (a smiling cartoon crescent moon, soft pale yellow, with closed happy eyes); Tara (a small smiling five-pointed star, glowing yellow); Golu (a chubby 5-year-old Indian boy with short black hair and one curl on his forehead, round face, big brown eyes, a sky-blue t-shirt with a yellow star, orange shorts). Place: a calm night sky over a small Indian village, many twinkling stars, soft blue light. wide 16:9 picture, characters in the middle third, keep the bottom fifth of the picture simple (song words go there), no text, no letters, no logo, no watermark.",
+   "seed": 872287020,
+   "ai": "segmind/SSD-1B",
+   "ai_file": "p26.png",
+   "ai_layers": true,
+   "sd_prompt": [
+    "empty a calm night sky over a small Indian village, many twinkling stars, soft blue light, wide view, nobody there, open ground in the middle",
+    "a calm night sky over a small Indian village, background art for a cartoon, no characters, 3D animated feature film still, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field, detailed textures"
+   ]
+  }
+ ]
+}

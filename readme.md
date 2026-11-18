@@ -443,3 +443,8 @@ Optional extras:
   `voice.py` unloads Ollama before it starts generating voice.
 - **Scam videos:** always end with helpline **1930** and **cybercrime.gov.in**.
 - **Script format:** see `CLAUDE.md` for the `script.json` format and visual types.
+
+## Story serial (another channel)
+
+A separate pipeline for long story serials (Ramayan, Mahabharat ...) as Hindi cartoon episodes:
+`python serial.py find`, `python serial.py new "Ramayan"`, `python serial.py make ramayan`. See [serial/README.md](serial/README.md).

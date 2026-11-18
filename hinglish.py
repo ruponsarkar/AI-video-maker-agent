@@ -226,7 +226,7 @@ def to_hindi(say, words=None, use_model=True):
 
 # ---------------------------------------------------------------- Devanagari -> Roman captions
 # when several Roman spellings map to one Hindi word, the caption uses this one
-PREFERRED = {"बेरियम": "barium", "दिवाली": "Diwali", "हवा": "hawa", "जादू": "jaadu", "लो": "lo", "कम": "kam", "काम": "kaam", "में": "mein", "नहीं": "nahi", "ये": "ye", "वो": "wo", "वाला": "wala", "वैसे": "waise", "रास्ता": "raasta",
+PREFERRED = {"बेरियम": "barium", "टर्र": "tarr", "म्याऊँ": "myaoon", "दिवाली": "Diwali", "हवा": "hawa", "जादू": "jaadu", "लो": "lo", "कम": "kam", "काम": "kaam", "में": "mein", "नहीं": "nahi", "ये": "ye", "वो": "wo", "वाला": "wala", "वैसे": "waise", "रास्ता": "raasta",
              "सवाल": "sawaal", "ताकि": "taaki", "चीज़": "cheez", "पूरा": "poora", "पूरे": "poore", "पूरी": "poori",
              "फिर": "phir", "अच्छा": "accha", "हां": "haan", "इसमें": "isme", "उसमें": "usme", "हमारे": "humare",
              "भारत": "Bharat", "इंडिया": "India", "दिल्ली": "Delhi", "मुंबई": "Mumbai", "मुम्बई": "Mumbai", "चेन्नई": "Chennai", "कोलकाता": "Kolkata",

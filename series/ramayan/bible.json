@@ -1,0 +1,520 @@
+{
+  "characters": {
+    "rama": {
+      "kind": "human",
+      "gender": "male",
+      "age": "adult",
+      "skin": "blue",
+      "outfit": "royal",
+      "hair": "long",
+      "headwear": "crown",
+      "beard": "long_black",
+      "prop": "bow",
+      "voice": "male_adult",
+      "colors": [
+        "gold",
+        "sky"
+      ],
+      "extras": [
+        "aura",
+        "tilak"
+      ],
+      "height": 1.0,
+      "name": "Rama",
+      "name_hi": "राम",
+      "role": "The protagonist, Vishnu's incarnation, rightful king of Ayodhya",
+      "personality": "Righteous, calm, noble, and compassionate. Speaks with wisdom and strength.",
+      "since": null
+    },
+    "lakshmana": {
+      "kind": "human",
+      "gender": "male",
+      "age": "adult",
+      "skin": "wheat",
+      "outfit": "warrior",
+      "hair": "short",
+      "headwear": "none",
+      "beard": "none",
+      "prop": "mace",
+      "voice": "male_adult",
+      "colors": [
+        "red",
+        "gold"
+      ],
+      "extras": [
+        "tilak"
+      ],
+      "height": 1.0,
+      "name": "Lakshmana",
+      "name_hi": "लक्ष्मण",
+      "role": "Rama's younger brother and loyal companion",
+      "personality": "Dutiful, brave, and fiercely devoted to Rama.",
+      "since": null
+    },
+    "sita": {
+      "kind": "human",
+      "gender": "female",
+      "age": "adult",
+      "skin": "fair",
+      "outfit": "princess",
+      "hair": "long",
+      "headwear": "none",
+      "beard": "none",
+      "prop": "none",
+      "voice": "female_adult",
+      "colors": [
+        "emerald",
+        "gold"
+      ],
+      "extras": [],
+      "height": 1.0,
+      "name": "Sita",
+      "name_hi": "सीता",
+      "role": "Rama's wife, chosen by divine will",
+      "personality": "Graceful, devoted, and pure. Shows strength in adversity.",
+      "since": null
+    },
+    "dasaratha": {
+      "kind": "human",
+      "gender": "male",
+      "age": "old",
+      "skin": "fair",
+      "outfit": "royal",
+      "hair": "bald",
+      "headwear": "crown",
+      "beard": "long_white",
+      "prop": "none",
+      "voice": "male_old",
+      "colors": [
+        "gold",
+        "white"
+      ],
+      "extras": [],
+      "height": 1.2,
+      "name": "Dasaratha",
+      "name_hi": "दशरथ",
+      "role": "King of Ayodhya and father of Rama",
+      "personality": "Kind, wise, and loving, but burdened by duty.",
+      "since": null
+    },
+    "kaikeyi": {
+      "kind": "human",
+      "gender": "female",
+      "age": "adult",
+      "skin": "fair",
+      "outfit": "queen",
+      "hair": "bun",
+      "headwear": "tiara",
+      "beard": "none",
+      "prop": "none",
+      "voice": "female_adult",
+      "colors": [
+        "red",
+        "maroon"
+      ],
+      "extras": [
+        "earrings"
+      ],
+      "height": 1.0,
+      "name": "Kaikeyi",
+      "name_hi": "कैकेयी",
+      "role": "Queen of Ayodhya and mother of Bharata",
+      "personality": "Cunning, ambitious, and driven by jealousy.",
+      "since": null
+    },
+    "bharata": {
+      "kind": "human",
+      "gender": "male",
+      "age": "adult",
+      "skin": "wheat",
+      "outfit": "warrior",
+      "hair": "short",
+      "headwear": "crown",
+      "beard": "none",
+      "prop": "mace",
+      "voice": "male_adult",
+      "colors": [
+        "red",
+        "gold"
+      ],
+      "extras": [
+        "tilak"
+      ],
+      "height": 1.0,
+      "name": "Bharata",
+      "name_hi": "भरत",
+      "role": "Rama's younger brother, crowned king during Rama's exile",
+      "personality": "Loyal, honorable, and determined.",
+      "since": null
+    },
+    "hanuman": {
+      "kind": "monkey",
+      "gender": "male",
+      "age": "adult",
+      "skin": "monkey_orange",
+      "outfit": "monkey",
+      "hair": "spiky",
+      "headwear": "none",
+      "beard": "none",
+      "prop": "mace",
+      "voice": "male_adult",
+      "colors": [
+        "orange",
+        "yellow"
+      ],
+      "extras": [
+        "tail"
+      ],
+      "height": 1.2,
+      "name": "Hanuman",
+      "name_hi": "हनुमान",
+      "role": "Monkey general and loyal follower of Rama",
+      "personality": "Devout, powerful, and selfless. Always ready to help.",
+      "since": null
+    },
+    "ravana": {
+      "kind": "demon",
+      "gender": "male",
+      "age": "old",
+      "skin": "demon_red",
+      "outfit": "demon",
+      "hair": "short",
+      "headwear": "crown",
+      "beard": "none",
+      "prop": "sword",
+      "voice": "demon",
+      "colors": [
+        "red",
+        "black"
+      ],
+      "extras": [
+        "fangs",
+        "ten_heads"
+      ],
+      "height": 1.3,
+      "name": "Ravana",
+      "name_hi": "रावण",
+      "role": "Ten-headed demon king of Lanka and abductor of Sita",
+      "personality": "Cruel, arrogant, and power-hungry.",
+      "since": null
+    },
+    "viswamitra": {
+      "kind": "human",
+      "gender": "male",
+      "age": "old",
+      "skin": "deep_blue",
+      "outfit": "sage",
+      "hair": "jata",
+      "headwear": "none",
+      "beard": "long_grey",
+      "prop": "staff",
+      "voice": "male_old",
+      "colors": [
+        "blue",
+        "silver"
+      ],
+      "extras": [],
+      "height": 1.2,
+      "name": "Viswamitra",
+      "name_hi": "विश्वामित्र",
+      "role": "Sage and mentor to Rama",
+      "personality": "Wise, powerful, and strict in his teachings.",
+      "since": null
+    },
+    "janaka": {
+      "kind": "human",
+      "gender": "male",
+      "age": "old",
+      "skin": "fair",
+      "outfit": "royal",
+      "hair": "bald",
+      "headwear": "crown",
+      "beard": "long_white",
+      "prop": "none",
+      "voice": "male_old",
+      "colors": [
+        "gold",
+        "white"
+      ],
+      "extras": [],
+      "height": 1.2,
+      "name": "Janaka",
+      "name_hi": "जनक",
+      "role": "King of Mithila and father of Sita",
+      "personality": "Wise, noble, and proud of his daughter.",
+      "since": null
+    },
+    "sugriva": {
+      "kind": "monkey",
+      "gender": "male",
+      "age": "adult",
+      "skin": "monkey_orange",
+      "outfit": "monkey",
+      "hair": "braid",
+      "headwear": "none",
+      "beard": "none",
+      "prop": "mace",
+      "voice": "male_adult",
+      "colors": [
+        "orange",
+        "yellow"
+      ],
+      "extras": [
+        "tail"
+      ],
+      "height": 1.0,
+      "name": "Sugriva",
+      "name_hi": "सुग्रीव",
+      "role": "King of Kishkindha and ally to Rama",
+      "personality": "Brave, cunning, and loyal.",
+      "since": null
+    },
+    "shiva": {
+      "kind": "human",
+      "gender": "male",
+      "age": "old",
+      "skin": "deep_blue",
+      "outfit": "sage",
+      "hair": "jata",
+      "headwear": "none",
+      "beard": "long_white",
+      "prop": "trident",
+      "voice": "male_old",
+      "colors": [
+        "blue",
+        "silver"
+      ],
+      "extras": [
+        "aura",
+        "mala"
+      ],
+      "height": 1.3,
+      "name": "Shiva",
+      "name_hi": "शिव",
+      "role": "Destroyer god, appears in Rama's childhood to bless him",
+      "personality": "Mysterious, powerful, and serene.",
+      "since": null
+    },
+    "krishna": {
+      "kind": "human",
+      "gender": "male",
+      "age": "adult",
+      "skin": "blue",
+      "outfit": "warrior",
+      "hair": "long",
+      "headwear": "none",
+      "beard": "none",
+      "prop": "flute",
+      "voice": "male_adult",
+      "colors": [
+        "gold",
+        "sky"
+      ],
+      "extras": [
+        "aura"
+      ],
+      "height": 1.0,
+      "name": "Krishna",
+      "name_hi": "कृष्ण",
+      "role": "Vishnu's avatar, appears as a guide to Rama and Sita in Lanka",
+      "personality": "Calm, wise, and compassionate.",
+      "since": null
+    },
+    "bali": {
+      "kind": "demon",
+      "gender": "male",
+      "age": "adult",
+      "skin": "demon_red",
+      "outfit": "demon",
+      "hair": "short",
+      "headwear": "crown",
+      "beard": "none",
+      "prop": "sword",
+      "voice": "demon",
+      "colors": [
+        "red",
+        "black"
+      ],
+      "extras": [
+        "fangs"
+      ],
+      "height": 1.3,
+      "name": "Bali",
+      "name_hi": "बलि",
+      "role": "Ravana's brother and former king of Lanka",
+      "personality": "Humble, loyal to Ravana, but defeated by Rama.",
+      "since": null
+    },
+    "sundara": {
+      "kind": "monkey",
+      "gender": "male",
+      "age": "adult",
+      "skin": "monkey_orange",
+      "outfit": "monkey",
+      "hair": "spiky",
+      "headwear": "none",
+      "beard": "none",
+      "prop": "mace",
+      "voice": "male_adult",
+      "colors": [
+        "orange",
+        "yellow"
+      ],
+      "extras": [
+        "tail"
+      ],
+      "height": 1.0,
+      "name": "Sundara",
+      "name_hi": "सुंदरा",
+      "role": "Hanuman's brother and loyal follower of Rama",
+      "personality": "Brave, loyal, and fierce.",
+      "since": null
+    },
+    "vishnu": {
+      "kind": "human",
+      "gender": "male",
+      "age": "old",
+      "skin": "deep_blue",
+      "outfit": "sage",
+      "hair": "jata",
+      "headwear": "none",
+      "beard": "long_white",
+      "prop": "conch",
+      "voice": "male_old",
+      "colors": [
+        "blue",
+        "silver"
+      ],
+      "extras": [
+        "aura",
+        "mala"
+      ],
+      "height": 1.3,
+      "name": "Vishnu",
+      "name_hi": "विष्णु",
+      "role": "Preserver god, incarnated as Rama",
+      "personality": "Compassionate, just, and eternal.",
+      "since": null
+    },
+    "kooni": {
+      "kind": "human",
+      "gender": "female",
+      "age": "adult",
+      "skin": "fair",
+      "outfit": "common_woman",
+      "hair": "braid",
+      "headwear": "none",
+      "beard": "none",
+      "prop": "none",
+      "voice": "female_adult",
+      "colors": [
+        "black",
+        "white"
+      ],
+      "extras": [
+        "earrings"
+      ],
+      "height": 1.0,
+      "name": "Kooni",
+      "name_hi": "कौणी",
+      "role": "Kaikeyi's companion and manipulator",
+      "personality": "Cunning, envious, and sly.",
+      "since": null
+    },
+    "shabari": {
+      "kind": "human",
+      "gender": "female",
+      "age": "adult",
+      "skin": "fair",
+      "outfit": "common_woman",
+      "hair": "long",
+      "headwear": "none",
+      "beard": "none",
+      "prop": "none",
+      "voice": "female_adult",
+      "colors": [
+        "white",
+        "maroon"
+      ],
+      "extras": [
+        "mala"
+      ],
+      "height": 1.0,
+      "name": "Shabari",
+      "name_hi": "शबरी",
+      "role": "Devout follower of Rama in the forest",
+      "personality": "Simple, pure, and devoted.",
+      "since": null
+    },
+    "tadaka": {
+      "kind": "human",
+      "gender": "female",
+      "age": "adult",
+      "skin": "demon_red",
+      "outfit": "common_woman",
+      "hair": "long",
+      "headwear": "none",
+      "beard": "none",
+      "prop": "sword",
+      "voice": "female_adult",
+      "colors": [
+        "red",
+        "black"
+      ],
+      "extras": [],
+      "height": 1.0,
+      "name": "Tadaka",
+      "name_hi": "तड़का",
+      "role": "A yaksha woman turned rakshasi who haunts the forest",
+      "personality": "Cruel and vengeful, but tormented by her past sins",
+      "since": 1
+    }
+  },
+  "places": {
+    "ayodhya": {
+      "name": "Ayodhya",
+      "name_hi": "अयोध्या",
+      "type": "forest"
+    },
+    "lanka": {
+      "name": "Lanka",
+      "name_hi": "लंका",
+      "type": "forest"
+    },
+    "kishkindha": {
+      "name": "Kishkindha",
+      "name_hi": "किश्किंधा",
+      "type": "forest"
+    },
+    "mithila": {
+      "name": "Mithila",
+      "name_hi": "मिथिला",
+      "type": "forest"
+    },
+    "sita_kshetra": {
+      "name": "Sita Kshetra",
+      "name_hi": "सीता क्षेत्र",
+      "type": "forest"
+    },
+    "dandakaranya": {
+      "name": "Dandakaranya",
+      "name_hi": "दंडकारण्य",
+      "type": "forest"
+    },
+    "tikshna_kshetra": {
+      "name": "Tikshna Kshetra",
+      "name_hi": "तीखन क्षेत्र",
+      "type": "battlefield"
+    },
+    "krishna_van": {
+      "name": "Krishna Van",
+      "name_hi": "कृष्ण वान",
+      "type": "forest"
+    },
+    "shiva_mountain": {
+      "name": "Shiva Mountain",
+      "name_hi": "शिव पर्वत",
+      "type": "mountain"
+    }
+  }
+}

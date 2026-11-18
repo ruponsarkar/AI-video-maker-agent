@@ -68,6 +68,73 @@ Never run Ollama and the voice model at the same time (VRAM). Disk space is limi
 - SearXNG runs in Docker (`docker start searxng`), config in `searxng/settings.yml`
   (`search.formats` must include `json`).
 
+## Story serial (separate pipeline, separate channel)
+- `serial.py` + `serial/` (docs: serial/README.md). Traditional/public-domain stories as a Hindi cartoon serial,
+  episodes <= 5 min, max 7 per `make` run, upload with `--channel @handle` (own token file per channel).
+- Memory: series/<slug>/memory/ facts.jsonl + vectors.npy (nomic-embed-text, falls back to word match) + state.json
+  (story so far, character states, open threads). Every episode is written from it; `remember` after edits.
+- Agents: scene planner, gemma writer (Hindi lines `Name: line`), director (emotion/action/sfx JSON), continuity
+  checker, recap/teaser, summariser. bible.json character looks never change once episodes exist.
+- Art is drawn in code (cartoon.py characters, scenery.py places), sound in code (sound.py), so no licences.
+- upload.py now takes --channel/--video/--subtitles/--category/--kids/--playlist; defaults are unchanged for Snack Code.
+- Three channels, one Google Cloud project (one client_secret.json, shared daily quota), one token file per channel:
+  projects/ -> Snack Code @snackcode108 (youtube_token.json); rhymes/ -> Golu Cartoon @GoluCartoon14 (rhymes/settings.json);
+  series/ -> story channel (series/settings.json, set by the first `serial.py upload --channel`; series.json overrides).
+  `python upload.py --check --channel @handle` logs in and verifies a channel without uploading. serial.py refuses
+  the Snack Code / rhymes handles.
+- Serial writing flow: qwen writes each scene as an ENGLISH script (say_en) -> continuity check (plan events are the
+  truth, later episodes' events are 'not yet') -> director -> gemma translates to Hindi (say_hi) with a fixed name
+  spelling list (series glossary.json) -> qwen meaning check + name check -> retranslate. gemma writing the story
+  directly misread events ('no children' -> 'children missing'). Arcs: events listed, arc-boundary agent drops
+  other arcs' events, code splits ~3.5 events per episode. Cast lock: scenes only use the episode's characters.
+- Local models still make factual and Hindi mistakes: plans for big epics should be hand-checked (Ramayan's is
+  hand-written), and every episode needs a human read of review.md. series.json hindi_model/story_model.
+- After suspend, torch loses CUDA: sudo rmmod nvidia_uvm && sudo modprobe nvidia_uvm. voice_run stops unless --cpu.
+
+## Rhymes (separate pipeline, kids' channel)
+- `rhyme.py` + `rhyme/` (docs: rhyme/README.md), data in `rhymes/` (settings.json, voices/, songs/<slug>/).
+  Original Hindi bal geet as cartoon music videos (~1.5-2 min). `rhymes/songs/<slug>/lyrics.txt` is the only source of the words;
+  every step re-syncs script.json + review.md from it. `[verse place=.. cast=..]` overrides the picture.
+- Singing (default): rhyme/song_ai.py runs ACE-Step 1.5 turbo (MIT, ace-step/, 6.3 GB, no LM; venv-voice + ace-libs with
+  transformers 4.57/diffusers 0.37) -> audio/song.wav (song + music, ~30 s); align.py (Whisper medium word times, DP
+  match on consonant skeletons) -> audio/song_timing.json, used by video.py instead of tune.py + sing.py. `rhyme.py song`.
+  3 takes per song, the one Whisper hears every line in is kept (chanda: 17/24 -> 24/24); karaoke uses word times.
+- Pictures: one per line, 3D-film STYLE, qwen writes setting (no cast in it) + action; acting lines (sleep/swing/wash..)
+  are whole pictures with the action phrase FIRST (77-token limit); KID phrase keeps Golu/Chinki identical.
+  motion.py: depth.py parallax camera, transitions, dances, glows, particles. Channel: Golu Cartoon @GoluCartoon14.
+- AI clips (rhyme/clips.py, `rhyme.py clips`, part of `make`): every picture -> 5 s image-to-video clip by Wan 2.2 TI2V 5B
+  (Apache-2.0) + FastWan LoRA (3 steps) via WanGP (wan2gp/, venv-video: py3.11, torch 2.7.1 cu128 because driver 570
+  can't run cu130; wgpkernels cu128; --profile 4 --attention sdpa). Start frame = motion.compose_still (characters
+  in place) so looks stay; images/clips/pNN.mp4 used by motion.PictureTrack when newer than the picture. HF xet
+  downloads stall here: use HF_HUB_DISABLE_XET=1. Credit 'WanGP (Wan 2.2)' goes in the description (licence).
+  Sky-only pictures get scenery clips ('nobody in it' in prompt + negative; plain prompts invented children). make STOPS before rendering if clips are missing (retry once with --low-ram = WanGP profile 5; <8.5 GB free RAM starts there; reasons in images/clips/make.log; --allow-2d overrides). haathi-ka-hatha came out 2D because align.py set CUDA_VISIBLE_DEVICES='' (Whisper on CPU) inside make and the clip maker inherited it: now align restores it (cpu_only) and clips() strips it from the child env. Clip prompt = only what's in
+  the start frame (count + KID phrase + setting), never the line's `show` ("love for everyone" added new kids).
+  ~6.7 min a 5 s clip, ~10 GB RAM (model 5 GB + umt5 text encoder 6.4 GB): never run Whisper/other big jobs alongside.
+  18 Nov: WanGP pinned 60% of RAM (default) -> swap filled, laptop frozen 35 min. Now: --perc-reserved-mem-max 0.38,
+  ram_watchdog (stops at 'full' memory pressure >30% or <0.5 GB, exit 3), rhyme.py runs it in systemd-run --user
+  --scope MemoryMax=total-3.5G MemorySwapMax=1G, and make checks the GPU (gpu_check) before any long step.
+- story.py (before pictures, in make/new/pictures; `rhyme.py story`): explainer + checker (qwen) + Hindi checker (gemma)
+  -> story.json (per line meaning/who/where/doing) + story.md. lyrics.plan/pictures.slots take cast per LINE from it
+  (names like लियो map to lion; kinds_in_title knows English titles). Changed story_key -> re-plan + redraw that AI
+  picture. new: unclear lines rewritten once (mend_unclear). Clips: prompt motion = story doing, CAMERAS per shot,
+  own clip per chorus repeat (>=2 s), lines >~6 s get a continuation clip from the last frame; no forwards-backwards
+  loop (Clip stretch <=1.35x, then push-in on the last frame). Lion Ki Ladoo had no lion before this.
+- align.py also edits the AI song (song_edit.wav): intro 3 s, breaks <= ~2.5 s, short ending, crossfades; Whisper
+  words cached in audio/song_words.json, EDIT_VERSION bump re-edits old songs. video.py: stereo, -14 LUFS loudnorm,
+  word stickers (lyrics.WHO + STICKER_WORDS), beat bounce in chorus, AI clips loop forwards-backwards.
+- Music (tune.py) is on one tempo grid; video.py puts every line on a bar and time-stretches the chant (pitch kept).
+  Chatterbox can't sing: sing.py (pyworld/WORLD) re-pitches the chant per syllable onto a melody that fits tune.py's
+  chords (2 bars a line, same tune per verse; --chant = old chant). Whisper clarity: chant 0.95, sung ~0.65. Owner singing to output/guide.wav as audio/vocals.wav replaces it
+  (timing frozen in audio/timing.json). Voice uses serial/voice_run.py with rhymes/bible.json (speaker "singer").
+- gemma3:4b lyric drafts rhyme (RHYME_PAIRS help) but make nonsense ("frog says meow"): always human-rewritten.
+  No film/TV songs (copyrighted). Uploads always made-for-kids, category education.
+- Pictures: `make` plans them (pictures.py, qwen); draw_ai.py (venv-voice, SSD-1B + LCM-LoRA, diffusers 0.43 in
+  venv-voice/image-libs because Chatterbox pins 0.29; venv torch has no CUDA on driver 570) draws each character ONCE
+  (rhymes/cast_art, cut out by cutout.py/ISNet in venv) and backgrounds only for character scenes (SSD-1B melts two
+  characters together); motion.py composites + animates them. gemma3 vision checks each, 3 tries. Load the SD pipe
+  once per run (twice = out of memory, 16 GB). Owner files (pNN.jpg/mp4) beat AI pNN.png. Free tiers only: Suno
+  free is non-commercial, so music stays tune.py.
+
 ## Two Python environments (important)
 - `venv`        research, scripts, animation: `source venv/bin/activate`
                 (requests, trafilatura, ollama, soundfile, kokoro, faster-whisper, torch)
@@ -149,8 +216,7 @@ voice.py flags: `--lang hi|en`, `--voice file.wav`, `--engine chatterbox|kokoro`
   Idea not built yet: auto-detect short clips (duration vs text length) and retry them.
 - qwen3:8b Hindi is OK but makes factual mistakes; always check research/notes.md against
   the source links before publishing.
-- RTX 3050 6 GB is too small for useful local image/video generation; use screen
-  recordings (OBS) in images/ and Canva for thumbnails.
+- RTX 3050 6 GB: SSD-1B (fp16, LCM, cpu offload) makes 1344x768 images in ~9 s; video generation is still too big.
 
 ## Topic backlog (topics.txt)
 Voice-clone scam ("Beta ki awaaz..."), UPI 100 Second Mein, investment scam

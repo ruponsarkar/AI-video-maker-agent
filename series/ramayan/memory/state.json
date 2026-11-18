@@ -1,0 +1,85 @@
+{
+  "story_so_far": "In Ayodhya, King Dasaratha and Queen Kausalya welcome their newborn son Rama, who is described as having divine attributes. As a sixteen-year-old, Rama expresses his desire to serve justice under the guidance of Sage Viswamitra. The sage arrives in Ayodhya seeking help against evil forces, and Rama agrees to fight alongside him. Rama stands in the fog of Dandakaranya, ready to face his first great challenge. Dawn breaks over Dandakaranya as Rama and Lakshmana follow Viswamitra into the misty forest. They walk deeper into the fog when a sudden voice calls out from the shadows. Tadaka, a yaksha woman turned rakshasi, stands before them, her eyes glowing with dark power. She mocks Rama, claiming he cannot kill a woman. Rama refuses to judge by gender and challenges her for her deeds. Lakshmana stands up to Tadaka, showing his loyalty and courage. Viswamitra warns Rama not to let bias cloud his justice. Rama raises his bow, calm and resolute. He sees the truth in Tadaka and declares her curse ends now. A single arrow flies, striking Tadaka, and she dissolves into light. Viswamitra praises Rama for showing strength beyond his years. Rama vows to use his divine weapons only to defend the innocent. Viswamitra bestows upon Rama a divine weapon, an astra, and upon Lakshmana a sacred sword, a sastra. Rama and Lakshmana leave the forest with their new powers, ready for future challenges. In Mithila, King Janaka announces Sita's hand in marriage. Rama accepts the divine bow Shiv Dhanush from Janaka, breaks it in two to show his strength and humility, and marries Sita. The union of Rama and Sita marks the beginning of their legendary life in Ayodhya as they approach the city under cover of night. However, Kaikeyi's demand for Rama's exile disrupts this peaceful life, setting off a new chapter in his journey.",
+  "characters": {
+    "dasaratha": {
+      "status": "alive",
+      "where": "Ayodhya",
+      "notes": "Broken-hearted after granting Kaikeyi's wish."
+    },
+    "kausalya": {
+      "status": "alive",
+      "where": "Ayodhya",
+      "notes": "Queen of Ayodhya, Rama's mother"
+    },
+    "rama": {
+      "status": "alive",
+      "where": "En route to exile",
+      "notes": "Determined to return and restore justice."
+    },
+    "viswamitra": {
+      "status": "alive",
+      "where": "Dandakaranya forest",
+      "notes": "Sage who trained Rama and gave him weapons"
+    },
+    "lakshmana": {
+      "status": "alive",
+      "where": "Ayodhya",
+      "notes": "Stands by Rama's side, pledged to protect their homeland."
+    },
+    "tadaka": {
+      "status": "dead",
+      "where": "Dandakaranya forest",
+      "notes": "Cursed yaksha woman turned rakshasi, defeated by Rama"
+    },
+    "sita": {
+      "status": "alive",
+      "where": "Ayodhya",
+      "notes": "Has married Rama and is ready for the challenges ahead."
+    },
+    "kaikeyi": {
+      "status": "alive",
+      "where": "Ayodhya",
+      "notes": "Feigns loyalty but seeks power for herself."
+    }
+  },
+  "open_threads": [
+    "Rama's journey to protect the innocent",
+    "Rama's divine nature and destiny",
+    "Rama's divine nature and destiny",
+    "Rama's journey to protect the innocent",
+    "Rama's divine nature and destiny",
+    "Rama's journey to protect the innocent",
+    "The bond between Rama and Sita",
+    "Rama's exile and journey into the forest",
+    "Kaikeyi's hidden motives",
+    "The conflict between duty and love"
+  ],
+  "last_episode": {
+    "n": 4,
+    "title": "Kaikeyi's Demand",
+    "summary": "Kaikeyi demands that Rama leave Ayodhya and Bharata rule instead, breaking Dasaratha's heart. Despite his love for Rama, the king grants her wish, setting in motion a tragic chain of events.",
+    "ending": "Dasaratha reluctantly agrees to Kaikeyi's demand, sending Rama into exile and setting the stage for future conflict."
+  },
+  "episodes": {
+    "1": {
+      "title": "Divine Birth in Ayodhya",
+      "summary": "In this first episode, King Dasaratha and Queen Kausalya welcome the divine newborn Rama in Ayodhya, where he is blessed with extraordinary attributes. As a sixteen-year-old, Rama seeks to serve justice under Sage Viswamitra's guidance, ready to fight for righteousness. The episode ends with Rama preparing to face challenges in Dandakaranya.",
+      "ending": "Rama stands in the fog of Dandakaranya, ready to face his first great challenge."
+    },
+    "2": {
+      "title": "Forest Trials with Viswamitra",
+      "summary": "Rama and Lakshmana face Tadaka, a cursed yaksha woman turned rakshasi, in the Dandakaranya forest. Rama defeats her with wisdom and strength, proving his divine nature. Viswamitra rewards them with sacred weapons, setting them on their path of justice.",
+      "ending": "Rama and Lakshmana leave the forest with divine weapons, ready to face future challenges."
+    },
+    "3": {
+      "title": "Shiv Dhanush and Sita's Bond",
+      "summary": "In this episode, Rama accepts the divine bow Shiv Dhanush from King Janaka and marries Sita, fulfilling his destiny. The union of Rama and Sita marks the beginning of their legendary life in Ayodhya, with promises of protection and justice.",
+      "ending": "Rama, Lakshmana, and Sita arrive in Ayodhya under cover of night, ready to begin their new life together."
+    },
+    "4": {
+      "title": "Kaikeyi's Demand",
+      "summary": "Kaikeyi demands that Rama leave Ayodhya and Bharata rule instead, breaking Dasaratha's heart. Despite his love for Rama, the king grants her wish, setting in motion a tragic chain of events.",
+      "ending": "Dasaratha reluctantly agrees to Kaikeyi's demand, sending Rama into exile and setting the stage for future conflict."
+    }
+  }
+}

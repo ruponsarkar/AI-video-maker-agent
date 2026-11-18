@@ -1,0 +1,518 @@
+{
+  "series": "Ramayan",
+  "n": 2,
+  "title": "Forest Trials with Viswamitra",
+  "title_hi": "विश्वामित्र के जंगल में परीक्षा",
+  "arc": 1,
+  "next_title": "Shiv Dhanush and Sita's Bond",
+  "written": "2026-11-11 18:33",
+  "scenes": [
+    {
+      "kind": "recap",
+      "place": "dandakaranya",
+      "time": "dawn",
+      "weather": "clear",
+      "music": "mystery",
+      "cast": [
+        {
+          "id": "rama",
+          "slot": "center",
+          "arrives": false,
+          "hidden": false
+        },
+        {
+          "id": "lakshmana",
+          "slot": "right",
+          "arrives": false,
+          "hidden": false
+        },
+        {
+          "id": "viswamitra",
+          "slot": "left",
+          "arrives": false,
+          "hidden": false
+        }
+      ],
+      "beats": [
+        {
+          "speaker": "narrator",
+          "say_en": "Rama has left Ayodhya to follow Sage Viswamitra's guidance.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {},
+          "say_hi": "राम अयोध्या छोड़कर ऋषि विश्वामित्र के संग जाने लगे।",
+          "say": "Rama ayodhya chhodkar rishi vishvamitr ke sang jaane lage.",
+          "say_from": "राम अयोध्या छोड़कर ऋषि विश्वामित्र के संग जाने लगे।"
+        },
+        {
+          "speaker": "narrator",
+          "say_en": "He now faces dangers in the mysterious forest of Dandakaranya.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {},
+          "say_hi": "अब उन्हें दंडकारण्य वन में खतरे का सामना करना पड़ रहा है।",
+          "say": "Ab unhen dandkaranya van mein khatre ka samna karna pad raha hai.",
+          "say_from": "अब उन्हें दंडकारण्य वन में खतरे का सामना करना पड़ रहा है।"
+        },
+        {
+          "speaker": "narrator",
+          "say_en": "The air is thick with mist as he prepares for what lies ahead.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {},
+          "say_hi": "धुंधली हवा में, वह अपने भविष्य की तैयारी कर रहा है।",
+          "say": "Dhundhli hawa mein, vah apne bhavishya ki taiyari kar raha hai.",
+          "say_from": "धुंधली हवा में, वह अपने भविष्य की तैयारी कर रहा है।"
+        }
+      ]
+    },
+    {
+      "place": "dandakaranya",
+      "time": "dawn",
+      "weather": "fog",
+      "music": "mystery",
+      "cast": [
+        {
+          "id": "rama",
+          "slot": "center",
+          "arrives": false,
+          "hidden": false
+        },
+        {
+          "id": "lakshmana",
+          "slot": "right",
+          "arrives": false,
+          "hidden": false
+        },
+        {
+          "id": "viswamitra",
+          "slot": "left",
+          "arrives": false,
+          "hidden": false
+        }
+      ],
+      "what_happens": "Rama and Lakshmana follow Viswamitra into the misty forest of Dandakaranya, where they encounter Tadaka, a yaksha woman turned rakshasi. She challenges them, revealing her cursed soul and demanding their surrender.",
+      "words": 80,
+      "beats": [
+        {
+          "speaker": "narrator",
+          "say_en": "Dawn breaks over Dandakaranya. Rama and Lakshmana follow Viswamitra into the misty forest.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "crowd_gasp"
+          ],
+          "react": {},
+          "say_hi": "दंडकारण्य पर सूर्योदय हुआ। राम और लक्ष्मणजी ऋषि विश्वामित्र के साथ धुंधले वन में चले गए।",
+          "say": "Dandkaranya par suryoday hua. Rama aur lakshmanji rishi vishvamitr ke saath dhundhle van mein chale gaye.",
+          "say_from": "दंडकारण्य पर सूर्योदय हुआ। राम और लक्ष्मणजी ऋषि विश्वामित्र के साथ धुंधले वन में चले गए।"
+        },
+        {
+          "speaker": "viswamitra",
+          "say_en": "This land is cursed, young prince. Be wary of its dangers.",
+          "emotion": "calm",
+          "action": {
+            "type": "point",
+            "who": "viswamitra",
+            "target": "rama"
+          },
+          "sfx": [
+            "magic"
+          ],
+          "react": {},
+          "say_hi": "हे राजकुमार, यह भूमि शापित है। इसके खतरों से सावधान रहना।",
+          "say": "He rajkumar, yah bhumi shapit hai. Iske khatron se savdhan rahna.",
+          "say_from": "हे राजकुमार, यह भूमि शापित है। इसके खतरों से सावधान रहना।"
+        },
+        {
+          "speaker": "rama",
+          "say_en": "We are ready to face whatever lies ahead.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "riser"
+          ],
+          "react": {},
+          "say_hi": "हम आगे जो भी हो, उसका सामना करने के लिए तैयार हैं।",
+          "say": "Hume aage jo bhi ho, uska samna karne ke liye taiyaan hain.",
+          "say_from": "हम आगे जो भी हो, उसका सामना करने के लिए तैयार हैं।"
+        },
+        {
+          "speaker": "lakshmana",
+          "say_en": "I will protect my brother with my life.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {},
+          "say_hi": "मैं अपने भाई की रक्षा के लिए अपना जीवन दे दूंगा।",
+          "say": "Main apne bhai ki raksha ke liye apna jeevan de dunga.",
+          "say_from": "मैं अपने भाई की रक्षा के लिए अपना जीवन दे दूंगा।"
+        },
+        {
+          "speaker": "narrator",
+          "say_en": "They walk deeper into the fog. A sudden voice calls out from the shadows.",
+          "emotion": "surprised",
+          "action": {},
+          "sfx": [
+            "thunder",
+            "crowd_gasp"
+          ],
+          "react": {},
+          "say_hi": "वे धुएँ में और भी गहरे चले गए। अचानक एक आवाज़ छायाँ से निकली।",
+          "say": "Ve dhuen mein aur bhi gahre chale gaye. Achanak ek awaaz chhayan se nikli.",
+          "say_from": "वे धुएँ में और भी गहरे चले गए। अचानक एक आवाज़ छायाँ से निकली।"
+        },
+        {
+          "speaker": "rama",
+          "say_en": "We come in peace, but we will not yield to evil.",
+          "emotion": "calm",
+          "action": {
+            "type": "raise",
+            "who": "rama"
+          },
+          "sfx": [
+            "clash"
+          ],
+          "react": {},
+          "say_hi": "हम शांति से आए हैं, पर हम बुराई को नहीं मानेंगे।",
+          "say": "Hume shanti se aaye hain, par hume burai ko nahi manenge.",
+          "say_from": "हम शांति से आए हैं, पर हम बुराई को नहीं मानेंगे।"
+        },
+        {
+          "speaker": "narrator",
+          "say_en": "Tadaka, a yaksha woman turned rakshasi, stands before them, her eyes glowing with dark power.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "magic",
+            "roar"
+          ],
+          "react": {},
+          "say_hi": "तड़का, एक यक्षिणी जो राक्षसी बन गई, उनके सामने खड़ी थी, उसकी आँखें अंधेरी शक्ति से चमक रही थीं।",
+          "say": "Tadka, ek yakshini jo rakshasi ban gayi, unke samne khadi thi, uski aankhen andheri shakti se chamak rahi thin.",
+          "say_from": "तड़का, एक यक्षिणी जो राक्षसी बन गई, उनके सामने खड़ी थी, उसकी आँखें अंधेरी शक्ति से चमक रही थीं।"
+        }
+      ],
+      "kind": "story"
+    },
+    {
+      "place": "dandakaranya",
+      "time": "day",
+      "weather": "clear",
+      "music": "tense",
+      "cast": [
+        {
+          "id": "rama",
+          "slot": "center",
+          "arrives": false,
+          "hidden": false
+        },
+        {
+          "id": "lakshmana",
+          "slot": "right",
+          "arrives": false,
+          "hidden": false
+        },
+        {
+          "id": "viswamitra",
+          "slot": "left",
+          "arrives": false,
+          "hidden": false
+        }
+      ],
+      "what_happens": "Tadaka taunts Rama, who hesitates to kill her due to her gender. Viswamitra explains that evil has no form or gender and urges him to act with righteousness. Rama, guided by divine will, releases a single arrow that strikes Tadaka, freeing her soul from its curse.",
+      "words": 100,
+      "beats": [
+        {
+          "speaker": "narrator",
+          "say_en": "Tadaka mocks Rama, claiming he cannot kill a woman.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {},
+          "say_hi": "तड़का कहता है कि राम एक औरत को नहीं मार सकता।",
+          "say": "Tadka kahta hai ki rama ek aurat ko nahi mar sakta.",
+          "say_from": "तड़का कहता है कि राम एक औरत को नहीं मार सकता।"
+        },
+        {
+          "speaker": "rama",
+          "say_en": "I do not judge by gender, but by deeds.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {},
+          "say_hi": "मैं लिंग से नहीं, बल्कि कर्मों से বিচার करता हूँ।",
+          "say": "Main ling se nahi, balki karmon se বিচার karta hun.",
+          "say_from": "मैं लिंग से नहीं, बल्कि कर्मों से বিচার करता हूँ।"
+        },
+        {
+          "speaker": "lakshmana",
+          "say_en": "Let her know we are not afraid!",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "crowd_gasp"
+          ],
+          "react": {},
+          "say_hi": "बताइए, हमें डरने से क्या होगा? माता!",
+          "say": "Bataie, humein darne se kya hoga? Mata!",
+          "say_from": "बताइए, हमें डरने से क्या होगा? माता!"
+        },
+        {
+          "speaker": "viswamitra",
+          "say_en": "Evil takes many forms, prince. Do not let bias cloud your justice.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {},
+          "say_hi": "बुराई कई रूप ले सकता है, राजकुमार। न्याय में पूर्वाग्रह मत आने दो।",
+          "say": "Burai kay rup le sakta hai, rajkumar. Nyay mein purvagrah mat aane do.",
+          "say_from": "बुराई कई रूप ले सकता है, राजकुमार। न्याय में पूर्वाग्रह मत आने दो।"
+        },
+        {
+          "speaker": "narrator",
+          "say_en": "Rama raises his bow, calm and resolute.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "riser"
+          ],
+          "react": {},
+          "say_hi": "राम महाराज अपना धनुष उठाएँ, शांत और दृढ़ निश्चयी।",
+          "say": "Rama maharaja apna dhanush uthaen, shant aur dridh nishchayi.",
+          "say_from": "राम महाराज अपना धनुष उठाएँ, शांत और दृढ़ निश्चयी।"
+        },
+        {
+          "speaker": "rama",
+          "say_en": "I see the truth in you, Tadaka. Your curse ends now.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {},
+          "say_hi": "मैं तुम्हें सच देखता हूँ, तड़का। तुम्हारा शाप अब समाप्त होता है।",
+          "say": "Main tumhen sach dekhta hun, tadka. Tumhara shap ab samapt hota hai.",
+          "say_from": "मैं तुम्हें सच देखता हूँ, तड़का। तुम्हारा शाप अब समाप्त होता है।"
+        },
+        {
+          "speaker": "narrator",
+          "say_en": "A single arrow flies, striking Tadaka. Her form dissolves into light.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "arrow",
+            "clash"
+          ],
+          "react": {},
+          "say_hi": "एक तीर उड़ता है, तड़के को छूता है। उसका रूप प्रकाश में घुल जाता है।",
+          "say": "Ek tir udta hai, tadke ko chhuta hai. Uska rup prakash mein ghul jaata hai.",
+          "say_from": "एक तीर उड़ता है, तड़के को छूता है। उसका रूप प्रकाश में घुल जाता है।"
+        },
+        {
+          "speaker": "viswamitra",
+          "say_en": "You have shown strength beyond your years, Rama.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "gong"
+          ],
+          "react": {},
+          "say_hi": "तुमने अद्भुत शक्ति दिखाई, राम।",
+          "say": "Tumne adbhut shakti dikhai, rama.",
+          "say_from": "तुमने अद्भुत शक्ति दिखाई, राम।"
+        }
+      ],
+      "kind": "story"
+    },
+    {
+      "place": "dandakaranya",
+      "time": "evening",
+      "weather": "clear",
+      "music": "divine",
+      "cast": [
+        {
+          "id": "rama",
+          "slot": "center",
+          "arrives": false,
+          "hidden": false
+        },
+        {
+          "id": "lakshmana",
+          "slot": "right",
+          "arrives": false,
+          "hidden": false
+        },
+        {
+          "id": "viswamitra",
+          "slot": "left",
+          "arrives": false,
+          "hidden": false
+        }
+      ],
+      "what_happens": "Viswamitra rewards Rama and Lakshmana with divine weapons (astras and sastras) and teaches them advanced military arts. He praises Rama's strength and resolve, ending the episode as Rama stands victorious, having proven his divine power.",
+      "words": 140,
+      "beats": [
+        {
+          "speaker": "narrator",
+          "say_en": "Rama stands victorious, having proven his divine power.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "riser"
+          ],
+          "react": {},
+          "say_hi": "राम विजयी खड़ा है, जिसने अपनी दिव्य शक्ति साबित की।",
+          "say": "Rama vijyi khada hai, jisne apni divya shakti sabit ki.",
+          "say_from": "राम विजयी खड़ा है, जिसने अपनी दिव्य शक्ति साबित की।"
+        },
+        {
+          "speaker": "rama",
+          "say_en": "I only did what is right, Guru.",
+          "emotion": "calm",
+          "action": {
+            "type": "bow",
+            "who": "rama",
+            "target": "viswamitra"
+          },
+          "sfx": [],
+          "react": {},
+          "say_hi": "मैंने बस यही किया जो सही था, गुरुदेव।",
+          "say": "Maine bas yahi kiya jo sahi tha, gurudev.",
+          "say_from": "मैंने बस यही किया जो सही था, गुरुदेव।"
+        },
+        {
+          "speaker": "lakshmana",
+          "say_en": "We are ready to face any challenge, Rama.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {},
+          "say_hi": "हम किसी भी चुनौती का सामना करने के लिए तैयार हैं, राम।",
+          "say": "Hume kisi bhi chunauti ka samna karne ke liye taiyaan hain, rama.",
+          "say_from": "हम किसी भी चुनौती का सामना करने के लिए तैयार हैं, राम।"
+        },
+        {
+          "speaker": "viswamitra",
+          "say_en": "Then take these weapons of the gods. They will protect you and your people.",
+          "emotion": "calm",
+          "action": {
+            "type": "raise",
+            "who": "viswamitra"
+          },
+          "sfx": [
+            "magic"
+          ],
+          "react": {},
+          "say_hi": "फिर इन देवताओं के शस्त्र लो। ये तुम्हें और तुम्हारे लोगों को बचाएंगे।",
+          "say": "Phir in devtaon ke shastr lo. Ye tumhen aur tumhare logon ko bachaenge.",
+          "say_from": "फिर इन देवताओं के शस्त्र लो। ये तुम्हें और तुम्हारे लोगों को बचाएंगे।"
+        },
+        {
+          "speaker": "narrator",
+          "say_en": "Viswamitra bestows upon Rama a divine weapon, an astra, and upon Lakshmana a sacred sword, a sastra.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "thunder"
+          ],
+          "react": {},
+          "say_hi": "विश्वामित्र ने राम को एक दिव्य शस्त्र, एक अस्त्र, और लक्ष्मण को एक पवित्र तलवार, एक सस्त्र प्रदान किए।",
+          "say": "Vishvamitr ne rama ko ek divya shastr, ek astr, aur lakshman ko ek pavitr talvar, ek sastr pradan kiye.",
+          "say_from": "विश्वामित्र ने राम को एक दिव्य शस्त्र, एक अस्त्र, और लक्ष्मण को एक पवित्र तलवार, एक सस्त्र प्रदान किए।"
+        },
+        {
+          "speaker": "rama",
+          "say_en": "I will use them only to defend the innocent.",
+          "emotion": "calm",
+          "action": {
+            "type": "point",
+            "who": "rama"
+          },
+          "sfx": [],
+          "react": {},
+          "say_hi": "मैं इनका इस्तेमाल केवल निर्दोषों की रक्षा के लिए करूंगा।",
+          "say": "Main inka istemal keval nirdoshon ki raksha ke liye karunga.",
+          "say_from": "मैं इनका इस्तेमाल केवल निर्दोषों की रक्षा के लिए करूंगा।"
+        },
+        {
+          "speaker": "viswamitra",
+          "say_en": "That is the true power of a warrior.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "conch"
+          ],
+          "react": {},
+          "say_hi": "यही एक योद्धा का सच्चा शक्ति है। महाराज, यह तो बस वीरता की बात है।",
+          "say": "Yahi ek yoddha ka sachcha shakti hai. Maharaja, yah to bas virta ki baat hai.",
+          "say_from": "यही एक योद्धा का सच्चा शक्ति है। महाराज, यह तो बस वीरता की बात है।"
+        },
+        {
+          "speaker": "lakshmana",
+          "say_en": "We are ready, brother.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "drum_hit"
+          ],
+          "react": {},
+          "say_hi": "हम तैयार हैं, भाई।",
+          "say": "Hume taiyaan hain, bhai.",
+          "say_from": "हम तैयार हैं, भाई।"
+        }
+      ],
+      "kind": "story"
+    },
+    {
+      "kind": "teaser",
+      "place": "dandakaranya",
+      "time": "evening",
+      "weather": "clear",
+      "music": "mystery",
+      "cast": [
+        {
+          "id": "rama",
+          "slot": "center",
+          "arrives": false,
+          "hidden": false
+        },
+        {
+          "id": "lakshmana",
+          "slot": "right",
+          "arrives": false,
+          "hidden": false
+        }
+      ],
+      "beats": [
+        {
+          "speaker": "narrator",
+          "say_en": "Rama proves his strength by breaking the mighty Shiv Dhanush bow.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "riser"
+          ],
+          "react": {},
+          "say_hi": "राम ने विशाल शिव धनुष को तोड़कर अपनी शक्ति का प्रदर्शन किया।",
+          "say": "Rama ne vishal shiv dhanush ko todkar apni shakti ka pradarshan kiya.",
+          "say_from": "राम ने विशाल शिव धनुष को तोड़कर अपनी शक्ति का प्रदर्शन किया।"
+        },
+        {
+          "speaker": "narrator",
+          "say_en": "What happens when Janaka challenges him to a test of skill?",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "riser"
+          ],
+          "react": {},
+          "say_hi": "जब जनक ने उसे एक कौशल परीक्षण के लिए चुनौती दी, तो क्या हुआ?",
+          "say": "Jab janak ne use ek kaushal parikshan ke liye chunauti di, to kya hua?",
+          "say_from": "जब जनक ने उसे एक कौशल परीक्षण के लिए चुनौती दी, तो क्या हुआ?"
+        }
+      ]
+    }
+  ]
+}

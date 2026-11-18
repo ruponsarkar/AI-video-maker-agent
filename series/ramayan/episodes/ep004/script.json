@@ -1,0 +1,304 @@
+{
+  "series": "Ramayan",
+  "n": 4,
+  "title": "Kaikeyi's Demand",
+  "title_hi": "कैकेयी के अपेक्षा",
+  "arc": 2,
+  "next_title": "Rama's Exile",
+  "written": "2026-11-11 19:29",
+  "scenes": [
+    {
+      "kind": "recap",
+      "place": "ayodhya",
+      "time": "evening",
+      "weather": "clear",
+      "music": "mystery",
+      "cast": [
+        {
+          "id": "kaikeyi",
+          "slot": "center",
+          "arrives": false,
+          "hidden": false
+        },
+        {
+          "id": "dasaratha",
+          "slot": "far_right",
+          "arrives": false,
+          "hidden": false
+        }
+      ],
+      "beats": [
+        {
+          "speaker": "narrator",
+          "say_en": "Rama accepted the divine bow from King Janaka.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {},
+          "say_hi": "राम ने राजा जनक से दिव्य धनुष स्वीकार किया।",
+          "say": "Rama ne raja janak se divya dhanush svikar kiya.",
+          "say_from": "राम ने राजा जनक से दिव्य धनुष स्वीकार किया।"
+        },
+        {
+          "speaker": "narrator",
+          "say_en": "He married Sita, fulfilling his destiny.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {},
+          "say_hi": "उन्होंने सीता से विवाह किया, अपना भाग्य पूरा किया।",
+          "say": "Unhonne sita se vivah kiya, apna bhagya poora kiya.",
+          "say_from": "उन्होंने सीता से विवाह किया, अपना भाग्य पूरा किया।"
+        },
+        {
+          "speaker": "narrator",
+          "say_en": "They arrived in Ayodhya under cover of night.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {},
+          "say_hi": "राम और लक्ष्मण चुपके रातों में अयोध्या पहुँचे।",
+          "say": "Rama aur lakshman chupke raton mein ayodhya pahunche.",
+          "say_from": "राम और लक्ष्मण चुपके रातों में अयोध्या पहुँचे।"
+        }
+      ]
+    },
+    {
+      "place": "ayodhya",
+      "time": "evening",
+      "weather": "clear",
+      "music": "sad",
+      "cast": [
+        {
+          "id": "kaikeyi",
+          "slot": "center",
+          "arrives": false,
+          "hidden": false
+        },
+        {
+          "id": "dasaratha",
+          "slot": "far_right",
+          "arrives": false,
+          "hidden": false
+        }
+      ],
+      "what_happens": "Kaikeyi, standing in the royal hall of Ayodhya, confronts her husband Dasaratha. Her voice is filled with anger and desperation as she demands Rama's exile and Bharata's coronation. Dasaratha listens in silence, his face etched with sorrow, knowing the weight of her words will change everything.",
+      "words": 110,
+      "beats": [
+        {
+          "speaker": "narrator",
+          "say_en": "The royal hall of Ayodhya is dimly lit as Kaikeyi stands before Dasaratha.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "thunder"
+          ],
+          "react": {},
+          "say_hi": "अयोध्या के शाही हॉल में रोशनी कम है, कैकेयी दशरथ के सामने खड़ी है।",
+          "say": "Ayodhya ke shahi hall mein roshni kam hai, kaikeyi dashrath ke samne khadi hai.",
+          "say_from": "अयोध्या के शाही हॉल में रोशनी कम है, कैकेयी दशरथ के सामने खड़ी है।"
+        },
+        {
+          "speaker": "kaikeyi",
+          "say_en": "You have given me everything, yet I am not satisfied! Rama must leave Ayodhya and Bharata must rule!",
+          "emotion": "angry",
+          "action": {
+            "type": "point",
+            "who": "kaikeyi",
+            "target": "dasaratha"
+          },
+          "sfx": [
+            "crowd_gasp"
+          ],
+          "react": {
+            "dasaratha": "sad"
+          },
+          "say_hi": "आप मुझे सब कुछ दिया, फिर भी मैं संतुष्ट नहीं हूँ! राम को अयोध्या छोड़ना होगा और भरत को राज करना होगा!",
+          "say": "Aap mujhe sab kuch diya, phir bhi main santusht nahi hun! Rama ko ayodhya chhodna hoga aur bharat ko raj karna hoga!",
+          "say_from": "आप मुझे सब कुछ दिया, फिर भी मैं संतुष्ट नहीं हूँ! राम को अयोध्या छोड़ना होगा और भरत को राज करना होगा!"
+        },
+        {
+          "speaker": "dasaratha",
+          "say_en": "My dear wife, Rama is my beloved son. How can you ask this of me?",
+          "emotion": "sad",
+          "action": {},
+          "sfx": [
+            "heartbeat"
+          ],
+          "react": {
+            "kaikeyi": "fear"
+          },
+          "say_hi": "मेरे प्यारे पत्नी, राम मेरा प्यारा पुत्र है। तुम मुझसे यह कैसे मांग सकती हो?",
+          "say": "Mere pyare patni, rama mera pyara putr hai. Tum mujhse yah kaise maang sakti ho?",
+          "say_from": "मेरे प्यारे पत्नी, राम मेरा प्यारा पुत्र है। तुम मुझसे यह कैसे मांग सकती हो?"
+        },
+        {
+          "speaker": "kaikeyi",
+          "say_en": "He has no heart for the throne! Bharata is worthy, and I will not let him be denied his birthright!",
+          "emotion": "calm",
+          "action": {
+            "type": "raise",
+            "who": "kaikeyi"
+          },
+          "sfx": [
+            "magic"
+          ],
+          "react": {},
+          "say_hi": "उसके दिल में सिंहासन के लिए कोई चाहत नहीं है! भरत योग्य है, और मैं उसे अपनी जन्मभूमि से वंचित नहीं होने दूँगी!",
+          "say": "Uske dil mein sinhasan ke liye koi chahat nahi hai! Bharat yogya hai, aur main use apni janmabhumi se vanchit nahi hone dungi!",
+          "say_from": "उसके दिल में सिंहासन के लिए कोई चाहत नहीं है! भरत योग्य है, और मैं उसे अपनी जन्मभूमि से वंचित नहीं होने दूँगी!"
+        },
+        {
+          "speaker": "dasaratha",
+          "say_en": "If I grant your wish, it will break my soul. But I must obey you, for you are my queen.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "conch"
+          ],
+          "react": {},
+          "say_hi": "अगर मैं तुम्हारी इच्छा पूरी कर दूं, तो मेरा हृदय टूट जाएगा। लेकिन मुझे तुम्हें माननी होगा, क्योंकि तुम मेरी रानी हो।",
+          "say": "Agar main tumhari ichchha poori kar dun, to mera hriday toot jayega. Lekin mujhe tumhen manni hoga, kyunki tum meri rani ho.",
+          "say_from": "अगर मैं तुम्हारी इच्छा पूरी कर दूं, तो मेरा हृदय टूट जाएगा। लेकिन मुझे तुम्हें माननी होगा, क्योंकि तुम मेरी रानी हो।"
+        },
+        {
+          "speaker": "kaikeyi",
+          "say_en": "Then do so, O king, and see if your love for Rama is truly as deep as you claim.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "clash"
+          ],
+          "react": {},
+          "say_hi": "तो करो, महाराज, और देखें कि आपके राम के लिए प्यार कितना गहरा है जितना आप कहते हैं।",
+          "say": "To karo, maharaja, aur dekhen ki aapke rama ke liye pyar kitna gahra hai jitna aap kehte hain.",
+          "say_from": "तो करो, महाराज, और देखें कि आपके राम के लिए प्यार कितना गहरा है जितना आप कहते हैं।"
+        }
+      ],
+      "kind": "story"
+    },
+    {
+      "place": "ayodhya",
+      "time": "night",
+      "weather": "fog",
+      "music": "tense",
+      "cast": [
+        {
+          "id": "kaikeyi",
+          "slot": "center",
+          "arrives": false,
+          "hidden": false
+        },
+        {
+          "id": "dasaratha",
+          "slot": "far_right",
+          "arrives": false,
+          "hidden": false
+        }
+      ],
+      "what_happens": "Kaikeyi stands before Dasaratha in the dim light of the palace, her eyes fierce as she demands the impossible. She speaks with a mix of fury and conviction, believing that Bharata is more worthy to rule than Rama. Dasaratha, torn between duty and love, listens without protest, knowing he must now face the consequences of his queen's wrath.",
+      "words": 209,
+      "beats": [
+        {
+          "speaker": "narrator",
+          "say_en": "Dasaratha bows his head in sorrow, knowing the weight of his decision has begun.",
+          "emotion": "sad",
+          "action": {
+            "type": "bow",
+            "who": "dasaratha",
+            "target": "kaikeyi"
+          },
+          "sfx": [
+            "heartbeat"
+          ],
+          "react": {
+            "kaikeyi": "fear"
+          },
+          "say_hi": "दशरथ का सिर झुका हुआ है, वह जानता है कि उसके फैसले का बोझ शुरू हो गया है।",
+          "say": "Dashrath ka sir jhuka hua hai, vah janta hai ki uske phaisle ka bojh shuru ho gaya hai.",
+          "say_from": "दशरथ का सिर झुका हुआ है, वह जानता है कि उसके फैसले का बोझ शुरू हो गया है।"
+        },
+        {
+          "speaker": "dasaratha",
+          "say_en": "I will grant your wish, my queen, for it is my duty as a king.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {
+            "kaikeyi": "surprised"
+          },
+          "say_hi": "मैं तुम्हारी इच्छा पूरी करूँगा, महिला रानी, क्योंकि यह मेरे राजा के रूप में कर्तव्य है।",
+          "say": "Main tumhari ichchha poori karunga, mahila rani, kyunki yah mere raja ke rup mein kartavya hai.",
+          "say_from": "मैं तुम्हारी इच्छा पूरी करूँगा, महिला रानी, क्योंकि यह मेरे राजा के रूप में कर्तव्य है।"
+        },
+        {
+          "speaker": "kaikeyi",
+          "say_en": "You are a king, not a father. Let justice be done, and let duty take its course.",
+          "emotion": "calm",
+          "action": {
+            "type": "point",
+            "who": "kaikeyi",
+            "target": "dasaratha"
+          },
+          "sfx": [
+            "thunder"
+          ],
+          "react": {},
+          "say_hi": "तुम राजा हो, पिता नहीं। न्याय हो, और कर्तव्य अपना मार्ग चलाए।",
+          "say": "Tum raja ho, pita nahi. Nyay ho, aur kartavya apna marg chalae.",
+          "say_from": "तुम राजा हो, पिता नहीं। न्याय हो, और कर्तव्य अपना मार्ग चलाए।"
+        }
+      ],
+      "kind": "story"
+    },
+    {
+      "kind": "teaser",
+      "place": "ayodhya",
+      "time": "night",
+      "weather": "fog",
+      "music": "mystery",
+      "cast": [
+        {
+          "id": "kaikeyi",
+          "slot": "center",
+          "arrives": false,
+          "hidden": false
+        },
+        {
+          "id": "dasaratha",
+          "slot": "far_right",
+          "arrives": false,
+          "hidden": false
+        }
+      ],
+      "beats": [
+        {
+          "speaker": "narrator",
+          "say_en": "Rama steps onto the path of exile, unaware of the storms waiting ahead.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "riser"
+          ],
+          "react": {},
+          "say_hi": "राम पथ पर चले, विदाउट जाने कि आगे क्या मुसीबतें हैं।",
+          "say": "Rama path par chale, vidaut jaane ki aage kya musibten hain.",
+          "say_from": "राम पथ पर चले, विदाउट जाने कि आगे क्या मुसीबतें हैं।"
+        },
+        {
+          "speaker": "narrator",
+          "say_en": "What dark secret does Kaikeyi truly hide behind her demands?",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "riser"
+          ],
+          "react": {},
+          "say_hi": "कैकेयी के मन में सच में क्या गहरा राज छिपा है?",
+          "say": "Kaikeyi ke man mein sach mein kya gahra raj chhipa hai?",
+          "say_from": "कैकेयी के मन में सच में क्या गहरा राज छिपा है?"
+        }
+      ]
+    }
+  ]
+}

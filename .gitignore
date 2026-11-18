@@ -1,9 +1,12 @@
 # Login files: anyone with these could upload to the channel. Never commit them.
 client_secret*.json
 youtube_token.json
+youtube_token_*.json
 
 # The owner's voice sample
 voices/*.wav
+voices/serial/
+series/*/voices/
 
 # Contains SearXNG's secret key
 searxng/settings.yml
@@ -11,6 +14,8 @@ searxng/settings.yml
 # Python environments and caches (rebuild them, don't store them)
 venv/
 venv-voice/
+venv-video/
+wan2gp/
 .venv/
 __pycache__/
 *.pyc
@@ -21,6 +26,9 @@ projects/*/output/
 projects/*/images/
 projects/*/fonts
 projects/*/music.*
+series/*/episodes/*/audio/
+series/*/episodes/*/output/
+series/*/music/
 audio/
 output/
 music.mp3
@@ -31,3 +39,16 @@ music.m4a
 .vscode/
 .idea/
 .DS_Store
+
+# rhymes: generated media (lyrics.txt, script.json and review.md are kept)
+rhymes/songs/*/audio/
+rhymes/songs/*/output/
+rhymes/songs/*/youtube/*.jpg
+rhymes/voices/
+rhymes/cast.png
+rhymes/songs/*/images/
+rhymes/cast_art/*_cut.png
+
+# ACE-Step 1.5 code + 6 GB of models (git clone, see rhyme/README.md)
+ace-step/
+.cache/

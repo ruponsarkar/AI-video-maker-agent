@@ -1,0 +1,39 @@
+# Rhyme lyrics: edit freely, then run: python rhyme.py make <slug>
+# Devanagari = what is sung. Add ' | Roman' after a line to set the on-screen spelling yourself.
+# Choose the picture per section: [verse place=pond cast=frog,duck]
+#   places: garden jungle farm pond underwater sky night beach room rail
+#   cast:   boy girl cat dog rabbit elephant lion monkey cow frog duck fish butterfly sun moon star peacock parrot train
+# An empty [chorus] repeats the last chorus.
+# Written by gemma3:4b: read and improve it.
+
+title: Haathi Ka Hatha
+tempo: 100
+key: C
+
+[verse]
+हाथी बड़ा दयालु है रानी
+बच्चे को खोजता है, कितनी हैरानी
+बच्चों का साथ देता, बहुत न्यारा
+जैसे खुशी, कितनी हैरानी
+
+[chorus]
+हाथी गाता, हाथी गाता
+गाने से खुशी लाता, खुशियाँ लाता
+हाथी नाचता, हाथी नाचता
+सब बच्चों के साथ, मस्ती करता
+
+[verse]
+छोटे बच्चे खो गए थे, थोड़ा डरते
+हाथी ने कहा "चिंता मत करो प्यारे" कहते
+बच्चे हँसे, हाथी का प्यारा चेहरा
+जैसे दोस्त है अच्छा, जैसे धूप भरा
+
+[chorus]
+
+[verse]
+हाथी ने बच्चे को घर ले गया है रानी
+माँ-बाएँ भी खुश हुए, बहुत आनन्दी
+बच्चे ने कहा "धन्यवाद हाथी भाई
+धन्यवाद हाथी भाई, खूब आनन्दी!
+
+[chorus]

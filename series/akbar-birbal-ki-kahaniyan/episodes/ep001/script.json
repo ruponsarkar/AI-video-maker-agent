@@ -1,0 +1,425 @@
+{
+  "series": "Akbar Birbal Ki Kahaniyan",
+  "n": 1,
+  "title": "Test of True Merchant",
+  "title_hi": "सच्चे व्यापारी का परीक्षण",
+  "arc": 1,
+  "next_title": "Time is a Merchant",
+  "written": "2026-11-11 20:25",
+  "scenes": [
+    {
+      "place": "akbars_court",
+      "time": "day",
+      "weather": "clear",
+      "music": "calm",
+      "cast": [
+        {
+          "id": "akbar",
+          "slot": "center",
+          "arrives": false,
+          "hidden": false
+        },
+        {
+          "id": "birbal",
+          "slot": "right",
+          "arrives": false,
+          "hidden": false
+        }
+      ],
+      "what_happens": "Akbar sits on his throne, looking serious. Birbal enters and announces that he must find the true merchant in the kingdom. Akbar gives him the task, saying it's a test of wisdom.",
+      "words": 80,
+      "beats": [
+        {
+          "speaker": "narrator",
+          "say_en": "Akbar sits on his throne, looking serious.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {},
+          "say_hi": "अकबर अपने सिंहासन पर विराजमान हैं, गंभीर भाव से देख रहे हैं।",
+          "say": "Akbar apne sinhasan par virajman hain, gambhir bhav se dekh rahe hain.",
+          "say_from": "अकबर अपने सिंहासन पर विराजमान हैं, गंभीर भाव से देख रहे हैं।"
+        },
+        {
+          "speaker": "akbar",
+          "say_en": "Birbal, I need you to find the true merchant in the kingdom.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {},
+          "say_hi": "बीरबल, मुझे सचमुच का व्यापारी चाहिए इस राज्य में।",
+          "say": "Birbal, mujhe sachmuch ka vyapari chahiye is rajya mein.",
+          "say_from": "बीरबल, मुझे सचमुच का व्यापारी चाहिए इस राज्य में।"
+        },
+        {
+          "speaker": "birbal",
+          "say_en": "Your Majesty, I shall not fail you.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {},
+          "say_hi": "महाराज, मैं आपको निराश नहीं करूंगा।",
+          "say": "Maharaja, main aapko nirash nahi karunga.",
+          "say_from": "महाराज, मैं आपको निराश नहीं करूंगा।"
+        },
+        {
+          "speaker": "narrator",
+          "say_en": "Birbal bows and leaves the court.",
+          "emotion": "calm",
+          "action": {
+            "type": "bow",
+            "who": "birbal"
+          },
+          "sfx": [],
+          "react": {},
+          "say_hi": "बीरबल झुककर दरबार से बाहर चले गए।",
+          "say": "Birbal jhukkar darbar se bahar chale gaye.",
+          "say_from": "बीरबल झुककर दरबार से बाहर चले गए।"
+        },
+        {
+          "speaker": "akbar",
+          "say_en": "Let the search begin.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {},
+          "say_hi": "खोज शुरू करो।",
+          "say": "Khoj shuru karo.",
+          "say_from": "खोज शुरू करो।"
+        },
+        {
+          "speaker": "birbal",
+          "say_en": "The true merchant is one who sells what cannot be bought with gold or silver.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "magic"
+          ],
+          "react": {},
+          "say_hi": "सच का व्यापारी वह होता है जो सोने या चाँदी से नहीं खरीदता, वह चीज़ बेचता है।",
+          "say": "Sach ka vyapari vah hota hai jo sone ya chandi se nahi kharidta, vah cheez bechta hai.",
+          "say_from": "सच का व्यापारी वह होता है जो सोने या चाँदी से नहीं खरीदता, वह चीज़ बेचता है।"
+        },
+        {
+          "speaker": "narrator",
+          "say_en": "Akbar listens carefully, intrigued by Birbal's words.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {},
+          "say_hi": "अकबर ध्यान से सुन रहे थे, बीरबल की बातों में मोहित होते थे।",
+          "say": "Akbar dhyan se sun rahe the, birbal ki baton mein mohit hote the.",
+          "say_from": "अकबर ध्यान से सुन रहे थे, बीरबल की बातों में मोहित होते थे।"
+        }
+      ],
+      "kind": "story"
+    },
+    {
+      "place": "akbars_court",
+      "time": "day",
+      "weather": "clear",
+      "music": "happy",
+      "cast": [
+        {
+          "id": "birbal",
+          "slot": "center",
+          "arrives": false,
+          "hidden": false
+        },
+        {
+          "id": "old_man",
+          "slot": "far_right",
+          "arrives": true,
+          "hidden": false
+        }
+      ],
+      "what_happens": "Birbal announces a test to identify the true merchant. Merchants from across the land arrive at court claiming they have the desired item. Some bring silk, others jewels. Birbal rejects them all, saying none are truly merchants.",
+      "words": 120,
+      "beats": [
+        {
+          "speaker": "narrator",
+          "say_en": "Merchants from across the kingdom arrive at court, each claiming to have the item Birbal described.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "crowd_gasp"
+          ],
+          "react": {
+            "old_man": "surprised"
+          },
+          "say_hi": "पूरे राज्य से व्यापारी आते हैं अकबर के दरबार में, हर कोई कहता है कि बीरबल ने जिसकी बात बताई थी, वही चीज उसके पास है।",
+          "say": "Poore rajya se vyapari aate hain akbar ke darbar mein, har koi kahta hai ki birbal ne jiski baat batai thi, vahi cheez uske paas hai.",
+          "say_from": "पूरे राज्य से व्यापारी आते हैं अकबर के दरबार में, हर कोई कहता है कि बीरबल ने जिसकी बात बताई थी, वही चीज उसके पास है।"
+        },
+        {
+          "speaker": "birbal",
+          "say_en": "None of you are truly merchants. You sell things that can be bought with gold and silver.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {
+            "old_man": "fear"
+          },
+          "say_hi": "न आप लोग सच्चे व्यापारी हैं। आप वो चीज़ें बेचते हैं जो सोने और चाँदी से खरीदी जा सकती हैं।",
+          "say": "Na aap log sachche vyapari hain. Aap wo cheezein bechte hain jo sone aur chandi se kharidi jaa sakti hain.",
+          "say_from": "न आप लोग सच्चे व्यापारी हैं। आप वो चीज़ें बेचते हैं जो सोने और चाँदी से खरीदी जा सकती हैं।"
+        },
+        {
+          "speaker": "narrator",
+          "say_en": "The crowd gasps as Birbal rejects them all.",
+          "emotion": "surprised",
+          "action": {},
+          "sfx": [
+            "crowd_gasp"
+          ],
+          "react": {
+            "birbal": "calm"
+          },
+          "say_hi": "भीड़ आह भरती है, जब बीरबल सभी को अस्वीकार कर देता है।",
+          "say": "Bhid aah bharti hai, jab birbal sabhi ko asvikar kar data hai.",
+          "say_from": "भीड़ आह भरती है, जब बीरबल सभी को अस्वीकार कर देता है।"
+        },
+        {
+          "speaker": "old_man",
+          "say_en": "oldman: I am not a merchant, but I offer something far more valuable than gold or jewels.",
+          "emotion": "calm",
+          "action": {
+            "type": "enter",
+            "who": "old_man"
+          },
+          "sfx": [],
+          "react": {},
+          "say_hi": ": मैं व्यापारी नहीं हूँ, पर मैं सोने या रत्नों से भी ज़्यादा मूल्यवान कुछ दे सकता हूँ।",
+          "say": ": main vyapari nahi hun, par main sone ya ratnon se bhi zyada mulyavan kuch de sakta hun.",
+          "say_from": ": मैं व्यापारी नहीं हूँ, पर मैं सोने या रत्नों से भी ज़्यादा मूल्यवान कुछ दे सकता हूँ।"
+        },
+        {
+          "speaker": "narrator",
+          "say_en": "The other merchants laugh at the old man’s claim.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {
+            "old_man": "angry",
+            "birbal": "calm"
+          },
+          "say_hi": "दूसरे व्यापारी उस वृद्ध पुरुष की बात पर हँसते हैं।",
+          "say": "Dusre vyapari us vriddh purush ki baat par hanste hain.",
+          "say_from": "दूसरे व्यापारी उस वृद्ध पुरुष की बात पर हँसते हैं।"
+        },
+        {
+          "speaker": "birbal",
+          "say_en": "birbal: You speak wisely, old man. Time is indeed the most precious gift of all.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {
+            "old_man": "surprised"
+          },
+          "say_hi": "आप, वृद्ध पुरुष, बुद्धिमान बातें करते हैं। समय ही सबसे कीमती उपहार है, यह सच है।",
+          "say": "Aap, vriddh purush, buddhiman baatein karte hain. Samay hi sabse kimti uphar hai, yah sach hai.",
+          "say_from": "आप, वृद्ध पुरुष, बुद्धिमान बातें करते हैं। समय ही सबसे कीमती उपहार है, यह सच है।"
+        },
+        {
+          "speaker": "narrator",
+          "say_en": "Birbal bows to the old man, and the crowd watches in silence.",
+          "emotion": "calm",
+          "action": {
+            "type": "bow",
+            "who": "birbal",
+            "target": "old_man"
+          },
+          "sfx": [
+            "crowd_gasp"
+          ],
+          "react": {},
+          "say_hi": "बीरबल उस वृद्ध पुरुष को प्रणाम करते हैं, और लोग चुपचाप देखते रहते हैं।",
+          "say": "Birbal us vriddh purus ko pranam karte hain, aur log chupchap dekhte rahte hain.",
+          "say_from": "बीरबल उस वृद्ध पुरुष को प्रणाम करते हैं, और लोग चुपचाप देखते रहते हैं।"
+        }
+      ],
+      "kind": "story"
+    },
+    {
+      "place": "akbars_court",
+      "time": "day",
+      "weather": "clear",
+      "music": "tense",
+      "cast": [
+        {
+          "id": "birbal",
+          "slot": "center",
+          "arrives": false,
+          "hidden": false
+        },
+        {
+          "id": "old_man",
+          "slot": "far_right",
+          "arrives": true,
+          "hidden": false
+        }
+      ],
+      "what_happens": "Bir, the old man, finally arrives and says he sells time. Birbal looks at him carefully and then rejects all the merchants, leaving everyone confused and wondering who will pass his test.",
+      "words": 120,
+      "beats": [
+        {
+          "speaker": "narrator",
+          "say_en": "The crowd murmurs, unsure what to think.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "crowd_gasp"
+          ],
+          "react": {},
+          "say_hi": "लोग आपस में बातें कर रहे हैं, सोच भी नहीं पा रहे कि क्या कहूँ।",
+          "say": "Log aapas mein baatein kar rahe hain, soch bhi nahi pa rahe ki kya kahun.",
+          "say_from": "लोग आपस में बातें कर रहे हैं, सोच भी नहीं पा रहे कि क्या कहूँ।"
+        },
+        {
+          "speaker": "old_man",
+          "say_en": "I have nothing but time to sell, yet it is more valuable than gold or jewels.",
+          "emotion": "calm",
+          "action": {
+            "type": "enter",
+            "who": "old_man"
+          },
+          "sfx": [
+            "magic"
+          ],
+          "react": {},
+          "say_hi": "मेरे पास बेचने के लिए कुछ नहीं है, बस समय है, और यह सोने या रत्नों से भी ज़्यादा मूल्यवान है।",
+          "say": "Mere paas bechne ke liye kuch nahi hai, bas samay hai, aur yah sone ya ratnon se bhi zyada mulyavan hai.",
+          "say_from": "मेरे पास बेचने के लिए कुछ नहीं है, बस समय है, और यह सोने या रत्नों से भी ज़्यादा मूल्यवान है।"
+        },
+        {
+          "speaker": "birbal",
+          "say_en": "birbal: You speak truly, old man. Time is the only thing that cannot be bought with coin.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {},
+          "say_hi": "आप सच बोल रहे हैं, हे वृद्ध पुरुष। समय को तो सिक्के से नहीं खरीदा जा सकता।",
+          "say": "Aap sach bol rahe hain, he vriddh purus. Samay ko to sikke se nahi kharida jaa sakta.",
+          "say_from": "आप सच बोल रहे हैं, हे वृद्ध पुरुष। समय को तो सिक्के से नहीं खरीदा जा सकता।"
+        },
+        {
+          "speaker": "narrator",
+          "say_en": "Akbar watches Birbal closely, waiting for his verdict.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "heartbeat"
+          ],
+          "react": {},
+          "say_hi": "अकबर ध्यान से बीरबल को देख रहा है, वह उसका फैसला कब सुनाता है, यह जानने के लिए।",
+          "say": "Akbar dhyan se birbal ko dekh raha hai, vah uska phaisla kab sunata hai, yah jaanne ke liye.",
+          "say_from": "अकबर ध्यान से बीरबल को देख रहा है, वह उसका फैसला कब सुनाता है, यह जानने के लिए।"
+        },
+        {
+          "speaker": "birbal",
+          "say_en": "None of you are true merchants. You sell things that fade away.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {},
+          "say_hi": "तुम सब सच में व्यापारी नहीं हो। तुम ऐसी चीजें बेचते हो जो जल्दी ख़त्म हो जाती हैं।",
+          "say": "Tum sab sach mein vyapari nahi ho. Tum aisi cheezein bechte ho jo jaldi khatm ho jaati hain.",
+          "say_from": "तुम सब सच में व्यापारी नहीं हो। तुम ऐसी चीजें बेचते हो जो जल्दी ख़त्म हो जाती हैं।"
+        },
+        {
+          "speaker": "narrator",
+          "say_en": "The crowd gasps as Birbal turns to leave, leaving the old man in silence.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "fall"
+          ],
+          "react": {},
+          "say_hi": "भीड़ कांप उठती है, बीरबल मुड़कर जाने लगते हैं और उस वृद्ध पुरुष को चुपचाप छोड़ देते हैं।",
+          "say": "Bhid kamp uthti hai, birbal mudkar jaane lagte hain aur us vriddh purus ko chupchap chhod dete hain.",
+          "say_from": "भीड़ कांप उठती है, बीरबल मुड़कर जाने लगते हैं और उस वृद्ध पुरुष को चुपचाप छोड़ देते हैं।"
+        },
+        {
+          "speaker": "old_man",
+          "say_en": "I only wished to share wisdom, not wealth.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "conch"
+          ],
+          "react": {},
+          "say_hi": "मैंने केवल ज्ञान बाँटना चाहा, धन नहीं।",
+          "say": "Maine keval jnan bantna chaha, dhan nahi.",
+          "say_from": "मैंने केवल ज्ञान बाँटना चाहा, धन नहीं।"
+        },
+        {
+          "speaker": "narrator",
+          "say_en": "Birbal bows once more and walks away, leaving the court in deep thought.",
+          "emotion": "calm",
+          "action": {
+            "type": "walk",
+            "who": "birbal",
+            "to": "center"
+          },
+          "sfx": [
+            "riser"
+          ],
+          "react": {},
+          "say_hi": "बीरबल एक बार फिर झुककर चले गए, और अकबर का मंत्री आलोचनालय गहरे विचार में डूब गया।",
+          "say": "Birbal ek baar phir jhukkar chale gaye, aur akbar ka minister aalochnalay gahre vichar mein dub gaya.",
+          "say_from": "बीरबल एक बार फिर झुककर चले गए, और अकबर का मंत्री आलोचनालय गहरे विचार में डूब गया।"
+        }
+      ],
+      "kind": "story"
+    },
+    {
+      "kind": "teaser",
+      "place": "akbars_court",
+      "time": "day",
+      "weather": "clear",
+      "music": "mystery",
+      "cast": [
+        {
+          "id": "birbal",
+          "slot": "center",
+          "arrives": false,
+          "hidden": false
+        },
+        {
+          "id": "old_man",
+          "slot": "far_right",
+          "arrives": false,
+          "hidden": false
+        }
+      ],
+      "beats": [
+        {
+          "speaker": "narrator",
+          "say_en": "A poor old man claims he has something more valuable than gold.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "riser"
+          ],
+          "react": {},
+          "say_hi": "गरीब वृद्ध पुरुष कहते हैं कि उसके पास सोने से भी ज़्यादा कीमती कुछ है।",
+          "say": "Garib vriddh purus kehte hain ki uske paas sone se bhi zyada kimti kuch hai.",
+          "say_from": "गरीब वृद्ध पुरुष कहते हैं कि उसके पास सोने से भी ज़्यादा कीमती कुछ है।"
+        },
+        {
+          "speaker": "narrator",
+          "say_en": "Can his time really buy them a chance to change their ways?",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "riser"
+          ],
+          "react": {},
+          "say_hi": "क्या उसका समय उन्हें सही रास्ते पर चलने का मौका दे पाएगा?",
+          "say": "Kya uska samay unhen sahi raaste par chalne ka mauka de paega?",
+          "say_from": "क्या उसका समय उन्हें सही रास्ते पर चलने का मौका दे पाएगा?"
+        }
+      ]
+    }
+  ]
+}

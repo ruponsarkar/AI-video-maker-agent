@@ -1,0 +1,54 @@
+{
+ "elephant": {
+  "seed": 195503289,
+  "look": "a friendly baby elephant, soft grey, big flappy ears with pink inside, short trunk, small round eyes"
+ },
+ "train": {
+  "seed": 137102916,
+  "look": "a cute toy steam engine, red engine with a chimney and big round wheels, a smiling face on the front, one yellow coach behind it"
+ },
+ "boy": {
+  "seed": 299307247,
+  "look": "a chubby little Indian boy, brown skin, short straight black hair, round face, big brown eyes, sky-blue t-shirt with a yellow star, orange shorts"
+ },
+ "cat": {
+  "seed": 295726152,
+  "look": "a small fluffy white kitten with orange patches, big green eyes, pink nose, a red collar with a little gold bell"
+ },
+ "moon": {
+  "seed": 201787495,
+  "look": "a glowing golden yellow crescent moon with a sleepy smiling face, C-shaped curved body, soft glow"
+ },
+ "star": {
+  "seed": 204626188,
+  "look": "a cute five-pointed star shaped character, glowing golden yellow, star-shaped body with a smiling face in the middle, tiny arms, not a person",
+  "doubt": "more than one character"
+ },
+ "dog": {
+  "seed": 543099704,
+  "look": "a small brown puppy with floppy darker ears, big black eyes, a white patch on its chest, a blue collar"
+ },
+ "peacock": {
+  "seed": 322824398,
+  "look": "a cute blue peacock with a huge open fan tail of green and gold eye feathers behind it, small crest on its head",
+  "doubt": "more than one character; no peacock"
+ },
+ "girl": {
+  "seed": 990560074,
+  "look": "a little Indian girl, brown skin, two black pigtails with red ribbons, big brown eyes, yellow frock with small white flowers, red sandals",
+  "doubt": "more than one character"
+ },
+ "frog": {
+  "seed": 437,
+  "look": "a small round bright-green frog with big bulging eyes, a pale yellow belly and a wide smile"
+ },
+ "sun": {
+  "seed": 994395111,
+  "look": "a smiling cartoon sun with soft golden rays and rosy cheeks",
+  "doubt": "more than one character"
+ },
+ "lion": {
+  "seed": 441,
+  "look": "a cute lion cub with a fluffy golden mane, big amber eyes, a big smile"
+ }
+}

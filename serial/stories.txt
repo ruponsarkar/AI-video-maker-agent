@@ -1,0 +1,43 @@
+# Stories for the serial. One per line: Title | about | episodes | source
+# Add your own the same way, then: python serial.py new "Title"  (or --pick N)
+Ramayan | Shri Ram ka jeevan: Ayodhya, vanvas, Sita haran, Hanuman, Lanka yuddh aur Ram rajya | 150 | Valmiki Ramayana (traditional)
+Mahabharat | Pandav aur Kaurav, Krishna, Draupadi, Kurukshetra ka yuddh aur Gita ka gyaan | 250 | Vyasa's Mahabharata (traditional)
+Panchatantra | Jaanwaron ki kahaniyon mein chhupi samajhdaari: dosti, chalaki aur sabak | 80 | Vishnu Sharma's Panchatantra (traditional)
+Vikram Aur Betaal | Raja Vikramaditya aur Betaal ki 25 paheliyan-bhari kahaniyan | 30 | Baital Pachisi (traditional)
+Singhasan Battisi | Raja Vikramaditya ke singhasan ki 32 putliyon ki kahaniyan | 35 | Simhasana Dvatrimsika (traditional)
+Jataka Kathayein | Buddh ke pichhle janmon ki kahaniyan: daya, sach aur himmat | 60 | Jataka tales (traditional)
+Hitopadesh | Jaanwaron aur insaanon ki kahaniyon se jeevan ki seekh | 40 | Narayana's Hitopadesha (traditional)
+Shri Krishna Leela | Krishna ka bachpan Gokul mein, Kans, Vrindavan aur Dwarka tak | 100 | Bhagavata Purana (traditional)
+Devi Mahatmya: The Power of the Divine Mother | A collection of hymns and stories praising Devi, the Great Goddess, her forms, and her cosmic battles. | 20 | Devi Mahatmya is a part of the Markandeya Purana, composed in Sanskrit around 1000 BCE. It is widely regarded as a public domain text.
+Kathasaritsagara: The Ocean of Story | A vast collection of Indian fairy tales, fables, and legends from various sources, including Buddhist and Hindu traditions. | 30 | Composed by Somadeva in the 11th century CE, Kathasaritsagara is a public domain work that draws on numerous ancient texts.
+The Legend of Tenali Raman | A collection of witty tales about the court jester of King Krishnadeva Raya, showcasing intelligence and humor. | 25 | The stories of Tenali Raman are based on historical accounts from Telugu literature and oral traditions.
+Akbar Birbal Ki Kahaniyan | Badshah Akbar aur Birbal ki mazedaar kahaniyan, buddhi, insaaf aur chaturai se har mushkil ka hal | 100 | Traditional Akbar-Birbal folklore (public-domain story traditions)
+Tenali Raman Ki Chaturai | Raja Krishnadevaraya ke darbar mein Tenali Raman ki hasi-mazaak aur samajhdaari se bhari kahaniyan | 100 | Traditional Tenali Raman folklore
+Mulla Nasruddin Ki Kahaniyan | Mulla Nasruddin ki funny aur intelligent kahaniyan jo har episode mein nayi seekh deti hain | 80 | Traditional Nasreddin Hodja folklore
+Sheikh Chilli Ke Sapne | Sheikh Chilli ke ajeeb sapne, mazedaar galtiyan aur comedy adventures | 80 | Traditional Sheikh Chilli folklore
+Arabian Nights Ki Jadui Kahaniyan | Aladdin, Ali Baba, jadui chirag, khazane aur rahasyamayi duniya ki adventures | 120 | One Thousand and One Nights (traditional public-domain tales)
+Aladdin Aur Jadui Chirag | Ek gareeb ladke ko milta hai jadui chirag aur shuru hoti hai jinn ke saath adventure ki kahani | 50 | Traditional Aladdin tale
+Ali Baba Aur Chalis Chor | Ali Baba ko milta hai choron ka gupt khazana aur shuru hota hai khatarnak adventure | 40 | Traditional Ali Baba tale
+Aesop Ki Kahaniyan | Sher, lomdi, khargosh aur anya jaanwaron ki chhoti moral stories | 100 | Aesop's Fables (ancient public-domain tradition)
+Grimm Brothers Fairy Tales | Jadui jungle, rajkumariyan, bolne wale jaanwar aur rahasyamayi fairy tales | 100 | Brothers Grimm original fairy tale collections (public domain)
+Andersen Ki Pari Kahaniyan | Jadui duniya, bahadur bachche aur dil ko chhoo lene wali fairy tales | 80 | Hans Christian Andersen original stories (public domain)
+Jadui Jungle Ke Dost | Ek jadui jungle mein sher, bandar, hathi aur khargosh milkar naye adventures karte hain | 150 | Original fictional series concept
+Chintu Mintu Ki Masti | Do shararti dost har din school, ghar aur mohalla mein funny adventures karte hain | 150 | Original fictional series concept
+Golu Molu Ki Duniya | Do pyare dost apni funny galtiyon aur samajhdaari se har problem solve karte hain | 120 | Original fictional series concept
+Jadui Pencil Ka Rahasya | Ek bachche ko milti hai jadui pencil jisse banayi hui cheezein sach ho jaati hain | 100 | Original fictional series concept
+Bhoot Bangla Ke Rahasya | Kuch bachche ek purane banglay ke bhoot aur chhupe rahasyon ki jaanch karte hain | 100 | Original fictional series concept
+Nanhe Detective | Teen bachche apne shehar ki chori, khoi hui cheezein aur ajeeb mysteries solve karte hain | 120 | Original fictional series concept
+Robot Raju Ke Adventures | Ek intelligent robot aur uske bachpan ke dost technology se duniya ki problems solve karte hain | 120 | Original fictional series concept
+Jadui School | Ek school jahan bachche magic seekhte hain aur har din nayi jadui mushkil ka saamna karte hain | 150 | Original fictional series concept
+Chand Par Chintu | Ek chhota astronaut chand aur naye planets par aliens ke saath adventures karta hai | 100 | Original fictional series concept
+Superhero Balveer | Ek original young superhero apni special powers se shehar aur bachchon ki madad karta hai | 120 | Original fictional series concept; use a distinct character name and design
+Bolne Wale Jaanwar | Ek gaon ke jaanwar insaanon ki tarah baat karte hain aur funny problems solve karte hain | 150 | Original fictional series concept
+Sheru Aur Khargosh Ki Dosti | Jungle ka sher aur ek chatur khargosh milkar dosti aur teamwork ki seekh dete hain | 100 | Original fictional series concept
+Jadui Duniya Ka Darwaza | Do bachchon ko ek secret darwaza milta hai jo unhe alag-alag magical worlds mein le jaata hai | 150 | Original fictional series concept
+Time Machine Wale Bachche | Teen dost ek time machine se dinosaur yug, purane rajyon aur future ki duniya mein jaate hain | 120 | Original fictional series concept
+Dinosaur Island Adventures | Kuch bachche ek rahasyamayi island par friendly dinosaurs aur hidden treasures khojte hain | 100 | Original fictional series concept
+Chhota Jadugar | Ek nanha jadugar apni magic powers seekhte hue funny mistakes aur adventures karta hai | 120 | Original fictional series concept
+Pariyon Ka Jadui Rajya | Pariyon ke kingdom mein ek bahadur pari apne doston ke saath andheri shaktiyon ka saamna karti hai | 100 | Original fictional series concept
+Raja Aur Chatur Mantri | Ek purane rajya mein raja aur uska intelligent mantri tricky problems solve karte hain | 100 | Original fictional series concept
+Gaon Ke Mazedaar Kisse | Ek Indian gaon ke bachche, dadaji, jaanwar aur padosiyon ki comedy aur moral stories | 150 | Original fictional series concept
+Samundar Ke Jadui Dost | Samundar ke neeche machhli, kachhua aur dolphin milkar khazane aur rahasyon ki khoj karte hain | 100 | Original fictional series concept

@@ -1,0 +1,44 @@
+# Rhyme ideas: Title | what it is about. Start one with: python rhyme.py new --pick N
+# All are ideas for NEW words; don't copy existing rhymes or film songs.
+Medhak Ki Chhalang | a little frog jumps from leaf to leaf in the pond and counts its jumps, 1 to 5
+Haathi Bhaiya Nahaye | a happy elephant takes a bath in the river and splashes his friends
+Titli Ke Rang | a butterfly visits flowers of different colours: red, yellow, blue, pink
+Chhuk Chhuk Rail Chali | a toy train goes to nani's village, passing fields, a river and a station
+Battakh Ki Parade | ducks walk in a line to the pond, one by one, counting them
+Chanda Ki Lori | a sleepy goodnight song with the moon and the stars
+Haath Dho Lo Bhai | a cheerful song about washing hands before eating
+Mor Naache Baarish Mein | a peacock dances when the rain comes
+Mitthu Tota Bole | a parrot learns to say kind words: please, thank you, sorry
+Gaiya Meri Pyaari | a cow on the farm gives milk, children say thank you and look after her
+Sher Ko Aayi Chheenk | a lion sneezes and all the jungle friends say 'bless you' - a funny song
+Sooraj Dada Jaago | the sun wakes up everyone in the morning: brush, bath, breakfast
+Bhoot ki bhuja | A playful rhyme about a spooky ghost who loves to jump and play with kids at night.
+Dhoop mein dhoop | A sunny day rhyme where the sun helps children wash their hands and stay clean.
+Ghar ka ghar | A fun rhyme about a little house with windows, doors, and all the things inside.
+Kaccha kachra | A catchy rhyme teaching kids to sort trash into big and small bins for recycling.
+Makar ka mandir | A rhyming story about a crocodile who loves to build his water palace with stones.
+Nariya nariya | A fun rhyme where little birds chirp and fly around the tree in the morning.
+Pakad lo panti | A playful game where a child tries to catch a butterfly that keeps flying away.
+Rang mein rang | A colorful rhyme about mixing red, blue, and yellow to make new shades of paint.
+Tuti ki tan | A fun rhyme where a parrot teaches the child how to say 'hello' in different languages.
+Yahan hai yahan | A playful rhyme about finding hidden toys around the house with the help of a dog and cat.
+Bhooli Bhoj | A fun rhyme about a silly rabbit who forgets what he eats.
+Chik Chik Chiku | A playful song about a butterfly flapping its wings in the sun.
+Dhoop Ke Dhoop | A catchy rhyme about enjoying the sunshine with friends.
+Ela Ela Elephant | A silly elephant who loves to splash water in the park.
+Ghar Mein Ghar | A rhyming game of finding hidden toys in the house.
+Haathi Ka Hatha | A fun rhyme about a gentle elephant helping a lost child.
+Lion Ki Ladoo | A playful rhyme where a lion eats sweet ladoos in the jungle.
+Parrot Ke Rang | A colorful rhyme about a parrot who loves to mimic colors.
+Train Ki Tooti | A fun ride on a toy train with friends in the garden.
+Chandni Ki Chhoti | A small moon that shines bright in the night sky.
+Bhooli Balma | A playful rhyme about a mischievous little boy who loves to hide and seek.
+Ghar ki Ghar | A fun rhyme about exploring every corner of a house with curiosity.
+Chingari Chingari | A sparkly firefly lighting up the night with its glow.
+Bhooli Bhooli Dhoop | A playful rhyme about a child who gets lost in the sunlight and finds their way back with help from the sun.
+Kaccha Kachra Karo | A fun rhyme encouraging kids to recycle and reuse things, using the word 'kachra' (waste) in a positive way.
+Dhoop Ke Dhoop Chhota | A catchy rhyme about a small shadow that dances with the sun throughout the day.
+Parrot Ka Rang Rango | A rhyme about a parrot who loves to wear colorful clothes and fly around showing off its feathers.
+Train Ki Tooti Chal | A playful rhyme about a broken train that still makes music as it rolls along the tracks.
+Chandni Ki Chhoti Bola | A rhyme about a little moon who talks to the stars and tells them bedtime stories.
+Bhooli Balma Jholi | A rhyme about a clumsy girl who trips over her own feet but still keeps smiling and dancing.

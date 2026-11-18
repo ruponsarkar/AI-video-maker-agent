@@ -1,0 +1,94 @@
+{
+ "style": "3D animated feature film still for a children's song video, high quality CGI render, cute characters with big expressive eyes, soft global illumination, cinematic lighting, vibrant colours, shallow depth of field",
+ "rules": "wide 16:9 picture, characters in the middle third, keep the bottom fifth of the picture simple (song words go there), no text, no letters, no logo, no watermark",
+ "characters": {
+  "girl": {
+   "name": "Chinki",
+   "look": "a little Indian girl, brown skin, two black pigtails with red ribbons, big brown eyes, yellow frock with small white flowers, red sandals"
+  },
+  "boy": {
+   "name": "Golu",
+   "look": "a chubby little Indian boy, brown skin, short straight black hair, round face, big brown eyes, sky-blue t-shirt with a yellow star, orange shorts"
+  },
+  "cat": {
+   "name": "Minku",
+   "look": "a small fluffy white kitten with orange patches, big green eyes, pink nose, a red collar with a little gold bell"
+  },
+  "dog": {
+   "name": "Bholu",
+   "look": "a small brown puppy with floppy darker ears, big black eyes, a white patch on its chest, a blue collar"
+  },
+  "rabbit": {
+   "name": "Gullu",
+   "look": "a soft white rabbit with long pink-lined ears, big black eyes, a tiny pink nose"
+  },
+  "elephant": {
+   "name": "Gajju",
+   "look": "a friendly baby elephant, soft grey, big flappy ears with pink inside, short trunk, small round eyes"
+  },
+  "lion": {
+   "name": "Sheru",
+   "look": "a cute lion cub with a fluffy golden mane, big amber eyes, a big smile"
+  },
+  "monkey": {
+   "name": "Chunnu",
+   "look": "a playful little brown monkey with a beige face, big ears and a curly tail"
+  },
+  "cow": {
+   "name": "Gauri",
+   "look": "a gentle white cow with brown patches, short curved horns, a small brass bell on a red cord"
+  },
+  "frog": {
+   "name": "Tarru",
+   "look": "a small round bright-green frog with big bulging eyes, a pale yellow belly and a wide smile"
+  },
+  "duck": {
+   "name": "Bunty",
+   "look": "a fluffy yellow duckling with an orange beak and orange feet"
+  },
+  "fish": {
+   "name": "Meenu",
+   "look": "a little orange-and-white fish with big eyes and flowing fins"
+  },
+  "butterfly": {
+   "name": "Titli",
+   "look": "a butterfly with big round wings in orange, pink and purple with white dots"
+  },
+  "sun": {
+   "name": "Suraj",
+   "look": "a smiling cartoon sun with soft golden rays and rosy cheeks"
+  },
+  "moon": {
+   "name": "Chanda",
+   "look": "a glowing golden yellow crescent moon with a sleepy smiling face, C-shaped curved body, soft glow"
+  },
+  "star": {
+   "name": "Tara",
+   "look": "a cute five-pointed star shaped character, glowing golden yellow, star-shaped body with a smiling face in the middle, tiny arms, not a person"
+  },
+  "peacock": {
+   "name": "Mor",
+   "look": "a cute blue peacock with a huge open fan tail of green and gold eye feathers behind it, small crest on its head"
+  },
+  "parrot": {
+   "name": "Mithu",
+   "look": "a bright green parrot with a red curved beak and a touch of blue on its wings"
+  },
+  "train": {
+   "name": "Chhuk-Chhuk",
+   "look": "a cute toy steam engine, red engine with a chimney and big round wheels, a smiling face on the front, one yellow coach behind it"
+  }
+ },
+ "places": {
+  "garden": "a sunny flower garden with a little wooden fence, butterflies and a blue sky",
+  "jungle": "a friendly green jungle with big leaves, hanging vines and soft sunbeams",
+  "farm": "an Indian village farm with green fields, a mud hut with a tiled roof and a haystack",
+  "pond": "a calm village pond with lily pads, pink lotus flowers and tall grass",
+  "underwater": "a bright underwater world with coral, seaweed and sunbeams through the water",
+  "sky": "a blue sky with fluffy white clouds and a rainbow",
+  "night": "a calm night sky over a small Indian village, many twinkling stars, soft blue light",
+  "beach": "a sunny beach with soft sand, gentle waves and seashells",
+  "room": "a cosy colourful Indian home with cushions, toys and a window",
+  "rail": "green hills with a railway track running through fields"
+ }
+}

@@ -1,0 +1,488 @@
+{
+  "characters": {
+    "akbar": {
+      "kind": "human",
+      "gender": "male",
+      "age": "adult",
+      "skin": "fair",
+      "outfit": "royal",
+      "hair": "long",
+      "headwear": "crown",
+      "beard": "long_black",
+      "prop": "none",
+      "voice": "male_adult",
+      "colors": [
+        "gold",
+        "blue"
+      ],
+      "extras": [],
+      "height": 1.0,
+      "name": "Akbar",
+      "name_hi": "अकबर",
+      "role": "Emperor of the Mughal Empire, wise and just ruler.",
+      "personality": "Calm, fair-minded, seeks wisdom, trusts Birbal deeply.",
+      "since": null
+    },
+    "birbal": {
+      "kind": "human",
+      "gender": "male",
+      "age": "adult",
+      "skin": "fair",
+      "outfit": "royal",
+      "hair": "long",
+      "headwear": "none",
+      "beard": "short",
+      "prop": "none",
+      "voice": "male_adult",
+      "colors": [
+        "gold",
+        "blue"
+      ],
+      "extras": [],
+      "height": 1.0,
+      "name": "Birbal",
+      "name_hi": "बीरबल",
+      "role": "Wise and clever minister of Akbar, known for his wit and justice.",
+      "personality": "Clever, kind, patient, always seeking truth and fairness.",
+      "since": null
+    },
+    "mahesh_das": {
+      "kind": "human",
+      "gender": "male",
+      "age": "child",
+      "skin": "fair",
+      "outfit": "common",
+      "hair": "long",
+      "headwear": "none",
+      "beard": "none",
+      "prop": "none",
+      "voice": "child",
+      "colors": [
+        "white",
+        "brown"
+      ],
+      "extras": [],
+      "height": 0.8,
+      "name": "Mahesh Das",
+      "name_hi": "महेश दास",
+      "role": "Young boy who becomes Birbal, helps Akbar in the forest.",
+      "personality": "Kind, curious, clever, humble",
+      "since": null
+    },
+    "old_man": {
+      "kind": "human",
+      "gender": "male",
+      "age": "old",
+      "skin": "dark",
+      "outfit": "common",
+      "hair": "bald",
+      "headwear": "none",
+      "beard": "long_white",
+      "prop": "none",
+      "voice": "male_old",
+      "colors": [
+        "black",
+        "red"
+      ],
+      "extras": [],
+      "height": 0.9,
+      "name": "Old Man",
+      "name_hi": "वृद्ध पुरुष",
+      "role": "Poor old man who claims to sell time, recognized as the true merchant.",
+      "personality": "Wisdom, patience, selfless, humble",
+      "since": null
+    },
+    "poor_friend": {
+      "kind": "human",
+      "gender": "male",
+      "age": "adult",
+      "skin": "dark",
+      "outfit": "common",
+      "hair": "long",
+      "headwear": "none",
+      "beard": "short",
+      "prop": "none",
+      "voice": "male_adult",
+      "colors": [
+        "brown",
+        "black"
+      ],
+      "extras": [],
+      "height": 0.95,
+      "name": "Poor Friend",
+      "name_hi": "गरीब मित्र",
+      "role": "Friend who offers his small amount of gold to help Akbar, considered true friendship.",
+      "personality": "Loyal, selfless, generous, humble",
+      "since": null
+    },
+    "farmer": {
+      "kind": "human",
+      "gender": "male",
+      "age": "adult",
+      "skin": "brown",
+      "outfit": "common",
+      "hair": "short",
+      "headwear": "none",
+      "beard": "none",
+      "prop": "none",
+      "voice": "male_adult",
+      "colors": [
+        "green",
+        "yellow"
+      ],
+      "extras": [],
+      "height": 1.0,
+      "name": "Farmer",
+      "name_hi": "किसान",
+      "role": "Complains about his stolen cow, helps expose the thief.",
+      "personality": "Honest, concerned, straightforward",
+      "since": null
+    },
+    "thief": {
+      "kind": "human",
+      "gender": "male",
+      "age": "adult",
+      "skin": "dark",
+      "outfit": "common",
+      "hair": "short",
+      "headwear": "none",
+      "beard": "none",
+      "prop": "none",
+      "voice": "male_adult",
+      "colors": [
+        "red",
+        "black"
+      ],
+      "extras": [],
+      "height": 1.0,
+      "name": "Thief",
+      "name_hi": "चोर",
+      "role": "Stole the farmer's cow, revealed by Birbal's trick.",
+      "personality": "Greedy, arrogant, fearful of punishment",
+      "since": null
+    },
+    "poet": {
+      "kind": "human",
+      "gender": "male",
+      "age": "adult",
+      "skin": "fair",
+      "outfit": "common",
+      "hair": "long",
+      "headwear": "none",
+      "beard": "short",
+      "prop": "none",
+      "voice": "male_adult",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "extras": [],
+      "height": 1.0,
+      "name": "Poet",
+      "name_hi": "कवि",
+      "role": "Drunk poet who intrudes on Akbar's palace, later forgiven.",
+      "personality": "Drunk, eccentric, poetic, kind-hearted",
+      "since": null
+    },
+    "woodcutter": {
+      "kind": "human",
+      "gender": "male",
+      "age": "old",
+      "skin": "dark",
+      "outfit": "sage",
+      "hair": "jata",
+      "headwear": "none",
+      "beard": "long_white",
+      "prop": "staff",
+      "voice": "male_old",
+      "colors": [
+        "white",
+        "red"
+      ],
+      "extras": [],
+      "height": 1.0,
+      "name": "Woodcutter",
+      "name_hi": "काटने वाला",
+      "role": "Birbal's guru, a silent monk who rejects wealth.",
+      "personality": "Silent, wise, ascetic, indifferent to riches",
+      "since": null
+    },
+    "birbal_son": {
+      "kind": "human",
+      "gender": "male",
+      "age": "child",
+      "skin": "fair",
+      "outfit": "common",
+      "hair": "long",
+      "headwear": "none",
+      "beard": "none",
+      "prop": "none",
+      "voice": "child",
+      "colors": [
+        "yellow",
+        "green"
+      ],
+      "extras": [],
+      "height": 0.8,
+      "name": "Birbal's Son",
+      "name_hi": "बीरबल का बेटा",
+      "role": "Answers Akbar's three questions about God with simple examples.",
+      "personality": "Curious, wise, innocent, clever",
+      "since": null
+    },
+    "washer_man": {
+      "kind": "human",
+      "gender": "male",
+      "age": "adult",
+      "skin": "brown",
+      "outfit": "common",
+      "hair": "short",
+      "headwear": "none",
+      "beard": "none",
+      "prop": "none",
+      "voice": "male_adult",
+      "colors": [
+        "black",
+        "white"
+      ],
+      "extras": [],
+      "height": 1.0,
+      "name": "Washerman",
+      "name_hi": "धोते वाला",
+      "role": "Disputes with a nobleman over ownership of his donkey.",
+      "personality": "Honest, humble, determined to prove his case.",
+      "since": null
+    },
+    "nobleman": {
+      "kind": "human",
+      "gender": "male",
+      "age": "adult",
+      "skin": "fair",
+      "outfit": "common",
+      "hair": "short",
+      "headwear": "none",
+      "beard": "none",
+      "prop": "none",
+      "voice": "male_adult",
+      "colors": [
+        "red",
+        "black"
+      ],
+      "extras": [],
+      "height": 1.0,
+      "name": "Nobleman",
+      "name_hi": "गृहस्थ",
+      "role": "Argues with the washerman over ownership of a donkey.",
+      "personality": "Arrogant, proud, lacks humility.",
+      "since": null
+    },
+    "queen": {
+      "kind": "human",
+      "gender": "female",
+      "age": "adult",
+      "skin": "fair",
+      "outfit": "queen",
+      "hair": "long",
+      "headwear": "tiara",
+      "beard": "none",
+      "prop": "none",
+      "voice": "female_adult",
+      "colors": [
+        "gold",
+        "white"
+      ],
+      "extras": [],
+      "height": 1.0,
+      "name": "Queen",
+      "name_hi": "राजकुमारी",
+      "role": "Loses a necklace and other items, helps Birbal catch the thief.",
+      "personality": "Calm, kind, concerned about lost property.",
+      "since": null
+    },
+    "rich_merchant": {
+      "kind": "human",
+      "gender": "male",
+      "age": "adult",
+      "skin": "fair",
+      "outfit": "warrior",
+      "hair": "short",
+      "headwear": "none",
+      "beard": "none",
+      "prop": "none",
+      "voice": "male_adult",
+      "colors": [
+        "red",
+        "gold"
+      ],
+      "extras": [],
+      "height": 1.0,
+      "name": "Rich Merchant",
+      "name_hi": "समृद्ध व्यापारी",
+      "role": "One of many merchants who claim to have Akbar's desired item.",
+      "personality": "Arrogant, boastful, eager for reward.",
+      "since": null
+    },
+    "ramu": {
+      "kind": "human",
+      "gender": "male",
+      "age": "adult",
+      "skin": "fair",
+      "outfit": "common",
+      "hair": "short",
+      "headwear": "none",
+      "beard": "none",
+      "prop": "none",
+      "voice": "male_adult",
+      "colors": [
+        "brown",
+        "white"
+      ],
+      "extras": [],
+      "height": 1.0,
+      "name": "Ramu",
+      "name_hi": "रामु",
+      "role": "One of the people Birbal considers foolish.",
+      "personality": "Arrogant, impractical, self-centered.",
+      "since": null
+    },
+    "changu_mangu": {
+      "kind": "human",
+      "gender": "male",
+      "age": "young",
+      "skin": "dark",
+      "outfit": "common",
+      "hair": "short",
+      "headwear": "none",
+      "beard": "none",
+      "prop": "none",
+      "voice": "male_young",
+      "colors": [
+        "green",
+        "black"
+      ],
+      "extras": [],
+      "height": 0.9,
+      "name": "Changu and Mangu",
+      "name_hi": "चंगू और मंगू",
+      "role": "Two friends who fight over imaginary animals.",
+      "personality": "Imaginative, childish, quarrelsome.",
+      "since": null
+    },
+    "man_searching_ring": {
+      "kind": "human",
+      "gender": "male",
+      "age": "adult",
+      "skin": "fair",
+      "outfit": "common",
+      "hair": "short",
+      "headwear": "none",
+      "beard": "none",
+      "prop": "none",
+      "voice": "male_adult",
+      "colors": [
+        "black",
+        "white"
+      ],
+      "extras": [],
+      "height": 1.0,
+      "name": "Man Searching for Ring",
+      "name_hi": "एक आदमी जो किसी वस्तु को ढूंढ रहा है",
+      "role": "One of the people Birbal considers foolish.",
+      "personality": "Stupid, careless, impractical.",
+      "since": null
+    },
+    "donkey": {
+      "kind": "human",
+      "gender": "male",
+      "age": "adult",
+      "skin": "golden",
+      "outfit": "common",
+      "hair": "none",
+      "headwear": "none",
+      "beard": "none",
+      "prop": "none",
+      "voice": "male_adult",
+      "colors": [
+        "gold",
+        "white"
+      ],
+      "extras": [],
+      "height": 1.2,
+      "name": "Donkey",
+      "name_hi": "गधा",
+      "role": "Magical donkey used to identify the thief in a story.",
+      "personality": "Humble, unassuming, magical with scent.",
+      "since": null
+    },
+    "birbal_children": {
+      "kind": "human",
+      "gender": "male",
+      "age": "child",
+      "skin": "fair",
+      "outfit": "common",
+      "hair": "long",
+      "headwear": "none",
+      "beard": "none",
+      "prop": "none",
+      "voice": "child",
+      "colors": [
+        "yellow",
+        "white"
+      ],
+      "extras": [],
+      "height": 0.8,
+      "name": "Birbal's Children",
+      "name_hi": "बीरबल के बच्चे",
+      "role": "Stubborn children who make Birbal late to court.",
+      "personality": "Tempestuous, demanding, childish.",
+      "since": null
+    }
+  },
+  "places": {
+    "akbars_court": {
+      "name": "Akbar's Court",
+      "name_hi": "अकबर का मंत्री आलोचनालय",
+      "type": "palace"
+    },
+    "akbars_palace": {
+      "name": "Akbar's Palace",
+      "name_hi": "अकबर के राजमहल",
+      "type": "palace"
+    },
+    "forest": {
+      "name": "Forest",
+      "name_hi": "वन",
+      "type": "forest"
+    },
+    "village": {
+      "name": "Village",
+      "name_hi": "गांव",
+      "type": "village"
+    },
+    "river_yamuna": {
+      "name": "Yamuna River",
+      "name_hi": "यमुना नदी",
+      "type": "river"
+    },
+    "market_place": {
+      "name": "Market Place",
+      "name_hi": "बाज़ार",
+      "type": "market"
+    },
+    "golden_city": {
+      "name": "Golden City",
+      "name_hi": "सुवर्ण नगरी",
+      "type": "golden_city"
+    },
+    "cave": {
+      "name": "Cave",
+      "name_hi": "अंतरिक्ष",
+      "type": "cave"
+    },
+    "temple": {
+      "name": "Temple",
+      "name_hi": "मन्दिर",
+      "type": "temple"
+    }
+  }
+}

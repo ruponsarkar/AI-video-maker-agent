@@ -64,10 +64,38 @@
 
 # Agar India Mein 24 Ghante Bijli Band Ho Jaye To? | Nationwide power blackout hypothetical: hospitals, metro, railways, mobile networks, ATMs, UPI, water supply aur data centers par effects. Backup generators, power grid recovery aur realistic timeline. Cinematic storytelling | minutes=9
 
-Diwali Ke Patakhe Itni Tez Awaaz Kaise Paida Karte Hain? | Sound waves, rapid gas expansion, pressure aur shock waves ka science. | minutes=8
+#Diwali Ke Patakhe Itni Tez Awaaz Kaise Paida Karte Hain? | Sound waves, rapid gas expansion, pressure aur shock waves ka science. | minutes=8
 
-Diwali Ki Raat Aasman Mein Patakhe Itne Colourful Kyun Dikhte Hain? | Fireworks ke colours ke peeche chemistry, metal salts, temperature aur atomic emission spectra. | minutes=8
+#Diwali Ki Raat Aasman Mein Patakhe Itne Colourful Kyun Dikhte Hain? | Fireworks ke colours ke peeche chemistry, metal salts, temperature aur atomic emission spectra. | minutes=8
 
-2050 Ki Diwali Kaisi Hogi? | AI-generated decorations, holographic rangoli, robot delivery, smart homes, drone shows aur virtual celebrations. | minutes=9
+#2050 Ki Diwali Kaisi Hogi? | AI-generated decorations, holographic rangoli, robot delivery, smart homes, drone shows aur virtual celebrations. | minutes=9
 
-Kya Future Mein AI Robots Diwali Manayenge? | Humanoid robots, machine vision, autonomous cooking, home automation aur human-robot interaction. | minutes=8
+#Kya Future Mein AI Robots Diwali Manayenge? | Humanoid robots, machine vision, autonomous cooking, home automation aur human-robot interaction. | minutes=8
+
+2027 Mein AI Kya-Kya Kar Payega? 10 Shocking Predictions | AI robots, autonomous agents, AI doctors, software development, education aur future jobs. Real technology aur predictions ko clearly separate karein | minutes=9
+
+
+Kya Aapka Phone Chupke Se Aapki Baatein Sunta Hai? | Microphone permissions, targeted advertisements, recommendation algorithms aur smartphone privacy myths. Scientific evidence aur practical security tips | minutes=8
+
+Dark Web Ki Duniya: Internet Ka Sabse Chhupa Hua Hissa | Surface web, deep web, dark web, Tor browser, cybercrime marketplaces aur legitimate uses. Mystery-style Hindi documentary | minutes=9
+
+
+#Agar Dharti 5 Second Ke Liye Ghoomna Band Kar De To? | Earth's rotation, inertia, atmosphere, oceans, extreme winds aur catastrophic consequences. Scientific what-if storytelling | minutes=9
+
+#Agar Samundar Ke Saare Internet Cables Kat Jayein To? | Submarine internet cables, international data connections, banking networks, satellites aur global communication disruptions | minutes=8
+
+#Agar India Mein 24 Ghante Mobile Network Band Ho Jaye To? | Nationwide mobile network outage, calls, OTP, UPI, emergency services, internet access aur economic impact. Realistic timeline | minutes=8
+
+Marne Ke Baad Aapka WhatsApp, Gmail Aur Instagram Ka Kya Hota Hai? | Digital legacy, inactive accounts, social media memorialization, Google inactive account settings aur digital privacy | minutes=8
+
+#Kya Quantum Computer Bitcoin Aur Bank Password Tod Sakta Hai? | Quantum computing, encryption, cryptocurrency security, post-quantum cryptography aur future cybersecurity risks | minutes=9
+
+AI Girlfriend Scam: Online Pyaar Ke Naam Par Lakhon Ka Fraud? | AI-generated profiles, romance scams, fake identities, emotional manipulation, blackmail aur online dating safety. India-focused examples | minutes=8
+
+#Ek Fake Google Search Result Se Bank Account Khali Kaise Ho Sakta Hai? | Fake sponsored search results, customer care impersonation, phishing websites, remote access applications aur fraud prevention | minutes=8
+
+#Scammers Ko Aapka Naam, Number Aur Address Kaise Pata Chalta Hai? | Data leaks, social media, leaked databases, data brokers aur social engineering. Explain how scammers collect and misuse personal information | minutes=8
+
+Kya Internet Par Aapka Digital Duplicate Ban Chuka Hai? | AI digital twins, online profiles, facial recognition, voice cloning, personal data collection aur digital identity risks | minutes=8
+
+Agar Google 24 Ghante Ke Liye Band Ho Jaye To? | Hypothetical Google outage affecting Search, Gmail, YouTube, Maps, Android services, businesses aur daily digital life | minutes=8

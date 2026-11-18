@@ -1,0 +1,25 @@
+{"ep": 1, "kind": "event", "text": "Akbar challenges Birbal to find the true merchant.", "chars": ["akbar", "birbal"]}
+{"ep": 1, "kind": "state", "text": "Birbal defines a true merchant as one who sells what cannot be bought with gold or silver.", "chars": ["birbal"]}
+{"ep": 1, "kind": "event", "text": "Merchants from across the kingdom arrive at court, each claiming to have the item Birbal described.", "chars": ["merchants"]}
+{"ep": 1, "kind": "relation", "text": "Birbal rejects all merchants as not true merchants.", "chars": ["birbal", "merchants"]}
+{"ep": 1, "kind": "event", "text": "An old man claims to offer something more valuable than gold or jewels.", "chars": ["oldman"]}
+{"ep": 1, "kind": "relation", "text": "Birbal acknowledges the old man's wisdom about time being the most precious gift.", "chars": ["birbal", "oldman"]}
+{"ep": 1, "kind": "state", "text": "The crowd is left in silence after Birbal's final judgment on the merchants.", "chars": ["crowd"]}
+{"ep": 2, "kind": "event", "text": "An old man arrives at court claiming to sell time.", "chars": ["old_man"]}
+{"ep": 2, "kind": "state", "text": "Birbal acknowledges the wisdom of the old man's claim about time.", "chars": ["birbal"]}
+{"ep": 2, "kind": "relation", "text": "The merchants are left speechless by Birbal’s insight into the value of time.", "chars": ["merchants"]}
+{"ep": 2, "kind": "promise", "text": "Birbal promises to continue searching for the true merchant, now understanding that it may not be a physical item.", "chars": ["birbal"]}
+{"ep": 2, "kind": "secret", "text": "The old man's identity and background remain unknown to all in court.", "chars": ["old_man"]}
+{"ep": 2, "kind": "object", "text": "Time is presented as the only treasure that cannot be stolen or stored.", "chars": ["old_man"]}
+{"ep": 3, "kind": "event", "text": "Akbar asks Birbal about true friendship.", "chars": ["akbar", "birbal"]}
+{"ep": 3, "kind": "state", "text": "Birbal defines true friendship as selflessness without expectation.", "chars": ["birbal"]}
+{"ep": 3, "kind": "event", "text": "Akbar travels to a distant village seeking help from the poor friend.", "chars": ["akbar"]}
+{"ep": 3, "kind": "relation", "text": "The poor friend offers loyalty and trust instead of material wealth.", "chars": ["poor_friend", "akbar"]}
+{"ep": 3, "kind": "event", "text": "Akbar praises the poor friend's selflessness as more valuable than gold.", "chars": ["akbar", "poor_friend"]}
+{"ep": 3, "kind": "state", "text": "The court is moved by the depth of the friendship and reflects on its value.", "chars": ["court"]}
+{"ep": 4, "kind": "event", "text": "Birbal and Akbar reflect on their journey and what they've learned about selflessness and true friendship.", "chars": ["akbar", "birbal"]}
+{"ep": 4, "kind": "state", "text": "Akbar realizes that true friendship is not measured by wealth, but by the strength of one's soul.", "chars": ["akbar"]}
+{"ep": 4, "kind": "relation", "text": "Birbal and Ak,bar reaffirm their bond through shared wisdom and mutual respect.", "chars": ["akbar", "birbal"]}
+{"ep": 4, "kind": "event", "text": "Akbar acknowledges that the true merchant is not someone who sells physical goods but a person whose heart embodies selflessness and integrity.", "chars": ["akbar", "birbal"]}
+{"ep": 4, "kind": "promise", "text": "Birbal promises to continue guiding Akbar in his quest for wisdom and understanding.", "chars": ["birbal", "akbar"]}
+{"ep": 4, "kind": "secret", "text": "The true merchant's identity remains a mystery, but the lesson is clear: value lies in character, not possessions.", "chars": ["akbar", "birbal"]}

@@ -1,0 +1,186 @@
+{
+  "arcs": [
+    {
+      "n": 1,
+      "title": "I. RAMA JEEVAN - BALA KANDA",
+      "summary": "Rama is born to King Dasaratha and Queen Kausalya, chosen by the gods as Vishnu's incarnation. His childhood includes meeting sage Viswamitra, slaying demon Tadaka, learning weapons from sages, marrying Sita in Mithila, and being crowned prince of Ayodhya.",
+      "episodes": 4,
+      "expanded": true,
+      "planned_episodes": 3
+    },
+    {
+      "n": 2,
+      "title": "II. AYODHYA KANDA - KAISERI BOON",
+      "summary": "Kaikeyi demands two boons from Dasaratha: Rama's exile and Bharata's coronation. Though reluctant, Dasaratha grants them, leading to Rama's banishment and his father’s death.",
+      "episodes": 3,
+      "expanded": true,
+      "planned_episodes": 3
+    },
+    {
+      "n": 3,
+      "title": "III. VANVAS - ARANYA KANDA",
+      "summary": "Rama, Lakshmana, and Sita live in the forest for fourteen years during Rama's exile as described in the Aranya Kanda, facing challenges like demons, hunger, and separation from Ayodhya. They find refuge with Sugriva in Kishkindha.",
+      "episodes": 4,
+      "expanded": false
+    },
+    {
+      "n": 4,
+      "title": "IV. LANKA JOURNEY - PANCHALI KANDA",
+      "summary": "Rama meets Hanuman, who agrees to search for Sita. Hanuman discovers her location and returns with news of Ravana’s abducting her from Lanka.",
+      "episodes": 2,
+      "expanded": false
+    },
+    {
+      "n": 5,
+      "title": "V. LANKA YUDDH - KISHKINDHA KANDA",
+      "summary": "Rama builds a bridge to Lanka, leads the Vanara army with Hanuman's help, and prepares for war against Ravana, the ten-headed demon king.",
+      "episodes": 3,
+      "expanded": false
+    },
+    {
+      "n": 6,
+      "title": "VI. LANKA YUDDH - ARANYA KANDA",
+      "summary": "The battle in Lanka begins with Rama vs. Ravana and his army. Hanuman sets fire to Lanka, destroys fortresses, rescues Sita from captivity, and brings her back.",
+      "episodes": 4,
+      "expanded": false
+    },
+    {
+      "n": 7,
+      "title": "VII. RAM RAJYA - UTTHAN KANDA",
+      "summary": "Rama returns to Ayodhya after defeating Ravana. Bharata gives him the crown, Sita proves her purity through fire ordeal, and Ram Rajya is established as an ideal kingdom.",
+      "episodes": 3,
+      "expanded": false
+    }
+  ],
+  "episodes": [
+    {
+      "n": 1,
+      "arc": 1,
+      "title": "Divine Birth in Ayodhya",
+      "title_hi": "आयोध्या में देवी प्रसन्नता",
+      "beats": [
+        "Rama is born to King Dasaratha and Queen Kausalya, chosen by the gods as Vishnu's incarnation.",
+        "Rama is described with divine attributes including lotus-red eyes, lengthy arms, roseate lips, and a voice like drumbeat.",
+        "At 16 years old, Rama meets Sage Viswamitra, who is disturbed by rakshas Mericha and Subahu.",
+        "Viswamitra asks Dasaratha to send his sons to the forest to help slay the demons harassing him and other sages."
+      ],
+      "characters": [
+        "rama",
+        "dasaratha"
+      ],
+      "places": [
+        "ayodhya"
+      ],
+      "hook": "Rama's divine attributes are revealed, foreshadowing his legendary destiny.",
+      "status": "rendered"
+    },
+    {
+      "n": 2,
+      "arc": 1,
+      "title": "Forest Trials with Viswamitra",
+      "title_hi": "विश्वामित्र के जंगल में परीक्षा",
+      "beats": [
+        "Rama and Lakshmana accompany Viswamitra to a wild forest inhabited by Tadaka, a yaksha woman turned rakshasi.",
+        "Rama hesitates to kill Tadaka as she is female, but Viswamitra explains evil has no gender.",
+        "Rama kills Tadaka with a single arrow, liberating the yaksha soul cursed for a sin.",
+        "Viswamitra rewards Rama and Lakshmana with divine weapons (astras and sastras) and teaches them advanced military arts."
+      ],
+      "characters": [
+        "rama",
+        "lakshmana",
+        "viswamitra"
+      ],
+      "places": [
+        "dandakaranya"
+      ],
+      "hook": "Rama kills Tadaka with a single arrow, proving his divine strength and resolve.",
+      "status": "rendered"
+    },
+    {
+      "n": 3,
+      "arc": 1,
+      "title": "Shiv Dhanush and Sita's Bond",
+      "title_hi": "शिव धनुष और सीता के बंधन",
+      "beats": [
+        "Rama and Lakshmana travel to Janaka's sacrifice in Mithila, where they encounter the legendary Shiv Dhanush bow.",
+        "Rama strings the divine bow and breaks it, impressing King Janaka.",
+        "Rama marries Sita in Mithila, with his brothers marrying Sita's sister and cousins.",
+        "The group returns to Ayodhya, setting the stage for an idyllic married life."
+      ],
+      "characters": [
+        "rama",
+        "lakshmana",
+        "janaka",
+        "sita"
+      ],
+      "places": [
+        "mithila"
+      ],
+      "hook": "Rama strings the Shiv Dhanush and marries Sita, setting up their legendary life together.",
+      "status": "rendered"
+    },
+    {
+      "n": 4,
+      "arc": 2,
+      "title": "Kaikeyi's Demand",
+      "title_hi": "कैकेयी के अपेक्षा",
+      "beats": [
+        "Kaikeyi, queen of King Dasaratha, demands two boons from her husband.",
+        "Kaikeyi insists that Rama be exiled from Ayodhya for fourteen years.",
+        "Kaikeyi also demands that Bharata, her son, be crowned king instead of Rama."
+      ],
+      "characters": [
+        "kaikeyi",
+        "dasaratha"
+      ],
+      "places": [
+        "ayodhya"
+      ],
+      "hook": "Kaikeyi stands before Dasaratha, her eyes fierce as she demands the impossible.",
+      "status": "rendered"
+    },
+    {
+      "n": 5,
+      "arc": 2,
+      "title": "Rama's Exile",
+      "title_hi": "राम का ब्रह्मचर्य",
+      "beats": [
+        "Dasaratha is reluctant to grant Kaikeyi's boons but agrees out of duty and love.",
+        "Rama is banished from Ayodhya to the forest with his wife Sita and brother Lakshmana.",
+        "Lakshmana accompanies Rama into exile, vowing to protect him and Sita."
+      ],
+      "characters": [
+        "rama",
+        "sita",
+        "lakshmana",
+        "dasaratha"
+      ],
+      "places": [
+        "ayodhya"
+      ],
+      "hook": "Rama, with his head held high, steps away from Ayodhya as the sun sets on his kingdom.",
+      "status": "planned"
+    },
+    {
+      "n": 6,
+      "arc": 2,
+      "title": "Dasaratha's Death",
+      "title_hi": "दशरथ की मृत्यु",
+      "beats": [
+        "Dasaratha, heartbroken by the loss of his son, falls ill after granting the boons.",
+        "Dasaratha's grief leads to his death, as he cannot bear the separation from Rama.",
+        "Rama accepts his banishment with grace, fulfilling his duty as a prince."
+      ],
+      "characters": [
+        "dasaratha",
+        "rama",
+        "lakshmana"
+      ],
+      "places": [
+        "ayodhya"
+      ],
+      "hook": "Dasaratha, with his final breath, blesses Rama and the world watches in silence.",
+      "status": "planned"
+    }
+  ]
+}

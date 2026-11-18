@@ -1,0 +1,207 @@
+{
+ "title": "Medhak Ki Chhalang",
+ "n": 1,
+ "tempo": 100,
+ "key": "C",
+ "scenes": [
+  {
+   "kind": "verse",
+   "place": "pond",
+   "cast": [
+    "frog"
+   ],
+   "beats": [
+    {
+     "say_hi": "मेंढक छोटा, हरा है प्यारे",
+     "say": "Mendhak chhota, hara hai pyare",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "पानी में उछले, बहुत सारे",
+     "say": "Pani mein uchhle, bahut sare",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "एक, दो, तीन, देखो मैं खेलूँ",
+     "say": "Ek, do, teen, dekho main khelun",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "छह, सात, गाओ, आनंद सारे",
+     "say": "Chhah, sat, gao, aanand sare",
+     "speaker": "singer",
+     "emotion": "happy"
+    }
+   ]
+  },
+  {
+   "kind": "chorus",
+   "place": "pond",
+   "cast": [
+    "frog"
+   ],
+   "beats": [
+    {
+     "say_hi": "मेंढक कूदता, मस्ती करे",
+     "say": "Mendhak kudta, masti kare",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "पानी रानी, सुख से भरे",
+     "say": "Pani rani, sukh se bhare",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "मेंढक प्यारा, खुशी का गीत",
+     "say": "Mendhak pyara, khushi ka git",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "पानी रानी, सुख से भरे",
+     "say": "Pani rani, sukh se bhare",
+     "speaker": "singer",
+     "emotion": "happy"
+    }
+   ]
+  },
+  {
+   "kind": "verse",
+   "place": "pond",
+   "cast": [
+    "frog",
+    "cat"
+   ],
+   "beats": [
+    {
+     "say_hi": "एक छलांग, टर्र-टर्र आवाज़",
+     "say": "Ek chhalang, tarr-tarr awaaz",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "दो छलांग, म्याऊँ, देखो लाज",
+     "say": "Do chhalang, myaoon, dekho laj",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "तीन छलांग, ताल है मेरा",
+     "say": "Teen chhalang, tal hai mera",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "चार छलांग, खुशी है आज",
+     "say": "Char chhalang, khushi hai aaj",
+     "speaker": "singer",
+     "emotion": "happy"
+    }
+   ]
+  },
+  {
+   "kind": "chorus",
+   "place": "pond",
+   "cast": [
+    "frog"
+   ],
+   "beats": [
+    {
+     "say_hi": "मेंढक कूदता, मस्ती करे",
+     "say": "Mendhak kudta, masti kare",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "पानी रानी, सुख से भरे",
+     "say": "Pani rani, sukh se bhare",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "मेंढक प्यारा, खुशी का गीत",
+     "say": "Mendhak pyara, khushi ka git",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "पानी रानी, सुख से भरे",
+     "say": "Pani rani, sukh se bhare",
+     "speaker": "singer",
+     "emotion": "happy"
+    }
+   ]
+  },
+  {
+   "kind": "verse",
+   "place": "pond",
+   "cast": [
+    "frog"
+   ],
+   "beats": [
+    {
+     "say_hi": "पांच छलांग, लाल गाल हो",
+     "say": "Panch chhalang, lal gall ho",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "मेंढक प्यारा, ये खेल सोहो",
+     "say": "Mendhak pyara, ye khel soho",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "छह छलांग, चलो हम मिलो",
+     "say": "Chhah chhalang, chalo hume milo",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "सात छलांग, खुशियाँ मिलों!",
+     "say": "Sat chhalang, khushiyan milon!",
+     "speaker": "singer",
+     "emotion": "happy"
+    }
+   ]
+  },
+  {
+   "kind": "chorus",
+   "place": "pond",
+   "cast": [
+    "frog"
+   ],
+   "beats": [
+    {
+     "say_hi": "मेंढक कूदता, मस्ती करे",
+     "say": "Mendhak kudta, masti kare",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "पानी रानी, सुख से भरे",
+     "say": "Pani rani, sukh se bhare",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "मेंढक प्यारा, खुशी का गीत",
+     "say": "Mendhak pyara, khushi ka git",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "पानी रानी, सुख से भरे",
+     "say": "Pani rani, sukh se bhare",
+     "speaker": "singer",
+     "emotion": "happy"
+    }
+   ]
+  }
+ ]
+}

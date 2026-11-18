@@ -1,0 +1,213 @@
+{
+ "title": "Haathi Ka Hatha",
+ "n": 1,
+ "tempo": 100,
+ "key": "C",
+ "scenes": [
+  {
+   "kind": "verse",
+   "place": "jungle",
+   "cast": [
+    "elephant",
+    "boy"
+   ],
+   "beats": [
+    {
+     "say_hi": "हाथी बड़ा दयालु है रानी",
+     "say": "Hathi bada dayalu hai rani",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "बच्चे को खोजता है, कितनी हैरानी",
+     "say": "Bachche ko khojta hai, kitni hairani",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "बच्चों का साथ देता, बहुत न्यारा",
+     "say": "Bachchon ka saath data, bahut nyara",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "जैसे खुशी, कितनी हैरानी",
+     "say": "Jaise khushi, kitni hairani",
+     "speaker": "singer",
+     "emotion": "happy"
+    }
+   ]
+  },
+  {
+   "kind": "chorus",
+   "place": "jungle",
+   "cast": [
+    "elephant",
+    "boy"
+   ],
+   "beats": [
+    {
+     "say_hi": "हाथी गाता, हाथी गाता",
+     "say": "Hathi gata, hathi gata",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "गाने से खुशी लाता, खुशियाँ लाता",
+     "say": "Gane se khushi lata, khushiyan lata",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "हाथी नाचता, हाथी नाचता",
+     "say": "Hathi nachta, hathi nachta",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "सब बच्चों के साथ, मस्ती करता",
+     "say": "Sab bachchon ke saath, masti karta",
+     "speaker": "singer",
+     "emotion": "happy"
+    }
+   ]
+  },
+  {
+   "kind": "verse",
+   "place": "jungle",
+   "cast": [
+    "boy",
+    "elephant",
+    "sun"
+   ],
+   "beats": [
+    {
+     "say_hi": "छोटे बच्चे खो गए थे, थोड़ा डरते",
+     "say": "Chhote bachche kho gaye the, thoda darte",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "हाथी ने कहा \"चिंता मत करो प्यारे\" कहते",
+     "say": "Hathi ne kaha \"chinta mat karo pyare\" kehte",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "बच्चे हँसे, हाथी का प्यारा चेहरा",
+     "say": "Bachche hanse, hathi ka pyara chehra",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "जैसे दोस्त है अच्छा, जैसे धूप भरा",
+     "say": "Jaise dost hai accha, jaise dhup bhara",
+     "speaker": "singer",
+     "emotion": "happy"
+    }
+   ]
+  },
+  {
+   "kind": "chorus",
+   "place": "jungle",
+   "cast": [
+    "elephant",
+    "boy"
+   ],
+   "beats": [
+    {
+     "say_hi": "हाथी गाता, हाथी गाता",
+     "say": "Hathi gata, hathi gata",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "गाने से खुशी लाता, खुशियाँ लाता",
+     "say": "Gane se khushi lata, khushiyan lata",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "हाथी नाचता, हाथी नाचता",
+     "say": "Hathi nachta, hathi nachta",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "सब बच्चों के साथ, मस्ती करता",
+     "say": "Sab bachchon ke saath, masti karta",
+     "speaker": "singer",
+     "emotion": "happy"
+    }
+   ]
+  },
+  {
+   "kind": "verse",
+   "place": "room",
+   "cast": [
+    "elephant",
+    "boy"
+   ],
+   "beats": [
+    {
+     "say_hi": "हाथी ने बच्चे को घर ले गया है रानी",
+     "say": "Hathi ne bachche ko ghar le gaya hai rani",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "माँ-बाएँ भी खुश हुए, बहुत आनन्दी",
+     "say": "Man-baen bhi khush huye, bahut aanandi",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "बच्चे ने कहा \"धन्यवाद हाथी भाई",
+     "say": "Bachche ne kaha \"dhanyavad hathi bhai",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "धन्यवाद हाथी भाई, खूब आनन्दी!",
+     "say": "Dhanyavad hathi bhai, khub aanandi!",
+     "speaker": "singer",
+     "emotion": "happy"
+    }
+   ]
+  },
+  {
+   "kind": "chorus",
+   "place": "jungle",
+   "cast": [
+    "elephant",
+    "boy"
+   ],
+   "beats": [
+    {
+     "say_hi": "हाथी गाता, हाथी गाता",
+     "say": "Hathi gata, hathi gata",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "गाने से खुशी लाता, खुशियाँ लाता",
+     "say": "Gane se khushi lata, khushiyan lata",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "हाथी नाचता, हाथी नाचता",
+     "say": "Hathi nachta, hathi nachta",
+     "speaker": "singer",
+     "emotion": "happy"
+    },
+    {
+     "say_hi": "सब बच्चों के साथ, मस्ती करता",
+     "say": "Sab bachchon ke saath, masti karta",
+     "speaker": "singer",
+     "emotion": "happy"
+    }
+   ]
+  }
+ ]
+}

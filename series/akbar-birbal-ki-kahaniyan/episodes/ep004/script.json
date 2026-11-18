@@ -1,0 +1,316 @@
+{
+  "series": "Akbar Birbal Ki Kahaniyan",
+  "n": 4,
+  "title": "The Soul of a Friend",
+  "title_hi": "मित्र के आत्मा",
+  "arc": 3,
+  "next_title": "THE TRUE FRIEND TEST 3",
+  "written": "2026-11-11 21:15",
+  "scenes": [
+    {
+      "kind": "recap",
+      "place": "akbars_court",
+      "time": "evening",
+      "weather": "clear",
+      "music": "mystery",
+      "cast": [
+        {
+          "id": "akbar",
+          "slot": "center",
+          "arrives": false,
+          "hidden": false
+        },
+        {
+          "id": "birbal",
+          "slot": "right",
+          "arrives": false,
+          "hidden": false
+        }
+      ],
+      "beats": [
+        {
+          "speaker": "narrator",
+          "say_en": "Akbar sought to understand true friendship through Birbal's wisdom.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {},
+          "say_hi": "अकबर, बीरबल के ज्ञान से सच्ची दोस्ती समझने की कोशिश कर रहे थे।",
+          "say": "Akbar, birbal ke jnan se sachchi dosti samjhane ki koshish kar rahe the.",
+          "say_from": "अकबर, बीरबल के ज्ञान से सच्ची दोस्ती समझने की कोशिश कर रहे थे।"
+        },
+        {
+          "speaker": "narrator",
+          "say_en": "He visited a poor friend who showed loyalty without expecting anything in return.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {},
+          "say_hi": "उन्होंने एक गरीब मित्र का दौरा किया जिसने बिना कुछ बदले वफादारी दिखाई।",
+          "say": "Unhonne ek garib mitr ka daura kiya jisne bina kuch badle vaphadari dikhai.",
+          "say_from": "उन्होंने एक गरीब मित्र का दौरा किया जिसने बिना कुछ बदले वफादारी दिखाई।"
+        },
+        {
+          "speaker": "narrator",
+          "say_en": "The court was deeply touched by the friend's selfless devotion.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {},
+          "say_hi": "दरबार उस मित्र के निःस्वार्थ समर्पण से बहुत प्रभावित हुआ।",
+          "say": "Darbar us mitr ke nisvarth samarpan se bahut prabhavit hua.",
+          "say_from": "दरबार उस मित्र के निःस्वार्थ समर्पण से बहुत प्रभावित हुआ।"
+        }
+      ]
+    },
+    {
+      "place": "akbars_court",
+      "time": "evening",
+      "weather": "clear",
+      "music": "mystery",
+      "cast": [
+        {
+          "id": "akbar",
+          "slot": "center",
+          "arrives": false,
+          "hidden": false
+        },
+        {
+          "id": "birbal",
+          "slot": "right",
+          "arrives": true,
+          "hidden": false
+        }
+      ],
+      "what_happens": "Birbal enters the court in the evening, summoned by Akbar. He finds the emperor deep in thought, gazing at the stars. Birbal gently reminds him of their journey to understand true friendship and the meaning of value beyond wealth. The two share a moment of reflection as they contemplate the lessons learned from the poor friend's selflessness.",
+      "words": 110,
+      "beats": [
+        {
+          "speaker": "narrator",
+          "say_en": "The evening sky sparkles with stars as Birbal enters the court.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {},
+          "say_hi": "शाम की आकाश में तारे चमक रहे हैं, जैसे बीरबल अकबर के मंत्री आलोचनालय में प्रवेश कर रहा हो।",
+          "say": "Sham ki aakash mein tare chamak rahe hain, jaise birbal akbar ke minister aalochnalay mein pravesh kar raha ho.",
+          "say_from": "शाम की आकाश में तारे चमक रहे हैं, जैसे बीरबल अकबर के मंत्री आलोचनालय में प्रवेश कर रहा हो।"
+        },
+        {
+          "speaker": "akbar",
+          "say_en": "Birbal, I have been thinking deeply about our journey and what we've learned.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "thunder"
+          ],
+          "react": {},
+          "say_hi": "बीरबल, मैंने हमारे यात्रा और हमने जो सीखा है, उस पर गहराई से विचार किया है।",
+          "say": "Birbal, maine humare yatra aur hamne jo sikha hai, us par gahrai se vichar kiya hai.",
+          "say_from": "बीरबल, मैंने हमारे यात्रा और हमने जो सीखा है, उस पर गहराई से विचार किया है।"
+        },
+        {
+          "speaker": "birbal",
+          "say_en": "Your Majesty, I too have reflected on the value of selflessness and true friendship.",
+          "emotion": "calm",
+          "action": {
+            "type": "enter",
+            "who": "birbal"
+          },
+          "sfx": [
+            "magic"
+          ],
+          "react": {},
+          "say_hi": "महाराज, मैं भी निःस्वार्थ भाव और सच्ची मित्रता के मूल्य पर चिंतन कर रहा हूँ।",
+          "say": "Maharaja, main bhi nisvarth bhav aur sachchi mitrata ke mulya par chintan kar raha hun.",
+          "say_from": "महाराज, मैं भी निःस्वार्थ भाव और सच्ची मित्रता के मूल्य पर चिंतन कर रहा हूँ।"
+        },
+        {
+          "speaker": "akbar",
+          "say_en": "The poor friend's sacrifice has left me in deep thought.",
+          "emotion": "sad",
+          "action": {},
+          "sfx": [
+            "heartbeat"
+          ],
+          "react": {},
+          "say_hi": "गरीब मित्र का बलिदान मुझे गहरे सोच में डाल गया है।",
+          "say": "Garib mitr ka balidan mujhe gahre soch mein daal gaya hai.",
+          "say_from": "गरीब मित्र का बलिदान मुझे गहरे सोच में डाल गया है।"
+        },
+        {
+          "speaker": "birbal",
+          "say_en": "Yes, and it shows that true worth lies not in wealth, but in loyalty and trust.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "riser"
+          ],
+          "react": {},
+          "say_hi": "हाँ, और यह दर्शाता है कि सच्चा मूल्य धन में नहीं, बल्कि वफादारी और विश्वास में निहित है।",
+          "say": "Han, aur yah darshata hai ki sachcha mulya dhan mein nahi, balki vaphadari aur vishvas mein nihit hai.",
+          "say_from": "हाँ, और यह दर्शाता है कि सच्चा मूल्य धन में नहीं, बल्कि वफादारी और विश्वास में निहित है।"
+        },
+        {
+          "speaker": "akbar",
+          "say_en": "Then, perhaps we have found the true merchant—not in gold, but in love and character.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "conch"
+          ],
+          "react": {},
+          "say_hi": "तो, शायद हमने सच्चे व्यापारी को खोज लिया है—स्वर्ण में नहीं, बल्कि प्रेम और चरित्र में।",
+          "say": "To, shayad hamne sachche vyapari ko khoj liya hai—svarn mein nahi, balki prem aur character mein.",
+          "say_from": "तो, शायद हमने सच्चे व्यापारी को खोज लिया है—स्वर्ण में नहीं, बल्कि प्रेम और चरित्र में।"
+        },
+        {
+          "speaker": "birbal",
+          "say_en": "Exactly, Your Majesty. The most valuable thing we can offer is our hearts.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "bell"
+          ],
+          "react": {},
+          "say_hi": "बिल्कुल, महाराज। हम जो सबसे मूल्यवान पेशकश कर सकते हैं वह है हमारे हृदय।",
+          "say": "Bilkul, maharaja. Hume jo sabse mulyavan peshkash kar sakte hain vah hai humare hriday.",
+          "say_from": "बिल्कुल, महाराज। हम जो सबसे मूल्यवान पेशकश कर सकते हैं वह है हमारे हृदय।"
+        }
+      ],
+      "kind": "story"
+    },
+    {
+      "place": "akbars_palace",
+      "time": "night",
+      "weather": "fog",
+      "music": "divine",
+      "cast": [
+        {
+          "id": "akbar",
+          "slot": "center",
+          "arrives": true,
+          "hidden": false
+        },
+        {
+          "id": "birbal",
+          "slot": "left",
+          "arrives": false,
+          "hidden": false
+        }
+      ],
+      "what_happens": "Akbar returns to the palace in the night, still pondering Birbal's words. He sits alone in a quiet chamber where the fog outside mirrors his inner thoughts. As he reflects on the poor friend’s sacrifice, Birbal appears silently beside him and delivers a final lesson: true friendship is not measured by wealth but by loyalty and selflessness. The scene ends with Akbar absorbing these words, their meaning echoing deep within his heart.",
+      "words": 209,
+      "beats": [
+        {
+          "speaker": "birbal",
+          "say_en": "Your Majesty, I have considered the nature of true friendship and selflessness.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {},
+          "say_hi": "महाराज, मैं सच्ची दोस्ती और निःस्वार्थ का विचार कर चुका हूँ।",
+          "say": "Maharaja, main sachchi dosti aur nisvarth ka vichar kar chuka hun.",
+          "say_from": "महाराज, मैं सच्ची दोस्ती और निःस्वार्थ का विचार कर चुका हूँ।"
+        },
+        {
+          "speaker": "akbar",
+          "say_en": "I understand now. True friendship is not measured by riches, but by the strength of one's soul.",
+          "emotion": "calm",
+          "action": {
+            "type": "enter",
+            "who": "akbar"
+          },
+          "sfx": [],
+          "react": {},
+          "say_hi": "अब मुझे समझ में आया। सच्ची दोस्ती धन से नहीं, बल्कि आत्मा की शक्ति से मापी जाती है।",
+          "say": "Ab mujhe samajh mein aaya. Sachchi dosti dhan se nahi, balki aatma ki shakti se mapi jaati hai.",
+          "say_from": "अब मुझे समझ में आया। सच्ची दोस्ती धन से नहीं, बल्कि आत्मा की शक्ति से मापी जाती है।"
+        },
+        {
+          "speaker": "birbal",
+          "say_en": "Precisely. And that, Your Majesty, is what makes us truly rich.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {},
+          "say_hi": "बिल्कुल। और वह, महाराज, यही हमें वास्तव में अमीर बनाता है।",
+          "say": "Bilkul. Aur vah, maharaja, yahi humein vastav mein ameer banata hai.",
+          "say_from": "बिल्कुल। और वह, महाराज, यही हमें वास्तव में अमीर बनाता है।"
+        },
+        {
+          "speaker": "akbar",
+          "say_en": "Thank you, Birbal. Your wisdom has guided me to see beyond gold and silver.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {},
+          "say_hi": "धन्यवाद, बीरबल। तुम्हारे ज्ञान ने मुझे सोने-चाँदी से परे देखने में मदद की।",
+          "say": "Dhanyavad, birbal. Tumhare jnan ne mujhe sone-chandi se pare dekhne mein madad ki.",
+          "say_from": "धन्यवाद, बीरबल। तुम्हारे ज्ञान ने मुझे सोने-चाँदी से परे देखने में मदद की।"
+        },
+        {
+          "speaker": "birbal",
+          "say_en": "It is my honor, Your Majesty. May your heart always be filled with truth and kindness.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [],
+          "react": {},
+          "say_hi": "यह मेरा सम्मान है, महाराज। आपका हृदय हमेशा सत्य और दया से भरा रहे।",
+          "say": "Yah mera samman hai, maharaja. Aapka hriday hamesha satya aur daya se bhara rahe.",
+          "say_from": "यह मेरा सम्मान है, महाराज। आपका हृदय हमेशा सत्य और दया से भरा रहे।"
+        }
+      ],
+      "kind": "story"
+    },
+    {
+      "kind": "teaser",
+      "place": "akbars_palace",
+      "time": "night",
+      "weather": "fog",
+      "music": "mystery",
+      "cast": [
+        {
+          "id": "akbar",
+          "slot": "center",
+          "arrives": false,
+          "hidden": false
+        },
+        {
+          "id": "birbal",
+          "slot": "left",
+          "arrives": false,
+          "hidden": false
+        }
+      ],
+      "beats": [
+        {
+          "speaker": "narrator",
+          "say_en": "Akbar's final test leaves everyone surprised by his choice.",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "riser"
+          ],
+          "react": {},
+          "say_hi": "अकबर का आखरी इम्तिहान सबको अपनी पसंद से चौंका देता है।",
+          "say": "Akbar ka aakhri imtihan sabko apni pasand se chaunka data hai.",
+          "say_from": "अकबर का आखरी इम्तिहान सबको अपनी पसंद से चौंका देता है।"
+        },
+        {
+          "speaker": "narrator",
+          "say_en": "Was it really about what he gave, or what he received?",
+          "emotion": "calm",
+          "action": {},
+          "sfx": [
+            "riser"
+          ],
+          "react": {},
+          "say_hi": "क्या यह वास्तव में उसके देने के बारे में था, या वह प्राप्त करने के बारे में?",
+          "say": "Kya yah vastav mein uske dene ke baare mein tha, ya vah prapt karne ke baare mein?",
+          "say_from": "क्या यह वास्तव में उसके देने के बारे में था, या वह प्राप्त करने के बारे में?"
+        }
+      ]
+    }
+  ]
+}

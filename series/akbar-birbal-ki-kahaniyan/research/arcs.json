@@ -1,0 +1,88 @@
+{
+  "title_screen": "AKBAR BIRBAL",
+  "title_hi": "अकबर बीरबल",
+  "tagline": "मनोरंजन, मूल्यवान सिखाओ के आधुनिक प्रतिरूप",
+  "arcs": [
+    {
+      "title": "THE TRUE MERCHANT TEST",
+      "summary": "Akbar asks Birbal to find the true merchant in the kingdom. Birbal announces a test, and merchants from across the land arrive claiming they have Akbar's desired items.",
+      "episodes": 3
+    },
+    {
+      "title": "THE POOR OLD MAN'S CLAIM",
+      "summary": "A poor old man arrives at court with nothing but time to sell. The other merchants mock him, but Birbal sees the wisdom in his claim of selling time as a valuable gift.",
+      "episodes": 2
+    },
+    {
+      "title": "THE TRUE FRIEND TEST",
+      "summary": "Akbar asks Birbal about true friendship. A poor friend offers all he has to help Akbar, showing selflessness and loyalty despite his own lack of wealth.",
+      "episodes": 3
+    },
+    {
+      "title": "THE STOLEN COW CASE",
+      "summary": "A farmer complains that his cow was stolen. Birbal announces a reward for returning the lost cow. The real thief, fearing exposure, returns it but demands half the reward.",
+      "episodes": 3
+    },
+    {
+      "title": "THE INTRUDER POET",
+      "summary": "Akbar is troubled by a dream of an intruder in his palace. Birbal advises treating the intruder kindly and offering him food, which turns out to be a drunk poet.",
+      "episodes": 2
+    },
+    {
+      "title": "BIRBAL'S FIRST MEETING",
+      "summary": "6. BIRBAL'S FIRST MEETING: Akbar meets Mahesh Das (future Birbal) in the forest. He helps Akbar find his way and is rewarded with a royal ring, which he later recognizes as valuable when he grows up.",
+      "episodes": 2
+    },
+    {
+      "title": "THE FOOLS LIST",
+      "summary": "Akbar challenges Birbal to list six fools in one month. Birbal identifies foolishness in others but admits that even he and Akbar are part of the group, showing wisdom through humility.",
+      "episodes": 2
+    },
+    {
+      "title": "BIRBAL'S GURU",
+      "summary": "Akbar wants to meet Birbal's guru. Birbal arranges a meeting with a woodcutter whom he elevates as his guru. The monk remains silent and indifferent to gold, impressing Akbar.",
+      "episodes": 2
+    },
+    {
+      "title": "THE THREE QUESTIONS",
+      "summary": "Akbar asks Birbal three questions about God. Birbal's son answers using everyday examples like sugar dissolving in milk or butter coming from curd to explain divine principles.",
+      "episodes": 3
+    },
+    {
+      "title": "THE MAGIC DONKEY",
+      "summary": "The queen loses a necklace and other items. Birbal uses a magical donkey with a special scent on its tail to identify the thief, who avoids touching it out of fear.",
+      "episodes": 2
+    },
+    {
+      "title": "BIRBAL'S CHILDREN",
+      "summary": "Birbal is late for court because his children are stubborn. Akbar doubts him, but Birbal proves how difficult parenting is by acting like a child and refusing to eat sugarcane until he gets what he wants.",
+      "episodes": 2
+    },
+    {
+      "title": "THE KHICHDI CHALLENGE",
+      "summary": "Akbar challenges Birbal to prove someone can survive the cold night in the Yamuna River. Birbal uses a poor man's cleverness and then plays a trick with khichdi cooked far from fire, teaching Akbar not to dismiss others' efforts.",
+      "episodes": 2
+    },
+    {
+      "title": "THE CROW COUNT CHALLENGE",
+      "summary": "Akbar asks how many crows are in the kingdom. Birbal cleverly replies that if there are more than he said, they're visiting relatives; fewer means some have gone elsewhere, impressing Akbar with his wit.",
+      "episodes": 2
+    },
+    {
+      "title": "THE HONEST THIEF",
+      "summary": "Akbar wants to find a thief. Birbal gives each suspect an equal-length stick and claims the guilty one will cut it shorter out of fear. The thief does so, revealing himself.",
+      "episodes": 2
+    },
+    {
+      "title": "THE RICH MERCHANT'S DILEMMA",
+      "summary": "15. THE HONEST THIEF: Akbar wants to find a thief. Birbal gives each suspect an equal-length stick and claims the guilty one will cut it shorter out of fear. The thief does so, revealing himself.",
+      "episodes": 2
+    },
+    {
+      "title": "THE WASHERMAN'S DONKEY",
+      "summary": "A dispute arises over a donkey between a washerman and a nobleman. Birbal dresses the donkey in fancy clothes and brings it to court, exposing the nobleman's mistake.",
+      "episodes": 2
+    }
+  ],
+  "checked": true
+}

@@ -1,0 +1,39 @@
+# Rhyme lyrics: edit freely, then run: python rhyme.py make <slug>
+# Devanagari = what is sung. Add ' | Roman' after a line to set the on-screen spelling yourself.
+# Choose the picture per section: [verse place=pond cast=frog,duck]
+#   places: garden jungle farm pond underwater sky night beach room rail
+#   cast:   boy girl cat dog rabbit elephant lion monkey cow frog duck fish butterfly sun moon star peacock parrot train
+# An empty [chorus] repeats the last chorus.
+# Written by gemma3:4b: read and improve it.
+
+title: Chanda Ki Lori
+tempo: 100
+key: C
+
+[verse]
+चंदा रानी रात में आया
+प्यारी रोशनी से हमको भाया
+तारे सारे भी साथ चले
+सितारों से हमको भाया
+
+[chorus]
+आओ बच्चो, चलो हम गाएँ
+चंदा और तारे हमको बुलाएँ
+रात की शांति में खेलें प्यारे
+झूले नाचे, बनो सब न्यारे
+
+[verse]
+छोटे बच्चे भी सो रहे हैं
+चंदा उनकी परवाह करता है
+तारे भी उनकी मदद करते हैं
+सबके लिए है ये प्यार भरा
+
+[chorus]
+
+[verse]
+नहाएं हाथ, धोएं पैर
+चंदा देखे आपका प्यार
+पड़े सोना धीरे-धीरे
+सुनाओ चंदा हमको प्यारे
+
+[chorus]

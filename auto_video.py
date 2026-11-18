@@ -156,7 +156,7 @@ def llm(system, user, as_json=True, ctx=12288, retries=4, temperature=0.7, check
         msgs = [{"role": "system", "content": system + ("\nSirf JSON object do, aur kuch nahi." if free else "")},
                 {"role": "user", "content": user}]
         try:
-            if model == MODEL:   # gemma has no thinking mode to turn off
+            if str(model).startswith("qwen3"):   # gemma has no thinking mode to turn off
                 kwargs["think"] = False
             out = ollama.chat(model=model, options=opts, messages=msgs, **kwargs)
         except ollama.ResponseError as e:
